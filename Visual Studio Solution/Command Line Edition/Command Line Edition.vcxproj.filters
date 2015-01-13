@@ -21,57 +21,57 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IStoryView.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IPage.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IChoiceList.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ModifyableChoiceList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CommandLineView.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RedZone.h">
+    <ClInclude Include="..\..\Common Files\ChoiceToBlueZone.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ChoiceToGreenZone.h">
+    <ClInclude Include="..\..\Common Files\ChoiceToGreenZone.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ChoiceToBlueZone.h">
+    <ClInclude Include="..\..\Common Files\IChoiceList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common Files\IPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common Files\IStoryView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common Files\ModifyableChoiceList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common Files\RedZone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common Files\stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Command Line Edition.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ModifyableChoiceList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CommandLineView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RedZone.cpp">
+    <ClCompile Include="..\..\Common Files\ChoiceToBlueZone.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ChoiceToGreenZone.cpp">
+    <ClCompile Include="..\..\Common Files\ChoiceToGreenZone.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ChoiceToBlueZone.cpp">
+    <ClCompile Include="..\..\Common Files\ModifyableChoiceList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common Files\RedZone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

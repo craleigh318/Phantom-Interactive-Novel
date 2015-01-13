@@ -52,6 +52,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Common Files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -79,28 +80,25 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ChoiceToBlueZone.h" />
-    <ClInclude Include="ChoiceToGreenZone.h" />
+    <ClInclude Include="..\..\Common Files\ChoiceToBlueZone.h" />
+    <ClInclude Include="..\..\Common Files\ChoiceToGreenZone.h" />
+    <ClInclude Include="..\..\Common Files\IChoiceList.h" />
+    <ClInclude Include="..\..\Common Files\IPage.h" />
+    <ClInclude Include="..\..\Common Files\IStoryView.h" />
+    <ClInclude Include="..\..\Common Files\ModifyableChoiceList.h" />
+    <ClInclude Include="..\..\Common Files\RedZone.h" />
+    <ClInclude Include="..\..\Common Files\stdafx.h" />
     <ClInclude Include="CommandLineView.h" />
-    <ClInclude Include="IChoiceList.h" />
-    <ClInclude Include="IPage.h" />
-    <ClInclude Include="IStoryView.h" />
-    <ClInclude Include="ModifyableChoiceList.h" />
-    <ClInclude Include="RedZone.h" />
-    <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ChoiceToBlueZone.cpp" />
-    <ClCompile Include="ChoiceToGreenZone.cpp" />
+    <ClCompile Include="..\..\Common Files\ChoiceToBlueZone.cpp" />
+    <ClCompile Include="..\..\Common Files\ChoiceToGreenZone.cpp" />
+    <ClCompile Include="..\..\Common Files\ModifyableChoiceList.cpp" />
+    <ClCompile Include="..\..\Common Files\RedZone.cpp" />
     <ClCompile Include="Command Line Edition.cpp" />
     <ClCompile Include="CommandLineView.cpp" />
-    <ClCompile Include="ModifyableChoiceList.cpp" />
-    <ClCompile Include="RedZone.cpp" />
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,25 +1,19 @@
-﻿Build started 2015-01-12 16:27:33.
+﻿Build started 2015-01-13 15:32:54.
      1>Project "C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Visual Studio Solution\Command Line Edition\Command Line Edition.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ModifyableChoiceList.cpp RedZone.cpp
-         RedZone.cpp
-     1>c:\users\christopher\documents\github\phantom-interactive-novel\visual studio solution\command line edition\modifyablechoicelist.h(25): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>c:\users\christopher\documents\github\phantom-interactive-novel\visual studio solution\command line edition\redzone.cpp(21): warning C4227: anachronism used : qualifiers on reference are ignored
-         ModifyableChoiceList.cpp
-     1>c:\users\christopher\documents\github\phantom-interactive-novel\visual studio solution\command line edition\modifyablechoicelist.h(25): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>c:\users\christopher\documents\github\phantom-interactive-novel\visual studio solution\command line edition\modifyablechoicelist.cpp(18): warning C4227: anachronism used : qualifiers on reference are ignored
-         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Common Files" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Visual Studio Solution\Debug\Command Line Edition.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Visual Studio Solution\Debug\Command Line Edition.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Visual Studio Solution\Debug\Command Line Edition.lib" /MACHINE:X86 Debug\ChoiceToBlueZone.obj
          Debug\ChoiceToGreenZone.obj
-         "Debug\Command Line Edition.obj"
-         Debug\CommandLineView.obj
          Debug\ModifyableChoiceList.obj
          Debug\RedZone.obj
+         "Debug\Command Line Edition.obj"
+         Debug\CommandLineView.obj
          Debug\stdafx.obj
          Command Line Edition.vcxproj -> C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Visual Studio Solution\Debug\Command Line Edition.exe
      1>Done Building Project "C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Visual Studio Solution\Command Line Edition\Command Line Edition.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.75
+Time Elapsed 00:00:00.76
