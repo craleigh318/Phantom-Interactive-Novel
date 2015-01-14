@@ -12,10 +12,10 @@ std::weak_ptr<IPage> ModifyableChoiceList::GetChoice(int index)
 
 int ModifyableChoiceList::GetSize()
 {
-	return choices.size();
+	return (int)(choices.size());
 }
 
-std::vector<std::shared_ptr<IPage>>& const ModifyableChoiceList::GetChoicesVector()
+std::vector<std::shared_ptr<IPage>>& ModifyableChoiceList::GetChoicesVector()
 {
 	return choices;
 }
