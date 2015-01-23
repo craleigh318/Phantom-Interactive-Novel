@@ -11,7 +11,9 @@
 #include "IChoiceList.h"
 #include "RedZone.h"
 
-StoryViewIOS::StoryViewIOS()
+StoryViewIOS::StoryViewIOS() :
+currentChoiceList(),
+currentPage()
 {
     uiView = InitializeUIView();
     ShowPage(std::make_shared<RedZone>());
@@ -19,14 +21,19 @@ StoryViewIOS::StoryViewIOS()
 
 void StoryViewIOS::ShowPage(std::shared_ptr<IPage> showingPage)
 {
-    std::string cppText = showingPage->GetText();
-    NSString* objcText = [NSString stringWithUTF8String:cppText.c_str()];
-    [uiTextView setText:objcText];
+    currentChoiceList = nullptr;
+    currentPage = showingPage;
+    SetTextViewText(currentPage->GetText());
+    SetChoiceSelectorEnabled(false);
 }
 
 void StoryViewIOS::ShowChoiceList(std::shared_ptr<IChoiceList> showingChoiceList)
 {
-    ShowPage(showingChoiceList->GetChoice(0).lock());
+    currentChoiceList = showingChoiceList;
+    currentPage = currentChoiceList->GetChoice(0).lock();
+    SetTextViewText(currentPage->GetText());
+    SetChoiceSelectorEnabled(true);
+
 }
 
 UIView* StoryViewIOS::GetUIView()
@@ -66,7 +73,7 @@ UIView* StoryViewIOS::GetButtonRow(CGFloat parentWidth)
 {
     CGRect viewRectangle = CGRectMake(0.0, 0.0, parentWidth, (parentWidth / 3.0));
     UIView* buttonRowView = [[UIView alloc]initWithFrame:viewRectangle];
-    UIButton* buttonPrevious = [UIButton buttonWithType:UIButtonTypeSystem];
+    buttonPrevious = [UIButton buttonWithType:UIButtonTypeSystem];
     [buttonPrevious setTitle:@"<" forState:(UIControlStateNormal)];
     viewRectangle.size.width /= 3.0;
     [buttonPrevious setFrame:viewRectangle];
@@ -75,11 +82,37 @@ UIView* StoryViewIOS::GetButtonRow(CGFloat parentWidth)
     [buttonContinue setTitle:@"OK" forState:(UIControlStateNormal)];
     viewRectangle.origin.x += viewRectangle.size.width;
     [buttonContinue setFrame:viewRectangle];
+    //[buttonContinue addTarget:nil action:OnButtonContinue() forControlEvents:(UIControlEvents)UIControlEventTouchUpInside];
     [buttonRowView addSubview:buttonContinue];
-    UIButton* buttonNext = [UIButton buttonWithType:UIButtonTypeSystem];
+    buttonNext = [UIButton buttonWithType:UIButtonTypeSystem];
     [buttonNext setTitle:@">" forState:(UIControlStateNormal)];
     viewRectangle.origin.x += viewRectangle.size.width;
     [buttonNext setFrame:viewRectangle];
     [buttonRowView addSubview:buttonNext];
     return buttonRowView;
+}
+
+void StoryViewIOS::SetTextViewText(std::string newText)
+{
+    NSString* objcText = [NSString stringWithUTF8String:newText.c_str()];
+    [uiTextView setText:objcText];
+}
+
+void StoryViewIOS::SetChoiceSelectorEnabled(bool enabled)
+{
+    if (enabled)
+    {
+        [buttonPrevious setEnabled:YES];
+        [buttonNext setEnabled:YES];
+    }
+    else
+    {
+        [buttonPrevious setEnabled:NO];
+        [buttonNext setEnabled:NO];
+    }
+}
+
+void StoryViewIOS::OnButtonContinue()
+{
+    currentPage->Continue(this);
 }

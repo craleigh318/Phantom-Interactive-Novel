@@ -12,6 +12,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+/*
+ An IStoryView for iOS devices.
+ */
 class StoryViewIOS : public IStoryView
 {
 public:
@@ -26,10 +29,23 @@ public:
      */
     UIView* GetUIView();
     
+    /*
+     Method to call when the continue button is pressed.
+     */
+    void OnButtonContinue();
+    
 private:
+    std::shared_ptr<IChoiceList> currentChoiceList;
+    
+    std::shared_ptr<IPage> currentPage;
+    
     UIView* uiView;
     
     UITextView* uiTextView;
+    
+    UIButton* buttonPrevious;
+    
+    UIButton* buttonNext;
     
     /*
      Initializes uiView.
@@ -45,4 +61,14 @@ private:
      Returns a button row for navigating a choice list.
      */
     UIView* GetButtonRow(CGFloat parentWidth);
+    
+    /*
+     Sets the text of the UI's dialogue box.
+     */
+    void SetTextViewText(std::string newText);
+    
+    /*
+     If set to true, enabled the appropriate buttons for user choice selection.
+     */
+    void SetChoiceSelectorEnabled(bool enabled);
 };

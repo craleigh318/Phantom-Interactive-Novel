@@ -7,13 +7,13 @@
 //
 
 #import "GameView.h"
-#include "StoryViewIOS.h"
+#include "StoryViewIOSObjC.h"
 
 @implementation GameView
 
-+ (UIView*)getGameView{
-    StoryViewIOS storyView;
-    return storyView.GetUIView();
++ (UIView*)getGameView
+{
+    return [[StoryViewIOSObjC alloc] init];
 }
 
 @end

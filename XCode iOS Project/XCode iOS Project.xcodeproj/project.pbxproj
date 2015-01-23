@@ -20,6 +20,8 @@
 		A40B20741A65FFEB005E3878 /* ModifyableChoiceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A40B206D1A65FFEB005E3878 /* ModifyableChoiceList.cpp */; };
 		A40B20751A65FFEB005E3878 /* RedZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A40B206F1A65FFEB005E3878 /* RedZone.cpp */; };
 		A40B20781A66211D005E3878 /* GameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A40B20771A66211D005E3878 /* GameView.mm */; };
+		A41D03F91A6F8B480076A74E /* StoryViewIOSObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = A41D03F81A6F8B480076A74E /* StoryViewIOSObjC.mm */; };
+		A41D03FC1A6F942D0076A74E /* StoryViewIOSCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = A41D03FB1A6F942D0076A74E /* StoryViewIOSCPP.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,11 @@
 		A40B20711A65FFEB005E3878 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
 		A40B20761A661E9D005E3878 /* GameView.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = GameView.h; sourceTree = "<group>"; };
 		A40B20771A66211D005E3878 /* GameView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameView.mm; sourceTree = "<group>"; };
+		A41D03F61A6F85C40076A74E /* PStoryViewObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryViewObjC.h; sourceTree = "<group>"; };
+		A41D03F71A6F899C0076A74E /* StoryViewIOSObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewIOSObjC.h; sourceTree = "<group>"; };
+		A41D03F81A6F8B480076A74E /* StoryViewIOSObjC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewIOSObjC.mm; sourceTree = "<group>"; };
+		A41D03FA1A6F93700076A74E /* StoryViewIOSCPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewIOSCPP.h; sourceTree = "<group>"; };
+		A41D03FB1A6F942D0076A74E /* StoryViewIOSCPP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewIOSCPP.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +157,11 @@
 				A40B20601A65EA90005E3878 /* StoryViewIOS.mm */,
 				A40B20761A661E9D005E3878 /* GameView.h */,
 				A40B20771A66211D005E3878 /* GameView.mm */,
+				A41D03F61A6F85C40076A74E /* PStoryViewObjC.h */,
+				A41D03F71A6F899C0076A74E /* StoryViewIOSObjC.h */,
+				A41D03F81A6F8B480076A74E /* StoryViewIOSObjC.mm */,
+				A41D03FA1A6F93700076A74E /* StoryViewIOSCPP.h */,
+				A41D03FB1A6F942D0076A74E /* StoryViewIOSCPP.mm */,
 			);
 			name = "Wrappers for C++";
 			sourceTree = "<group>";
@@ -274,10 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41D03F91A6F8B480076A74E /* StoryViewIOSObjC.mm in Sources */,
 				A40B20611A65EA90005E3878 /* StoryViewIOS.mm in Sources */,
 				A40B20401A65E3C0005E3878 /* ViewController.m in Sources */,
 				A40B20741A65FFEB005E3878 /* ModifyableChoiceList.cpp in Sources */,
 				A40B20751A65FFEB005E3878 /* RedZone.cpp in Sources */,
+				A41D03FC1A6F942D0076A74E /* StoryViewIOSCPP.mm in Sources */,
 				A40B20721A65FFEB005E3878 /* ChoiceToBlueZone.cpp in Sources */,
 				A40B203D1A65E3C0005E3878 /* AppDelegate.m in Sources */,
 				A40B20781A66211D005E3878 /* GameView.mm in Sources */,
