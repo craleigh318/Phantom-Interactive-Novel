@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A490E2641A7B0A070099E3FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A490E2631A7B0A070099E3FE /* AppDelegate.m */; };
+		A490E2661A7B0A070099E3FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A490E2651A7B0A070099E3FE /* main.m */; };
+		A490E2681A7B0A070099E3FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A490E2671A7B0A070099E3FE /* Images.xcassets */; };
+		A490E26B1A7B0A070099E3FE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A490E2691A7B0A070099E3FE /* MainMenu.xib */; };
+		A490E2771A7B0A070099E3FE /* Phantom_of_the_HotelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A490E2761A7B0A070099E3FE /* Phantom_of_the_HotelTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A490E2711A7B0A070099E3FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A490E2551A7B0A060099E3FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A490E25C1A7B0A070099E3FE;
+			remoteInfo = "Phantom of the Hotel";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A490E25D1A7B0A070099E3FE /* Phantom of the Hotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phantom of the Hotel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A490E2611A7B0A070099E3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A490E2621A7B0A070099E3FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A490E2631A7B0A070099E3FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A490E2651A7B0A070099E3FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A490E2671A7B0A070099E3FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A490E26A1A7B0A070099E3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A490E2701A7B0A070099E3FE /* Phantom of the HotelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phantom of the HotelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A490E2751A7B0A070099E3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A490E2761A7B0A070099E3FE /* Phantom_of_the_HotelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Phantom_of_the_HotelTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A490E25A1A7B0A070099E3FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A490E26D1A7B0A070099E3FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A490E2541A7B0A060099E3FE = {
+			isa = PBXGroup;
+			children = (
+				A490E25F1A7B0A070099E3FE /* Phantom of the Hotel */,
+				A490E2731A7B0A070099E3FE /* Phantom of the HotelTests */,
+				A490E25E1A7B0A070099E3FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A490E25E1A7B0A070099E3FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A490E25D1A7B0A070099E3FE /* Phantom of the Hotel.app */,
+				A490E2701A7B0A070099E3FE /* Phantom of the HotelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A490E25F1A7B0A070099E3FE /* Phantom of the Hotel */ = {
+			isa = PBXGroup;
+			children = (
+				A490E2621A7B0A070099E3FE /* AppDelegate.h */,
+				A490E2631A7B0A070099E3FE /* AppDelegate.m */,
+				A490E2671A7B0A070099E3FE /* Images.xcassets */,
+				A490E2691A7B0A070099E3FE /* MainMenu.xib */,
+				A490E2601A7B0A070099E3FE /* Supporting Files */,
+			);
+			path = "Phantom of the Hotel";
+			sourceTree = "<group>";
+		};
+		A490E2601A7B0A070099E3FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A490E2611A7B0A070099E3FE /* Info.plist */,
+				A490E2651A7B0A070099E3FE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A490E2731A7B0A070099E3FE /* Phantom of the HotelTests */ = {
+			isa = PBXGroup;
+			children = (
+				A490E2761A7B0A070099E3FE /* Phantom_of_the_HotelTests.m */,
+				A490E2741A7B0A070099E3FE /* Supporting Files */,
+			);
+			path = "Phantom of the HotelTests";
+			sourceTree = "<group>";
+		};
+		A490E2741A7B0A070099E3FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A490E2751A7B0A070099E3FE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A490E25C1A7B0A070099E3FE /* Phantom of the Hotel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A490E27A1A7B0A070099E3FE /* Build configuration list for PBXNativeTarget "Phantom of the Hotel" */;
+			buildPhases = (
+				A490E2591A7B0A070099E3FE /* Sources */,
+				A490E25A1A7B0A070099E3FE /* Frameworks */,
+				A490E25B1A7B0A070099E3FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Phantom of the Hotel";
+			productName = "Phantom of the Hotel";
+			productReference = A490E25D1A7B0A070099E3FE /* Phantom of the Hotel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A490E26F1A7B0A070099E3FE /* Phantom of the HotelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A490E27D1A7B0A070099E3FE /* Build configuration list for PBXNativeTarget "Phantom of the HotelTests" */;
+			buildPhases = (
+				A490E26C1A7B0A070099E3FE /* Sources */,
+				A490E26D1A7B0A070099E3FE /* Frameworks */,
+				A490E26E1A7B0A070099E3FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A490E2721A7B0A070099E3FE /* PBXTargetDependency */,
+			);
+			name = "Phantom of the HotelTests";
+			productName = "Phantom of the HotelTests";
+			productReference = A490E2701A7B0A070099E3FE /* Phantom of the HotelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A490E2551A7B0A060099E3FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Christopher Raleigh";
+				TargetAttributes = {
+					A490E25C1A7B0A070099E3FE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					A490E26F1A7B0A070099E3FE = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = A490E25C1A7B0A070099E3FE;
+					};
+				};
+			};
+			buildConfigurationList = A490E2581A7B0A060099E3FE /* Build configuration list for PBXProject "Phantom of the Hotel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A490E2541A7B0A060099E3FE;
+			productRefGroup = A490E25E1A7B0A070099E3FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A490E25C1A7B0A070099E3FE /* Phantom of the Hotel */,
+				A490E26F1A7B0A070099E3FE /* Phantom of the HotelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A490E25B1A7B0A070099E3FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A490E2681A7B0A070099E3FE /* Images.xcassets in Resources */,
+				A490E26B1A7B0A070099E3FE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A490E26E1A7B0A070099E3FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A490E2591A7B0A070099E3FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A490E2661A7B0A070099E3FE /* main.m in Sources */,
+				A490E2641A7B0A070099E3FE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A490E26C1A7B0A070099E3FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A490E2771A7B0A070099E3FE /* Phantom_of_the_HotelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A490E2721A7B0A070099E3FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A490E25C1A7B0A070099E3FE /* Phantom of the Hotel */;
+			targetProxy = A490E2711A7B0A070099E3FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A490E2691A7B0A070099E3FE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A490E26A1A7B0A070099E3FE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A490E2781A7B0A070099E3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A490E2791A7B0A070099E3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A490E27B1A7B0A070099E3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Phantom of the Hotel/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A490E27C1A7B0A070099E3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Phantom of the Hotel/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A490E27E1A7B0A070099E3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Phantom of the HotelTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phantom of the Hotel.app/Contents/MacOS/Phantom of the Hotel";
+			};
+			name = Debug;
+		};
+		A490E27F1A7B0A070099E3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Phantom of the HotelTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phantom of the Hotel.app/Contents/MacOS/Phantom of the Hotel";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A490E2581A7B0A060099E3FE /* Build configuration list for PBXProject "Phantom of the Hotel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A490E2781A7B0A070099E3FE /* Debug */,
+				A490E2791A7B0A070099E3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A490E27A1A7B0A070099E3FE /* Build configuration list for PBXNativeTarget "Phantom of the Hotel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A490E27B1A7B0A070099E3FE /* Debug */,
+				A490E27C1A7B0A070099E3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A490E27D1A7B0A070099E3FE /* Build configuration list for PBXNativeTarget "Phantom of the HotelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A490E27E1A7B0A070099E3FE /* Debug */,
+				A490E27F1A7B0A070099E3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A490E2551A7B0A060099E3FE /* Project object */;
+}

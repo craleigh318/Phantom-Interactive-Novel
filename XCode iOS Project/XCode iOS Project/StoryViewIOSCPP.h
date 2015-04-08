@@ -19,7 +19,7 @@ class IChoiceList;
 class StoryViewIOSCPP :
 public IStoryView
 {
-public:
+    public:
     /*
      Creates a StoryViewIOSObjC.
      
@@ -46,7 +46,7 @@ public:
      */
     void NextChoice();
     
-private:
+    private:
     id<PStoryViewObjC> owner;
     
     int currentChoiceIndex;

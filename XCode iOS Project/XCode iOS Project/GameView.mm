@@ -10,10 +10,10 @@
 #include "StoryViewIOSObjC.h"
 
 @implementation GameView
-
+    
 + (UIView*)getGameView
-{
-    return [[StoryViewIOSObjC alloc] init];
-}
-
-@end
+    {
+        return [[StoryViewIOSObjC alloc] init];
+    }
+    
+    @end

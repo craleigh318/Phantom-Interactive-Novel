@@ -15,7 +15,7 @@ int ModifyableChoiceList::GetSize()
 	return (int)(choices.size());
 }
 
-std::vector<std::shared_ptr<IPage>>& ModifyableChoiceList::GetChoicesVector()
+std::vector<std::shared_ptr<IPage>> & ModifyableChoiceList::GetChoicesVector()
 {
 	return choices;
 }

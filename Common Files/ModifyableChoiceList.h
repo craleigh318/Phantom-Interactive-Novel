@@ -22,7 +22,7 @@ public:
 	/*
 	Returns the vector used to store the choices.
 	*/
-	std::vector<std::shared_ptr<IPage>>& GetChoicesVector();
+	std::vector<std::shared_ptr<IPage>> & GetChoicesVector();
 
 private:
 	std::vector<std::shared_ptr<IPage>> choices;

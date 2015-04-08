@@ -12,15 +12,15 @@
  Allows C++ to access StoryViewIOSObjC.
  */
 @protocol PStoryViewObjC
-
-/*
- Sets the text of the UI's dialogue box.
- */
+    
+    /*
+     Sets the text of the UI's dialogue box.
+     */
 - (void) setTextViewText : (NSString*) newText;
-
-/*
- If set to true, enables the appropriate buttons for user choice selection.
- */
+    
+    /*
+     If set to true, enables the appropriate buttons for user choice selection.
+     */
 - (void) setChoiceSelectorEnabled : (BOOL) enabled;
-
-@end
+    
+    @end
