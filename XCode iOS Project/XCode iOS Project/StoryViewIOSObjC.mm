@@ -7,7 +7,6 @@
 //
 
 #import "StoryViewIOSObjC.h"
-#include "StoryViewIOSCPP.h"
 
 @implementation StoryViewIOSObjC
 {
@@ -56,6 +55,7 @@
 - (void) initializeUIView
 {
     CGRect viewRectangle = [[UIScreen mainScreen] bounds];
+    [self setFrame:viewRectangle];
     CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
     viewRectangle.origin.y += statusBarHeight;
     viewRectangle.size.height -= statusBarHeight;

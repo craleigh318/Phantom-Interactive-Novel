@@ -10,6 +10,7 @@
 #import <QuartzCore/CALayer.h>
 #import <UIKit/UIKit.h>
 #import "PStoryViewObjC.h"
+#include "StoryViewIOSCPP.h"
 
 /*
  A story view for iOS devices.

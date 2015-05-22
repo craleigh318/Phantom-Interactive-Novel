@@ -20,9 +20,9 @@
 		A40B20741A65FFEB005E3878 /* ModifyableChoiceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A40B206D1A65FFEB005E3878 /* ModifyableChoiceList.cpp */; };
 		A40B20751A65FFEB005E3878 /* RedZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A40B206F1A65FFEB005E3878 /* RedZone.cpp */; };
 		A40B20781A66211D005E3878 /* GameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A40B20771A66211D005E3878 /* GameView.mm */; };
-		A40B918A1B0EBAEE003396B9 /* Journalist-in-Shower.png in Resources */ = {isa = PBXBuildFile; fileRef = A40B91891B0EBAEE003396B9 /* Journalist-in-Shower.png */; };
 		A41D03F91A6F8B480076A74E /* StoryViewIOSObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = A41D03F81A6F8B480076A74E /* StoryViewIOSObjC.mm */; };
 		A41D03FC1A6F942D0076A74E /* StoryViewIOSCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = A41D03FB1A6F942D0076A74E /* StoryViewIOSCPP.mm */; };
+		A4F61E571B0F0B53007E7BD6 /* Journalist-in-Shower.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F61E561B0F0B53007E7BD6 /* Journalist-in-Shower.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,12 +65,12 @@
 		A40B20711A65FFEB005E3878 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
 		A40B20761A661E9D005E3878 /* GameView.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = GameView.h; sourceTree = "<group>"; };
 		A40B20771A66211D005E3878 /* GameView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameView.mm; sourceTree = "<group>"; };
-		A40B91891B0EBAEE003396B9 /* Journalist-in-Shower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Journalist-in-Shower.png"; sourceTree = "<group>"; };
 		A41D03F61A6F85C40076A74E /* PStoryViewObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryViewObjC.h; sourceTree = "<group>"; };
 		A41D03F71A6F899C0076A74E /* StoryViewIOSObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewIOSObjC.h; sourceTree = "<group>"; };
 		A41D03F81A6F8B480076A74E /* StoryViewIOSObjC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewIOSObjC.mm; sourceTree = "<group>"; };
 		A41D03FA1A6F93700076A74E /* StoryViewIOSCPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewIOSCPP.h; sourceTree = "<group>"; };
 		A41D03FB1A6F942D0076A74E /* StoryViewIOSCPP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewIOSCPP.mm; sourceTree = "<group>"; };
+		A4F61E561B0F0B53007E7BD6 /* Journalist-in-Shower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Journalist-in-Shower.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +171,7 @@
 		A40B20651A65FFEB005E3878 /* Common Files */ = {
 			isa = PBXGroup;
 			children = (
-				A40B91881B0EBAEE003396B9 /* Images */,
+				A4F61E541B0F0B53007E7BD6 /* Images */,
 				A40B20661A65FFEB005E3878 /* ChoiceToBlueZone.cpp */,
 				A40B20671A65FFEB005E3878 /* ChoiceToBlueZone.h */,
 				A40B20681A65FFEB005E3878 /* ChoiceToGreenZone.cpp */,
@@ -189,12 +189,20 @@
 			path = "../../Common Files";
 			sourceTree = "<group>";
 		};
-		A40B91881B0EBAEE003396B9 /* Images */ = {
+		A4F61E541B0F0B53007E7BD6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				A40B91891B0EBAEE003396B9 /* Journalist-in-Shower.png */,
+				A4F61E551B0F0B53007E7BD6 /* Backgrounds */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		A4F61E551B0F0B53007E7BD6 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				A4F61E561B0F0B53007E7BD6 /* Journalist-in-Shower.png */,
+			);
+			path = Backgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +288,7 @@
 				A40B20431A65E3C0005E3878 /* Main.storyboard in Resources */,
 				A40B20481A65E3C0005E3878 /* LaunchScreen.xib in Resources */,
 				A40B20451A65E3C0005E3878 /* Images.xcassets in Resources */,
-				A40B918A1B0EBAEE003396B9 /* Journalist-in-Shower.png in Resources */,
+				A4F61E571B0F0B53007E7BD6 /* Journalist-in-Shower.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
