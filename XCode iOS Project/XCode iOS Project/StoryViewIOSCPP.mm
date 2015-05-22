@@ -44,7 +44,15 @@ void StoryViewIOSCPP::Continue()
 void StoryViewIOSCPP::ShowChoice(int index)
 {
     currentPage = currentChoiceList->GetChoice(currentChoiceIndex).lock();
-    [owner setTextViewText:[NSString stringWithUTF8String:currentPage->GetText().c_str()]];
+    NSString * textViewText = @"Choice ";
+    NSString * choiceNumber = [NSString stringWithFormat:@"%d", (index + 1)];
+    textViewText = [textViewText stringByAppendingString:choiceNumber];
+    textViewText = [textViewText stringByAppendingString:@" of "];
+    NSString * numChoices = [NSString stringWithFormat:@"%d", currentChoiceList->GetSize()];
+    textViewText = [textViewText stringByAppendingString:numChoices];
+    textViewText = [textViewText stringByAppendingString:@":\n\n"];
+    textViewText = [textViewText stringByAppendingString:[NSString stringWithUTF8String:currentPage->GetText().c_str()]];
+    [owner setTextViewText:textViewText];
 }
 
 void StoryViewIOSCPP::PreviousChoice()

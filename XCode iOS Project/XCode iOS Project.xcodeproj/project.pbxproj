@@ -20,6 +20,7 @@
 		A40B20741A65FFEB005E3878 /* ModifyableChoiceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A40B206D1A65FFEB005E3878 /* ModifyableChoiceList.cpp */; };
 		A40B20751A65FFEB005E3878 /* RedZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A40B206F1A65FFEB005E3878 /* RedZone.cpp */; };
 		A40B20781A66211D005E3878 /* GameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A40B20771A66211D005E3878 /* GameView.mm */; };
+		A40B918A1B0EBAEE003396B9 /* Journalist-in-Shower.png in Resources */ = {isa = PBXBuildFile; fileRef = A40B91891B0EBAEE003396B9 /* Journalist-in-Shower.png */; };
 		A41D03F91A6F8B480076A74E /* StoryViewIOSObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = A41D03F81A6F8B480076A74E /* StoryViewIOSObjC.mm */; };
 		A41D03FC1A6F942D0076A74E /* StoryViewIOSCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = A41D03FB1A6F942D0076A74E /* StoryViewIOSCPP.mm */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		A40B20711A65FFEB005E3878 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
 		A40B20761A661E9D005E3878 /* GameView.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = GameView.h; sourceTree = "<group>"; };
 		A40B20771A66211D005E3878 /* GameView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameView.mm; sourceTree = "<group>"; };
+		A40B91891B0EBAEE003396B9 /* Journalist-in-Shower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Journalist-in-Shower.png"; sourceTree = "<group>"; };
 		A41D03F61A6F85C40076A74E /* PStoryViewObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryViewObjC.h; sourceTree = "<group>"; };
 		A41D03F71A6F899C0076A74E /* StoryViewIOSObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewIOSObjC.h; sourceTree = "<group>"; };
 		A41D03F81A6F8B480076A74E /* StoryViewIOSObjC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewIOSObjC.mm; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		A40B20651A65FFEB005E3878 /* Common Files */ = {
 			isa = PBXGroup;
 			children = (
+				A40B91881B0EBAEE003396B9 /* Images */,
 				A40B20661A65FFEB005E3878 /* ChoiceToBlueZone.cpp */,
 				A40B20671A65FFEB005E3878 /* ChoiceToBlueZone.h */,
 				A40B20681A65FFEB005E3878 /* ChoiceToGreenZone.cpp */,
@@ -184,6 +187,14 @@
 			);
 			name = "Common Files";
 			path = "../../Common Files";
+			sourceTree = "<group>";
+		};
+		A40B91881B0EBAEE003396B9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A40B91891B0EBAEE003396B9 /* Journalist-in-Shower.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +280,7 @@
 				A40B20431A65E3C0005E3878 /* Main.storyboard in Resources */,
 				A40B20481A65E3C0005E3878 /* LaunchScreen.xib in Resources */,
 				A40B20451A65E3C0005E3878 /* Images.xcassets in Resources */,
+				A40B918A1B0EBAEE003396B9 /* Journalist-in-Shower.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -408,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

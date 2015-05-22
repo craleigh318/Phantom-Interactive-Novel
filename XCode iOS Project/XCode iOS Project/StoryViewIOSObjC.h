@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <QuartzCore/CALayer.h>
 #import <UIKit/UIKit.h>
 #import "PStoryViewObjC.h"
 
@@ -33,7 +34,7 @@
     /*
      Initializes uiTextView
      */
-- (UITextView*) initializeUITextView : (CGRect) textViewRectangle;
+- (UITextView*) getUITextView : (CGRect) textViewRectangle;
     
     /*
      Sets the text of the UI's dialogue box.
