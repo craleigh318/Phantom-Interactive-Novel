@@ -18,9 +18,9 @@
     UIButton* buttonPause;
 }
 
-- (id) init
+- (id) initWithFrame : (CGRect) viewRect
 {
-    if (self = [super init])
+    if (self = [super initWithFrame:viewRect])
     {
         [self initializeUIView];
         cppGlue = new StoryViewIOSCPP(self);
@@ -54,18 +54,13 @@
  */
 - (void) initializeUIView
 {
-    CGRect viewRectangle = [[UIScreen mainScreen] bounds];
-    [self setFrame:viewRectangle];
-    CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
-    viewRectangle.origin.y += statusBarHeight;
-    viewRectangle.size.height -= statusBarHeight;
     const CGFloat defaultButtonHeight = 44.0;
     // Create scroll view.
-    CGRect scrollViewBounds = viewRectangle;
+    CGRect scrollViewBounds = self.frame;
     scrollViewBounds.size.height -= defaultButtonHeight;
     UIScrollView * myScrollView = [self getUIScrollView:scrollViewBounds];
     // Create button row.
-    CGRect buttonRowBounds = viewRectangle;
+    CGRect buttonRowBounds = self.frame;
     buttonRowBounds.origin.y = scrollViewBounds.size.height;
     buttonRowBounds.size.height = defaultButtonHeight;
     UIView * buttonRow = [self getButtonRow:buttonRowBounds];

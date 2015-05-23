@@ -1,9 +1,4 @@
 #include "RedZone.h"
-#include "IStoryView.h"
-#include "ModifyableChoiceList.h"
-#include "ChoiceToGreenZone.h"
-#include "ChoiceToBlueZone.h"
-
 
 RedZone::RedZone()
 {

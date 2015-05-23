@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4096D031B0FEADE0049CBFF /* Advertising.m in Sources */ = {isa = PBXBuildFile; fileRef = A4096D021B0FEADE0049CBFF /* Advertising.m */; };
 		A40B203A1A65E3C0005E3878 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A40B20391A65E3C0005E3878 /* main.m */; };
 		A40B203D1A65E3C0005E3878 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A40B203C1A65E3C0005E3878 /* AppDelegate.m */; };
 		A40B20401A65E3C0005E3878 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A40B203F1A65E3C0005E3878 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A4096D021B0FEADE0049CBFF /* Advertising.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Advertising.m; sourceTree = "<group>"; };
+		A4096D041B0FEAF70049CBFF /* Advertising.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Advertising.h; sourceTree = "<group>"; };
 		A40B20341A65E3C0005E3878 /* XCode iOS Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XCode iOS Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40B20381A65E3C0005E3878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A40B20391A65E3C0005E3878 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				A41D03F81A6F8B480076A74E /* StoryViewIOSObjC.mm */,
 				A41D03FA1A6F93700076A74E /* StoryViewIOSCPP.h */,
 				A41D03FB1A6F942D0076A74E /* StoryViewIOSCPP.mm */,
+				A4096D021B0FEADE0049CBFF /* Advertising.m */,
+				A4096D041B0FEAF70049CBFF /* Advertising.h */,
 			);
 			name = "Wrappers for C++";
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				A40B20611A65EA90005E3878 /* StoryViewIOS.mm in Sources */,
 				A40B20401A65E3C0005E3878 /* ViewController.m in Sources */,
 				A40B20741A65FFEB005E3878 /* ModifyableChoiceList.cpp in Sources */,
+				A4096D031B0FEADE0049CBFF /* Advertising.m in Sources */,
 				A40B20751A65FFEB005E3878 /* RedZone.cpp in Sources */,
 				A41D03FC1A6F942D0076A74E /* StoryViewIOSCPP.mm in Sources */,
 				A40B20721A65FFEB005E3878 /* ChoiceToBlueZone.cpp in Sources */,

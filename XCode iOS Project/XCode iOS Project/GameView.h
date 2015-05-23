@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "Advertising.h"
 
 /*
  A basic class used to load the UI.
