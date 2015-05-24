@@ -18,6 +18,6 @@
 /*
  Returns the game's user interface as a UIView.
  */
-+ (UIView*)getGameView;
++ (UIView *) getGameView : (UIViewController <ADBannerViewDelegate> *) controller;
 
 @end

@@ -10,10 +10,8 @@
 #include "StoryViewIOSObjC.h"
 
 @implementation GameView
-    
-static ADBannerView * adBanner;
 
-+ (UIView*)getGameView
++ (UIView *) getGameView : (UIViewController <ADBannerViewDelegate> *) controller
     {
         CGRect viewRectangle = [[UIScreen mainScreen] bounds];
         // Save space for status bar.
@@ -22,18 +20,18 @@ static ADBannerView * adBanner;
         viewRectangle.size.height -= statusBarHeight;
         UIView * gameView = [[UIView alloc] initWithFrame:viewRectangle];
         // Add advertisment, if applicable.
-        
         if ([Advertising shouldDisplayAdvertisement])
         {
-            adBanner = [Advertising getIAdBanner];
+            ADBannerView * adBanner = [Advertising getIAdBanner];
             CGFloat adHeight = (adBanner.frame.size.height / 2.0);
             viewRectangle.origin.y = adHeight;
             viewRectangle.size.height -= adHeight;
+            adBanner.delegate = controller;
+            adBanner.hidden = TRUE;
             [gameView addSubview:adBanner];
         }
         else
         {
-            adBanner = nil;
             viewRectangle.origin.y = 0.0;
         }
         // Initialize main view.
