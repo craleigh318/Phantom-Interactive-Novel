@@ -136,6 +136,7 @@
 - (UITextView*) getUITextView : (CGRect) textViewRectangle
 {
     UITextView* myTextView = [[UITextView alloc]initWithFrame:textViewRectangle];
+    myTextView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
     myTextView.editable = false;
     return myTextView;
 }
