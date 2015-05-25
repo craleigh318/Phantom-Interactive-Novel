@@ -12,7 +12,12 @@
  Allows C++ to access StoryViewIOSObjC.
  */
 @protocol PStoryViewObjC
-    
+
+/*
+ Sets the text of the UI's dialogue box.
+ */
+- (void) setImageViewImage : (UIImage*) newImage;
+
     /*
      Sets the text of the UI's dialogue box.
      */

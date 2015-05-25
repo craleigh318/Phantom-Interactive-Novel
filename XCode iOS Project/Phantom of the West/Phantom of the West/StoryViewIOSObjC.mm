@@ -11,6 +11,7 @@
 @implementation StoryViewIOSObjC
 {
     StoryViewIOSCPP* cppGlue;
+    UIImageView* uiImageView;
     UITextView* uiTextView;
     UIButton* buttonPrevious;
     UIButton* buttonContinue;
@@ -113,14 +114,14 @@
     CGFloat imageViewWidth = bounds.size.width;
     CGFloat imageViewHeight = imageViewWidth / imageAspectRatio;
     CGRect imageViewBounds = CGRectMake(0.0, 0.0, imageViewWidth, imageViewHeight);
-    UIImageView * imageView = [self getUIImageView:imageViewBounds];
+    uiImageView = [self getUIImageView:imageViewBounds];
     // Create text view.
     CGFloat textViewY = imageViewHeight;
     const CGFloat textBoxHeight = 100.0;
     CGRect textViewBounds = CGRectMake(0.0, textViewY, imageViewWidth, textBoxHeight);
     uiTextView = [self getUITextView:textViewBounds];
     // Add views.
-    [myScrollView addSubview:imageView];
+    [myScrollView addSubview:uiImageView];
     [myScrollView addSubview:uiTextView];
     return myScrollView;
 }
@@ -129,8 +130,6 @@
 {
     UIImageView* myImageView = [[UIImageView alloc]initWithFrame:bounds];
     [[myImageView layer] setMagnificationFilter:kCAFilterNearest];
-    UIImage * myImage = [UIImage imageNamed:@"Journalist-in-Shower.png"];
-    [myImageView setImage:myImage];
     return myImageView;
 }
 
@@ -139,6 +138,11 @@
     UITextView* myTextView = [[UITextView alloc]initWithFrame:textViewRectangle];
     myTextView.editable = false;
     return myTextView;
+}
+
+- (void) setImageViewImage : (UIImage*) newImage
+{
+    [uiImageView setImage:newImage];
 }
 
 - (void) setTextViewText : (NSString*) newText

@@ -19,32 +19,33 @@
 		A42266AB1B12ACF100D7F520 /* StoryViewIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266A21B12ACF100D7F520 /* StoryViewIOS.mm */; };
 		A42266AC1B12ACF100D7F520 /* StoryViewIOSCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266A41B12ACF100D7F520 /* StoryViewIOSCPP.mm */; };
 		A42266AD1B12ACF100D7F520 /* StoryViewIOSObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266A61B12ACF100D7F520 /* StoryViewIOSObjC.mm */; };
-		A42266D41B12ADAA00D7F520 /* ChoiceToBlueZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A42266AF1B12ADAA00D7F520 /* ChoiceToBlueZone.cpp */; };
-		A42266D51B12ADAA00D7F520 /* ChoiceToGreenZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A42266B11B12ADAA00D7F520 /* ChoiceToGreenZone.cpp */; };
-		A42266D61B12ADAA00D7F520 /* Journalist-in-Shower.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266B61B12ADAA00D7F520 /* Journalist-in-Shower.png */; };
-		A42266D71B12ADAA00D7F520 /* Phantom-Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266B81B12ADAA00D7F520 /* Phantom-Icon-100.png */; };
-		A42266D81B12ADAA00D7F520 /* Phantom-Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266B91B12ADAA00D7F520 /* Phantom-Icon-114.png */; };
-		A42266D91B12ADAA00D7F520 /* Phantom-Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266BA1B12ADAA00D7F520 /* Phantom-Icon-120.png */; };
-		A42266DA1B12ADAA00D7F520 /* Phantom-Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266BB1B12ADAA00D7F520 /* Phantom-Icon-144.png */; };
-		A42266DB1B12ADAA00D7F520 /* Phantom-Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266BC1B12ADAA00D7F520 /* Phantom-Icon-152.png */; };
-		A42266DC1B12ADAA00D7F520 /* Phantom-Icon-172.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266BD1B12ADAA00D7F520 /* Phantom-Icon-172.png */; };
-		A42266DD1B12ADAA00D7F520 /* Phantom-Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266BE1B12ADAA00D7F520 /* Phantom-Icon-180.png */; };
-		A42266DE1B12ADAA00D7F520 /* Phantom-Icon-196.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266BF1B12ADAA00D7F520 /* Phantom-Icon-196.png */; };
-		A42266DF1B12ADAA00D7F520 /* Phantom-Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266C01B12ADAA00D7F520 /* Phantom-Icon-29.png */; };
-		A42266E01B12ADAA00D7F520 /* Phantom-Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266C11B12ADAA00D7F520 /* Phantom-Icon-40.png */; };
-		A42266E11B12ADAA00D7F520 /* Phantom-Icon-48.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266C21B12ADAA00D7F520 /* Phantom-Icon-48.png */; };
-		A42266E21B12ADAA00D7F520 /* Phantom-Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266C31B12ADAA00D7F520 /* Phantom-Icon-50.png */; };
-		A42266E31B12ADAA00D7F520 /* Phantom-Icon-55.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266C41B12ADAA00D7F520 /* Phantom-Icon-55.png */; };
-		A42266E41B12ADAA00D7F520 /* Phantom-Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266C51B12ADAA00D7F520 /* Phantom-Icon-57.png */; };
-		A42266E51B12ADAA00D7F520 /* Phantom-Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266C61B12ADAA00D7F520 /* Phantom-Icon-58.png */; };
-		A42266E61B12ADAA00D7F520 /* Phantom-Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266C71B12ADAA00D7F520 /* Phantom-Icon-72.png */; };
-		A42266E71B12ADAA00D7F520 /* Phantom-Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266C81B12ADAA00D7F520 /* Phantom-Icon-76.png */; };
-		A42266E81B12ADAA00D7F520 /* Phantom-Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266C91B12ADAA00D7F520 /* Phantom-Icon-80.png */; };
-		A42266E91B12ADAA00D7F520 /* Phantom-Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266CA1B12ADAA00D7F520 /* Phantom-Icon-87.png */; };
-		A42266EA1B12ADAA00D7F520 /* Phantom-Icon-88.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266CB1B12ADAA00D7F520 /* Phantom-Icon-88.png */; };
-		A42266EB1B12ADAA00D7F520 /* Phantom-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266CC1B12ADAA00D7F520 /* Phantom-Icon.png */; };
-		A42266EC1B12ADAA00D7F520 /* ModifyableChoiceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A42266CF1B12ADAA00D7F520 /* ModifyableChoiceList.cpp */; };
-		A42266ED1B12ADAA00D7F520 /* RedZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A42266D11B12ADAA00D7F520 /* RedZone.cpp */; };
+		A42267181B12BA7100D7F520 /* ModifyableChoiceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A42266F51B12BA7100D7F520 /* ModifyableChoiceList.cpp */; };
+		A42267191B12BA7100D7F520 /* Journalist-in-Shower.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266F91B12BA7100D7F520 /* Journalist-in-Shower.png */; };
+		A422671A1B12BA7100D7F520 /* Phantom-Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266FB1B12BA7100D7F520 /* Phantom-Icon-100.png */; };
+		A422671B1B12BA7100D7F520 /* Phantom-Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266FC1B12BA7100D7F520 /* Phantom-Icon-114.png */; };
+		A422671C1B12BA7100D7F520 /* Phantom-Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266FD1B12BA7100D7F520 /* Phantom-Icon-120.png */; };
+		A422671D1B12BA7100D7F520 /* Phantom-Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266FE1B12BA7100D7F520 /* Phantom-Icon-144.png */; };
+		A422671E1B12BA7100D7F520 /* Phantom-Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = A42266FF1B12BA7100D7F520 /* Phantom-Icon-152.png */; };
+		A422671F1B12BA7100D7F520 /* Phantom-Icon-172.png in Resources */ = {isa = PBXBuildFile; fileRef = A42267001B12BA7100D7F520 /* Phantom-Icon-172.png */; };
+		A42267201B12BA7100D7F520 /* Phantom-Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = A42267011B12BA7100D7F520 /* Phantom-Icon-180.png */; };
+		A42267211B12BA7100D7F520 /* Phantom-Icon-196.png in Resources */ = {isa = PBXBuildFile; fileRef = A42267021B12BA7100D7F520 /* Phantom-Icon-196.png */; };
+		A42267221B12BA7100D7F520 /* Phantom-Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = A42267031B12BA7100D7F520 /* Phantom-Icon-29.png */; };
+		A42267231B12BA7100D7F520 /* Phantom-Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = A42267041B12BA7100D7F520 /* Phantom-Icon-40.png */; };
+		A42267241B12BA7100D7F520 /* Phantom-Icon-48.png in Resources */ = {isa = PBXBuildFile; fileRef = A42267051B12BA7100D7F520 /* Phantom-Icon-48.png */; };
+		A42267251B12BA7100D7F520 /* Phantom-Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = A42267061B12BA7100D7F520 /* Phantom-Icon-50.png */; };
+		A42267261B12BA7100D7F520 /* Phantom-Icon-55.png in Resources */ = {isa = PBXBuildFile; fileRef = A42267071B12BA7100D7F520 /* Phantom-Icon-55.png */; };
+		A42267271B12BA7100D7F520 /* Phantom-Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = A42267081B12BA7100D7F520 /* Phantom-Icon-57.png */; };
+		A42267281B12BA7100D7F520 /* Phantom-Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = A42267091B12BA7100D7F520 /* Phantom-Icon-58.png */; };
+		A42267291B12BA7100D7F520 /* Phantom-Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = A422670A1B12BA7100D7F520 /* Phantom-Icon-72.png */; };
+		A422672A1B12BA7100D7F520 /* Phantom-Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = A422670B1B12BA7100D7F520 /* Phantom-Icon-76.png */; };
+		A422672B1B12BA7100D7F520 /* Phantom-Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = A422670C1B12BA7100D7F520 /* Phantom-Icon-80.png */; };
+		A422672C1B12BA7100D7F520 /* Phantom-Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = A422670D1B12BA7100D7F520 /* Phantom-Icon-87.png */; };
+		A422672D1B12BA7100D7F520 /* Phantom-Icon-88.png in Resources */ = {isa = PBXBuildFile; fileRef = A422670E1B12BA7100D7F520 /* Phantom-Icon-88.png */; };
+		A422672E1B12BA7100D7F520 /* Phantom-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A422670F1B12BA7100D7F520 /* Phantom-Icon.png */; };
+		A422672F1B12BA7100D7F520 /* ChoiceToBlueZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A42267111B12BA7100D7F520 /* ChoiceToBlueZone.cpp */; };
+		A42267301B12BA7100D7F520 /* ChoiceToGreenZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A42267131B12BA7100D7F520 /* ChoiceToGreenZone.cpp */; };
+		A42267311B12BA7100D7F520 /* RedZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A42267151B12BA7100D7F520 /* RedZone.cpp */; };
+		A42267341B12BF5E00D7F520 /* Page.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A42267321B12BF5E00D7F520 /* Page.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,40 +83,42 @@
 		A42266A41B12ACF100D7F520 /* StoryViewIOSCPP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewIOSCPP.mm; sourceTree = "<group>"; };
 		A42266A51B12ACF100D7F520 /* StoryViewIOSObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewIOSObjC.h; sourceTree = "<group>"; };
 		A42266A61B12ACF100D7F520 /* StoryViewIOSObjC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewIOSObjC.mm; sourceTree = "<group>"; };
-		A42266AF1B12ADAA00D7F520 /* ChoiceToBlueZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChoiceToBlueZone.cpp; sourceTree = "<group>"; };
-		A42266B01B12ADAA00D7F520 /* ChoiceToBlueZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceToBlueZone.h; sourceTree = "<group>"; };
-		A42266B11B12ADAA00D7F520 /* ChoiceToGreenZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChoiceToGreenZone.cpp; sourceTree = "<group>"; };
-		A42266B21B12ADAA00D7F520 /* ChoiceToGreenZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceToGreenZone.h; sourceTree = "<group>"; };
-		A42266B31B12ADAA00D7F520 /* IChoiceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IChoiceList.h; sourceTree = "<group>"; };
-		A42266B61B12ADAA00D7F520 /* Journalist-in-Shower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Journalist-in-Shower.png"; sourceTree = "<group>"; };
-		A42266B81B12ADAA00D7F520 /* Phantom-Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-100.png"; sourceTree = "<group>"; };
-		A42266B91B12ADAA00D7F520 /* Phantom-Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-114.png"; sourceTree = "<group>"; };
-		A42266BA1B12ADAA00D7F520 /* Phantom-Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-120.png"; sourceTree = "<group>"; };
-		A42266BB1B12ADAA00D7F520 /* Phantom-Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-144.png"; sourceTree = "<group>"; };
-		A42266BC1B12ADAA00D7F520 /* Phantom-Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-152.png"; sourceTree = "<group>"; };
-		A42266BD1B12ADAA00D7F520 /* Phantom-Icon-172.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-172.png"; sourceTree = "<group>"; };
-		A42266BE1B12ADAA00D7F520 /* Phantom-Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-180.png"; sourceTree = "<group>"; };
-		A42266BF1B12ADAA00D7F520 /* Phantom-Icon-196.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-196.png"; sourceTree = "<group>"; };
-		A42266C01B12ADAA00D7F520 /* Phantom-Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-29.png"; sourceTree = "<group>"; };
-		A42266C11B12ADAA00D7F520 /* Phantom-Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-40.png"; sourceTree = "<group>"; };
-		A42266C21B12ADAA00D7F520 /* Phantom-Icon-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-48.png"; sourceTree = "<group>"; };
-		A42266C31B12ADAA00D7F520 /* Phantom-Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-50.png"; sourceTree = "<group>"; };
-		A42266C41B12ADAA00D7F520 /* Phantom-Icon-55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-55.png"; sourceTree = "<group>"; };
-		A42266C51B12ADAA00D7F520 /* Phantom-Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-57.png"; sourceTree = "<group>"; };
-		A42266C61B12ADAA00D7F520 /* Phantom-Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-58.png"; sourceTree = "<group>"; };
-		A42266C71B12ADAA00D7F520 /* Phantom-Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-72.png"; sourceTree = "<group>"; };
-		A42266C81B12ADAA00D7F520 /* Phantom-Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-76.png"; sourceTree = "<group>"; };
-		A42266C91B12ADAA00D7F520 /* Phantom-Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-80.png"; sourceTree = "<group>"; };
-		A42266CA1B12ADAA00D7F520 /* Phantom-Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-87.png"; sourceTree = "<group>"; };
-		A42266CB1B12ADAA00D7F520 /* Phantom-Icon-88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-88.png"; sourceTree = "<group>"; };
-		A42266CC1B12ADAA00D7F520 /* Phantom-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon.png"; sourceTree = "<group>"; };
-		A42266CD1B12ADAA00D7F520 /* IPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPage.h; sourceTree = "<group>"; };
-		A42266CE1B12ADAA00D7F520 /* IStoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IStoryView.h; sourceTree = "<group>"; };
-		A42266CF1B12ADAA00D7F520 /* ModifyableChoiceList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModifyableChoiceList.cpp; sourceTree = "<group>"; };
-		A42266D01B12ADAA00D7F520 /* ModifyableChoiceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyableChoiceList.h; sourceTree = "<group>"; };
-		A42266D11B12ADAA00D7F520 /* RedZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RedZone.cpp; sourceTree = "<group>"; };
-		A42266D21B12ADAA00D7F520 /* RedZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedZone.h; sourceTree = "<group>"; };
-		A42266D31B12ADAA00D7F520 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		A42266F21B12BA7100D7F520 /* IChoiceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IChoiceList.h; sourceTree = "<group>"; };
+		A42266F31B12BA7100D7F520 /* IPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPage.h; sourceTree = "<group>"; usesTabs = 0; };
+		A42266F41B12BA7100D7F520 /* IStoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IStoryView.h; sourceTree = "<group>"; };
+		A42266F51B12BA7100D7F520 /* ModifyableChoiceList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModifyableChoiceList.cpp; sourceTree = "<group>"; };
+		A42266F61B12BA7100D7F520 /* ModifyableChoiceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyableChoiceList.h; sourceTree = "<group>"; };
+		A42266F91B12BA7100D7F520 /* Journalist-in-Shower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Journalist-in-Shower.png"; sourceTree = "<group>"; };
+		A42266FB1B12BA7100D7F520 /* Phantom-Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-100.png"; sourceTree = "<group>"; };
+		A42266FC1B12BA7100D7F520 /* Phantom-Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-114.png"; sourceTree = "<group>"; };
+		A42266FD1B12BA7100D7F520 /* Phantom-Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-120.png"; sourceTree = "<group>"; };
+		A42266FE1B12BA7100D7F520 /* Phantom-Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-144.png"; sourceTree = "<group>"; };
+		A42266FF1B12BA7100D7F520 /* Phantom-Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-152.png"; sourceTree = "<group>"; };
+		A42267001B12BA7100D7F520 /* Phantom-Icon-172.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-172.png"; sourceTree = "<group>"; };
+		A42267011B12BA7100D7F520 /* Phantom-Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-180.png"; sourceTree = "<group>"; };
+		A42267021B12BA7100D7F520 /* Phantom-Icon-196.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-196.png"; sourceTree = "<group>"; };
+		A42267031B12BA7100D7F520 /* Phantom-Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-29.png"; sourceTree = "<group>"; };
+		A42267041B12BA7100D7F520 /* Phantom-Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-40.png"; sourceTree = "<group>"; };
+		A42267051B12BA7100D7F520 /* Phantom-Icon-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-48.png"; sourceTree = "<group>"; };
+		A42267061B12BA7100D7F520 /* Phantom-Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-50.png"; sourceTree = "<group>"; };
+		A42267071B12BA7100D7F520 /* Phantom-Icon-55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-55.png"; sourceTree = "<group>"; };
+		A42267081B12BA7100D7F520 /* Phantom-Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-57.png"; sourceTree = "<group>"; };
+		A42267091B12BA7100D7F520 /* Phantom-Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-58.png"; sourceTree = "<group>"; };
+		A422670A1B12BA7100D7F520 /* Phantom-Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-72.png"; sourceTree = "<group>"; };
+		A422670B1B12BA7100D7F520 /* Phantom-Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-76.png"; sourceTree = "<group>"; };
+		A422670C1B12BA7100D7F520 /* Phantom-Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-80.png"; sourceTree = "<group>"; };
+		A422670D1B12BA7100D7F520 /* Phantom-Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-87.png"; sourceTree = "<group>"; };
+		A422670E1B12BA7100D7F520 /* Phantom-Icon-88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-88.png"; sourceTree = "<group>"; };
+		A422670F1B12BA7100D7F520 /* Phantom-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon.png"; sourceTree = "<group>"; };
+		A42267111B12BA7100D7F520 /* ChoiceToBlueZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChoiceToBlueZone.cpp; sourceTree = "<group>"; };
+		A42267121B12BA7100D7F520 /* ChoiceToBlueZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceToBlueZone.h; sourceTree = "<group>"; };
+		A42267131B12BA7100D7F520 /* ChoiceToGreenZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChoiceToGreenZone.cpp; sourceTree = "<group>"; };
+		A42267141B12BA7100D7F520 /* ChoiceToGreenZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceToGreenZone.h; sourceTree = "<group>"; };
+		A42267151B12BA7100D7F520 /* RedZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RedZone.cpp; sourceTree = "<group>"; };
+		A42267161B12BA7100D7F520 /* RedZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedZone.h; sourceTree = "<group>"; };
+		A42267171B12BA7100D7F520 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		A42267321B12BF5E00D7F520 /* Page.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Page.cpp; sourceTree = "<group>"; };
+		A42267331B12BF5E00D7F520 /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = Page.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +160,7 @@
 		A42266701B12AA7A00D7F520 /* Phantom of the West */ = {
 			isa = PBXGroup;
 			children = (
-				A42266AE1B12ADAA00D7F520 /* Common Files */,
+				A42266F01B12BA7100D7F520 /* Common Files */,
 				A42266EF1B12AE3C00D7F520 /* In-App Purchasing */,
 				A42266EE1B12AE1100D7F520 /* Story View */,
 				A42266751B12AA7A00D7F520 /* AppDelegate.h */,
@@ -198,72 +201,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A42266AE1B12ADAA00D7F520 /* Common Files */ = {
-			isa = PBXGroup;
-			children = (
-				A42266AF1B12ADAA00D7F520 /* ChoiceToBlueZone.cpp */,
-				A42266B01B12ADAA00D7F520 /* ChoiceToBlueZone.h */,
-				A42266B11B12ADAA00D7F520 /* ChoiceToGreenZone.cpp */,
-				A42266B21B12ADAA00D7F520 /* ChoiceToGreenZone.h */,
-				A42266B31B12ADAA00D7F520 /* IChoiceList.h */,
-				A42266B41B12ADAA00D7F520 /* Images */,
-				A42266CD1B12ADAA00D7F520 /* IPage.h */,
-				A42266CE1B12ADAA00D7F520 /* IStoryView.h */,
-				A42266CF1B12ADAA00D7F520 /* ModifyableChoiceList.cpp */,
-				A42266D01B12ADAA00D7F520 /* ModifyableChoiceList.h */,
-				A42266D11B12ADAA00D7F520 /* RedZone.cpp */,
-				A42266D21B12ADAA00D7F520 /* RedZone.h */,
-				A42266D31B12ADAA00D7F520 /* stdafx.h */,
-			);
-			name = "Common Files";
-			path = "../../../Common Files";
-			sourceTree = "<group>";
-		};
-		A42266B41B12ADAA00D7F520 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				A42266B51B12ADAA00D7F520 /* Backgrounds */,
-				A42266B71B12ADAA00D7F520 /* Icons */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		A42266B51B12ADAA00D7F520 /* Backgrounds */ = {
-			isa = PBXGroup;
-			children = (
-				A42266B61B12ADAA00D7F520 /* Journalist-in-Shower.png */,
-			);
-			path = Backgrounds;
-			sourceTree = "<group>";
-		};
-		A42266B71B12ADAA00D7F520 /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				A42266B81B12ADAA00D7F520 /* Phantom-Icon-100.png */,
-				A42266B91B12ADAA00D7F520 /* Phantom-Icon-114.png */,
-				A42266BA1B12ADAA00D7F520 /* Phantom-Icon-120.png */,
-				A42266BB1B12ADAA00D7F520 /* Phantom-Icon-144.png */,
-				A42266BC1B12ADAA00D7F520 /* Phantom-Icon-152.png */,
-				A42266BD1B12ADAA00D7F520 /* Phantom-Icon-172.png */,
-				A42266BE1B12ADAA00D7F520 /* Phantom-Icon-180.png */,
-				A42266BF1B12ADAA00D7F520 /* Phantom-Icon-196.png */,
-				A42266C01B12ADAA00D7F520 /* Phantom-Icon-29.png */,
-				A42266C11B12ADAA00D7F520 /* Phantom-Icon-40.png */,
-				A42266C21B12ADAA00D7F520 /* Phantom-Icon-48.png */,
-				A42266C31B12ADAA00D7F520 /* Phantom-Icon-50.png */,
-				A42266C41B12ADAA00D7F520 /* Phantom-Icon-55.png */,
-				A42266C51B12ADAA00D7F520 /* Phantom-Icon-57.png */,
-				A42266C61B12ADAA00D7F520 /* Phantom-Icon-58.png */,
-				A42266C71B12ADAA00D7F520 /* Phantom-Icon-72.png */,
-				A42266C81B12ADAA00D7F520 /* Phantom-Icon-76.png */,
-				A42266C91B12ADAA00D7F520 /* Phantom-Icon-80.png */,
-				A42266CA1B12ADAA00D7F520 /* Phantom-Icon-87.png */,
-				A42266CB1B12ADAA00D7F520 /* Phantom-Icon-88.png */,
-				A42266CC1B12ADAA00D7F520 /* Phantom-Icon.png */,
-			);
-			path = Icons;
-			sourceTree = "<group>";
-		};
 		A42266EE1B12AE1100D7F520 /* Story View */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +224,90 @@
 				A42266981B12ACF100D7F520 /* Advertising.m */,
 			);
 			name = "In-App Purchasing";
+			sourceTree = "<group>";
+		};
+		A42266F01B12BA7100D7F520 /* Common Files */ = {
+			isa = PBXGroup;
+			children = (
+				A42266F11B12BA7100D7F520 /* Abstract Classes */,
+				A42266F71B12BA7100D7F520 /* Images */,
+				A42267101B12BA7100D7F520 /* Pages */,
+				A42267171B12BA7100D7F520 /* stdafx.h */,
+			);
+			name = "Common Files";
+			path = "../../../Common Files";
+			sourceTree = "<group>";
+		};
+		A42266F11B12BA7100D7F520 /* Abstract Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A42266F21B12BA7100D7F520 /* IChoiceList.h */,
+				A42266F31B12BA7100D7F520 /* IPage.h */,
+				A42266F41B12BA7100D7F520 /* IStoryView.h */,
+				A42266F51B12BA7100D7F520 /* ModifyableChoiceList.cpp */,
+				A42266F61B12BA7100D7F520 /* ModifyableChoiceList.h */,
+				A42267321B12BF5E00D7F520 /* Page.cpp */,
+				A42267331B12BF5E00D7F520 /* Page.h */,
+			);
+			path = "Abstract Classes";
+			sourceTree = "<group>";
+		};
+		A42266F71B12BA7100D7F520 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A42266F81B12BA7100D7F520 /* Backgrounds */,
+				A42266FA1B12BA7100D7F520 /* Icons */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A42266F81B12BA7100D7F520 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				A42266F91B12BA7100D7F520 /* Journalist-in-Shower.png */,
+			);
+			path = Backgrounds;
+			sourceTree = "<group>";
+		};
+		A42266FA1B12BA7100D7F520 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				A42266FB1B12BA7100D7F520 /* Phantom-Icon-100.png */,
+				A42266FC1B12BA7100D7F520 /* Phantom-Icon-114.png */,
+				A42266FD1B12BA7100D7F520 /* Phantom-Icon-120.png */,
+				A42266FE1B12BA7100D7F520 /* Phantom-Icon-144.png */,
+				A42266FF1B12BA7100D7F520 /* Phantom-Icon-152.png */,
+				A42267001B12BA7100D7F520 /* Phantom-Icon-172.png */,
+				A42267011B12BA7100D7F520 /* Phantom-Icon-180.png */,
+				A42267021B12BA7100D7F520 /* Phantom-Icon-196.png */,
+				A42267031B12BA7100D7F520 /* Phantom-Icon-29.png */,
+				A42267041B12BA7100D7F520 /* Phantom-Icon-40.png */,
+				A42267051B12BA7100D7F520 /* Phantom-Icon-48.png */,
+				A42267061B12BA7100D7F520 /* Phantom-Icon-50.png */,
+				A42267071B12BA7100D7F520 /* Phantom-Icon-55.png */,
+				A42267081B12BA7100D7F520 /* Phantom-Icon-57.png */,
+				A42267091B12BA7100D7F520 /* Phantom-Icon-58.png */,
+				A422670A1B12BA7100D7F520 /* Phantom-Icon-72.png */,
+				A422670B1B12BA7100D7F520 /* Phantom-Icon-76.png */,
+				A422670C1B12BA7100D7F520 /* Phantom-Icon-80.png */,
+				A422670D1B12BA7100D7F520 /* Phantom-Icon-87.png */,
+				A422670E1B12BA7100D7F520 /* Phantom-Icon-88.png */,
+				A422670F1B12BA7100D7F520 /* Phantom-Icon.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		A42267101B12BA7100D7F520 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				A42267111B12BA7100D7F520 /* ChoiceToBlueZone.cpp */,
+				A42267121B12BA7100D7F520 /* ChoiceToBlueZone.h */,
+				A42267131B12BA7100D7F520 /* ChoiceToGreenZone.cpp */,
+				A42267141B12BA7100D7F520 /* ChoiceToGreenZone.h */,
+				A42267151B12BA7100D7F520 /* RedZone.cpp */,
+				A42267161B12BA7100D7F520 /* RedZone.h */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,31 +390,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A42266D91B12ADAA00D7F520 /* Phantom-Icon-120.png in Resources */,
-				A42266E61B12ADAA00D7F520 /* Phantom-Icon-72.png in Resources */,
-				A42266E71B12ADAA00D7F520 /* Phantom-Icon-76.png in Resources */,
-				A42266DE1B12ADAA00D7F520 /* Phantom-Icon-196.png in Resources */,
-				A42266E01B12ADAA00D7F520 /* Phantom-Icon-40.png in Resources */,
-				A42266DB1B12ADAA00D7F520 /* Phantom-Icon-152.png in Resources */,
+				A422671C1B12BA7100D7F520 /* Phantom-Icon-120.png in Resources */,
+				A42267291B12BA7100D7F520 /* Phantom-Icon-72.png in Resources */,
+				A422672A1B12BA7100D7F520 /* Phantom-Icon-76.png in Resources */,
+				A42267211B12BA7100D7F520 /* Phantom-Icon-196.png in Resources */,
+				A42267231B12BA7100D7F520 /* Phantom-Icon-40.png in Resources */,
+				A422671E1B12BA7100D7F520 /* Phantom-Icon-152.png in Resources */,
 				A422667D1B12AA7A00D7F520 /* Main.storyboard in Resources */,
-				A42266E21B12ADAA00D7F520 /* Phantom-Icon-50.png in Resources */,
-				A42266EA1B12ADAA00D7F520 /* Phantom-Icon-88.png in Resources */,
-				A42266DA1B12ADAA00D7F520 /* Phantom-Icon-144.png in Resources */,
-				A42266DD1B12ADAA00D7F520 /* Phantom-Icon-180.png in Resources */,
-				A42266E41B12ADAA00D7F520 /* Phantom-Icon-57.png in Resources */,
-				A42266DF1B12ADAA00D7F520 /* Phantom-Icon-29.png in Resources */,
-				A42266D81B12ADAA00D7F520 /* Phantom-Icon-114.png in Resources */,
-				A42266E31B12ADAA00D7F520 /* Phantom-Icon-55.png in Resources */,
-				A42266E51B12ADAA00D7F520 /* Phantom-Icon-58.png in Resources */,
-				A42266EB1B12ADAA00D7F520 /* Phantom-Icon.png in Resources */,
+				A42267251B12BA7100D7F520 /* Phantom-Icon-50.png in Resources */,
+				A422672D1B12BA7100D7F520 /* Phantom-Icon-88.png in Resources */,
+				A422671D1B12BA7100D7F520 /* Phantom-Icon-144.png in Resources */,
+				A42267201B12BA7100D7F520 /* Phantom-Icon-180.png in Resources */,
+				A42267271B12BA7100D7F520 /* Phantom-Icon-57.png in Resources */,
+				A42267221B12BA7100D7F520 /* Phantom-Icon-29.png in Resources */,
+				A422671B1B12BA7100D7F520 /* Phantom-Icon-114.png in Resources */,
+				A42267261B12BA7100D7F520 /* Phantom-Icon-55.png in Resources */,
+				A42267281B12BA7100D7F520 /* Phantom-Icon-58.png in Resources */,
+				A422672E1B12BA7100D7F520 /* Phantom-Icon.png in Resources */,
 				A42266821B12AA7A00D7F520 /* LaunchScreen.xib in Resources */,
-				A42266D71B12ADAA00D7F520 /* Phantom-Icon-100.png in Resources */,
-				A42266E11B12ADAA00D7F520 /* Phantom-Icon-48.png in Resources */,
-				A42266DC1B12ADAA00D7F520 /* Phantom-Icon-172.png in Resources */,
-				A42266E91B12ADAA00D7F520 /* Phantom-Icon-87.png in Resources */,
+				A422671A1B12BA7100D7F520 /* Phantom-Icon-100.png in Resources */,
+				A42267241B12BA7100D7F520 /* Phantom-Icon-48.png in Resources */,
+				A422671F1B12BA7100D7F520 /* Phantom-Icon-172.png in Resources */,
+				A422672C1B12BA7100D7F520 /* Phantom-Icon-87.png in Resources */,
 				A422667F1B12AA7A00D7F520 /* Images.xcassets in Resources */,
-				A42266E81B12ADAA00D7F520 /* Phantom-Icon-80.png in Resources */,
-				A42266D61B12ADAA00D7F520 /* Journalist-in-Shower.png in Resources */,
+				A422672B1B12BA7100D7F520 /* Phantom-Icon-80.png in Resources */,
+				A42267191B12BA7100D7F520 /* Journalist-in-Shower.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,18 +432,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42267341B12BF5E00D7F520 /* Page.cpp in Sources */,
 				A42266AD1B12ACF100D7F520 /* StoryViewIOSObjC.mm in Sources */,
 				A42266AC1B12ACF100D7F520 /* StoryViewIOSCPP.mm in Sources */,
 				A42266AB1B12ACF100D7F520 /* StoryViewIOS.mm in Sources */,
-				A42266D51B12ADAA00D7F520 /* ChoiceToGreenZone.cpp in Sources */,
 				A42266AA1B12ACF100D7F520 /* GameView.mm in Sources */,
 				A42266A71B12ACF100D7F520 /* Advertising.m in Sources */,
-				A42266EC1B12ADAA00D7F520 /* ModifyableChoiceList.cpp in Sources */,
+				A42267181B12BA7100D7F520 /* ModifyableChoiceList.cpp in Sources */,
 				A422667A1B12AA7A00D7F520 /* ViewController.m in Sources */,
+				A42267301B12BA7100D7F520 /* ChoiceToGreenZone.cpp in Sources */,
+				A422672F1B12BA7100D7F520 /* ChoiceToBlueZone.cpp in Sources */,
 				A42266771B12AA7A00D7F520 /* AppDelegate.m in Sources */,
-				A42266D41B12ADAA00D7F520 /* ChoiceToBlueZone.cpp in Sources */,
 				A42266741B12AA7A00D7F520 /* main.m in Sources */,
-				A42266ED1B12ADAA00D7F520 /* RedZone.cpp in Sources */,
+				A42267311B12BA7100D7F520 /* RedZone.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

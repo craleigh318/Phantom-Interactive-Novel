@@ -6,9 +6,13 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+#import "PStoryViewObjC.h"
 #include "stdafx.h"
 #include "IStoryView.h"
-#import "PStoryViewObjC.h"
+#include "IChoiceList.h"
+#include "IPage.h"
+#include "RedZone.h"
 
 class IPage;
 class IChoiceList;
@@ -26,6 +30,11 @@ public IStoryView
      owner = the owner to which to delegate methods.
      */
     StoryViewIOSCPP(id<PStoryViewObjC> owner);
+    
+    /*
+     Updates image and text of the story view.
+     */
+    void UpdateImageAndText(std::shared_ptr<std::string> imageName, std::string text);
     
     void ShowPage(std::shared_ptr<IPage> showingPage);
     

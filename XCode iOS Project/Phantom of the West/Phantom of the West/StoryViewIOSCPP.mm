@@ -7,9 +7,6 @@
 //
 
 #include "StoryViewIOSCPP.h"
-#include "IChoiceList.h"
-#include "IPage.h"
-#include "RedZone.h"
 
 StoryViewIOSCPP::StoryViewIOSCPP(id<PStoryViewObjC> owner) :
 owner(owner),
@@ -20,11 +17,26 @@ currentPage(std::make_shared<RedZone>())
     ShowPage(currentPage);
 }
 
+void StoryViewIOSCPP::UpdateImageAndText(std::shared_ptr<std::string> imageName, std::string text)
+{
+    UIImage * newImage;
+    if (imageName)
+    {
+        newImage = [UIImage imageNamed:[NSString stringWithUTF8String:imageName->c_str()]];
+    }
+    else
+    {
+        newImage = Nil;
+    }
+    [owner setTextViewText:[NSString stringWithUTF8String:text.c_str()]];
+    [owner setImageViewImage:newImage];
+}
+
 void StoryViewIOSCPP::ShowPage(std::shared_ptr<IPage> showingPage)
 {
     currentChoiceList = nullptr;
     currentPage = showingPage;
-    [owner setTextViewText:[NSString stringWithUTF8String:showingPage->GetText().c_str()]];
+    UpdateImageAndText(currentPage->GetImageName(), currentPage->GetText());
     [owner setChoiceSelectorEnabled:NO];
 }
 
@@ -44,15 +56,15 @@ void StoryViewIOSCPP::Continue()
 void StoryViewIOSCPP::ShowChoice(int index)
 {
     currentPage = currentChoiceList->GetChoice(currentChoiceIndex).lock();
-    NSString * textViewText = @"Choice ";
-    NSString * choiceNumber = [NSString stringWithFormat:@"%d", (index + 1)];
-    textViewText = [textViewText stringByAppendingString:choiceNumber];
-    textViewText = [textViewText stringByAppendingString:@" of "];
-    NSString * numChoices = [NSString stringWithFormat:@"%d", currentChoiceList->GetSize()];
-    textViewText = [textViewText stringByAppendingString:numChoices];
-    textViewText = [textViewText stringByAppendingString:@":\n\n"];
-    textViewText = [textViewText stringByAppendingString:[NSString stringWithUTF8String:currentPage->GetText().c_str()]];
-    [owner setTextViewText:textViewText];
+    std::string textViewText = "Choice ";
+    std::string choiceNumber = std::to_string(index + 1);
+    textViewText += choiceNumber;
+    textViewText += " of ";
+    std::string numChoices = std::to_string(currentChoiceList->GetSize());
+    textViewText += numChoices;
+    textViewText += ":\n\n";
+    textViewText += currentPage->GetText();
+    UpdateImageAndText(currentPage->GetImageName(), textViewText);
 }
 
 void StoryViewIOSCPP::PreviousChoice()

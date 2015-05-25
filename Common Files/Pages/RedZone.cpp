@@ -4,6 +4,11 @@ RedZone::RedZone()
 {
 }
 
+std::shared_ptr<std::string> RedZone::GetImageName()
+{
+    std::shared_ptr<std::string> imageName = std::make_shared<std::string>("Journalist-in-Shower.png");
+    return imageName;
+}
 
 std::string RedZone::GetText()
 {

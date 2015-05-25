@@ -1,13 +1,13 @@
 #pragma once
 
 #include "stdafx.h"
-#include "IPage.h"
+#include "Page.h"
 
-class ChoiceToBlueZone :
-	public IPage
+class ChoiceToGreenZone :
+	public Page
 {
 public:
-	ChoiceToBlueZone();
+	ChoiceToGreenZone();
 	std::string GetText();
 	void Continue(IStoryView* view);
 };
