@@ -14,12 +14,12 @@ OfficerOnBed::OfficerOnBed()
 
 std::shared_ptr<std::string> OfficerOnBed::GetImageName()
 {
-    return std::make_shared<std::string>("Officer-On-Bed.png");
+    return std::make_shared<std::string>("Officer-on-Bed.png");
 }
 
 std::string OfficerOnBed::GetText()
 {
-    return "I need to rest and think about what I\'ll do.  I drive the officer\'s car to his home.";
+    return "This bedroom is all right.";
 }
 
 void OfficerOnBed::Continue(IStoryView* view)
