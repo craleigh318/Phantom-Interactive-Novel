@@ -16,7 +16,6 @@
 		A422668E1B12AA7A00D7F520 /* Phantom_of_the_WestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A422668D1B12AA7A00D7F520 /* Phantom_of_the_WestTests.m */; };
 		A42266A71B12ACF100D7F520 /* Advertising.m in Sources */ = {isa = PBXBuildFile; fileRef = A42266981B12ACF100D7F520 /* Advertising.m */; };
 		A42266AA1B12ACF100D7F520 /* GameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A422669F1B12ACF100D7F520 /* GameView.mm */; };
-		A42266AB1B12ACF100D7F520 /* StoryViewIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266A21B12ACF100D7F520 /* StoryViewIOS.mm */; };
 		A42266AC1B12ACF100D7F520 /* StoryViewIOSCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266A41B12ACF100D7F520 /* StoryViewIOSCPP.mm */; };
 		A42266AD1B12ACF100D7F520 /* StoryViewIOSObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266A61B12ACF100D7F520 /* StoryViewIOSObjC.mm */; };
 		A42267181B12BA7100D7F520 /* ModifyableChoiceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A42266F51B12BA7100D7F520 /* ModifyableChoiceList.cpp */; };
@@ -77,8 +76,6 @@
 		A422669E1B12ACF100D7F520 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
 		A422669F1B12ACF100D7F520 /* GameView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameView.mm; sourceTree = "<group>"; };
 		A42266A01B12ACF100D7F520 /* PStoryViewObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryViewObjC.h; sourceTree = "<group>"; };
-		A42266A11B12ACF100D7F520 /* StoryViewIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewIOS.h; sourceTree = "<group>"; };
-		A42266A21B12ACF100D7F520 /* StoryViewIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewIOS.mm; sourceTree = "<group>"; };
 		A42266A31B12ACF100D7F520 /* StoryViewIOSCPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewIOSCPP.h; sourceTree = "<group>"; };
 		A42266A41B12ACF100D7F520 /* StoryViewIOSCPP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewIOSCPP.mm; sourceTree = "<group>"; };
 		A42266A51B12ACF100D7F520 /* StoryViewIOSObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewIOSObjC.h; sourceTree = "<group>"; };
@@ -207,8 +204,6 @@
 				A422669E1B12ACF100D7F520 /* GameView.h */,
 				A422669F1B12ACF100D7F520 /* GameView.mm */,
 				A42266A01B12ACF100D7F520 /* PStoryViewObjC.h */,
-				A42266A11B12ACF100D7F520 /* StoryViewIOS.h */,
-				A42266A21B12ACF100D7F520 /* StoryViewIOS.mm */,
 				A42266A31B12ACF100D7F520 /* StoryViewIOSCPP.h */,
 				A42266A41B12ACF100D7F520 /* StoryViewIOSCPP.mm */,
 				A42266A51B12ACF100D7F520 /* StoryViewIOSObjC.h */,
@@ -359,6 +354,7 @@
 				TargetAttributes = {
 					A422666D1B12AA7A00D7F520 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = JWDL6K3VXC;
 					};
 					A42266861B12AA7A00D7F520 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -435,7 +431,6 @@
 				A42267341B12BF5E00D7F520 /* Page.cpp in Sources */,
 				A42266AD1B12ACF100D7F520 /* StoryViewIOSObjC.mm in Sources */,
 				A42266AC1B12ACF100D7F520 /* StoryViewIOSCPP.mm in Sources */,
-				A42266AB1B12ACF100D7F520 /* StoryViewIOS.mm in Sources */,
 				A42266AA1B12ACF100D7F520 /* GameView.mm in Sources */,
 				A42266A71B12ACF100D7F520 /* Advertising.m in Sources */,
 				A42267181B12BA7100D7F520 /* ModifyableChoiceList.cpp in Sources */,
@@ -572,9 +567,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Phantom of the West/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -582,9 +581,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Phantom of the West/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

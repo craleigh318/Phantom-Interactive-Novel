@@ -55,7 +55,7 @@
  */
 - (void) initializeUIView
 {
-    const CGFloat defaultButtonHeight = 44.0;
+    const CGFloat defaultButtonHeight = 50.0;
     // Create scroll view.
     CGRect scrollViewBounds = self.frame;
     scrollViewBounds.size.height -= defaultButtonHeight;
