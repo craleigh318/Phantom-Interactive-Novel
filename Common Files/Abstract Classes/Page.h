@@ -9,6 +9,7 @@
 #pragma once
 #include "stdafx.h"
 #include "IPage.h"
+#include "IStoryView.h"
 
 class Page :
 public IPage

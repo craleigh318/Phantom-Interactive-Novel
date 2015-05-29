@@ -12,7 +12,7 @@ StoryViewIOSCPP::StoryViewIOSCPP(id<PStoryViewObjC> owner) :
 owner(owner),
 currentChoiceIndex(0),
 currentChoiceList(),
-currentPage(std::make_shared<RedZone>())
+currentPage(std::make_shared<IAmDrKaden>())
 {
     ShowPage(currentPage);
 }

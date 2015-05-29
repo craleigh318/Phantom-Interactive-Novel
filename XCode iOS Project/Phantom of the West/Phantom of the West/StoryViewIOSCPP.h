@@ -12,7 +12,7 @@
 #include "IStoryView.h"
 #include "IChoiceList.h"
 #include "IPage.h"
-#include "RedZone.h"
+#include "IAmDrKaden.h"
 
 class IPage;
 class IChoiceList;
