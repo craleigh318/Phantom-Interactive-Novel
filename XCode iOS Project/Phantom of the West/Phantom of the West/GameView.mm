@@ -11,7 +11,7 @@
 
 @implementation GameView
 
-+ (UIView *) getGameView : (UIViewController <ADBannerViewDelegate> *) controller
++ (UIView *) getGameView : (UIViewController <ADBannerViewDelegate, UITableViewDelegate> *) controller
     {
         CGRect viewRectangle = [[UIScreen mainScreen] bounds];
         // Save space for status bar.
@@ -35,7 +35,7 @@
             viewRectangle.origin.y = 0.0;
         }
         // Initialize main view.
-        StoryViewIOSObjC * storyView = [[StoryViewIOSObjC alloc] initWithFrame:viewRectangle];
+        StoryViewIOSObjC * storyView = [[StoryViewIOSObjC alloc] initWithFrame:viewRectangle withController:controller];
         [gameView addSubview:storyView];
         return gameView;
     }

@@ -10,13 +10,18 @@
 #import <QuartzCore/CALayer.h>
 #import <UIKit/UIKit.h>
 #import "PStoryViewObjC.h"
+#import "PauseMenu.h"
 #include "StoryViewIOSCPP.h"
 
 /*
  A story view for iOS devices.
  */
 @interface StoryViewIOSObjC : UIView <PStoryViewObjC>
-    
+
+@property UIViewController <UITableViewDelegate> * controller;
+
+- (id) initWithFrame : (CGRect) viewRect withController : (UIViewController <UITableViewDelegate> *) controller;
+
     /*
      Method to call when the continue button is pressed.
      */

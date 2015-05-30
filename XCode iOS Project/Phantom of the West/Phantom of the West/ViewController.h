@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
+#import "GameView.h"
+#import "PauseMenu.h"
 
-@interface ViewController : UIViewController <ADBannerViewDelegate>
+@interface ViewController : UIViewController <ADBannerViewDelegate, UITableViewDelegate>
+
+@property UIView * mainView;
 
 @end
 

@@ -17,12 +17,14 @@
     UIButton* buttonContinue;
     UIButton* buttonNext;
     UIButton* buttonPause;
+    PauseMenu * pauseMenu;
 }
 
-- (id) initWithFrame : (CGRect) viewRect
+- (id) initWithFrame : (CGRect) viewRect withController : (UIViewController <UITableViewDelegate> *) controller
 {
     if (self = [super initWithFrame:viewRect])
     {
+        [self setController:controller];
         [self initializeUIView];
         cppGlue = new StoryViewIOSCPP(self);
         return self;
@@ -50,6 +52,11 @@
     cppGlue->NextChoice();
 }
 
+- (void) onButtonPause
+{
+    pauseMenu.hidden = false;
+}
+
 /*
  Initializes uiView.
  */
@@ -65,9 +72,15 @@
     buttonRowBounds.origin.y = scrollViewBounds.size.height;
     buttonRowBounds.size.height = defaultButtonHeight;
     UIView * buttonRow = [self getButtonRow:buttonRowBounds];
+    // Create pause menu.
+    pauseMenu = [[PauseMenu alloc] initWithFrame:self.frame];
+    [pauseMenu setDelegate:[self controller]];
+    [pauseMenu reloadData];
+    pauseMenu.hidden = true;
     // Add views.
     [self addSubview:myScrollView];
     [self addSubview:buttonRow];
+    [self addSubview:pauseMenu];
 }
 
 /*
@@ -102,6 +115,7 @@
     [buttonPause setTitle:@"≣" forState:(UIControlStateNormal)];
     viewRectangle.origin.x += viewRectangle.size.width;
     [buttonPause setFrame:viewRectangle];
+    [buttonPause addTarget:self action:@selector(onButtonPause) forControlEvents:(UIControlEvents)UIControlEventTouchUpInside];
     [buttonRowView addSubview:buttonPause];
     return buttonRowView;
 }
@@ -117,7 +131,7 @@
     uiImageView = [self getUIImageView:imageViewBounds];
     // Create text view.
     CGFloat textViewY = imageViewHeight;
-    const CGFloat textBoxHeight = 100.0;
+    const CGFloat textBoxHeight = 512.0;
     CGRect textViewBounds = CGRectMake(0.0, textViewY, imageViewWidth, textBoxHeight);
     uiTextView = [self getUITextView:textViewBounds];
     // Add views.

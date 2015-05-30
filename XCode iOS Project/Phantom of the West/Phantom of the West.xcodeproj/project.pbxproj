@@ -18,6 +18,7 @@
 		A42266AA1B12ACF100D7F520 /* GameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A422669F1B12ACF100D7F520 /* GameView.mm */; };
 		A42266AC1B12ACF100D7F520 /* StoryViewIOSCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266A41B12ACF100D7F520 /* StoryViewIOSCPP.mm */; };
 		A42266AD1B12ACF100D7F520 /* StoryViewIOSObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266A61B12ACF100D7F520 /* StoryViewIOSObjC.mm */; };
+		A42A9EA11B192B2E00D8BBDB /* PauseMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A42A9EA01B192B2E00D8BBDB /* PauseMenu.m */; };
 		A455D76A1B181E6D001935F4 /* ModifyableChoiceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7071B181E6D001935F4 /* ModifyableChoiceList.cpp */; };
 		A455D76B1B181E6D001935F4 /* Page.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7091B181E6D001935F4 /* Page.cpp */; };
 		A455D76C1B181E6D001935F4 /* Journalist-in-Shower.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D70D1B181E6D001935F4 /* Journalist-in-Shower.png */; };
@@ -45,42 +46,32 @@
 		A455D7821B181E6D001935F4 /* Phantom-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7241B181E6D001935F4 /* Phantom-Icon.png */; };
 		A455D7831B181E6D001935F4 /* I-am-Dr-Kaden.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7281B181E6D001935F4 /* I-am-Dr-Kaden.png */; };
 		A455D7841B181E6D001935F4 /* IAmDrKaden.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7291B181E6D001935F4 /* IAmDrKaden.cpp */; };
-		A455D7851B181E6D001935F4 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A455D72B1B181E6D001935F4 /* Thumbs.db */; };
 		A455D7861B181E6D001935F4 /* Officer-Hands.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D72D1B181E6D001935F4 /* Officer-Hands.png */; };
 		A455D7871B181E6D001935F4 /* OfficerHands.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D72E1B181E6D001935F4 /* OfficerHands.cpp */; };
-		A455D7881B181E6D001935F4 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A455D7301B181E6D001935F4 /* Thumbs.db */; };
 		A455D7891B181E6D001935F4 /* Drive-to-Officer-Home.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7321B181E6D001935F4 /* Drive-to-Officer-Home.png */; };
 		A455D78A1B181E6D001935F4 /* DriveToOfficerHome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7331B181E6D001935F4 /* DriveToOfficerHome.cpp */; };
-		A455D78B1B181E6D001935F4 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A455D7351B181E6D001935F4 /* Thumbs.db */; };
 		A455D78C1B181E6D001935F4 /* Officer-on-Bed.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7371B181E6D001935F4 /* Officer-on-Bed.png */; };
 		A455D78D1B181E6D001935F4 /* OfficerOnBed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7381B181E6D001935F4 /* OfficerOnBed.cpp */; };
 		A455D78E1B181E6D001935F4 /* Cityscape-from-Window.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D73B1B181E6D001935F4 /* Cityscape-from-Window.png */; };
 		A455D78F1B181E6D001935F4 /* CityscapeFromWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D73C1B181E6D001935F4 /* CityscapeFromWindow.cpp */; };
-		A455D7901B181E6D001935F4 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A455D73E1B181E6D001935F4 /* Thumbs.db */; };
 		A455D7911B181E6D001935F4 /* Dr-Kaden-Drinks-Elixir.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7401B181E6D001935F4 /* Dr-Kaden-Drinks-Elixir.png */; };
 		A455D7921B181E6D001935F4 /* DrKadenDrinksElixir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7411B181E6D001935F4 /* DrKadenDrinksElixir.cpp */; };
-		A455D7931B181E6D001935F4 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A455D7431B181E6D001935F4 /* Thumbs.db */; };
 		A455D7941B181E6D001935F4 /* Dr-Kaden-Walking-among-Citizens.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7451B181E6D001935F4 /* Dr-Kaden-Walking-among-Citizens.png */; };
 		A455D7951B181E6D001935F4 /* DrKadenWalkingAmongCitizens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7461B181E6D001935F4 /* DrKadenWalkingAmongCitizens.cpp */; };
-		A455D7961B181E6D001935F4 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A455D7481B181E6D001935F4 /* Thumbs.db */; };
 		A455D7971B181E6D001935F4 /* Dr-Kaden-Ill.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D74A1B181E6D001935F4 /* Dr-Kaden-Ill.png */; };
 		A455D7981B181E6D001935F4 /* DrKadenIll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D74B1B181E6D001935F4 /* DrKadenIll.cpp */; };
-		A455D7991B181E6D001935F4 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A455D74D1B181E6D001935F4 /* Thumbs.db */; };
 		A455D79A1B181E6D001935F4 /* Officer-Notices-Dr-Kaden.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D74F1B181E6D001935F4 /* Officer-Notices-Dr-Kaden.png */; };
 		A455D79B1B181E6D001935F4 /* OfficerNoticesDrKaden.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7501B181E6D001935F4 /* OfficerNoticesDrKaden.cpp */; };
-		A455D79C1B181E6D001935F4 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A455D7521B181E6D001935F4 /* Thumbs.db */; };
 		A455D79D1B181E6D001935F4 /* Phantom-Reveal.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7541B181E6D001935F4 /* Phantom-Reveal.png */; };
 		A455D79E1B181E6D001935F4 /* PhantomReveal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7551B181E6D001935F4 /* PhantomReveal.cpp */; };
-		A455D79F1B181E6D001935F4 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A455D7571B181E6D001935F4 /* Thumbs.db */; };
 		A455D7A01B181E6D001935F4 /* Phantom-Reveal-with-Eyes.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7591B181E6D001935F4 /* Phantom-Reveal-with-Eyes.png */; };
 		A455D7A11B181E6D001935F4 /* PhantomRevealWithEyes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D75A1B181E6D001935F4 /* PhantomRevealWithEyes.cpp */; };
-		A455D7A21B181E6D001935F4 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A455D75C1B181E6D001935F4 /* Thumbs.db */; };
 		A455D7A31B181E6D001935F4 /* Officer-Possessed.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D75E1B181E6D001935F4 /* Officer-Possessed.png */; };
 		A455D7A41B181E6D001935F4 /* OfficerPossessed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D75F1B181E6D001935F4 /* OfficerPossessed.cpp */; };
-		A455D7A51B181E6D001935F4 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A455D7611B181E6D001935F4 /* Thumbs.db */; };
 		A455D7A61B181E6D001935F4 /* ChoiceToBlueZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7631B181E6D001935F4 /* ChoiceToBlueZone.cpp */; };
 		A455D7A71B181E6D001935F4 /* ChoiceToGreenZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7651B181E6D001935F4 /* ChoiceToGreenZone.cpp */; };
 		A455D7A81B181E6D001935F4 /* RedZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7671B181E6D001935F4 /* RedZone.cpp */; };
+		A46988581B1981B600E1CAD2 /* ResumeGame.m in Sources */ = {isa = PBXBuildFile; fileRef = A46988571B1981B600E1CAD2 /* ResumeGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +107,9 @@
 		A42266A41B12ACF100D7F520 /* StoryViewIOSCPP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewIOSCPP.mm; sourceTree = "<group>"; };
 		A42266A51B12ACF100D7F520 /* StoryViewIOSObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewIOSObjC.h; sourceTree = "<group>"; };
 		A42266A61B12ACF100D7F520 /* StoryViewIOSObjC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewIOSObjC.mm; sourceTree = "<group>"; };
+		A42A9E9F1B192B2E00D8BBDB /* PauseMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseMenu.h; sourceTree = "<group>"; };
+		A42A9EA01B192B2E00D8BBDB /* PauseMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseMenu.m; sourceTree = "<group>"; };
+		A42A9EA21B19315D00D8BBDB /* PauseMenuOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseMenuOption.h; sourceTree = "<group>"; };
 		A455D7041B181E6D001935F4 /* IChoiceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IChoiceList.h; sourceTree = "<group>"; };
 		A455D7051B181E6D001935F4 /* IPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPage.h; sourceTree = "<group>"; };
 		A455D7061B181E6D001935F4 /* IStoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IStoryView.h; sourceTree = "<group>"; };
@@ -149,50 +143,39 @@
 		A455D7281B181E6D001935F4 /* I-am-Dr-Kaden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "I-am-Dr-Kaden.png"; sourceTree = "<group>"; };
 		A455D7291B181E6D001935F4 /* IAmDrKaden.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IAmDrKaden.cpp; sourceTree = "<group>"; };
 		A455D72A1B181E6D001935F4 /* IAmDrKaden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAmDrKaden.h; sourceTree = "<group>"; };
-		A455D72B1B181E6D001935F4 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
 		A455D72D1B181E6D001935F4 /* Officer-Hands.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Officer-Hands.png"; sourceTree = "<group>"; };
 		A455D72E1B181E6D001935F4 /* OfficerHands.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OfficerHands.cpp; sourceTree = "<group>"; };
 		A455D72F1B181E6D001935F4 /* OfficerHands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfficerHands.h; sourceTree = "<group>"; };
-		A455D7301B181E6D001935F4 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
 		A455D7321B181E6D001935F4 /* Drive-to-Officer-Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Drive-to-Officer-Home.png"; sourceTree = "<group>"; };
 		A455D7331B181E6D001935F4 /* DriveToOfficerHome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DriveToOfficerHome.cpp; sourceTree = "<group>"; };
 		A455D7341B181E6D001935F4 /* DriveToOfficerHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveToOfficerHome.h; sourceTree = "<group>"; };
-		A455D7351B181E6D001935F4 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
 		A455D7371B181E6D001935F4 /* Officer-on-Bed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Officer-on-Bed.png"; sourceTree = "<group>"; };
 		A455D7381B181E6D001935F4 /* OfficerOnBed.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OfficerOnBed.cpp; sourceTree = "<group>"; };
 		A455D7391B181E6D001935F4 /* OfficerOnBed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfficerOnBed.h; sourceTree = "<group>"; };
 		A455D73B1B181E6D001935F4 /* Cityscape-from-Window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cityscape-from-Window.png"; sourceTree = "<group>"; };
 		A455D73C1B181E6D001935F4 /* CityscapeFromWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CityscapeFromWindow.cpp; sourceTree = "<group>"; };
 		A455D73D1B181E6D001935F4 /* CityscapeFromWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityscapeFromWindow.h; sourceTree = "<group>"; };
-		A455D73E1B181E6D001935F4 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
 		A455D7401B181E6D001935F4 /* Dr-Kaden-Drinks-Elixir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dr-Kaden-Drinks-Elixir.png"; sourceTree = "<group>"; };
 		A455D7411B181E6D001935F4 /* DrKadenDrinksElixir.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrKadenDrinksElixir.cpp; sourceTree = "<group>"; };
 		A455D7421B181E6D001935F4 /* DrKadenDrinksElixir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrKadenDrinksElixir.h; sourceTree = "<group>"; };
-		A455D7431B181E6D001935F4 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
 		A455D7451B181E6D001935F4 /* Dr-Kaden-Walking-among-Citizens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dr-Kaden-Walking-among-Citizens.png"; sourceTree = "<group>"; };
 		A455D7461B181E6D001935F4 /* DrKadenWalkingAmongCitizens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrKadenWalkingAmongCitizens.cpp; sourceTree = "<group>"; };
 		A455D7471B181E6D001935F4 /* DrKadenWalkingAmongCitizens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrKadenWalkingAmongCitizens.h; sourceTree = "<group>"; };
-		A455D7481B181E6D001935F4 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
 		A455D74A1B181E6D001935F4 /* Dr-Kaden-Ill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dr-Kaden-Ill.png"; sourceTree = "<group>"; };
 		A455D74B1B181E6D001935F4 /* DrKadenIll.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrKadenIll.cpp; sourceTree = "<group>"; };
 		A455D74C1B181E6D001935F4 /* DrKadenIll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrKadenIll.h; sourceTree = "<group>"; };
-		A455D74D1B181E6D001935F4 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
 		A455D74F1B181E6D001935F4 /* Officer-Notices-Dr-Kaden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Officer-Notices-Dr-Kaden.png"; sourceTree = "<group>"; };
 		A455D7501B181E6D001935F4 /* OfficerNoticesDrKaden.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OfficerNoticesDrKaden.cpp; sourceTree = "<group>"; };
 		A455D7511B181E6D001935F4 /* OfficerNoticesDrKaden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfficerNoticesDrKaden.h; sourceTree = "<group>"; };
-		A455D7521B181E6D001935F4 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
 		A455D7541B181E6D001935F4 /* Phantom-Reveal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Reveal.png"; sourceTree = "<group>"; };
 		A455D7551B181E6D001935F4 /* PhantomReveal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhantomReveal.cpp; sourceTree = "<group>"; };
 		A455D7561B181E6D001935F4 /* PhantomReveal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhantomReveal.h; sourceTree = "<group>"; };
-		A455D7571B181E6D001935F4 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
 		A455D7591B181E6D001935F4 /* Phantom-Reveal-with-Eyes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Reveal-with-Eyes.png"; sourceTree = "<group>"; };
 		A455D75A1B181E6D001935F4 /* PhantomRevealWithEyes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhantomRevealWithEyes.cpp; sourceTree = "<group>"; };
 		A455D75B1B181E6D001935F4 /* PhantomRevealWithEyes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhantomRevealWithEyes.h; sourceTree = "<group>"; };
-		A455D75C1B181E6D001935F4 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
 		A455D75E1B181E6D001935F4 /* Officer-Possessed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Officer-Possessed.png"; sourceTree = "<group>"; };
 		A455D75F1B181E6D001935F4 /* OfficerPossessed.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OfficerPossessed.cpp; sourceTree = "<group>"; };
 		A455D7601B181E6D001935F4 /* OfficerPossessed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfficerPossessed.h; sourceTree = "<group>"; };
-		A455D7611B181E6D001935F4 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
 		A455D7631B181E6D001935F4 /* ChoiceToBlueZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChoiceToBlueZone.cpp; sourceTree = "<group>"; };
 		A455D7641B181E6D001935F4 /* ChoiceToBlueZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceToBlueZone.h; sourceTree = "<group>"; };
 		A455D7651B181E6D001935F4 /* ChoiceToGreenZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChoiceToGreenZone.cpp; sourceTree = "<group>"; };
@@ -200,6 +183,8 @@
 		A455D7671B181E6D001935F4 /* RedZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RedZone.cpp; sourceTree = "<group>"; };
 		A455D7681B181E6D001935F4 /* RedZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedZone.h; sourceTree = "<group>"; };
 		A455D7691B181E6D001935F4 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		A46988561B1981B600E1CAD2 /* ResumeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeGame.h; sourceTree = "<group>"; };
+		A46988571B1981B600E1CAD2 /* ResumeGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +228,7 @@
 			children = (
 				A455D7021B181E6D001935F4 /* Common Files */,
 				A42266EF1B12AE3C00D7F520 /* In-App Purchasing */,
+				A42A9E9E1B192A2B00D8BBDB /* Pause Menu */,
 				A42266EE1B12AE1100D7F520 /* Story View */,
 				A42266751B12AA7A00D7F520 /* AppDelegate.h */,
 				A42266761B12AA7A00D7F520 /* AppDelegate.m */,
@@ -303,6 +289,18 @@
 				A42266981B12ACF100D7F520 /* Advertising.m */,
 			);
 			name = "In-App Purchasing";
+			sourceTree = "<group>";
+		};
+		A42A9E9E1B192A2B00D8BBDB /* Pause Menu */ = {
+			isa = PBXGroup;
+			children = (
+				A42A9E9F1B192B2E00D8BBDB /* PauseMenu.h */,
+				A42A9EA01B192B2E00D8BBDB /* PauseMenu.m */,
+				A42A9EA21B19315D00D8BBDB /* PauseMenuOption.h */,
+				A46988561B1981B600E1CAD2 /* ResumeGame.h */,
+				A46988571B1981B600E1CAD2 /* ResumeGame.m */,
+			);
+			name = "Pause Menu";
 			sourceTree = "<group>";
 		};
 		A455D7021B181E6D001935F4 /* Common Files */ = {
@@ -411,7 +409,6 @@
 				A455D7281B181E6D001935F4 /* I-am-Dr-Kaden.png */,
 				A455D7291B181E6D001935F4 /* IAmDrKaden.cpp */,
 				A455D72A1B181E6D001935F4 /* IAmDrKaden.h */,
-				A455D72B1B181E6D001935F4 /* Thumbs.db */,
 			);
 			path = 1;
 			sourceTree = "<group>";
@@ -422,7 +419,6 @@
 				A455D72D1B181E6D001935F4 /* Officer-Hands.png */,
 				A455D72E1B181E6D001935F4 /* OfficerHands.cpp */,
 				A455D72F1B181E6D001935F4 /* OfficerHands.h */,
-				A455D7301B181E6D001935F4 /* Thumbs.db */,
 			);
 			path = 10;
 			sourceTree = "<group>";
@@ -433,7 +429,6 @@
 				A455D7321B181E6D001935F4 /* Drive-to-Officer-Home.png */,
 				A455D7331B181E6D001935F4 /* DriveToOfficerHome.cpp */,
 				A455D7341B181E6D001935F4 /* DriveToOfficerHome.h */,
-				A455D7351B181E6D001935F4 /* Thumbs.db */,
 			);
 			path = 11;
 			sourceTree = "<group>";
@@ -454,7 +449,6 @@
 				A455D73B1B181E6D001935F4 /* Cityscape-from-Window.png */,
 				A455D73C1B181E6D001935F4 /* CityscapeFromWindow.cpp */,
 				A455D73D1B181E6D001935F4 /* CityscapeFromWindow.h */,
-				A455D73E1B181E6D001935F4 /* Thumbs.db */,
 			);
 			path = 2;
 			sourceTree = "<group>";
@@ -465,7 +459,6 @@
 				A455D7401B181E6D001935F4 /* Dr-Kaden-Drinks-Elixir.png */,
 				A455D7411B181E6D001935F4 /* DrKadenDrinksElixir.cpp */,
 				A455D7421B181E6D001935F4 /* DrKadenDrinksElixir.h */,
-				A455D7431B181E6D001935F4 /* Thumbs.db */,
 			);
 			path = 3;
 			sourceTree = "<group>";
@@ -476,7 +469,6 @@
 				A455D7451B181E6D001935F4 /* Dr-Kaden-Walking-among-Citizens.png */,
 				A455D7461B181E6D001935F4 /* DrKadenWalkingAmongCitizens.cpp */,
 				A455D7471B181E6D001935F4 /* DrKadenWalkingAmongCitizens.h */,
-				A455D7481B181E6D001935F4 /* Thumbs.db */,
 			);
 			path = 4;
 			sourceTree = "<group>";
@@ -487,7 +479,6 @@
 				A455D74A1B181E6D001935F4 /* Dr-Kaden-Ill.png */,
 				A455D74B1B181E6D001935F4 /* DrKadenIll.cpp */,
 				A455D74C1B181E6D001935F4 /* DrKadenIll.h */,
-				A455D74D1B181E6D001935F4 /* Thumbs.db */,
 			);
 			path = 5;
 			sourceTree = "<group>";
@@ -498,7 +489,6 @@
 				A455D74F1B181E6D001935F4 /* Officer-Notices-Dr-Kaden.png */,
 				A455D7501B181E6D001935F4 /* OfficerNoticesDrKaden.cpp */,
 				A455D7511B181E6D001935F4 /* OfficerNoticesDrKaden.h */,
-				A455D7521B181E6D001935F4 /* Thumbs.db */,
 			);
 			path = 6;
 			sourceTree = "<group>";
@@ -509,7 +499,6 @@
 				A455D7541B181E6D001935F4 /* Phantom-Reveal.png */,
 				A455D7551B181E6D001935F4 /* PhantomReveal.cpp */,
 				A455D7561B181E6D001935F4 /* PhantomReveal.h */,
-				A455D7571B181E6D001935F4 /* Thumbs.db */,
 			);
 			path = 7;
 			sourceTree = "<group>";
@@ -520,7 +509,6 @@
 				A455D7591B181E6D001935F4 /* Phantom-Reveal-with-Eyes.png */,
 				A455D75A1B181E6D001935F4 /* PhantomRevealWithEyes.cpp */,
 				A455D75B1B181E6D001935F4 /* PhantomRevealWithEyes.h */,
-				A455D75C1B181E6D001935F4 /* Thumbs.db */,
 			);
 			path = 8;
 			sourceTree = "<group>";
@@ -531,7 +519,6 @@
 				A455D75E1B181E6D001935F4 /* Officer-Possessed.png */,
 				A455D75F1B181E6D001935F4 /* OfficerPossessed.cpp */,
 				A455D7601B181E6D001935F4 /* OfficerPossessed.h */,
-				A455D7611B181E6D001935F4 /* Thumbs.db */,
 			);
 			path = 9;
 			sourceTree = "<group>";
@@ -636,9 +623,6 @@
 				A455D77A1B181E6D001935F4 /* Phantom-Icon-55.png in Resources */,
 				A455D76D1B181E6D001935F4 /* Thumbs.db in Resources */,
 				A455D77F1B181E6D001935F4 /* Phantom-Icon-80.png in Resources */,
-				A455D79F1B181E6D001935F4 /* Thumbs.db in Resources */,
-				A455D7961B181E6D001935F4 /* Thumbs.db in Resources */,
-				A455D7881B181E6D001935F4 /* Thumbs.db in Resources */,
 				A455D79D1B181E6D001935F4 /* Phantom-Reveal.png in Resources */,
 				A455D78E1B181E6D001935F4 /* Cityscape-from-Window.png in Resources */,
 				A455D7761B181E6D001935F4 /* Phantom-Icon-29.png in Resources */,
@@ -647,24 +631,18 @@
 				A42266821B12AA7A00D7F520 /* LaunchScreen.xib in Resources */,
 				A455D77E1B181E6D001935F4 /* Phantom-Icon-76.png in Resources */,
 				A455D76F1B181E6D001935F4 /* Phantom-Icon-114.png in Resources */,
-				A455D7A51B181E6D001935F4 /* Thumbs.db in Resources */,
 				A455D7861B181E6D001935F4 /* Officer-Hands.png in Resources */,
 				A455D7821B181E6D001935F4 /* Phantom-Icon.png in Resources */,
-				A455D7991B181E6D001935F4 /* Thumbs.db in Resources */,
 				A455D7701B181E6D001935F4 /* Phantom-Icon-120.png in Resources */,
 				A455D7891B181E6D001935F4 /* Drive-to-Officer-Home.png in Resources */,
-				A455D78B1B181E6D001935F4 /* Thumbs.db in Resources */,
-				A455D7931B181E6D001935F4 /* Thumbs.db in Resources */,
 				A455D77C1B181E6D001935F4 /* Phantom-Icon-58.png in Resources */,
 				A455D7A01B181E6D001935F4 /* Phantom-Reveal-with-Eyes.png in Resources */,
 				A422667F1B12AA7A00D7F520 /* Images.xcassets in Resources */,
 				A455D7721B181E6D001935F4 /* Phantom-Icon-152.png in Resources */,
 				A455D7971B181E6D001935F4 /* Dr-Kaden-Ill.png in Resources */,
 				A455D7751B181E6D001935F4 /* Phantom-Icon-196.png in Resources */,
-				A455D79C1B181E6D001935F4 /* Thumbs.db in Resources */,
 				A455D79A1B181E6D001935F4 /* Officer-Notices-Dr-Kaden.png in Resources */,
 				A455D7731B181E6D001935F4 /* Phantom-Icon-172.png in Resources */,
-				A455D7A21B181E6D001935F4 /* Thumbs.db in Resources */,
 				A455D77B1B181E6D001935F4 /* Phantom-Icon-57.png in Resources */,
 				A455D76E1B181E6D001935F4 /* Phantom-Icon-100.png in Resources */,
 				A455D7781B181E6D001935F4 /* Phantom-Icon-48.png in Resources */,
@@ -674,8 +652,6 @@
 				A455D76C1B181E6D001935F4 /* Journalist-in-Shower.png in Resources */,
 				A455D7911B181E6D001935F4 /* Dr-Kaden-Drinks-Elixir.png in Resources */,
 				A455D7771B181E6D001935F4 /* Phantom-Icon-40.png in Resources */,
-				A455D7851B181E6D001935F4 /* Thumbs.db in Resources */,
-				A455D7901B181E6D001935F4 /* Thumbs.db in Resources */,
 				A455D77D1B181E6D001935F4 /* Phantom-Icon-72.png in Resources */,
 				A455D7811B181E6D001935F4 /* Phantom-Icon-88.png in Resources */,
 				A455D7801B181E6D001935F4 /* Phantom-Icon-87.png in Resources */,
@@ -704,6 +680,7 @@
 				A42266AA1B12ACF100D7F520 /* GameView.mm in Sources */,
 				A455D7A11B181E6D001935F4 /* PhantomRevealWithEyes.cpp in Sources */,
 				A455D7A61B181E6D001935F4 /* ChoiceToBlueZone.cpp in Sources */,
+				A42A9EA11B192B2E00D8BBDB /* PauseMenu.m in Sources */,
 				A42266A71B12ACF100D7F520 /* Advertising.m in Sources */,
 				A455D79B1B181E6D001935F4 /* OfficerNoticesDrKaden.cpp in Sources */,
 				A455D7A41B181E6D001935F4 /* OfficerPossessed.cpp in Sources */,
@@ -711,6 +688,7 @@
 				A455D7921B181E6D001935F4 /* DrKadenDrinksElixir.cpp in Sources */,
 				A455D7871B181E6D001935F4 /* OfficerHands.cpp in Sources */,
 				A455D7841B181E6D001935F4 /* IAmDrKaden.cpp in Sources */,
+				A46988581B1981B600E1CAD2 /* ResumeGame.m in Sources */,
 				A455D78A1B181E6D001935F4 /* DriveToOfficerHome.cpp in Sources */,
 				A455D78D1B181E6D001935F4 /* OfficerOnBed.cpp in Sources */,
 				A455D78F1B181E6D001935F4 /* CityscapeFromWindow.cpp in Sources */,

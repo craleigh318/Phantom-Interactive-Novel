@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "GameView.h"
 
 @interface ViewController ()
 
@@ -18,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self.view addSubview:[GameView getGameView:self]];
+    [self setMainView:[GameView getGameView:self]];
+    [[self view] addSubview:[self mainView]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,6 +33,21 @@
 - (void)bannerView:(ADBannerView *)banner
 didFailToReceiveAdWithError:(NSError *)error {
     NSLog(@"%@", error);
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[PauseMenu options] count];
+}
+
+- (UITableViewCell *) tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *) indexPath {
+    NSInteger index = [indexPath row];
+    UITableViewCell * cell = [[PauseMenu options] objectAtIndex:index];
+    return cell;
+}
+
+- (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
+    NSInteger index = [indexPath row];
+    [[[PauseMenu options] objectAtIndex:index] onSelect];
 }
 
 @end
