@@ -18,8 +18,6 @@
 }
 */
 
-static NSMutableArray * options;
-
 - (id) initWithFrame : (CGRect) viewRect
 {
     if (self = [super initWithFrame:viewRect style:UITableViewStylePlain])
@@ -30,13 +28,22 @@ static NSMutableArray * options;
     return nil;
 }
 
-+ (NSArray *) options {
-    return options;
+- (void) initializePauseMenu {
+    [self setDataSource:self];
+    [self setOptions: [NSMutableArray array]];
+    [[self options] addObject:[[ResumeGame alloc] initWithPauseMenu:self]];
 }
 
-- (void) initializePauseMenu {
-    options = [NSMutableArray array];
-    [options addObject:[[ResumeGame alloc] initWithPauseMenu:self]];
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[self options] count];
 }
+
+- (UITableViewCell *) tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *) indexPath {
+    NSInteger index = [indexPath row];
+    UITableViewCell * cell = [[self options] objectAtIndex:index];
+    return cell;
+}
+
+
 
 @end

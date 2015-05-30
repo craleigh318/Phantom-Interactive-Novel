@@ -35,19 +35,10 @@ didFailToReceiveAdWithError:(NSError *)error {
     NSLog(@"%@", error);
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [[PauseMenu options] count];
-}
-
-- (UITableViewCell *) tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *) indexPath {
-    NSInteger index = [indexPath row];
-    UITableViewCell * cell = [[PauseMenu options] objectAtIndex:index];
-    return cell;
-}
-
 - (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
     NSInteger index = [indexPath row];
-    [[[PauseMenu options] objectAtIndex:index] onSelect];
+    PauseMenu * pauseMenu = (PauseMenu *) tableView;
+    [[[pauseMenu options] objectAtIndex:index] onSelect];
 }
 
 @end

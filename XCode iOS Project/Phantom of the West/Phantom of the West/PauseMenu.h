@@ -12,8 +12,8 @@
 /*
  Appears when the user presses the pause button.
  */
-@interface PauseMenu : UITableView
+@interface PauseMenu : UITableView <UITableViewDataSource>
 
-+ (NSArray *) options;
+@property NSMutableArray * options;
 
 @end
