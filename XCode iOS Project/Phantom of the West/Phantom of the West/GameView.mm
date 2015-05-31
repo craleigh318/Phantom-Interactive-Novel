@@ -10,10 +10,9 @@
 
 @implementation GameView {
     UIViewController <ADBannerViewDelegate, UITableViewDelegate> * controller;
-    UIView * adBannerContainer;
 }
 
-+ (UIView *) getGameView : (UIViewController <ADBannerViewDelegate, UITableViewDelegate> *) controller {
++ (GameView *) getGameView : (UIViewController <ADBannerViewDelegate, UITableViewDelegate> *) controller {
         return [[GameView alloc] initWithController:controller];
     }
 
@@ -27,34 +26,38 @@
 }
 
 - (void) initializeGameView {
+    self.adBannerContainer = [self initializeAdBannerContainer];
     // Add advertisment, if applicable.
-        if ([Advertising shouldDisplayAdvertisement]) {
+        //if ([Advertising shouldDisplayAdvertisement]) {
+    if ([Advertising shouldDisplayAdvertisement]) {
             ADBannerView * adBanner = [Advertising getIAdBanner];
-            adBannerContainer = adBanner;
             adBanner.delegate = controller;
             adBanner.hidden = TRUE;
-            [self addSubview:adBanner];
-            
+            [self.adBannerContainer addSubview:adBanner];
         }
         else {
-            adBannerContainer = [[UIView alloc] init];
-            [self addConstraint:[NSLayoutConstraint constraintWithItem:adBannerContainer attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:0.0]];
+            [self addConstraint:[NSLayoutConstraint constraintWithItem:self.adBannerContainer attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:0.0]];
         }
-[self addAdBannerConstraints:adBannerContainer];
+//[self addAdBannerConstraints:adBannerContainer];
 
     // Initialize main view.
-    StoryViewIOSObjC * storyView = [[StoryViewIOSObjC alloc] init];
-    [self addSubview:storyView];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:storyView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:storyView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:adBannerContainer attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:storyView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:storyView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    self.storyView = [[StoryViewIOSObjC alloc] init];
+    self.storyView.translatesAutoresizingMaskIntoConstraints = false;
+    [self addSubview:self.storyView];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.storyView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.storyView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.adBannerContainer attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.storyView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.storyView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
 }
 
-- (void) addAdBannerConstraints: (UIView *) myAdBanner {
-    myAdBanner.translatesAutoresizingMaskIntoConstraints = false;
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:myAdBanner attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:controller.topLayoutGuide attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:myAdBanner attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0]];
+- (UIView *) initializeAdBannerContainer {
+    UIView * container = [[UIView alloc] init];
+    container.translatesAutoresizingMaskIntoConstraints = false;
+    [self addSubview:container];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:container attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:container attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:container attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
+    return container;
 }
     
     @end

@@ -19,6 +19,9 @@
 /*
  Returns the game's user interface as a UIView.
  */
-+ (UIView *) getGameView : (UIViewController <ADBannerViewDelegate, UITableViewDelegate> *) controller;
++ (GameView *) getGameView : (UIViewController <ADBannerViewDelegate, UITableViewDelegate> *) controller;
+
+@property UIView * adBannerContainer;
+@property StoryViewIOSObjC * storyView;
 
 @end

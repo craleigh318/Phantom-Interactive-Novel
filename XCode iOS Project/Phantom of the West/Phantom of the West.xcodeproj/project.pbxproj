@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A42266741B12AA7A00D7F520 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A42266731B12AA7A00D7F520 /* main.m */; };
 		A42266771B12AA7A00D7F520 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A42266761B12AA7A00D7F520 /* AppDelegate.m */; };
-		A422667A1B12AA7A00D7F520 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42266791B12AA7A00D7F520 /* ViewController.m */; };
+		A422667A1B12AA7A00D7F520 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266791B12AA7A00D7F520 /* ViewController.mm */; };
 		A422667D1B12AA7A00D7F520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A422667B1B12AA7A00D7F520 /* Main.storyboard */; };
 		A422667F1B12AA7A00D7F520 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A422667E1B12AA7A00D7F520 /* Images.xcassets */; };
 		A42266821B12AA7A00D7F520 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A42266801B12AA7A00D7F520 /* LaunchScreen.xib */; };
@@ -93,7 +93,7 @@
 		A42266751B12AA7A00D7F520 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A42266761B12AA7A00D7F520 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A42266781B12AA7A00D7F520 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A42266791B12AA7A00D7F520 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A42266791B12AA7A00D7F520 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		A422667C1B12AA7A00D7F520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A422667E1B12AA7A00D7F520 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A42266811B12AA7A00D7F520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -240,7 +240,7 @@
 				A42266751B12AA7A00D7F520 /* AppDelegate.h */,
 				A42266761B12AA7A00D7F520 /* AppDelegate.m */,
 				A42266781B12AA7A00D7F520 /* ViewController.h */,
-				A42266791B12AA7A00D7F520 /* ViewController.m */,
+				A42266791B12AA7A00D7F520 /* ViewController.mm */,
 				A422667B1B12AA7A00D7F520 /* Main.storyboard */,
 				A422667E1B12AA7A00D7F520 /* Images.xcassets */,
 				A42266801B12AA7A00D7F520 /* LaunchScreen.xib */,
@@ -724,7 +724,7 @@
 				A455D78F1B181E6D001935F4 /* CityscapeFromWindow.cpp in Sources */,
 				A455D7A71B181E6D001935F4 /* ChoiceToGreenZone.cpp in Sources */,
 				A455D76A1B181E6D001935F4 /* ModifyableChoiceList.cpp in Sources */,
-				A422667A1B12AA7A00D7F520 /* ViewController.m in Sources */,
+				A422667A1B12AA7A00D7F520 /* ViewController.mm in Sources */,
 				A42266771B12AA7A00D7F520 /* AppDelegate.m in Sources */,
 				A455D7981B181E6D001935F4 /* DrKadenIll.cpp in Sources */,
 				A42266741B12AA7A00D7F520 /* main.m in Sources */,

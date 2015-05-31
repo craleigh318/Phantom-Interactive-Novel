@@ -18,7 +18,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self setMainView:[GameView getGameView:self]];
-    [[self view] addSubview:[self mainView]];
+    //[[self view] addSubview:[self mainView]];
+    StoryViewIOSObjC * testSubview = [[StoryViewIOSObjC alloc] initWithController: self];
+    [self.view addSubview:testSubview];
+     testSubview.frame = [[UIScreen mainScreen] bounds];
+    
 }
 
 - (void)didReceiveMemoryWarning {

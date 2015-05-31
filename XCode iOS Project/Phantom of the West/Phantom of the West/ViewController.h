@@ -13,7 +13,7 @@
 
 @interface ViewController : UIViewController <ADBannerViewDelegate, UITableViewDelegate>
 
-@property UIView * mainView;
+@property GameView * mainView;
 
 @end
 
