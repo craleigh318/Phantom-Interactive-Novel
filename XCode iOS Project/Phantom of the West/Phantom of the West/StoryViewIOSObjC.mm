@@ -11,25 +11,23 @@
 @implementation StoryViewIOSObjC
 {
     StoryViewIOSCPP* cppGlue;
-    UIImageView* uiImageView;
-    UITextView* uiTextView;
-    UIButton* buttonPrevious;
-    UIButton* buttonContinue;
-    UIButton* buttonNext;
-    UIButton* buttonPause;
+    StoryNavigator * navigator;
+    StoryImageAndTextView * scrollView;
     PauseMenu * pauseMenu;
 }
 
-- (id) initWithFrame : (CGRect) viewRect withController : (UIViewController <UITableViewDelegate> *) controller
+const CGFloat buttonRowHeight = 50.0;
+
+- (id) initWithController : (UIViewController <UITableViewDelegate> *) controller
 {
-    if (self = [super initWithFrame:viewRect])
+    self = [super init];
+    if (self)
     {
         [self setController:controller];
         [self initializeUIView];
         cppGlue = new StoryViewIOSCPP(self);
-        return self;
     }
-    return nil;
+    return self;
 }
 
 - (void) dealloc
@@ -57,121 +55,59 @@
     pauseMenu.hidden = false;
 }
 
-/*
- Initializes uiView.
- */
 - (void) initializeUIView
 {
-    const CGFloat defaultButtonHeight = 50.0;
-    // Create scroll view.
-    CGRect scrollViewBounds = self.frame;
-    scrollViewBounds.size.height -= defaultButtonHeight;
-    UIScrollView * myScrollView = [self getUIScrollView:scrollViewBounds];
+    self.translatesAutoresizingMaskIntoConstraints = false;
     // Create button row.
-    CGRect buttonRowBounds = self.frame;
-    buttonRowBounds.origin.y = scrollViewBounds.size.height;
-    buttonRowBounds.size.height = defaultButtonHeight;
-    UIView * buttonRow = [self getButtonRow:buttonRowBounds];
+    navigator = [self getButtonRow];
+    // Create scroll view.
+    scrollView = [self getUIScrollView];
     // Create pause menu.
     pauseMenu = [[PauseMenu alloc] initWithFrame:self.frame];
     [pauseMenu setDelegate:[self controller]];
     [pauseMenu reloadData];
     pauseMenu.hidden = true;
-    // Add views.
-    [self addSubview:myScrollView];
-    [self addSubview:buttonRow];
     [self addSubview:pauseMenu];
 }
 
 /*
  Returns a button row for navigating a choice list.
  */
-- (UIView*) getButtonRow : (CGRect) bounds
+- (StoryNavigator *) getButtonRow
 {
-    UIView* buttonRowView = [[UIView alloc]initWithFrame:bounds];
-    CGFloat parentWidth = bounds.size.width;
-    CGFloat parentHeight = bounds.size.height;
-    CGRect viewRectangle = CGRectMake(0.0, 0.0, parentWidth, parentHeight);
-    buttonPrevious = [UIButton buttonWithType:UIButtonTypeSystem];
-    [buttonPrevious setTitle:@"⬅︎" forState:(UIControlStateNormal)];
-    const CGFloat numButtonsInRow = 4.0;
-    viewRectangle.size.width /= numButtonsInRow;
-    [buttonPrevious setFrame:viewRectangle];
-    [buttonPrevious addTarget:self action:@selector(onButtonPrevious) forControlEvents:(UIControlEvents)UIControlEventTouchUpInside];
-    [buttonRowView addSubview:buttonPrevious];
-    buttonContinue = [UIButton buttonWithType:UIButtonTypeSystem];
-    [buttonContinue setTitle:@"OK" forState:(UIControlStateNormal)];
-    viewRectangle.origin.x += viewRectangle.size.width;
-    [buttonContinue setFrame:viewRectangle];
-    [buttonContinue addTarget:self action:@selector(onButtonContinue) forControlEvents:(UIControlEvents)UIControlEventTouchUpInside];
-    [buttonRowView addSubview:buttonContinue];
-    buttonNext = [UIButton buttonWithType:UIButtonTypeSystem];
-    [buttonNext setTitle:@"➡︎" forState:(UIControlStateNormal)];
-    viewRectangle.origin.x += viewRectangle.size.width;
-    [buttonNext setFrame:viewRectangle];
-    [buttonNext addTarget:self action:@selector(onButtonNext) forControlEvents:(UIControlEvents)UIControlEventTouchUpInside];
-    [buttonRowView addSubview:buttonNext];
-    buttonPause = [UIButton buttonWithType:UIButtonTypeSystem];
-    [buttonPause setTitle:@"≣" forState:(UIControlStateNormal)];
-    viewRectangle.origin.x += viewRectangle.size.width;
-    [buttonPause setFrame:viewRectangle];
-    [buttonPause addTarget:self action:@selector(onButtonPause) forControlEvents:(UIControlEvents)UIControlEventTouchUpInside];
-    [buttonRowView addSubview:buttonPause];
+    StoryNavigator * buttonRowView = [[StoryNavigator alloc]initWithObserver:self];
+    [self addSubview:buttonRowView];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:buttonRowView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:buttonRowView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:buttonRowView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:buttonRowView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:buttonRowHeight]];
     return buttonRowView;
 }
 
-- (UIScrollView*) getUIScrollView : (CGRect) bounds
-{
-    UIScrollView* myScrollView = [[UIScrollView alloc]initWithFrame:bounds];
-    const CGFloat imageAspectRatio = (16.0 / 9.0);
-    // Create image view.
-    CGFloat imageViewWidth = bounds.size.width;
-    CGFloat imageViewHeight = imageViewWidth / imageAspectRatio;
-    CGRect imageViewBounds = CGRectMake(0.0, 0.0, imageViewWidth, imageViewHeight);
-    uiImageView = [self getUIImageView:imageViewBounds];
-    // Create text view.
-    CGFloat textViewY = imageViewHeight;
+- (StoryImageAndTextView *) getUIScrollView {
     const CGFloat textBoxHeight = 512.0;
-    CGRect textViewBounds = CGRectMake(0.0, textViewY, imageViewWidth, textBoxHeight);
-    uiTextView = [self getUITextView:textViewBounds];
-    // Add views.
-    [myScrollView addSubview:uiImageView];
-    [myScrollView addSubview:uiTextView];
+    StoryImageAndTextView * myScrollView = [[StoryImageAndTextView alloc] init];
+    [self addSubview:myScrollView];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:myScrollView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:myScrollView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:myScrollView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:myScrollView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:navigator attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];
     return myScrollView;
-}
-
-- (UIImageView*) getUIImageView : (CGRect) bounds
-{
-    UIImageView* myImageView = [[UIImageView alloc]initWithFrame:bounds];
-    [[myImageView layer] setMagnificationFilter:kCAFilterNearest];
-    return myImageView;
-}
-
-- (UITextView*) getUITextView : (CGRect) textViewRectangle
-{
-    UITextView* myTextView = [[UITextView alloc]initWithFrame:textViewRectangle];
-    myTextView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-    myTextView.editable = false;
-    return myTextView;
 }
 
 - (void) setImageViewImage : (UIImage*) newImage
 {
-    [uiImageView setImage:newImage];
+    [scrollView setImage:newImage];
 }
 
 - (void) setTextViewText : (NSString*) newText
 {
-    [uiTextView setText:newText];
-    //CGRect frame = uiTextView.frame;
-    //frame.size.height = [uiTextView contentSize].height;
-    //[uiTextView setFrame:frame];
+    [scrollView setText:newText];
 }
 
 - (void) setChoiceSelectorEnabled : (BOOL) enabled
 {
-    [buttonPrevious setEnabled:enabled];
-    [buttonNext setEnabled:enabled];
+    [navigator setChoiceSelectorEnabled:enabled];
 }
 
 @end

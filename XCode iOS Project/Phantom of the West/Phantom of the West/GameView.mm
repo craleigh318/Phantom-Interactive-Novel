@@ -7,37 +7,54 @@
 //
 
 #import "GameView.h"
-#include "StoryViewIOSObjC.h"
 
-@implementation GameView
+@implementation GameView {
+    UIViewController <ADBannerViewDelegate, UITableViewDelegate> * controller;
+    UIView * adBannerContainer;
+}
 
-+ (UIView *) getGameView : (UIViewController <ADBannerViewDelegate, UITableViewDelegate> *) controller
-    {
-        CGRect viewRectangle = [[UIScreen mainScreen] bounds];
-        // Save space for status bar.
-        CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
-        viewRectangle.origin.y += statusBarHeight;
-        viewRectangle.size.height -= statusBarHeight;
-        UIView * gameView = [[UIView alloc] initWithFrame:viewRectangle];
-        // Add advertisment, if applicable.
-        if ([Advertising shouldDisplayAdvertisement])
-        {
++ (UIView *) getGameView : (UIViewController <ADBannerViewDelegate, UITableViewDelegate> *) controller {
+        return [[GameView alloc] initWithController:controller];
+    }
+
+- (id) initWithController: (UIViewController <ADBannerViewDelegate, UITableViewDelegate> *) c {
+    self = [super initWithFrame:[[UIScreen mainScreen] bounds]];
+    if (self) {
+        controller = c;
+        [self initializeGameView];
+    }
+    return self;
+}
+
+- (void) initializeGameView {
+    // Add advertisment, if applicable.
+        if ([Advertising shouldDisplayAdvertisement]) {
             ADBannerView * adBanner = [Advertising getIAdBanner];
-            CGFloat adHeight = (adBanner.frame.size.height / 2.0);
-            viewRectangle.origin.y = adHeight;
-            viewRectangle.size.height -= adHeight;
+            adBannerContainer = adBanner;
             adBanner.delegate = controller;
             adBanner.hidden = TRUE;
-            [gameView addSubview:adBanner];
+            [self addSubview:adBanner];
+            
         }
-        else
-        {
-            viewRectangle.origin.y = 0.0;
+        else {
+            adBannerContainer = [[UIView alloc] init];
+            [self addConstraint:[NSLayoutConstraint constraintWithItem:adBannerContainer attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:0.0]];
         }
-        // Initialize main view.
-        StoryViewIOSObjC * storyView = [[StoryViewIOSObjC alloc] initWithFrame:viewRectangle withController:controller];
-        [gameView addSubview:storyView];
-        return gameView;
-    }
+[self addAdBannerConstraints:adBannerContainer];
+
+    // Initialize main view.
+    StoryViewIOSObjC * storyView = [[StoryViewIOSObjC alloc] init];
+    [self addSubview:storyView];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:storyView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:storyView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:adBannerContainer attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:storyView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:storyView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+}
+
+- (void) addAdBannerConstraints: (UIView *) myAdBanner {
+    myAdBanner.translatesAutoresizingMaskIntoConstraints = false;
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:myAdBanner attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:controller.topLayoutGuide attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:myAdBanner attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0]];
+}
     
     @end

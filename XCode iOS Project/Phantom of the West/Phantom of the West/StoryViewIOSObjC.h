@@ -11,36 +11,23 @@
 #import <UIKit/UIKit.h>
 #import "PStoryViewObjC.h"
 #import "PauseMenu.h"
+#import "StoryNavigator.h"
+#import "StoryImageAndTextView.h"
 #include "StoryViewIOSCPP.h"
 
 /*
  A story view for iOS devices.
  */
-@interface StoryViewIOSObjC : UIView <PStoryViewObjC>
+@interface StoryViewIOSObjC : UIView <PStoryViewObjC, PStoryNavigatorObserver>
 
 @property UIViewController <UITableViewDelegate> * controller;
 
-- (id) initWithFrame : (CGRect) viewRect withController : (UIViewController <UITableViewDelegate> *) controller;
+- (id) initWithController : (UIViewController <UITableViewDelegate> *) controller;
 
-    /*
-     Method to call when the continue button is pressed.
-     */
-- (void) onButtonContinue;
-    
-    /*
-     Method to call when the previous-choice button is pressed.
-     */
-- (void) onButtonPrevious;
-    
-    /*
-     Method to call when the next-choice button is pressed.
-     */
-- (void) onButtonNext;
-    
-    /*
-     Initializes uiTextView
-     */
-- (UITextView*) getUITextView : (CGRect) textViewRectangle;
+/*
+ Initializes uiView.
+ */
+- (void) initializeUIView;
 
 /*
  Sets the text of the UI's dialogue box.
@@ -51,10 +38,5 @@
      Sets the text of the UI's dialogue box.
      */
 - (void) setTextViewText : (NSString*) newText;
-    
-    /*
-     If set to true, enables the appropriate buttons for user choice selection.
-     */
-- (void) setChoiceSelectorEnabled : (BOOL) enabled;
     
     @end

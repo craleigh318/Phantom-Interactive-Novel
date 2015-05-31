@@ -39,6 +39,7 @@ didFailToReceiveAdWithError:(NSError *)error {
     NSInteger index = [indexPath row];
     PauseMenu * pauseMenu = (PauseMenu *) tableView;
     [[[pauseMenu options] objectAtIndex:index] onSelect];
+    [tableView deselectRowAtIndexPath:indexPath animated:true];
 }
 
 @end

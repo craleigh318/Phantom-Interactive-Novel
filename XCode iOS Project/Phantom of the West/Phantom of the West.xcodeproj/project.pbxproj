@@ -19,6 +19,8 @@
 		A42266AC1B12ACF100D7F520 /* StoryViewIOSCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266A41B12ACF100D7F520 /* StoryViewIOSCPP.mm */; };
 		A42266AD1B12ACF100D7F520 /* StoryViewIOSObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266A61B12ACF100D7F520 /* StoryViewIOSObjC.mm */; };
 		A42A9EA11B192B2E00D8BBDB /* PauseMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A42A9EA01B192B2E00D8BBDB /* PauseMenu.m */; };
+		A44BFDCB1B1A900300804705 /* StoryNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BFDCA1B1A900300804705 /* StoryNavigator.m */; };
+		A44BFDD11B1ACAAB00804705 /* StoryImageAndTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BFDD01B1ACAAB00804705 /* StoryImageAndTextView.m */; };
 		A455D76A1B181E6D001935F4 /* ModifyableChoiceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7071B181E6D001935F4 /* ModifyableChoiceList.cpp */; };
 		A455D76B1B181E6D001935F4 /* Page.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7091B181E6D001935F4 /* Page.cpp */; };
 		A455D76C1B181E6D001935F4 /* Journalist-in-Shower.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D70D1B181E6D001935F4 /* Journalist-in-Shower.png */; };
@@ -110,6 +112,11 @@
 		A42A9E9F1B192B2E00D8BBDB /* PauseMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseMenu.h; sourceTree = "<group>"; };
 		A42A9EA01B192B2E00D8BBDB /* PauseMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseMenu.m; sourceTree = "<group>"; };
 		A42A9EA21B19315D00D8BBDB /* PauseMenuOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseMenuOption.h; sourceTree = "<group>"; };
+		A44BFDC91B1A900300804705 /* StoryNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryNavigator.h; sourceTree = "<group>"; };
+		A44BFDCA1B1A900300804705 /* StoryNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryNavigator.m; sourceTree = "<group>"; };
+		A44BFDCD1B1A96FE00804705 /* PStoryNavigatorObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryNavigatorObserver.h; sourceTree = "<group>"; };
+		A44BFDCF1B1ACAAB00804705 /* StoryImageAndTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryImageAndTextView.h; sourceTree = "<group>"; };
+		A44BFDD01B1ACAAB00804705 /* StoryImageAndTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryImageAndTextView.m; sourceTree = "<group>"; };
 		A455D7041B181E6D001935F4 /* IChoiceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IChoiceList.h; sourceTree = "<group>"; };
 		A455D7051B181E6D001935F4 /* IPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPage.h; sourceTree = "<group>"; };
 		A455D7061B181E6D001935F4 /* IStoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IStoryView.h; sourceTree = "<group>"; };
@@ -271,6 +278,8 @@
 		A42266EE1B12AE1100D7F520 /* Story View */ = {
 			isa = PBXGroup;
 			children = (
+				A44BFDCE1B1AC96400804705 /* Image and Text Views */,
+				A44BFDCC1B1A96AB00804705 /* Story Navigation */,
 				A422669E1B12ACF100D7F520 /* GameView.h */,
 				A422669F1B12ACF100D7F520 /* GameView.mm */,
 				A42266A01B12ACF100D7F520 /* PStoryViewObjC.h */,
@@ -301,6 +310,25 @@
 				A46988571B1981B600E1CAD2 /* ResumeGame.m */,
 			);
 			name = "Pause Menu";
+			sourceTree = "<group>";
+		};
+		A44BFDCC1B1A96AB00804705 /* Story Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A44BFDC91B1A900300804705 /* StoryNavigator.h */,
+				A44BFDCA1B1A900300804705 /* StoryNavigator.m */,
+				A44BFDCD1B1A96FE00804705 /* PStoryNavigatorObserver.h */,
+			);
+			name = "Story Navigation";
+			sourceTree = "<group>";
+		};
+		A44BFDCE1B1AC96400804705 /* Image and Text Views */ = {
+			isa = PBXGroup;
+			children = (
+				A44BFDCF1B1ACAAB00804705 /* StoryImageAndTextView.h */,
+				A44BFDD01B1ACAAB00804705 /* StoryImageAndTextView.m */,
+			);
+			name = "Image and Text Views";
 			sourceTree = "<group>";
 		};
 		A455D7021B181E6D001935F4 /* Common Files */ = {
@@ -681,6 +709,7 @@
 				A455D7A11B181E6D001935F4 /* PhantomRevealWithEyes.cpp in Sources */,
 				A455D7A61B181E6D001935F4 /* ChoiceToBlueZone.cpp in Sources */,
 				A42A9EA11B192B2E00D8BBDB /* PauseMenu.m in Sources */,
+				A44BFDD11B1ACAAB00804705 /* StoryImageAndTextView.m in Sources */,
 				A42266A71B12ACF100D7F520 /* Advertising.m in Sources */,
 				A455D79B1B181E6D001935F4 /* OfficerNoticesDrKaden.cpp in Sources */,
 				A455D7A41B181E6D001935F4 /* OfficerPossessed.cpp in Sources */,
@@ -690,6 +719,7 @@
 				A455D7841B181E6D001935F4 /* IAmDrKaden.cpp in Sources */,
 				A46988581B1981B600E1CAD2 /* ResumeGame.m in Sources */,
 				A455D78A1B181E6D001935F4 /* DriveToOfficerHome.cpp in Sources */,
+				A44BFDCB1B1A900300804705 /* StoryNavigator.m in Sources */,
 				A455D78D1B181E6D001935F4 /* OfficerOnBed.cpp in Sources */,
 				A455D78F1B181E6D001935F4 /* CityscapeFromWindow.cpp in Sources */,
 				A455D7A71B181E6D001935F4 /* ChoiceToGreenZone.cpp in Sources */,

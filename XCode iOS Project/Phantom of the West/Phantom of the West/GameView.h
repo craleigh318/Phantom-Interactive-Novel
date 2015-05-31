@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "Advertising.h"
+#include "StoryViewIOSObjC.h"
 
 /*
  A basic class used to load the UI.
  */
-@interface GameView : NSObject
+@interface GameView : UIView
 
 /*
  Returns the game's user interface as a UIView.
