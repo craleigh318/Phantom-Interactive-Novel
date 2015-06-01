@@ -10,6 +10,8 @@
 
 @interface StoryImageAndTextView : UIScrollView
 
+@property NSObject <UIScrollViewDelegate> * controller;
+
 - (UIImage *) image;
 
 - (void) setImage: (UIImage *) value;
@@ -17,5 +19,7 @@
 - (NSString *) text;
 
 - (void) setText: (NSString *) value;
+
+- (id) initWithController: (NSObject <UIScrollViewDelegate> *) c;
 
 @end

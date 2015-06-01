@@ -20,7 +20,7 @@
  */
 @interface StoryViewIOSObjC : UIView <PStoryViewObjC, PStoryNavigatorObserver>
 
-@property UIViewController <UITableViewDelegate> * controller;
+@property UIViewController <UITableViewDelegate, UIScrollViewDelegate> * controller;
 
 - (id) initWithController : (UIViewController <UITableViewDelegate> *) controller;
 

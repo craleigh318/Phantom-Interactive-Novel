@@ -13,11 +13,28 @@
 }
 
 + (GameView *) getGameView : (UIViewController <ADBannerViewDelegate, UITableViewDelegate> *) controller {
-        return [[GameView alloc] initWithController:controller];
+    /*GameView * newGameView = [[GameView alloc] initWithController:controller];
+    UIView * parentView = controller.view;
+    parentView.translatesAutoresizingMaskIntoConstraints = false;
+    [parentView addSubview:newGameView];
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:newGameView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:parentView attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:newGameView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:controller.topLayoutGuide attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:newGameView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:parentView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:newGameView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:parentView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    return newGameView;*/
+    UIView * parentView = controller.view;
+    parentView.translatesAutoresizingMaskIntoConstraints = false;
+    UIView * newGameView = [[StoryViewIOSObjC alloc] initWithController:controller];
+    [parentView addSubview:newGameView];
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:newGameView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:parentView attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:newGameView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:controller.topLayoutGuide attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:newGameView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:parentView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
+    [parentView addConstraint:[NSLayoutConstraint constraintWithItem:newGameView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:parentView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    return  nil;
     }
 
 - (id) initWithController: (UIViewController <ADBannerViewDelegate, UITableViewDelegate> *) c {
-    self = [super initWithFrame:[[UIScreen mainScreen] bounds]];
+    self = [super init];
     if (self) {
         controller = c;
         [self initializeGameView];
@@ -31,6 +48,7 @@
         //if ([Advertising shouldDisplayAdvertisement]) {
     if ([Advertising shouldDisplayAdvertisement]) {
             ADBannerView * adBanner = [Advertising getIAdBanner];
+        adBanner.translatesAutoresizingMaskIntoConstraints = false;
             adBanner.delegate = controller;
             adBanner.hidden = TRUE;
             [self.adBannerContainer addSubview:adBanner];
@@ -44,10 +62,10 @@
     self.storyView = [[StoryViewIOSObjC alloc] init];
     self.storyView.translatesAutoresizingMaskIntoConstraints = false;
     [self addSubview:self.storyView];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.storyView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.storyView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.adBannerContainer attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    /*[self addConstraint:[NSLayoutConstraint constraintWithItem:self.storyView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.storyView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.storyView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.storyView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.storyView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];*/
 }
 
 - (UIView *) initializeAdBannerContainer {

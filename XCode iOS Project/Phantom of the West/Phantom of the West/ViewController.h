@@ -11,7 +11,7 @@
 #import "GameView.h"
 #import "PauseMenu.h"
 
-@interface ViewController : UIViewController <ADBannerViewDelegate, UITableViewDelegate>
+@interface ViewController : UIViewController <ADBannerViewDelegate, UITableViewDelegate, UIScrollViewDelegate>
 
 @property GameView * mainView;
 

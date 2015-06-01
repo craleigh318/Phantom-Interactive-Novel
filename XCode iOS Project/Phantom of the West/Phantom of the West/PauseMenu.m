@@ -20,15 +20,16 @@
 
 - (id) initWithFrame : (CGRect) viewRect
 {
-    if (self = [super initWithFrame:viewRect style:UITableViewStylePlain])
+    self = [super initWithFrame:CGRectZero style:UITableViewStylePlain];
+    if (self)
     {
         [self initializePauseMenu];
-        return self;
     }
-    return nil;
+    return self;
 }
 
 - (void) initializePauseMenu {
+    self.translatesAutoresizingMaskIntoConstraints = false;
     [self setDataSource:self];
     [self setOptions: [NSMutableArray array]];
     [[self options] addObject:[[ResumeGame alloc] initWithPauseMenu:self]];

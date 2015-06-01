@@ -63,11 +63,21 @@ const CGFloat buttonRowHeight = 50.0;
     // Create scroll view.
     scrollView = [self getUIScrollView];
     // Create pause menu.
-    pauseMenu = [[PauseMenu alloc] initWithFrame:self.frame];
-    [pauseMenu setDelegate:[self controller]];
-    [pauseMenu reloadData];
-    pauseMenu.hidden = true;
-    [self addSubview:pauseMenu];
+    pauseMenu = [self getPauseMenu];
+    
+}
+
+- (PauseMenu *) getPauseMenu {
+    PauseMenu * pm = [[PauseMenu alloc] init];
+    [pm setDelegate:[self controller]];
+    [pm reloadData];
+    pm.hidden = true;
+    [self addSubview:pm];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:pm attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:pm attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:pm attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:pm attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    return pm;
 }
 
 /*
@@ -85,8 +95,7 @@ const CGFloat buttonRowHeight = 50.0;
 }
 
 - (StoryImageAndTextView *) getUIScrollView {
-    const CGFloat textBoxHeight = 512.0;
-    StoryImageAndTextView * myScrollView = [[StoryImageAndTextView alloc] init];
+    StoryImageAndTextView * myScrollView = [[StoryImageAndTextView alloc] initWithController:self.controller];
     [self addSubview:myScrollView];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:myScrollView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:myScrollView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];

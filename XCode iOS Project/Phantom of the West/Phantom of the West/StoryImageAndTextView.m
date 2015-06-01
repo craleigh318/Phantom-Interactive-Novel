@@ -13,6 +13,8 @@
     UITextView * textView;
 }
 
+const CGFloat textBoxHeight = 512.0;
+
 - (UIImage *) image {
     return imageView.image;
 }
@@ -31,9 +33,10 @@
 
 const CGFloat imageAspectRatioInverse = (9.0 / 16.0);
 
-- (id) init {
+- (id) initWithController: (NSObject <UIScrollViewDelegate> *) c {
     self = [super init];
     if (self) {
+        self.controller = c;
         [self initializeStoryImageAndTextView];
     }
     return self;
@@ -41,6 +44,8 @@ const CGFloat imageAspectRatioInverse = (9.0 / 16.0);
 
 - (void) initializeStoryImageAndTextView {
     self.translatesAutoresizingMaskIntoConstraints = false;
+    self.delegate = self.controller;
+    self.scrollEnabled = true;
     imageView = [self initializeImageView];
     textView = [self initializeTextView];
 }
@@ -52,8 +57,8 @@ const CGFloat imageAspectRatioInverse = (9.0 / 16.0);
     [self addSubview:myImageView];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:myImageView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:myImageView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:myImageView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:myImageView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeWidth multiplier:imageAspectRatioInverse constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:myImageView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeWidth multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:myImageView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:myImageView attribute:NSLayoutAttributeWidth multiplier:imageAspectRatioInverse constant:0.0]];
     return myImageView;
 }
 
@@ -66,7 +71,8 @@ const CGFloat imageAspectRatioInverse = (9.0 / 16.0);
     [self addSubview:myTextView];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:myTextView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:myTextView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:myTextView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:myTextView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeWidth multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:myTextView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:textBoxHeight]];
     return myTextView;
 }
 
