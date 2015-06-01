@@ -16,7 +16,7 @@
     PauseMenu * pauseMenu;
 }
 
-const CGFloat buttonRowHeight = 50.0;
+const CGFloat buttonRowHeight = 44.0;
 
 - (id) initWithController : (UIViewController <UITableViewDelegate> *) controller
 {
