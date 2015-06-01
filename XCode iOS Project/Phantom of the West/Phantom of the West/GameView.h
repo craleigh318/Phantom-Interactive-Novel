@@ -21,7 +21,6 @@
  */
 + (GameView *) getGameView : (UIViewController <ADBannerViewDelegate, UITableViewDelegate, UIScrollViewDelegate> *) controller;
 
-@property UIView * adBannerContainer;
 @property StoryViewIOSObjC * storyView;
 
 @end

@@ -26,11 +26,12 @@
 }
 
 - (void)bannerViewDidLoadAd:(ADBannerView *)banner {
-    banner.hidden = FALSE;
+    banner.hidden = false;
 }
 
 - (void)bannerView:(ADBannerView *)banner
 didFailToReceiveAdWithError:(NSError *)error {
+    banner.hidden = true;
     NSLog(@"%@", error);
 }
 
