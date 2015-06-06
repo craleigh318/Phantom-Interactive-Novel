@@ -14,6 +14,7 @@
     StoryNavigator * navigator;
     StoryImageAndTextView * scrollView;
     PauseMenu * pauseMenu;
+    TextViewAndNavigator * textAndNav;
 }
 
 const CGFloat buttonRowHeight = 44.0;
@@ -58,13 +59,25 @@ const CGFloat buttonRowHeight = 44.0;
 - (void) initializeUIView
 {
     self.translatesAutoresizingMaskIntoConstraints = false;
+    // Create the text half.
+    textAndNav = [self getTextAndNav];
     // Create button row.
-    navigator = [self getButtonRow];
+    //navigator = [self getButtonRow];
     // Create scroll view.
-    scrollView = [self getUIScrollView];
+    //scrollView = [self getUIScrollView];
     // Create pause menu.
     pauseMenu = [self getPauseMenu];
     
+}
+
+- (TextViewAndNavigator *) getTextAndNav {
+    TextViewAndNavigator * tvan = [[TextViewAndNavigator alloc] initWithObserver:self];
+    [self addSubview:tvan];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:tvan attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:tvan attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:tvan attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:tvan attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    return tvan;
 }
 
 - (PauseMenu *) getPauseMenu {
@@ -106,17 +119,19 @@ const CGFloat buttonRowHeight = 44.0;
 
 - (void) setImageViewImage : (UIImage*) newImage
 {
-    [scrollView setImage:newImage];
+    //[scrollView setImage:newImage];
 }
 
 - (void) setTextViewText : (NSString*) newText
 {
-    [scrollView setText:newText];
+    //[scrollView setText:newText];
+    [textAndNav setText:newText];
 }
 
 - (void) setChoiceSelectorEnabled : (BOOL) enabled
 {
-    [navigator setChoiceSelectorEnabled:enabled];
+    //[navigator setChoiceSelectorEnabled:enabled];
+    [textAndNav setChoiceSelectorEnabled:enabled];
 }
 
 @end
