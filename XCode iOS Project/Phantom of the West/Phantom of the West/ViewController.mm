@@ -42,4 +42,15 @@ didFailToReceiveAdWithError:(NSError *)error {
     [tableView deselectRowAtIndexPath:indexPath animated:true];
 }
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [self.mainView.storyView removeOrientationConstraints];
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+    } completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        [self.mainView updateBannerHeight];
+        [self.mainView.storyView addOrientationConstraints];
+    }];
+}
+
 @end

@@ -12,12 +12,23 @@
 {
     StoryViewIOSCPP* cppGlue;
     StoryNavigator * navigator;
-    StoryImageAndTextView * scrollView;
+    UIImageView * imageView;
+    UITextView * textView;
     PauseMenu * pauseMenu;
-    TextViewAndNavigator * textAndNav;
+    NSArray * universalConstraints;
+    NSArray * portraitConstraints;
+    NSArray * landscapeConstraints;
+    NSArray * imageViewUniversalConstraints;
+    NSArray * textViewUniversalConstraints;
+    NSArray * textViewPortraitConstraints;
+    NSArray * textViewLandscapeConstraints;
+    NSArray * navigatorUniversalConstraints;
+    NSArray * navigatorPortraitConstraints;
+    NSArray * navigatorLandscapeConstraints;
 }
 
 const CGFloat buttonRowHeight = 44.0;
+const CGFloat imageAspectRatioInverse = (9.0 / 16.0);
 
 - (id) initWithController : (UIViewController <UITableViewDelegate> *) controller
 {
@@ -59,15 +70,100 @@ const CGFloat buttonRowHeight = 44.0;
 - (void) initializeUIView
 {
     self.translatesAutoresizingMaskIntoConstraints = false;
-    // Create the text half.
-    textAndNav = [self getTextAndNav];
-    // Create button row.
-    //navigator = [self getButtonRow];
-    // Create scroll view.
-    //scrollView = [self getUIScrollView];
+    // Create the views.
+    imageView = [[UIImageView alloc] init];
+    textView = [[UITextView alloc] init];
+    navigator = [[StoryNavigator alloc]initWithObserver:self];
+    // Create contraints.
+    [self getImageView];
+    [self getTextView];
+    [self getButtonRow];
     // Create pause menu.
     pauseMenu = [self getPauseMenu];
-    
+    // Create more constraints
+    universalConstraints = @[
+                             imageViewUniversalConstraints,
+                             textViewUniversalConstraints,
+                             navigatorUniversalConstraints
+                             ];
+    portraitConstraints = @[
+                             textViewPortraitConstraints,
+                             navigatorPortraitConstraints
+                             ];
+    landscapeConstraints = @[
+                            textViewLandscapeConstraints,
+                            navigatorLandscapeConstraints
+                            ];
+    // Add constraints.
+    [self addMyConstraints:universalConstraints];
+    [self addMyConstraints:portraitConstraints];
+}
+
+- (void) addOrientationConstraints {
+    UIInterfaceOrientation interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
+    if (interfaceOrientation == UIInterfaceOrientationPortrait) {
+        [self addMyConstraints:portraitConstraints];
+    } else {
+        [self addMyConstraints:landscapeConstraints];
+    }
+}
+
+- (void) removeOrientationConstraints {
+    [self removeMyConstraints:portraitConstraints];
+    [self removeMyConstraints:landscapeConstraints];
+}
+
+- (void) addMyConstraints : (NSArray *) constraintsArray {
+    for (NSArray * constraints in constraintsArray) {
+        [self addConstraints:constraints];
+    }
+}
+
+- (void) removeMyConstraints : (NSArray *) constraintsArray {
+    for (NSArray * constraints in constraintsArray) {
+        [self removeConstraints:constraints];
+    }
+}
+
+- (StoryNavigator *) getNavigator {
+    StoryNavigator * nav = [[StoryNavigator alloc] initWithObserver:self];
+    [self addSubview:nav];
+    return nav;
+}
+
+- (UIImageView*) getImageView {
+    imageView.translatesAutoresizingMaskIntoConstraints = false;
+    [[imageView layer] setMagnificationFilter:kCAFilterNearest];
+    [self addSubview:imageView];
+    imageViewUniversalConstraints = @[
+                                      [NSLayoutConstraint constraintWithItem:imageView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0],
+                                      [NSLayoutConstraint constraintWithItem:imageView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0],
+                                      [NSLayoutConstraint constraintWithItem:imageView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:navigator attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0],
+                                      [NSLayoutConstraint constraintWithItem:imageView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeWidth multiplier:imageAspectRatioInverse constant:0.0]
+                                      ];
+    return imageView;
+}
+
+- (UITextView*) getTextView {
+    textView.translatesAutoresizingMaskIntoConstraints = false;
+    textView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    textView.editable = false;
+    textView.scrollEnabled = false;
+    [self addSubview:textView];
+    textViewUniversalConstraints = @[
+                                     [NSLayoutConstraint constraintWithItem:textView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]
+                                     ];
+    textViewPortraitConstraints = @[
+                                     [NSLayoutConstraint constraintWithItem:textView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0],
+                                     [NSLayoutConstraint constraintWithItem:textView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0],
+                                     [NSLayoutConstraint constraintWithItem:textView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:navigator attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]
+                                     ];
+    textViewLandscapeConstraints = @[
+                                    [NSLayoutConstraint constraintWithItem:textView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0],
+                                    [NSLayoutConstraint constraintWithItem:textView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0],
+                                    [NSLayoutConstraint constraintWithItem:textView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]
+                                    ];
+    return textView;
 }
 
 - (TextViewAndNavigator *) getTextAndNav {
@@ -98,13 +194,20 @@ const CGFloat buttonRowHeight = 44.0;
  */
 - (StoryNavigator *) getButtonRow
 {
-    StoryNavigator * buttonRowView = [[StoryNavigator alloc]initWithObserver:self];
-    [self addSubview:buttonRowView];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:buttonRowView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:buttonRowView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:buttonRowView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:buttonRowView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:buttonRowHeight]];
-    return buttonRowView;
+    [self addSubview:navigator];
+    navigatorUniversalConstraints = @[
+                                     [NSLayoutConstraint constraintWithItem:navigator attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0],
+                                     [NSLayoutConstraint constraintWithItem:navigator attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]
+                                     ];
+    navigatorPortraitConstraints = @[
+                                    [NSLayoutConstraint constraintWithItem:navigator attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0],
+                                     [NSLayoutConstraint constraintWithItem:navigator attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:buttonRowHeight]
+                                    ];
+    navigatorLandscapeConstraints = @[
+                                     [NSLayoutConstraint constraintWithItem:navigator attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeWidth multiplier:(2.0 / 3.0) constant:0.0],
+                                     [NSLayoutConstraint constraintWithItem:navigator attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]
+                                     ];
+    return navigator;
 }
 
 - (StoryImageAndTextView *) getUIScrollView {
@@ -119,19 +222,17 @@ const CGFloat buttonRowHeight = 44.0;
 
 - (void) setImageViewImage : (UIImage*) newImage
 {
-    //[scrollView setImage:newImage];
+    [imageView setImage:newImage];
 }
 
 - (void) setTextViewText : (NSString*) newText
 {
-    //[scrollView setText:newText];
-    [textAndNav setText:newText];
+    [textView setText:newText];
 }
 
 - (void) setChoiceSelectorEnabled : (BOOL) enabled
 {
-    //[navigator setChoiceSelectorEnabled:enabled];
-    [textAndNav setChoiceSelectorEnabled:enabled];
+    [navigator setChoiceSelectorEnabled:enabled];
 }
 
 @end

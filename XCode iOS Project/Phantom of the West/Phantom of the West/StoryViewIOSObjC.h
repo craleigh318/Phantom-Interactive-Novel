@@ -39,5 +39,9 @@
      Sets the text of the UI's dialogue box.
      */
 - (void) setTextViewText : (NSString*) newText;
+
+- (void) addOrientationConstraints;
+
+- (void) removeOrientationConstraints;
     
     @end

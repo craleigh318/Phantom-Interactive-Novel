@@ -21,6 +21,8 @@
  */
 + (GameView *) getGameView : (UIViewController <ADBannerViewDelegate, UITableViewDelegate, UIScrollViewDelegate> *) controller;
 
+- (void) updateBannerHeight;
+
 @property StoryViewIOSObjC * storyView;
 
 @end
