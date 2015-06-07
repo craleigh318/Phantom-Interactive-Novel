@@ -166,16 +166,6 @@ const CGFloat imageAspectRatioInverse = (9.0 / 16.0);
     return textView;
 }
 
-- (TextViewAndNavigator *) getTextAndNav {
-    TextViewAndNavigator * tvan = [[TextViewAndNavigator alloc] initWithObserver:self];
-    [self addSubview:tvan];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:tvan attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:tvan attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:tvan attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:tvan attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
-    return tvan;
-}
-
 - (PauseMenu *) getPauseMenu {
     PauseMenu * pm = [[PauseMenu alloc] init];
     [pm setDelegate:[self controller]];
@@ -208,16 +198,6 @@ const CGFloat imageAspectRatioInverse = (9.0 / 16.0);
                                      [NSLayoutConstraint constraintWithItem:navigator attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]
                                      ];
     return navigator;
-}
-
-- (StoryImageAndTextView *) getUIScrollView {
-    StoryImageAndTextView * myScrollView = [[StoryImageAndTextView alloc] initWithController:self.controller];
-    [self addSubview:myScrollView];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:myScrollView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:myScrollView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:myScrollView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:myScrollView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:navigator attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];
-    return myScrollView;
 }
 
 - (void) setImageViewImage : (UIImage*) newImage

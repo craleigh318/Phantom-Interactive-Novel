@@ -12,8 +12,6 @@
 #import "PStoryViewObjC.h"
 #import "PauseMenu.h"
 #import "StoryNavigator.h"
-#import "StoryImageAndTextView.h"
-#import "TextViewAndNavigator.h"
 #include "StoryViewIOSCPP.h"
 
 /*
