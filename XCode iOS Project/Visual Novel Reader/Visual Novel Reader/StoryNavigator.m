@@ -9,14 +9,14 @@
 #import "StoryNavigator.h"
 
 @implementation StoryNavigator {
-    UIView <PStoryNavigator> * handler;
+    NSObject <PStoryNavigator> * handler;
     UIButton * buttonPrevious;
     UIButton * buttonContinue;
     UIButton * buttonNext;
     UIButton * buttonOptions;
 }
 
-- (id) initWithHandler: (UIView <PStoryNavigator> *) h {
+- (id) initWithHandler: (NSObject <PStoryNavigator> *) h {
     self = [super init];
     if (self) {
         handler = h;

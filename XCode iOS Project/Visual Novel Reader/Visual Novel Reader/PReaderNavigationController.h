@@ -6,14 +6,12 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
-#import "StoryViewController.h"
-
 @import Foundation;
 
 /*
  Protocol for ReaderNavigationController.
  */
-@protocol PReaderNavigationController <NSObject, PStoryReader>
+@protocol PReaderNavigationController <NSObject>
 
 /*
  Pushes the options menu into view when true.

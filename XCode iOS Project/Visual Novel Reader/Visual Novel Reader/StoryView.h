@@ -7,6 +7,9 @@
 //
 
 #import "PReaderNavigationController.h"
+#import "StoryNavigator.h"
+#import "StoryImageView.h"
+#import "StoryTextView.h"
 
 @import UIKit;
 
@@ -15,6 +18,16 @@
 /*
  Initializes with the specified ReaderNavigationController
  */
-- (id)initWithNavigationController: (UINavigationController <PReaderNavigationController> *) nc;
+- (id)initWithNavigationController: (UINavigationController <PReaderNavigationController, PStoryNavigator> *) nc;
+
+/*
+ Add new constraints when device rotates.
+ */
+- (void) addOrientationConstraints: (UIInterfaceOrientation) interfaceOrientation;
+
+/*
+ Remove olds constraints when device rotates.
+ */
+- (void) removeOrientationConstraints;
 
 @end

@@ -19,7 +19,7 @@
 /*
  Initializes with the specified event handler.
  */
-- (id) initWithHandler: (UIView <PStoryNavigator> *) h;
+- (id) initWithHandler: (NSObject <PStoryNavigator> *) h;
 
 /*
  If set to true, enables the appropriate buttons for user choice selection.

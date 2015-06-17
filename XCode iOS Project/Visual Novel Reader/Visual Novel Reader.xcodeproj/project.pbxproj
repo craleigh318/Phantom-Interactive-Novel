@@ -77,6 +77,7 @@
 		A45EE6121B3100F300741025 /* StoryImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryImageView.m; sourceTree = "<group>"; };
 		A45EE6141B31042B00741025 /* StoryTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryTextView.h; sourceTree = "<group>"; };
 		A45EE6151B31042B00741025 /* StoryTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryTextView.m; sourceTree = "<group>"; };
+		A45EE6171B311D8D00741025 /* StoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryView.xib; sourceTree = "<group>"; };
 		A466ABD41B30B2EA002CFC06 /* libVisual Novel Reader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libVisual Novel Reader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A466ABD71B30B2EA002CFC06 /* Visual_Novel_Reader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Visual_Novel_Reader.h; sourceTree = "<group>"; };
 		A466ABD91B30B2EA002CFC06 /* Visual_Novel_Reader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Visual_Novel_Reader.m; sourceTree = "<group>"; };
@@ -128,6 +129,7 @@
 				A45EE6121B3100F300741025 /* StoryImageView.m */,
 				A45EE6141B31042B00741025 /* StoryTextView.h */,
 				A45EE6151B31042B00741025 /* StoryTextView.m */,
+				A45EE6171B311D8D00741025 /* StoryView.xib */,
 			);
 			name = "Story View";
 			sourceTree = "<group>";

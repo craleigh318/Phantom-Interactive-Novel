@@ -41,4 +41,20 @@
     
 }
 
+- (void) onButtonContinue {
+    
+}
+
+- (void) onButtonPrevious {
+    
+}
+
+- (void) onButtonNext {
+    
+}
+
+- (void) onButtonOptions {
+    
+}
+
 @end

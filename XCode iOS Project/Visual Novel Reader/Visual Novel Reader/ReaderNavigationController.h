@@ -8,12 +8,14 @@
 
 #import "PStoryReader.h"
 #import "PReaderNavigationController.h"
+#import "PStoryNavigator.h"
+#import "StoryViewController.h"
 
 @import UIKit;
 
 /*
  The main controller for the visual novel reader.
  */
-@interface ReaderNavigationController : UINavigationController <PReaderNavigationController>
+@interface ReaderNavigationController : UINavigationController <PReaderNavigationController, PStoryReader, PStoryNavigator>
 
 @end

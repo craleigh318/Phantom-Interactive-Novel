@@ -7,6 +7,8 @@
 //
 
 #import "PReaderNavigationController.h"
+#import "PStoryReader.h"
+#import "PStoryNavigator.h"
 #import "StoryView.h"
 
 @import UIKit;
@@ -19,6 +21,6 @@
 /*
  Initializes with the specified ReaderNavigationController
  */
-- (id)initWithNavigationController: (UINavigationController <PReaderNavigationController> *) nc;
+- (id)initWithNavigationController: (UINavigationController <PReaderNavigationController, PStoryReader, PStoryNavigator> *) nc;
 
 @end
