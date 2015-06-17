@@ -10,6 +10,7 @@
 #import "PReaderNavigationController.h"
 #import "PStoryNavigator.h"
 #import "StoryViewController.h"
+#import "PStory.h"
 
 @import UIKit;
 

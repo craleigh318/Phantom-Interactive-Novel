@@ -12,16 +12,9 @@
     NSObject <PStory> * story;
 }
 
-- (id)init {
-    self = [super init];
-    if (self) {
-        story = nil;
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+    story = nil;
     [self pushViewController:[[StoryViewController alloc] initWithNavigationController:self] animated:false];
 }
 
@@ -31,6 +24,7 @@
 
 - (void) setStory : (NSObject <PStory> *) newValue {
     story = newValue;
+    [story setReader:self];
 }
 
 - (void) showPages : (NSArray *) pages {
