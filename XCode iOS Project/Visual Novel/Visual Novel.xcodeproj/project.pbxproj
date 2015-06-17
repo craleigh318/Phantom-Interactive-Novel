@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A40F7B3D1B2FD8D8005F57A3 /* Visual_Novel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A40F7B3C1B2FD8D8005F57A3 /* Visual_Novel.h */; };
 		A40F7B3F1B2FD8D8005F57A3 /* Visual_Novel.m in Sources */ = {isa = PBXBuildFile; fileRef = A40F7B3E1B2FD8D8005F57A3 /* Visual_Novel.m */; };
 		A40F7B451B2FD8D8005F57A3 /* libVisual Novel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A40F7B391B2FD8D8005F57A3 /* libVisual Novel.a */; };
-		A40F7B541B2FDEED005F57A3 /* PStoryPage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A40F7B531B2FDD37005F57A3 /* PStoryPage.h */; };
 		A40F7B591B2FF0A4005F57A3 /* StoryWithReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A40F7B581B2FF0A4005F57A3 /* StoryWithReader.m */; };
+		A466AC0B1B30C8C8002CFC06 /* PStoryPage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A466AC091B30C898002CFC06 /* PStoryPage.h */; };
+		A466AC0C1B30C8C8002CFC06 /* Visual_Novel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A40F7B3C1B2FD8D8005F57A3 /* Visual_Novel.h */; };
+		A466AC0D1B30C8C8002CFC06 /* Visual_Novel.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = A40F7B3E1B2FD8D8005F57A3 /* Visual_Novel.m */; };
+		A466AC0E1B30C8C8002CFC06 /* PStory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A40F7B551B2FE153005F57A3 /* PStory.h */; };
+		A466AC0F1B30C8C8002CFC06 /* PStoryReader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A40F7B561B2FEDD4005F57A3 /* PStoryReader.h */; };
+		A466AC101B30C8C8002CFC06 /* StoryWithReader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A40F7B571B2FF0A4005F57A3 /* StoryWithReader.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +35,12 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				A40F7B541B2FDEED005F57A3 /* PStoryPage.h in CopyFiles */,
-				A40F7B3D1B2FD8D8005F57A3 /* Visual_Novel.h in CopyFiles */,
+				A466AC0B1B30C8C8002CFC06 /* PStoryPage.h in CopyFiles */,
+				A466AC0C1B30C8C8002CFC06 /* Visual_Novel.h in CopyFiles */,
+				A466AC0D1B30C8C8002CFC06 /* Visual_Novel.m in CopyFiles */,
+				A466AC0E1B30C8C8002CFC06 /* PStory.h in CopyFiles */,
+				A466AC0F1B30C8C8002CFC06 /* PStoryReader.h in CopyFiles */,
+				A466AC101B30C8C8002CFC06 /* StoryWithReader.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,11 +52,11 @@
 		A40F7B3E1B2FD8D8005F57A3 /* Visual_Novel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Visual_Novel.m; sourceTree = "<group>"; };
 		A40F7B441B2FD8D8005F57A3 /* Visual NovelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Visual NovelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40F7B4A1B2FD8D8005F57A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A40F7B531B2FDD37005F57A3 /* PStoryPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PStoryPage.h; path = ../PStoryPage.h; sourceTree = "<group>"; };
 		A40F7B551B2FE153005F57A3 /* PStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStory.h; sourceTree = "<group>"; };
 		A40F7B561B2FEDD4005F57A3 /* PStoryReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryReader.h; sourceTree = "<group>"; };
 		A40F7B571B2FF0A4005F57A3 /* StoryWithReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryWithReader.h; sourceTree = "<group>"; };
 		A40F7B581B2FF0A4005F57A3 /* StoryWithReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryWithReader.m; sourceTree = "<group>"; };
+		A466AC091B30C898002CFC06 /* PStoryPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryPage.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +99,7 @@
 		A40F7B3B1B2FD8D8005F57A3 /* Visual Novel */ = {
 			isa = PBXGroup;
 			children = (
-				A40F7B531B2FDD37005F57A3 /* PStoryPage.h */,
+				A466AC091B30C898002CFC06 /* PStoryPage.h */,
 				A40F7B3C1B2FD8D8005F57A3 /* Visual_Novel.h */,
 				A40F7B3E1B2FD8D8005F57A3 /* Visual_Novel.m */,
 				A40F7B551B2FE153005F57A3 /* PStory.h */,
@@ -376,6 +384,7 @@
 				A40F7B4F1B2FD8D8005F57A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A40F7B501B2FD8D8005F57A3 /* Build configuration list for PBXNativeTarget "Visual NovelTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +393,7 @@
 				A40F7B521B2FD8D8005F57A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
