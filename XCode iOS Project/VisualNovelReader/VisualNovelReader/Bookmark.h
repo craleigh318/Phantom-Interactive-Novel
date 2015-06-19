@@ -6,9 +6,7 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
-#import <VisualNovel/PStory.h>
-#import <VisualNovel/PStoryPage.h>
-#import <VisualNovel/PStoryReader.h>
+#import <VisualNovel/VisualNovel.h>
 #import "StoryView.h"
 
 @import Foundation;
