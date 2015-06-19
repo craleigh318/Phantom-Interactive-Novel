@@ -30,4 +30,24 @@
  */
 - (void) removeOrientationConstraints;
 
+/*
+ Enables the continue button if true.
+ */
+- (void) enableButtonContinue: (BOOL) enable;
+
+/*
+ Enables the previous and next buttons if true.
+ */
+- (void) enableButtonPreviousAndNext: (BOOL) enable;
+
+/*
+ Displays the specified image.
+ */
+- (void) showImage: (UIImage *) img;
+
+/*
+ Displays the specified text.
+ */
+- (void) showText: (NSString *) txt;
+
 @end

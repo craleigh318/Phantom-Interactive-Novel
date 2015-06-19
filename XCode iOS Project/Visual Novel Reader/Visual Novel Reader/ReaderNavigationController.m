@@ -10,12 +10,14 @@
 
 @implementation ReaderNavigationController {
     NSObject <PStory> * story;
+    StoryViewController * subController;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     story = nil;
-    [self pushViewController:[[StoryViewController alloc] initWithNavigationController:self] animated:false];
+    subController = [[StoryViewController alloc] initWithNavigationController:self];
+    [self pushViewController:subController animated:false];
 }
 
 - (NSObject <PStory> *) story {
@@ -28,7 +30,7 @@
 }
 
 - (void) showPages : (NSArray *) pages {
-    
+    [subController showPages:pages];
 }
 
 - (void) showOptionsMenu: (BOOL) show {
@@ -36,19 +38,19 @@
 }
 
 - (void) onButtonContinue {
-    
+    [subController onButtonContinue];
 }
 
 - (void) onButtonPrevious {
-    
+    [subController onButtonPrevious];
 }
 
 - (void) onButtonNext {
-    
+    [subController onButtonNext];
 }
 
 - (void) onButtonOptions {
-    
+    [self showOptionsMenu:true];
 }
 
 @end

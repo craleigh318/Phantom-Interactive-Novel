@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A42DBAD51B337DB200CD1E58 /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DBAD41B337DB200CD1E58 /* Bookmark.m */; };
 		A45EE60A1B30E5ED00741025 /* StoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = A45EE6091B30E5ED00741025 /* StoryView.m */; };
 		A45EE6101B30F6F300741025 /* StoryNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = A45EE60F1B30F6F300741025 /* StoryNavigator.m */; };
 		A45EE6131B3100F300741025 /* StoryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A45EE6121B3100F300741025 /* StoryImageView.m */; };
@@ -66,6 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A42DBAD31B337DB200CD1E58 /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmark.h; sourceTree = "<group>"; };
+		A42DBAD41B337DB200CD1E58 /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
 		A45EE6041B30E33F00741025 /* PReaderNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PReaderNavigationController.h; sourceTree = "<group>"; };
 		A45EE6081B30E5ED00741025 /* StoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryView.h; sourceTree = "<group>"; };
 		A45EE6091B30E5ED00741025 /* StoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryView.m; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 				A45EE6121B3100F300741025 /* StoryImageView.m */,
 				A45EE6141B31042B00741025 /* StoryTextView.h */,
 				A45EE6151B31042B00741025 /* StoryTextView.m */,
+				A42DBAD31B337DB200CD1E58 /* Bookmark.h */,
+				A42DBAD41B337DB200CD1E58 /* Bookmark.m */,
 			);
 			name = "Story View";
 			sourceTree = "<group>";
@@ -338,6 +343,7 @@
 				A466AC1C1B30CD67002CFC06 /* Visual_Novel.m in Sources */,
 				A466AC1B1B30CD67002CFC06 /* StoryWithReader.m in Sources */,
 				A45EE6131B3100F300741025 /* StoryImageView.m in Sources */,
+				A42DBAD51B337DB200CD1E58 /* Bookmark.m in Sources */,
 				A45EE60A1B30E5ED00741025 /* StoryView.m in Sources */,
 				A466AC1F1B30D7AD002CFC06 /* StoryViewController.m in Sources */,
 				A45EE6161B31042B00741025 /* StoryTextView.m in Sources */,

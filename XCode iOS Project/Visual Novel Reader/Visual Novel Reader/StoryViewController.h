@@ -10,6 +10,7 @@
 #import "PStoryReader.h"
 #import "PStoryNavigator.h"
 #import "StoryView.h"
+#import "Bookmark.h"
 
 @import UIKit;
 
@@ -22,5 +23,25 @@
  Initializes with the specified ReaderNavigationController
  */
 - (id)initWithNavigationController: (UINavigationController <PReaderNavigationController, PStoryReader, PStoryNavigator> *) nc;
+
+/*
+ Has the reader display the specified set of pages.
+ */
+- (void) showPages : (NSArray *) pages;
+
+/*
+ The continue button is pressed.
+ */
+- (void) onButtonContinue;
+
+/*
+ The previous button is pressed.
+ */
+- (void) onButtonPrevious;
+
+/*
+ The next button is pressed.
+ */
+- (void) onButtonNext;
 
 @end

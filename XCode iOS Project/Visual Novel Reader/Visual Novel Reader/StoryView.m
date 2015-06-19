@@ -74,6 +74,22 @@
     }
 }
 
+- (void) enableButtonContinue: (BOOL) enable {
+    [navigator enableContinue:enable];
+}
+
+- (void) enableButtonPreviousAndNext: (BOOL) enable {
+    [navigator enablePreviousAndNext:enable];
+}
+
+- (void) showImage: (UIImage *) img {
+    [imageView setImage:img];
+}
+
+- (void) showText: (NSString *) txt {
+    [textView setText:txt];
+}
+
 - (void) initializeConstraints {
     // Navigator contraints.
     navigatorUniversalConstraints = @[
