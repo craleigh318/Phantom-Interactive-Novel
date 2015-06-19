@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A42DBB021B33B5F500CD1E58"
-               BuildableName = "Visual Novel.framework"
-               BlueprintName = "Visual Novel"
-               ReferencedContainer = "container:Visual Novel.xcodeproj">
+               BlueprintIdentifier = "A42DBB5D1B33BAF500CD1E58"
+               BuildableName = "VisualNovel.framework"
+               BlueprintName = "VisualNovel"
+               ReferencedContainer = "container:VisualNovel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A42DBB0D1B33B5F500CD1E58"
-               BuildableName = "Visual NovelTests.xctest"
-               BlueprintName = "Visual NovelTests"
-               ReferencedContainer = "container:Visual Novel.xcodeproj">
+               BlueprintIdentifier = "A42DBB681B33BAF500CD1E58"
+               BuildableName = "VisualNovelTests.xctest"
+               BlueprintName = "VisualNovelTests"
+               ReferencedContainer = "container:VisualNovel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A42DBB0D1B33B5F500CD1E58"
-               BuildableName = "Visual NovelTests.xctest"
-               BlueprintName = "Visual NovelTests"
-               ReferencedContainer = "container:Visual Novel.xcodeproj">
+               BlueprintIdentifier = "A42DBB681B33BAF500CD1E58"
+               BuildableName = "VisualNovelTests.xctest"
+               BlueprintName = "VisualNovelTests"
+               ReferencedContainer = "container:VisualNovel.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A42DBB021B33B5F500CD1E58"
-            BuildableName = "Visual Novel.framework"
-            BlueprintName = "Visual Novel"
-            ReferencedContainer = "container:Visual Novel.xcodeproj">
+            BlueprintIdentifier = "A42DBB5D1B33BAF500CD1E58"
+            BuildableName = "VisualNovel.framework"
+            BlueprintName = "VisualNovel"
+            ReferencedContainer = "container:VisualNovel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A42DBB021B33B5F500CD1E58"
-            BuildableName = "Visual Novel.framework"
-            BlueprintName = "Visual Novel"
-            ReferencedContainer = "container:Visual Novel.xcodeproj">
+            BlueprintIdentifier = "A42DBB5D1B33BAF500CD1E58"
+            BuildableName = "VisualNovel.framework"
+            BlueprintName = "VisualNovel"
+            ReferencedContainer = "container:VisualNovel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A42DBB021B33B5F500CD1E58"
-            BuildableName = "Visual Novel.framework"
-            BlueprintName = "Visual Novel"
-            ReferencedContainer = "container:Visual Novel.xcodeproj">
+            BlueprintIdentifier = "A42DBB5D1B33BAF500CD1E58"
+            BuildableName = "VisualNovel.framework"
+            BlueprintName = "VisualNovel"
+            ReferencedContainer = "container:VisualNovel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

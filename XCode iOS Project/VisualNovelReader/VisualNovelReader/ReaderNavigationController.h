@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
-#import "PStoryReader.h"
+#import <VisualNovel/PStory.h>
+#import <VisualNovel/PStoryReader.h>
 #import "PReaderNavigationController.h"
 #import "PStoryNavigator.h"
 #import "StoryViewController.h"
-#import "PStory.h"
 
 @import UIKit;
 

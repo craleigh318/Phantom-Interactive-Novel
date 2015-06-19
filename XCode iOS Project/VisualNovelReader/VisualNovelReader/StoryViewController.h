@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
+#import <VisualNovel/PStoryReader.h>
 #import "PReaderNavigationController.h"
-#import "PStoryReader.h"
 #import "PStoryNavigator.h"
 #import "StoryView.h"
 #import "Bookmark.h"

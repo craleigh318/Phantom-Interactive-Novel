@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A42DBB021B33B5F500CD1E58"
-               BuildableName = "Visual Novel.framework"
+               BlueprintIdentifier = "A40F7B381B2FD8D8005F57A3"
+               BuildableName = "libVisual Novel.a"
                BlueprintName = "Visual Novel"
                ReferencedContainer = "container:Visual Novel.xcodeproj">
             </BuildableReference>
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A42DBB0D1B33B5F500CD1E58"
+               BlueprintIdentifier = "A40F7B431B2FD8D8005F57A3"
                BuildableName = "Visual NovelTests.xctest"
                BlueprintName = "Visual NovelTests"
                ReferencedContainer = "container:Visual Novel.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A42DBB0D1B33B5F500CD1E58"
+               BlueprintIdentifier = "A40F7B431B2FD8D8005F57A3"
                BuildableName = "Visual NovelTests.xctest"
                BlueprintName = "Visual NovelTests"
                ReferencedContainer = "container:Visual Novel.xcodeproj">
@@ -56,8 +56,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A42DBB021B33B5F500CD1E58"
-            BuildableName = "Visual Novel.framework"
+            BlueprintIdentifier = "A40F7B381B2FD8D8005F57A3"
+            BuildableName = "libVisual Novel.a"
             BlueprintName = "Visual Novel"
             ReferencedContainer = "container:Visual Novel.xcodeproj">
          </BuildableReference>
@@ -75,8 +75,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A42DBB021B33B5F500CD1E58"
-            BuildableName = "Visual Novel.framework"
+            BlueprintIdentifier = "A40F7B381B2FD8D8005F57A3"
+            BuildableName = "libVisual Novel.a"
             BlueprintName = "Visual Novel"
             ReferencedContainer = "container:Visual Novel.xcodeproj">
          </BuildableReference>
@@ -93,8 +93,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A42DBB021B33B5F500CD1E58"
-            BuildableName = "Visual Novel.framework"
+            BlueprintIdentifier = "A40F7B381B2FD8D8005F57A3"
+            BuildableName = "libVisual Novel.a"
             BlueprintName = "Visual Novel"
             ReferencedContainer = "container:Visual Novel.xcodeproj">
          </BuildableReference>

@@ -7,97 +7,106 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A42DBB351B33B86600CD1E58 /* Visual Novel Reader.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBB341B33B86600CD1E58 /* Visual Novel Reader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A42DBB3B1B33B86600CD1E58 /* Visual Novel Reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42DBB2F1B33B86600CD1E58 /* Visual Novel Reader.framework */; };
-		A42DBB421B33B86600CD1E58 /* Visual_Novel_ReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DBB411B33B86600CD1E58 /* Visual_Novel_ReaderTests.m */; };
+		A42DBB641B33BAF500CD1E58 /* VisualNovel.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBB631B33BAF500CD1E58 /* VisualNovel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42DBB6A1B33BAF500CD1E58 /* VisualNovel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42DBB5E1B33BAF500CD1E58 /* VisualNovel.framework */; };
+		A42DBB711B33BAF500CD1E58 /* VisualNovelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DBB701B33BAF500CD1E58 /* VisualNovelTests.m */; };
+		A42DBB891B33BBB000CD1E58 /* PStoryReader.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBB851B33BBB000CD1E58 /* PStoryReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42DBB8A1B33BBB000CD1E58 /* PStory.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBB861B33BBB000CD1E58 /* PStory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42DBB8B1B33BBB000CD1E58 /* PStoryPage.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBB871B33BBB000CD1E58 /* PStoryPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A42DBB3C1B33B86600CD1E58 /* PBXContainerItemProxy */ = {
+		A42DBB6B1B33BAF500CD1E58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A42DBB261B33B86600CD1E58 /* Project object */;
+			containerPortal = A42DBB551B33BAF500CD1E58 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A42DBB2E1B33B86600CD1E58;
-			remoteInfo = "Visual Novel Reader";
+			remoteGlobalIDString = A42DBB5D1B33BAF500CD1E58;
+			remoteInfo = VisualNovel;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A42DBB2F1B33B86600CD1E58 /* Visual Novel Reader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Visual Novel Reader.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A42DBB331B33B86600CD1E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A42DBB341B33B86600CD1E58 /* Visual Novel Reader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Visual Novel Reader.h"; sourceTree = "<group>"; };
-		A42DBB3A1B33B86600CD1E58 /* Visual Novel ReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Visual Novel ReaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A42DBB401B33B86600CD1E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A42DBB411B33B86600CD1E58 /* Visual_Novel_ReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Visual_Novel_ReaderTests.m; sourceTree = "<group>"; };
+		A42DBB5E1B33BAF500CD1E58 /* VisualNovel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VisualNovel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42DBB621B33BAF500CD1E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42DBB631B33BAF500CD1E58 /* VisualNovel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisualNovel.h; sourceTree = "<group>"; };
+		A42DBB691B33BAF500CD1E58 /* VisualNovelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisualNovelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42DBB6F1B33BAF500CD1E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42DBB701B33BAF500CD1E58 /* VisualNovelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisualNovelTests.m; sourceTree = "<group>"; };
+		A42DBB851B33BBB000CD1E58 /* PStoryReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryReader.h; sourceTree = "<group>"; };
+		A42DBB861B33BBB000CD1E58 /* PStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStory.h; sourceTree = "<group>"; };
+		A42DBB871B33BBB000CD1E58 /* PStoryPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryPage.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A42DBB2B1B33B86600CD1E58 /* Frameworks */ = {
+		A42DBB5A1B33BAF500CD1E58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A42DBB371B33B86600CD1E58 /* Frameworks */ = {
+		A42DBB661B33BAF500CD1E58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A42DBB3B1B33B86600CD1E58 /* Visual Novel Reader.framework in Frameworks */,
+				A42DBB6A1B33BAF500CD1E58 /* VisualNovel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A42DBB251B33B86600CD1E58 = {
+		A42DBB541B33BAF500CD1E58 = {
 			isa = PBXGroup;
 			children = (
-				A42DBB311B33B86600CD1E58 /* Visual Novel Reader */,
-				A42DBB3E1B33B86600CD1E58 /* Visual Novel ReaderTests */,
-				A42DBB301B33B86600CD1E58 /* Products */,
+				A42DBB601B33BAF500CD1E58 /* VisualNovel */,
+				A42DBB6D1B33BAF500CD1E58 /* VisualNovelTests */,
+				A42DBB5F1B33BAF500CD1E58 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A42DBB301B33B86600CD1E58 /* Products */ = {
+		A42DBB5F1B33BAF500CD1E58 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A42DBB2F1B33B86600CD1E58 /* Visual Novel Reader.framework */,
-				A42DBB3A1B33B86600CD1E58 /* Visual Novel ReaderTests.xctest */,
+				A42DBB5E1B33BAF500CD1E58 /* VisualNovel.framework */,
+				A42DBB691B33BAF500CD1E58 /* VisualNovelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A42DBB311B33B86600CD1E58 /* Visual Novel Reader */ = {
+		A42DBB601B33BAF500CD1E58 /* VisualNovel */ = {
 			isa = PBXGroup;
 			children = (
-				A42DBB341B33B86600CD1E58 /* Visual Novel Reader.h */,
-				A42DBB321B33B86600CD1E58 /* Supporting Files */,
+				A42DBB851B33BBB000CD1E58 /* PStoryReader.h */,
+				A42DBB861B33BBB000CD1E58 /* PStory.h */,
+				A42DBB871B33BBB000CD1E58 /* PStoryPage.h */,
+				A42DBB631B33BAF500CD1E58 /* VisualNovel.h */,
+				A42DBB611B33BAF500CD1E58 /* Supporting Files */,
 			);
-			path = "Visual Novel Reader";
+			path = VisualNovel;
 			sourceTree = "<group>";
 		};
-		A42DBB321B33B86600CD1E58 /* Supporting Files */ = {
+		A42DBB611B33BAF500CD1E58 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A42DBB331B33B86600CD1E58 /* Info.plist */,
+				A42DBB621B33BAF500CD1E58 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A42DBB3E1B33B86600CD1E58 /* Visual Novel ReaderTests */ = {
+		A42DBB6D1B33BAF500CD1E58 /* VisualNovelTests */ = {
 			isa = PBXGroup;
 			children = (
-				A42DBB411B33B86600CD1E58 /* Visual_Novel_ReaderTests.m */,
-				A42DBB3F1B33B86600CD1E58 /* Supporting Files */,
+				A42DBB701B33BAF500CD1E58 /* VisualNovelTests.m */,
+				A42DBB6E1B33BAF500CD1E58 /* Supporting Files */,
 			);
-			path = "Visual Novel ReaderTests";
+			path = VisualNovelTests;
 			sourceTree = "<group>";
 		};
-		A42DBB3F1B33B86600CD1E58 /* Supporting Files */ = {
+		A42DBB6E1B33BAF500CD1E58 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A42DBB401B33B86600CD1E58 /* Info.plist */,
+				A42DBB6F1B33BAF500CD1E58 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -105,97 +114,100 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A42DBB2C1B33B86600CD1E58 /* Headers */ = {
+		A42DBB5B1B33BAF500CD1E58 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A42DBB351B33B86600CD1E58 /* Visual Novel Reader.h in Headers */,
+				A42DBB641B33BAF500CD1E58 /* VisualNovel.h in Headers */,
+				A42DBB8A1B33BBB000CD1E58 /* PStory.h in Headers */,
+				A42DBB8B1B33BBB000CD1E58 /* PStoryPage.h in Headers */,
+				A42DBB891B33BBB000CD1E58 /* PStoryReader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A42DBB2E1B33B86600CD1E58 /* Visual Novel Reader */ = {
+		A42DBB5D1B33BAF500CD1E58 /* VisualNovel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A42DBB451B33B86600CD1E58 /* Build configuration list for PBXNativeTarget "Visual Novel Reader" */;
+			buildConfigurationList = A42DBB741B33BAF500CD1E58 /* Build configuration list for PBXNativeTarget "VisualNovel" */;
 			buildPhases = (
-				A42DBB2A1B33B86600CD1E58 /* Sources */,
-				A42DBB2B1B33B86600CD1E58 /* Frameworks */,
-				A42DBB2C1B33B86600CD1E58 /* Headers */,
-				A42DBB2D1B33B86600CD1E58 /* Resources */,
+				A42DBB591B33BAF500CD1E58 /* Sources */,
+				A42DBB5A1B33BAF500CD1E58 /* Frameworks */,
+				A42DBB5B1B33BAF500CD1E58 /* Headers */,
+				A42DBB5C1B33BAF500CD1E58 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Visual Novel Reader";
-			productName = "Visual Novel Reader";
-			productReference = A42DBB2F1B33B86600CD1E58 /* Visual Novel Reader.framework */;
+			name = VisualNovel;
+			productName = VisualNovel;
+			productReference = A42DBB5E1B33BAF500CD1E58 /* VisualNovel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A42DBB391B33B86600CD1E58 /* Visual Novel ReaderTests */ = {
+		A42DBB681B33BAF500CD1E58 /* VisualNovelTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A42DBB481B33B86600CD1E58 /* Build configuration list for PBXNativeTarget "Visual Novel ReaderTests" */;
+			buildConfigurationList = A42DBB771B33BAF500CD1E58 /* Build configuration list for PBXNativeTarget "VisualNovelTests" */;
 			buildPhases = (
-				A42DBB361B33B86600CD1E58 /* Sources */,
-				A42DBB371B33B86600CD1E58 /* Frameworks */,
-				A42DBB381B33B86600CD1E58 /* Resources */,
+				A42DBB651B33BAF500CD1E58 /* Sources */,
+				A42DBB661B33BAF500CD1E58 /* Frameworks */,
+				A42DBB671B33BAF500CD1E58 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A42DBB3D1B33B86600CD1E58 /* PBXTargetDependency */,
+				A42DBB6C1B33BAF500CD1E58 /* PBXTargetDependency */,
 			);
-			name = "Visual Novel ReaderTests";
-			productName = "Visual Novel ReaderTests";
-			productReference = A42DBB3A1B33B86600CD1E58 /* Visual Novel ReaderTests.xctest */;
+			name = VisualNovelTests;
+			productName = VisualNovelTests;
+			productReference = A42DBB691B33BAF500CD1E58 /* VisualNovelTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A42DBB261B33B86600CD1E58 /* Project object */ = {
+		A42DBB551B33BAF500CD1E58 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Christopher Raleigh";
 				TargetAttributes = {
-					A42DBB2E1B33B86600CD1E58 = {
+					A42DBB5D1B33BAF500CD1E58 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
-					A42DBB391B33B86600CD1E58 = {
+					A42DBB681B33BAF500CD1E58 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
 			};
-			buildConfigurationList = A42DBB291B33B86600CD1E58 /* Build configuration list for PBXProject "Visual Novel Reader" */;
+			buildConfigurationList = A42DBB581B33BAF500CD1E58 /* Build configuration list for PBXProject "VisualNovel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = A42DBB251B33B86600CD1E58;
-			productRefGroup = A42DBB301B33B86600CD1E58 /* Products */;
+			mainGroup = A42DBB541B33BAF500CD1E58;
+			productRefGroup = A42DBB5F1B33BAF500CD1E58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A42DBB2E1B33B86600CD1E58 /* Visual Novel Reader */,
-				A42DBB391B33B86600CD1E58 /* Visual Novel ReaderTests */,
+				A42DBB5D1B33BAF500CD1E58 /* VisualNovel */,
+				A42DBB681B33BAF500CD1E58 /* VisualNovelTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A42DBB2D1B33B86600CD1E58 /* Resources */ = {
+		A42DBB5C1B33BAF500CD1E58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A42DBB381B33B86600CD1E58 /* Resources */ = {
+		A42DBB671B33BAF500CD1E58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -205,33 +217,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A42DBB2A1B33B86600CD1E58 /* Sources */ = {
+		A42DBB591B33BAF500CD1E58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A42DBB361B33B86600CD1E58 /* Sources */ = {
+		A42DBB651B33BAF500CD1E58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A42DBB421B33B86600CD1E58 /* Visual_Novel_ReaderTests.m in Sources */,
+				A42DBB711B33BAF500CD1E58 /* VisualNovelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A42DBB3D1B33B86600CD1E58 /* PBXTargetDependency */ = {
+		A42DBB6C1B33BAF500CD1E58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A42DBB2E1B33B86600CD1E58 /* Visual Novel Reader */;
-			targetProxy = A42DBB3C1B33B86600CD1E58 /* PBXContainerItemProxy */;
+			target = A42DBB5D1B33BAF500CD1E58 /* VisualNovel */;
+			targetProxy = A42DBB6B1B33BAF500CD1E58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		A42DBB431B33B86600CD1E58 /* Debug */ = {
+		A42DBB721B33BAF500CD1E58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,7 +290,7 @@
 			};
 			name = Debug;
 		};
-		A42DBB441B33B86600CD1E58 /* Release */ = {
+		A42DBB731B33BAF500CD1E58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -319,7 +331,7 @@
 			};
 			name = Release;
 		};
-		A42DBB461B33B86600CD1E58 /* Debug */ = {
+		A42DBB751B33BAF500CD1E58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
@@ -328,16 +340,16 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = c11;
-				INFOPLIST_FILE = "Visual Novel Reader/Info.plist";
+				INFOPLIST_FILE = VisualNovel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		A42DBB471B33B86600CD1E58 /* Release */ = {
+		A42DBB761B33BAF500CD1E58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
@@ -346,16 +358,16 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = c11;
-				INFOPLIST_FILE = "Visual Novel Reader/Info.plist";
+				INFOPLIST_FILE = VisualNovel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		A42DBB491B33B86600CD1E58 /* Debug */ = {
+		A42DBB781B33BAF500CD1E58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -366,20 +378,20 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Visual Novel ReaderTests/Info.plist";
+				INFOPLIST_FILE = VisualNovelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		A42DBB4A1B33B86600CD1E58 /* Release */ = {
+		A42DBB791B33BAF500CD1E58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Visual Novel ReaderTests/Info.plist";
+				INFOPLIST_FILE = VisualNovelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -388,32 +400,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A42DBB291B33B86600CD1E58 /* Build configuration list for PBXProject "Visual Novel Reader" */ = {
+		A42DBB581B33BAF500CD1E58 /* Build configuration list for PBXProject "VisualNovel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A42DBB431B33B86600CD1E58 /* Debug */,
-				A42DBB441B33B86600CD1E58 /* Release */,
+				A42DBB721B33BAF500CD1E58 /* Debug */,
+				A42DBB731B33BAF500CD1E58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A42DBB451B33B86600CD1E58 /* Build configuration list for PBXNativeTarget "Visual Novel Reader" */ = {
+		A42DBB741B33BAF500CD1E58 /* Build configuration list for PBXNativeTarget "VisualNovel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A42DBB461B33B86600CD1E58 /* Debug */,
-				A42DBB471B33B86600CD1E58 /* Release */,
+				A42DBB751B33BAF500CD1E58 /* Debug */,
+				A42DBB761B33BAF500CD1E58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		A42DBB481B33B86600CD1E58 /* Build configuration list for PBXNativeTarget "Visual Novel ReaderTests" */ = {
+		A42DBB771B33BAF500CD1E58 /* Build configuration list for PBXNativeTarget "VisualNovelTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A42DBB491B33B86600CD1E58 /* Debug */,
-				A42DBB4A1B33B86600CD1E58 /* Release */,
+				A42DBB781B33BAF500CD1E58 /* Debug */,
+				A42DBB791B33BAF500CD1E58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A42DBB261B33B86600CD1E58 /* Project object */;
+	rootObject = A42DBB551B33BAF500CD1E58 /* Project object */;
 }

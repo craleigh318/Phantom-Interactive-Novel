@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Visual Novel.xcscheme</key>
+		<key>VisualNovelReader.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A42DBB021B33B5F500CD1E58</key>
+		<key>A42DBB951B33BC7200CD1E58</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A42DBB0D1B33B5F500CD1E58</key>
+		<key>A42DBBA01B33BC7200CD1E58</key>
 		<dict>
 			<key>primary</key>
 			<true/>
