@@ -18,6 +18,16 @@
 		A42266AA1B12ACF100D7F520 /* GameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A422669F1B12ACF100D7F520 /* GameView.mm */; };
 		A42266AC1B12ACF100D7F520 /* StoryViewIOSCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266A41B12ACF100D7F520 /* StoryViewIOSCPP.mm */; };
 		A42266AD1B12ACF100D7F520 /* StoryViewIOSObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266A61B12ACF100D7F520 /* StoryViewIOSObjC.mm */; };
+		A42522941B353016005BEA77 /* ReaderNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42522821B353016005BEA77 /* ReaderNavigation.storyboard */; };
+		A42522951B353016005BEA77 /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = A42522871B353016005BEA77 /* Bookmark.m */; };
+		A42522961B353016005BEA77 /* ReaderNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42522881B353016005BEA77 /* ReaderNavigationController.m */; };
+		A42522971B353016005BEA77 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42522891B353016005BEA77 /* StoryViewController.m */; };
+		A42522981B353016005BEA77 /* StoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = A425228A1B353016005BEA77 /* StoryView.m */; };
+		A42522991B353016005BEA77 /* StoryNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = A425228E1B353016005BEA77 /* StoryNavigator.m */; };
+		A425229A1B353016005BEA77 /* StoryTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A425228F1B353016005BEA77 /* StoryTextView.m */; };
+		A425229B1B353016005BEA77 /* StoryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42522921B353016005BEA77 /* StoryImageView.m */; };
+		A425229D1B35307E005BEA77 /* VisualNovel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A425229C1B35307E005BEA77 /* VisualNovel.framework */; };
+		A425229F1B3530BC005BEA77 /* VisualNovelReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A425229E1B3530BC005BEA77 /* VisualNovelReader.framework */; };
 		A42A9EA11B192B2E00D8BBDB /* PauseMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A42A9EA01B192B2E00D8BBDB /* PauseMenu.m */; };
 		A44BFDCB1B1A900300804705 /* StoryNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BFDCA1B1A900300804705 /* StoryNavigator.m */; };
 		A455D76A1B181E6D001935F4 /* ModifyableChoiceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7071B181E6D001935F4 /* ModifyableChoiceList.cpp */; };
@@ -72,8 +82,6 @@
 		A455D7A61B181E6D001935F4 /* ChoiceToBlueZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7631B181E6D001935F4 /* ChoiceToBlueZone.cpp */; };
 		A455D7A71B181E6D001935F4 /* ChoiceToGreenZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7651B181E6D001935F4 /* ChoiceToGreenZone.cpp */; };
 		A455D7A81B181E6D001935F4 /* RedZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7671B181E6D001935F4 /* RedZone.cpp */; };
-		A45691A21B33E0AB0027ED0B /* ReaderNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A45691A11B33E0AB0027ED0B /* ReaderNavigation.storyboard */; };
-		A45691A41B33E2150027ED0B /* VisualNovelReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A456919F1B33D86A0027ED0B /* VisualNovelReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A46988581B1981B600E1CAD2 /* ResumeGame.m in Sources */ = {isa = PBXBuildFile; fileRef = A46988571B1981B600E1CAD2 /* ResumeGame.m */; };
 /* End PBXBuildFile section */
 
@@ -88,13 +96,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A45691A51B33E2150027ED0B /* Embed Frameworks */ = {
+		A45691A91B33E2770027ED0B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A45691A41B33E2150027ED0B /* VisualNovelReader.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,6 +131,29 @@
 		A42266A41B12ACF100D7F520 /* StoryViewIOSCPP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewIOSCPP.mm; sourceTree = "<group>"; };
 		A42266A51B12ACF100D7F520 /* StoryViewIOSObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewIOSObjC.h; sourceTree = "<group>"; };
 		A42266A61B12ACF100D7F520 /* StoryViewIOSObjC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewIOSObjC.mm; sourceTree = "<group>"; };
+		A425227F1B352FED005BEA77 /* PStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PStory.h; path = ../../VisualNovel/VisualNovel/PStory.h; sourceTree = "<group>"; };
+		A42522801B352FED005BEA77 /* PStoryPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PStoryPage.h; path = ../../VisualNovel/VisualNovel/PStoryPage.h; sourceTree = "<group>"; };
+		A42522811B352FED005BEA77 /* PStoryReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PStoryReader.h; path = ../../VisualNovel/VisualNovel/PStoryReader.h; sourceTree = "<group>"; };
+		A42522821B353016005BEA77 /* ReaderNavigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ReaderNavigation.storyboard; path = ../../VisualNovelReader/VisualNovelReader/ReaderNavigation.storyboard; sourceTree = "<group>"; };
+		A42522831B353016005BEA77 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../../VisualNovelReader/VisualNovelReader/Constants.h; sourceTree = "<group>"; };
+		A42522841B353016005BEA77 /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bookmark.h; path = ../../VisualNovelReader/VisualNovelReader/Bookmark.h; sourceTree = "<group>"; };
+		A42522851B353016005BEA77 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryViewController.h; path = ../../VisualNovelReader/VisualNovelReader/StoryViewController.h; sourceTree = "<group>"; };
+		A42522861B353016005BEA77 /* ReaderNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderNavigationController.h; path = ../../VisualNovelReader/VisualNovelReader/ReaderNavigationController.h; sourceTree = "<group>"; };
+		A42522871B353016005BEA77 /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bookmark.m; path = ../../VisualNovelReader/VisualNovelReader/Bookmark.m; sourceTree = "<group>"; };
+		A42522881B353016005BEA77 /* ReaderNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderNavigationController.m; path = ../../VisualNovelReader/VisualNovelReader/ReaderNavigationController.m; sourceTree = "<group>"; };
+		A42522891B353016005BEA77 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryViewController.m; path = ../../VisualNovelReader/VisualNovelReader/StoryViewController.m; sourceTree = "<group>"; };
+		A425228A1B353016005BEA77 /* StoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryView.m; path = ../../VisualNovelReader/VisualNovelReader/StoryView.m; sourceTree = "<group>"; };
+		A425228B1B353016005BEA77 /* StoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryView.h; path = ../../VisualNovelReader/VisualNovelReader/StoryView.h; sourceTree = "<group>"; };
+		A425228C1B353016005BEA77 /* PReaderNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PReaderNavigationController.h; path = ../../VisualNovelReader/VisualNovelReader/PReaderNavigationController.h; sourceTree = "<group>"; };
+		A425228D1B353016005BEA77 /* StoryNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryNavigator.h; path = ../../VisualNovelReader/VisualNovelReader/StoryNavigator.h; sourceTree = "<group>"; };
+		A425228E1B353016005BEA77 /* StoryNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryNavigator.m; path = ../../VisualNovelReader/VisualNovelReader/StoryNavigator.m; sourceTree = "<group>"; };
+		A425228F1B353016005BEA77 /* StoryTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryTextView.m; path = ../../VisualNovelReader/VisualNovelReader/StoryTextView.m; sourceTree = "<group>"; };
+		A42522901B353016005BEA77 /* StoryTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryTextView.h; path = ../../VisualNovelReader/VisualNovelReader/StoryTextView.h; sourceTree = "<group>"; };
+		A42522911B353016005BEA77 /* StoryImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryImageView.h; path = ../../VisualNovelReader/VisualNovelReader/StoryImageView.h; sourceTree = "<group>"; };
+		A42522921B353016005BEA77 /* StoryImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryImageView.m; path = ../../VisualNovelReader/VisualNovelReader/StoryImageView.m; sourceTree = "<group>"; };
+		A42522931B353016005BEA77 /* PStoryNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PStoryNavigator.h; path = ../../VisualNovelReader/VisualNovelReader/PStoryNavigator.h; sourceTree = "<group>"; };
+		A425229C1B35307E005BEA77 /* VisualNovel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualNovel.framework; path = "../../../../Library/Developer/Xcode/DerivedData/VisualNovel-aitpcfrseskpupdlwdcxgiriprwi/Build/Products/Debug-iphoneos/VisualNovel.framework"; sourceTree = "<group>"; };
+		A425229E1B3530BC005BEA77 /* VisualNovelReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VisualNovelReader.framework; sourceTree = "<group>"; };
 		A42A9E9F1B192B2E00D8BBDB /* PauseMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseMenu.h; sourceTree = "<group>"; };
 		A42A9EA01B192B2E00D8BBDB /* PauseMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseMenu.m; sourceTree = "<group>"; };
 		A42A9EA21B19315D00D8BBDB /* PauseMenuOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseMenuOption.h; sourceTree = "<group>"; };
@@ -203,8 +233,6 @@
 		A455D7671B181E6D001935F4 /* RedZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RedZone.cpp; sourceTree = "<group>"; };
 		A455D7681B181E6D001935F4 /* RedZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedZone.h; sourceTree = "<group>"; };
 		A455D7691B181E6D001935F4 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
-		A456919F1B33D86A0027ED0B /* VisualNovelReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualNovelReader.framework; path = "../../../../Library/Developer/Xcode/DerivedData/VisualNovelReader-dvygwbadyzbjevauaemklumridxk/Build/Products/Debug-iphoneos/VisualNovelReader.framework"; sourceTree = "<group>"; };
-		A45691A11B33E0AB0027ED0B /* ReaderNavigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ReaderNavigation.storyboard; path = ../../VisualNovelReader/VisualNovelReader/ReaderNavigation.storyboard; sourceTree = "<group>"; };
 		A46988561B1981B600E1CAD2 /* ResumeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeGame.h; sourceTree = "<group>"; };
 		A46988571B1981B600E1CAD2 /* ResumeGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +242,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A425229F1B3530BC005BEA77 /* VisualNovelReader.framework in Frameworks */,
+				A425229D1B35307E005BEA77 /* VisualNovel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +260,8 @@
 		A42266651B12AA7A00D7F520 = {
 			isa = PBXGroup;
 			children = (
-				A456919F1B33D86A0027ED0B /* VisualNovelReader.framework */,
+				A425229E1B3530BC005BEA77 /* VisualNovelReader.framework */,
+				A425229C1B35307E005BEA77 /* VisualNovel.framework */,
 				A42266701B12AA7A00D7F520 /* Phantom of the West */,
 				A422668A1B12AA7A00D7F520 /* Phantom of the WestTests */,
 				A422666F1B12AA7A00D7F520 /* Products */,
@@ -249,7 +280,7 @@
 		A42266701B12AA7A00D7F520 /* Phantom of the West */ = {
 			isa = PBXGroup;
 			children = (
-				A45691A11B33E0AB0027ED0B /* ReaderNavigation.storyboard */,
+				A425227E1B352FC5005BEA77 /* Framework Files */,
 				A455D7021B181E6D001935F4 /* Common Files */,
 				A42266EF1B12AE3C00D7F520 /* In-App Purchasing */,
 				A42A9E9E1B192A2B00D8BBDB /* Pause Menu */,
@@ -314,6 +345,34 @@
 				A42266981B12ACF100D7F520 /* Advertising.m */,
 			);
 			name = "In-App Purchasing";
+			sourceTree = "<group>";
+		};
+		A425227E1B352FC5005BEA77 /* Framework Files */ = {
+			isa = PBXGroup;
+			children = (
+				A42522821B353016005BEA77 /* ReaderNavigation.storyboard */,
+				A42522831B353016005BEA77 /* Constants.h */,
+				A42522841B353016005BEA77 /* Bookmark.h */,
+				A42522851B353016005BEA77 /* StoryViewController.h */,
+				A42522861B353016005BEA77 /* ReaderNavigationController.h */,
+				A42522871B353016005BEA77 /* Bookmark.m */,
+				A42522881B353016005BEA77 /* ReaderNavigationController.m */,
+				A42522891B353016005BEA77 /* StoryViewController.m */,
+				A425228A1B353016005BEA77 /* StoryView.m */,
+				A425228B1B353016005BEA77 /* StoryView.h */,
+				A425228C1B353016005BEA77 /* PReaderNavigationController.h */,
+				A425228D1B353016005BEA77 /* StoryNavigator.h */,
+				A425228E1B353016005BEA77 /* StoryNavigator.m */,
+				A425228F1B353016005BEA77 /* StoryTextView.m */,
+				A42522901B353016005BEA77 /* StoryTextView.h */,
+				A42522911B353016005BEA77 /* StoryImageView.h */,
+				A42522921B353016005BEA77 /* StoryImageView.m */,
+				A42522931B353016005BEA77 /* PStoryNavigator.h */,
+				A425227F1B352FED005BEA77 /* PStory.h */,
+				A42522801B352FED005BEA77 /* PStoryPage.h */,
+				A42522811B352FED005BEA77 /* PStoryReader.h */,
+			);
+			name = "Framework Files";
 			sourceTree = "<group>";
 		};
 		A42A9E9E1B192A2B00D8BBDB /* Pause Menu */ = {
@@ -581,7 +640,7 @@
 				A422666A1B12AA7A00D7F520 /* Sources */,
 				A422666B1B12AA7A00D7F520 /* Frameworks */,
 				A422666C1B12AA7A00D7F520 /* Resources */,
-				A45691A51B33E2150027ED0B /* Embed Frameworks */,
+				A45691A91B33E2770027ED0B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -682,7 +741,7 @@
 				A455D77B1B181E6D001935F4 /* Phantom-Icon-57.png in Resources */,
 				A455D76E1B181E6D001935F4 /* Phantom-Icon-100.png in Resources */,
 				A455D7781B181E6D001935F4 /* Phantom-Icon-48.png in Resources */,
-				A45691A21B33E0AB0027ED0B /* ReaderNavigation.storyboard in Resources */,
+				A42522941B353016005BEA77 /* ReaderNavigation.storyboard in Resources */,
 				A455D7941B181E6D001935F4 /* Dr-Kaden-Walking-among-Citizens.png in Resources */,
 				A455D7741B181E6D001935F4 /* Phantom-Icon-180.png in Resources */,
 				A455D78C1B181E6D001935F4 /* Officer-on-Bed.png in Resources */,
@@ -711,7 +770,9 @@
 			files = (
 				A455D76B1B181E6D001935F4 /* Page.cpp in Sources */,
 				A455D7951B181E6D001935F4 /* DrKadenWalkingAmongCitizens.cpp in Sources */,
+				A42522971B353016005BEA77 /* StoryViewController.m in Sources */,
 				A455D79E1B181E6D001935F4 /* PhantomReveal.cpp in Sources */,
+				A42522951B353016005BEA77 /* Bookmark.m in Sources */,
 				A42266AD1B12ACF100D7F520 /* StoryViewIOSObjC.mm in Sources */,
 				A42266AC1B12ACF100D7F520 /* StoryViewIOSCPP.mm in Sources */,
 				A42266AA1B12ACF100D7F520 /* GameView.mm in Sources */,
@@ -724,15 +785,20 @@
 				A455D7A81B181E6D001935F4 /* RedZone.cpp in Sources */,
 				A455D7921B181E6D001935F4 /* DrKadenDrinksElixir.cpp in Sources */,
 				A455D7871B181E6D001935F4 /* OfficerHands.cpp in Sources */,
+				A42522961B353016005BEA77 /* ReaderNavigationController.m in Sources */,
 				A455D7841B181E6D001935F4 /* IAmDrKaden.cpp in Sources */,
 				A46988581B1981B600E1CAD2 /* ResumeGame.m in Sources */,
 				A455D78A1B181E6D001935F4 /* DriveToOfficerHome.cpp in Sources */,
+				A42522981B353016005BEA77 /* StoryView.m in Sources */,
 				A44BFDCB1B1A900300804705 /* StoryNavigator.m in Sources */,
+				A42522991B353016005BEA77 /* StoryNavigator.m in Sources */,
 				A455D78D1B181E6D001935F4 /* OfficerOnBed.cpp in Sources */,
 				A455D78F1B181E6D001935F4 /* CityscapeFromWindow.cpp in Sources */,
+				A425229B1B353016005BEA77 /* StoryImageView.m in Sources */,
 				A455D7A71B181E6D001935F4 /* ChoiceToGreenZone.cpp in Sources */,
 				A455D76A1B181E6D001935F4 /* ModifyableChoiceList.cpp in Sources */,
 				A422667A1B12AA7A00D7F520 /* ViewController.mm in Sources */,
+				A425229A1B353016005BEA77 /* StoryTextView.m in Sources */,
 				A42266771B12AA7A00D7F520 /* AppDelegate.m in Sources */,
 				A455D7981B181E6D001935F4 /* DrKadenIll.cpp in Sources */,
 				A42266741B12AA7A00D7F520 /* main.m in Sources */,
@@ -869,6 +935,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VisualNovelReader-dvygwbadyzbjevauaemklumridxk/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VisualNovel-aitpcfrseskpupdlwdcxgiriprwi/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Phantom of the West/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -888,6 +956,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VisualNovelReader-dvygwbadyzbjevauaemklumridxk/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VisualNovel-aitpcfrseskpupdlwdcxgiriprwi/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Phantom of the West/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

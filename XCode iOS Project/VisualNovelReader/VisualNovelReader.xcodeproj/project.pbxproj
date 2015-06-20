@@ -185,10 +185,10 @@
 			files = (
 				A42DBBD51B33BDFE00CD1E58 /* PStoryNavigator.h in Headers */,
 				A42DBBCC1B33BDFE00CD1E58 /* ReaderNavigationController.h in Headers */,
+				A42DBB9C1B33BC7200CD1E58 /* VisualNovelReader.h in Headers */,
 				A42DBBCD1B33BDFE00CD1E58 /* PReaderNavigationController.h in Headers */,
 				A42DBBC81B33BDFE00CD1E58 /* Bookmark.h in Headers */,
 				A42DBBCB1B33BDFE00CD1E58 /* StoryView.h in Headers */,
-				A42DBB9C1B33BC7200CD1E58 /* VisualNovelReader.h in Headers */,
 				A42DBBCE1B33BDFE00CD1E58 /* StoryNavigator.h in Headers */,
 				A42DBBD21B33BDFE00CD1E58 /* StoryTextView.h in Headers */,
 				A42DBBD01B33BDFE00CD1E58 /* Constants.h in Headers */,

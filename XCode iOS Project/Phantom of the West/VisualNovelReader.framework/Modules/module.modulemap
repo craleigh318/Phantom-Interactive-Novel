@@ -1,0 +1,6 @@
+framework module VisualNovelReader {
+  umbrella header "VisualNovelReader.h"
+
+  export *
+  module * { export * }
+}
