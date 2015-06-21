@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
-@import UIKit;
+#import "ExternalHeaders.h"
 
 /*
  Displays the image for the visual novel reader.

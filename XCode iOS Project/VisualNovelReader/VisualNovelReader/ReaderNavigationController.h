@@ -6,12 +6,10 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
-#import <VisualNovel/VisualNovel.h>
+#import "ExternalHeaders.h"
 #import "PReaderNavigationController.h"
 #import "PStoryNavigator.h"
 #import "StoryViewController.h"
-
-@import UIKit;
 
 /*
  The main controller for the visual novel reader.

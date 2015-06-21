@@ -6,10 +6,8 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
-#import <VisualNovel/VisualNovel.h>
+#import "ExternalHeaders.h"
 #import "StoryView.h"
-
-@import Foundation;
 
 /*
  Controls part of the story view.

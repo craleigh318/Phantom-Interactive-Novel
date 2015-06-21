@@ -8,8 +8,7 @@
 
 #import <VisualNovelReader/PReaderNavigationController.h>
 #import <VisualNovelReader/ReaderNavigationController.h>
-
-@import UIKit;
+#import "ExternalHeaders.h"
 
 //! Project version number for VisualNovelReader.
 FOUNDATION_EXPORT double VisualNovelReaderVersionNumber;

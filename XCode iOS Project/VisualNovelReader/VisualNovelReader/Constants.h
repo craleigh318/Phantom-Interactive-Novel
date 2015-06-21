@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
-@import CoreGraphics;
+#import "ExternalHeaders.h"
 
 const static CGFloat buttonWidthMultiplier = 0.25;
 const static CGFloat buttonRowHeight = 44.0;

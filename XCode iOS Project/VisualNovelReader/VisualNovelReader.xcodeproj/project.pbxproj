@@ -80,6 +80,7 @@
 		A42DBBC31B33BDFE00CD1E58 /* StoryImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryImageView.m; sourceTree = "<group>"; };
 		A42DBBC41B33BDFE00CD1E58 /* PStoryNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryNavigator.h; sourceTree = "<group>"; };
 		A42DBBDA1B33D0B000CD1E58 /* ReaderNavigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReaderNavigation.storyboard; sourceTree = "<group>"; };
+		A4F3E7571B377437008C0153 /* ExternalHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExternalHeaders.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +139,7 @@
 				A42DBBBC1B33BDFE00CD1E58 /* PReaderNavigationController.h */,
 				A42DBBBF1B33BDFE00CD1E58 /* Constants.h */,
 				A42DBB9B1B33BC7200CD1E58 /* VisualNovelReader.h */,
+				A4F3E7571B377437008C0153 /* ExternalHeaders.h */,
 				A42DBBDA1B33D0B000CD1E58 /* ReaderNavigation.storyboard */,
 				A42DBB991B33BC7200CD1E58 /* Supporting Files */,
 			);
