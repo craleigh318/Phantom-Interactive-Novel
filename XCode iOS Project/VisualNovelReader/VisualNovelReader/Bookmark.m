@@ -54,10 +54,10 @@
     NSString * text = [currentPage text];
     if ([self multipleChoices]) {
         NSString * header = @"Choice ";
-        NSString * choiceNumber = [NSString stringWithFormat:@"%ul", (index + 1)];
+        NSString * choiceNumber = [NSString stringWithFormat:@"%u", (index + 1)];
         header = [header stringByAppendingString:choiceNumber];
         header = [header stringByAppendingString:@" of "];
-        NSString * numChoices = [NSString stringWithFormat:@"%ul", [currentPages count]];
+        NSString * numChoices = [NSString stringWithFormat:@"%u", [currentPages count]];
         header = [header stringByAppendingString:numChoices];
         header = [header stringByAppendingString:@":\n\n"];
         text = [header stringByAppendingString:text];

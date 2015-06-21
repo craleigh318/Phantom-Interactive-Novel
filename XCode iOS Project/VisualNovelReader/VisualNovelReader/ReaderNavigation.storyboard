@@ -7,7 +7,7 @@
         <!--Reader Navigation Controller-->
         <scene sceneID="XQd-Op-kIs">
             <objects>
-                <navigationController storyboardIdentifier="ReaderNavigation" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sSv-fS-NaU" customClass="ReaderNavigationController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ReaderNavigation" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sSv-fS-NaU" customClass="ReaderNavigationController" customModule="VisualNovelReader" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SZz-SF-EXN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

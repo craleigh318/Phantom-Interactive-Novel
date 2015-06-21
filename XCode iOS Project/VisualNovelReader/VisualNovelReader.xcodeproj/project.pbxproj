@@ -27,11 +27,24 @@
 		A42DBBD31B33BDFE00CD1E58 /* StoryImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBBC21B33BDFE00CD1E58 /* StoryImageView.h */; };
 		A42DBBD41B33BDFE00CD1E58 /* StoryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DBBC31B33BDFE00CD1E58 /* StoryImageView.m */; };
 		A42DBBD51B33BDFE00CD1E58 /* PStoryNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBBC41B33BDFE00CD1E58 /* PStoryNavigator.h */; };
-		A42DBBD91B33C35C00CD1E58 /* VisualNovel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42DBBD81B33C35C00CD1E58 /* VisualNovel.framework */; };
 		A42DBBDB1B33D0B000CD1E58 /* ReaderNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42DBBDA1B33D0B000CD1E58 /* ReaderNavigation.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A4093CB61B36676800404925 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4093CB11B36676800404925 /* VisualNovel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A42DBB5E1B33BAF500CD1E58;
+			remoteInfo = VisualNovel;
+		};
+		A4093CB81B36676800404925 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4093CB11B36676800404925 /* VisualNovel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A42DBB691B33BAF500CD1E58;
+			remoteInfo = VisualNovelTests;
+		};
 		A42DBBA31B33BC7200CD1E58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A42DBB8D1B33BC7200CD1E58 /* Project object */;
@@ -42,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A4093CB11B36676800404925 /* VisualNovel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VisualNovel.xcodeproj; path = ../VisualNovel/VisualNovel.xcodeproj; sourceTree = "<group>"; };
 		A42DBB961B33BC7200CD1E58 /* VisualNovelReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VisualNovelReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A42DBB9A1B33BC7200CD1E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A42DBB9B1B33BC7200CD1E58 /* VisualNovelReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisualNovelReader.h; sourceTree = "<group>"; };
@@ -65,7 +79,6 @@
 		A42DBBC21B33BDFE00CD1E58 /* StoryImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryImageView.h; sourceTree = "<group>"; };
 		A42DBBC31B33BDFE00CD1E58 /* StoryImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryImageView.m; sourceTree = "<group>"; };
 		A42DBBC41B33BDFE00CD1E58 /* PStoryNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryNavigator.h; sourceTree = "<group>"; };
-		A42DBBD81B33C35C00CD1E58 /* VisualNovel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualNovel.framework; path = "../../../../Library/Developer/Xcode/DerivedData/VisualNovel-aitpcfrseskpupdlwdcxgiriprwi/Build/Products/Debug-iphoneos/VisualNovel.framework"; sourceTree = "<group>"; };
 		A42DBBDA1B33D0B000CD1E58 /* ReaderNavigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReaderNavigation.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A42DBBD91B33C35C00CD1E58 /* VisualNovel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,10 +101,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4093CB21B36676800404925 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4093CB71B36676800404925 /* VisualNovel.framework */,
+				A4093CB91B36676800404925 /* VisualNovelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A42DBB8C1B33BC7200CD1E58 = {
 			isa = PBXGroup;
 			children = (
-				A42DBBD81B33C35C00CD1E58 /* VisualNovel.framework */,
+				A4093CB11B36676800404925 /* VisualNovel.xcodeproj */,
 				A42DBB981B33BC7200CD1E58 /* VisualNovelReader */,
 				A42DBBA51B33BC7200CD1E58 /* VisualNovelReaderTests */,
 				A42DBB971B33BC7200CD1E58 /* Products */,
@@ -263,6 +284,12 @@
 			mainGroup = A42DBB8C1B33BC7200CD1E58;
 			productRefGroup = A42DBB971B33BC7200CD1E58 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A4093CB21B36676800404925 /* Products */;
+					ProjectRef = A4093CB11B36676800404925 /* VisualNovel.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A42DBB951B33BC7200CD1E58 /* VisualNovelReader */,
@@ -270,6 +297,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A4093CB71B36676800404925 /* VisualNovel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VisualNovel.framework;
+			remoteRef = A4093CB61B36676800404925 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A4093CB91B36676800404925 /* VisualNovelTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = VisualNovelTests.xctest;
+			remoteRef = A4093CB81B36676800404925 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A42DBB941B33BC7200CD1E58 /* Resources */ = {
