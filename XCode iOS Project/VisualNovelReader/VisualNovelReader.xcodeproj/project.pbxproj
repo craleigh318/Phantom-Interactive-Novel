@@ -28,6 +28,8 @@
 		A42DBBD41B33BDFE00CD1E58 /* StoryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DBBC31B33BDFE00CD1E58 /* StoryImageView.m */; };
 		A42DBBD51B33BDFE00CD1E58 /* PStoryNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBBC41B33BDFE00CD1E58 /* PStoryNavigator.h */; };
 		A42DBBDB1B33D0B000CD1E58 /* ReaderNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42DBBDA1B33D0B000CD1E58 /* ReaderNavigation.storyboard */; };
+		A4F3E75C1B378E21008C0153 /* StoryEventHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F3E75A1B378E21008C0153 /* StoryEventHandler.h */; };
+		A4F3E75D1B378E21008C0153 /* StoryEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F3E75B1B378E21008C0153 /* StoryEventHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		A42DBBC41B33BDFE00CD1E58 /* PStoryNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryNavigator.h; sourceTree = "<group>"; };
 		A42DBBDA1B33D0B000CD1E58 /* ReaderNavigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReaderNavigation.storyboard; sourceTree = "<group>"; };
 		A4F3E7571B377437008C0153 /* ExternalHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExternalHeaders.h; sourceTree = "<group>"; };
+		A4F3E75A1B378E21008C0153 /* StoryEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryEventHandler.h; sourceTree = "<group>"; };
+		A4F3E75B1B378E21008C0153 /* StoryEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryEventHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 				A42DBBBF1B33BDFE00CD1E58 /* Constants.h */,
 				A42DBB9B1B33BC7200CD1E58 /* VisualNovelReader.h */,
 				A4F3E7571B377437008C0153 /* ExternalHeaders.h */,
+				A4F3E75A1B378E21008C0153 /* StoryEventHandler.h */,
+				A4F3E75B1B378E21008C0153 /* StoryEventHandler.m */,
 				A42DBBDA1B33D0B000CD1E58 /* ReaderNavigation.storyboard */,
 				A42DBB991B33BC7200CD1E58 /* Supporting Files */,
 			);
@@ -176,8 +182,8 @@
 			children = (
 				A42DBBD71B33BE4700CD1E58 /* Story Navigation */,
 				A42DBBB41B33BDFE00CD1E58 /* Bookmark.m */,
-				A42DBBB61B33BDFE00CD1E58 /* StoryViewController.m */,
 				A42DBBB71B33BDFE00CD1E58 /* Bookmark.h */,
+				A42DBBB61B33BDFE00CD1E58 /* StoryViewController.m */,
 				A42DBBB81B33BDFE00CD1E58 /* StoryViewController.h */,
 				A42DBBB91B33BDFE00CD1E58 /* StoryView.m */,
 				A42DBBBA1B33BDFE00CD1E58 /* StoryView.h */,
@@ -216,6 +222,7 @@
 				A42DBBD21B33BDFE00CD1E58 /* StoryTextView.h in Headers */,
 				A42DBBD01B33BDFE00CD1E58 /* Constants.h in Headers */,
 				A42DBBC91B33BDFE00CD1E58 /* StoryViewController.h in Headers */,
+				A4F3E75C1B378E21008C0153 /* StoryEventHandler.h in Headers */,
 				A42DBBD31B33BDFE00CD1E58 /* StoryImageView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +354,7 @@
 				A42DBBCA1B33BDFE00CD1E58 /* StoryView.m in Sources */,
 				A42DBBC71B33BDFE00CD1E58 /* StoryViewController.m in Sources */,
 				A42DBBD11B33BDFE00CD1E58 /* StoryTextView.m in Sources */,
+				A4F3E75D1B378E21008C0153 /* StoryEventHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,14 +10,12 @@
 
 @implementation ReaderNavigationController {
     NSObject <PStory> * story;
-    StoryViewController * subController;
+    IBOutlet StoryViewController * subController;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     story = nil;
-    subController = [[StoryViewController alloc] initWithNavigationController:self];
-    [self pushViewController:subController animated:false];
 }
 
 - (NSObject <PStory> *) story {

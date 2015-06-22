@@ -9,7 +9,7 @@
 #import "StoryView.h"
 
 @implementation StoryView {
-    UINavigationController <PReaderNavigationController, PStoryNavigator> * navigationController;
+    NSObject <PStoryNavigator> * navigationController;
     StoryNavigator * navigator;
     StoryImageView * imageView;
     StoryTextView * textView;
@@ -25,7 +25,7 @@
     NSArray * navigatorLandscapeConstraints;
 }
 
-- (id)initWithNavigationController: (UINavigationController <PReaderNavigationController, PStoryNavigator> *) nc {
+- (id)initWithNavigationController: (NSObject <PStoryNavigator> *) nc {
     self = [super init];
     if (self) {
         navigationController = nc;

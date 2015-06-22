@@ -7,7 +7,8 @@
 //
 
 #import <VisualNovelReader/PReaderNavigationController.h>
-#import <VisualNovelReader/ReaderNavigationController.h>
+#import <VisualNovelReader/StoryEventHandler.h>
+#import <VisualNovelReader/StoryView.h>
 #import "ExternalHeaders.h"
 
 //! Project version number for VisualNovelReader.

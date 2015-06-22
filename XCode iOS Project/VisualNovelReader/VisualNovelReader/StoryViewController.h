@@ -17,10 +17,6 @@
  */
 @interface StoryViewController : UIViewController
 
-/*
- Initializes with the specified ReaderNavigationController
- */
-- (id)initWithNavigationController: (UINavigationController <PReaderNavigationController, PStoryReader, PStoryNavigator> *) nc;
 
 /*
  Has the reader display the specified set of pages.

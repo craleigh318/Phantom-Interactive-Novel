@@ -17,7 +17,7 @@
 /*
  Initializes with the specified ReaderNavigationController
  */
-- (id)initWithNavigationController: (UINavigationController <PReaderNavigationController, PStoryNavigator> *) nc;
+- (id)initWithNavigationController: (NSObject <PStoryNavigator> *) nc;
 
 /*
  Add new constraints when device rotates.

@@ -9,19 +9,16 @@
 #import "StoryViewController.h"
 
 @implementation StoryViewController {
-    UINavigationController <PReaderNavigationController, PStoryReader, PStoryNavigator> * navigationController;
+    IBOutlet UINavigationController <PReaderNavigationController, PStoryReader, PStoryNavigator> * navigationController;
+    StoryView * storyView;
     Bookmark * bookmark;
 }
 
-- (id)initWithNavigationController: (UINavigationController <PReaderNavigationController, PStoryReader, PStoryNavigator> *) nc {
-    self = [super init];
-    if (self) {
-        navigationController = nc;
-        StoryView * storyView = [[StoryView alloc] initWithNavigationController:navigationController];
-        [self setView:storyView];
-        bookmark = [[Bookmark alloc] initWithStoryView:storyView andController:navigationController];
-    }
-    return self;
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    storyView = [[StoryView alloc] initWithNavigationController:navigationController];
+    [[self view] addSubview:storyView];
+    bookmark = [[Bookmark alloc] initWithStoryView:storyView andController:navigationController];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
