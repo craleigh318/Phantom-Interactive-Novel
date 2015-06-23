@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
-#import "Bookmark.h"
 #import "ExternalHeaders.h"
-#import "PReaderNavigationController.h"
 #import "PStoryNavigator.h"
-#import "StoryView.h"
+
+@protocol PReaderNavigationController;
+@class Bookmark;
 
 @interface StoryEventHandler : NSObject <PStoryReader, PStoryNavigator>
 
@@ -25,6 +25,6 @@
  The story view.
  Add this to a Navigation Controller's root.
  */
-- (StoryView *) storyView;
+- (UIView *) storyView;
 
 @end

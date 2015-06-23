@@ -11,13 +11,9 @@
 		A42DBBA21B33BC7200CD1E58 /* VisualNovelReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42DBB961B33BC7200CD1E58 /* VisualNovelReader.framework */; };
 		A42DBBA91B33BC7200CD1E58 /* VisualNovelReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DBBA81B33BC7200CD1E58 /* VisualNovelReaderTests.m */; };
 		A42DBBC51B33BDFE00CD1E58 /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DBBB41B33BDFE00CD1E58 /* Bookmark.m */; };
-		A42DBBC61B33BDFE00CD1E58 /* ReaderNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DBBB51B33BDFE00CD1E58 /* ReaderNavigationController.m */; };
-		A42DBBC71B33BDFE00CD1E58 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DBBB61B33BDFE00CD1E58 /* StoryViewController.m */; };
 		A42DBBC81B33BDFE00CD1E58 /* Bookmark.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBBB71B33BDFE00CD1E58 /* Bookmark.h */; };
-		A42DBBC91B33BDFE00CD1E58 /* StoryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBBB81B33BDFE00CD1E58 /* StoryViewController.h */; };
 		A42DBBCA1B33BDFE00CD1E58 /* StoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DBBB91B33BDFE00CD1E58 /* StoryView.m */; };
 		A42DBBCB1B33BDFE00CD1E58 /* StoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBBBA1B33BDFE00CD1E58 /* StoryView.h */; };
-		A42DBBCC1B33BDFE00CD1E58 /* ReaderNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBBBB1B33BDFE00CD1E58 /* ReaderNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A42DBBCD1B33BDFE00CD1E58 /* PReaderNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBBBC1B33BDFE00CD1E58 /* PReaderNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A42DBBCE1B33BDFE00CD1E58 /* StoryNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBBBD1B33BDFE00CD1E58 /* StoryNavigator.h */; };
 		A42DBBCF1B33BDFE00CD1E58 /* StoryNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DBBBE1B33BDFE00CD1E58 /* StoryNavigator.m */; };
@@ -26,9 +22,11 @@
 		A42DBBD21B33BDFE00CD1E58 /* StoryTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBBC11B33BDFE00CD1E58 /* StoryTextView.h */; };
 		A42DBBD31B33BDFE00CD1E58 /* StoryImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBBC21B33BDFE00CD1E58 /* StoryImageView.h */; };
 		A42DBBD41B33BDFE00CD1E58 /* StoryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42DBBC31B33BDFE00CD1E58 /* StoryImageView.m */; };
-		A42DBBD51B33BDFE00CD1E58 /* PStoryNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBBC41B33BDFE00CD1E58 /* PStoryNavigator.h */; };
+		A42DBBD51B33BDFE00CD1E58 /* PStoryNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = A42DBBC41B33BDFE00CD1E58 /* PStoryNavigator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A42DBBDB1B33D0B000CD1E58 /* ReaderNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42DBBDA1B33D0B000CD1E58 /* ReaderNavigation.storyboard */; };
-		A4F3E75C1B378E21008C0153 /* StoryEventHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F3E75A1B378E21008C0153 /* StoryEventHandler.h */; };
+		A4C0AD111B38C606004D3B9D /* ExternalHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F3E7571B377437008C0153 /* ExternalHeaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4C0AD611B38D496004D3B9D /* VisualNovel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4093CB71B36676800404925 /* VisualNovel.framework */; };
+		A4F3E75C1B378E21008C0153 /* StoryEventHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F3E75A1B378E21008C0153 /* StoryEventHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4F3E75D1B378E21008C0153 /* StoryEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F3E75B1B378E21008C0153 /* StoryEventHandler.m */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +52,13 @@
 			remoteGlobalIDString = A42DBB951B33BC7200CD1E58;
 			remoteInfo = VisualNovelReader;
 		};
+		A4C0AD841B38D844004D3B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4093CB11B36676800404925 /* VisualNovel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A42DBB5D1B33BAF500CD1E58;
+			remoteInfo = VisualNovel;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -65,13 +70,9 @@
 		A42DBBA71B33BC7200CD1E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A42DBBA81B33BC7200CD1E58 /* VisualNovelReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisualNovelReaderTests.m; sourceTree = "<group>"; };
 		A42DBBB41B33BDFE00CD1E58 /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
-		A42DBBB51B33BDFE00CD1E58 /* ReaderNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderNavigationController.m; sourceTree = "<group>"; };
-		A42DBBB61B33BDFE00CD1E58 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
 		A42DBBB71B33BDFE00CD1E58 /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmark.h; sourceTree = "<group>"; };
-		A42DBBB81B33BDFE00CD1E58 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
 		A42DBBB91B33BDFE00CD1E58 /* StoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryView.m; sourceTree = "<group>"; };
 		A42DBBBA1B33BDFE00CD1E58 /* StoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryView.h; sourceTree = "<group>"; };
-		A42DBBBB1B33BDFE00CD1E58 /* ReaderNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderNavigationController.h; sourceTree = "<group>"; };
 		A42DBBBC1B33BDFE00CD1E58 /* PReaderNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PReaderNavigationController.h; sourceTree = "<group>"; };
 		A42DBBBD1B33BDFE00CD1E58 /* StoryNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryNavigator.h; sourceTree = "<group>"; };
 		A42DBBBE1B33BDFE00CD1E58 /* StoryNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryNavigator.m; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C0AD611B38D496004D3B9D /* VisualNovel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				A42DBBD61B33BE3600CD1E58 /* Story View */,
-				A42DBBB51B33BDFE00CD1E58 /* ReaderNavigationController.m */,
-				A42DBBBB1B33BDFE00CD1E58 /* ReaderNavigationController.h */,
 				A42DBBBC1B33BDFE00CD1E58 /* PReaderNavigationController.h */,
 				A42DBBBF1B33BDFE00CD1E58 /* Constants.h */,
 				A42DBB9B1B33BC7200CD1E58 /* VisualNovelReader.h */,
@@ -183,8 +183,6 @@
 				A42DBBD71B33BE4700CD1E58 /* Story Navigation */,
 				A42DBBB41B33BDFE00CD1E58 /* Bookmark.m */,
 				A42DBBB71B33BDFE00CD1E58 /* Bookmark.h */,
-				A42DBBB61B33BDFE00CD1E58 /* StoryViewController.m */,
-				A42DBBB81B33BDFE00CD1E58 /* StoryViewController.h */,
 				A42DBBB91B33BDFE00CD1E58 /* StoryView.m */,
 				A42DBBBA1B33BDFE00CD1E58 /* StoryView.h */,
 				A42DBBC01B33BDFE00CD1E58 /* StoryTextView.m */,
@@ -212,17 +210,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A42DBBD51B33BDFE00CD1E58 /* PStoryNavigator.h in Headers */,
-				A42DBBCC1B33BDFE00CD1E58 /* ReaderNavigationController.h in Headers */,
+				A4C0AD111B38C606004D3B9D /* ExternalHeaders.h in Headers */,
 				A42DBB9C1B33BC7200CD1E58 /* VisualNovelReader.h in Headers */,
+				A4F3E75C1B378E21008C0153 /* StoryEventHandler.h in Headers */,
+				A42DBBD51B33BDFE00CD1E58 /* PStoryNavigator.h in Headers */,
 				A42DBBCD1B33BDFE00CD1E58 /* PReaderNavigationController.h in Headers */,
 				A42DBBC81B33BDFE00CD1E58 /* Bookmark.h in Headers */,
 				A42DBBCB1B33BDFE00CD1E58 /* StoryView.h in Headers */,
 				A42DBBCE1B33BDFE00CD1E58 /* StoryNavigator.h in Headers */,
 				A42DBBD21B33BDFE00CD1E58 /* StoryTextView.h in Headers */,
 				A42DBBD01B33BDFE00CD1E58 /* Constants.h in Headers */,
-				A42DBBC91B33BDFE00CD1E58 /* StoryViewController.h in Headers */,
-				A4F3E75C1B378E21008C0153 /* StoryEventHandler.h in Headers */,
 				A42DBBD31B33BDFE00CD1E58 /* StoryImageView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +239,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A4C0AD851B38D844004D3B9D /* PBXTargetDependency */,
 			);
 			name = VisualNovelReader;
 			productName = VisualNovelReader;
@@ -347,12 +345,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A42DBBC61B33BDFE00CD1E58 /* ReaderNavigationController.m in Sources */,
 				A42DBBCF1B33BDFE00CD1E58 /* StoryNavigator.m in Sources */,
 				A42DBBD41B33BDFE00CD1E58 /* StoryImageView.m in Sources */,
 				A42DBBC51B33BDFE00CD1E58 /* Bookmark.m in Sources */,
 				A42DBBCA1B33BDFE00CD1E58 /* StoryView.m in Sources */,
-				A42DBBC71B33BDFE00CD1E58 /* StoryViewController.m in Sources */,
 				A42DBBD11B33BDFE00CD1E58 /* StoryTextView.m in Sources */,
 				A4F3E75D1B378E21008C0153 /* StoryEventHandler.m in Sources */,
 			);
@@ -373,6 +369,11 @@
 			isa = PBXTargetDependency;
 			target = A42DBB951B33BC7200CD1E58 /* VisualNovelReader */;
 			targetProxy = A42DBBA31B33BC7200CD1E58 /* PBXContainerItemProxy */;
+		};
+		A4C0AD851B38D844004D3B9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VisualNovel;
+			targetProxy = A4C0AD841B38D844004D3B9D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -481,6 +482,7 @@
 				INFOPLIST_FILE = VisualNovelReader/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -502,6 +504,7 @@
 				INFOPLIST_FILE = VisualNovelReader/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

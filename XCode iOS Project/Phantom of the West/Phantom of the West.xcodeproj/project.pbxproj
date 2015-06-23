@@ -73,29 +73,40 @@
 		A455D7A71B181E6D001935F4 /* ChoiceToGreenZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7651B181E6D001935F4 /* ChoiceToGreenZone.cpp */; };
 		A455D7A81B181E6D001935F4 /* RedZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7671B181E6D001935F4 /* RedZone.cpp */; };
 		A46988581B1981B600E1CAD2 /* ResumeGame.m in Sources */ = {isa = PBXBuildFile; fileRef = A46988571B1981B600E1CAD2 /* ResumeGame.m */; };
+		A4C0ACFB1B38A36E004D3B9D /* GameView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C0ACFA1B38A36E004D3B9D /* GameView.storyboard */; };
+		A4C0AD001B38A854004D3B9D /* GameViewMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0ACFF1B38A854004D3B9D /* GameViewMainViewController.m */; };
+		A4C0AD031B38AAFB004D3B9D /* GameViewStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD021B38AAFB004D3B9D /* GameViewStoryViewController.m */; };
+		A4C0AD661B38D4B8004D3B9D /* VisualNovelReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C0AD581B38D3CC004D3B9D /* VisualNovelReader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A4093CC11B36690A00404925 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4093CBB1B36690A00404925 /* VisualNovelReader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A42DBB961B33BC7200CD1E58;
-			remoteInfo = VisualNovelReader;
-		};
-		A4093CC31B36690A00404925 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4093CBB1B36690A00404925 /* VisualNovelReader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A42DBBA11B33BC7200CD1E58;
-			remoteInfo = VisualNovelReaderTests;
-		};
 		A42266881B12AA7A00D7F520 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A42266661B12AA7A00D7F520 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A422666D1B12AA7A00D7F520;
 			remoteInfo = "Phantom of the West";
+		};
+		A4C0AD571B38D3CC004D3B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4C0AD511B38D3CC004D3B9D /* VisualNovelReader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A42DBB961B33BC7200CD1E58;
+			remoteInfo = VisualNovelReader;
+		};
+		A4C0AD591B38D3CC004D3B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4C0AD511B38D3CC004D3B9D /* VisualNovelReader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A42DBBA11B33BC7200CD1E58;
+			remoteInfo = VisualNovelReaderTests;
+		};
+		A4C0AD741B38D605004D3B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4C0AD511B38D3CC004D3B9D /* VisualNovelReader.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A42DBB951B33BC7200CD1E58;
+			remoteInfo = VisualNovelReader;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -113,7 +124,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A4093CBB1B36690A00404925 /* VisualNovelReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VisualNovelReader.xcodeproj; path = ../VisualNovelReader/VisualNovelReader.xcodeproj; sourceTree = "<group>"; };
 		A422666E1B12AA7A00D7F520 /* Phantom of the West.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phantom of the West.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A42266721B12AA7A00D7F520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A42266731B12AA7A00D7F520 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -217,6 +227,12 @@
 		A455D7691B181E6D001935F4 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
 		A46988561B1981B600E1CAD2 /* ResumeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeGame.h; sourceTree = "<group>"; };
 		A46988571B1981B600E1CAD2 /* ResumeGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeGame.m; sourceTree = "<group>"; };
+		A4C0ACFA1B38A36E004D3B9D /* GameView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameView.storyboard; sourceTree = "<group>"; };
+		A4C0ACFE1B38A854004D3B9D /* GameViewMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewMainViewController.h; sourceTree = "<group>"; };
+		A4C0ACFF1B38A854004D3B9D /* GameViewMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewMainViewController.m; sourceTree = "<group>"; };
+		A4C0AD011B38AAFB004D3B9D /* GameViewStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewStoryViewController.h; sourceTree = "<group>"; };
+		A4C0AD021B38AAFB004D3B9D /* GameViewStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewStoryViewController.m; sourceTree = "<group>"; };
+		A4C0AD511B38D3CC004D3B9D /* VisualNovelReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VisualNovelReader.xcodeproj; path = ../VisualNovelReader/VisualNovelReader.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C0AD661B38D4B8004D3B9D /* VisualNovelReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,19 +254,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A4093CBC1B36690A00404925 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A4093CC21B36690A00404925 /* VisualNovelReader.framework */,
-				A4093CC41B36690A00404925 /* VisualNovelReaderTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		A42266651B12AA7A00D7F520 = {
 			isa = PBXGroup;
 			children = (
-				A4093CBB1B36690A00404925 /* VisualNovelReader.xcodeproj */,
+				A4C0AD511B38D3CC004D3B9D /* VisualNovelReader.xcodeproj */,
 				A42266701B12AA7A00D7F520 /* Phantom of the West */,
 				A422668A1B12AA7A00D7F520 /* Phantom of the WestTests */,
 				A422666F1B12AA7A00D7F520 /* Products */,
@@ -272,10 +280,12 @@
 				A42266EF1B12AE3C00D7F520 /* In-App Purchasing */,
 				A42A9E9E1B192A2B00D8BBDB /* Pause Menu */,
 				A42266EE1B12AE1100D7F520 /* Story View */,
+				A4C0AD041B38AE37004D3B9D /* New Files - UI */,
 				A42266751B12AA7A00D7F520 /* AppDelegate.h */,
 				A42266761B12AA7A00D7F520 /* AppDelegate.m */,
 				A42266781B12AA7A00D7F520 /* ViewController.h */,
 				A42266791B12AA7A00D7F520 /* ViewController.mm */,
+				A4C0ACFA1B38A36E004D3B9D /* GameView.storyboard */,
 				A422667B1B12AA7A00D7F520 /* Main.storyboard */,
 				A422667E1B12AA7A00D7F520 /* Images.xcassets */,
 				A42266801B12AA7A00D7F520 /* LaunchScreen.xib */,
@@ -589,6 +599,26 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
+		A4C0AD041B38AE37004D3B9D /* New Files - UI */ = {
+			isa = PBXGroup;
+			children = (
+				A4C0ACFE1B38A854004D3B9D /* GameViewMainViewController.h */,
+				A4C0ACFF1B38A854004D3B9D /* GameViewMainViewController.m */,
+				A4C0AD011B38AAFB004D3B9D /* GameViewStoryViewController.h */,
+				A4C0AD021B38AAFB004D3B9D /* GameViewStoryViewController.m */,
+			);
+			name = "New Files - UI";
+			sourceTree = "<group>";
+		};
+		A4C0AD521B38D3CC004D3B9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4C0AD581B38D3CC004D3B9D /* VisualNovelReader.framework */,
+				A4C0AD5A1B38D3CC004D3B9D /* VisualNovelReaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -604,6 +634,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A4C0AD751B38D605004D3B9D /* PBXTargetDependency */,
 			);
 			name = "Phantom of the West";
 			productName = "Phantom of the West";
@@ -660,8 +691,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = A4093CBC1B36690A00404925 /* Products */;
-					ProjectRef = A4093CBB1B36690A00404925 /* VisualNovelReader.xcodeproj */;
+					ProductGroup = A4C0AD521B38D3CC004D3B9D /* Products */;
+					ProjectRef = A4C0AD511B38D3CC004D3B9D /* VisualNovelReader.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -673,18 +704,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		A4093CC21B36690A00404925 /* VisualNovelReader.framework */ = {
+		A4C0AD581B38D3CC004D3B9D /* VisualNovelReader.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = VisualNovelReader.framework;
-			remoteRef = A4093CC11B36690A00404925 /* PBXContainerItemProxy */;
+			remoteRef = A4C0AD571B38D3CC004D3B9D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A4093CC41B36690A00404925 /* VisualNovelReaderTests.xctest */ = {
+		A4C0AD5A1B38D3CC004D3B9D /* VisualNovelReaderTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = VisualNovelReaderTests.xctest;
-			remoteRef = A4093CC31B36690A00404925 /* PBXContainerItemProxy */;
+			remoteRef = A4C0AD591B38D3CC004D3B9D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -696,6 +727,7 @@
 			files = (
 				A422667D1B12AA7A00D7F520 /* Main.storyboard in Resources */,
 				A455D7831B181E6D001935F4 /* I-am-Dr-Kaden.png in Resources */,
+				A4C0ACFB1B38A36E004D3B9D /* GameView.storyboard in Resources */,
 				A455D7711B181E6D001935F4 /* Phantom-Icon-144.png in Resources */,
 				A455D77A1B181E6D001935F4 /* Phantom-Icon-55.png in Resources */,
 				A455D76D1B181E6D001935F4 /* Thumbs.db in Resources */,
@@ -753,6 +785,7 @@
 				A455D7951B181E6D001935F4 /* DrKadenWalkingAmongCitizens.cpp in Sources */,
 				A455D79E1B181E6D001935F4 /* PhantomReveal.cpp in Sources */,
 				A42266AD1B12ACF100D7F520 /* StoryViewIOSObjC.mm in Sources */,
+				A4C0AD001B38A854004D3B9D /* GameViewMainViewController.m in Sources */,
 				A42266AC1B12ACF100D7F520 /* StoryViewIOSCPP.mm in Sources */,
 				A42266AA1B12ACF100D7F520 /* GameView.mm in Sources */,
 				A455D7A11B181E6D001935F4 /* PhantomRevealWithEyes.cpp in Sources */,
@@ -762,6 +795,7 @@
 				A455D79B1B181E6D001935F4 /* OfficerNoticesDrKaden.cpp in Sources */,
 				A455D7A41B181E6D001935F4 /* OfficerPossessed.cpp in Sources */,
 				A455D7A81B181E6D001935F4 /* RedZone.cpp in Sources */,
+				A4C0AD031B38AAFB004D3B9D /* GameViewStoryViewController.m in Sources */,
 				A455D7921B181E6D001935F4 /* DrKadenDrinksElixir.cpp in Sources */,
 				A455D7871B181E6D001935F4 /* OfficerHands.cpp in Sources */,
 				A455D7841B181E6D001935F4 /* IAmDrKaden.cpp in Sources */,
@@ -794,6 +828,11 @@
 			isa = PBXTargetDependency;
 			target = A422666D1B12AA7A00D7F520 /* Phantom of the West */;
 			targetProxy = A42266881B12AA7A00D7F520 /* PBXContainerItemProxy */;
+		};
+		A4C0AD751B38D605004D3B9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VisualNovelReader;
+			targetProxy = A4C0AD741B38D605004D3B9D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -911,6 +950,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VisualNovelReader-dvygwbadyzbjevauaemklumridxk/Build/Products/Debug-iphoneos",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VisualNovel-aitpcfrseskpupdlwdcxgiriprwi/Build/Products/Debug-iphoneos",
 					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Phantom_of_the_West-cxquwpijsivzocfmfxbmqyvgnmca/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = "Phantom of the West/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -932,6 +972,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VisualNovelReader-dvygwbadyzbjevauaemklumridxk/Build/Products/Debug-iphoneos",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VisualNovel-aitpcfrseskpupdlwdcxgiriprwi/Build/Products/Debug-iphoneos",
 					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Phantom_of_the_West-cxquwpijsivzocfmfxbmqyvgnmca/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = "Phantom of the West/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

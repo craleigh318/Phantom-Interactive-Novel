@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
+#import <VisualNovelReader/ExternalHeaders.h>
 #import <VisualNovelReader/PReaderNavigationController.h>
+#import <VisualNovelReader/PStoryNavigator.h>
 #import <VisualNovelReader/StoryEventHandler.h>
-#import <VisualNovelReader/StoryView.h>
-#import "ExternalHeaders.h"
 
 //! Project version number for VisualNovelReader.
 FOUNDATION_EXPORT double VisualNovelReaderVersionNumber;

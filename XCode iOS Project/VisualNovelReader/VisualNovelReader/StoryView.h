@@ -7,10 +7,12 @@
 //
 
 #import "ExternalHeaders.h"
-#import "PReaderNavigationController.h"
-#import "StoryNavigator.h"
-#import "StoryImageView.h"
-#import "StoryTextView.h"
+
+@protocol PReaderNavigationController;
+@protocol PStoryNavigator;
+@class StoryNavigator;
+@class StoryImageView;
+@class StoryTextView;
 
 @interface StoryView : UIView
 

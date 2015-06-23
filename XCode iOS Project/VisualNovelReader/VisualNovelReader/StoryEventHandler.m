@@ -7,6 +7,9 @@
 //
 
 #import "StoryEventHandler.h"
+#import "Bookmark.h"
+#import "PReaderNavigationController.h"
+#import "StoryView.h"
 
 @implementation StoryEventHandler {
     NSObject <PReaderNavigationController> * viewController;
@@ -55,7 +58,7 @@
     [viewController showOptionsMenu:true];
 }
 
-- (StoryView *) storyView {
+- (UIView *) storyView {
     return storyView;
 }
 

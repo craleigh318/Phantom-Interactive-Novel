@@ -8,7 +8,6 @@
 
 #import "ExternalHeaders.h"
 #import "PStoryNavigator.h"
-#import "Constants.h"
 
 /*
  Contains buttons that move through the story.

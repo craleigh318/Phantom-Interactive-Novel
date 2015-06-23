@@ -7,7 +7,8 @@
 //
 
 #import "ExternalHeaders.h"
-#import "StoryView.h"
+
+@class StoryView;
 
 /*
  Controls part of the story view.

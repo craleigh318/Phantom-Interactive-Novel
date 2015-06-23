@@ -7,6 +7,7 @@
 //
 
 #import "Bookmark.h"
+#import "StoryView.h"
 
 @implementation Bookmark {
     StoryView * storyView;

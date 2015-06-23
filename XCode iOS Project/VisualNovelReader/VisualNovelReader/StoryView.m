@@ -7,6 +7,11 @@
 //
 
 #import "StoryView.h"
+#import "Constants.h"
+#import "PReaderNavigationController.h"
+#import "StoryNavigator.h"
+#import "StoryImageView.h"
+#import "StoryTextView.h"
 
 @implementation StoryView {
     NSObject <PStoryNavigator> * navigationController;

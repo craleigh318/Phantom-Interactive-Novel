@@ -7,6 +7,7 @@
 //
 
 #import "StoryNavigator.h"
+#import "Constants.h"
 
 @implementation StoryNavigator {
     NSObject <PStoryNavigator> * handler;
