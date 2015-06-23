@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
-#import <VisualNovelReader/VisualNovelReader.h>
+#import "PReaderNavigationController.h"
 #import "GameViewStoryViewController.h"
 
 @import UIKit;

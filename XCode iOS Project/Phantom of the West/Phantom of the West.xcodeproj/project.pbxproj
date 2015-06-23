@@ -9,74 +9,18 @@
 /* Begin PBXBuildFile section */
 		A42266741B12AA7A00D7F520 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A42266731B12AA7A00D7F520 /* main.m */; };
 		A42266771B12AA7A00D7F520 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A42266761B12AA7A00D7F520 /* AppDelegate.m */; };
-		A422667A1B12AA7A00D7F520 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266791B12AA7A00D7F520 /* ViewController.mm */; };
-		A422667D1B12AA7A00D7F520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A422667B1B12AA7A00D7F520 /* Main.storyboard */; };
 		A422667F1B12AA7A00D7F520 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A422667E1B12AA7A00D7F520 /* Images.xcassets */; };
 		A42266821B12AA7A00D7F520 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A42266801B12AA7A00D7F520 /* LaunchScreen.xib */; };
 		A422668E1B12AA7A00D7F520 /* Phantom_of_the_WestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A422668D1B12AA7A00D7F520 /* Phantom_of_the_WestTests.m */; };
-		A42266A71B12ACF100D7F520 /* Advertising.m in Sources */ = {isa = PBXBuildFile; fileRef = A42266981B12ACF100D7F520 /* Advertising.m */; };
-		A42266AA1B12ACF100D7F520 /* GameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A422669F1B12ACF100D7F520 /* GameView.mm */; };
-		A42266AC1B12ACF100D7F520 /* StoryViewIOSCPP.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266A41B12ACF100D7F520 /* StoryViewIOSCPP.mm */; };
-		A42266AD1B12ACF100D7F520 /* StoryViewIOSObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42266A61B12ACF100D7F520 /* StoryViewIOSObjC.mm */; };
-		A42A9EA11B192B2E00D8BBDB /* PauseMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A42A9EA01B192B2E00D8BBDB /* PauseMenu.m */; };
-		A44BFDCB1B1A900300804705 /* StoryNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = A44BFDCA1B1A900300804705 /* StoryNavigator.m */; };
-		A455D76A1B181E6D001935F4 /* ModifyableChoiceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7071B181E6D001935F4 /* ModifyableChoiceList.cpp */; };
-		A455D76B1B181E6D001935F4 /* Page.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7091B181E6D001935F4 /* Page.cpp */; };
-		A455D76C1B181E6D001935F4 /* Journalist-in-Shower.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D70D1B181E6D001935F4 /* Journalist-in-Shower.png */; };
-		A455D76D1B181E6D001935F4 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A455D70E1B181E6D001935F4 /* Thumbs.db */; };
-		A455D76E1B181E6D001935F4 /* Phantom-Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7101B181E6D001935F4 /* Phantom-Icon-100.png */; };
-		A455D76F1B181E6D001935F4 /* Phantom-Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7111B181E6D001935F4 /* Phantom-Icon-114.png */; };
-		A455D7701B181E6D001935F4 /* Phantom-Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7121B181E6D001935F4 /* Phantom-Icon-120.png */; };
-		A455D7711B181E6D001935F4 /* Phantom-Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7131B181E6D001935F4 /* Phantom-Icon-144.png */; };
-		A455D7721B181E6D001935F4 /* Phantom-Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7141B181E6D001935F4 /* Phantom-Icon-152.png */; };
-		A455D7731B181E6D001935F4 /* Phantom-Icon-172.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7151B181E6D001935F4 /* Phantom-Icon-172.png */; };
-		A455D7741B181E6D001935F4 /* Phantom-Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7161B181E6D001935F4 /* Phantom-Icon-180.png */; };
-		A455D7751B181E6D001935F4 /* Phantom-Icon-196.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7171B181E6D001935F4 /* Phantom-Icon-196.png */; };
-		A455D7761B181E6D001935F4 /* Phantom-Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7181B181E6D001935F4 /* Phantom-Icon-29.png */; };
-		A455D7771B181E6D001935F4 /* Phantom-Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7191B181E6D001935F4 /* Phantom-Icon-40.png */; };
-		A455D7781B181E6D001935F4 /* Phantom-Icon-48.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D71A1B181E6D001935F4 /* Phantom-Icon-48.png */; };
-		A455D7791B181E6D001935F4 /* Phantom-Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D71B1B181E6D001935F4 /* Phantom-Icon-50.png */; };
-		A455D77A1B181E6D001935F4 /* Phantom-Icon-55.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D71C1B181E6D001935F4 /* Phantom-Icon-55.png */; };
-		A455D77B1B181E6D001935F4 /* Phantom-Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D71D1B181E6D001935F4 /* Phantom-Icon-57.png */; };
-		A455D77C1B181E6D001935F4 /* Phantom-Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D71E1B181E6D001935F4 /* Phantom-Icon-58.png */; };
-		A455D77D1B181E6D001935F4 /* Phantom-Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D71F1B181E6D001935F4 /* Phantom-Icon-72.png */; };
-		A455D77E1B181E6D001935F4 /* Phantom-Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7201B181E6D001935F4 /* Phantom-Icon-76.png */; };
-		A455D77F1B181E6D001935F4 /* Phantom-Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7211B181E6D001935F4 /* Phantom-Icon-80.png */; };
-		A455D7801B181E6D001935F4 /* Phantom-Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7221B181E6D001935F4 /* Phantom-Icon-87.png */; };
-		A455D7811B181E6D001935F4 /* Phantom-Icon-88.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7231B181E6D001935F4 /* Phantom-Icon-88.png */; };
-		A455D7821B181E6D001935F4 /* Phantom-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7241B181E6D001935F4 /* Phantom-Icon.png */; };
-		A455D7831B181E6D001935F4 /* I-am-Dr-Kaden.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7281B181E6D001935F4 /* I-am-Dr-Kaden.png */; };
-		A455D7841B181E6D001935F4 /* IAmDrKaden.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7291B181E6D001935F4 /* IAmDrKaden.cpp */; };
-		A455D7861B181E6D001935F4 /* Officer-Hands.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D72D1B181E6D001935F4 /* Officer-Hands.png */; };
-		A455D7871B181E6D001935F4 /* OfficerHands.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D72E1B181E6D001935F4 /* OfficerHands.cpp */; };
-		A455D7891B181E6D001935F4 /* Drive-to-Officer-Home.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7321B181E6D001935F4 /* Drive-to-Officer-Home.png */; };
-		A455D78A1B181E6D001935F4 /* DriveToOfficerHome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7331B181E6D001935F4 /* DriveToOfficerHome.cpp */; };
-		A455D78C1B181E6D001935F4 /* Officer-on-Bed.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7371B181E6D001935F4 /* Officer-on-Bed.png */; };
-		A455D78D1B181E6D001935F4 /* OfficerOnBed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7381B181E6D001935F4 /* OfficerOnBed.cpp */; };
-		A455D78E1B181E6D001935F4 /* Cityscape-from-Window.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D73B1B181E6D001935F4 /* Cityscape-from-Window.png */; };
-		A455D78F1B181E6D001935F4 /* CityscapeFromWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D73C1B181E6D001935F4 /* CityscapeFromWindow.cpp */; };
-		A455D7911B181E6D001935F4 /* Dr-Kaden-Drinks-Elixir.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7401B181E6D001935F4 /* Dr-Kaden-Drinks-Elixir.png */; };
-		A455D7921B181E6D001935F4 /* DrKadenDrinksElixir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7411B181E6D001935F4 /* DrKadenDrinksElixir.cpp */; };
-		A455D7941B181E6D001935F4 /* Dr-Kaden-Walking-among-Citizens.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7451B181E6D001935F4 /* Dr-Kaden-Walking-among-Citizens.png */; };
-		A455D7951B181E6D001935F4 /* DrKadenWalkingAmongCitizens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7461B181E6D001935F4 /* DrKadenWalkingAmongCitizens.cpp */; };
-		A455D7971B181E6D001935F4 /* Dr-Kaden-Ill.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D74A1B181E6D001935F4 /* Dr-Kaden-Ill.png */; };
-		A455D7981B181E6D001935F4 /* DrKadenIll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D74B1B181E6D001935F4 /* DrKadenIll.cpp */; };
-		A455D79A1B181E6D001935F4 /* Officer-Notices-Dr-Kaden.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D74F1B181E6D001935F4 /* Officer-Notices-Dr-Kaden.png */; };
-		A455D79B1B181E6D001935F4 /* OfficerNoticesDrKaden.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7501B181E6D001935F4 /* OfficerNoticesDrKaden.cpp */; };
-		A455D79D1B181E6D001935F4 /* Phantom-Reveal.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7541B181E6D001935F4 /* Phantom-Reveal.png */; };
-		A455D79E1B181E6D001935F4 /* PhantomReveal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7551B181E6D001935F4 /* PhantomReveal.cpp */; };
-		A455D7A01B181E6D001935F4 /* Phantom-Reveal-with-Eyes.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D7591B181E6D001935F4 /* Phantom-Reveal-with-Eyes.png */; };
-		A455D7A11B181E6D001935F4 /* PhantomRevealWithEyes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D75A1B181E6D001935F4 /* PhantomRevealWithEyes.cpp */; };
-		A455D7A31B181E6D001935F4 /* Officer-Possessed.png in Resources */ = {isa = PBXBuildFile; fileRef = A455D75E1B181E6D001935F4 /* Officer-Possessed.png */; };
-		A455D7A41B181E6D001935F4 /* OfficerPossessed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D75F1B181E6D001935F4 /* OfficerPossessed.cpp */; };
-		A455D7A61B181E6D001935F4 /* ChoiceToBlueZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7631B181E6D001935F4 /* ChoiceToBlueZone.cpp */; };
-		A455D7A71B181E6D001935F4 /* ChoiceToGreenZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7651B181E6D001935F4 /* ChoiceToGreenZone.cpp */; };
-		A455D7A81B181E6D001935F4 /* RedZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A455D7671B181E6D001935F4 /* RedZone.cpp */; };
-		A46988581B1981B600E1CAD2 /* ResumeGame.m in Sources */ = {isa = PBXBuildFile; fileRef = A46988571B1981B600E1CAD2 /* ResumeGame.m */; };
 		A4C0ACFB1B38A36E004D3B9D /* GameView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C0ACFA1B38A36E004D3B9D /* GameView.storyboard */; };
 		A4C0AD001B38A854004D3B9D /* GameViewMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0ACFF1B38A854004D3B9D /* GameViewMainViewController.m */; };
 		A4C0AD031B38AAFB004D3B9D /* GameViewStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD021B38AAFB004D3B9D /* GameViewStoryViewController.m */; };
-		A4C0AD661B38D4B8004D3B9D /* VisualNovelReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C0AD581B38D3CC004D3B9D /* VisualNovelReader.framework */; };
+		A4C0ADA01B38DE0A004D3B9D /* StoryNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD8F1B38DE0A004D3B9D /* StoryNavigator.m */; };
+		A4C0ADA11B38DE0A004D3B9D /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD921B38DE0A004D3B9D /* Bookmark.m */; };
+		A4C0ADA21B38DE0A004D3B9D /* StoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD941B38DE0A004D3B9D /* StoryView.m */; };
+		A4C0ADA31B38DE0A004D3B9D /* StoryTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD961B38DE0A004D3B9D /* StoryTextView.m */; };
+		A4C0ADA41B38DE0A004D3B9D /* StoryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD991B38DE0A004D3B9D /* StoryImageView.m */; };
+		A4C0ADA51B38DE0A004D3B9D /* StoryEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD9F1B38DE0A004D3B9D /* StoryEventHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,41 +31,7 @@
 			remoteGlobalIDString = A422666D1B12AA7A00D7F520;
 			remoteInfo = "Phantom of the West";
 		};
-		A4C0AD571B38D3CC004D3B9D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4C0AD511B38D3CC004D3B9D /* VisualNovelReader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A42DBB961B33BC7200CD1E58;
-			remoteInfo = VisualNovelReader;
-		};
-		A4C0AD591B38D3CC004D3B9D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4C0AD511B38D3CC004D3B9D /* VisualNovelReader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A42DBBA11B33BC7200CD1E58;
-			remoteInfo = VisualNovelReaderTests;
-		};
-		A4C0AD741B38D605004D3B9D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4C0AD511B38D3CC004D3B9D /* VisualNovelReader.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A42DBB951B33BC7200CD1E58;
-			remoteInfo = VisualNovelReader;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		A45691A91B33E2770027ED0B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A422666E1B12AA7A00D7F520 /* Phantom of the West.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phantom of the West.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,121 +39,38 @@
 		A42266731B12AA7A00D7F520 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A42266751B12AA7A00D7F520 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A42266761B12AA7A00D7F520 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A42266781B12AA7A00D7F520 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A42266791B12AA7A00D7F520 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
-		A422667C1B12AA7A00D7F520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A422667E1B12AA7A00D7F520 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A42266811B12AA7A00D7F520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A42266871B12AA7A00D7F520 /* Phantom of the WestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phantom of the WestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A422668C1B12AA7A00D7F520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A422668D1B12AA7A00D7F520 /* Phantom_of_the_WestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Phantom_of_the_WestTests.m; sourceTree = "<group>"; };
-		A42266971B12ACF100D7F520 /* Advertising.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Advertising.h; sourceTree = "<group>"; };
-		A42266981B12ACF100D7F520 /* Advertising.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Advertising.m; sourceTree = "<group>"; };
-		A422669E1B12ACF100D7F520 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
-		A422669F1B12ACF100D7F520 /* GameView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameView.mm; sourceTree = "<group>"; };
-		A42266A01B12ACF100D7F520 /* PStoryViewObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryViewObjC.h; sourceTree = "<group>"; };
-		A42266A31B12ACF100D7F520 /* StoryViewIOSCPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewIOSCPP.h; sourceTree = "<group>"; };
-		A42266A41B12ACF100D7F520 /* StoryViewIOSCPP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewIOSCPP.mm; sourceTree = "<group>"; };
-		A42266A51B12ACF100D7F520 /* StoryViewIOSObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewIOSObjC.h; sourceTree = "<group>"; };
-		A42266A61B12ACF100D7F520 /* StoryViewIOSObjC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StoryViewIOSObjC.mm; sourceTree = "<group>"; };
-		A42A9E9F1B192B2E00D8BBDB /* PauseMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseMenu.h; sourceTree = "<group>"; };
-		A42A9EA01B192B2E00D8BBDB /* PauseMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseMenu.m; sourceTree = "<group>"; };
-		A42A9EA21B19315D00D8BBDB /* PauseMenuOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseMenuOption.h; sourceTree = "<group>"; };
-		A44BFDC91B1A900300804705 /* StoryNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryNavigator.h; sourceTree = "<group>"; };
-		A44BFDCA1B1A900300804705 /* StoryNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryNavigator.m; sourceTree = "<group>"; };
-		A44BFDCD1B1A96FE00804705 /* PStoryNavigatorObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryNavigatorObserver.h; sourceTree = "<group>"; };
-		A455D7041B181E6D001935F4 /* IChoiceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IChoiceList.h; sourceTree = "<group>"; };
-		A455D7051B181E6D001935F4 /* IPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPage.h; sourceTree = "<group>"; };
-		A455D7061B181E6D001935F4 /* IStoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IStoryView.h; sourceTree = "<group>"; };
-		A455D7071B181E6D001935F4 /* ModifyableChoiceList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModifyableChoiceList.cpp; sourceTree = "<group>"; };
-		A455D7081B181E6D001935F4 /* ModifyableChoiceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyableChoiceList.h; sourceTree = "<group>"; };
-		A455D7091B181E6D001935F4 /* Page.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Page.cpp; sourceTree = "<group>"; };
-		A455D70A1B181E6D001935F4 /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page.h; sourceTree = "<group>"; };
-		A455D70D1B181E6D001935F4 /* Journalist-in-Shower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Journalist-in-Shower.png"; sourceTree = "<group>"; };
-		A455D70E1B181E6D001935F4 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
-		A455D7101B181E6D001935F4 /* Phantom-Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-100.png"; sourceTree = "<group>"; };
-		A455D7111B181E6D001935F4 /* Phantom-Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-114.png"; sourceTree = "<group>"; };
-		A455D7121B181E6D001935F4 /* Phantom-Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-120.png"; sourceTree = "<group>"; };
-		A455D7131B181E6D001935F4 /* Phantom-Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-144.png"; sourceTree = "<group>"; };
-		A455D7141B181E6D001935F4 /* Phantom-Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-152.png"; sourceTree = "<group>"; };
-		A455D7151B181E6D001935F4 /* Phantom-Icon-172.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-172.png"; sourceTree = "<group>"; };
-		A455D7161B181E6D001935F4 /* Phantom-Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-180.png"; sourceTree = "<group>"; };
-		A455D7171B181E6D001935F4 /* Phantom-Icon-196.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-196.png"; sourceTree = "<group>"; };
-		A455D7181B181E6D001935F4 /* Phantom-Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-29.png"; sourceTree = "<group>"; };
-		A455D7191B181E6D001935F4 /* Phantom-Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-40.png"; sourceTree = "<group>"; };
-		A455D71A1B181E6D001935F4 /* Phantom-Icon-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-48.png"; sourceTree = "<group>"; };
-		A455D71B1B181E6D001935F4 /* Phantom-Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-50.png"; sourceTree = "<group>"; };
-		A455D71C1B181E6D001935F4 /* Phantom-Icon-55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-55.png"; sourceTree = "<group>"; };
-		A455D71D1B181E6D001935F4 /* Phantom-Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-57.png"; sourceTree = "<group>"; };
-		A455D71E1B181E6D001935F4 /* Phantom-Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-58.png"; sourceTree = "<group>"; };
-		A455D71F1B181E6D001935F4 /* Phantom-Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-72.png"; sourceTree = "<group>"; };
-		A455D7201B181E6D001935F4 /* Phantom-Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-76.png"; sourceTree = "<group>"; };
-		A455D7211B181E6D001935F4 /* Phantom-Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-80.png"; sourceTree = "<group>"; };
-		A455D7221B181E6D001935F4 /* Phantom-Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-87.png"; sourceTree = "<group>"; };
-		A455D7231B181E6D001935F4 /* Phantom-Icon-88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon-88.png"; sourceTree = "<group>"; };
-		A455D7241B181E6D001935F4 /* Phantom-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Icon.png"; sourceTree = "<group>"; };
-		A455D7281B181E6D001935F4 /* I-am-Dr-Kaden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "I-am-Dr-Kaden.png"; sourceTree = "<group>"; };
-		A455D7291B181E6D001935F4 /* IAmDrKaden.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IAmDrKaden.cpp; sourceTree = "<group>"; };
-		A455D72A1B181E6D001935F4 /* IAmDrKaden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAmDrKaden.h; sourceTree = "<group>"; };
-		A455D72D1B181E6D001935F4 /* Officer-Hands.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Officer-Hands.png"; sourceTree = "<group>"; };
-		A455D72E1B181E6D001935F4 /* OfficerHands.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OfficerHands.cpp; sourceTree = "<group>"; };
-		A455D72F1B181E6D001935F4 /* OfficerHands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfficerHands.h; sourceTree = "<group>"; };
-		A455D7321B181E6D001935F4 /* Drive-to-Officer-Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Drive-to-Officer-Home.png"; sourceTree = "<group>"; };
-		A455D7331B181E6D001935F4 /* DriveToOfficerHome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DriveToOfficerHome.cpp; sourceTree = "<group>"; };
-		A455D7341B181E6D001935F4 /* DriveToOfficerHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveToOfficerHome.h; sourceTree = "<group>"; };
-		A455D7371B181E6D001935F4 /* Officer-on-Bed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Officer-on-Bed.png"; sourceTree = "<group>"; };
-		A455D7381B181E6D001935F4 /* OfficerOnBed.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OfficerOnBed.cpp; sourceTree = "<group>"; };
-		A455D7391B181E6D001935F4 /* OfficerOnBed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfficerOnBed.h; sourceTree = "<group>"; };
-		A455D73B1B181E6D001935F4 /* Cityscape-from-Window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cityscape-from-Window.png"; sourceTree = "<group>"; };
-		A455D73C1B181E6D001935F4 /* CityscapeFromWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CityscapeFromWindow.cpp; sourceTree = "<group>"; };
-		A455D73D1B181E6D001935F4 /* CityscapeFromWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityscapeFromWindow.h; sourceTree = "<group>"; };
-		A455D7401B181E6D001935F4 /* Dr-Kaden-Drinks-Elixir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dr-Kaden-Drinks-Elixir.png"; sourceTree = "<group>"; };
-		A455D7411B181E6D001935F4 /* DrKadenDrinksElixir.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrKadenDrinksElixir.cpp; sourceTree = "<group>"; };
-		A455D7421B181E6D001935F4 /* DrKadenDrinksElixir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrKadenDrinksElixir.h; sourceTree = "<group>"; };
-		A455D7451B181E6D001935F4 /* Dr-Kaden-Walking-among-Citizens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dr-Kaden-Walking-among-Citizens.png"; sourceTree = "<group>"; };
-		A455D7461B181E6D001935F4 /* DrKadenWalkingAmongCitizens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrKadenWalkingAmongCitizens.cpp; sourceTree = "<group>"; };
-		A455D7471B181E6D001935F4 /* DrKadenWalkingAmongCitizens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrKadenWalkingAmongCitizens.h; sourceTree = "<group>"; };
-		A455D74A1B181E6D001935F4 /* Dr-Kaden-Ill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dr-Kaden-Ill.png"; sourceTree = "<group>"; };
-		A455D74B1B181E6D001935F4 /* DrKadenIll.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrKadenIll.cpp; sourceTree = "<group>"; };
-		A455D74C1B181E6D001935F4 /* DrKadenIll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrKadenIll.h; sourceTree = "<group>"; };
-		A455D74F1B181E6D001935F4 /* Officer-Notices-Dr-Kaden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Officer-Notices-Dr-Kaden.png"; sourceTree = "<group>"; };
-		A455D7501B181E6D001935F4 /* OfficerNoticesDrKaden.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OfficerNoticesDrKaden.cpp; sourceTree = "<group>"; };
-		A455D7511B181E6D001935F4 /* OfficerNoticesDrKaden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfficerNoticesDrKaden.h; sourceTree = "<group>"; };
-		A455D7541B181E6D001935F4 /* Phantom-Reveal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Reveal.png"; sourceTree = "<group>"; };
-		A455D7551B181E6D001935F4 /* PhantomReveal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhantomReveal.cpp; sourceTree = "<group>"; };
-		A455D7561B181E6D001935F4 /* PhantomReveal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhantomReveal.h; sourceTree = "<group>"; };
-		A455D7591B181E6D001935F4 /* Phantom-Reveal-with-Eyes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom-Reveal-with-Eyes.png"; sourceTree = "<group>"; };
-		A455D75A1B181E6D001935F4 /* PhantomRevealWithEyes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhantomRevealWithEyes.cpp; sourceTree = "<group>"; };
-		A455D75B1B181E6D001935F4 /* PhantomRevealWithEyes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhantomRevealWithEyes.h; sourceTree = "<group>"; };
-		A455D75E1B181E6D001935F4 /* Officer-Possessed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Officer-Possessed.png"; sourceTree = "<group>"; };
-		A455D75F1B181E6D001935F4 /* OfficerPossessed.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OfficerPossessed.cpp; sourceTree = "<group>"; };
-		A455D7601B181E6D001935F4 /* OfficerPossessed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfficerPossessed.h; sourceTree = "<group>"; };
-		A455D7631B181E6D001935F4 /* ChoiceToBlueZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChoiceToBlueZone.cpp; sourceTree = "<group>"; };
-		A455D7641B181E6D001935F4 /* ChoiceToBlueZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceToBlueZone.h; sourceTree = "<group>"; };
-		A455D7651B181E6D001935F4 /* ChoiceToGreenZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChoiceToGreenZone.cpp; sourceTree = "<group>"; };
-		A455D7661B181E6D001935F4 /* ChoiceToGreenZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceToGreenZone.h; sourceTree = "<group>"; };
-		A455D7671B181E6D001935F4 /* RedZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RedZone.cpp; sourceTree = "<group>"; };
-		A455D7681B181E6D001935F4 /* RedZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedZone.h; sourceTree = "<group>"; };
-		A455D7691B181E6D001935F4 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
-		A46988561B1981B600E1CAD2 /* ResumeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeGame.h; sourceTree = "<group>"; };
-		A46988571B1981B600E1CAD2 /* ResumeGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeGame.m; sourceTree = "<group>"; };
 		A4C0ACFA1B38A36E004D3B9D /* GameView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameView.storyboard; sourceTree = "<group>"; };
 		A4C0ACFE1B38A854004D3B9D /* GameViewMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewMainViewController.h; sourceTree = "<group>"; };
 		A4C0ACFF1B38A854004D3B9D /* GameViewMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewMainViewController.m; sourceTree = "<group>"; };
 		A4C0AD011B38AAFB004D3B9D /* GameViewStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewStoryViewController.h; sourceTree = "<group>"; };
 		A4C0AD021B38AAFB004D3B9D /* GameViewStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewStoryViewController.m; sourceTree = "<group>"; };
-		A4C0AD511B38D3CC004D3B9D /* VisualNovelReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VisualNovelReader.xcodeproj; path = ../VisualNovelReader/VisualNovelReader.xcodeproj; sourceTree = "<group>"; };
+		A4C0AD8E1B38DE0A004D3B9D /* StoryNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryNavigator.h; sourceTree = "<group>"; };
+		A4C0AD8F1B38DE0A004D3B9D /* StoryNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryNavigator.m; sourceTree = "<group>"; };
+		A4C0AD901B38DE0A004D3B9D /* PStoryNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryNavigator.h; sourceTree = "<group>"; };
+		A4C0AD921B38DE0A004D3B9D /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
+		A4C0AD931B38DE0A004D3B9D /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmark.h; sourceTree = "<group>"; };
+		A4C0AD941B38DE0A004D3B9D /* StoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryView.m; sourceTree = "<group>"; };
+		A4C0AD951B38DE0A004D3B9D /* StoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryView.h; sourceTree = "<group>"; };
+		A4C0AD961B38DE0A004D3B9D /* StoryTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryTextView.m; sourceTree = "<group>"; };
+		A4C0AD971B38DE0A004D3B9D /* StoryTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryTextView.h; sourceTree = "<group>"; };
+		A4C0AD981B38DE0A004D3B9D /* StoryImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryImageView.h; sourceTree = "<group>"; };
+		A4C0AD991B38DE0A004D3B9D /* StoryImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryImageView.m; sourceTree = "<group>"; };
+		A4C0AD9B1B38DE0A004D3B9D /* PReaderNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PReaderNavigationController.h; path = ../VisualNovelReader/VisualNovelReader/PReaderNavigationController.h; sourceTree = "<group>"; };
+		A4C0AD9C1B38DE0A004D3B9D /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../VisualNovelReader/VisualNovelReader/Constants.h; sourceTree = "<group>"; };
+		A4C0AD9E1B38DE0A004D3B9D /* StoryEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryEventHandler.h; path = ../VisualNovelReader/VisualNovelReader/StoryEventHandler.h; sourceTree = "<group>"; };
+		A4C0AD9F1B38DE0A004D3B9D /* StoryEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryEventHandler.m; path = ../VisualNovelReader/VisualNovelReader/StoryEventHandler.m; sourceTree = "<group>"; };
+		A4C0ADA61B38DE22004D3B9D /* PStoryReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PStoryReader.h; path = ../VisualNovel/VisualNovel/PStoryReader.h; sourceTree = "<group>"; };
+		A4C0ADA71B38DE22004D3B9D /* PStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PStory.h; path = ../VisualNovel/VisualNovel/PStory.h; sourceTree = "<group>"; };
+		A4C0ADA81B38DE22004D3B9D /* PStoryPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PStoryPage.h; path = ../VisualNovel/VisualNovel/PStoryPage.h; sourceTree = "<group>"; };
+		A4C0ADA91B38DE50004D3B9D /* ExternalHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExternalHeaders.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A422666B1B12AA7A00D7F520 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4C0AD661B38D4B8004D3B9D /* VisualNovelReader.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A42266841B12AA7A00D7F520 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,7 +84,8 @@
 		A42266651B12AA7A00D7F520 = {
 			isa = PBXGroup;
 			children = (
-				A4C0AD511B38D3CC004D3B9D /* VisualNovelReader.xcodeproj */,
+				A4C0AD8B1B38DDC3004D3B9D /* VisualNovel */,
+				A4C0AD8D1B38DDCD004D3B9D /* VisualNovelReader */,
 				A42266701B12AA7A00D7F520 /* Phantom of the West */,
 				A422668A1B12AA7A00D7F520 /* Phantom of the WestTests */,
 				A422666F1B12AA7A00D7F520 /* Products */,
@@ -276,17 +104,10 @@
 		A42266701B12AA7A00D7F520 /* Phantom of the West */ = {
 			isa = PBXGroup;
 			children = (
-				A455D7021B181E6D001935F4 /* Common Files */,
-				A42266EF1B12AE3C00D7F520 /* In-App Purchasing */,
-				A42A9E9E1B192A2B00D8BBDB /* Pause Menu */,
-				A42266EE1B12AE1100D7F520 /* Story View */,
 				A4C0AD041B38AE37004D3B9D /* New Files - UI */,
 				A42266751B12AA7A00D7F520 /* AppDelegate.h */,
 				A42266761B12AA7A00D7F520 /* AppDelegate.m */,
-				A42266781B12AA7A00D7F520 /* ViewController.h */,
-				A42266791B12AA7A00D7F520 /* ViewController.mm */,
 				A4C0ACFA1B38A36E004D3B9D /* GameView.storyboard */,
-				A422667B1B12AA7A00D7F520 /* Main.storyboard */,
 				A422667E1B12AA7A00D7F520 /* Images.xcassets */,
 				A42266801B12AA7A00D7F520 /* LaunchScreen.xib */,
 				A42266711B12AA7A00D7F520 /* Supporting Files */,
@@ -320,285 +141,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A42266EE1B12AE1100D7F520 /* Story View */ = {
-			isa = PBXGroup;
-			children = (
-				A44BFDCC1B1A96AB00804705 /* Story Navigation */,
-				A422669E1B12ACF100D7F520 /* GameView.h */,
-				A422669F1B12ACF100D7F520 /* GameView.mm */,
-				A42266A01B12ACF100D7F520 /* PStoryViewObjC.h */,
-				A42266A31B12ACF100D7F520 /* StoryViewIOSCPP.h */,
-				A42266A41B12ACF100D7F520 /* StoryViewIOSCPP.mm */,
-				A42266A51B12ACF100D7F520 /* StoryViewIOSObjC.h */,
-				A42266A61B12ACF100D7F520 /* StoryViewIOSObjC.mm */,
-			);
-			name = "Story View";
-			sourceTree = "<group>";
-		};
-		A42266EF1B12AE3C00D7F520 /* In-App Purchasing */ = {
-			isa = PBXGroup;
-			children = (
-				A42266971B12ACF100D7F520 /* Advertising.h */,
-				A42266981B12ACF100D7F520 /* Advertising.m */,
-			);
-			name = "In-App Purchasing";
-			sourceTree = "<group>";
-		};
-		A42A9E9E1B192A2B00D8BBDB /* Pause Menu */ = {
-			isa = PBXGroup;
-			children = (
-				A42A9E9F1B192B2E00D8BBDB /* PauseMenu.h */,
-				A42A9EA01B192B2E00D8BBDB /* PauseMenu.m */,
-				A42A9EA21B19315D00D8BBDB /* PauseMenuOption.h */,
-				A46988561B1981B600E1CAD2 /* ResumeGame.h */,
-				A46988571B1981B600E1CAD2 /* ResumeGame.m */,
-			);
-			name = "Pause Menu";
-			sourceTree = "<group>";
-		};
-		A44BFDCC1B1A96AB00804705 /* Story Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				A44BFDC91B1A900300804705 /* StoryNavigator.h */,
-				A44BFDCA1B1A900300804705 /* StoryNavigator.m */,
-				A44BFDCD1B1A96FE00804705 /* PStoryNavigatorObserver.h */,
-			);
-			name = "Story Navigation";
-			sourceTree = "<group>";
-		};
-		A455D7021B181E6D001935F4 /* Common Files */ = {
-			isa = PBXGroup;
-			children = (
-				A455D7031B181E6D001935F4 /* Abstract Classes */,
-				A455D70B1B181E6D001935F4 /* Images */,
-				A455D7251B181E6D001935F4 /* Pages */,
-				A455D7691B181E6D001935F4 /* stdafx.h */,
-			);
-			name = "Common Files";
-			path = "../../../Common Files";
-			sourceTree = "<group>";
-		};
-		A455D7031B181E6D001935F4 /* Abstract Classes */ = {
-			isa = PBXGroup;
-			children = (
-				A455D7041B181E6D001935F4 /* IChoiceList.h */,
-				A455D7051B181E6D001935F4 /* IPage.h */,
-				A455D7061B181E6D001935F4 /* IStoryView.h */,
-				A455D7071B181E6D001935F4 /* ModifyableChoiceList.cpp */,
-				A455D7081B181E6D001935F4 /* ModifyableChoiceList.h */,
-				A455D7091B181E6D001935F4 /* Page.cpp */,
-				A455D70A1B181E6D001935F4 /* Page.h */,
-			);
-			path = "Abstract Classes";
-			sourceTree = "<group>";
-		};
-		A455D70B1B181E6D001935F4 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				A455D70C1B181E6D001935F4 /* Backgrounds */,
-				A455D70F1B181E6D001935F4 /* Icons */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		A455D70C1B181E6D001935F4 /* Backgrounds */ = {
-			isa = PBXGroup;
-			children = (
-				A455D70D1B181E6D001935F4 /* Journalist-in-Shower.png */,
-				A455D70E1B181E6D001935F4 /* Thumbs.db */,
-			);
-			path = Backgrounds;
-			sourceTree = "<group>";
-		};
-		A455D70F1B181E6D001935F4 /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				A455D7101B181E6D001935F4 /* Phantom-Icon-100.png */,
-				A455D7111B181E6D001935F4 /* Phantom-Icon-114.png */,
-				A455D7121B181E6D001935F4 /* Phantom-Icon-120.png */,
-				A455D7131B181E6D001935F4 /* Phantom-Icon-144.png */,
-				A455D7141B181E6D001935F4 /* Phantom-Icon-152.png */,
-				A455D7151B181E6D001935F4 /* Phantom-Icon-172.png */,
-				A455D7161B181E6D001935F4 /* Phantom-Icon-180.png */,
-				A455D7171B181E6D001935F4 /* Phantom-Icon-196.png */,
-				A455D7181B181E6D001935F4 /* Phantom-Icon-29.png */,
-				A455D7191B181E6D001935F4 /* Phantom-Icon-40.png */,
-				A455D71A1B181E6D001935F4 /* Phantom-Icon-48.png */,
-				A455D71B1B181E6D001935F4 /* Phantom-Icon-50.png */,
-				A455D71C1B181E6D001935F4 /* Phantom-Icon-55.png */,
-				A455D71D1B181E6D001935F4 /* Phantom-Icon-57.png */,
-				A455D71E1B181E6D001935F4 /* Phantom-Icon-58.png */,
-				A455D71F1B181E6D001935F4 /* Phantom-Icon-72.png */,
-				A455D7201B181E6D001935F4 /* Phantom-Icon-76.png */,
-				A455D7211B181E6D001935F4 /* Phantom-Icon-80.png */,
-				A455D7221B181E6D001935F4 /* Phantom-Icon-87.png */,
-				A455D7231B181E6D001935F4 /* Phantom-Icon-88.png */,
-				A455D7241B181E6D001935F4 /* Phantom-Icon.png */,
-			);
-			path = Icons;
-			sourceTree = "<group>";
-		};
-		A455D7251B181E6D001935F4 /* Pages */ = {
-			isa = PBXGroup;
-			children = (
-				A455D7261B181E6D001935F4 /* Chapter 1 */,
-				A455D7621B181E6D001935F4 /* Example */,
-			);
-			path = Pages;
-			sourceTree = "<group>";
-		};
-		A455D7261B181E6D001935F4 /* Chapter 1 */ = {
-			isa = PBXGroup;
-			children = (
-				A455D7271B181E6D001935F4 /* 1 */,
-				A455D72C1B181E6D001935F4 /* 10 */,
-				A455D7311B181E6D001935F4 /* 11 */,
-				A455D7361B181E6D001935F4 /* 12 */,
-				A455D73A1B181E6D001935F4 /* 2 */,
-				A455D73F1B181E6D001935F4 /* 3 */,
-				A455D7441B181E6D001935F4 /* 4 */,
-				A455D7491B181E6D001935F4 /* 5 */,
-				A455D74E1B181E6D001935F4 /* 6 */,
-				A455D7531B181E6D001935F4 /* 7 */,
-				A455D7581B181E6D001935F4 /* 8 */,
-				A455D75D1B181E6D001935F4 /* 9 */,
-			);
-			path = "Chapter 1";
-			sourceTree = "<group>";
-		};
-		A455D7271B181E6D001935F4 /* 1 */ = {
-			isa = PBXGroup;
-			children = (
-				A455D7281B181E6D001935F4 /* I-am-Dr-Kaden.png */,
-				A455D7291B181E6D001935F4 /* IAmDrKaden.cpp */,
-				A455D72A1B181E6D001935F4 /* IAmDrKaden.h */,
-			);
-			path = 1;
-			sourceTree = "<group>";
-		};
-		A455D72C1B181E6D001935F4 /* 10 */ = {
-			isa = PBXGroup;
-			children = (
-				A455D72D1B181E6D001935F4 /* Officer-Hands.png */,
-				A455D72E1B181E6D001935F4 /* OfficerHands.cpp */,
-				A455D72F1B181E6D001935F4 /* OfficerHands.h */,
-			);
-			path = 10;
-			sourceTree = "<group>";
-		};
-		A455D7311B181E6D001935F4 /* 11 */ = {
-			isa = PBXGroup;
-			children = (
-				A455D7321B181E6D001935F4 /* Drive-to-Officer-Home.png */,
-				A455D7331B181E6D001935F4 /* DriveToOfficerHome.cpp */,
-				A455D7341B181E6D001935F4 /* DriveToOfficerHome.h */,
-			);
-			path = 11;
-			sourceTree = "<group>";
-		};
-		A455D7361B181E6D001935F4 /* 12 */ = {
-			isa = PBXGroup;
-			children = (
-				A455D7371B181E6D001935F4 /* Officer-on-Bed.png */,
-				A455D7381B181E6D001935F4 /* OfficerOnBed.cpp */,
-				A455D7391B181E6D001935F4 /* OfficerOnBed.h */,
-			);
-			path = 12;
-			sourceTree = "<group>";
-		};
-		A455D73A1B181E6D001935F4 /* 2 */ = {
-			isa = PBXGroup;
-			children = (
-				A455D73B1B181E6D001935F4 /* Cityscape-from-Window.png */,
-				A455D73C1B181E6D001935F4 /* CityscapeFromWindow.cpp */,
-				A455D73D1B181E6D001935F4 /* CityscapeFromWindow.h */,
-			);
-			path = 2;
-			sourceTree = "<group>";
-		};
-		A455D73F1B181E6D001935F4 /* 3 */ = {
-			isa = PBXGroup;
-			children = (
-				A455D7401B181E6D001935F4 /* Dr-Kaden-Drinks-Elixir.png */,
-				A455D7411B181E6D001935F4 /* DrKadenDrinksElixir.cpp */,
-				A455D7421B181E6D001935F4 /* DrKadenDrinksElixir.h */,
-			);
-			path = 3;
-			sourceTree = "<group>";
-		};
-		A455D7441B181E6D001935F4 /* 4 */ = {
-			isa = PBXGroup;
-			children = (
-				A455D7451B181E6D001935F4 /* Dr-Kaden-Walking-among-Citizens.png */,
-				A455D7461B181E6D001935F4 /* DrKadenWalkingAmongCitizens.cpp */,
-				A455D7471B181E6D001935F4 /* DrKadenWalkingAmongCitizens.h */,
-			);
-			path = 4;
-			sourceTree = "<group>";
-		};
-		A455D7491B181E6D001935F4 /* 5 */ = {
-			isa = PBXGroup;
-			children = (
-				A455D74A1B181E6D001935F4 /* Dr-Kaden-Ill.png */,
-				A455D74B1B181E6D001935F4 /* DrKadenIll.cpp */,
-				A455D74C1B181E6D001935F4 /* DrKadenIll.h */,
-			);
-			path = 5;
-			sourceTree = "<group>";
-		};
-		A455D74E1B181E6D001935F4 /* 6 */ = {
-			isa = PBXGroup;
-			children = (
-				A455D74F1B181E6D001935F4 /* Officer-Notices-Dr-Kaden.png */,
-				A455D7501B181E6D001935F4 /* OfficerNoticesDrKaden.cpp */,
-				A455D7511B181E6D001935F4 /* OfficerNoticesDrKaden.h */,
-			);
-			path = 6;
-			sourceTree = "<group>";
-		};
-		A455D7531B181E6D001935F4 /* 7 */ = {
-			isa = PBXGroup;
-			children = (
-				A455D7541B181E6D001935F4 /* Phantom-Reveal.png */,
-				A455D7551B181E6D001935F4 /* PhantomReveal.cpp */,
-				A455D7561B181E6D001935F4 /* PhantomReveal.h */,
-			);
-			path = 7;
-			sourceTree = "<group>";
-		};
-		A455D7581B181E6D001935F4 /* 8 */ = {
-			isa = PBXGroup;
-			children = (
-				A455D7591B181E6D001935F4 /* Phantom-Reveal-with-Eyes.png */,
-				A455D75A1B181E6D001935F4 /* PhantomRevealWithEyes.cpp */,
-				A455D75B1B181E6D001935F4 /* PhantomRevealWithEyes.h */,
-			);
-			path = 8;
-			sourceTree = "<group>";
-		};
-		A455D75D1B181E6D001935F4 /* 9 */ = {
-			isa = PBXGroup;
-			children = (
-				A455D75E1B181E6D001935F4 /* Officer-Possessed.png */,
-				A455D75F1B181E6D001935F4 /* OfficerPossessed.cpp */,
-				A455D7601B181E6D001935F4 /* OfficerPossessed.h */,
-			);
-			path = 9;
-			sourceTree = "<group>";
-		};
-		A455D7621B181E6D001935F4 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				A455D7631B181E6D001935F4 /* ChoiceToBlueZone.cpp */,
-				A455D7641B181E6D001935F4 /* ChoiceToBlueZone.h */,
-				A455D7651B181E6D001935F4 /* ChoiceToGreenZone.cpp */,
-				A455D7661B181E6D001935F4 /* ChoiceToGreenZone.h */,
-				A455D7671B181E6D001935F4 /* RedZone.cpp */,
-				A455D7681B181E6D001935F4 /* RedZone.h */,
-			);
-			path = Example;
-			sourceTree = "<group>";
-		};
 		A4C0AD041B38AE37004D3B9D /* New Files - UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,13 +152,54 @@
 			name = "New Files - UI";
 			sourceTree = "<group>";
 		};
-		A4C0AD521B38D3CC004D3B9D /* Products */ = {
+		A4C0AD8B1B38DDC3004D3B9D /* VisualNovel */ = {
 			isa = PBXGroup;
 			children = (
-				A4C0AD581B38D3CC004D3B9D /* VisualNovelReader.framework */,
-				A4C0AD5A1B38D3CC004D3B9D /* VisualNovelReaderTests.xctest */,
+				A4C0ADA61B38DE22004D3B9D /* PStoryReader.h */,
+				A4C0ADA71B38DE22004D3B9D /* PStory.h */,
+				A4C0ADA81B38DE22004D3B9D /* PStoryPage.h */,
 			);
-			name = Products;
+			name = VisualNovel;
+			sourceTree = "<group>";
+		};
+		A4C0AD8D1B38DDCD004D3B9D /* VisualNovelReader */ = {
+			isa = PBXGroup;
+			children = (
+				A4C0AD9A1B38DE0A004D3B9D /* Story View */,
+				A4C0AD9B1B38DE0A004D3B9D /* PReaderNavigationController.h */,
+				A4C0AD9C1B38DE0A004D3B9D /* Constants.h */,
+				A4C0AD9E1B38DE0A004D3B9D /* StoryEventHandler.h */,
+				A4C0AD9F1B38DE0A004D3B9D /* StoryEventHandler.m */,
+				A4C0ADA91B38DE50004D3B9D /* ExternalHeaders.h */,
+			);
+			name = VisualNovelReader;
+			sourceTree = "<group>";
+		};
+		A4C0AD911B38DE0A004D3B9D /* Story Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A4C0AD8E1B38DE0A004D3B9D /* StoryNavigator.h */,
+				A4C0AD8F1B38DE0A004D3B9D /* StoryNavigator.m */,
+				A4C0AD901B38DE0A004D3B9D /* PStoryNavigator.h */,
+			);
+			name = "Story Navigation";
+			sourceTree = "<group>";
+		};
+		A4C0AD9A1B38DE0A004D3B9D /* Story View */ = {
+			isa = PBXGroup;
+			children = (
+				A4C0AD911B38DE0A004D3B9D /* Story Navigation */,
+				A4C0AD921B38DE0A004D3B9D /* Bookmark.m */,
+				A4C0AD931B38DE0A004D3B9D /* Bookmark.h */,
+				A4C0AD941B38DE0A004D3B9D /* StoryView.m */,
+				A4C0AD951B38DE0A004D3B9D /* StoryView.h */,
+				A4C0AD961B38DE0A004D3B9D /* StoryTextView.m */,
+				A4C0AD971B38DE0A004D3B9D /* StoryTextView.h */,
+				A4C0AD981B38DE0A004D3B9D /* StoryImageView.h */,
+				A4C0AD991B38DE0A004D3B9D /* StoryImageView.m */,
+			);
+			name = "Story View";
+			path = ../VisualNovelReader/VisualNovelReader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -627,14 +210,11 @@
 			buildConfigurationList = A42266911B12AA7A00D7F520 /* Build configuration list for PBXNativeTarget "Phantom of the West" */;
 			buildPhases = (
 				A422666A1B12AA7A00D7F520 /* Sources */,
-				A422666B1B12AA7A00D7F520 /* Frameworks */,
 				A422666C1B12AA7A00D7F520 /* Resources */,
-				A45691A91B33E2770027ED0B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A4C0AD751B38D605004D3B9D /* PBXTargetDependency */,
 			);
 			name = "Phantom of the West";
 			productName = "Phantom of the West";
@@ -689,12 +269,6 @@
 			mainGroup = A42266651B12AA7A00D7F520;
 			productRefGroup = A422666F1B12AA7A00D7F520 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A4C0AD521B38D3CC004D3B9D /* Products */;
-					ProjectRef = A4C0AD511B38D3CC004D3B9D /* VisualNovelReader.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A422666D1B12AA7A00D7F520 /* Phantom of the West */,
@@ -703,67 +277,14 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		A4C0AD581B38D3CC004D3B9D /* VisualNovelReader.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = VisualNovelReader.framework;
-			remoteRef = A4C0AD571B38D3CC004D3B9D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A4C0AD5A1B38D3CC004D3B9D /* VisualNovelReaderTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = VisualNovelReaderTests.xctest;
-			remoteRef = A4C0AD591B38D3CC004D3B9D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		A422666C1B12AA7A00D7F520 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A422667D1B12AA7A00D7F520 /* Main.storyboard in Resources */,
-				A455D7831B181E6D001935F4 /* I-am-Dr-Kaden.png in Resources */,
 				A4C0ACFB1B38A36E004D3B9D /* GameView.storyboard in Resources */,
-				A455D7711B181E6D001935F4 /* Phantom-Icon-144.png in Resources */,
-				A455D77A1B181E6D001935F4 /* Phantom-Icon-55.png in Resources */,
-				A455D76D1B181E6D001935F4 /* Thumbs.db in Resources */,
-				A455D77F1B181E6D001935F4 /* Phantom-Icon-80.png in Resources */,
-				A455D79D1B181E6D001935F4 /* Phantom-Reveal.png in Resources */,
-				A455D78E1B181E6D001935F4 /* Cityscape-from-Window.png in Resources */,
-				A455D7761B181E6D001935F4 /* Phantom-Icon-29.png in Resources */,
-				A455D7A31B181E6D001935F4 /* Officer-Possessed.png in Resources */,
-				A455D7791B181E6D001935F4 /* Phantom-Icon-50.png in Resources */,
 				A42266821B12AA7A00D7F520 /* LaunchScreen.xib in Resources */,
-				A455D77E1B181E6D001935F4 /* Phantom-Icon-76.png in Resources */,
-				A455D76F1B181E6D001935F4 /* Phantom-Icon-114.png in Resources */,
-				A455D7861B181E6D001935F4 /* Officer-Hands.png in Resources */,
-				A455D7821B181E6D001935F4 /* Phantom-Icon.png in Resources */,
-				A455D7701B181E6D001935F4 /* Phantom-Icon-120.png in Resources */,
-				A455D7891B181E6D001935F4 /* Drive-to-Officer-Home.png in Resources */,
-				A455D77C1B181E6D001935F4 /* Phantom-Icon-58.png in Resources */,
-				A455D7A01B181E6D001935F4 /* Phantom-Reveal-with-Eyes.png in Resources */,
 				A422667F1B12AA7A00D7F520 /* Images.xcassets in Resources */,
-				A455D7721B181E6D001935F4 /* Phantom-Icon-152.png in Resources */,
-				A455D7971B181E6D001935F4 /* Dr-Kaden-Ill.png in Resources */,
-				A455D7751B181E6D001935F4 /* Phantom-Icon-196.png in Resources */,
-				A455D79A1B181E6D001935F4 /* Officer-Notices-Dr-Kaden.png in Resources */,
-				A455D7731B181E6D001935F4 /* Phantom-Icon-172.png in Resources */,
-				A455D77B1B181E6D001935F4 /* Phantom-Icon-57.png in Resources */,
-				A455D76E1B181E6D001935F4 /* Phantom-Icon-100.png in Resources */,
-				A455D7781B181E6D001935F4 /* Phantom-Icon-48.png in Resources */,
-				A455D7941B181E6D001935F4 /* Dr-Kaden-Walking-among-Citizens.png in Resources */,
-				A455D7741B181E6D001935F4 /* Phantom-Icon-180.png in Resources */,
-				A455D78C1B181E6D001935F4 /* Officer-on-Bed.png in Resources */,
-				A455D76C1B181E6D001935F4 /* Journalist-in-Shower.png in Resources */,
-				A455D7911B181E6D001935F4 /* Dr-Kaden-Drinks-Elixir.png in Resources */,
-				A455D7771B181E6D001935F4 /* Phantom-Icon-40.png in Resources */,
-				A455D77D1B181E6D001935F4 /* Phantom-Icon-72.png in Resources */,
-				A455D7811B181E6D001935F4 /* Phantom-Icon-88.png in Resources */,
-				A455D7801B181E6D001935F4 /* Phantom-Icon-87.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -781,34 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A455D76B1B181E6D001935F4 /* Page.cpp in Sources */,
-				A455D7951B181E6D001935F4 /* DrKadenWalkingAmongCitizens.cpp in Sources */,
-				A455D79E1B181E6D001935F4 /* PhantomReveal.cpp in Sources */,
-				A42266AD1B12ACF100D7F520 /* StoryViewIOSObjC.mm in Sources */,
+				A4C0ADA51B38DE0A004D3B9D /* StoryEventHandler.m in Sources */,
+				A4C0ADA21B38DE0A004D3B9D /* StoryView.m in Sources */,
+				A4C0ADA11B38DE0A004D3B9D /* Bookmark.m in Sources */,
 				A4C0AD001B38A854004D3B9D /* GameViewMainViewController.m in Sources */,
-				A42266AC1B12ACF100D7F520 /* StoryViewIOSCPP.mm in Sources */,
-				A42266AA1B12ACF100D7F520 /* GameView.mm in Sources */,
-				A455D7A11B181E6D001935F4 /* PhantomRevealWithEyes.cpp in Sources */,
-				A455D7A61B181E6D001935F4 /* ChoiceToBlueZone.cpp in Sources */,
-				A42A9EA11B192B2E00D8BBDB /* PauseMenu.m in Sources */,
-				A42266A71B12ACF100D7F520 /* Advertising.m in Sources */,
-				A455D79B1B181E6D001935F4 /* OfficerNoticesDrKaden.cpp in Sources */,
-				A455D7A41B181E6D001935F4 /* OfficerPossessed.cpp in Sources */,
-				A455D7A81B181E6D001935F4 /* RedZone.cpp in Sources */,
 				A4C0AD031B38AAFB004D3B9D /* GameViewStoryViewController.m in Sources */,
-				A455D7921B181E6D001935F4 /* DrKadenDrinksElixir.cpp in Sources */,
-				A455D7871B181E6D001935F4 /* OfficerHands.cpp in Sources */,
-				A455D7841B181E6D001935F4 /* IAmDrKaden.cpp in Sources */,
-				A46988581B1981B600E1CAD2 /* ResumeGame.m in Sources */,
-				A455D78A1B181E6D001935F4 /* DriveToOfficerHome.cpp in Sources */,
-				A44BFDCB1B1A900300804705 /* StoryNavigator.m in Sources */,
-				A455D78D1B181E6D001935F4 /* OfficerOnBed.cpp in Sources */,
-				A455D78F1B181E6D001935F4 /* CityscapeFromWindow.cpp in Sources */,
-				A455D7A71B181E6D001935F4 /* ChoiceToGreenZone.cpp in Sources */,
-				A455D76A1B181E6D001935F4 /* ModifyableChoiceList.cpp in Sources */,
-				A422667A1B12AA7A00D7F520 /* ViewController.mm in Sources */,
+				A4C0ADA01B38DE0A004D3B9D /* StoryNavigator.m in Sources */,
+				A4C0ADA41B38DE0A004D3B9D /* StoryImageView.m in Sources */,
+				A4C0ADA31B38DE0A004D3B9D /* StoryTextView.m in Sources */,
 				A42266771B12AA7A00D7F520 /* AppDelegate.m in Sources */,
-				A455D7981B181E6D001935F4 /* DrKadenIll.cpp in Sources */,
 				A42266741B12AA7A00D7F520 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -829,22 +331,9 @@
 			target = A422666D1B12AA7A00D7F520 /* Phantom of the West */;
 			targetProxy = A42266881B12AA7A00D7F520 /* PBXContainerItemProxy */;
 		};
-		A4C0AD751B38D605004D3B9D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = VisualNovelReader;
-			targetProxy = A4C0AD741B38D605004D3B9D /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A422667B1B12AA7A00D7F520 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A422667C1B12AA7A00D7F520 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A42266801B12AA7A00D7F520 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

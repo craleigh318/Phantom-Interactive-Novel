@@ -44,7 +44,7 @@
     // Create the views.
     imageView = [[StoryImageView alloc] init];
     textView = [[StoryTextView alloc] init];
-    navigator = [[StoryNavigator alloc]initWithHandler:navigationController];
+    navigator = [[StoryNavigator alloc] initWithHandler:navigationController];
     // Add the views.
     [self addSubview:imageView];
     [self addSubview:textView];

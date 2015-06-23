@@ -7,6 +7,7 @@
 //
 
 #import "GameViewStoryViewController.h"
+#import "StoryEventHandler.h"
 
 @interface GameViewStoryViewController ()
 
@@ -17,17 +18,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIView * storyView = [storyEventHandler storyView];
-    [[self view] addSubview:storyView];
-    [storyView addConstraint:[NSLayoutConstraint constraintWithItem:storyView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
-    [storyView addConstraint:[NSLayoutConstraint constraintWithItem:storyView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:[self topLayoutGuide] attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
-    [storyView addConstraint:[NSLayoutConstraint constraintWithItem:storyView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
-    [storyView addConstraint:[NSLayoutConstraint constraintWithItem:storyView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:[self bottomLayoutGuide] attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [[self navigationController] setNavigationBarHidden:true animated:animated];
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [[self navigationController] setNavigationBarHidden:false animated:animated];
+    [super viewWillDisappear:animated];
 }
 
 /*
