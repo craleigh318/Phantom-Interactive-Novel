@@ -21,6 +21,7 @@
 		A4C0ADA31B38DE0A004D3B9D /* StoryTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD961B38DE0A004D3B9D /* StoryTextView.m */; };
 		A4C0ADA41B38DE0A004D3B9D /* StoryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD991B38DE0A004D3B9D /* StoryImageView.m */; };
 		A4C0ADA51B38DE0A004D3B9D /* StoryEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD9F1B38DE0A004D3B9D /* StoryEventHandler.m */; };
+		A4DC06401B3B692200A72C9D /* POTWStory.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DC063F1B3B692200A72C9D /* POTWStory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		A4C0ADA71B38DE22004D3B9D /* PStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PStory.h; path = ../VisualNovel/VisualNovel/PStory.h; sourceTree = "<group>"; };
 		A4C0ADA81B38DE22004D3B9D /* PStoryPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PStoryPage.h; path = ../VisualNovel/VisualNovel/PStoryPage.h; sourceTree = "<group>"; };
 		A4C0ADA91B38DE50004D3B9D /* ExternalHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExternalHeaders.h; sourceTree = "<group>"; };
+		A4DC063E1B3B692200A72C9D /* POTWStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = POTWStory.h; path = "Phantom of the West/PhantomOfTheWestStory/POTWStory.h"; sourceTree = "<group>"; };
+		A4DC063F1B3B692200A72C9D /* POTWStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = POTWStory.m; path = "Phantom of the West/PhantomOfTheWestStory/POTWStory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 		A42266651B12AA7A00D7F520 = {
 			isa = PBXGroup;
 			children = (
+				A4DC06411B3B71F400A72C9D /* Images */,
+				A4DC063D1B3B62E000A72C9D /* PhantomOfTheWestStory */,
 				A4C0AD8B1B38DDC3004D3B9D /* VisualNovel */,
 				A4C0AD8D1B38DDCD004D3B9D /* VisualNovelReader */,
 				A42266701B12AA7A00D7F520 /* Phantom of the West */,
@@ -202,6 +207,22 @@
 			path = ../VisualNovelReader/VisualNovelReader;
 			sourceTree = "<group>";
 		};
+		A4DC063D1B3B62E000A72C9D /* PhantomOfTheWestStory */ = {
+			isa = PBXGroup;
+			children = (
+				A4DC063E1B3B692200A72C9D /* POTWStory.h */,
+				A4DC063F1B3B692200A72C9D /* POTWStory.m */,
+			);
+			name = PhantomOfTheWestStory;
+			sourceTree = "<group>";
+		};
+		A4DC06411B3B71F400A72C9D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -312,6 +333,7 @@
 				A4C0ADA31B38DE0A004D3B9D /* StoryTextView.m in Sources */,
 				A42266771B12AA7A00D7F520 /* AppDelegate.m in Sources */,
 				A42266741B12AA7A00D7F520 /* main.m in Sources */,
+				A4DC06401B3B692200A72C9D /* POTWStory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

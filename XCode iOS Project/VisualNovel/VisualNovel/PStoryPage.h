@@ -24,4 +24,9 @@
  */
 - (NSString *) text;
 
+/*
+ Continues the story from this page.
+ */
+- (void) continue;
+
 @end

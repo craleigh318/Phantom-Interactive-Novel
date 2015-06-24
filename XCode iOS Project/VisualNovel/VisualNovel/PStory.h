@@ -31,9 +31,4 @@
  */
 - (void) newGame;
 
-/*
- Continues the story from the specified page.
- */
-- (void) continue : (NSObject <PStoryPage> *) currentPage;
-
 @end

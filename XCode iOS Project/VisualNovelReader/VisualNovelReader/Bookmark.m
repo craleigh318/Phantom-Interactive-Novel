@@ -55,10 +55,10 @@
     NSString * text = [currentPage text];
     if ([self multipleChoices]) {
         NSString * header = @"Choice ";
-        NSString * choiceNumber = [NSString stringWithFormat:@"%u", (index + 1)];
+        NSString * choiceNumber = [NSString stringWithFormat:@"%lu", ((unsigned long)(index) + 1)];
         header = [header stringByAppendingString:choiceNumber];
         header = [header stringByAppendingString:@" of "];
-        NSString * numChoices = [NSString stringWithFormat:@"%u", [currentPages count]];
+        NSString * numChoices = [NSString stringWithFormat:@"%lu", (unsigned long)[currentPages count]];
         header = [header stringByAppendingString:numChoices];
         header = [header stringByAppendingString:@":\n\n"];
         text = [header stringByAppendingString:text];
@@ -68,7 +68,7 @@
 }
 
 - (void) onButtonContinue {
-    [[reader story] continue:[currentPages objectAtIndex:index]];
+    [[currentPages objectAtIndex:index] continue];
 }
 
 - (void) onButtonPrevious {
