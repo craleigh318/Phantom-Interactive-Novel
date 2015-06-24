@@ -50,6 +50,7 @@
     [self addSubview:textView];
     [self addSubview:navigator];
     // Add constraints.
+    [self initializeConstraints];
     [self addMyConstraints:universalConstraints];
     [self addMyConstraints:portraitConstraints];
 }

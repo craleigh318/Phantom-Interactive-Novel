@@ -27,4 +27,14 @@
  */
 - (UIView *) storyView;
 
+/*
+ Add new constraints after device rotates.
+ */
+- (void) addOrientationConstraints: (UIInterfaceOrientation) interfaceOrientation;
+
+/*
+ Remove olds constraints before device rotates.
+ */
+- (void) removeOrientationConstraints;
+
 @end

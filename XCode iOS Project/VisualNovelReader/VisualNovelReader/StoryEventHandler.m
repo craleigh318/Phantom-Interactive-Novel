@@ -62,4 +62,12 @@
     return storyView;
 }
 
+- (void) addOrientationConstraints: (UIInterfaceOrientation) interfaceOrientation {
+    [storyView addOrientationConstraints:interfaceOrientation];
+}
+
+- (void) removeOrientationConstraints {
+    [storyView removeOrientationConstraints];
+}
+
 @end

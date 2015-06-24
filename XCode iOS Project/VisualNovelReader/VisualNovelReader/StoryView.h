@@ -22,12 +22,12 @@
 - (id)initWithNavigationController: (NSObject <PStoryNavigator> *) nc;
 
 /*
- Add new constraints when device rotates.
+ Add new constraints after device rotates.
  */
 - (void) addOrientationConstraints: (UIInterfaceOrientation) interfaceOrientation;
 
 /*
- Remove olds constraints when device rotates.
+ Remove olds constraints before device rotates.
  */
 - (void) removeOrientationConstraints;
 

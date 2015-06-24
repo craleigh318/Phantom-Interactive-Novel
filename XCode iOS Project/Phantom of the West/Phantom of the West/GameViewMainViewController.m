@@ -41,6 +41,16 @@
     
 }
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [storyEventHandler removeOrientationConstraints];
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+    } completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        [storyEventHandler addOrientationConstraints:[[UIApplication sharedApplication] statusBarOrientation]];
+    }];
+}
+
 /*
 #pragma mark - Navigation
 
