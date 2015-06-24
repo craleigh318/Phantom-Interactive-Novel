@@ -11,7 +11,7 @@
 @implementation POTWStory
 
 - (NSObject <PStoryReader> *) reader {
-    
+    return nil;
 }
 
 - (void) setReader : (NSObject <PStoryReader> *) newValue {
@@ -19,10 +19,6 @@
 }
 
 - (void) newGame {
-    
-}
-
-- (void) continue : (NSObject <PStoryPage> *) currentPage {
     
 }
 
