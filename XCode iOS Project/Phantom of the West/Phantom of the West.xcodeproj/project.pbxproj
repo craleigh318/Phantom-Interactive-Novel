@@ -12,6 +12,8 @@
 		A422667F1B12AA7A00D7F520 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A422667E1B12AA7A00D7F520 /* Images.xcassets */; };
 		A42266821B12AA7A00D7F520 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A42266801B12AA7A00D7F520 /* LaunchScreen.xib */; };
 		A422668E1B12AA7A00D7F520 /* Phantom_of_the_WestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A422668D1B12AA7A00D7F520 /* Phantom_of_the_WestTests.m */; };
+		A47BB2EC1B3CC55A009C8AF6 /* POTWGameState.m in Sources */ = {isa = PBXBuildFile; fileRef = A47BB2EB1B3CC55A009C8AF6 /* POTWGameState.m */; };
+		A47BB2EF1B3CD4B2009C8AF6 /* POTWPage.m in Sources */ = {isa = PBXBuildFile; fileRef = A47BB2EE1B3CD4B2009C8AF6 /* POTWPage.m */; };
 		A4C0ACFB1B38A36E004D3B9D /* GameView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C0ACFA1B38A36E004D3B9D /* GameView.storyboard */; };
 		A4C0AD001B38A854004D3B9D /* GameViewMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0ACFF1B38A854004D3B9D /* GameViewMainViewController.m */; };
 		A4C0AD031B38AAFB004D3B9D /* GameViewStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD021B38AAFB004D3B9D /* GameViewStoryViewController.m */; };
@@ -45,6 +47,10 @@
 		A42266871B12AA7A00D7F520 /* Phantom of the WestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phantom of the WestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A422668C1B12AA7A00D7F520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A422668D1B12AA7A00D7F520 /* Phantom_of_the_WestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Phantom_of_the_WestTests.m; sourceTree = "<group>"; };
+		A47BB2EA1B3CC55A009C8AF6 /* POTWGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = POTWGameState.h; path = "Phantom of the West/PhantomOfTheWestStory/POTWGameState.h"; sourceTree = "<group>"; };
+		A47BB2EB1B3CC55A009C8AF6 /* POTWGameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = POTWGameState.m; path = "Phantom of the West/PhantomOfTheWestStory/POTWGameState.m"; sourceTree = "<group>"; };
+		A47BB2ED1B3CD4B2009C8AF6 /* POTWPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = POTWPage.h; path = "Phantom of the West/PhantomOfTheWestStory/POTWPage.h"; sourceTree = "<group>"; };
+		A47BB2EE1B3CD4B2009C8AF6 /* POTWPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = POTWPage.m; path = "Phantom of the West/PhantomOfTheWestStory/POTWPage.m"; sourceTree = "<group>"; };
 		A4C0ACFA1B38A36E004D3B9D /* GameView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameView.storyboard; sourceTree = "<group>"; };
 		A4C0ACFE1B38A854004D3B9D /* GameViewMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewMainViewController.h; sourceTree = "<group>"; };
 		A4C0ACFF1B38A854004D3B9D /* GameViewMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewMainViewController.m; sourceTree = "<group>"; };
@@ -212,6 +218,10 @@
 			children = (
 				A4DC063E1B3B692200A72C9D /* POTWStory.h */,
 				A4DC063F1B3B692200A72C9D /* POTWStory.m */,
+				A47BB2EA1B3CC55A009C8AF6 /* POTWGameState.h */,
+				A47BB2EB1B3CC55A009C8AF6 /* POTWGameState.m */,
+				A47BB2ED1B3CD4B2009C8AF6 /* POTWPage.h */,
+				A47BB2EE1B3CD4B2009C8AF6 /* POTWPage.m */,
 			);
 			name = PhantomOfTheWestStory;
 			sourceTree = "<group>";
@@ -329,7 +339,9 @@
 				A4C0AD001B38A854004D3B9D /* GameViewMainViewController.m in Sources */,
 				A4C0AD031B38AAFB004D3B9D /* GameViewStoryViewController.m in Sources */,
 				A4C0ADA01B38DE0A004D3B9D /* StoryNavigator.m in Sources */,
+				A47BB2EF1B3CD4B2009C8AF6 /* POTWPage.m in Sources */,
 				A4C0ADA41B38DE0A004D3B9D /* StoryImageView.m in Sources */,
+				A47BB2EC1B3CC55A009C8AF6 /* POTWGameState.m in Sources */,
 				A4C0ADA31B38DE0A004D3B9D /* StoryTextView.m in Sources */,
 				A42266771B12AA7A00D7F520 /* AppDelegate.m in Sources */,
 				A42266741B12AA7A00D7F520 /* main.m in Sources */,

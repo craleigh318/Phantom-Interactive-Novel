@@ -7,19 +7,32 @@
 //
 
 #import "POTWStory.h"
+#import "POTWGameState.h"
 
-@implementation POTWStory
+@implementation POTWStory {
+    NSObject <PStoryReader> * reader;
+    POTWGameState * gameState;
+}
+
+- (id)initWithReader: (NSObject <PStoryReader> *) r {
+    self = [super init];
+    if (self) {
+        reader = r;
+        gameState = nil;
+    }
+    return self;
+}
 
 - (NSObject <PStoryReader> *) reader {
-    return nil;
+    return reader;
 }
 
 - (void) setReader : (NSObject <PStoryReader> *) newValue {
-    
+    reader = newValue;
 }
 
 - (void) newGame {
-    
+    gameState = [[POTWGameState alloc] init];
 }
 
 @end
