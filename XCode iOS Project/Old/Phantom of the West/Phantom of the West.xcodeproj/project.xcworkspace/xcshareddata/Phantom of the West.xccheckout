@@ -14,11 +14,11 @@
 		<string>https://github.com/craleigh318/Phantom-Interactive-Novel.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>XCode iOS Project/Phantom of the West/Phantom of the West.xcodeproj</string>
+	<string>XCode iOS Project/Old/Phantom of the West/Phantom of the West.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>09DC05D312D9DE23C7F615FAEA10C94B8D4EB38C</key>
-		<string>../../../..</string>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/craleigh318/Phantom-Interactive-Novel.git</string>

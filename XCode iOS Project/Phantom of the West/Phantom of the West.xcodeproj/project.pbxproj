@@ -7,80 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A42266741B12AA7A00D7F520 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A42266731B12AA7A00D7F520 /* main.m */; };
-		A42266771B12AA7A00D7F520 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A42266761B12AA7A00D7F520 /* AppDelegate.m */; };
-		A422667F1B12AA7A00D7F520 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A422667E1B12AA7A00D7F520 /* Images.xcassets */; };
-		A42266821B12AA7A00D7F520 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A42266801B12AA7A00D7F520 /* LaunchScreen.xib */; };
-		A422668E1B12AA7A00D7F520 /* Phantom_of_the_WestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A422668D1B12AA7A00D7F520 /* Phantom_of_the_WestTests.m */; };
-		A47BB2EC1B3CC55A009C8AF6 /* POTWGameState.m in Sources */ = {isa = PBXBuildFile; fileRef = A47BB2EB1B3CC55A009C8AF6 /* POTWGameState.m */; };
-		A47BB2EF1B3CD4B2009C8AF6 /* POTWPage.m in Sources */ = {isa = PBXBuildFile; fileRef = A47BB2EE1B3CD4B2009C8AF6 /* POTWPage.m */; };
-		A4C0ACFB1B38A36E004D3B9D /* GameView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C0ACFA1B38A36E004D3B9D /* GameView.storyboard */; };
-		A4C0AD001B38A854004D3B9D /* GameViewMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0ACFF1B38A854004D3B9D /* GameViewMainViewController.m */; };
-		A4C0AD031B38AAFB004D3B9D /* GameViewStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD021B38AAFB004D3B9D /* GameViewStoryViewController.m */; };
-		A4C0ADA01B38DE0A004D3B9D /* StoryNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD8F1B38DE0A004D3B9D /* StoryNavigator.m */; };
-		A4C0ADA11B38DE0A004D3B9D /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD921B38DE0A004D3B9D /* Bookmark.m */; };
-		A4C0ADA21B38DE0A004D3B9D /* StoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD941B38DE0A004D3B9D /* StoryView.m */; };
-		A4C0ADA31B38DE0A004D3B9D /* StoryTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD961B38DE0A004D3B9D /* StoryTextView.m */; };
-		A4C0ADA41B38DE0A004D3B9D /* StoryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD991B38DE0A004D3B9D /* StoryImageView.m */; };
-		A4C0ADA51B38DE0A004D3B9D /* StoryEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0AD9F1B38DE0A004D3B9D /* StoryEventHandler.m */; };
-		A4DC06401B3B692200A72C9D /* POTWStory.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DC063F1B3B692200A72C9D /* POTWStory.m */; };
+		A46782021B58E57400745C98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46782011B58E57400745C98 /* AppDelegate.swift */; };
+		A46782041B58E57400745C98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46782031B58E57400745C98 /* ViewController.swift */; };
+		A46782071B58E57400745C98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46782051B58E57400745C98 /* Main.storyboard */; };
+		A46782091B58E57400745C98 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46782081B58E57400745C98 /* Images.xcassets */; };
+		A467820C1B58E57400745C98 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A467820A1B58E57400745C98 /* LaunchScreen.xib */; };
+		A46782181B58E57400745C98 /* Phantom_of_the_WestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46782171B58E57400745C98 /* Phantom_of_the_WestTests.swift */; };
+		A46782241B58EBD700745C98 /* PStoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46782231B58EBD700745C98 /* PStoryPage.swift */; };
+		A46782261B58F10D00745C98 /* PStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46782251B58F10D00745C98 /* PStory.swift */; };
+		A467822B1B58F4D900745C98 /* PStoryObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467822A1B58F4D900745C98 /* PStoryObserver.swift */; };
+		A467822F1B58FBCD00745C98 /* PStoryNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467822E1B58FBCD00745C98 /* PStoryNavigator.swift */; };
+		A46782311B58FE4800745C98 /* StoryNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46782301B58FE4800745C98 /* StoryNavigator.swift */; };
+		A46782331B58FE7600745C98 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46782321B58FE7600745C98 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A42266881B12AA7A00D7F520 /* PBXContainerItemProxy */ = {
+		A46782121B58E57400745C98 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A42266661B12AA7A00D7F520 /* Project object */;
+			containerPortal = A46781F41B58E57400745C98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A422666D1B12AA7A00D7F520;
+			remoteGlobalIDString = A46781FB1B58E57400745C98;
 			remoteInfo = "Phantom of the West";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A422666E1B12AA7A00D7F520 /* Phantom of the West.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phantom of the West.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A42266721B12AA7A00D7F520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A42266731B12AA7A00D7F520 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A42266751B12AA7A00D7F520 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A42266761B12AA7A00D7F520 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A422667E1B12AA7A00D7F520 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A42266811B12AA7A00D7F520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		A42266871B12AA7A00D7F520 /* Phantom of the WestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phantom of the WestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A422668C1B12AA7A00D7F520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A422668D1B12AA7A00D7F520 /* Phantom_of_the_WestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Phantom_of_the_WestTests.m; sourceTree = "<group>"; };
-		A47BB2EA1B3CC55A009C8AF6 /* POTWGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = POTWGameState.h; path = "Phantom of the West/PhantomOfTheWestStory/POTWGameState.h"; sourceTree = "<group>"; };
-		A47BB2EB1B3CC55A009C8AF6 /* POTWGameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = POTWGameState.m; path = "Phantom of the West/PhantomOfTheWestStory/POTWGameState.m"; sourceTree = "<group>"; };
-		A47BB2ED1B3CD4B2009C8AF6 /* POTWPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = POTWPage.h; path = "Phantom of the West/PhantomOfTheWestStory/POTWPage.h"; sourceTree = "<group>"; };
-		A47BB2EE1B3CD4B2009C8AF6 /* POTWPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = POTWPage.m; path = "Phantom of the West/PhantomOfTheWestStory/POTWPage.m"; sourceTree = "<group>"; };
-		A4C0ACFA1B38A36E004D3B9D /* GameView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameView.storyboard; sourceTree = "<group>"; };
-		A4C0ACFE1B38A854004D3B9D /* GameViewMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewMainViewController.h; sourceTree = "<group>"; };
-		A4C0ACFF1B38A854004D3B9D /* GameViewMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewMainViewController.m; sourceTree = "<group>"; };
-		A4C0AD011B38AAFB004D3B9D /* GameViewStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewStoryViewController.h; sourceTree = "<group>"; };
-		A4C0AD021B38AAFB004D3B9D /* GameViewStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewStoryViewController.m; sourceTree = "<group>"; };
-		A4C0AD8E1B38DE0A004D3B9D /* StoryNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryNavigator.h; sourceTree = "<group>"; };
-		A4C0AD8F1B38DE0A004D3B9D /* StoryNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryNavigator.m; sourceTree = "<group>"; };
-		A4C0AD901B38DE0A004D3B9D /* PStoryNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PStoryNavigator.h; sourceTree = "<group>"; };
-		A4C0AD921B38DE0A004D3B9D /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
-		A4C0AD931B38DE0A004D3B9D /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmark.h; sourceTree = "<group>"; };
-		A4C0AD941B38DE0A004D3B9D /* StoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryView.m; sourceTree = "<group>"; };
-		A4C0AD951B38DE0A004D3B9D /* StoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryView.h; sourceTree = "<group>"; };
-		A4C0AD961B38DE0A004D3B9D /* StoryTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryTextView.m; sourceTree = "<group>"; };
-		A4C0AD971B38DE0A004D3B9D /* StoryTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryTextView.h; sourceTree = "<group>"; };
-		A4C0AD981B38DE0A004D3B9D /* StoryImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryImageView.h; sourceTree = "<group>"; };
-		A4C0AD991B38DE0A004D3B9D /* StoryImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryImageView.m; sourceTree = "<group>"; };
-		A4C0AD9B1B38DE0A004D3B9D /* PReaderNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PReaderNavigationController.h; path = ../VisualNovelReader/VisualNovelReader/PReaderNavigationController.h; sourceTree = "<group>"; };
-		A4C0AD9C1B38DE0A004D3B9D /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../VisualNovelReader/VisualNovelReader/Constants.h; sourceTree = "<group>"; };
-		A4C0AD9E1B38DE0A004D3B9D /* StoryEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryEventHandler.h; path = ../VisualNovelReader/VisualNovelReader/StoryEventHandler.h; sourceTree = "<group>"; };
-		A4C0AD9F1B38DE0A004D3B9D /* StoryEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoryEventHandler.m; path = ../VisualNovelReader/VisualNovelReader/StoryEventHandler.m; sourceTree = "<group>"; };
-		A4C0ADA61B38DE22004D3B9D /* PStoryReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PStoryReader.h; path = ../VisualNovel/VisualNovel/PStoryReader.h; sourceTree = "<group>"; };
-		A4C0ADA71B38DE22004D3B9D /* PStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PStory.h; path = ../VisualNovel/VisualNovel/PStory.h; sourceTree = "<group>"; };
-		A4C0ADA81B38DE22004D3B9D /* PStoryPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PStoryPage.h; path = ../VisualNovel/VisualNovel/PStoryPage.h; sourceTree = "<group>"; };
-		A4C0ADA91B38DE50004D3B9D /* ExternalHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExternalHeaders.h; sourceTree = "<group>"; };
-		A4DC063E1B3B692200A72C9D /* POTWStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = POTWStory.h; path = "Phantom of the West/PhantomOfTheWestStory/POTWStory.h"; sourceTree = "<group>"; };
-		A4DC063F1B3B692200A72C9D /* POTWStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = POTWStory.m; path = "Phantom of the West/PhantomOfTheWestStory/POTWStory.m"; sourceTree = "<group>"; };
+		A46781FC1B58E57400745C98 /* Phantom of the West.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phantom of the West.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46782001B58E57400745C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A46782011B58E57400745C98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A46782031B58E57400745C98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A46782061B58E57400745C98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A46782081B58E57400745C98 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A467820B1B58E57400745C98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A46782111B58E57400745C98 /* Phantom of the WestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phantom of the WestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46782161B58E57400745C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A46782171B58E57400745C98 /* Phantom_of_the_WestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phantom_of_the_WestTests.swift; sourceTree = "<group>"; };
+		A46782231B58EBD700745C98 /* PStoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PStoryPage.swift; sourceTree = "<group>"; };
+		A46782251B58F10D00745C98 /* PStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PStory.swift; sourceTree = "<group>"; };
+		A467822A1B58F4D900745C98 /* PStoryObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PStoryObserver.swift; sourceTree = "<group>"; };
+		A467822E1B58FBCD00745C98 /* PStoryNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PStoryNavigator.swift; sourceTree = "<group>"; };
+		A46782301B58FE4800745C98 /* StoryNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryNavigator.swift; sourceTree = "<group>"; };
+		A46782321B58FE7600745C98 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A42266841B12AA7A00D7F520 /* Frameworks */ = {
+		A46781F91B58E57400745C98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A467820E1B58E57400745C98 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -90,158 +68,118 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A42266651B12AA7A00D7F520 = {
+		A46781F31B58E57400745C98 = {
 			isa = PBXGroup;
 			children = (
-				A4DC06411B3B71F400A72C9D /* Images */,
-				A4DC063D1B3B62E000A72C9D /* PhantomOfTheWestStory */,
-				A4C0AD8B1B38DDC3004D3B9D /* VisualNovel */,
-				A4C0AD8D1B38DDCD004D3B9D /* VisualNovelReader */,
-				A42266701B12AA7A00D7F520 /* Phantom of the West */,
-				A422668A1B12AA7A00D7F520 /* Phantom of the WestTests */,
-				A422666F1B12AA7A00D7F520 /* Products */,
+				A46781FE1B58E57400745C98 /* Phantom of the West */,
+				A46782141B58E57400745C98 /* Phantom of the WestTests */,
+				A46781FD1B58E57400745C98 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A422666F1B12AA7A00D7F520 /* Products */ = {
+		A46781FD1B58E57400745C98 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A422666E1B12AA7A00D7F520 /* Phantom of the West.app */,
-				A42266871B12AA7A00D7F520 /* Phantom of the WestTests.xctest */,
+				A46781FC1B58E57400745C98 /* Phantom of the West.app */,
+				A46782111B58E57400745C98 /* Phantom of the WestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A42266701B12AA7A00D7F520 /* Phantom of the West */ = {
+		A46781FE1B58E57400745C98 /* Phantom of the West */ = {
 			isa = PBXGroup;
 			children = (
-				A4C0AD041B38AE37004D3B9D /* New Files - UI */,
-				A42266751B12AA7A00D7F520 /* AppDelegate.h */,
-				A42266761B12AA7A00D7F520 /* AppDelegate.m */,
-				A4C0ACFA1B38A36E004D3B9D /* GameView.storyboard */,
-				A422667E1B12AA7A00D7F520 /* Images.xcassets */,
-				A42266801B12AA7A00D7F520 /* LaunchScreen.xib */,
-				A42266711B12AA7A00D7F520 /* Supporting Files */,
+				A46782271B58F15000745C98 /* Global Files */,
+				A46782211B58E70C00745C98 /* Reusable Classes */,
+				A46782011B58E57400745C98 /* AppDelegate.swift */,
+				A46782031B58E57400745C98 /* ViewController.swift */,
+				A46782051B58E57400745C98 /* Main.storyboard */,
+				A46782081B58E57400745C98 /* Images.xcassets */,
+				A467820A1B58E57400745C98 /* LaunchScreen.xib */,
+				A46781FF1B58E57400745C98 /* Supporting Files */,
 			);
 			path = "Phantom of the West";
 			sourceTree = "<group>";
 		};
-		A42266711B12AA7A00D7F520 /* Supporting Files */ = {
+		A46781FF1B58E57400745C98 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A42266721B12AA7A00D7F520 /* Info.plist */,
-				A42266731B12AA7A00D7F520 /* main.m */,
+				A46782001B58E57400745C98 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A422668A1B12AA7A00D7F520 /* Phantom of the WestTests */ = {
+		A46782141B58E57400745C98 /* Phantom of the WestTests */ = {
 			isa = PBXGroup;
 			children = (
-				A422668D1B12AA7A00D7F520 /* Phantom_of_the_WestTests.m */,
-				A422668B1B12AA7A00D7F520 /* Supporting Files */,
+				A46782171B58E57400745C98 /* Phantom_of_the_WestTests.swift */,
+				A46782151B58E57400745C98 /* Supporting Files */,
 			);
 			path = "Phantom of the WestTests";
 			sourceTree = "<group>";
 		};
-		A422668B1B12AA7A00D7F520 /* Supporting Files */ = {
+		A46782151B58E57400745C98 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A422668C1B12AA7A00D7F520 /* Info.plist */,
+				A46782161B58E57400745C98 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A4C0AD041B38AE37004D3B9D /* New Files - UI */ = {
+		A46782211B58E70C00745C98 /* Reusable Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A4C0ACFE1B38A854004D3B9D /* GameViewMainViewController.h */,
-				A4C0ACFF1B38A854004D3B9D /* GameViewMainViewController.m */,
-				A4C0AD011B38AAFB004D3B9D /* GameViewStoryViewController.h */,
-				A4C0AD021B38AAFB004D3B9D /* GameViewStoryViewController.m */,
+				A467822C1B58FBA100745C98 /* Visual Novel Reader */,
+				A46782221B58E72800745C98 /* Visual Novel */,
 			);
-			name = "New Files - UI";
+			name = "Reusable Classes";
 			sourceTree = "<group>";
 		};
-		A4C0AD8B1B38DDC3004D3B9D /* VisualNovel */ = {
+		A46782221B58E72800745C98 /* Visual Novel */ = {
 			isa = PBXGroup;
 			children = (
-				A4C0ADA61B38DE22004D3B9D /* PStoryReader.h */,
-				A4C0ADA71B38DE22004D3B9D /* PStory.h */,
-				A4C0ADA81B38DE22004D3B9D /* PStoryPage.h */,
+				A46782231B58EBD700745C98 /* PStoryPage.swift */,
+				A46782251B58F10D00745C98 /* PStory.swift */,
+				A467822A1B58F4D900745C98 /* PStoryObserver.swift */,
 			);
-			name = VisualNovel;
+			name = "Visual Novel";
 			sourceTree = "<group>";
 		};
-		A4C0AD8D1B38DDCD004D3B9D /* VisualNovelReader */ = {
+		A46782271B58F15000745C98 /* Global Files */ = {
 			isa = PBXGroup;
 			children = (
-				A4C0AD9A1B38DE0A004D3B9D /* Story View */,
-				A4C0AD9B1B38DE0A004D3B9D /* PReaderNavigationController.h */,
-				A4C0AD9C1B38DE0A004D3B9D /* Constants.h */,
-				A4C0AD9E1B38DE0A004D3B9D /* StoryEventHandler.h */,
-				A4C0AD9F1B38DE0A004D3B9D /* StoryEventHandler.m */,
-				A4C0ADA91B38DE50004D3B9D /* ExternalHeaders.h */,
+				A46782321B58FE7600745C98 /* Constants.swift */,
 			);
-			name = VisualNovelReader;
+			name = "Global Files";
 			sourceTree = "<group>";
 		};
-		A4C0AD911B38DE0A004D3B9D /* Story Navigation */ = {
+		A467822C1B58FBA100745C98 /* Visual Novel Reader */ = {
 			isa = PBXGroup;
 			children = (
-				A4C0AD8E1B38DE0A004D3B9D /* StoryNavigator.h */,
-				A4C0AD8F1B38DE0A004D3B9D /* StoryNavigator.m */,
-				A4C0AD901B38DE0A004D3B9D /* PStoryNavigator.h */,
+				A467822D1B58FBBA00745C98 /* Story Navigation */,
+			);
+			name = "Visual Novel Reader";
+			sourceTree = "<group>";
+		};
+		A467822D1B58FBBA00745C98 /* Story Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A467822E1B58FBCD00745C98 /* PStoryNavigator.swift */,
+				A46782301B58FE4800745C98 /* StoryNavigator.swift */,
 			);
 			name = "Story Navigation";
-			sourceTree = "<group>";
-		};
-		A4C0AD9A1B38DE0A004D3B9D /* Story View */ = {
-			isa = PBXGroup;
-			children = (
-				A4C0AD911B38DE0A004D3B9D /* Story Navigation */,
-				A4C0AD921B38DE0A004D3B9D /* Bookmark.m */,
-				A4C0AD931B38DE0A004D3B9D /* Bookmark.h */,
-				A4C0AD941B38DE0A004D3B9D /* StoryView.m */,
-				A4C0AD951B38DE0A004D3B9D /* StoryView.h */,
-				A4C0AD961B38DE0A004D3B9D /* StoryTextView.m */,
-				A4C0AD971B38DE0A004D3B9D /* StoryTextView.h */,
-				A4C0AD981B38DE0A004D3B9D /* StoryImageView.h */,
-				A4C0AD991B38DE0A004D3B9D /* StoryImageView.m */,
-			);
-			name = "Story View";
-			path = ../VisualNovelReader/VisualNovelReader;
-			sourceTree = "<group>";
-		};
-		A4DC063D1B3B62E000A72C9D /* PhantomOfTheWestStory */ = {
-			isa = PBXGroup;
-			children = (
-				A4DC063E1B3B692200A72C9D /* POTWStory.h */,
-				A4DC063F1B3B692200A72C9D /* POTWStory.m */,
-				A47BB2EA1B3CC55A009C8AF6 /* POTWGameState.h */,
-				A47BB2EB1B3CC55A009C8AF6 /* POTWGameState.m */,
-				A47BB2ED1B3CD4B2009C8AF6 /* POTWPage.h */,
-				A47BB2EE1B3CD4B2009C8AF6 /* POTWPage.m */,
-			);
-			name = PhantomOfTheWestStory;
-			sourceTree = "<group>";
-		};
-		A4DC06411B3B71F400A72C9D /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A422666D1B12AA7A00D7F520 /* Phantom of the West */ = {
+		A46781FB1B58E57400745C98 /* Phantom of the West */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A42266911B12AA7A00D7F520 /* Build configuration list for PBXNativeTarget "Phantom of the West" */;
+			buildConfigurationList = A467821B1B58E57400745C98 /* Build configuration list for PBXNativeTarget "Phantom of the West" */;
 			buildPhases = (
-				A422666A1B12AA7A00D7F520 /* Sources */,
-				A422666C1B12AA7A00D7F520 /* Resources */,
+				A46781F81B58E57400745C98 /* Sources */,
+				A46781F91B58E57400745C98 /* Frameworks */,
+				A46781FA1B58E57400745C98 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -249,47 +187,46 @@
 			);
 			name = "Phantom of the West";
 			productName = "Phantom of the West";
-			productReference = A422666E1B12AA7A00D7F520 /* Phantom of the West.app */;
+			productReference = A46781FC1B58E57400745C98 /* Phantom of the West.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A42266861B12AA7A00D7F520 /* Phantom of the WestTests */ = {
+		A46782101B58E57400745C98 /* Phantom of the WestTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A42266941B12AA7A00D7F520 /* Build configuration list for PBXNativeTarget "Phantom of the WestTests" */;
+			buildConfigurationList = A467821E1B58E57400745C98 /* Build configuration list for PBXNativeTarget "Phantom of the WestTests" */;
 			buildPhases = (
-				A42266831B12AA7A00D7F520 /* Sources */,
-				A42266841B12AA7A00D7F520 /* Frameworks */,
-				A42266851B12AA7A00D7F520 /* Resources */,
+				A467820D1B58E57400745C98 /* Sources */,
+				A467820E1B58E57400745C98 /* Frameworks */,
+				A467820F1B58E57400745C98 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A42266891B12AA7A00D7F520 /* PBXTargetDependency */,
+				A46782131B58E57400745C98 /* PBXTargetDependency */,
 			);
 			name = "Phantom of the WestTests";
 			productName = "Phantom of the WestTests";
-			productReference = A42266871B12AA7A00D7F520 /* Phantom of the WestTests.xctest */;
+			productReference = A46782111B58E57400745C98 /* Phantom of the WestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A42266661B12AA7A00D7F520 /* Project object */ = {
+		A46781F41B58E57400745C98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Christopher Raleigh";
 				TargetAttributes = {
-					A422666D1B12AA7A00D7F520 = {
+					A46781FB1B58E57400745C98 = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = JWDL6K3VXC;
 					};
-					A42266861B12AA7A00D7F520 = {
+					A46782101B58E57400745C98 = {
 						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = A422666D1B12AA7A00D7F520;
+						TestTargetID = A46781FB1B58E57400745C98;
 					};
 				};
 			};
-			buildConfigurationList = A42266691B12AA7A00D7F520 /* Build configuration list for PBXProject "Phantom of the West" */;
+			buildConfigurationList = A46781F71B58E57400745C98 /* Build configuration list for PBXProject "Phantom of the West" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -297,29 +234,29 @@
 				en,
 				Base,
 			);
-			mainGroup = A42266651B12AA7A00D7F520;
-			productRefGroup = A422666F1B12AA7A00D7F520 /* Products */;
+			mainGroup = A46781F31B58E57400745C98;
+			productRefGroup = A46781FD1B58E57400745C98 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A422666D1B12AA7A00D7F520 /* Phantom of the West */,
-				A42266861B12AA7A00D7F520 /* Phantom of the WestTests */,
+				A46781FB1B58E57400745C98 /* Phantom of the West */,
+				A46782101B58E57400745C98 /* Phantom of the WestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A422666C1B12AA7A00D7F520 /* Resources */ = {
+		A46781FA1B58E57400745C98 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4C0ACFB1B38A36E004D3B9D /* GameView.storyboard in Resources */,
-				A42266821B12AA7A00D7F520 /* LaunchScreen.xib in Resources */,
-				A422667F1B12AA7A00D7F520 /* Images.xcassets in Resources */,
+				A46782071B58E57400745C98 /* Main.storyboard in Resources */,
+				A467820C1B58E57400745C98 /* LaunchScreen.xib in Resources */,
+				A46782091B58E57400745C98 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A42266851B12AA7A00D7F520 /* Resources */ = {
+		A467820F1B58E57400745C98 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -329,49 +266,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A422666A1B12AA7A00D7F520 /* Sources */ = {
+		A46781F81B58E57400745C98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4C0ADA51B38DE0A004D3B9D /* StoryEventHandler.m in Sources */,
-				A4C0ADA21B38DE0A004D3B9D /* StoryView.m in Sources */,
-				A4C0ADA11B38DE0A004D3B9D /* Bookmark.m in Sources */,
-				A4C0AD001B38A854004D3B9D /* GameViewMainViewController.m in Sources */,
-				A4C0AD031B38AAFB004D3B9D /* GameViewStoryViewController.m in Sources */,
-				A4C0ADA01B38DE0A004D3B9D /* StoryNavigator.m in Sources */,
-				A47BB2EF1B3CD4B2009C8AF6 /* POTWPage.m in Sources */,
-				A4C0ADA41B38DE0A004D3B9D /* StoryImageView.m in Sources */,
-				A47BB2EC1B3CC55A009C8AF6 /* POTWGameState.m in Sources */,
-				A4C0ADA31B38DE0A004D3B9D /* StoryTextView.m in Sources */,
-				A42266771B12AA7A00D7F520 /* AppDelegate.m in Sources */,
-				A42266741B12AA7A00D7F520 /* main.m in Sources */,
-				A4DC06401B3B692200A72C9D /* POTWStory.m in Sources */,
+				A467822F1B58FBCD00745C98 /* PStoryNavigator.swift in Sources */,
+				A467822B1B58F4D900745C98 /* PStoryObserver.swift in Sources */,
+				A46782261B58F10D00745C98 /* PStory.swift in Sources */,
+				A46782241B58EBD700745C98 /* PStoryPage.swift in Sources */,
+				A46782041B58E57400745C98 /* ViewController.swift in Sources */,
+				A46782311B58FE4800745C98 /* StoryNavigator.swift in Sources */,
+				A46782021B58E57400745C98 /* AppDelegate.swift in Sources */,
+				A46782331B58FE7600745C98 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A42266831B12AA7A00D7F520 /* Sources */ = {
+		A467820D1B58E57400745C98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A422668E1B12AA7A00D7F520 /* Phantom_of_the_WestTests.m in Sources */,
+				A46782181B58E57400745C98 /* Phantom_of_the_WestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A42266891B12AA7A00D7F520 /* PBXTargetDependency */ = {
+		A46782131B58E57400745C98 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A422666D1B12AA7A00D7F520 /* Phantom of the West */;
-			targetProxy = A42266881B12AA7A00D7F520 /* PBXContainerItemProxy */;
+			target = A46781FB1B58E57400745C98 /* Phantom of the West */;
+			targetProxy = A46782121B58E57400745C98 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A42266801B12AA7A00D7F520 /* LaunchScreen.xib */ = {
+		A46782051B58E57400745C98 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A42266811B12AA7A00D7F520 /* Base */,
+				A46782061B58E57400745C98 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A467820A1B58E57400745C98 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A467820B1B58E57400745C98 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -379,7 +319,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A422668F1B12AA7A00D7F520 /* Debug */ = {
+		A46782191B58E57400745C98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -419,11 +359,12 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A42266901B12AA7A00D7F520 /* Release */ = {
+		A467821A1B58E57400745C98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -461,51 +402,27 @@
 			};
 			name = Release;
 		};
-		A42266921B12AA7A00D7F520 /* Debug */ = {
+		A467821C1B58E57400745C98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VisualNovelReader-dvygwbadyzbjevauaemklumridxk/Build/Products/Debug-iphoneos",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VisualNovel-aitpcfrseskpupdlwdcxgiriprwi/Build/Products/Debug-iphoneos",
-					"$(PROJECT_DIR)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Phantom_of_the_West-cxquwpijsivzocfmfxbmqyvgnmca/Build/Products/Debug-iphoneos",
-				);
 				INFOPLIST_FILE = "Phantom of the West/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
-		A42266931B12AA7A00D7F520 /* Release */ = {
+		A467821D1B58E57400745C98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VisualNovelReader-dvygwbadyzbjevauaemklumridxk/Build/Products/Debug-iphoneos",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/VisualNovel-aitpcfrseskpupdlwdcxgiriprwi/Build/Products/Debug-iphoneos",
-					"$(PROJECT_DIR)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Phantom_of_the_West-cxquwpijsivzocfmfxbmqyvgnmca/Build/Products/Debug-iphoneos",
-				);
 				INFOPLIST_FILE = "Phantom of the West/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
-		A42266951B12AA7A00D7F520 /* Debug */ = {
+		A467821F1B58E57400745C98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,7 +441,7 @@
 			};
 			name = Debug;
 		};
-		A42266961B12AA7A00D7F520 /* Release */ = {
+		A46782201B58E57400745C98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -542,34 +459,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A42266691B12AA7A00D7F520 /* Build configuration list for PBXProject "Phantom of the West" */ = {
+		A46781F71B58E57400745C98 /* Build configuration list for PBXProject "Phantom of the West" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A422668F1B12AA7A00D7F520 /* Debug */,
-				A42266901B12AA7A00D7F520 /* Release */,
+				A46782191B58E57400745C98 /* Debug */,
+				A467821A1B58E57400745C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A42266911B12AA7A00D7F520 /* Build configuration list for PBXNativeTarget "Phantom of the West" */ = {
+		A467821B1B58E57400745C98 /* Build configuration list for PBXNativeTarget "Phantom of the West" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A42266921B12AA7A00D7F520 /* Debug */,
-				A42266931B12AA7A00D7F520 /* Release */,
+				A467821C1B58E57400745C98 /* Debug */,
+				A467821D1B58E57400745C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		A42266941B12AA7A00D7F520 /* Build configuration list for PBXNativeTarget "Phantom of the WestTests" */ = {
+		A467821E1B58E57400745C98 /* Build configuration list for PBXNativeTarget "Phantom of the WestTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A42266951B12AA7A00D7F520 /* Debug */,
-				A42266961B12AA7A00D7F520 /* Release */,
+				A467821F1B58E57400745C98 /* Debug */,
+				A46782201B58E57400745C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A42266661B12AA7A00D7F520 /* Project object */;
+	rootObject = A46781F41B58E57400745C98 /* Project object */;
 }
