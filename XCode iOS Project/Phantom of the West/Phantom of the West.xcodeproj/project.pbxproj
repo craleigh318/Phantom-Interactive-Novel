@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4384A1E1B59E96700EF2187 /* StoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4384A1D1B59E96700EF2187 /* StoryImage.swift */; };
+		A4384A201B59EEC400EF2187 /* StoryText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4384A1F1B59EEC400EF2187 /* StoryText.swift */; };
 		A46782021B58E57400745C98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46782011B58E57400745C98 /* AppDelegate.swift */; };
 		A46782041B58E57400745C98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46782031B58E57400745C98 /* ViewController.swift */; };
 		A46782071B58E57400745C98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46782051B58E57400745C98 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A4384A1D1B59E96700EF2187 /* StoryImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryImage.swift; sourceTree = "<group>"; };
+		A4384A1F1B59EEC400EF2187 /* StoryText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryText.swift; sourceTree = "<group>"; };
 		A46781FC1B58E57400745C98 /* Phantom of the West.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phantom of the West.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46782001B58E57400745C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A46782011B58E57400745C98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				A467822D1B58FBBA00745C98 /* Story Navigation */,
+				A4384A1D1B59E96700EF2187 /* StoryImage.swift */,
+				A4384A1F1B59EEC400EF2187 /* StoryText.swift */,
 			);
 			name = "Visual Novel Reader";
 			sourceTree = "<group>";
@@ -270,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4384A201B59EEC400EF2187 /* StoryText.swift in Sources */,
 				A467822F1B58FBCD00745C98 /* PStoryNavigator.swift in Sources */,
 				A467822B1B58F4D900745C98 /* PStoryObserver.swift in Sources */,
 				A46782261B58F10D00745C98 /* PStory.swift in Sources */,
@@ -278,6 +285,7 @@
 				A46782311B58FE4800745C98 /* StoryNavigator.swift in Sources */,
 				A46782021B58E57400745C98 /* AppDelegate.swift in Sources */,
 				A46782331B58FE7600745C98 /* Constants.swift in Sources */,
+				A4384A1E1B59E96700EF2187 /* StoryImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +483,7 @@
 				A467821D1B58E57400745C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A467821E1B58E57400745C98 /* Build configuration list for PBXNativeTarget "Phantom of the WestTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +492,7 @@
 				A46782201B58E57400745C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

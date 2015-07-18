@@ -6,6 +6,12 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
-let buttonWidthMultiplier = 0.25
-let buttonRowHeight = 44.0
+public let buttonPreviousTitle = "⬅︎"
+
+public let buttonContinueTitle = "OK"
+
+public let buttonNextTitle = "➡︎"
+
+public let buttonOptionsTitle = "≣"
+
 let imageAspectRatioInverse = (9.0 / 16.0)
