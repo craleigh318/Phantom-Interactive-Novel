@@ -66,7 +66,7 @@ class StoryView {
     
     private var navigator: StoryNavigator
     
-    private var view: UIView
+    private(set) var view: UIView
     
     private var imageView: StoryImage
     
@@ -142,17 +142,41 @@ class StoryView {
     Add new constraints after device rotates.
     */
     func addOrientationConstraints(orientation: UIInterfaceOrientation) {
-        
+        if (orientation == UIInterfaceOrientation.Portrait) {
+            addMyConstraints(portraitConstraints)
+        } else {
+            addMyConstraints(landscapeConstraints)
+        }
     }
     
     /*
     Remove old constraints before device rotates.
     */
     func removeOrientationConstraints() {
-        
+        removeMyConstraints(portraitConstraints)
+        removeMyConstraints(landscapeConstraints)
+    }
+    
+    private func addMyConstraints(constraintsArray: [[NSLayoutConstraint]]) {
+        for constraints in constraintsArray {
+            view.addConstraints(constraints)
+        }
+    }
+    
+    private func removeMyConstraints (constraintsArray: [[NSLayoutConstraint]]) {
+        for constraints in constraintsArray {
+            view.removeConstraints(constraints)
+        }
     }
     
     private func setUpView() {
-        
+        view.setTranslatesAutoresizingMaskIntoConstraints(false)
+        // Add the views.
+        view.addSubview(imageView.view)
+        view.addSubview(textView.view)
+        view.addSubview(navigator.view)
+        // Add constraints.
+        addMyConstraints(universalConstraints)
+        addMyConstraints(portraitConstraints)
     }
 }

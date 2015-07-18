@@ -22,6 +22,7 @@
 		A467822F1B58FBCD00745C98 /* PStoryNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467822E1B58FBCD00745C98 /* PStoryNavigator.swift */; };
 		A46782311B58FE4800745C98 /* StoryNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46782301B58FE4800745C98 /* StoryNavigator.swift */; };
 		A46782331B58FE7600745C98 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46782321B58FE7600745C98 /* Constants.swift */; };
+		A4E79B4F1B5A4D4E00BC861B /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E79B4E1B5A4D4E00BC861B /* StoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		A467822E1B58FBCD00745C98 /* PStoryNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PStoryNavigator.swift; sourceTree = "<group>"; };
 		A46782301B58FE4800745C98 /* StoryNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryNavigator.swift; sourceTree = "<group>"; };
 		A46782321B58FE7600745C98 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A4E79B4E1B5A4D4E00BC861B /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				A4384A1D1B59E96700EF2187 /* StoryImage.swift */,
 				A4384A1F1B59EEC400EF2187 /* StoryText.swift */,
 				A4384A211B59F2E400EF2187 /* StoryView.swift */,
+				A4E79B4E1B5A4D4E00BC861B /* StoryViewController.swift */,
 			);
 			name = "Visual Novel Reader";
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E79B4F1B5A4D4E00BC861B /* StoryViewController.swift in Sources */,
 				A4384A221B59F2E400EF2187 /* StoryView.swift in Sources */,
 				A4384A201B59EEC400EF2187 /* StoryText.swift in Sources */,
 				A467822F1B58FBCD00745C98 /* PStoryNavigator.swift in Sources */,
