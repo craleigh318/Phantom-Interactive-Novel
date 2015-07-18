@@ -16,12 +16,13 @@ class StoryText {
     /*
     Use this to set the current text.
     */
-    var image: String! {
+    var text: String! {
         get {
             return view.text
         }
         set {
             view.text = newValue
+            view.setContentOffset(CGPointZero, animated: true)
         }
     }
     

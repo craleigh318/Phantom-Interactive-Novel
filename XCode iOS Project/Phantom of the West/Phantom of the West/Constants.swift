@@ -13,5 +13,3 @@ public let buttonContinueTitle = "OK"
 public let buttonNextTitle = "➡︎"
 
 public let buttonOptionsTitle = "≣"
-
-let imageAspectRatioInverse = (9.0 / 16.0)

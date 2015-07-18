@@ -13,6 +13,8 @@ Displays the image for the visual novel reader.
 */
 class StoryImage {
     
+    static let imageAspectRatioInverse = (9.0 / 16.0)
+    
     /*
     Use this to set the current image.
     */
