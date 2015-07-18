@@ -13,6 +13,8 @@ Contains buttons that move through the story.
 */
 class StoryNavigator: PStoryNavigator {
     
+    static let recommendedLandscapeWidthRatio: CGFloat = (2.0 / 3.0)
+    
     static let recommendedHeight: CGFloat = 44.0
     
     private static let buttonWidthMultiplier: CGFloat = 0.25
