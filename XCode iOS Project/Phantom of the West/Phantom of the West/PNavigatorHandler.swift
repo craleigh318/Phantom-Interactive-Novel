@@ -1,5 +1,5 @@
 //
-//  PStoryNavigator.swift
+//  PNavigatorHandler.swift
 //  Phantom of the West
 //
 //  Created by Christopher Raleigh on 2015/17/07.
@@ -9,7 +9,7 @@
 /*
 Handles events for the StoryNavigator buttons.
 */
-protocol PStoryNavigator {
+protocol PNavigatorHandler {
     /*
     The continue button is pressed.
     */

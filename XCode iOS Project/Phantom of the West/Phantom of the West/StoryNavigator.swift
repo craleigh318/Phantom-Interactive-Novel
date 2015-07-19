@@ -11,7 +11,7 @@ import UIKit
 /*
 Contains buttons that move through the story.
 */
-class StoryNavigator: PStoryNavigator {
+class StoryNavigator: PNavigatorHandler {
     
     static let recommendedLandscapeWidthRatio: CGFloat = (2.0 / 3.0)
     
@@ -19,10 +19,11 @@ class StoryNavigator: PStoryNavigator {
     
     private static let buttonWidthMultiplier: CGFloat = 0.25
     
-    private static func makeButton(title: String?) -> UIButton {
+    private static func makeButton(title: String?, selector: Selector) -> UIButton {
         var newButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
+        newButton.setTranslatesAutoresizingMaskIntoConstraints(false)
         newButton.setTitle(title, forState: UIControlState.Normal)
-        newButton.setTranslatesAutoresizingMaskIntoConstraints(false);
+        newButton.addTarget(self, action: selector, forControlEvents: UIControlEvents.TouchUpInside)
         return newButton
     }
     
@@ -57,37 +58,59 @@ class StoryNavigator: PStoryNavigator {
     */
     private(set) var view: UIView
     
-    private var handler: PStoryNavigator
+    var handler: PNavigatorHandler? {
+        willSet {
+            clearTargets()
+        }
+        didSet {
+            addTargets()
+        }
+    }
     
     private var buttonPrevious, buttonContinue, buttonNext, buttonOptions: UIButton
+    
+    private var buttonsToSelectors: [UIButton: Selector]
     
     /*
     Initializes with the specified event handler.
     */
-    init(handler: PStoryNavigator) {
+    init() {
         view = UIView();
-        self.handler = handler
-        buttonPrevious = StoryNavigator.makeButton(buttonPreviousTitle)
-        buttonContinue = StoryNavigator.makeButton(buttonContinueTitle)
-        buttonNext = StoryNavigator.makeButton(buttonNextTitle)
-        buttonOptions = StoryNavigator.makeButton(buttonOptionsTitle)
+        buttonPrevious = StoryNavigator.makeButton(buttonPreviousTitle, selector: "onButtonPrevious")
+        buttonContinue = StoryNavigator.makeButton(buttonContinueTitle, selector: "onButtonContinue")
+        buttonNext = StoryNavigator.makeButton(buttonNextTitle, selector: "onButtonNext")
+        buttonOptions = StoryNavigator.makeButton(buttonOptionsTitle, selector: "onButtonOptions")
+        buttonsToSelectors = [
+            buttonPrevious: "onButtonPrevious",
+            buttonContinue: "onButtonContinue",
+            buttonNext: "onButtonNext",
+            buttonOptions: "onButtonOptions"
+        ]
         drawNavigator()
     }
     
     func onButtonContinue() {
-        handler.onButtonContinue()
+        if let unwrappedHandler = handler {
+            unwrappedHandler.onButtonContinue()
+        }
     }
     
     func onButtonPrevious() {
-        handler.onButtonPrevious()
+        if let unwrappedHandler = handler {
+            unwrappedHandler.onButtonPrevious()
+        }
     }
-    
+
     func onButtonNext() {
-        handler.onButtonNext()
+        if let unwrappedHandler = handler {
+            unwrappedHandler.onButtonNext()
+        }
     }
-    
+
     func onButtonOptions() {
-        handler.onButtonOptions()
+        if let unwrappedHandler = handler {
+            unwrappedHandler.onButtonOptions()
+        }
     }
     
     private func drawNavigator() {
@@ -126,12 +149,27 @@ class StoryNavigator: PStoryNavigator {
         addButtonConstraints(buttonOptions)
     }
     
-    private func addButtonConstraints(button: UIButton)  {
-        view.addConstraints([
+    private func universalConstraints(button: UIButton) -> [NSLayoutConstraint]  {
+        return [
             NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
             NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0),
             NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Width, multiplier: StoryNavigator.buttonWidthMultiplier, constant: 0.0)
-            ])
+            ]
     }
     
+    private func addTargets() {
+        if let unwrappedHandler = handler {
+            for (button, selector) in buttonsToSelectors {
+                button.addTarget(unwrappedHandler as? AnyObject, action: selector, forControlEvents: UIControlEvents.TouchUpInside)
+            }
+        }
+    }
+    
+    private func clearTargets() {
+        if let unwrappedHandler = handler {
+            for (button, selector) in buttonsToSelectors {
+                button.removeTarget(unwrappedHandler as? AnyObject, action: selector, forControlEvents: UIControlEvents.TouchUpInside)
+            }
+        }
+    }
 }

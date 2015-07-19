@@ -14,6 +14,18 @@ The main part of the view.
 class StoryView {
     
     /*
+    Set an event handler so that the buttons do things.
+    */
+    var handler: PNavigatorHandler? {
+        get {
+            return navigator.handler
+        }
+        set {
+            navigator.handler = newValue
+        }
+    }
+    
+    /*
     Buttons for user choice selection.
     */
     var previousAndNextEnabled: Bool {
@@ -61,8 +73,6 @@ class StoryView {
             textView.text = newValue
         }
     }
-    
-    private var handler: PStoryNavigator
     
     private var navigator: StoryNavigator
     
@@ -129,9 +139,8 @@ class StoryView {
     /*
     Initializes with the specified handler.
     */
-    init(handler: PStoryNavigator) {
-        self.handler = handler
-        navigator = StoryNavigator(handler: handler)
+    init() {
+        navigator = StoryNavigator()
         view = UIView()
         imageView = StoryImage()
         textView = StoryText()

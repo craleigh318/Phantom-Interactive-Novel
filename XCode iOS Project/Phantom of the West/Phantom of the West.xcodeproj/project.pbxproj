@@ -19,7 +19,7 @@
 		A46782241B58EBD700745C98 /* PStoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46782231B58EBD700745C98 /* PStoryPage.swift */; };
 		A46782261B58F10D00745C98 /* PStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46782251B58F10D00745C98 /* PStory.swift */; };
 		A467822B1B58F4D900745C98 /* PStoryObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467822A1B58F4D900745C98 /* PStoryObserver.swift */; };
-		A467822F1B58FBCD00745C98 /* PStoryNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467822E1B58FBCD00745C98 /* PStoryNavigator.swift */; };
+		A467822F1B58FBCD00745C98 /* PNavigatorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467822E1B58FBCD00745C98 /* PNavigatorHandler.swift */; };
 		A46782311B58FE4800745C98 /* StoryNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46782301B58FE4800745C98 /* StoryNavigator.swift */; };
 		A46782331B58FE7600745C98 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46782321B58FE7600745C98 /* Constants.swift */; };
 		A4E79B4F1B5A4D4E00BC861B /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E79B4E1B5A4D4E00BC861B /* StoryViewController.swift */; };
@@ -52,7 +52,7 @@
 		A46782231B58EBD700745C98 /* PStoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PStoryPage.swift; sourceTree = "<group>"; };
 		A46782251B58F10D00745C98 /* PStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PStory.swift; sourceTree = "<group>"; };
 		A467822A1B58F4D900745C98 /* PStoryObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PStoryObserver.swift; sourceTree = "<group>"; };
-		A467822E1B58FBCD00745C98 /* PStoryNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PStoryNavigator.swift; sourceTree = "<group>"; };
+		A467822E1B58FBCD00745C98 /* PNavigatorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNavigatorHandler.swift; sourceTree = "<group>"; };
 		A46782301B58FE4800745C98 /* StoryNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryNavigator.swift; sourceTree = "<group>"; };
 		A46782321B58FE7600745C98 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A4E79B4E1B5A4D4E00BC861B /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 		A467822D1B58FBBA00745C98 /* Story Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				A467822E1B58FBCD00745C98 /* PStoryNavigator.swift */,
+				A467822E1B58FBCD00745C98 /* PNavigatorHandler.swift */,
 				A46782301B58FE4800745C98 /* StoryNavigator.swift */,
 			);
 			name = "Story Navigation";
@@ -285,7 +285,7 @@
 				A4E79B4F1B5A4D4E00BC861B /* StoryViewController.swift in Sources */,
 				A4384A221B59F2E400EF2187 /* StoryView.swift in Sources */,
 				A4384A201B59EEC400EF2187 /* StoryText.swift in Sources */,
-				A467822F1B58FBCD00745C98 /* PStoryNavigator.swift in Sources */,
+				A467822F1B58FBCD00745C98 /* PNavigatorHandler.swift in Sources */,
 				A467822B1B58F4D900745C98 /* PStoryObserver.swift in Sources */,
 				A46782261B58F10D00745C98 /* PStory.swift in Sources */,
 				A46782241B58EBD700745C98 /* PStoryPage.swift in Sources */,
