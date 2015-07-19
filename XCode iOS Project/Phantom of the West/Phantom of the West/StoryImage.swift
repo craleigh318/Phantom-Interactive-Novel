@@ -13,6 +13,9 @@ Displays the image for the visual novel reader.
 */
 class StoryImage {
     
+    /*
+    All images displayed here should be in 16:9 aspect ratio.
+    */
     static let imageAspectRatioInverse: CGFloat = (9.0 / 16.0)
     
     /*
@@ -37,10 +40,6 @@ class StoryImage {
     */
     init() {
         view = UIImageView()
-        setUpView()
-    }
-    
-    private func setUpView() {
         view.setTranslatesAutoresizingMaskIntoConstraints(false)
         view.layer.magnificationFilter = kCAFilterNearest
     }

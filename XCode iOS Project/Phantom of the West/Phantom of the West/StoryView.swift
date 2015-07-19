@@ -14,7 +14,7 @@ The main part of the view.
 class StoryView {
     
     /*
-    Set an event handler so that the buttons do things.
+    Set an event handler so that the navigation buttons react.
     */
     var handler: PNavigatorHandler? {
         get {

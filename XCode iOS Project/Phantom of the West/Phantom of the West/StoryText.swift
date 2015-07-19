@@ -36,10 +36,6 @@ class StoryText {
     */
     init() {
         view = UITextView()
-        setUpView()
-    }
-    
-    private func setUpView() {
         view.setTranslatesAutoresizingMaskIntoConstraints(false)
         view.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
         view.editable = false

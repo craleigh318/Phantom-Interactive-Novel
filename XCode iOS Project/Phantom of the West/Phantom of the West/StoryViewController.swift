@@ -13,7 +13,7 @@ Initializes with a view controller and story.
 The view controller pops and pushes the options menu as needed.
 The story implements the PStory protocol.
 */
-class StoryViewController: PStoryNavigator {
+/*class StoryViewController: PStoryNavigator {
     
     var view: UIView {
         return sv.view
@@ -24,4 +24,4 @@ class StoryViewController: PStoryNavigator {
     init() {
         sv = StoryView(handler: self)
     }
-}
+}*/
