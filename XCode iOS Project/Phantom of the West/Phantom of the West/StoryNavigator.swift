@@ -11,7 +11,7 @@ import UIKit
 /*
 Contains buttons that move through the story.
 */
-class StoryNavigator: PNavigatorHandler {
+class StoryNavigator: NSObject, PNavigatorHandler {
     
     /*
     While in landscape, this view should occupy two thirds of the screen.
@@ -25,11 +25,10 @@ class StoryNavigator: PNavigatorHandler {
     
     private static let buttonWidthMultiplier: CGFloat = 0.25
     
-    private static func makeButton(title: String?, selector: Selector) -> UIButton {
+    private static func makeButton(title: String?) -> UIButton {
         var newButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
         newButton.setTranslatesAutoresizingMaskIntoConstraints(false)
         newButton.setTitle(title, forState: UIControlState.Normal)
-        newButton.addTarget(self, action: selector, forControlEvents: UIControlEvents.TouchUpInside)
         return newButton
     }
     
@@ -74,16 +73,16 @@ class StoryNavigator: PNavigatorHandler {
     /*
     Initializes with the specified event handler.
     */
-    init() {
+    override init() {
         // Initialize view.
         view = UIView()
         view.setTranslatesAutoresizingMaskIntoConstraints(false)
         
         // Initialize buttons.
-        buttonPrevious = StoryNavigator.makeButton(buttonPreviousTitle, selector: "onButtonPrevious")
-        buttonContinue = StoryNavigator.makeButton(buttonContinueTitle, selector: "onButtonContinue")
-        buttonNext = StoryNavigator.makeButton(buttonNextTitle, selector: "onButtonNext")
-        buttonOptions = StoryNavigator.makeButton(buttonOptionsTitle, selector: "onButtonOptions")
+        buttonPrevious = StoryNavigator.makeButton(buttonPreviousTitle)
+        buttonContinue = StoryNavigator.makeButton(buttonContinueTitle)
+        buttonNext = StoryNavigator.makeButton(buttonNextTitle)
+        buttonOptions = StoryNavigator.makeButton(buttonOptionsTitle)
         let buttons = [buttonPrevious, buttonContinue, buttonNext, buttonOptions]
         
         // Initialize contraints.
@@ -107,6 +106,20 @@ class StoryNavigator: PNavigatorHandler {
             NSLayoutConstraint(item: buttonOptions, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: buttonNext, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0)
         ]
         constraints += specificConstraints
+        
+        // Call NSObject.
+        super.init()
+        
+        // Add targets.
+        let buttonsToSelectors: [UIButton: Selector] = [
+            buttonPrevious: "onButtonPrevious",
+            buttonContinue: "onButtonContinue",
+            buttonNext: "onButtonNext",
+            buttonOptions: "onButtonOptions"
+        ]
+        for (button, selector) in buttonsToSelectors {
+            button.addTarget(self, action: selector, forControlEvents: UIControlEvents.TouchUpInside)
+        }
         
         // Add subviews.
         for button in buttons {
