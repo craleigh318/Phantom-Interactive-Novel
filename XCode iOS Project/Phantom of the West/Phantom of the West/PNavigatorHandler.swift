@@ -30,6 +30,3 @@ protocol PNavigatorHandler {
     */
     func onButtonOptions()
 }
-
-
-

@@ -74,9 +74,12 @@ class StoryView {
         }
     }
     
-    private var navigator: StoryNavigator
-    
+    /*
+    Add this to the desired superview.
+    */
     private(set) var view: UIView
+    
+    private var navigator: StoryNavigator
     
     private var imageView: StoryImage
     
@@ -140,11 +143,31 @@ class StoryView {
     Initializes with the specified handler.
     */
     init() {
+        // Initialize properties.
         navigator = StoryNavigator()
         view = UIView()
         imageView = StoryImage()
         textView = StoryText()
-        setUpView()
+        
+        // Set up the view.
+        view.setTranslatesAutoresizingMaskIntoConstraints(false)
+        let subviews = [
+            imageView.view,
+            textView.view,
+            navigator.view
+        ]
+        for subview in subviews {
+            view.addSubview(subview)
+        }
+        
+        // Add constraints.
+        let initialConstraints = [
+            universalConstraints,
+            portraitConstraints
+        ]
+        for constraint in initialConstraints {
+            addMyConstraints(constraint)
+        }
     }
     
     /*
@@ -176,16 +199,5 @@ class StoryView {
         for constraints in constraintsArray {
             view.removeConstraints(constraints)
         }
-    }
-    
-    private func setUpView() {
-        view.setTranslatesAutoresizingMaskIntoConstraints(false)
-        // Add the views.
-        view.addSubview(imageView.view)
-        view.addSubview(textView.view)
-        view.addSubview(navigator.view)
-        // Add constraints.
-        addMyConstraints(universalConstraints)
-        addMyConstraints(portraitConstraints)
     }
 }
