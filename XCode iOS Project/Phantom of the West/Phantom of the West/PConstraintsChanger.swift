@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 /*
 Contains methods for reacting to interface orientation changes.

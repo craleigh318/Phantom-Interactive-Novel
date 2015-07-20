@@ -6,8 +6,6 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
-import Foundation
-
 /*
 Controls the image, text, and buttons for StoryView.
 */
