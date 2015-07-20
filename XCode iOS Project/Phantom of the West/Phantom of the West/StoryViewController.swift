@@ -21,21 +21,25 @@ class StoryViewController: PNavigatorHandler {
     
     private var storyView: StoryView
     
+    private var bookmark: Bookmark
+    
     init() {
         storyView = StoryView()
+        bookmark = Bookmark()
         storyView.handler = self
+        bookmark.storyView = storyView
     }
     
     func onButtonContinue() {
-        
+        bookmark.onButtonContinue()
     }
     
     func onButtonPrevious() {
-        
+        bookmark.onButtonPrevious()
     }
     
     func onButtonNext() {
-        
+        bookmark.onButtonNext()
     }
     
     func onButtonOptions() {
