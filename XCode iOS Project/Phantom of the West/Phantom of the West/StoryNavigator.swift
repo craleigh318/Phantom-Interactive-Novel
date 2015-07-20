@@ -141,13 +141,13 @@ class StoryNavigator: NSObject, PNavigatorHandler {
             unwrappedHandler.onButtonPrevious()
         }
     }
-
+    
     func onButtonNext() {
         if let unwrappedHandler = handler {
             unwrappedHandler.onButtonNext()
         }
     }
-
+    
     func onButtonOptions() {
         if let unwrappedHandler = handler {
             unwrappedHandler.onButtonOptions()
