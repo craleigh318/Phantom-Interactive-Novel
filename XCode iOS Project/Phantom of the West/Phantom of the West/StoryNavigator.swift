@@ -11,7 +11,7 @@ import UIKit
 /*
 Contains buttons that move through the story.
 */
-class StoryNavigator: NSObject, PNavigatorHandler {
+class StoryNavigator: PNavigatorHandler {
     
     /*
     While in landscape, this view should occupy two thirds of the screen.
@@ -73,7 +73,7 @@ class StoryNavigator: NSObject, PNavigatorHandler {
     /*
     Initializes with the specified event handler.
     */
-    override init() {
+    init() {
         // Initialize view.
         view = UIView()
         view.setTranslatesAutoresizingMaskIntoConstraints(false)
@@ -107,9 +107,6 @@ class StoryNavigator: NSObject, PNavigatorHandler {
         ]
         constraints += specificConstraints
         
-        // Call NSObject.
-        super.init()
-        
         // Add targets.
         let buttonsToSelectors: [UIButton: Selector] = [
             buttonPrevious: "onButtonPrevious",
@@ -130,25 +127,25 @@ class StoryNavigator: NSObject, PNavigatorHandler {
         view.addConstraints(constraints)
     }
     
-    func onButtonContinue() {
+    dynamic func onButtonContinue() {
         if let unwrappedHandler = handler {
             unwrappedHandler.onButtonContinue()
         }
     }
     
-    func onButtonPrevious() {
+    dynamic func onButtonPrevious() {
         if let unwrappedHandler = handler {
             unwrappedHandler.onButtonPrevious()
         }
     }
     
-    func onButtonNext() {
+    dynamic func onButtonNext() {
         if let unwrappedHandler = handler {
             unwrappedHandler.onButtonNext()
         }
     }
     
-    func onButtonOptions() {
+    dynamic func onButtonOptions() {
         if let unwrappedHandler = handler {
             unwrappedHandler.onButtonOptions()
         }
