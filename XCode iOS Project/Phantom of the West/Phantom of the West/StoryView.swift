@@ -11,7 +11,7 @@ import UIKit
 /*
 The main part of the view.
 */
-class StoryView: PConstraintsChanger {
+class StoryView {
     
     /*
     Set an event handler so that the navigation buttons react.
@@ -163,7 +163,11 @@ class StoryView: PConstraintsChanger {
         }
     }
     
-    func addOrientationConstraints(orientation: UIInterfaceOrientation) {
+    /*
+    Add new constraints after device rotates.
+    */
+    func addOrientationConstraints() {
+        let orientation = UIApplication.sharedApplication().statusBarOrientation
         if (orientation == UIInterfaceOrientation.Portrait) {
             addMyConstraints(portraitConstraints)
         } else {
@@ -171,6 +175,9 @@ class StoryView: PConstraintsChanger {
         }
     }
     
+    /*
+    Remove old constraints before device rotates.
+    */
     func removeOrientationConstraints() {
         removeMyConstraints(portraitConstraints)
         removeMyConstraints(landscapeConstraints)

@@ -15,7 +15,7 @@ protocol PConstraintsChanger {
     /*
     Add new constraints after device rotates.
     */
-    func addOrientationConstraints(orientation: UIInterfaceOrientation)
+    func addOrientationConstraints()
     
     /*
     Remove old constraints before device rotates.
