@@ -75,7 +75,7 @@ class Advertising: NSObject, ADBannerViewDelegate {
             NSLayoutConstraint(item: ba, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
             NSLayoutConstraint(item: ba, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
             NSLayoutConstraint(item: ba, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: view, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: ba, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0)
+            //NSLayoutConstraint(item: view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: ba, attribute: NSLayoutAttribute.Height, multiplier: 1.0, constant: 0.0)
         ]
         addConstraints()
     }
