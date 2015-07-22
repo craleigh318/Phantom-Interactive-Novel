@@ -13,12 +13,12 @@ Initializes with a view controller and story.
 The view controller pops and pushes the options menu as needed.
 The story implements the PStory protocol.
 */
-class StoryViewController: PNavigatorHandler {
+public class StoryViewController: PNavigatorHandler {
     
     /*
     Add this to the desired superview.
     */
-    private(set) var view: UIView
+    public private(set) var view: UIView
     
     private var storyView: StoryView
     
@@ -26,7 +26,7 @@ class StoryViewController: PNavigatorHandler {
     
     private var bookmark: Bookmark
     
-    init() {
+    public init() {
         // Initialize properties.
         view = UIView()
         storyView = StoryView()
@@ -58,6 +58,21 @@ class StoryViewController: PNavigatorHandler {
         adHandler.shouldDisplayAdvertisement = true
     }
     
+    /*
+    Call when the interface starts changing orientation.
+    */
+    public func willTransitionToTraitCollection(newCollection: UITraitCollection,
+        withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+            storyView.removeOrientationConstraints()
+    }
+    
+    /*
+    Call when the interface finishes changing orientation.
+    */
+    public func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
+        storyView.addOrientationConstraints()
+    }
+    
     func onButtonContinue() {
         bookmark.onButtonContinue()
     }
@@ -73,21 +88,4 @@ class StoryViewController: PNavigatorHandler {
     func onButtonOptions() {
         
     }
-    
-    /*
-    Call when the interface starts changing orientation.
-    */
-    func willTransitionToTraitCollection(newCollection: UITraitCollection,
-        withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-            storyView.removeOrientationConstraints()
-    }
-    
-    /*
-    Call when the interface finishes changing orientation.
-    */
-    func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
-        storyView.addOrientationConstraints()
-    }
-    
-    
 }
