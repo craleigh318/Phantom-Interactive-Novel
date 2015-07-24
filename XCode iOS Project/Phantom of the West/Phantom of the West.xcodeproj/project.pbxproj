@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A42C26271B61D92800E6F7B5 /* OptionsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42C26261B61D92800E6F7B5 /* OptionsMenu.swift */; };
+		A42C26291B61D9A200E6F7B5 /* POptionsMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42C26281B61D9A200E6F7B5 /* POptionsMenuItem.swift */; };
 		A4384A1E1B59E96700EF2187 /* StoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4384A1D1B59E96700EF2187 /* StoryImage.swift */; };
 		A4384A201B59EEC400EF2187 /* StoryText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4384A1F1B59EEC400EF2187 /* StoryText.swift */; };
 		A4384A221B59F2E400EF2187 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4384A211B59F2E400EF2187 /* StoryView.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A42C26261B61D92800E6F7B5 /* OptionsMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsMenu.swift; sourceTree = "<group>"; };
+		A42C26281B61D9A200E6F7B5 /* POptionsMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POptionsMenuItem.swift; sourceTree = "<group>"; };
 		A4384A1D1B59E96700EF2187 /* StoryImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryImage.swift; sourceTree = "<group>"; };
 		A4384A1F1B59EEC400EF2187 /* StoryText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryText.swift; sourceTree = "<group>"; };
 		A4384A211B59F2E400EF2187 /* StoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
@@ -211,6 +215,8 @@
 		A4FC546A1B5F686900FA5AFC /* Options View */ = {
 			isa = PBXGroup;
 			children = (
+				A42C26261B61D92800E6F7B5 /* OptionsMenu.swift */,
+				A42C26281B61D9A200E6F7B5 /* POptionsMenuItem.swift */,
 			);
 			name = "Options View";
 			sourceTree = "<group>";
@@ -316,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E79B4F1B5A4D4E00BC861B /* StoryViewController.swift in Sources */,
+				A42C26291B61D9A200E6F7B5 /* POptionsMenuItem.swift in Sources */,
 				A4384A221B59F2E400EF2187 /* StoryView.swift in Sources */,
 				A4384A201B59EEC400EF2187 /* StoryText.swift in Sources */,
 				A467822F1B58FBCD00745C98 /* PNavigatorHandler.swift in Sources */,
@@ -328,6 +335,7 @@
 				A46782041B58E57400745C98 /* ViewController.swift in Sources */,
 				A46782311B58FE4800745C98 /* StoryNavigator.swift in Sources */,
 				A46782021B58E57400745C98 /* AppDelegate.swift in Sources */,
+				A42C26271B61D92800E6F7B5 /* OptionsMenu.swift in Sources */,
 				A46782331B58FE7600745C98 /* Constants.swift in Sources */,
 				A4384A1E1B59E96700EF2187 /* StoryImage.swift in Sources */,
 			);
