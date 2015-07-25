@@ -14,11 +14,9 @@ Voiceover option.
 
 class VoiceOption: POptionsMenuItem {
     
-    private(set) var labelText: String?
+    let hidden: Bool = false
     
-    var accessoryView: UIView? {
-        return toggle
-    }
+    private(set) var cell: UITableViewCell
     
     private var toggle: UISwitch
     
@@ -26,8 +24,12 @@ class VoiceOption: POptionsMenuItem {
     Initializes
     */
     init() {
-        labelText = "Voice-Over"
+        cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "saveGame")
         toggle = UISwitch()
+        if let label = cell.textLabel {
+            label.text = "Voice-Over"
+        }
+        //cell.accessoryView = toggle
     }
     
     func onSelect() {

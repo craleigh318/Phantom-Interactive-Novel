@@ -14,16 +14,16 @@ Represents a cell in the Options Menu table.
 protocol POptionsMenuItem {
     
     /*
-    The text on the cell label.
+    The cell graphic.
     */
-    var labelText: String? {
+    var cell: UITableViewCell {
         get
     }
     
     /*
-    An optional subview that is displayed alongside the label.
+    Set to false whenever this option should not show up in the view.
     */
-    var accessoryView: UIView? {
+    var hidden: Bool {
         get
     }
     
