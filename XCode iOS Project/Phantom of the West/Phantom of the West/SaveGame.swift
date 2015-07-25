@@ -14,8 +14,6 @@ Save Game option.
 
 class SaveGame: POptionsMenuItem {
     
-    let hidden: Bool = false
-    
     private(set) var cell: UITableViewCell
     
     /*

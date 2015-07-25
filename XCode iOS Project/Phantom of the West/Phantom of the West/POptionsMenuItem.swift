@@ -21,13 +21,6 @@ protocol POptionsMenuItem {
     }
     
     /*
-    Set to false whenever this option should not show up in the view.
-    */
-    var hidden: Bool {
-        get
-    }
-    
-    /*
     The action to perform if the user selects this options.
     */
     func onSelect()

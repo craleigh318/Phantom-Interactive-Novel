@@ -28,7 +28,7 @@ public class OptionsMenu: UITableViewController {
     }
     
     override public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let targetIndex = indexPath.indexAtPosition(0)
+        let targetIndex = indexPath.row
         return options[targetIndex].cell
     }
     

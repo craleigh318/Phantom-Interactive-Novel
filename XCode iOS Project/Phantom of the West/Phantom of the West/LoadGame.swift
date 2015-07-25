@@ -14,8 +14,6 @@ Load Game option.
 
 class LoadGame: POptionsMenuItem {
     
-    let hidden: Bool = false
-    
     private(set) var cell: UITableViewCell
     
     /*
