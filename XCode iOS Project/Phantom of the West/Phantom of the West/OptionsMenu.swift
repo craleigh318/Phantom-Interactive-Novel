@@ -10,53 +10,33 @@ import UIKit
 
 public class OptionsMenu: UITableViewController {
     
-    private lazy var options: [POptionsMenuItem] = []
+    private lazy var saveGame: SaveGame = SaveGame()
+    
+    private lazy var loadGame: LoadGame = LoadGame()
+    
+    private lazy var voiceOption: VoiceOption = VoiceOption()
+    
+    private lazy var options: [POptionsMenuItem] = [self.saveGame, self.loadGame, self.voiceOption]
     
     override public func viewDidLoad() {
         super.viewDidLoad()
         title = "Options"
-        options.append(SaveGame())
-        tableView.reloadData()
-    }
-    
-    override public func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 0
     }
     
     override public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var numNonHiddenItems = 0
-        for thisOption in options {
-            if !thisOption.hidden {
-                ++numNonHiddenItems
-            }
-        }
-        return numNonHiddenItems
+        return options.count
     }
     
     override public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        // Loop to get cell.
         let targetIndex = indexPath.indexAtPosition(0)
-        var nonHiddenI = 0
-        for thisOption in options {
-            if !thisOption.hidden {
-                if nonHiddenI >= targetIndex {
-                    let thisCell = thisOption.cell
-                    return thisCell
-                } else {
-                    ++nonHiddenI
-                }
-            }
-        }
-        
-        //Generate a blank cell if no cell found.
-        let cell = tableView.dequeueReusableCellWithIdentifier("blankCell", forIndexPath: indexPath) as! UITableViewCell
-        return cell
+        return options[targetIndex].cell
     }
     
-    public override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+    public override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let selectedCell = self.tableView(tableView, cellForRowAtIndexPath: indexPath) as? POptionsMenuItem
         if let sc = selectedCell {
             sc.onSelect()
         }
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }
