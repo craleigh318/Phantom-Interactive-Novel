@@ -14,18 +14,15 @@ Save Game option.
 
 class SaveGame: POptionsMenuItem {
     
-    let hidden: Bool = false
+    private(set) var labelText: String?
     
-    private(set) var cell: UITableViewCell
+    private(set) var accessoryView: UIView?
     
     /*
     Initializes
     */
     init() {
-        cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "saveGame")
-        if let label = cell.textLabel {
-            label.text = "Save"
-        }
+        labelText = "Save"
     }
     
     func onSelect() {

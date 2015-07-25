@@ -28,14 +28,24 @@ public class OptionsMenu: UITableViewController {
     }
     
     override public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let targetIndex = indexPath.indexAtPosition(0)
-        return options[targetIndex].cell
+        let targetIndex = indexPath.row
+        let id = "cell\(targetIndex)"
+        /*if let reusedCell = tableView.dequeueReusableCellWithIdentifier(id, forIndexPath: indexPath) as? UITableViewCell {
+            return reusedCell
+        }*/
+        let newCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: id)
+        let selectedOption = options[targetIndex]
+        if let label = newCell.textLabel {
+            label.text = selectedOption.labelText
+        }
+        newCell.accessoryView = selectedOption.accessoryView
+        return newCell
     }
     
     public override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedCell = self.tableView(tableView, cellForRowAtIndexPath: indexPath) as? POptionsMenuItem
-        if let sc = selectedCell {
-            sc.onSelect()
+        let selectedOption = self.tableView(tableView, cellForRowAtIndexPath: indexPath) as? POptionsMenuItem
+        if let so = selectedOption {
+            so.onSelect()
         }
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }

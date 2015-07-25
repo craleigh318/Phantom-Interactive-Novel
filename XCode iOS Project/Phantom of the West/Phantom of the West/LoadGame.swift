@@ -14,18 +14,15 @@ Load Game option.
 
 class LoadGame: POptionsMenuItem {
     
-    let hidden: Bool = false
+    private(set) var labelText: String?
     
-    private(set) var cell: UITableViewCell
+    private(set) var accessoryView: UIView?
     
     /*
     Initializes
     */
     init() {
-        cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "loadGame")
-        if let label = cell.textLabel {
-            label.text = "Load"
-        }
+        labelText = "Load"
     }
     
     func onSelect() {
