@@ -8,11 +8,11 @@
 
 import UIKit
 
-class OptionsMenu: UITableViewController {
+public class OptionsMenu: UITableViewController {
     
     private lazy var options: [POptionsMenuItem] = []
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -24,20 +24,20 @@ class OptionsMenu: UITableViewController {
         title = "Options"
     }
 
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override public func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
         return 0
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var numNonHiddenItems = 0
         for thisOption in options {
             if !thisOption.hidden {
@@ -48,12 +48,14 @@ class OptionsMenu: UITableViewController {
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
 
         // Configure the cell...
 
         //return cell
+        
+        // Loop to get cell.
         let targetIndex = indexPath.indexAtPosition(0)
         var nonHiddenI = 0
         for thisOption in options {

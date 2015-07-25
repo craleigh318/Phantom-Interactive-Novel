@@ -13,25 +13,17 @@ Initializes with a view controller and story.
 The view controller pops and pushes the options menu as needed.
 The story implements the PStory protocol.
 */
-public class StoryViewController: PNavigatorHandler {
+public class StoryViewController: UIViewController, PNavigatorHandler {
     
-    /*
-    Add this to the desired superview.
-    */
-    public private(set) var view: UIView
+    private lazy var storyView: StoryView = StoryView()
     
-    private var storyView: StoryView
+    private var adHandler: Advertising = Advertising()
     
-    private var adHandler: Advertising
+    private var bookmark: Bookmark = Bookmark()
     
-    private var bookmark: Bookmark
-    
-    public init() {
-        // Initialize properties.
-        view = UIView()
-        storyView = StoryView()
-        bookmark = Bookmark()
-        adHandler = Advertising()
+    override public func viewDidLoad() {
+        // Set properties.
+        super.viewDidLoad()
         storyView.handler = self
         bookmark.storyView = storyView
         
@@ -58,18 +50,12 @@ public class StoryViewController: PNavigatorHandler {
         adHandler.shouldDisplayAdvertisement = true
     }
     
-    /*
-    Call when the interface starts changing orientation.
-    */
-    public func willTransitionToTraitCollection(newCollection: UITraitCollection,
+    public override func willTransitionToTraitCollection(newCollection: UITraitCollection,
         withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
             storyView.removeOrientationConstraints()
     }
     
-    /*
-    Call when the interface finishes changing orientation.
-    */
-    public func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
+    public override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
         storyView.addOrientationConstraints()
     }
     
