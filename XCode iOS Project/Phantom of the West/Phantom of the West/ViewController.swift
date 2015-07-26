@@ -12,7 +12,7 @@ public class ViewController: UINavigationController, PNavigatorHandler {
     
     private var rootSubcontroller: StoryViewController?
     
-    private lazy var optionsSubcontroller: OptionsMenu = OptionsMenu()
+    private lazy var optionsSubcontroller: MainOptionsMenu = MainOptionsMenu()
     
     override public func viewDidLoad() {
         super.viewDidLoad()

@@ -11,7 +11,6 @@ import UIKit
 /*
 Load Game option.
 */
-
 class LoadGame: POptionsMenuItem {
     
     private(set) var cell: UITableViewCell
@@ -20,7 +19,7 @@ class LoadGame: POptionsMenuItem {
     Initializes
     */
     init() {
-        cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "loadGame")
+        cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil)
         if let label = cell.textLabel {
             label.text = "Load"
         }

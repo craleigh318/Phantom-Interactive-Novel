@@ -11,7 +11,6 @@ import UIKit
 /*
 Voiceover option.
 */
-
 class VoiceOption: POptionsMenuItem {
     
     private(set) var cell: UITableViewCell
@@ -22,7 +21,7 @@ class VoiceOption: POptionsMenuItem {
     Initializes
     */
     init() {
-        cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "saveGame")
+        cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil)
         toggle = UISwitch()
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         if let label = cell.textLabel {

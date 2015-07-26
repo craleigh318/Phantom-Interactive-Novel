@@ -11,7 +11,6 @@ import UIKit
 /*
 Save Game option.
 */
-
 class SaveGame: POptionsMenuItem {
     
     private(set) var cell: UITableViewCell
@@ -20,7 +19,7 @@ class SaveGame: POptionsMenuItem {
     Initializes
     */
     init() {
-        cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "saveGame")
+        cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil)
         if let label = cell.textLabel {
             label.text = "Save"
         }
