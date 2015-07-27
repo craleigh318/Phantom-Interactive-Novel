@@ -1,8 +1,8 @@
 //
-//  RemoveAds.swift
+//  RestorePurchases.swift
 //  Phantom of the West
 //
-//  Created by Christopher Raleigh on 2015/07/25.
+//  Created by Christopher Raleigh on 2015/07/26.
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
@@ -11,7 +11,7 @@ import UIKit
 /*
 Menu to remove advertisements
 */
-class RemoveAds: POptionsMenuItem {
+class RestorePurchases: POptionsMenuItem {
     
     private(set) var cell: UITableViewCell
     
@@ -19,12 +19,9 @@ class RemoveAds: POptionsMenuItem {
     Initializes
     */
     init() {
-        cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: nil)
+        cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil)
         if let label = cell.textLabel {
-            label.text = "Remove Ads"
-        }
-        if let detailLabel = cell.detailTextLabel {
-            detailLabel.text = "Free"
+            label.text = "Restore Purchases"
         }
     }
     

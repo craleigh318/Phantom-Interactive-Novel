@@ -1,35 +1,27 @@
 //
-//  MainOptionsMenu.swift
+//  IAPMenu.swift
 //  Phantom of the West
 //
-//  Created by Christopher Raleigh on 2015/07/25.
+//  Created by Christopher Raleigh on 2015/07/26.
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
 import UIKit
 
 /*
-The first options menu displayed.
+An options submenu that handles in-app purchases.
 */
-public class MainOptionsMenu: OptionsMenu {
+public class IAPMenu: OptionsMenu {
     
-    private lazy var saveGame: SaveGame = SaveGame()
+    private lazy var removeAds: RemoveAds = RemoveAds()
     
-    private lazy var loadGame: LoadGame = LoadGame()
+    private lazy var restorePurchases: RestorePurchases = RestorePurchases()
     
-    private lazy var voiceOption: VoiceOption = VoiceOption()
-    
-    private lazy var toIAPMenu: ToIAPMenu = {
-        let newMenu = ToIAPMenu()
-        newMenu.viewController = self
-        return newMenu
-    }()
-    
-    private lazy var options: [POptionsMenuItem] = [self.saveGame, self.loadGame, self.voiceOption, self.toIAPMenu]
+    private lazy var options: [POptionsMenuItem] = [self.removeAds, self.restorePurchases]
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        title = "Options"
+        title = "In-App Purchases"
     }
     
     override public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

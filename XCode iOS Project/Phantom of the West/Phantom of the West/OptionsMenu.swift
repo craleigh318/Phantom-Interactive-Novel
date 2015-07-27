@@ -13,10 +13,13 @@ Lists game options in a table view.
 */
 public class OptionsMenu: UITableViewController {
     
-    public override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if let selectedCell = self.tableView(tableView, cellForRowAtIndexPath: indexPath) as? POptionsMenuItem {
-            selectedCell.onSelect()
-        }
+    /*
+    Used to create table.
+    */
+    static func selectedRow(tableView: UITableView, indexPath: NSIndexPath, optionsList: [POptionsMenuItem]) {
+        let i = indexPath.row
+        let selectedCell = optionsList[i]
+        selectedCell.onSelect()
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }
