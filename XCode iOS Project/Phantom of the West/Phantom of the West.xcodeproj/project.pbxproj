@@ -36,6 +36,8 @@
 		A4C6033B1B5CCFE400DA4418 /* Advertising.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C6033A1B5CCFE400DA4418 /* Advertising.swift */; };
 		A4E79B4F1B5A4D4E00BC861B /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E79B4E1B5A4D4E00BC861B /* StoryViewController.swift */; };
 		A4E909261B7C15E300430B9B /* GUIElements.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4E909251B7C15E300430B9B /* GUIElements.strings */; };
+		A4E909281B7C395000430B9B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E909271B7C395000430B9B /* StoreKit.framework */; };
+		A4E9092A1B7C3D8C00430B9B /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E909291B7C3D8C00430B9B /* StoreManager.swift */; };
 		A4FD363C1B637CEA002EEFD4 /* SaveGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FD363B1B637CEA002EEFD4 /* SaveGame.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,8 @@
 		A4C6033A1B5CCFE400DA4418 /* Advertising.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advertising.swift; sourceTree = "<group>"; };
 		A4E79B4E1B5A4D4E00BC861B /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		A4E909251B7C15E300430B9B /* GUIElements.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = GUIElements.strings; sourceTree = "<group>"; };
+		A4E909271B7C395000430B9B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A4E909291B7C3D8C00430B9B /* StoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		A4FD363B1B637CEA002EEFD4 /* SaveGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E909281B7C395000430B9B /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +115,7 @@
 				A4015DA71B65D4E400F99486 /* IAPMenu.swift */,
 				A4C33E131B64A43F00130CDD /* RemoveAds.swift */,
 				A4015DAA1B65D6B100F99486 /* RestorePurchases.swift */,
+				A4E909291B7C3D8C00430B9B /* StoreManager.swift */,
 			);
 			name = "In-App Purchasing";
 			sourceTree = "<group>";
@@ -117,6 +123,7 @@
 		A46781F31B58E57400745C98 = {
 			isa = PBXGroup;
 			children = (
+				A4E909271B7C395000430B9B /* StoreKit.framework */,
 				A46781FE1B58E57400745C98 /* Phantom of the West */,
 				A46782141B58E57400745C98 /* Phantom of the WestTests */,
 				A46781FD1B58E57400745C98 /* Products */,
@@ -305,6 +312,12 @@
 				TargetAttributes = {
 					A46781FB1B58E57400745C98 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = JWDL6K3VXC;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					A46782101B58E57400745C98 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -378,6 +391,7 @@
 				A46782041B58E57400745C98 /* ViewController.swift in Sources */,
 				A46782311B58FE4800745C98 /* StoryNavigator.swift in Sources */,
 				A46782021B58E57400745C98 /* AppDelegate.swift in Sources */,
+				A4E9092A1B7C3D8C00430B9B /* StoreManager.swift in Sources */,
 				A4C33E141B64A43F00130CDD /* RemoveAds.swift in Sources */,
 				A42C26271B61D92800E6F7B5 /* OptionsMenu.swift in Sources */,
 				A46782331B58FE7600745C98 /* Constants.swift in Sources */,
@@ -510,9 +524,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Phantom of the West/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -520,9 +537,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Phantom of the West/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
