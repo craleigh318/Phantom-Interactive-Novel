@@ -12,8 +12,6 @@ public class ViewController: UINavigationController, PNavigatorHandler {
     
     private var rootSubcontroller: StoryViewController?
     
-    private lazy var optionsSubcontroller: MainOptionsMenu = MainOptionsMenu()
-    
     override public func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -42,6 +40,7 @@ public class ViewController: UINavigationController, PNavigatorHandler {
     }
     
     func onButtonOptions() {
+        let optionsSubcontroller = MainOptionsMenu()
         pushViewController(optionsSubcontroller, animated: true)
     }
 }

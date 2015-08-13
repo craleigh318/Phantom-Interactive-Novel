@@ -21,7 +21,7 @@ class SaveGame: POptionsMenuItem {
     init() {
         cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil)
         if let label = cell.textLabel {
-            label.text = "Save"
+            label.text = NSLocalizedString("save", tableName: "GUIElements", comment: "")
         }
     }
     

@@ -1,0 +1,23 @@
+/* 
+  GUIElements.strings
+  Phantom of the West
+
+  Created by Christopher Raleigh on 2015/08/12.
+  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
+*/
+
+choiceOf = "Choice %1$d of %2$d";
+
+options = "Options";
+
+save = "Save";
+
+load = "Load";
+
+voiceOver = "Voice-Over";
+
+removeAds = "Remove Ads";
+
+inAppPurchases = "In-App Purchases";
+
+restorePurchases = "Restore Purchases";

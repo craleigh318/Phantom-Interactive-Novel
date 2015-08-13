@@ -35,6 +35,7 @@
 		A4C33E141B64A43F00130CDD /* RemoveAds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C33E131B64A43F00130CDD /* RemoveAds.swift */; };
 		A4C6033B1B5CCFE400DA4418 /* Advertising.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C6033A1B5CCFE400DA4418 /* Advertising.swift */; };
 		A4E79B4F1B5A4D4E00BC861B /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E79B4E1B5A4D4E00BC861B /* StoryViewController.swift */; };
+		A4E909261B7C15E300430B9B /* GUIElements.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4E909251B7C15E300430B9B /* GUIElements.strings */; };
 		A4FD363C1B637CEA002EEFD4 /* SaveGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FD363B1B637CEA002EEFD4 /* SaveGame.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		A4C33E131B64A43F00130CDD /* RemoveAds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveAds.swift; sourceTree = "<group>"; };
 		A4C6033A1B5CCFE400DA4418 /* Advertising.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advertising.swift; sourceTree = "<group>"; };
 		A4E79B4E1B5A4D4E00BC861B /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		A4E909251B7C15E300430B9B /* GUIElements.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = GUIElements.strings; sourceTree = "<group>"; };
 		A4FD363B1B637CEA002EEFD4 /* SaveGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +195,7 @@
 		A46782271B58F15000745C98 /* Global Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4E909251B7C15E300430B9B /* GUIElements.strings */,
 				A46782321B58FE7600745C98 /* Constants.swift */,
 			);
 			name = "Global Files";
@@ -334,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A46782071B58E57400745C98 /* Main.storyboard in Resources */,
+				A4E909261B7C15E300430B9B /* GUIElements.strings in Resources */,
 				A467820C1B58E57400745C98 /* LaunchScreen.xib in Resources */,
 				A46782091B58E57400745C98 /* Images.xcassets in Resources */,
 			);

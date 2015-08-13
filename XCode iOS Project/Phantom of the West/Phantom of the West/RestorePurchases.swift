@@ -21,7 +21,7 @@ class RestorePurchases: POptionsMenuItem {
     init() {
         cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil)
         if let label = cell.textLabel {
-            label.text = "Restore Purchases"
+            label.text = NSLocalizedString("restorePurchases", tableName: "GUIElements", comment: "")
         }
     }
     

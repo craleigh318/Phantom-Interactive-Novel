@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
+import Foundation
+
 /*
 Controls the image, text, and buttons for StoryView.
 */
@@ -97,7 +99,8 @@ class Bookmark {
         let numPages = unwrappedCurrentPages.count
         if numPages > 1 {
             let currentChoiceNumber = index + 1
-            let header: String! = "Choice \(currentChoiceNumber) of \(numPages):\n\n"
+            let choiceOf = NSLocalizedString("choiceOf", tableName: "GUIElements", comment: "")
+            let header: String! =  String(format: "\(choiceOf):\n\n", arguments: [currentChoiceNumber, numPages])
             text += header
         }
         unwrappedStoryView.text = text

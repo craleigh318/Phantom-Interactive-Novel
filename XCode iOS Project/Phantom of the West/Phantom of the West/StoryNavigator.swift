@@ -79,10 +79,10 @@ class StoryNavigator: PNavigatorHandler {
         view.setTranslatesAutoresizingMaskIntoConstraints(false)
         
         // Initialize buttons.
-        buttonPrevious = StoryNavigator.makeButton(buttonPreviousTitle)
-        buttonContinue = StoryNavigator.makeButton(buttonContinueTitle)
-        buttonNext = StoryNavigator.makeButton(buttonNextTitle)
-        buttonOptions = StoryNavigator.makeButton(buttonOptionsTitle)
+        buttonPrevious = StoryNavigator.makeButton(Constants.buttonPreviousTitle)
+        buttonContinue = StoryNavigator.makeButton(Constants.buttonContinueTitle)
+        buttonNext = StoryNavigator.makeButton(Constants.buttonNextTitle)
+        buttonOptions = StoryNavigator.makeButton(Constants.buttonOptionsTitle)
         let buttons = [buttonPrevious, buttonContinue, buttonNext, buttonOptions]
         
         // Initialize contraints.

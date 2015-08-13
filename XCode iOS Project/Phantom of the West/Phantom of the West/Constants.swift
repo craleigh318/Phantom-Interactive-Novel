@@ -6,10 +6,12 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
-public let buttonPreviousTitle = "⬅︎"
-
-public let buttonContinueTitle = "OK"
-
-public let buttonNextTitle = "➡︎"
-
-public let buttonOptionsTitle = "≣"
+public class Constants {
+    public static let buttonPreviousTitle = "⬅︎"
+    
+    public static let buttonContinueTitle = "OK"
+    
+    public static let buttonNextTitle = "➡︎"
+    
+    public static let buttonOptionsTitle = "≣"
+}

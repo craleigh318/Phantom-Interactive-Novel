@@ -21,7 +21,7 @@ public class IAPMenu: OptionsMenu {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        title = "In-App Purchases"
+        title = NSLocalizedString("inAppPurchases", tableName: "GUIElements", comment: "")
     }
     
     override public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
