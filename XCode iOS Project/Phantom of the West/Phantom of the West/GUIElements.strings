@@ -14,6 +14,8 @@ save = "Save";
 
 load = "Load";
 
+newGame = "New Game";
+
 voiceOver = "Voice-Over";
 
 removeAds = "Remove Ads";

@@ -23,9 +23,6 @@ class RemoveAds: POptionsMenuItem {
         if let label = cell.textLabel {
             label.text = NSLocalizedString("removeAds", tableName: "GUIElements", comment: "")
         }
-        if let detailLabel = cell.detailTextLabel {
-            detailLabel.text = "Free"
-        }
     }
     
     func onSelect() {

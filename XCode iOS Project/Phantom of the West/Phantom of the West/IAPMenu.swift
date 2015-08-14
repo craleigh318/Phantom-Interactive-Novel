@@ -13,6 +13,8 @@ An options submenu that handles in-app purchases.
 */
 public class IAPMenu: OptionsMenu {
     
+    private lazy var storeManager = StoreManager()
+    
     private lazy var removeAds: RemoveAds = RemoveAds()
     
     private lazy var restorePurchases: RestorePurchases = RestorePurchases()
@@ -22,6 +24,9 @@ public class IAPMenu: OptionsMenu {
     override public func viewDidLoad() {
         super.viewDidLoad()
         title = NSLocalizedString("inAppPurchases", tableName: "GUIElements", comment: "")
+        if let detailLabel = removeAds.cell.detailTextLabel {
+            storeManager.updateLabelsWithPrices(detailLabel)
+        }
     }
     
     override public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

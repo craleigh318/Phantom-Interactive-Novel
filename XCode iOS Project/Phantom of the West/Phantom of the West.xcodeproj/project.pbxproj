@@ -10,6 +10,7 @@
 		A4015DA81B65D4E400F99486 /* IAPMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4015DA71B65D4E400F99486 /* IAPMenu.swift */; };
 		A4015DAB1B65D6B100F99486 /* RestorePurchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4015DAA1B65D6B100F99486 /* RestorePurchases.swift */; };
 		A4015DAD1B65D80000F99486 /* ToIAPMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4015DAC1B65D80000F99486 /* ToIAPMenu.swift */; };
+		A41401381B7D8D86001CEAB1 /* NewGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41401371B7D8D86001CEAB1 /* NewGame.swift */; };
 		A42C26271B61D92800E6F7B5 /* OptionsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42C26261B61D92800E6F7B5 /* OptionsMenu.swift */; };
 		A42C26291B61D9A200E6F7B5 /* POptionsMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42C26281B61D9A200E6F7B5 /* POptionsMenuItem.swift */; };
 		A4384A1E1B59E96700EF2187 /* StoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4384A1D1B59E96700EF2187 /* StoryImage.swift */; };
@@ -55,6 +56,7 @@
 		A4015DA71B65D4E400F99486 /* IAPMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPMenu.swift; sourceTree = "<group>"; };
 		A4015DAA1B65D6B100F99486 /* RestorePurchases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestorePurchases.swift; sourceTree = "<group>"; };
 		A4015DAC1B65D80000F99486 /* ToIAPMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToIAPMenu.swift; sourceTree = "<group>"; };
+		A41401371B7D8D86001CEAB1 /* NewGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGame.swift; sourceTree = "<group>"; };
 		A42C26261B61D92800E6F7B5 /* OptionsMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsMenu.swift; sourceTree = "<group>"; };
 		A42C26281B61D9A200E6F7B5 /* POptionsMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POptionsMenuItem.swift; sourceTree = "<group>"; };
 		A4384A1D1B59E96700EF2187 /* StoryImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryImage.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				A4C33E111B64A04800130CDD /* MainOptionsMenu.swift */,
 				A4FD363B1B637CEA002EEFD4 /* SaveGame.swift */,
 				A4C1A63B1B642BDD0007B567 /* LoadGame.swift */,
+				A41401371B7D8D86001CEAB1 /* NewGame.swift */,
 				A4C1A63E1B642C900007B567 /* VoiceOption.swift */,
 				A4015DAC1B65D80000F99486 /* ToIAPMenu.swift */,
 				A4015DA91B65D54500F99486 /* In-App Purchasing */,
@@ -379,6 +382,7 @@
 				A4015DA81B65D4E400F99486 /* IAPMenu.swift in Sources */,
 				A467822B1B58F4D900745C98 /* PStoryObserver.swift in Sources */,
 				A4C1A63F1B642C900007B567 /* VoiceOption.swift in Sources */,
+				A41401381B7D8D86001CEAB1 /* NewGame.swift in Sources */,
 				A4C33E121B64A04800130CDD /* MainOptionsMenu.swift in Sources */,
 				A45B1B761B5C88B300FE33B9 /* Bookmark.swift in Sources */,
 				A4015DAB1B65D6B100F99486 /* RestorePurchases.swift in Sources */,

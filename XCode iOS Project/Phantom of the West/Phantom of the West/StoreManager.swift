@@ -13,10 +13,12 @@ Handles interactions with the App Store.
 */
 class StoreManager: NSObject, SKProductsRequestDelegate {
     
+    private static let iapRemoveAds: NSObject = "removeAdvertisements"
+    
     /*
     Returns a localized string from the price of the specified product.
     */
-    static func formattedPrice(product: SKProduct) -> String? {
+    private static func formattedPrice(product: SKProduct) -> String? {
         let formatter = NSNumberFormatter()
         formatter.numberStyle = .CurrencyStyle
         formatter.locale = product.priceLocale
@@ -24,16 +26,34 @@ class StoreManager: NSObject, SKProductsRequestDelegate {
         return formattedPrice
     }
     
-    private var removeAdvertisements: SKProduct?
-    
-    override init() {
-        super.init()
-        let productIDs = NSSet(object: "removeAdvertisements")
+    private static func setLabelTextToPrice(label: UILabel, product: SKProduct) {
+        let formattedPrice = StoreManager.formattedPrice(product)
+        label.text = formattedPrice
     }
+    
+    private var labelRemovesAds: UILabel?
     
     func productsRequest(request: SKProductsRequest!,
         didReceiveResponse response: SKProductsResponse!) {
             let validProducts = response.products
-            removeAdvertisements = validProducts[0] as? SKProduct
+            let productRemoveAds = validProducts[0] as? SKProduct
+            if let pra = productRemoveAds {
+                if let lra = labelRemovesAds {
+                    StoreManager.setLabelTextToPrice(lra, product: pra)
+                }
+            }
     }
+    
+    /*
+    Once the in-app purchase prices are retreived, the text of the specified labels will be set to them.
+    */
+    func updateLabelsWithPrices(newLabelRemovesAds: UILabel) {
+        labelRemovesAds = newLabelRemovesAds
+        let productIDs: Set<NSObject> = [StoreManager.iapRemoveAds]
+        let newRequest = SKProductsRequest(productIdentifiers: productIDs)
+        newRequest.delegate = self
+        newRequest.start()
+    }
+    
+    
 }
