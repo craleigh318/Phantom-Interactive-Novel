@@ -96,7 +96,7 @@ class EventFlagsCollection {
     var ch11HarassedAfterWorkout: WorkoutHarassment?
     
     /*
-    Near the end Chapter 11, what did Dr. Kaden, as Sarah, do in his hotel room?
+    Near the end of Chapter 11, what did Dr. Kaden, as Sarah, do in his hotel room?
     */
     var actedInSarahRoom: ActivityInSarahRoom?
     
@@ -201,7 +201,7 @@ enum WorkoutHarassment {
 }
 
 /*
-Near the end Chapter 11, what did Dr. Kaden, as Sarah, do in his hotel room?
+Near the end of Chapter 11, what did Dr. Kaden, as Sarah, do in his hotel room?
 */
 enum ActivityInSarahRoom {
     case Showered
