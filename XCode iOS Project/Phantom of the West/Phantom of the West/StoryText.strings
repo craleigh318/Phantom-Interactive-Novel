@@ -1,0 +1,241 @@
+/* 
+  StoryText.strings
+  Phantom of the West
+
+  Created by Christopher Raleigh on 2015/08/14.
+  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
+*/
+
+ch1Title = "Chapter 1";
+
+ch1IAmDrKaden = "My name is Dr. Alexander Kaden. If you can hear me, or at least, read what I\'m saying, then you\'ve come at a good time. This evening, I\'m going to drink an elixir that allows me to possess other people.";
+
+ch1ThisIsNewFerando = "That\'s the city of New Ferando out there. It\'s the main port of the western continent. I have lived on this continent since I was young. The people here will be the first to see my making of history. This rainy evening, everything changes.";
+
+ch1IDrinkElixir = "There is no point in wasting time. I drink the elixir. As I do, I smell the mixture of blood. It was a special kind of blood, and an essential ingredient. It reminds me of how much work it took to make this. I finish the elixir, but there\'s some time left before it\'ll take effect.";
+
+ch1ILeaveHotel = "I leave my hotel room and walk out to the city below. There are plenty of people walking by the streets, but it\'s not that loud. I\'m a bit excited, and I don\'t feel that a lot nowadays. Once this elixir takes effect, there are a lot of things I can do, and these people around me have no idea what\'s about to happen.";
+
+ch1IGoToAlley = "It\'s been some time now, and I don\'t feel well. My mind is spacing out, and I might be getting weaker. I turn into a nearby alley and fall to my knees.";
+
+ch1MyFaceDisappears = "A patrolling police officer notices me and stops in the alley. \"Are you all right, sir?\" he asks. I\'m still lightheaded, but I manage to tilt my head up to look at the officer. I cannot feel my own face though. Is it missing?";
+
+ch1IOpenMyEyes = "Just a moment later, I can open my eyes. This has to be it. I\'m as light as vapor now. This is a good opportunity to test my new ability.";
+
+ch1IPossessOfficer = "Without hesitation, I leap towards the officer. My body is now a black, gaseous mass, and I can feel myself flying. My old pile of clothes is left behind as I absorb myself into the officer.";
+
+ch1ILookAtMyHands = "My hand, my skin, my clothes, they\'re all different. The elixir must have worked.";
+
+ch1IGoToOfficersHome = "I need to rest and think about what I\'ll do. I find the officer\'s car nearby and drive to his home. I didn\'t really need to think about where this officer lived. It just came naturally to me.";
+
+ch1ISleep = "I go up into the officer\'s apartment. The bedroom inside is all right. I lie on the bed and nap.";
+
+ch2Title = "Chapter 2";
+
+ch2TimeAgo = "8 years ago …";
+
+ch2ThereWereFourGods = "I was attending L\'Université de Éclair in the mainland, and was in Prof. Arvin\'s world history lecture at the time. \"Six hundred years ago, the natives of the western continent lived in peace,\" he said. \"Those natives worshiped four gods.\"";
+
+ch2ThereWasSezja = "\"Sezja was the god of play. Behind his wooden mask was a joyful man with long, flowing hair.\"";
+
+ch2ThereWasBaqer = "\"Baqer was the god of indulgence. He was the chief of the gods, and he basked himself in his own power.\"";
+
+ch2ThereWasVaNal = "\"Va\'Nal was the goddess of romance. Few could resist her beautiful, leafy, green hair.\"";
+
+ch2ThereWasBekShtii = "\"Finally, Bek\'Shtii was the god of tradition and the past. While he was not the leader, Bek\'Shtii was perhaps the smartest of the group.\"";
+
+ch2LectureEnded = "I relaxed for the rest of the lecture. \"That is all for today,\" the professor concluded. \"I have my normal office hours, if anyone needs them.\"";
+
+ch2IWentToProfArvin = "After class, I walked to Prof. Arvin\'s office to see him.";
+
+ch2IGreetProf = "\"Hello, Professor,\" I said.";
+
+ch2ProfGreetsMe = "\"Hello, Kaden, what do you need?\"";
+
+ch2IConfideToProf = "\"Well, I\'ve been studying for your class, but I\'ve been having a lot on my mind. I\'ve been thinking about other things. I\'m not sure what the best thing to do is.\"";
+
+ch2ProfDismissesMe = "\"Kaden, I am just a professor. I am not a counselor. I am not sure about what you can do. However, whatever the problem is, I hope that you can take care of it so that you can do well here. Take care, Kaden.\" The professor and I shook hands, and I left.";
+
+ch3Title = "Chapter 3";
+
+ch3IAwaken = "I wake up, feeling refreshed. I had a feeling that waking up in a different body would be awkward, but I\'m actually adjusting fairly well.";
+
+ch3SezjaGreetsMe = "\"Good morning, Sleepy Head!\"";
+
+ch3SezjaStartlesMe = "\"Waah! Who are you?\" I ask the man lying next to me, on the bed. He\'s wearing a robe and a wooden tribal mask, the same mask that the natives of the west wore. I assume that he\'s Sezja, one of the native gods. I don\'t see how any other person could have gotten into this room, especially dressed like that.";
+
+ch3SezjaLeaves = "\"My brother said that he sensed someone drink his blood, so I just came by to see who it was. Now that that mystery\'s solved, I guess I can leave you alone, for now. Oh, and I\'ll see if I can get the rest of the family to meet you. Ta ta!\" Sezja says, and slides off the edge of the bed. I lean over the edge to see him, but he\'s gone.";
+
+ch3IHaveToSignOut = "Well, it seems like I\'m almost ready to start my body-hopping adventure in earnest, but I have three more things to worry about. First, I have to sign out of my hotel room, since I don\'t want to pay for any more nights. I deliberately left the key in the room, so I\'ll fly through the crack in either the door or the window to get it.";
+
+ch3PoliceWillBeSuspicious = "Second, the police department might be getting suspicious that I, as this police officer, haven\'t reported over the night.";
+
+ch3IHaveToReturnToArcticon = "Third, I live at the Arcticon Research Facility, a large underground science complex located in the snowy mountains north on this continent. However, Arcticon\'s entrance is restricted to authorized personnel, and I won\'t be recognized as this officer, so I need another way to get in and out of there.";
+
+ch3MyWorkIsCutOut = "Well, I have my work cut out for me.";
+
+ch3ICallCaitlyn = "I use the phone in the officer\'s apartment to call a good coworker of mine, Dr. Caitlyn Rylie. \"Hello Caitlyn, I\'m Dr. Kaden,\" I say.";
+
+ch3CaitlynDoesNotRecognizeMe = "\"Dr. Kaden? You sound different,\" says Caitlyn.";
+
+ch3ITellCaitlynIDrankElixir = "\"Do you remember the chemical compound that we were all working on? Well, I finally drank a sample of it, and now I can possess other people.\"";
+
+ch3CaitlynBelievesMe = "\"Oh, Kadey, it really is you. So, you\'re in a different body then?\"";
+
+ch3IAskCaitlynToCome = "\"Yeah, that\'s right, Caitlyn. Anyway, I can\'t get back to Arcticon the way I am now. Can you pick me and drive us back?\" After giving Caitlyn my street address, she agrees. \"Also, we need to stop off at the hotel that I was staying at. Is that okay, Caitlyn?\" I ask.";
+
+ch3CaitlynAgreesToCome = "\"Uh, okay, Kaden,\" she says.";
+
+ch3CaitlynComes = "Nearly an hour later, Caitlyn pulls in front of the apartment building. \"Caitlyn, over here!\" I wave.";
+
+ch3CaitlynNoticesMeAsOfficer = "\"Oh, hey, you really did switch bodies. And you\'re a cop? Well, all right, get in.\"";
+
+ch3IAskToPossessCaitlyn = "\"Actually, I need to leave this body here. I don\'t want the police department to trace any place past this officer\'s home. That means I need to possess you, Caitlyn.\"";
+
+ch3CaitlynHesitatesPossession = "\"Me?\" Caitlyn asks. \"Do you have to? I mean, it just seems invasive. That\'s all.\" She scratches her head.";
+
+ch3IJustifyPossession = "\"Well, if I\'m not in a body, I can be in a gaseous form, but then we couldn\'t keep a low profile.\"";
+
+ch3CaitlynAsksMeToDisguiseAsInfant = "Caitlyn looks at a towel in the back seat. \"Wait,\" she says. \"I can wrap you in my towel, and it\'ll look like you\'re a baby in a blanket. It\'d be cute! Well, how about it?\" she asks.";
+
+ch3IDiguiseAsInfant = "\"Okay Caitlyn, you can wrap me in the towel if you want to.\"";
+
+ch3CaitlynBringsMeToHotel = "I fly out of the officer and onto the towel. \"Thanks, Kadey,\" Caitlyn says, as she wraps me in. She drives to the hotel and goes up to my floor.";
+
+ch3IEnterHotelRoomFromBlanket = "Caitlyn puts me down, in front of my door. I fly through the bottom of the door, get the key, give the keys to Caitlyn, and fly back into my blanket.";
+
+ch3CaitlynChecksOut = "Caitlyn and I go down to the lobby. While Caitlyn is checking out with the receptionist, the receptionist notices me. \"Oh, what a cute baby. Can I see?\" she asks.";
+
+ch3CaitlynTriesToShowReceptionistMe = "Caitlyn tries to turn me towards the receptionist, but I resist. Can Caitlyn not realize how showing my face could blow our cover? \"What\'s wrong, Kadey? Why don\'t you want to look away from my chest? Did you want to drink?\" Caitlyn asks.";
+
+ch3ReceptionistLikesKatie = "\"Oh, her name\'s Katie? That\'s such a good name!\" says the receptionist. I roll my eyes.";
+
+ch3CaitlynLeavesHotel = "\"Well, we have to go,\" says Caitlyn.";
+
+ch3CaitlynCannotBreastFeed = "Once we\'re back in the car, Caitlyn comes to a realization. \"Wait, I can\'t breast-feed you anyway. You don\'t have a mouth. Also, I need to give birth to an actual baby to produce milk anyway. I\'m a doctor, so I should have known that. Oops.\" Caitlyn is right. I don\'t have a mouth in this form, although I might still be able to talk without it. I\'m about to call her out for her absent-mindedness, but I decide against it, since she is a good friend.";
+
+ch3CaitlynDrivesOnHighway = "Caitlyn drives north on the highway to Arcticon.";
+
+ch3CaitlynEntersArcticon = "We reach the snowy mountain pass, one of the highest points on this continent, and one that gives a great view. We pass through Arcticon\'s security checkpoint without incident. Caitlyn parks in the parking garage, and we take the adjoining tram, which goes to the underground research center.";
+
+ch3ILeaveBlanket = "Afterwards, I fly out of the baby blanket.";
+
+ch3IRefuseToDiguiseAsInfant = "\"No, Caitlyn. No one will think that I\'m a baby if they actually see my face.\"";
+
+ch3IWillOweCaitlynAFavor = "\"Okay, but you owe me if I ever need a favor later on,\" says Caitlyn.";
+
+ch3IGoToHotel = "\"Understood.\" I fly out of the officer and into Caitlyn. I drive to the hotel and go up to my floor.";
+
+ch3IEnterHotelRoomFromCaitlyn = "I kneel in front of my door and fly out of Caitlyn, fly through the bottom of the door, get the key, and fly back into Caitlyn.";
+
+ch3ICheckOut = "I go down to the lobby and check out with the receptionist. \"You don\'t look like a \'Mr. Kaden\',\" says the receptionist, skeptically.";
+
+ch3IClaimToBeMyWife = "\"I\'m his wife. I\'m just checking out for him,\" I reply.";
+
+ch3ReceptionistDoubtsMe = "\"How can I be sure about that?\" she asks.";
+
+ch3IInsultReceptionist = "\"Because I know more about his tastes than you do, Plain Jane,\" I smirk, tossing my key onto her desk and leaving.";
+
+ch3IDriveOnHighway = "I drive north on the highway to Arcticon.";
+
+ch3IEnterArcticon = "I reach the snowy mountain pass, one of the highest points on this continent, and one that gives a great view. I pass through Arcticon\'s security checkpoint without incident. I park in the parking garage and take the adjoining tram, which goes to the underground research center.";
+
+ch3IDispossessCaitlyn = "Afterwards, I fly out of Caitlyn. She\'s initially dazed, but she gets better after a moment.";
+
+ch3IConjureClothes = "After that, I manage to have my clothes appear on me, just by thinking about it.";
+
+ch3CaitlynDragsMyHand = "\"Come on, we need to meet Yuki,\" Caitlyn says, dragging me by the hand.";
+
+ch3YukioGreetsMe = "Caitlyn leads me to a lounge with Dr. Yukio Kiyoshi, another coworker of ours. \"Hello, Caitlyn … and Kaden?\" he says, surprised.";
+
+ch3CaitlynExplainsMyGhostliness = "\"Yuki, you know how I said Kaden called me a couple of hours ago? Well, this what he\'s like now. He can go inside other people and control them, like a ghost.\"";
+
+ch3YukioIsAwed = "\"Amazing,\" Yukio says. \"So, what do we do now?\" asks Yukio.";
+
+ch3CaitlynWantsToHelp = "\"Uh …\" Caitlyn hesitates, turning towards me. \"What do you want to do, Kadey? Whatever it is, I\'m sure Yuki and I would love to help you with it.\"";
+
+ch3ILeaveCaitlynAndYukio = "\"I haven\'t decided yet,\" I tell Caitlyn and Yukio. \"Okay Kaden, Caitlyn and I will be around here if you want to talk to us later,\" says Yukio. I nod and leave.";
+
+ch3IGoHome = "I take the tram to the housing sector of the Arcticon Research Facility.";
+
+ch3IRelax = "Once I\'m back at my apartment, I lie on my bed, relaxed.";
+
+ch3BekShtiiGreetsMe = "\"Hello. I am pleased to meet you, Dr. Kaden,\" says a voice. I turn to a man standing near my bedroom door. He\'s wearing a leather waistcoat, a tribal skirt made of cloth, and leather boots. \"I am Bek\'Shtii, god of tradition and the past. Surely, you already know about me.\"";
+
+ch3IKnowBekShtii = "\"Yeah, I do,\" I reply.";
+
+ch3BekShtiiAsksMeToVisit = "\"You drank from my blood and became a false spirit, which is an act of sacrilege. Normally, such acts are punished, but I will forgive you under one condition. My siblings and I want to learn more about you. Therefore, I want you to come to our home. We live in the ancient ruins of our city, and you can find it in the forest to the west.\"";
+
+ch3IsItWesternContinentalPark = "\"The forest to the west? Are you talking about the Western Continental Park?\" I ask.";
+
+ch3BekShtiiAsksMeToStay = "\"Correct, but there is a problem. The park is not open to the entire public at the moment, and flying over the park as a spirit might draw the ire of the park rangers. Stay here for today, as I will return here tomorrow to share a plan with you.\"";
+
+ch3BekShtiiLeaves = "Bek\'Shtii finally leaves. It seems like I have the rest of the day to myself. I wonder what I should do.";
+
+ch3IVisitCaitlyn = "I decide to visit Caitlyn.";
+
+ch3CaitlynPlaysWithFoxtrot = "I walk in on Caitlyn playing with Foxtrot the Ferret, one of Arcticon\'s most beloved test animals. Caitlyn waves a plush toy above Foxtrot, and Foxtrot stands up and claws at it. \"Get it, Foxy! Get it!\" says Caitlyn. Caitlyn turns and looks at me. \"Kadey, how\'ve you been?\" she asks.";
+
+ch3IAmAllRight = "\"I\'m all right, I guess.\"";
+
+ch3CaitlynAsksIfIWasEmbarrassed = "\"Did I embarrass you when we pretended you were a baby?\" asks Caitlyn.";
+
+ch3IAdmitEmbarrassment = "\"A little bit,\" I admit.";
+
+ch3CaitlynHugsMe = "\"Oh, heheh. Sorry about that,\" she says, hugging me.";
+
+ch3CanCaitlynAskPersonally = "\"One more thing, can I ask you a personal question?\" says Caitlyn.";
+
+ch3IReplyOK = "\"Okay,\" I reply.";
+
+ch3WouldCaitlynBeGoodMother = "\"Do you think I would be a good mother?\"";
+
+ch3IThink = "I think about it for a moment.";
+
+ch3CaitlynWouldBeGoodMother = "Yeah, probably. You\'re definitely friendly enough.\"";
+
+ch3CaitlynThanksMe = "\"Thanks,\" Caitlyn says, blushing.";
+
+ch3CaitlynMightBeGoodMother = "(Choice 2) \"I\'m not sure. I\'m not much of a family person, so you might want to ask someone who is more knowledgeable about that.\"";
+
+ch3CaitlynAdmitsGoodIdea = "\"Yeah, that\'s a good idea,\" Caitlyn admits.";
+
+ch3CaitlynJustifiesMotherhood = "Caitlyn adds, \"I guess I studied medicine in the first place so that I could care for other people, and if I had kids, they\'d look up to me when I took care of them. I don\'t know. Sorry if this was a stupid question.\"";
+
+ch3HowDidCaitlynFeelPossession = "\"When we drove from the city, how did you feel when I possessed you?\" I ask.";
+
+ch3CaitlynFeltLightheaded = "\"Oh, I felt light-headed for a second, and then I just went to sleep. Nothing hurt or anything.\"";
+
+ch3IAscertainCaitlynsUnconciousness = "\"So you weren\'t conscious while I was possessing you? You can\'t remember anything during that time?\" I ask, wanting to confirm.";
+
+ch3CaitlynOnlySlept = "\"I can\'t. It felt like I was just going to sleep, and then a few moments later, I woke up. That\'s it.\"";
+
+ch3IThankCaitlyn = "\"I see. Thanks, Caitlyn.\"";
+
+ch3CaitlynAcceptsThanks = "\"No problem,\" Caitlyn responds.";
+
+ch3HowDidIFeelDuringPossession = "\"How did you feel when you possessed me?\" she asks.";
+
+ch3IEnjoyedPossession = "\"I really enjoyed it, actually.\"";
+
+ch3CaitlynLikesBeingClose = "\"I see. I never realized how close you wanted to be to me,\" Caitlyn says, blushing.";
+
+ch3PossessionFeltWeird = "\"It felt a little bit weird, to be honest.\"";
+
+ch3CaitlynFeltWeird = "\"Yeah, it felt weird to me, too. I guess that\'s something we won\'t do again,\" Caitlyn shrugs.";
+
+ch3WasCaitlynsQuestionWeird = "\"It wasn\'t weird of me to ask that, was it?\" Caitlyn asks.";
+
+ch3ILikeTalkingWithCaitlyn = "\"No. Besides, I\'m fine with talking once in a while. Thank you. Take care, Caitlyn.\"";
+
+ch3IVisitYukio = "I decide to visit Yukio.";
+
+ch3YukioWorks = "I see Yukio working on a computer. He turns around when he hears me walk in. \"Yes, Kaden?\" he asks.";
+
+ch3IsYukioUnimpressed = "\"You didn\'t take long to go back to work. Did my breakthrough not impress you for long?\" I ask.";
+
+ch3YukioLecturesMe = "\"It is not that. Of course developing a compound that changes its consumer\'s form is a significant accomplishment. Kaden, you have good ideas, and sometimes, you execute them well, and I am certain that the science community values you for that. However, I want to talk about your work ethics. For example, you lied to our supervisor about the compound that you were working on actually was. Then, you managed to convince him to have Caitlyn and I help you with it. This morning, you asked Caitlyn to drive you back here. She is not your chauffeur. She is your coworker, as am I. You are not our boss. You, Caitlyn, and I are equal in rank. It is no secret that Caitlyn has a soft spot for us two, but you seem to take it for granted.\"";
+
+ch3ITakeCharge = "I fold my arms and reply to him, \"Thanks for your feedback, Yukio, but I only take charge because I\'m the smartest one here. Take care.\" I leave the room.";
+
+ch3ISleep = "I decide to sleep until tomorrow.";
