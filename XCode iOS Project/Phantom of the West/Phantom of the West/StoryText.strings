@@ -699,3 +699,246 @@ ch8SarahStudiedJournalism = "\"I\'m going to study journalism, actually,\" Sarah
 ch8IWishedSarahLuck = "\"Sounds cool. Good luck with that,\" I said.";
 
 ch8SarahThankedMe = "\"Thank you,\" Sarah faintly smiled.";
+
+ch9Title = "Chapter 9";
+
+ch9IAwaken = "Today\'s the field trip. I change out of my pajamas into a casual, camping outfit, since I don\'t need to wear my school uniform for this. Besides, this outfit will be a better job of keeping me cool.";
+
+ch9IWaitForBus = "I head out of the dormitories to the bus stop in front of the school. Everyone from the school\'s sixth, seventh, and eighth grades is here. It\'s a huge mass of students. I do eventually find Carleigh and Élodie. \"I\'m glad that you made it out here in time. I\'d hate to tell Mom that you slept while the buses left,\" laughs Carleigh.";
+
+ch9CarleighLikesHewittSleeping = "\"You\'d probably like it if I had slept, wouldn\'t you, Sis?\" I respond.";
+
+ch9ElodieWouldMissHewitt = "Carleigh shakes her head, \"No, of course not. If you did, then Ellie would just spend the whole trip talking about how you weren\'t here.\" Élodie shyly nods.";
+
+ch9IBoardBus = "Several large buses stop by the campus to pick us up. Our names are checked off on a list as we enter the buses, one by one. The whole process of everyone boarding the buses takes nearly half an hour, but then, there are a lot of students, so it\'s reasonable to take that long.";
+
+ch9DidCarleighTalkAboutMathTest = "Eventually, our bus drives away from St. Josephine and towards New Ferando\'s highway. Carleigh, Élodie, and I are all sitting together, and we talk during the bus ride. \"Hey Ellie, did I ever tell you about my math test?\" Carleigh asks.";
+
+ch9CarleighScored10 = "\"I scored 10/10. That\'ll really boost my grade! Maybe I\'ll be the new star student, after all. Thanks, Ellie.\"";
+
+ch9CarleighScored9 = "\"I scored 9/10. That\'ll really boost my grade! Thanks, Ellie.\"";
+
+ch9CarleighScored8 = "\"I scored 8/10. I think that\'s pretty good. Thanks, Ellie.\"";
+
+ch9CarleighScored7 = "\"I only scored 7/10. It\'s mainly my fault though. I spaced out a bit while you were helping me. I guess I can do that when I\'m nervous. Still, thanks, Ellie.\"";
+
+ch9OhElodieSays = "\"Oh,\" Élodie says, a bit confused.";
+
+ch9BusExitsHighway = "The bus takes an exit on the highway. \"We\'re almost there,\" says a school staffer. We drive on a road surrounded by trees.";
+
+ch9BusPassesCheckpoint = "Up ahead is a secured checkpoint with park rangers. The bus stops at the checkpoint, and the staffer briefly gets out and talks to the gatekeeper. The staffer comes back onto the bus, and we continue driving.";
+
+ch9IExitBus = "We finally reach a lodge. The bus stops and drops us off here. It takes another 10 minutes for the rest of the buses and students to finally arrive.";
+
+ch9GuideAnnounces = "Once everyone\'s here, an adult with a megaphone, presumably our field trip guide, stands in front of the large group. He says, \"Greetings, St. Josephine\'s Secondary School. This is the Western Continental Park, home to a few endangered species, as well as to the ruined ancient settlements of the native people. This building next to me is the main guest lodge. The lodge has common areas that you are all welcome to use during free time. There are also bedrooms upstairs, but there are only enough bedrooms for the grownups. Sorry kids, but you\'ll have to sleep in tents. The park staff will be setting up your tents throughout the day. I\'ll talk more about that in the evening. For now, you kids have an hour while we get everything set up. Now would be a good time to have a snack and take care of any personal business. We\'re going to be doing a lot of walking, so be prepared.\"";
+
+ch9MuchBuildup = "There is so much buildup here, and for what? I just need an opportunity to get into the ancient city ruins. Once I get there, I meet up with the native gods, do whatever they want me to do, and then I ditch this place.";
+
+ch9IEnterLodge = "I enter the lodge and go to its living room. There\'s a television set tuned to the news channel. I decide to watch.";
+
+ch9SarahStartsInterview = "Sarah Parson is on the screen. She\'s sitting in the network\'s interview room. \"So, what happened? From the beginning?\" Sarah asks the off-screen interviewee.";
+
+ch9OfficerTalks = "The screen cuts to the interviewee. \"I was on my regular patrol,\" says the interviewed man. \"I was walking on the sidewalk, passing by several alleys, when I heard a man coughing violently. I looked into the next alley, and I saw the man. He was wearing a blue hooded raincoat and was kneeling down on the ground. I asked him if he was all right. He looked up at me. I couldn\'t see his face. Everything inside his hood was black. Then, two red, glowing eyes showed up, where his face should\'ve been. After that, he jumped at me and knocked me unconscious. The only thing I could remember after that was me waking up just outside my apartment building.\"";
+
+ch9ISeeMySketch = "The screen fades to a sketch of me in my spirit form, with red eyes and everything. The sketch is accompanied by Sarah\'s voiceover, telling viewers that if they have any information regarding me, that they should call the New Ferando Police Department.";
+
+ch9SarahSignsOut = "The screen then fades to Sarah, this time sitting at a desk on the main news set. \"That interview was recorded earlier today. We\'ll have more this evening. Until then, you\'ve been watching New Ferando Network News on KNFN. Thanks for tuning in.\"";
+
+ch9PublicKnowsMe = "Well, this isn\'t good. Now the whole public knows about me.";
+
+ch9WeStartWalk = "Free time is over, and we\'re separated into groups, each lead by a tour guide. We embark on a long nature walk all over the park.";
+
+ch9WeFindIvy = "We pass by poison ivy. \"That\'s poison ivy over there, kids. Don\'t touch,\" the guide says.";
+
+ch9WeFindPolecats = "On our walk, we see polecats climbing nearby trees. \"See those critters in the trees?\" the tour guides asks. \"Those are polecats. They originate from the mainland. Several centuries ago, some explorers from the mainland brought polecats into this continent. We\'ve been keeping the migrated polecats safe here in the park. Nowadays, most polecats have been domesticated into ferrets, and ferrets have become popular household pets.\"";
+
+ch9WeFindSnakes = "Later on in the walk, we see snakes slithering on the ground. \"Careful, kids. Some snakes are venomous. You kids know how to tell whether they\'re venomous, right? My old co-worker Billy told me this saying: \'black and yellow, friendly fellow; red and black, get back\'.\" I\'m not a snake expert, but our tour guide might have gotten that mnemonic wrong. It\'s okay, though. He\'s only endangering a dozen students.";
+
+ch9WeSeeRuins = "We finally pass by a view of the ancient native city, from the side of a hill. \"See that ruined city in the distance?\" the guide asks. \"That was the capital of the western continent\'s indigenous people. We won\'t be entering the city. In fact, we prefer to leave the city\'s architecture undisturbed, so we generally only allow entry during research expeditions.\" Well, that means that this is as far as I\'m going to get as a normal person.";
+
+ch9ShouldIRun = "Hm, should I run for it? I doubt that I can do it without getting noticed, but I might as well make the most out of this opportunity.";
+
+ch9IDispossessHewitt = "I move to the back of the group. When the guide is looking away from the students, I quietly run behind a nearby tree. I dispossess Hewitt and fly through the trees towards the city.";
+
+ch9GuideSeesBlackBear = "\"Woah, stand back, kids!\" says the tour guide, surprised. \"That looked like a black bear. Generally, those bears stay away from us humans, especially adult bears. That bear might have been an adolescent, though, so it might not have learned how dangerous humans are yet. Also, did you know that, unlike polecats, black bears are native to the western continent? It\'s true!\"";
+
+ch9IEnterRuins = "I finally reach the ancient city. It\'s filled with unoccupied stone buildings. I see the largest building in the city. It\'s a giant step pyramid, also made out of stone. I fly up the main stairs of the pyramid. At the top is a ritual room … with the four gods lounging around inside.";
+
+ch9BaqerGreetsMe = "\"Hello, False Spirit. My brother called you that, right?\" asks Baqer. \"You were also that girl from school, weren\'t you? The one who was too lazy to get me dessert. Ah, it\'s typical of your kind. You take, you take, you take. You take our dignity. You take our blood. And what do you give in return? Nothing.\"";
+
+ch9ICanRedeem = "\"Now, now, Brother,\" says Bek\'Shtii, \"Dr. Kaden may be a false spirit, but he can still be our ally if he redeems himself.\"";
+
+ch9BaqerCannotTrustMe = "\"Nuh-uh, this Kaden guy is a perfect example of why his kind isn\'t to be trusted!\" Baqer shouts back.";
+
+ch9BekShtiiAndBaqerYell = "Bek\'Shtii and Baqer yell at each other. Sezja gets upset. \"Why do you brothers have to argue? This is supposed to be our happy place,\" Sezja cries.";
+
+ch9GodsAreFlawed = "Amidst all of this, Van\'Nal walks towards me. \"I am sorry that you have to see this. Our family is not so different than a mortal family, is it?\" she says, holding my shoulder, trying to comfort me.";
+
+ch9VaNalsKissIsRuined = "\"I had hoped that what you and I did yesterday evening would put you in a good mood, but it seems that Baqer just has to ruin it,\" Va\'Nal says, frowning.";
+
+ch9GodsAreInappropriate = "\"I am sorry if Baqer is making you uncomfortable. He does not know how to act appropriately amongst mortals. I suppose that I do not know how to act appropriately either, considering how I behaved towards you yesterday evening,\" Va\'Nal says, frowning.";
+
+ch9BekShtiisNewPlan = "\"Okay, okay, here is the plan now,\" Bek\'Shtii says. \"Dr. Kaden, you appeared on television earlier today, did you not?\"";
+
+ch9YesIAdmit = "\"Yes,\" I admit.";
+
+ch9HowDidBekShtiiKnow = "\"Wait, how did you know that?\" I ask.";
+
+ch9BekShtiiWillEmpower = "\"Do not overthink,\" says Bek\'Shtii. \"Nevertheless, if that is the case, then I shall expand your powers, to increase survivability. I only ask that you stay still while I recite a chant.\"";
+
+ch9BekShtiiChants = "Bek\'Shtii then chants in a language with which I\'m not familiar. Everyone else stands back silently.";
+
+ch9BeckShtiiFinishesChant = "My gaseous form begins to ache. It feels like it\'s condensing. I fall onto my knees. Eventually, Bek\'Shtii finishes his chant. I breathe heavily, recovering from the discomfort.";
+
+ch9ISolidify = "I feel for my face. I can feel it. My face is fleshy and solid. My normal, actual face is back. \"Dr. Kaden, you can now switch between your natural, mortal form and your false spirit form freely,\" Bek\'Shtii tells me. I try it, and, sure enough, I can switch between my two forms just by thinking about it. I stay with my mortal form, for the time being.";
+
+ch9BekShtiiExplainsAbilities = "\"This should help you move around unnoticed without having to possess another person,\" Bek\'Shtii says. \"You have one more new ability. You can grow tentacles from your back. Try it.\"";
+
+ch9IExtendTentacles = "I try it, and four black, vaporous tentacles come out of my back, two on each side. I can even control them, just like my own arms. \"You can do this even when possessing someone. This might be useful in combat, if you ever need to defend yourself,\" Bek\'Shtii says.";
+
+ch9BekShtiiThoughtAhead = "\"You really thought ahead, didn\'t you?\" I smile.";
+
+ch9BekShtiiDismissesMe = "\"I will take that as a \'thank you\',\" Bek\'Shtii responds. \"We may need your assistance in the near future. Considering what we have done for you, we find that reasonable. You are free to go,\" Bek\'Shtii says, dismissing me. I turn and walk away.";
+
+ch9SezjaDismissesMe = "\"Have fun with your new powers!\" Sezja says excitedly.";
+
+ch9VaNalDissmissesMe = "\"Keep your spirits up,\" reminds Va\'Nal.";
+
+ch9BaqerDissmissesMe = "\"Yeah, bye,\" groans Baqer.";
+
+ch9ILeaveRuins = "I leave the ancient city and wonder what I will do next. I should probably start by going back home to the Arcticon Research Facility.";
+
+ch9IEncounterRanger = "I encounter an armed park ranger. \"Are you lost, Sir?\" he asks.";
+
+ch9IAmLeaving = "\"No, I went to those ruins over there for a meeting. I\'m on my way out right now,\" I say.";
+
+ch9HowDidIEnterPark = "The ranger is confused. \"How did you enter this park?\" he asks.";
+
+ch9ISneakedOntoBus = "\"I rode a bus with students earlier today to get in here. I\'m not actually with the school, though,\" I answer truthfully.";
+
+ch9RangerMustDetainMe = "\"Sir, if you\'re not authorized to be here, then I have to detain you,\" the ranger says, pointing his gun at me. Okay, I don\'t need to panic. This reminds me of gym class when I was Ananya Sanjeet. What\'s the best thing to do in this situation?";
+
+ch9IRemember = "Ah, yes, I remember.";
+
+ch9DoNotRunSaysRanger = "\"Don\'t think about running,\" says the ranger. Well, so much for that idea. I take another look at the ranger. I might be able to take him on, anyway.";
+
+ch9IFalselySurrender = "\"Turn around and put your hands behind your back,\" says the ranger. I do so. He approaches me and is about to place restraints on my wrists. Just before he does so, however, I figure that I should take advantage of this.";
+
+ch9IStealRangersGun = "I quickly extend tentacles from my back. I use them to quickly grab the ranger\'s gun away from him.";
+
+ch9ICrushMagazine = "I pull out the magazine from the gun and crush the magazine with my tentacles into dust.";
+
+ch9IReturnGun = "I hand the unloaded gun back to the ranger. \"It\'s a shame that you\'re just doing your job. Now leave me be,\" I laugh.";
+
+ch9WhoAmI = "\"Who are you?\" asks the ranger.";
+
+ch9RangerKnowsMeOnTV = "I change into my spirit form. \"I know you! You were on TV! What are you, exactly? What do you want?\" the ranger gasps.";
+
+ch9IWantToBeLeft = "\"I already told you what I want. I want you to let me leave,\" I respond. The ranger backs away from me. \"You really want to know who I am, don\'t you?\"";
+
+ch9IAmPhantomOfWest = "\"I am the Phantom of the West!\"";
+
+ch9IFlyAboveContinent = "I fly off to the mountains, to Arcticon. As I\'m in the sky, I see the whole western continent.";
+
+ch9IOverlookNewFerando = "I see the tall buildings of New Ferando to the southeast.";
+
+ch9IOverlookPark = "I see the trees of the Western Continental Park to the west.";
+
+ch9IOverlookArcticon = "I see the snowy mountain range to the northeast, home to Arcticon.";
+
+ch9IOverlookHighway = "Finally, I see the highway in the middle, connecting it all together.";
+
+ch9IEnterArcticon = "I reach Arcticon\'s surface entrance. I see a ventilator nearby, so I use it to enter the ventilation system to reach my apartment.";
+
+ch9IReachMyRoom = "Finally, I\'m back in my own bedroom. I should probably tell Caitlyn and Yukio what I\'ve been doing so far. I switch to my mortal form and head out.";
+
+ch9IGoToLounge = "I head over to the staff lounge that Caitlyn and Yukio frequent. It should be their break time soon, and then they\'ll be here.";
+
+ch9CaitlynAndYukioCome = "Break time arrives, and Caitlyn and Yukio enter the lounge shortly thereafter.";
+
+ch9ThereIAm = "\"Oh, there you are,\" says Yukio.";
+
+ch9CaitlynAndYukioWorried = "\"Oh, Kadey, Yuki and I were worrying about you. We\'re glad you\'re back,\" says Caitlyn.";
+
+ch9YukioSawMeOnTV = "\"Yes, and we also saw a man talk about you on television this morning. Do you care to explain?\" Yukio asks.";
+
+ch9DoesCaitlynRemember = "\"The television? Oh, that man was the first person that I possessed. Caitlyn, you remember when you drove to New Ferando to pick me up, right?\"";
+
+ch9CaitlynRemembersOfficer = "Caitlyn nods, \"Yeah, that man was a police officer; wasn\'t he? He looks familiar now, now that you mention it.\"";
+
+ch9IMayReappearOnTV = "I continue, \"Well, that might not be the last time that I\'m mentioned on television. Let me explain.\"";
+
+ch9ISummarizeToYukio = "I tell Caitlyn and Yukio my story. \"Okay, so I already told you on the phone how I went outside to get some fresh air, right? And that I was about to be seen and that I had to possess a student? Well, after that phone call, I continue going to school the next day as my new self. Then, the day after that, it turned out that we had to go on a field trip to the Western Continental Park. So, we go there, and we go on a boring hike with some tour guides. In the middle of the hike, gaseous tentacles grow out from my back. It turned out that my powers were expanding. The tour guide gets scared and he\'s about to shoot me, when I use my tentacles to grab his gun, and I crush it into tiny bits. Then, I came back here. Also, I can switch between my normal self and my spirit self now.\"";
+
+ch9YukioSimplifiesMySummary = "\"Okay, okay. That is a lot of information to give us at once. Let me understand the basics. Essentially, you are becoming more powerful, and you let yet another outsider discover your powers. Is that correct?\" asks Yukio.";
+
+ch9YeahBasically = "\"Yeah, basically.\"";
+
+ch9IWaitForFoxtrot = "Yukio shakes his head and leaves the lounge. \"Don\'t worry too much about Yuki,\" says Caitlyn. \"Also, it seems like you\'ve had an exhausting day. I know just who can help you relax. Stay right there,\" Caitlyn adds, and then leaves the lounge.";
+
+ch9IAlreadyMetFoxtrot = "Caitlyn comes back, this time holding Foxtrot the Ferret. It\'s always good to see him.";
+
+ch9IDidNotMeetFoxtrot = "Caitlyn comes back, this time holding Foxtrot the Ferret, one of Arcticon\'s most beloved test animals.";
+
+ch9FoxtrotToCheerMeUp = "\"Cheer up Dr. Kaden, Foxy!\" encourages Caitlyn.";
+
+ch9FoxtrotStares = "Foxtrot just stares at me. Foxtrot is usually more forthcoming when he sees me, but he doesn\'t seem as comfortable this time. Can he smell the god\'s blood inside of me?";
+
+ch9ILeaveFoxtrot = "I decide to leave Foxtrot alone.";
+
+ch9CaitlynShouldPutFoxtrotBack = "\"Foxtrot looks a bit frightened. Maybe you should put him back, Caitlyn,\" I say.";
+
+ch9IWillPetFoxtrot = "I decide to pet Foxtrot.";
+
+ch9FoxtrotHisses = "Foxtrot pulls his head back as I move my hand towards him. I keep reaching towards him, but then Foxtrot hisses at me. I put my hand back and give up.";
+
+ch9FoxtrotAllowsPet = "Foxtrot pulls his head back at first as I move my hand towards him. I wait a few moments, and Foxtrot puts his head back forward.";
+
+ch9IRubFoxtrot = "I rub his head, and he seems all right with it.";
+
+ch9FoxtrotLicksMe = "After that, Foxtrot climbs to the top of my shoulder and starts licking my face. Caitlyn laughs, and so do I.";
+
+ch9CaitlynFrownsAtFoxtrot = "Caitlyn frowns at Foxtrot. \"Oh Foxy, it\'s just Dr. Kaden. Oh well,\" she shrugs and leaves.";
+
+ch9IReturnHome = "I eventually head back to my apartment. I could use a rest.";
+
+ch9ISleep = "I decide to go to sleep.";
+
+ch10Title = "Chapter 10";
+
+ch10TimeAgo = "2 years ago …";
+
+ch10WeFinishedDinner = "Caitlyn, Yukio, Jim, and I had graduated with our doctoral degrees and were at the Kenyon Imperial Hotel, New Fernado\'s flagship hotel. We had just finished eating dinner at the Yí Mîn Cäntïng, an eastern-continent-style restaurant and one of several restaurants in the Kenyon Hotel. We were walking through one of the hotel\'s major walkways.";
+
+ch10WhereDoesYukioWork = "\"Where are you going to work?\" Jim asked Yukio.";
+
+ch10ArcticonHiredUs = "\"The Arcticon Research Facility is hiring me as a physicist.\" Yukio turned to Caitlyn and me. \"Actually, all three of us were hired there.\"";
+
+ch10CaitlynResearchesMedicine = "\"Yup, I\'m going to be a medical researcher there,\" Caitlyn added.";
+
+ch10JimIsAssistantProf = "\"Oh, well, I guess that leaves me the odd one out,\" Jim said, scratching his head. \"There\'s a university on the mainland that wants me as an assistant professor. It\'s going to be tough working without you guys anymore.\"";
+
+ch10WeMissedJim = "\"We\'ll miss you!\" smiles Caitlyn.";
+
+ch10CaitlynNoticesRAF = "Caitlyn turned around and noticed a sign by the ballroom entrance. \"Kadey, look! The Rescued Animals Foundation is hosting an event in the ballroom right now,\" Caitlyn pointed at the sign, excitedly. \"Oh, I bet they have cute animals in there!\" she continued.";
+
+ch10WhyDoesCaitlynCallMeKadey = "\"You\'ve been calling me \'Kadey\' a lot recently. How come?\" I asked.";
+
+ch10CaitlynLikesToNickname = "\"Oh, well, I guess I like to nickname people as a way of showing affection. You, Yuki, and Jim are all really great friends,\" she blushed, embarrassed. \"Is it okay if I keep calling you \'Kadey\'?\" she asked, worried if she was offending me.";
+
+ch10IHadNotBeenGoodFriend = "I hesitated. \"… Sure, you can keep calling me \'Kadey\' if you want. It\'s been a long time since someone considered me a \'great friend\' anyway,\" I said.";
+
+ch10WeHadGottenWellTogether = "\"Kaden, you do not need to feel like that. All four of us have gotten along well together, considering all things,\" Yukio said, smiling.";
+
+ch10WeWentToRAF = "\"So, do you want to go in, Kadey?\" Caitlyn asked. The Kenyon Imperial Hotel\'s ballroom was a popular location for hosting events, so I decided to go with Caitlyn.";
+
+ch10WeExploredRAF = "There were many people in the ballroom. Among them were representatives from the Rescued Animals Foundation handing out flyers. There were even posters on the wall that mentioned wrongful deaths and abuses of animals, with some other posters saying how we could make a difference.";
+
+ch10CaitlynLookedAtAnimals = "At the front of the ballroom were rescued domestic animals, with each species enclosed in its own pen. Caitlyn walked along the various pens, and I followed her.";
+
+ch10CaitlynWantedFerret = "Caitlyn stopped at a pen with ferrets. \"Oh, they\'re so cute!\" she said. \"Let\'s adopt one! How about that one?\" she asked, pointing at one of the ferrets.";
+
+ch10IRejectedFerret = "\"Come on, Caitlyn. Owning an animal like that is a years-long commitment. We already have ourselves to take care of,\" I replied.";
+
+ch10PleaseCaitlynAsked = "\"Please?\" Caitlyn asked, looking innocently at me.";
+
