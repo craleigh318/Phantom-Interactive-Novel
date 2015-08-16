@@ -6,6 +6,8 @@
   Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 */
 
+ellipsis = "…";
+
 ch1Title = "Chapter 1";
 
 ch1IAmDrKaden = "My name is Dr. Alexander Kaden. If you can hear me, or at least, read what I\'m saying, then you\'ve come at a good time. This evening, I\'m going to drink an elixir that allows me to possess other people.";
@@ -239,3 +241,461 @@ ch3YukioLecturesMe = "\"It is not that. Of course developing a compound that cha
 ch3ITakeCharge = "I fold my arms and reply to him, \"Thanks for your feedback, Yukio, but I only take charge because I\'m the smartest one here. Take care.\" I leave the room.";
 
 ch3ISleep = "I decide to sleep until tomorrow.";
+
+ch4Title = "Chapter 4";
+
+ch4TimeAgo = "15 years ago …";
+
+ch4FieldTripBegan = "I was on a field trip that day. I was with my class at the Science History Museum. Our tour guide, a retired scientist, showed many different inventions and the various breakthroughs in physics, biology, chemistry, and other sciences. Later in the tour, the guide, now visibly exhausted and sweating, showed us some chemical compounds made by one of the greatest alchemists of the early modern period. These exhibits intrigued me. \"I\'ve met a good many geniuses throughout my life. Who knows, perhaps the next great innovator is with us now,\" said the tour guide.";
+
+ch4BobbyTeasedMe = "\"Wow, Alex is such a dweeb for actually liking this stuff,\" said one of the students, noticing my interest.";
+
+ch4RebeccaDefendedMe = "\"Come on, Bobby, leave Alex alone,\" said a girl, defending me.";
+
+ch4RebeccaComfortedMe = "\"Are you okay, Alex?\" she asked.";
+
+ch4RebeccaLookedFamiliar = "\"Yeah, I\'m fine. Thanks, though. Wait … you look familiar.\"";
+
+ch4RebeccaLivedDownstairs = "The girl laughed, comfortingly, \"I\'m Rebecca, Rebecca Davis. You know, I am in the same apartment building as you, just one floor down.\"";
+
+ch4IThankedRebecca = "\"Oh, yeah, I remember now. I guess I\'m not that good with remembering people. Heheh,\" I laughed, awkwardly. \"Thanks again … Rebecca.\"";
+
+ch5Title = "Chapter 5";
+
+ch5BekShtiiWakesMe = "\"Wake up,\" says Bek\'Shtii. I\'m groggy, but I eventually come to my senses. \"I have a plan for you to reach our home. In two days, students from St. Josephine\'s Secondary School will go on a field trip to the Western Continental Park. You need to go to that school, possess a student there, and get on that field trip.\"";
+
+ch5PlanIsRoundabout = "\"That sounds like a roundabout way to get to your ancient city. Is it really so bad for me to go straight there like this?\"";
+
+ch5RangersCannotCaptureMe = "\"Yes, if the park rangers see you, they might capture you on surveillance video. If you appear on video, then the modern world will have proof that spirits, even false spirits like you, still exist. If that happens, even more people will try to seize power from us. It is bad enough that you already have done so.\"";
+
+ch5IEnterVent = "Bek\'Shtii points to the vent on my wall. \"Use the ventilation system to leave your underground complex and go south to the suburban district of New Ferando. Stay behind the tree line as you follow the highway. As a false spirit, you can run quickly without exhaustion. You have little more than an hour before sunrise. Go, now.\" I nod and fly through my vent.";
+
+ch5IExitVent = "After a minute of navigating upwards through the Arcticon vent system, I reach the surface. I have my clothes reappear on me, just like last time, and run alongside the quiet, nearly-empty highway.";
+
+ch5IReachSchool = "I eventually reach St. Josephine\'s Secondary School. It\'s not daylight just yet, but I see a building on the campus that is most likely a dormitory. I see a window that is slightly open, so I fly up through it.";
+
+ch5IPossessElodie = "I see two single beds, both of which had people sleeping in them. It was too dark to see who they were, so I take my chances and jump into one of them.";
+
+ch5CarleighWakesMe = "I must have fallen asleep for at least an hour, since when I regain consciousness, the sun is shining brightly outside. \"Ellie, Ellie! Wake up! We need to go to class,\" says a girl from the other bed. Some of my hair is covering my eyes, so I brush it aside. I get out of bed and walk to a nearby mirror.";
+
+ch5ISearchElodiesMemory = "In the mirror, I see that I\'m a young, adolescent girl. This would be a good time to know more about my host. I concentrate and am able to access basic parts of my host\'s memory. I can\'t get any specific memories, really, just enough general information for me to understand who I am. It seems that I am now Élodie Noël, or \"Ellie\" for short. I was born to a father from the mainland and a mother from the eastern continent. I am currently in eighth grade at St. Josephine\'s Secondary School, which is a non-state boarding school that serves grades 6-12.";
+
+ch5IDressSlowly = "\"Don\'t take too long getting dressed,\" smiles the other girl in the room. That girl is Carleigh Lexington, apparently a good friend of mine. Carleigh has a brother, Hewitt, who also attends St. Josephine\'s.";
+
+ch5INodAtCarleigh = "\"Right,\" I nod at Carleigh.";
+
+ch5IDressElodie = "I change out of my pajamas into my school uniform. It takes a few minutes to put on everything. When I\'m done, I see myself in a dress shirt with a blazer and a necktie. I\'m also wearing a tartan skirt, medium-length socks, and color-matching shoes. I have to admit, I actually like this look, but … what situation have I put myself in? Back when I startled that police officer when I first got my ability, I was intimidating, I was powerful. Now, who am I? Some schoolgirl? Eh, this feels like a downgrade. At least, like this, I\'ll have an easy time staying beneath suspicion.";
+
+ch5IEnterLiteratureClass = "Carleigh and I have the same first class: literature; so we go to the classroom together. In class, the instructor greets us, saying \"Good morning, class! Today, I have a short story to share with you, called \'Paul and the Troubles of Peer Pressure\'. Everyone, get into your reading groups, and I\'ll pass out the story. Read it with your group, share your thoughts, and fill out the questionnaire that I have right here, when you\'re done.\"";
+
+ch5IReadPaulsStory = "I get into a group consisting of Carleigh and a couple of her friends. The story is about a boy, named \"Paul\", who succumbs to peer pressure and tries to imitate and fit in with the popular students at his school. Near the end, the wise adults tell him to be himself, since trying to be like another person wouldn\'t make him happy. Basically, the story tells its message in the most heavy-handed way possible. After our group reads the story, we discuss its meaning.";
+
+ch5WhyDidPaulWantToFitIn = "Carleigh reads aloud the questionnaire that the instructor had handed out. \"First question: \'Why did Paul want to fit in with his peers?\'\"";
+
+ch5BadWriting = "\"Because of bad writing?\" asks Carleigh\'s friend.";
+
+ch5PutWhatTeacherWants = "\"Sure, but let\'s put something that the teacher wants to read.\"";
+
+ch5PaulHadNothingUnique = "\"Okay, because … Paul didn\'t feel like he had anything unique about him?\"";
+
+ch5SureCarleighWrites = "\"Sure, I\'ll write that.\"";
+
+ch5WasPaulJustified = "\"Second question: \'On a scale from one to ten, how justified were Paul\'s actions?\' I\'ll answer this one. Three.\"";
+
+ch5WhyBeYourself = "Ugh, this class activity is terrible. I never felt peer pressure as my old self, even when I was younger. I never understood this issue. Carleigh continues, \"Final question: \'What is the number one reason why you should be yourself?\' Ellie, do you want to answer this one?\"";
+
+ch5SureISay = "\"Sure,\" I say.";
+
+ch5YouCannotLowerYourself = "\"The number one reason why you should be yourself is … that you can\'t play to your strengths if you lower yourself to someone else\'s level.\"";
+
+ch5CannotAssociateWithLowlyPeople = "\"Yeah, you can\'t associate with those lowly people,\" says Carleigh jokingly.";
+
+ch5YouNeedToStayConfident = "\"The number one reason why you should be yourself is … that it\'s how you keep your self-confidence and stay happy.\"";
+
+ch5CarleighWasTeased = "\"You have a point, but we all have been teased for being ourselves,\" sighs Carleigh.";
+
+ch5YouAvoidStupidity = "\"The number one reason why you should be yourself is … that you might follow someone stupid. If you know your role model isn\'t stupid, then it\'s okay to not be yourself, because the role model is obviously doing something right.\"";
+
+ch5IAmPragmatic = "\"Being pragmatic, eh? Interesting answer,\" says Carleigh.";
+
+ch5WasActivityTerrible = "\"Done,\" says Carleigh. Phew, finally. I ask my groupmates if they thought that this activity was terrible too.";
+
+ch5WriterThinksKidsAreDumb = "\"Yeah, whoever wrote this thinks kids like us are dumb, like we can\'t think for ourselves,\" replies Carleigh\'s friend.";
+
+ch5IPassByCheerleader = "Class finally ends, and I go through the halls to my second class. On my way, I pass by an older girl in a cheerleading uniform.";
+
+ch5CheerleaderTripsMe = "The girl looks at me and trips me. \"Why don\'t you go back to your own country, dweeb?\" she laughs. Ugh, I don\'t have time to deal with her now, so I move on.";
+
+ch5HewittConsolesMe = "A few more hours pass until lunch break. I head to the cafeteria and buy a toasted sandwich. I find a lunch table with Carleigh and Hewitt, and I sit and eat lunch with them. Hewitt looks at me, \"One of my sister\'s friends said that she saw a cheerleader be mean to you. If that happens, don\'t worry about it; those people are just jealous, and they don\'t deserve your attention.\"";
+
+ch5CheerleaderIsJealous = "\"You\'re right, they are just jealous,\" I say, agreeing with Hewitt.";
+
+ch5CanIStudyWithCarleigh = "\"Oh, Ellie,\" adds Carleigh, \"can you help me study with a math test?\"";
+
+ch5IEnterLibrary = "I know I\'ve technically never met Carleigh until today, but it feels like I\'ve known her for a long time. I can\'t let her down. I have to help her. \"Yeah, I can help you with math,\" I say. We finish our lunch, and Caleigh and I go to the school library.";
+
+ch5ISeeCarleighsTextbook = "Carleigh opens her math textbook and shows it to me. The math looks familiar to me. As a scientist, I use math on a somewhat regular basis. The only difference is that, in the professional field, I do mathematics with a computer. Here in school, I\'ll have to do that math by hand. Hopefully, my written math skills haven\'t faded away yet. \"Are you ready to help?\" whispers Carleigh.";
+
+ch5IPrepareToPossessCarleigh = "\"Yes,\" I whisper back. What Carleigh doesn\'t realize is that my help is going to be more … direct than she expects. I look around to see if anyone else in the library is looking at us.";
+
+ch5IPossessCarleigh = "When it\'s safe, I jump into Carleigh, possessing her.";
+
+ch5IExamineCarleigh = "I look down at myself to see if the possession worked. Everything looks fine. I look over at Élodie. She looks a bit dazed, and I assume that she wasn\'t conscious while I was possessing her. \"Hey … Ellie, we\'re in the library. Let\'s go outside,\" I whisper.";
+
+ch5ILeaveLibrary = "\"What?\" Élodie yawns. I let Élodie lean on my shoulder, and I walk her out of the library.";
+
+ch5WhyIsElodieHere = "\"Why are we here?\" asks Élodie.";
+
+ch5ElodieIsExhausted = "\"It\'s noontime. You and I were working hard in class earlier. If you don\'t remember anything, then it\'s probably from all of the exhaustion,\" I lie to her.";
+
+ch5ElodieIsDizzy = "\"Okay, Carleigh. I\'m dizzy. I need to sit down. Maybe we can talk after classes. I\'m sorry.\"";
+
+ch5IEnterMathClass = "The bell rings. I brush my hair back, straighten my necktie and blazer, and head to my math class.";
+
+ch5IStartMathTest = "Once class starts, the math instructor passes out the test and asks the class to be quiet. I read over the test and then write \"my\" name at the top of the paper. \"Carleigh Lexington\", I think that I spelt that right. Now, onto the test.";
+
+ch5MathQuestion1 = "Question 1: \"Farmer McBilly has 40 m of fence that he can use to enclose his livestock. McBilly wants to give his animals the most room to move around in. McBilly hires an Honors Math student from the local school to lay out his enclosure. What is the largest size that McBilly\'s enclosure can be?\"";
+
+ch5MathQuestion1CorrectAnswer = "The largest size from 40 m of fence is …\n… 10 m × 10 m.";
+
+ch5MathQuestion1IncorrectAnswer = "The largest size from 40 m of fence is …\n… 6 m × 14 m.";
+
+ch5MathQuestion4 = "Question 4: \"Four doctoral graduates celebrate by eating dinner at a restaurant. The table that they are seated at had four chairs, but the graduates cannot decide who will sit where. How many possible ways can the graduates sit at the table?\"";
+
+ch5MathQuestion4IncorrectAnswer = "The number of combinations of seating for 4 people is …\n… 16.";
+
+ch5MathQuestion4CorrectAnswer = "The number of combinations of seating for 4 people is …\n… 24.";
+
+ch5MathQuestion9 = "Question 9: \"A boy is making a necklace for his girlfriend. He wants to put a gem lookalike inside the necklace\'s pendant. He pours silica into a gemstone-shaped mold and burns it, turning the silica into glass. The boy plans to stain the glass with the color of his girlfriend\'s birthstone. Before the boy colors the glass, he must cut it into a right triangle to fit it inside the pendant. If one side of the fake gem is 9 mm and the other is 12 mm, then how long is the fake gem\'s hypotenuse?\"";
+
+ch5MathQuestion9IncorrectAnswer = "A right triangle with sides of 9 mm and 12 mm has a hypotenuse of …\n… 10.5 mm.";
+
+ch5MathQuestion9CorrectAnswer = "A right triangle with sides of 9 mm and 12 mm has a hypotenuse of …\n… 15 mm.";
+
+ch5MathClassEnds = "After finishing all of the questions, I turn in my paper. At the end of class, the instructor says, \"There won\'t be any class tomorrow, but you can still come to pick up your graded tests. Have a good field trip, everyone!\"";
+
+ch5IReencounterCheerleader = "On my way to my next class, I pass the cheerleader who tripped me when I was Élodie. She doesn\'t notice me, but I do see her entering the gym. She probably has physical education next class period. This is a good time for revenge.";
+
+ch5IEnterLockerRoom = "I go into the locker room and look for a girl who is about the same age as that cheerleader. I find a taller girl changing out of her normal school uniform, in an aisle of lockers, all by herself.";
+
+ch5IPossessAnanya = "I walk up to the girl and possess her.";
+
+ch5IDressAnanya = "I am now Ananya Sanjeet. I am in eleventh grade, and I am a member of my school\'s track and field club. I finish taking off my current uniform and put on the T-shirt and athletic shorts that were in my locker. After doing so, some of my hair falls in front of my face. I also notice that I have a hair tie on my wrist.";
+
+ch5ITieAnanyasHair = "Since I don\'t want to constantly adjust my hair during physical education, I use the tie to tie my hair in a ponytail. I look in the mirror in my locker, and it seems that I did a fairly decent job. I lock my locker and head to the gym.";
+
+ch5IEnterPEClass = "When gym class begins, we line up for attendance. I see the cheerleader in the line across from mine. I narrow my eyes and smirk.";
+
+ch5CoachLectures = "After attendance, the coach begins his lecture, \"You are all bright young men and women, and you have the rest of your lives ahead of you. Today, I am going to teach you some basic self-defense so that you can keep that life safe. As many of you know, almost all of the industrialized world bans civilians from possessing firearms, including our country. It\'s been like this for over a decade, and it has been keeping us safe. Now, some rural areas are exempt from the firearms ban, but we won\'t be focusing on those today. Anyway, the problem is that criminals have an obvious tendency of not playing by the rules. It is possible, even if not likely, that, one day, one of them will use a gun to threaten you. Can anyone tell me what they would do if a criminal threatened them with a gun?\" I have a good answer to this question. I raise my hand, and the coach calls on me, \"Yes, Ananya?\"";
+
+ch5IWouldSubmit = "\"I would just listen to what the criminal says.\"";
+
+ch5CoachRespondsToSubmission = "\"Ananya probably did the smartest thing,\" the coach says. \"When staying alive is your priority, you don\'t necessarily need to be a hero. Compliance might seem cowardly to some of you, but it\'s really not. Even if the criminal decides to rob you, for example, losing whatever cash you had on hand is a small price to pay for saving your life, and the police might be able help you once you\'re safe and are able to contact them.\"";
+
+ch5IWouldRun = "\"I would run away.\"";
+
+ch5CoachRespondsToRunning = "\"So Ananya decided to run away before the criminal could hurt her,\" the coach says. \"It really depends on where you are, but this is generally one of the worse options. In an open area, running away can immediately be a costly mistake. Even in an area with more cover, the criminal can react to you fleeing and shoot you in a matter of seconds. Remember, guns are ranged weapons.\"";
+
+ch5IDisagreeWithCoach = "The coach disagrees with me, but even still, he\'s not in a position to give advice on that type of self-defense.";
+
+ch5IWouldDisarm = "\"I would twist the gun out of his hand and attack him.\"";
+
+ch5CoachRespondsToDisarming = "\"So Ananya decided to be bold and overpower our bad guy,\" the coach says. \"If, and only if, you are sure that you are stronger than the criminal, then disarming him becomes a possible option. If you succeed, then you can gain control of the situation. However, more often than not, victims who attempt this fail. In fact, last year, two out of every five gun-related deaths here in the western continent were due to over-confidence of the victim. Be careful.\"";
+
+ch5CoachStartsSpar = "\"Thank you, Ananya. Okay, class, we\'re going to practice defensive martial arts. Everyone, take the mats that are rolled up on the wall over there and lay them across the gym floor.\" We all lay out the mats as instructed and we take off our shoes. \"All right, now find a partner and practice what we did last time.\"";
+
+ch5IPartnerWithCheerleader = "Without hesitation, I walk up to the cheerleader and ask her if she wants to spar with me. At first, she looks at me weirdly. \"Uh … okay, I guess,\" she shrugs. We start off by exchanging some light punches between each other.";
+
+ch5CheerleaderAndISpar = "My spar with the cheerleader gets more intense as we both concentrate. Eventually, the cheerleader tries to hook me, but she\'s too slow. I dodge to her side, grab her shoulder, and …";
+
+ch5IPinCheerleader = "… I carefully pin the cheerleader to the floor mat.";
+
+ch5CoachCheersMe = "\"Nice counter, Ananya!\" says the coach. I help the cheerleader up, but she sneers at me.";
+
+ch5IKickCheerleader = "… I kick the cheerleader in the leg.";
+
+ch5CheerleaderFalls = "I hear the cheerleader\'s blood vessels crack. \"Ow!\" yells the cheerleader, dropping to the mat.";
+
+ch5IBringCoachToCheerleader = "I run to the coach and say, \"Coach! My partner is hurt. Can you take a look?\" The coach follows me to the cheerleader.";
+
+ch5CoachAsksWhatHappened = "\"What happened?\" he asks.";
+
+ch5CheerleaderIsBruised = "\"This Ananya dweeb kicked me! Now my calf is going to be all bruised!\" she whines.";
+
+ch5IApologizeToCheerleader = "\"It was an accident. I\'m so sorry,\" I say, feigning concern. The coach helps her stand up. \"I hope you get better,\" I lie to her.";
+
+ch5CoachTellsMeToBeCareful = "\"Ananya, be more careful next time,\" says the coach.";
+
+ch5INodAtCoach = "\"Okay, I will,\" I nod.";
+
+ch5PEClassEnds = "A few minutes later, the coach instructs us to go back to our locker rooms and change before the bell rings so that we can get to our next classes on time.";
+
+ch5IDispossessAnanya = "Instead of going to the locker room, however, I jog over to the dormitories, stand under the window of Élodie\'s room, and jump out of Ananya and fly through the window.";
+
+ch5IHideInTheCloset = "No one\'s here yet. I hide in the closet for a couple of hours. Eventually, Élodie comes into the bedroom and lies on the bed.";
+
+ch5IRepossessElodie = "I should probably possess Élodie now, before Carleigh comes back too, so I do.";
+
+ch5IRelax = "After possessing Élodie, I stay lying on the bed for a bit longer.";
+
+ch5ICallCaitlyn = "Carleigh still isn\'t back yet. I might as well call Caitlyn and Yukio and let them know what I\'ve been doing. After all, they\'re probably already worried that I\'m not at the Arcticon Research Facility. If I call them when Carleigh comes back, it\'ll be awkward if she overhears me. Otherwise, if I don\'t call them at all today, then Caitlyn and Yukio will just get more worried.";
+
+ch5IGreetCaitlyn = "\"Hello, Caitlyn. It\'s me, Dr. Kaden, again.\"";
+
+ch5AmIOK = "\"Kadey? Where are you? Who are you? Are you okay?\"";
+
+ch5ITellCaitlynAboutSchool = "\"Yeah, I\'m fine. I\'m … uh …\" Oh, this is a problem. I\'m not sure if I should tell Caitlyn about the native gods who were talking to me. \"I left Arcticon to get some fresh air. Some people were nearby, and they were about to see me, so I possessed the nearest person whom I could find, and I ended up becoming an adolescent girl. I can\'t come back until … it\'s safe and no one can see me. Maybe a couple of days.\"";
+
+ch5CaitlynOffersToDrive = "\"Oh, I\'m sorry to hear you\'re stuck like that. Do you want me to drive you back here now, Kadey? We can pretend that you\'re my daughter. I\'d be fine with that.\"";
+
+ch5IDeclineCaitlynsOffer = "\"There\'s no need, Caitlyn. I just realized that I can fly through Arcticon\'s ventilation system to enter and leave as I please.\"";
+
+ch5OK = "\"Okay.\"";
+
+ch5YukioWantsToTalk = "\"Wait, Kadey,\" Caitlyn says, \"Yuki is right here with me. He wants to talk to you.\"";
+
+ch5YukioGreetsMe = "\"Hello? Kaden?\" asks Yukio.";
+
+ch5IGreetYukio = "\"Hello,\" I reply.";
+
+ch5YukioDislikesMeGettingFreshAir = "\"I do not believe that \'getting fresh air\' is a sufficient excuse to not come to work.\"";
+
+ch5IWillCallSupervisor = "I groan. \"Listen, Yukio,\" I say, \"if it makes you feel better, then I\'ll call our supervisor and say that I\'m on a field study.\"";
+
+ch5IAmApathetic = "\"Do so. Also, Kaden, you might not believe me, but I wanted to work well with you, just like Caitlyn does. However, you have shown apathy towards other people, and continuing to be apathetic will hurt you.\"";
+
+ch5IApologizeToYukio = "\"Okay, fine, Yukio. I\'ve wanted to complete this project for years, and I\'ve only just completed it two days ago. If I haven\'t been focusing on the needs of other people recently, then I\'m sorry. That\'s just how it is.\"";
+
+ch5YukioDismissesMe = "\"Goodbye, Kaden,\" sighs Yukio.";
+
+ch5YukioIsWrong = "I go back to lying on my bed. Yukio said that I don\'t care about other people, but that\'s not true. I mean, I helped Carleigh earlier with math. Yeah, I\'m not a selfless caregiver or anything, but still, what does Yukio do that makes him think that\'s he\'s better than me?";
+
+ch5IThinkTooLong = "Eh, I\'ve gone on long enough.";
+
+ch5CarleighReturns = "Carleigh eventually comes back. \"Hey Ellie,\" she says.";
+
+ch5HowWasCarleighsMath = "\"Hey Carleigh,\" I say. \"How did your math test go?\"";
+
+ch5CarleighForgets = "\"This might sound weird,\" she says, \"but I\'m actually not sure. I barely even remember being in math class. Around when you were helping me, things seemed to go by like a blur. I was even about to go to PE class at the wrong time. It sounds silly. I know.\"";
+
+ch5CarleighWillBeStar = "\"Well, I hope that I was able to turn you into St. Josephine\'s new star student,\" I laugh.";
+
+ch5ElodieCanBeCool = "\"Shut up, Ellie,\" Carleigh laughs back, embarrassed. \"Anyway, I have to admit, you can be pretty cool sometimes.\"";
+
+ch5CarleighAndILaugh = "\"Only sometimes, huh?\" I ask, smiling. \"Okay, well … I\'ll still take it as a compliment.\" We both keep laughing.";
+
+ch5HewittCallsMe = "Later, in the evening, my phone rings. \"Hello? Ellie? It\'s Hewitt.\"";
+
+ch5IGreetHewitt = "\"Hey, Hewitt,\" I reply.";
+
+ch5CanIHangOutWithHewitt = "\"Thanks for helping my sister today. You\'ve always been a great friend to both of us. Hey, since tomorrow\'s the last day before the field trip, do you think you can hang out with me after class?\"";
+
+ch5IMightHangOutWithHewitt = "Well, this caught me off guard. I\'m supposed to be meeting those gods, not to go on some playdate. On the other hand, I don\'t want to let Hewitt down. \"Maybe, Hewitt,\" I say. \"I\'ll let you know my decision tomorrow at lunch.\"";
+
+ch5ISleep = "It gets late, and we decide to go to sleep.";
+
+ch6Title = "Chapter 6";
+
+ch6TimeAgo = "11 years ago …";
+
+ch6IDatedRebecca = "I was on a week-long break from school. That evening, Rebecca and I went out to eat dinner together. We walked to the main city square. The weather was cool. The signs on the surrounding buildings were so colorful and brightly lit that it contrasted so well with the dark sky.";
+
+ch6RebeccaPhotographedUs = "Rebecca even took a photograph of us standing in front of Main Avenue.";
+
+ch6WeWentToRestaurant = "We had gotten hungry. \"Hey Alex,\" Rebecca smiled, holding my hand. \"How about that restaurant?\' she asked, pointing with her other hand. I agreed, and we went in there.";
+
+ch6WeAte = "We were seated at a booth. I ordered a toasted ham sandwich, and Rebecca ordered a lean chicken salad. Both of our meals were seasoned with the west\'s signature herbs. Everything was just about perfect. \"Have any plans for the rest of our break?\" Rebecca asked.";
+
+ch6IWillCompute = "\"Nah, I\'ll just be using my computer.\"";
+
+ch6RebeccaWillPostPhoto = "\"Okay, well, I\'ll be with my other friends, and I\'ll be sure to tell them all about this. Speaking of computers, though, I\'ll probably post our picture online to my friends. I can send it to you, too, if you want.\"";
+
+ch6IKissedRebecca = "We finished our meals. I thanked Rebecca for going out with me and gave her a quick kiss. She hesitated. \"Okay, lover boy,\" she joked, \"we should go home before it gets even darker,\" and so we left.";
+
+ch7Title = "Chapter 7";
+
+ch7SleepyHead = "\"Good morning, again, Sleepy Head!\"";
+
+ch7ISnoreAtSezja = "\"Oh, it\'s you again?\" I snore.";
+
+ch7WasSezjaCarleigh = "\"Wait, you\'re in Carleigh! Were you her the whole time?\" I ask Carleigh, who is obviously possessed by Sezja.";
+
+ch7SezjaFingersChin = "\"Maybe, maybe not,\" Sezja-as-Carleigh says, with her finger on her chin … with his finger on his chin … with Sezja placing Carleigh\'s finger on Carleigh\'s chin. You get the idea.";
+
+ch7SezjaAsBestFriend = "I stare in shock at Sezja. \"Ooh! You should see the look on your face! It\'s so cute!\" he says. \"Seriously though, I just possessed this girl this morning,\" he admits. \"Oh, but this is so great! We can be best friends forever, like I\'ve always dreamt of!\"";
+
+ch7SezjaHugsMe = "Sezja runs towards me and hugs me, squeezing my chest in the process. Seriously, he\'s squeezing my chest. I think he\'s doing it on purpose, too.";
+
+ch7WhyIsSezjaHere = "\"So, why are you here?\" I ask.";
+
+ch7SezjaStaysWithMe = "\"Oh, my brother asked me to visit you to see if you were adjusting well. You\'re obviously just fine. I\'m supposed to be heading back now, but … I think I\'ll stay with you, for fun!\" Sezja-as-Carleigh enthuses.";
+
+ch7CanSezjaActNormal = "\"Can you at least act normal if you\'re going to be Carleigh?\" I ask. Sezja shrugs.";
+
+ch7IReturnToLiteratureClass = "In literature class, I got back into my group from yesterday. The instructor passes back the group paper that the real Carleigh and her friends wrote with me.";
+
+ch7LostCreditForLoweringSelvesForLiterture = "\"Aw, we lost two-thirds credit on the last problem,\" Carleigh\'s friend says. \"The teacher didn\'t like how we said \'lower ourselves to someone else\'s level\'.\"";
+
+ch7LiteratureTeacherIsDrag = "\"Ugh, this teacher is such a drag anyway,\" says Carleigh\'s other friend.";
+
+ch7FullCreditForLiterature = "\"Hey, we got full credit. Nice!\" Carleigh\'s friend says. \"I guess the teacher bought the \'be happy\' crap that we wrote for the last problem.\"";
+
+ch7CarleighsGroupCheers = "\"Good job, girls,\" says Carleigh\'s other friend.";
+
+ch7LostCreditForNotBeingOneselfForLiterature = "\"Aw, we lost two-thirds credit on the last problem,\" Carleigh\'s friend says. \"The teacher didn\'t like how we said \'it\'s okay to not be yourself\'.\"";
+
+ch7SezjaIsQuiet = "Sezja doesn\'t speak much as Carleigh, though that\'s probably for the best.";
+
+ch7MorningPasses = "The rest of my classes before lunch go fine. I don\'t share any of those classes with Carleigh, so I\'m just hoping that Sezja isn\'t ruining Carleigh\'s image.";
+
+ch7LunchBegins = "Finally, it\'s lunchtime. I promised Hewitt that I would tell him whether I wanted to go out with him. I go to the dining area and see Hewitt eating some chicken strips. I sit in front of him. \"Hello, Hewitt.\" Hewitt looks up at me. \"I\'ve thought about when you asked me to hang out with you later this afternoon. My answer is … yes. I\'d be fine with hanging out,\" I smile.";
+
+ch7BaqerBurpsAtMe = "\"Yeah, whatever, Babe,\" burps Hewitt, with food still in his mouth. Gross! \"Now buy me some dessert. This chicken isn\'t filling me up,\" he demands.";
+
+ch7BaqerIsJerk = "\"Ugh, you\'re such a jerk,\" I remark.";
+
+ch7HewittActsDifferent = "I stand up and walk away. I don\'t get it. Hewitt seemed all right yesterday. Today, he seems like a completely different person … oh no.";
+
+ch7VaNalCallsMe = "I pass by the dormitories on my walk. \"Psst! Dr. Kaden, I have wanted to meet you,\" says a voice.";
+
+ch7BaqerReturns = "I turn to my side and see a woman standing behind the dormitory building. I walk towards her. Upon closer inspection, I notice that she is leafy and green and is wearing tribal clothing. Before either of us is able to talk, I hear Hewitt shouting behind me, \"Hey Babe, I said get me a dessert! Why are you taking your sweet time?\"";
+
+ch7BaqerNoticesVaNal = "Hewitt runs up to me, but then notices the woman next to me. \"Sister?\" says Hewitt, puzzled.";
+
+ch7HewittDoesNotDeserveBaqer = "\"Brother, that boy does not deserve a slob, like you, to possess him.\"";
+
+ch7VaNalDaresToWatchBaqer = "\"You were watching me, Sister? How dare you follow me around!\" snaps Hewitt.";
+
+ch7BaqerFollowedMe = "\"Hey, you\'re only here because you must have been following me around,\" I say to Hewitt, interjecting.";
+
+ch7BaqerGrabsMe = "\"No one was talking to you, Princess!\" says Hewitt, grabbing me by the shirt.";
+
+ch7VaNalPullsBaqer = "\"Stop!\" yells the woman. She reaches out to Hewitt, and her hands go inside of him. When that happens, Hewitt lets go of me and shrieks in pain.";
+
+ch7VaNalSeperatesBaqer = "Eventually, the woman pulls something out of Hewitt. It\'s a man! A large, heavy man is being pulled out of Hewitt. The man is wearing no clothing, except for a grass skirt. Eventually, the woman completely separates the man from Hewitt\'s body. Hewitt himself then collapses to the ground.";
+
+ch7BaqerFlees = "\"Let you be cursed, Sister! I\'m going home!\" yells the man, as he runs out of sight.";
+
+ch7CanIPossessHewitt = "\"I am sorry that you witnessed that,\" says the woman. \"My brother lacks discipline. In addition, my brother\'s yelling may have attracted attention. I do not want others to see me like this. Dr. Kaden, would you be all right with switching into that boy over there?\" she asks, pointing at Hewitt.";
+
+ch7SureINod = "\"Sure,\" I nod.";
+
+ch7VaNalPossessesElodie = "As I possess Hewitt, I notice the woman dissolving into a black vapor. After I\'ve fully possessed Hewitt, the woman absorbs herself into Élodie. After that, Élodie blinks, feels for her own face, and looks down at herself. \"Ah yes, this is good,\" says Élodie. \"Please, Dr. Kaden, let us eat lunch together before the period ends,\" she says. She grabs my hand and takes me to the cafeteria.";
+
+ch7WeBuyHam = "At the cafeteria, I order a ham sandwich. Élodie orders a ham sandwich as well. \"This lunch will be my treat, Dr. Kaden,\" she says, offering to pay.";
+
+ch7WeEatHam = "We eat at a table. Our sandwiches are cold, but I wasn\'t expecting much from a school cafeteria anyway. \"So, I take it that you and your brother are more of these gods that I keep meeting,\" I say.";
+
+ch7VaNalIntoducesHerself = "\"Yes, Dr. Kaden. I am Va\'Nal, the goddess of romance. My brother whom you just met is Baqer. All of us gods love each other, even though Baqer can be a handful.\"";
+
+ch7WhyWillIGoToRuins = "\"I see, but haven\'t I met all of you now? Why do I need to go to your ancient city if you\'re all just going to stop by and say \'hi\' to me anyway?\"";
+
+ch7GoingWillMakeSense = "\"Dr. Kaden, it will make sense when the times comes.\"";
+
+ch7SezjaReturns = "I see Carleigh coming towards us. \"Hello again, Best Friend,\" Carleigh says to Va\'Nal-as-Élodie. It seems that Sezja is still possessing Carleigh, but doesn\'t realize that I\'m Hewitt now and that Élodie is actually Va\'Nal. Sezja-as-Carleigh sits next to Va\'Nal-as-Élodie and smiles at her.";
+
+ch7SezjaCallsVaNalBestFriend = "\"I have never heard you call me \'Best Friend\', brother,\" says Va\'Nal.";
+
+ch7SezjaMistakesVaNal = "\"Oh! Sister! Is that you? I\'m so sorry,\" says a shocked Sezja.";
+
+ch7IAmHere = "\"It is all right,\" says Va\'Nal. \"Your friend is over there,\" she says, pointing at me.";
+
+ch7SezjaGreetsMeAgain = "\"Hello again, best friend,\" Sezja says, now looking towards me.";
+
+ch7CanSezjaGetCarleighsTest = "\"Hello,\" I say back. \"Sezja, can you remember to get Carleigh\'s math paper?\"";
+
+ch7WhyDoIAskSezja = "\"Uh … sure. Why are you asking?\" Sezja asks.";
+
+ch7ITookCarleighsTest = "\"I helped Carleigh with her math text. Well, really, I just took the test for her,\" I say.";
+
+ch7SezjaGetsNervousTalking = "\"Hey, hey, that was sweet of you. You really are a most bestest friend!\" Sezja says. \"You seem excited to get your grade back, Best Friend. You can come with me to math class. You can even do the talking. I get nervous talking to most mortals, anyway.\"";
+
+ch7IGetCarleighsTest = "The bell rings as Sezja and I enter the room for Carleigh\'s math class. We approach the instructor. \"Hi, I\'m here to get the test back for my sister, Carleigh Lexington.\" The instructor looks through all of the students\' papers and hands me mine, well, Carleigh\'s. \"Thanks,\" I say, and Sezja and I leave the room.";
+
+ch7IScore10 = "My score is 10/10. That\'s perfect! The real Carleigh will love this when she finds out.";
+
+ch7IScore9 = "My score is 9/10. That\'s great! The real Carleigh will love this when she finds out.";
+
+ch7IScore8 = "My score is 8/10. That\'s good. I wonder how the real Carleigh will feel when she finds out.";
+
+ch7IScore7 = "My score is 7/10. I answered all of the difficult questions incorrectly. I hope that I don\'t let down the real Carleigh too much when she finds out.";
+
+ch7AfternoonPasses = "Time passes as I attend the rest of Hewitt\'s classes. I do overhear some students talk about the upcoming field trip from time to time, but otherwise, nothing too special happens.";
+
+ch7VaNalEntersDorm = "By the evening, I\'ve come to my new dormitory and am now lying on my bed. I hear my bedroom door being opened. I look over and see Élodie entering the room, her tie now hung loose. \"Va\'Nal?\" I ask.";
+
+ch7ElodieIsVaNal = "\"Yes, it is still I,\" she responds.";
+
+ch7HowDidVaNalEnter = "\"How did you come into the boys\' dormitories?\" I ask.";
+
+ch7VaNalPitiesMe = "\"A goddess knows her way around,\" she smiles. \"Look at yourself, Dr. Kaden. You are a boy lying on his bed, all alone. It has been years for you, and yet little has changed.\"";
+
+ch7WhatDoesVaNalMean = "\"What do you mean?\" I ask.";
+
+ch7ISeekCompanionship = "\"You seek companionship. Do you not, Dr. Kaden? I can see into your heart. You think of older days. You think of … her. It is not healthy. No matter whose body you are in, your heart remains the same. You need to stop thinking of her before it is too late. I can help.\"";
+
+ch7VaNalStrokesMe = "She strokes my forehead. \"For both of our happiness … kiss me.\"";
+
+ch7IDoNotKissVaNal = "\"I can\'t kiss you, Va\'Nal.\"";
+
+ch7WhatIsWrong = "\"What is wrong?\" Va\'Nal asks.";
+
+ch7WrongAge = "\"If I wanted a girlfriend, then I would find someone my own age, with my own body,\" I remind her.";
+
+ch7IAmHewitt = "\"But you are Hewitt now, and I am Élodie. We can be together,\" Van\'Nal says.";
+
+ch7VaNalDisintrestsMe = "\"I am not interested. I\'m sorry, but I\'m just not. Please, I\'d like to be alone for the rest of the night,\" I say, nodding towards the door.";
+
+ch7VaNalAdmitsDisrespect = "Va\'Nal looks sad. \"You are right. We would have been disrespecting our hosts anyway,\" she admits.";
+
+ch7IWillKissVaNal = "\"Only if you\'re sure that kissing will help me.\"";
+
+ch7HeartMustBeCared = "\"Of course. The heart is like any other part of the body. It needs to cared for. I want you to stay well.\"";
+
+ch7OKINod = "\"Okay,\" I nod.";
+
+ch7VaNalKissesMe = "Va\'Nal gets onto the bed beside me, leans towards me, and kisses. Afterwards, Va\'Nal asks, \"Well, \'Hewey\', how do you feel?\"";
+
+ch7VaNalLeavesBed = "\"I feel better. Thank you, Va\'Nal,\" I smile. She gets off the bed.";
+
+ch7GodsWillDispossess = "\"Before I leave, I want you to know that we will be at our home, expecting you to meet us. Your classmates will be their normal selves, so be careful about what you tell them,\" Va\'Nal says.";
+
+ch7VaNalLeavesDorm = "\"Understood,\" I say, and Va\'Nal walks out the door.";
+
+ch7ISleep = "I change into my pajamas and go to sleep.";
+
+ch8Title = "Chapter 8";
+
+ch8TimeAgo = "10 years ago …";
+
+ch8INeededHelpWithReport = "I had to write a book report by next week. I could have written it by myself, but let\'s face it; I was never good with writing papers. It was lunchtime. I walked around the campus, looking for familiar students from my literature class.";
+
+ch8IMetSarah = "I saw Sarah Parson sitting by herself, writing in a journal. I walk up to her. \"Hey, Sarah …\" I said.";
+
+ch8SarahAskedColdly = "Sarah looked up at me. \"Did you need something?\" she coldly asked.";
+
+ch8DidSarahKnowMe = "\"You know me, right? I\'m Alexander Kaden, from literature class,\" I said.";
+
+ch8OKAndSarahAsked = "\"Okay, and …?\" she asked.";
+
+ch8IAskedSarahForHelp = "\"Well, you know how our book report is due next week, right? I know that you\'re really good with reading and writing. I was wondering if we could meet up after class sometime this week and talk about the book. Would that be okay? I could keep you company,\" I smiled.";
+
+ch8SarahDeclinesHelping = "\"Alex,\" she said, \"I don\'t know you that well. Asking me to help is too much.\"";
+
+ch8RebeccaCouldNotHelp = "\"Oh, okay,\" I responded. \"I asked Rebecca earlier to help me, but she said that she couldn\'t, because she wasn\'t reading the same book in her literature class.\"";
+
+ch8DidIKnowRebecca = "\"You know Rebecca?\" Sarah asked.";
+
+ch8IDatedRebecca = "\"Yeah, we\'ve been going out together for a long time now,\" I said.";
+
+ch8SarahAgreedToHelp = "\"Oh,\" Sarah said, worried. \"Listen, Alex, I\'ll help you, but only this one time.\"";
+
+ch8Thanks = "\"Thanks.\"";
+
+ch8ILookedAtSarahsJournal = "I looked at her journal again. \"You really like to write in that. Are you planning to study anything writing-related in university?\" I asked.";
+
+ch8SarahStudiedJournalism = "\"I\'m going to study journalism, actually,\" Sarah said.";
+
+ch8IWishedSarahLuck = "\"Sounds cool. Good luck with that,\" I said.";
+
+ch8SarahThankedMe = "\"Thank you,\" Sarah faintly smiled.";
