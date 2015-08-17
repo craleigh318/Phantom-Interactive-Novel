@@ -58,24 +58,23 @@ class Advertising: NSObject, ADBannerViewDelegate {
         constraints = []
         super.init()
         view.setTranslatesAutoresizingMaskIntoConstraints(false)
-        //addConstraintsWithoutAd()
     }
     
     func bannerViewDidLoadAd(banner: ADBannerView!) {
         banner.hidden = false
     }
     
-    /*private func addConstraintsWithoutAd() {
-        constraints.append(NSLayoutConstraint(item: view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1.0, constant: 0.0))
-        addConstraints()
-    }*/
+    func bannerView(banner: ADBannerView!,
+        didFailToReceiveAdWithError error: NSError!) {
+            shouldDisplayAdvertisement = false
+            NSLog("%@", error)
+    }
     
     private func addConstraintsWithAd(ba: ADBannerView) {
         constraints += [
             NSLayoutConstraint(item: ba, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
             NSLayoutConstraint(item: ba, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: ba, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
-            //NSLayoutConstraint(item: view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: ba, attribute: NSLayoutAttribute.Height, multiplier: 1.0, constant: 0.0)
+            NSLayoutConstraint(item: ba, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0)
         ]
         addConstraints()
     }
