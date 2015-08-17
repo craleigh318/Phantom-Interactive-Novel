@@ -642,7 +642,7 @@ ch7WhatIsWrong = "\"What is wrong?\" Va\'Nal asks.";
 
 ch7WrongAge = "\"If I wanted a girlfriend, then I would find someone my own age, with my own body,\" I remind her.";
 
-ch7IAmHewitt = "\"But you are Hewitt now, and I am Élodie. We can be together,\" Van\'Nal says.";
+ch7IAmHewitt = "\"But you are Hewitt now, and I am Élodie. We can be together,\" Va\'Nal says.";
 
 ch7VaNalDisintrestsMe = "\"I am not interested. I\'m sorry, but I\'m just not. Please, I\'d like to be alone for the rest of the night,\" I say, nodding towards the door.";
 
@@ -772,7 +772,7 @@ ch9BaqerCannotTrustMe = "\"Nuh-uh, this Kaden guy is a perfect example of why hi
 
 ch9BekShtiiAndBaqerYell = "Bek\'Shtii and Baqer yell at each other. Sezja gets upset. \"Why do you brothers have to argue? This is supposed to be our happy place,\" Sezja cries.";
 
-ch9GodsAreFlawed = "Amidst all of this, Van\'Nal walks towards me. \"I am sorry that you have to see this. Our family is not so different than a mortal family, is it?\" she says, holding my shoulder, trying to comfort me.";
+ch9GodsAreFlawed = "Amidst all of this, Va\'Nal walks towards me. \"I am sorry that you have to see this. Our family is not so different than a mortal family, is it?\" she says, holding my shoulder, trying to comfort me.";
 
 ch9VaNalsKissIsRuined = "\"I had hoped that what you and I did yesterday evening would put you in a good mood, but it seems that Baqer just has to ruin it,\" Va\'Nal says, frowning.";
 
@@ -942,3 +942,426 @@ ch10IRejectedFerret = "\"Come on, Caitlyn. Owning an animal like that is a years
 
 ch10PleaseCaitlynAsked = "\"Please?\" Caitlyn asked, looking innocently at me.";
 
+ch11Title = "Chapter 11";
+
+ch11BekShtiiWakesMe = "\"I hope that you slept well,\" Bek\'Shtii says. \"You\'re back in my room?\" I ask. \"I am. Also, you may be interested in this,\' he says, handing me an invitation flyer.";
+
+ch11ReunionWillBeTonight = "The flyer is about a reunion for former students of New Ferando State High School, the same school that I attended many years ago. According to the flyer, the reunion will be held in the Kenyon Imperial Hotel ballroom … late tonight!";
+
+ch11ICannotPrepare = "This could be a problem. I don\'t have much time to prepare. I\'ve already missed several says of work, and I should probably talk to my supervisor about why I\'ll be gone today as well. I don\'t have any proper clothes to wear for this type of social event. I haven\'t even booked a room at the Kenyon Hotel, although perhaps that part isn\'t as important, since I can fly back here. I also have to deal with Sarah Parson. I bet the park ranger who saw me yesterday is going to run to the media, and Sarah, or a co-worker of hers, will interview him, and my reputation will be ruined.";
+
+ch11ICouldPossessSarah = "Wait a minute. Sarah went to high school with me. She might go to the reunion tonight. If so, then I could possess Sarah, bias the interview, and go to the reunion as her. I mean, I don\'t have to go to the reunion, but I would be possessing Sarah anyway, and I\'d bet Sarah would have wanted to go. Also, I might see Rebecca there.";
+
+ch11IReallyWantRebecca = "I would really like to see Rebecca there.";
+
+ch11BekShtiiLeaves = "\"You must have read my mind. Thank you,\" I say to Bek\'Shtii. Bek\'Shtii nods and disappears.";
+
+ch11IGoToLab = "It\'s almost the start of the workday. I head to the laboratory where Caitlyn, Yukio, and I work.";
+
+ch11IWantUsToGoToHotel = "\"Hello, Caitlyn and Yukio. I\'m sorry about all of the worrying that I have caused for either of you. I want to make up for it. I want us to drive to the Kenyon Imperial Hotel. There is a major social event being held there. I will let you see my powers firsthand. How about it?\"";
+
+ch11YukioIsNotPaidToGoWithMe = "\"Kaden,\" Yukio says, \"we are supposed to work in the laboratory today. Caitlyn and I are not being paid to go on field trips with you. Perhaps you should start working again as well.\"";
+
+ch11IWillCallSupervisor = "\"Okay, Yukio. I can call our supervisor and get official permission to go to the hotel today. Would you and Caitlyn go with me then?\"";
+
+ch11YukioShrugs = "Yukio shrugs.";
+
+ch11ICallSupervisor = "I call our supervisor. \"Hello? Supervisor? I might have already called you about this, but the reason that I was absent for the last few days was because of an important field study. I wish to continue my study today, but I also wish for Caitlyn Rylie and Yukio Kiyoshi to accompany me. Is that all right with you?\"";
+
+ch11WeDriveOutOfArcticon = "\"Okay, thank you.\" I\'m cleared to go out with Caitlyn and Yukio. I tell them the news, and we leave Arcticon to drive off.";
+
+ch11YukioDrivesDownHighway = "Yukio is driving Caitlyn and me down the highway. It\'s overcast and raining today.";
+
+ch11KNFNVanPassesUs = "I see a KNFN News van pass by us on the other side of the highway. \"Yukio, a news van just headed by us towards the park. I need to check it out. Keep driving with Caitlyn to the Kenyon Hotel. I\'ll contact you later.\"";
+
+ch11IRollDownWindow = "I turn into my spirit form and roll down my car window.";
+
+ch11IFlyToVan = "I jump out of the window and fly towards the news van.";
+
+ch11ILandOnVan = "I land on the van and crawl down to its underside.";
+
+ch11VanEntersPark = "The van goes towards the Western Continental Park and passes through the entrance.";
+
+ch11VanStopsAtLodge = "The van eventually stops by the lodge. It\'s hard to tell, hiding under the news van, but it looks like the students have already left.";
+
+ch11SarahLooksAtMirror = "I see Sarah and the news crew walk out of the vehicle. They talk. Eventually, Sarah walks over to the other side of the van, pulls out a handheld mirror from her pocket, and looks at herself.";
+
+ch11IPossessSarah = "I take this opportunity to possess Sarah.";
+
+ch11IExamineSarah = "I find myself looking at Sarah\'s face in her mirror. I brush my hair back and smirk at my new reflection, before I put the mirror away.";
+
+ch11IGoToCrew = "I go back to the news crew and tell them that I\'m ready.";
+
+ch11RangerComes = "The news crew calls over the park ranger who tried to detain me.";
+
+ch11WeStartInterview = "We all get ready for the news report to be filmed, and we go on the air.";
+
+ch11AnchorStarts = "I hear a news anchor on my earphone. \"The unidentified man who may have assaulted a New Ferando police officer earlier this week strikes again. Sarah Parson joins us live at the Western Continental Park. Sarah?\"";
+
+ch11IIntroduceRanger = "I respond, \"We are here with a park ranger who says that a man attacked him yesterday afternoon.\" I turn to the ranger. \"So, tell us what happened?\"";
+
+ch11RangerSawMe = "\"Well, a coworker of mine was guiding a tour with a group of students. He called me on the radio, saying he saw a black bear who knocked a student unconscious, and he wanted me to investigate while he continued the tour. When I got there, I saw a man in a blue hooded raincoat. I asked him where he came from, and he started answering real aggressively.\"";
+
+ch11WasIAggressive = "\"Aggressively? What did he say specifically? Was he just lost or confused?\" I interject.";
+
+ch11RangerWasToDetainMe = "\"He said he came from the ruins, but the ruins are off-limits. There\'s some very fragile architecture there. I told him I had to detain him.\"";
+
+ch11WasIDangerous = "\"You said that you had to detain him? Was he dangerous? He was not armed or anything, was he?\" I ask.";
+
+ch11StandardProcedure = "\"It\'s just standard procedure, Ma\'am. We value our park greatly, and take pride in keeping it safe.\"";
+
+ch11GoOnINod = "\"Understandable. Please, go on,\" I nod.";
+
+ch11ISaidIWasPhantomOfWest = "\"I was about to handcuff him, but then he took my gun and pulled out the magazine and damaged it. Then, his face turned to black, and his eyes glowed red. He told me that he was the \'Phantom of the West\', and he ran off.\"";
+
+ch11WhatShouldIKnow = "\"He said that his name was the \'Phantom of the West\'? I see. One more thing before we go: if this phantom were here now, what would you want him to know?\"";
+
+ch11IShouldTurnIn = "\"I\'d say he should turn himself in. I don\'t care what kind of powers he has. He has the obligation to act in a civilized manner, just like anyone else.\"";
+
+ch11RangerMisunderstoodMe = "\"Thank you for your time, and I hope that the encounter between you and this phantom was just a misunderstanding,\" I say to the ranger, much to his puzzlement.";
+
+ch11ISignOff = "I turn to the camera. \"This is Sarah Parson at the Western Continental Park. We will keep you updated with any more news regarding this mysterious, handsome, hooded man, here on KNFN.\"";
+
+ch11AnchorThanksMe = "\"Thank you, Sarah,\" says the news anchor on my earphone.";
+
+ch11WePackUpToVan = "The news crew and I pack up our equipment and return to the van.";
+
+ch11VanDrivesToNewFerando = "We drive south, to New Ferando. I take off my earphone. I then look through Sarah\'s memories. It seems that she already booked a room at the Kenyon Imperial Hotel so that she wouldn\'t have to drive in the rain at night and deal with New Ferando\'s congested traffic. Sarah also asked to have a short workday today, for the reunion. I tell the crew to drop me off at the Kenyon Imperial Hotel. The hotel and the KNFN headquarters are only a couple blocks away from each other, so it\'s no big deal for them.";
+
+ch11IExitVan = "We reach the Kenyon Imperial Hotel. I grab my handbag, well, Sarah\'s. I thank the crew and exit onto the sidewalk.";
+
+ch11IRegroupWithCaitlynAndYukio = "I look for Caitlyn and Yukio and find them near the entrance. \"Hello, Caitlyn and Yukio. It\'s me, Dr. Kaden,\" I say.";
+
+ch11SecretFantasy = "\"Dr. Kaden?\" Yukio asks. \"You possessed Sarah Parson? The journalist? I have to wonder if you are doing this to live out some secret fantasy of yours.\"";
+
+ch11YukioFlattersMe = "\"You complimenting my tastes flatters me, Dr. Kiyoshi,\" I say to Yukio, sarcastically.";
+
+ch11ILeftMyWallet = "Yukio reaches into his pocket and pulls out my wallet. \"You left your wallet in my car,\" he says.";
+
+ch11YukioPullsBackWallet = "I try to take my wallet, but Yukio pulls it back. \"Oh, wait. You are not Dr. Kaden. I am so sorry, Ms. Parson, for mistaking you for him,\" Yukio says, with ridicule.";
+
+ch11WhatDoesYukioWant = "\"Okay, Yukio, what do you want now?\" I ask.";
+
+ch11WillIBookYukioARoom = "\"If Caitlyn and I need to stay here, we need a room. Will you promise to book us one and pay for it?\" Yukio asks.";
+
+ch11SarahAlreadyBooked = "\"Sarah already booked a hotel room for herself. It has two double-sized beds. None of us have to spend any more money,\" I say.";
+
+ch11YukioNeedsSeparateRoom = "Yukio shakes his head and puts his arm around Caitlyn. \"No. Caitlyn and I need separate rooms. I cannot trust Caitlyn with you anymore.\"";
+
+ch11YukiItsFine = "\"Yuki, it\'s fine,\" Caitlyn says, but Yukio ignores her.";
+
+ch11YukioGivesMeWallet = "\"Okay, fine,\" I give in. Yukio finally gives me my wallet.";
+
+ch11WeEnterHotel = "We head through the entrance. The Kenyon Hotel\'s lobby is spacious and well decorated. This hotel is a lot better than that small, no-name hotel that I was at earlier this week.";
+
+ch11YukioWaitsByEscalator = "\"We will be by the escalator, while you get us a room,\" Yukio says. I head to the reception desk.";
+
+ch11IGreetReceptionist = "\"Hi, I booked a room here earlier today,\" I say to the receptionist. \"I was wondering if we could book a second room. I have some last-minute companions.\"";
+
+ch11ReceptionistBooksRoom = "\"Sure,\" the receptionist says. She tells me the cost of the second room and asks me to pay.";
+
+ch11HowDoIPay = "Now, the question is: do I pay for Yukio\'s and Caitlyn\'s room with my money, or with Sarah\'s money?";
+
+ch11IPayAsMyself = "I decide to pay with my own money.";
+
+ch11IGiveMyCardToReceptionist = "I take my payment card out of my wallet and give it to the receptionist. She looks at my card. \"You don\'t look like an \'Alexander Kaden\', Ms.,\" she says.";
+
+ch11IAmMyBoyfriend = "\"Oh, he\'s … my boyfriend,\" I say to the receptionist.";
+
+ch11ProveIt = "\"Prove it,\" the receptionist says, folding her arms.";
+
+ch11IStare = "I stare blankly at her.";
+
+ch11IdentityTheft = "\"I\'m just kidding,\" she laughs. \"We\'re supposed to check for those things now. You remember all of that identity theft our country had last year, right? You\'re fine, though.\" She hands back my card. \"You\'re Sarah Parson, right? It took me a while to recognize you,\" she says. I nod back.";
+
+ch11AmICute = "\"By the way, is this \'Alexander\' cute?\" she asks.";
+
+ch11YeahIBlush = "\"Yeah,\" I respond, blushing.";
+
+ch11IPayAsSarah = "I decide to pay with Sarah\'s money.";
+
+ch11IGiveSarahsCardToReceptionist = "I hand Sarah\'s payment card to the receptionist. She looks at Sarah\'s name.";
+
+ch11ReceptionistKnowsMeAsSarah = "\"Oh, Sarah Parson. You\'re from the news channel, right?\" the receptionist asks, excited.";
+
+ch11YeahINod = "\"Yeah,\" I smile and nod.";
+
+ch11ReceptionistIsFanOfSarah = "\"Oh, I should have recognized you right away! I\'m a big fan of yours. Can I have your autograph?\" the receptionist asks, handing me a notepad on the desk.";
+
+ch11LovelyFollower = "\"Sure thing, lovely follower,\" I say to her. I sign \"Sarah Parson\", imitating Sarah\'s handwriting as well as I can.";
+
+ch11ReceptionistSwipesSarahsCard = "\"Thanks,\" says the receptionist. She swipes Sarah\'s card and gives it back. I feel a bit bad, though. As it is, the real Sarah won\'t get to experience her high school reunion, and now, she\'s out some money, just because Yukio\'s being stubborn.";
+
+ch11IGetKeycard = "\"Here is your second key, Ms. Parson,\" the receptionist says, handing me a keycard.";
+
+ch11IGoToEscalator = "I go to Caitlyn and Yukio by the escalator. \"Yukio, I have your keycard,\" I say, to get his attention.";
+
+ch11IGiveYukioKeycard = "Yukio turns around. \"Thank you,\" he says, taking his keycard. \"I must apologize for my behavior. I was working stressfully all this week, and I have been taking out the stress on you. It is not right.\"";
+
+ch11WhereDoWeEat = "\"Whatever, Yukio,\" I say. I look at my clock. \"It\'s lunchtime. Where should we eat?\" I ask. Caitlyn and Yukio shrug. Well, I guess that it\'s up to me then. Like I said before, the Kenyon Imperial Hotel has several restaurants. Each one serves its own type of cuisine, and each one has a different price range.";
+
+ch11WeGoToHabitat = "It\'s probably best just to get something that will hold me over until the reunion, something affordable. \"Let\'s go to The Habitat,\" I say to Caitlyn and Yukio. They agree, and we go.";
+
+ch11IAcceptYukiosApology = "We walk through the hotel to get to The Habitat. I\'m walking beside Yukio, and I see him frowning. \"Hey, Yukio, I was just kidding,\" I say to him. \"I really do accept your apology.\" Yukio sighs.";
+
+ch11HostGreetsUs = "We finally reach The Habitat, a rainforest-themed casual diner. \"Hello, welcome to The Habitat,\" says an employee in a safari outfit, as we come in.";
+
+ch11WeSitAtHabitat = "The employee seats us at a table. We look through the menu. \"I might have a good-old cheeseburger,\" I say to Caitlyn and Yukio.";
+
+ch11INeedToWatchSarahsWeight = "\"Kadey, you might want to watch Sarah\'s weight,\" reminds Caitlyn.";
+
+ch11SarahWillBeFine = "\"Nah, Sarah will be fine,\" I wink at Caitlyn.";
+
+ch11YukioIsLuckyToBeWithUs = "The server comes by. \"You must be lucky to be eating out with two fine ladies,\" he says to Yukio. The server takes our orders and leaves.";
+
+ch11IEatBurger = "Sometime later, we get our food. My burger is nice and juicy. It even comes with thin-cut, fried potatoes. Yum! Oh, and coleslaw.";
+
+ch11HabitatDims = "In the middle of eating my food, the lights in the restaurant dim out. What\'s going on? Is someone cutting the power?";
+
+ch11FakeThunder = "Suddenly, the lights flash, accompanied by thunder on the loudspeaker.";
+
+ch11FakeMonkey = "The loudspeaker then plays monkey sounds, \"Ooh ooh aah aah aah aah aah!\"";
+
+ch11HabitatIsLame = "The lights finally brighten back to normal. Well, that was lame. I could barely even see my cheeseburger while that was happening.";
+
+ch11IFinishEating = "We finish our food. We each pay for our own meals.";
+
+ch11WeGoUpstairs = "We leave the restaurant and take the elevators up to our rooms.";
+
+ch11IEnterHotelRoom = "\"I\'ll let you guys know when the event starts,\" I say to Caitlyn and Yukio. They go into their room. I look for my own keycard in my handbag.";
+
+ch11IExamineSarahsRoom = "I look around Sarah\'s hotel room. It looks nice and tidy. I see luggage by the bed. It seems that Sarah was here earlier, before I possessed her.";
+
+ch11ICheckSarahsCloset = "I look in the closet. A few of Sarah\'s outfits are hung.";
+
+ch11IWillExcercise = "Hm … Caitlyn did ask me to watch Sarah\'s weight. Maybe I can make up for the cheeseburger by exercising. I know that this hotel has a workout center, so I can go there.";
+
+ch11IChangeIntoAthleticWear = "I change out of my current clothes into a more athletic outfit.";
+
+ch11ILookAtHotelMirror = "I end up wearing a lightweight sweatshirt, unzipped, over my undershirt. I\'m also wearing athletic shorts and running shoes. I look at myself in the mirror. I look just about ready, but I feel like I\'m forgetting something.";
+
+ch11IWorePonytailAsAnanya = "Oh, that\'s right! When I was going to physical education class as Ananya, I tied my hair into a ponytail, so that my hair wouldn\'t get in the way. I should do that here, too.";
+
+ch11ITieSarahsHair = "Done. I look in the mirror one more time. Yep, I\'m ready to go. I take Sarah\'s wallet and keycard out from her handbag and into the pocket of my sweatshirt, and then I head out.";
+
+ch11IKnockForCaitlyn = "I stop by Yukio and Caitlyn\'s room, and knock on the door.";
+
+ch11CaitlynOpensDoor = "Caitlyn opens the door. \"Hi there,\" she says.";
+
+ch11WillCaitlynExcerciseWithMe = "\"Hi, Caitlyn. You said that I should maintain Sarah\'s weight earlier, so I\'m going down to the fitness center to work out. Do you want to come with me?\"";
+
+ch11CaitlynDoesNotExcerciseWithMe = "\"Sorry, Kadey, but Yuki and I are busy right now. Still, it\'s nice of you to think about Sarah\'s health. You must really care about her,\" Cailtyn says. \"Take it easy,\" she says, hugging me.";
+
+ch11IEnterHealthClub = "I take the elevator down to the Kenyon Imperial Hotel Health Club. I swipe my key through the card reader and head inside.";
+
+ch11ILookForTreadmill = "There are other people inside. I see an unused treadmill and decide to use it.";
+
+ch11IRunOnTreadmill = "I run on the treadmill, and I manage to keep a steady pace. Yeah, I\'m working off those 150 grams! I can even feel Sarah\'s average-strength muscles building up. This feels great! Now I know why it\'s good idea to exercise every week.";
+
+ch11IGetOffTreadmill = "Once I feel that I\'m done, I stop the treadmill and get off.";
+
+ch11GuestApproachesMe = "I\'m about to leave, when another hotel guest approaches me.";
+
+ch11GuestFlirts = "\"Oh, well … I saw you running on the treadmill. You really seemed to be going at it. That kind of athleticism shouldn\'t go to waste.\"";
+
+ch11AmIGoodOrBad = "The man walks towards me and backs me into a wall. \"I have one more question. Are you a good girl, or are you a bad girl?\"";
+
+ch11GuestWastesMyTime = "Ugh, this man is wasting my time. Should I play along anyway, or just leave him?";
+
+ch11ILeaveGuest = "I decide to leave him.";
+
+ch11IAmGoodGirl = "\"I\'m a good girl today. Sorry to disappoint you, creeper,\" I tell him.";
+
+ch11IPushGuest = "I extend my tentacles from my back and push him away.";
+
+ch11GuestWillNotForget = "The man falls to the floor. \"I won\'t forget this!\" he tells me.";
+
+ch11IPlayGuest = "I decide to play along.";
+
+ch11IAmNaughtyFemale = "\"Oh, yes, I am a naughty female,\" I say, smirking at him.";
+
+ch11GladToHearIt = "\"Glad to hear it,\" he replies.";
+
+ch11IWrapGuest = "\"In fact, I\'m so naughty, I can do this …\" I tell him, and I extend my tentacles from my back. I wrap my tentacles around him.";
+
+ch11WhatIsMyProblem = "\"Agh!\" the man shouts. \"What\'s your problem, Lady?\" He pushes himself out of my tentacles and falls onto the floor.";
+
+ch11GuestAskedForIt = "\"You asked for it,\" I say coldly.";
+
+ch11ILeaveHealthClub = "Other people in the fitness center stare at us, confused. I walk out and head back to my room.";
+
+ch11IRelax = "I sit on my bed and relax. It\'s midafternoon, and there\'s plenty of time to spare before the reunion late tonight. I\'m tired from working out, so I should stay here.";
+
+ch11IWillShower = "I decide to take a shower.";
+
+ch11IShouldCool = "I worked up quite a sweat, so it\'s reasonable that I cool off by showering.";
+
+ch11ILayNewClothes = "I lay out some clean, new clothing on the bed, so that I have something to change into after I\'m done.";
+
+ch11IGetTowel = "I pick out a towel, bring it into the bathroom, and lay it just outside the shower.";
+
+ch11IAdjustTemperature = "I turn on the shower and adjust the temperature. Once the temperature is just right, I undress and walk in.";
+
+ch11IShower = "Ah, these past few days have been hectic. A good shower helps me put everything back in focus. It\'s just me, alone with the running water. It\'s quiet and relaxing.";
+
+ch11IFeelGood = "Heheh, who am I kidding? I feel goooooooood.";
+
+ch11IDry = "After my shower, I dry myself off with the towel. I walk out to the bedroom.";
+
+ch11IWatchTV = "I decide to watch television.";
+
+ch11NewNewsSegment = "I turn on the television set in my room. It has the news channel. I watch a news segment done by another reporter.";
+
+ch11SeawallIntroduced = "The reporter is standing outside. \"I\'m out on the coastline of New Ferando. Right now, we are standing on top of New Ferando\'s seawall, which keeps the Western Ocean separated from the city.\"";
+
+ch11CameraShowsSeawall = "The camera moves to the edge of the seawall and points downwards.";
+
+ch11MayorIsCriticized = "\"As you can see, the wall is in moderate disrepair. The mayor of New Ferando is being criticized neglecting the safety of his citizens.\"";
+
+ch11Potholes = "The video fades to prerecorded footage of cars driving on the road. \"The seawall is not the only safety concern for which the mayor has been criticized. New Ferando\'s busier roads, as well as its highway, have been reported to contain potholes,\" says a voiceover of the reporter.";
+
+ch11MayorsDefense = "The footage then shows the mayor of New Ferando being interviewed outside the city hall. \"We make the most out of our budget,\" he says. \"We spend a fortune on education. We spend a fortune on healthcare and our hospitals. Ultimately, it is up to our prime minister in the mainland to give us an adequate budget to take care of these problems, and, in recent years, he has simply been unable to do so.\"";
+
+ch11ITurnOffTV = "Eh, it\'s just politics. I turn off the television shortly afterwards.";
+
+ch11IWearFormalwear = "I put on the formalwear that Sarah was going to wear to the reunion. Now that that is out of the way, I can take a nap and be ready to go to the reunion as soon as I wake up. I lie on top of my bed and go to sleep.";
+
+ch12Title = "Chapter 12";
+
+ch12TimeAgo = "10 years ago …";
+
+ch12RebeccaAvoidedMe = "Rebecca hadn\'t been meeting up with me for lunch at school as often as she used to. At first, I didn\'t think much about it. I just ate alone and then worked on my homework for the rest of the lunch period. A few weeks passed, and, well, I got curious about what was going on with Rebecca.";
+
+ch12ISpiedOnRebecca = "One weekend, I took my binoculars and entered the building across the street from our apartment building. I went up to the roof. From there, I looked into Rebecca\'s room. It was dim, but from what I was able to make out, Rebecca was sitting on her bed with another person, and they were looking into each other\'s eyes. Then, the other person reached towards Rebecca, and …";
+
+ch12DidRebeccaLoseInterest = "… And … well … I just felt too nervous. I lowered my binoculars, and I was a bit confused. I understood that Rebecca enjoyed being with her other friends, but … why this? What was wrong with me that had Rebecca lose interest?";
+
+ch12MyHeartStopped = "Just that moment, my heart felt like it stopped. I had just realized what was going on, but I had to make sure.";
+
+ch12ICaughtRebecca = "The following week, I met up with Rebecca at school. \"Rebecca! I … we … we haven\'t really talked to each other these past few weeks. I mean … I\'m sure you\'re okay, but … uh …\" I started to nervously stutter.";
+
+ch12RebeccaWasUncomfortable = "At first, Rebecca looked puzzled, but then she looked down and sighed. \"Alex … you\'ve been giving me a lot of attention lately. I just needed some space. Look, I …\" She swore under her breath. \"… We\'ve been good friends and everything, but … you\'ve just been a bit too controlling. I mean, I get it. You\'re the socially-awkward geek, and you probably mean well by all of this, but … I just don\'t think I\'m the right girl for you. If you could be in my shoes, you\'d understand.\"";
+
+ch12ILeftRebeccaAlone = "I looked down for a moment too, staring blankly at the ground. \"And Alex …\" I look back up. \"… please, for the rest of the school year, let me be by myself. Thanks,\" she said softly. I nodded and walked away.";
+
+ch13Title = "Chapter 13";
+
+ch13IAwaken = "I wake up from my nap. I\'m still alone in my room. I look at the clock. I have about half an hour before the reunion starts.";
+
+ch13IPace = "I get up and pace around my room. Hm, what else can I do to prepare for the reunion? Well, if I stay as Sarah, maybe I should access some more of her memories. It might help me stay in character during the event.";
+
+ch13IConcentrate = "I start to concentrate. Ergh! It\'s making my head hurt. I need to stop thinking.";
+
+ch13IClearMyMind = "I stop, clear my mind, and take some deep breaths. I start to feel better.";
+
+ch13RebeccaAppears = "I turn around and see Rebecca sitting on my bed. \"I\'m glad we met,\" she says.";
+
+ch13IsRebeccaVaNal = "\"How did you get in here? Are you Va\'Nal again?\" I ask.";
+
+ch13RebeccaHasNoPlaceForMe = "Rebecca ignores what I said. \"I remember when I first met him. I was young then. I thought I could open up to him. For all of those years, he acted like a friend, but I was wrong about him. He didn\'t actually care,\" Rebecca sniffles. She looks up at me, \"Then, I met you. You reminded me what true friendship was. You let me realize that he had no place in my life. You let me realize that I didn\'t really need a boyfriend.\"";
+
+ch13StopItRebecca = "\"Rebecca, come on. Don\'t talk like that,\" I say nervously.";
+
+ch13RebeccaVanishes = "I walk towards her and reach out, but she vanishes. Oh, what\'s going on?";
+
+ch13IWashMyFace = "I go to the bathroom sink and splash water on my face. I look at Sarah\'s reflection again. I feel a little bit better.";
+
+ch13IGetCaitlynAndYukio = "I leave my room and go to the door of Yukio and Caitlyn\'s room. I knock. They answer, and I tell them that I\'m ready to go.";
+
+ch13WeWalkToBallroom = "We walk through the halls of the hotel on our way to the ballroom. This is it! It\'s been years since I\'ve seen Rebecca! What am I going to say to her? What would Sarah say to her?";
+
+ch13IFeelLightheaded = "I start to feel lightheaded.";
+
+ch13ILeanOnWall = "I tell Caitlyn and Yuko that I need to stop and lean on the wall for a moment. I take more deep breaths.";
+
+ch13AnxietyAttack = "Tentacles come out of my back. Now what\'s happening? Am I losing control of my powers? It must be the anxiety. Why am I so worried? Rebecca won\'t see me anyway, when I talk to her. She\'ll see Sarah.";
+
+ch13IAmAMonster = "I look at my tentacles again. Ah, who am I kidding? She won\'t see Sarah either. She\'ll see a monster.";
+
+ch13IShouldNotGo = "Caitlyn stares silently in shock at me. Yukio asks, \"Kaden, what is going on? You look unwell. Perhaps you should not go to this event, until you have calmed down.\"";
+
+ch13IHaveToGo = "\"I have to go!\" I shout.";
+
+ch13YukioIsRight = "I have a lot going through my head right now. Still, Yukio has a point. \"You\'re right, Yukio,\" I say. \"I just need a moment to calm down. Stay here. I\'ll be back in a couple of minutes.\"";
+
+ch13IGoToBalcony = "I walk to a nearby balcony outside. I see the view of the city in front of me. It\'s still raining. The sky is grey, like it always is this time of year.";
+
+ch13AmIUpset = "\"Are you upset?\" a voice asks behind me. I turn around.";
+
+ch13IWasNeverTheProblem = "\"We got off on the wrong foot, didn\'t we?\" remarks Baqer. \"I was getting all mad at you, and for what? It turns out you weren\'t the problem in the first place.\"";
+
+ch13WeKnowRealProblem = "Baqer leans on the balcony\'s rail, looks at me, narrows his eyes, and smirks. \"We both know who the real problem is, don\'t we?\"";
+
+ch13RebeccaMadeMeBad = "\"That Rebecca girl. What happened with her? For nearly six years, you treated her right. You were there for her, weren\'t you? Those years go by. You\'re near the end of high school. You wait for her to repay you, but what does she do? She doubts. She changes her mind. She backs out. And what\'s the worst part? She makes you the bad guy.\"";
+
+ch13TooLateForRebecca = "Baqer looks out to the city. \"Go to the reunion, if you want. Let\'s be honest, though. Even if the girl is there, what\'s the point? Even if she apologizes, what\'s the point? It\'s too late for that. She wasn\'t there when you needed her the most. Getting through to her is a lost cause,\" Baqer says, shaking his head.";
+
+ch13RebeccaWasNotThere = "\"You\'re right. She wasn\'t there,\" I admit.";
+
+ch13BaqerIsGloomy = "\"Aw, don\'t be all gloom and doom, Brother,\" says another voice behind us. It\'s Sezja.";
+
+ch13ICanBeAnyoneIWant = "\"Don\'t listen to him, Best Friend,\" Sezja says to me. \"Think about the powers our brother Bek\'Shtii has given you. You can be with anyone you want. You can be anyone you want.\"";
+
+ch13ILookWonderful = "Sezja looks me over. \"Oh, you look wonderful! Stop doubting yourself, Friend. Go to that reunion and be the person she wants you to be.\"";
+
+ch13BeWhomRebeccaWants = "\"Be who she wants?\" I ask.";
+
+ch13GodsGaveInput = "\"My brothers have given their input,\" a third voice says. It\'s Bek\'Shtii.";
+
+ch13CoworkersWillDoubt = "\"Do not let them waste any more of your time. Your coworkers wait for you back inside. The longer that you take, the more they will doubt you. You already know, firsthand, what happens when others doubt you.\"";
+
+ch13BekShtiiIsDoubted = "\"The False Spirit isn\'t the only person being doubted right now,\" Baqer says to Bek\'Shtii. Bek\'Shtii sighs and turns back to me, \"I only say these things for your own good. Now, go.\"";
+
+ch13YeahYeahOKISay = "\"Yeah, yeah, okay,\" I say, and I leave the balcony.";
+
+ch13IEncounterOfficer = "I head back to where Caitlyn and Yukio were. When I reach them, I see a police officer standing beside them.";
+
+ch13PoliceReceivedComplaint = "\"Hello, Sarah Parson. We were looking for you. One of the hotel guests complained that a woman with tentacles attacked him.\"";
+
+ch13OhReallyIAsk = "\"Oh, really?\" I ask sarcastically.";
+
+ch13DidIDealWithScientists = "\"Miss Parson, I do believe that you interviewed a park ranger about a man who shapeshifted into a dark figure with glowing red eyes. And, the day before, you interviewed another police officer about that same dark figured with red eyes. I always thought you were the deceptive type, Miss Parson. Tell me, what do you know about this dark phantom? Did you make a deal with those mad scientists up in the mountains?\"";
+
+ch13HotScoop = "The officer turns to Caitlyn and Yukio and looks back at me. \"Ah, that would explain it,\" he says. \"Maybe you are the phantom who attacked my coworker earlier this week. Why did you do it, Young Lady? Did you want even more fame? Was being a successful journalist not good enough for you? I bet you wanted a big story that would push you to the top! You wanted a hit so bad, you went to these mad scientists to make you one of these phantom-things so that you would be the talk of the town, so that you would be your own hot scoop.\"";
+
+ch13HotScoopInJail = "\"Well, let me make it clear, Miss Parson, you\'ll get your hot scoop … in jail!\"";
+
+ch13OfficerIsAboutToShockMe = "The officer raises an electroshock pistol at me.";
+
+ch13ICounterOfficer = "I extend my tentacles and push his arm up just as he\'s about to electrocute me. \"Okay, one, I\'m not really Sarah Parson. Two, you should watch your attitude, Officer,\" I taunt him.";
+
+ch13OfficerSummonsAgent = "\"Oh, you\'re not getting away, whoever you are. Agent, get this thing!\" the officer shouts.";
+
+ch13IAmVacuumed = "A man with a vacuum device on his back enters the hall. He nods at the officer, and the man points the hose of the device at me. I get separated from Sarah\'s body, and I get sucked into the device. \"I knew that our country\'s Bureau of Paranormal Investigations would be useful,\" the officer chuckles.";
+
+ch13ItIsDark = "It\'s so dark in here. I can\'t see anything. I hear the officer\'s voice. \"Ma\'am, you need to stay put! This is official business.\"";
+
+ch13TheyTakeMeAway = "\"Kadey, don\'t let them take you away!\" says Caitlyn\'s voice.";
+
+ch13DoNotRevealMyRealName = "\"Don\'t let them know my real name. Sheesh,\" I say to Caitlyn.";
+
+ch13KatieIsEmbarrassing = "\"Katie? Your name is \'Katie\'? That\'s embarrassing for a menace like yourself! No wonder why you don\'t want us to know,\" the officer laughs.";
+
+ch13KatieFoolsThem = "\"Uh, yeah, that\'s right. My name is \'Katie\'. Darn, well, I guess you got me now,\" I tell the officer.";
+
+ch13LaughingFades = "The officer keeps laughing. The laughing fades away. Then, I hear nothing, and my consciousness fades.";
+
+ch14Title = "Chapter 14";
+
+ch14TimeAgo = "500 years ago …";
+
+ch14ItWasDusk = "It was a warm and bloody dusk.";
+
+ch14ArmyMarched = "Nearly a thousand men of the mainland marched their way to the sacred pyramid.";
+
+ch14MenCarriedTorches = "Some men carried torches.";
+
+ch14MenCarriedFirearms = "Others carried firearms.";
+
+ch14NativesFled = "As the mainland army continued to march, the surviving natives fled in terror.";
+
+ch14ArmyReachedPyramid = "The army finally reached the base of the pyramid.";
+
+ch14PhantomArose = "Before the men could walk the pyramid\'s steps, a large figure arose from the top.";
+
+ch14ElFantasma = "The figure towered over the mainlanders. They looked up and pointed at it. \"¡El fantasma! ¡El fantasma!\" they cried.";
