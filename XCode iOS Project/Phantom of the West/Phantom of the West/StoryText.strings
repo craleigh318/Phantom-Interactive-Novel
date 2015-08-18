@@ -1365,3 +1365,517 @@ ch14ArmyReachedPyramid = "The army finally reached the base of the pyramid.";
 ch14PhantomArose = "Before the men could walk the pyramid\'s steps, a large figure arose from the top.";
 
 ch14ElFantasma = "The figure towered over the mainlanders. They looked up and pointed at it. \"¡El fantasma! ¡El fantasma!\" they cried.";
+
+ch15Title = "Chapter 15";
+
+ch15IAmInJail = "I awaken in my gaseous form. I\'m in a vacuum-sealed glass tube. The tube is about the size of a person. Just outside the tube are the confines of a jail cell.";
+
+ch15ISeeViolinist = "I hear somber music. I turn around and see a prisoner in another cell playing a violin. He looks down at the ground while playing, deprived of any hope.";
+
+ch15ISeeBeggar = "I turn around again and see another prisoner shaking a can of coins. \"Spare change, Sir?\" the prisoner asks, looking up at a passing jailer.";
+
+ch15ISeeAddict = "I look at one final prisoner, who\'s in a cell right next to me. He\'s breathing from a large inhaling device.";
+
+ch15AddictTalks = "He notices me and turns his head. \"Hey Man, didn\'t notice you until now. Wow, I\'ve seen some pretty gnarly stuff before, but you\'re the real deal, aren\'t you? What are you anyway, and what did you get busted for?\"";
+
+ch15SoundproofTube = "I can\'t respond to him. My tube must be soundproof.";
+
+ch15LittleBuddyCannotTalk = "\"Can\'t talk, Little Buddy? No probs. I\'ll just be chilling here.\"";
+
+ch15IHaveCivilRights = "Shortly afterwards, the prisoners fall asleep. I look up at the small window in my cell. It\'s overcast and raining. It doesn\'t matter, though. I can\'t do anything in this tube. The police department doesn\'t think that they can keep me in this tube, do they? I have civil rights!";
+
+ch15BallBreaksMyCell = "A wrecking ball crashes through the back wall of my cell and breaks my tube. I fly out of the broken tube and reform into my physical body.";
+
+ch15ConstructorGreetsMe = "Outside, I see a construction worker inside the cabin of a crane. The worker steps out of the cabin and waves his arms. \"Hey, Best Friend, I set you free!\"";
+
+ch15ConstructorIsDispossessed = "Suddenly, a figure jumps out from the construction worker\'s body. The figure lands in front of the worker.";
+
+ch15ItsSezja = "It\'s Sezja!";
+
+ch15SezjaIsHappySeeingMe = "\"I felt so bad when those guys locked you up! I\'m glad you\'re okay.\"";
+
+ch15HowLongWasIJailed = "\"Thanks, Sezja,\" I say. \"How long have I been in there?\"";
+
+ch15ItIsMorning = "\"You\'ve been in there overnight. This is actually morning, but I guess it\'s hard to tell with this rain,\" Sezja says, \"But a lot has happened! Look around!\"";
+
+ch15ILookAround = "I do look around.";
+
+ch15OhWow = "Oh … wow …";
+
+ch15FloodedRoads = "The roads nearby are all flooded.";
+
+ch15BekShtiiAndBaqerFight = "\"While you were in jail, my two brothers started fighting,\" Sezja explains. \"All this time, we have been wanting you to bring the change that our continent sorely needs. When you got captured, my brothers decided to take matters into their own hands and bring that change themselves. Bek\'Shtii has changed into a large phantom and has flooded half of the city, hoping to erase the existing life and to begin anew. Baqer, on the other hand, just wants to destroy everything. Baqer split himself into hundreds of fire spirits and is terrorizing the other half of the city.\"";
+
+ch15CanBaqerTurnIntoFireSpirits = "\"Wait, hold on. Baqer turned himself into hundreds of fire spirits? I … didn\'t know that he could do that,\" I tell Sezja.";
+
+ch15DoIDislikeHistory = "\"I guess you\'re not into history, are you?\" Sezja laughs. \"Maybe when we were those students, I should\'ve been someone who had history class with you. Then, I could have helped you learn all the good stuff,\" he adds.";
+
+ch15DidSezjaEnjoySchool = "\"You really enjoyed being at that school, didn\'t you?\" I ask.";
+
+ch15ThereIsCamp = "\"Yup,\" he says, rubbing the back of his head. He sighs, \"I guess this isn\'t a good time to be cheerful. Hundreds of thousands of lives are at risk.\" Sezja frowns. \"Listen, there\'s an evacuation camp at the airport, at the top of the New Ferando Hill. Find your friends and take them to the camp. I\'m sure the government will fly you out of this place. I don\'t know if I\'ll ever see you again.\"";
+
+ch15SezjaHugs = "Sezja hugs me. \"This is it, Good Buddy,\" he says.";
+
+ch15SezjaPaddles = "Sezja walks away to the flooded roads. He takes off his mask and sets it on the water. He sits on the mask, like a raft, and paddles away.";
+
+ch15MeAndCity = "So this is it, then. It\'s me and the city. I watch as the flood rises and some of the weaker buildings begin to crumble. I need to act now.";
+
+ch15ILookAtConstructor = "I look at the construction worker that Sezja had possessed just moments ago.";
+
+ch15IPossessConstructor = "He might be useful, so I possess him.";
+
+ch15MyTeethAreBad = "Yuck! My mouth feels odd. My teeth feel like they\'re rotting, and at least one tooth must be missing altogether. Oh well. Dental hygiene isn\'t important when I need to save the world.";
+
+ch15IClimbBuilding = "I extend my tentacles and climb up a nearby tall building.";
+
+ch15ISeeRestOfCity = "At the top, I get a better view of the city. Wow, Sezja was right. The flood really does cover half the city, and I can see some buildings far away, on the other side of the city, on fire. Fortunately, the rain does seem to keep the fire contained, but the fire is still there. It\'s not like the rain is going to stop the flood, either.";
+
+ch15IFindConstructionSite = "I need a weapon. I look around and find a construction site, which seems to have been recently abandoned.";
+
+ch15IJumpToConstructionSite = "I jump down to it, using my tentacles to cushion my landing.";
+
+ch15IGetPickaxe = "I search for anything useful around the construction site. I find a pickaxe. Perfect. I take the pickaxe and continue on.";
+
+ch15IJumpBetweenRooftops = "I climb up another building and start leaping from rooftop to rooftop.";
+
+ch15PeopleBelowTrapped = "I occasionally look down at the streets below. There are still plenty of people left in the city, who haven\'t evacuated. Most of them are trapped on a small patch of land, with the rest of the ground around them submerged in water.";
+
+ch15IFindFireSpirits = "I keep going, and I eventually see a group of fire spirits down below causing mischief. I jump down and confront them.";
+
+ch15SpiritsSurroundMe = "The fire spirits take notice and surround me. They grin and rub their hands together.";
+
+ch15ISlamSpirits = "I clench my pickaxe. The spirits step towards me. I grab them with my tentacles and slam them to the ground.";
+
+ch15IDeathByOverconfidence = "I stand over one of them. \"Don\'t overestimate yourself, Baqer! Remember, two out of five deaths are due to over-confidence,\" I say, spitting through my missing tooth. The fire spirit gasps.";
+
+ch15KeptYouWaiting = "I stand over one of them. \"I kept you waiting, huh, Baqer,\" I say, spitting through my missing tooth. The fire spirit gasps.";
+
+ch15IStrikeSpirit = "I strike my pickaxe down on the spirit. The fire spirit crumbles into a pile of hot ash. I make quick work of the other fire spirits, as well.";
+
+ch15ILeaveSpirits = "I get back onto the rooftops and keep going.";
+
+ch15SchoolBusNeedsHelp = "\"Help, help! Is anyone there? Help!\" I hear a voice say, down below. It\'s coming from a school bus, trapped on a sunken road.";
+
+ch15IDispossessConstructor = "I land near the school bus and dispossess the construction worker. \"I\'m here! I\'ll help you!\" I shout.";
+
+ch15IAmHero = "The students on the bus turn around and cheer. \"Hey, isn\'t that the phantom guy on TV?\" one student asks. \"Maybe. He sure is a hero!\" says another student.";
+
+ch15ILiftBus = "I use my tentacles to lift the bus out of the water and onto dry road.";
+
+ch15StudentsThankMe = "The students and the bus driver come out through the emergency back door. \"Thanks, Mr. Phantom!\" the students say. Among them are Élodie, Carleigh, and Hewitt. \"Hey, you look familiar. You\'re Élodie, aren\'t you?\" I ask.";
+
+ch15IKnowElodie = "\"You know me?\" Élodie asks.";
+
+ch15KeepFriendsClose = "\"I do. It\'s a long story, though,\" I reply. \"Hewitt and Carleigh are your friends, aren\'t they?\" I nod over to them. \"Keep them close to you. I learnt that about my friends the hard way,\" I admit to her.";
+
+ch15ICanSayEllie = "\"Okay, if you say so, Mr.\" Élodie nods. \"Also, you can call me \'Ellie\'.\"";
+
+ch15KeepStudentsSafe = "\"Okay, Ellie,\" I say, \"keep yourself and your schoolmates safe!\"";
+
+ch15WowStudentsSay = "I fly up into the air and over the buildings. \"Wow!\" I hear the students say in the distance.";
+
+ch15PhantomGoesToHotel = "Not too far away, I see a large, black, ghostly figure walking towards the Kenyon Imperial Hotel.";
+
+ch15IsThatBekShtii = "Is that Bek\'Shtii?";
+
+ch15WhatIsBekShtiiDoing = "I fly over to the large figure. \"Bek\'Shtii! Bek\'Shtii! Is that you? What are you doing?\" I ask.";
+
+ch15ModernSelfishness = "The ghostly figure turns around, his eyes glowing a bright yellow. \"Do not interfere, Dr. Kaden,\" says Bek\'Shtii. \"Five hundred years ago, I had lost my loyal, loving followers. In the wake of their passing, I have since watched over this continent. I have seen the changes through which the western continent underwent. It is clear now what has become of modern society. You are a selfish, despicable lot. Undisciplined, uncaring, unfaithful. The past was a better time, and I will gladly recreate its glory, if I must.\"";
+
+ch15IHoldBekShtiiBack = "\"Yeah, well, that doesn\'t help me,\" I tell Bek\'Shtii. I reach out for Bek\'Shtii with my tentacles and try to hold him back from reaching the hotel.";
+
+ch15BekShtiiThrowsMe = "Bek\'Shtii picks me up and throws me several city blocks away. I hit the wall of a building hard and fall into the floodwater below.";
+
+ch15IDrift = "I\'m dizzy and weak. I look up at the grey sky. The flow of the water is carrying me away. Away from Bek\'Shtii. Away from the hotel.";
+
+ch15IShouldHaveBeenAtReunion = "This wasn\'t supposed to happen. I should have been at the reunion. I could have seen all of those familiar faces. I could have socialized and have had fun, but no. No, now the city of New Ferando is flooded. Now there are people who need to be rescued. And now, I\'m too weak to even help anymore.";
+
+ch15IWillBeRescued = "Everything around me gets quieter. Maybe, in a little while, I\'ll wash up on dry land. The government will find me and rescue me, and who knows what they\'ll do next. All I know is that, for now, this phantom has done all that he can. I close my eyes and let myself drift away.";
+
+ch16Title = "Chapter 16";
+
+ch16DoIGiveUp = "\"So, are you giving up?\" I hear Va\'Nal\'s voice echo in my head.";
+
+ch16HerBrotherWon = "\"Yeah … I guess I am. Your brother won. Didn\'t you want that?\" I ask.";
+
+ch16WhyAreGodsHere = "\"Kaden, think about what has happened to you. Why do you think that we are here?\"";
+
+ch16IDrankBekShtiisBlood = "\"You\'re all here because I drank your brother\'s blood, right?\"";
+
+ch16IsThatReallyWhy = "\"Are you sure that that is the real reason?\"";
+
+ch16SezjaSaidSo = "\"Well, sure. Sezja said so when I first met him.\"";
+
+ch16WhatDoIDream = "\"And what do you dream about?\"";
+
+ch16VaNalKnows = "\"You know what I dream about.\"";
+
+ch16WhyDoIKeepDreaming = "\"I do know. Why do you keep dreaming about her?\"";
+
+ch16SenseStopped = "\"I don\'t know. I guess … I guess things just stopped making sense when she left. I really wasn\'t sure what I wanted to do. I wasn\'t sure who I wanted to be.\"";
+
+ch16HowWouldSheFeelAtReunion = "\"Tell me, Kaden. If she saw you, the real you, at the reunion, and found out how you feel, how do you think she would feel?\"";
+
+ch16ImNotSure = "\"I\'m … I\'m not sure.\"";
+
+ch16DoINotRemember = "\"Do you not remember?\"";
+
+ch16RememberWhat = "\"Remember what?\"";
+
+ch16TimeAgo = "\"Six years ago.\"";
+
+ch16WhatTimeAgo = "\"Six years ago?\"";
+
+ch16IWasAtAirport = "\"Oh, yeah, I was at the airport. I had finished my undergraduate program at Éclair and had come back home not too long ago, and Rebecca\'s family invited me to say farewell to them. They were moving to the mainland.\"";
+
+ch16WhatDidRebeccaSay = "\"And what did Rebecca say to you?\"";
+
+ch16LongTimeNoSee = "\"She said, \'Alex, long time no see.\'\"";
+
+ch16WhatDidSheSayAfter = "\"And what did she say after that?\"";
+
+ch16NoHurtFeelings = "\"She said, \'The last time we met, we weren\'t getting along with each other. I didn\'t want that to happen, though. I think part of it was my fault. I didn\'t want to hurt your feelings, so I didn\'t say how I had moved on from you. Then, when I did, it was too late.\'\"";
+
+ch16WhatDidYouSay = "\"And what did you say?\"";
+
+ch16IAmStillBadWithPeople = "\"\'I\'m sorry too, Rebecca. I didn\'t want to be hard on you, either. I guess I\'m still not good with other people.\'\"";
+
+ch16BeSuccessful = "\"Then, she said, \'Don\'t say that, Alex. I\'m sure there are plenty of things that you are good at. I want you to be successful. I want you to be happy. Just, without me.\'\"";
+
+ch16FindSomeoneElse = "\"Then, she said, \'Don\'t say that, Alex. I want you to be happy with other people. I want you to find someone who means a lot to you. Just, not me.\'\"";
+
+ch16DoThatOK = "\"\'Do that, for me, okay?\'\"";
+
+ch16RebeccaAndIHugged = "\"After that, Rebecca and I hugged, Rebecca and her family left on the airplane, and I went my own way.\"";
+
+ch17Title = "Chapter 17";
+
+ch17IOpenEyes = "I open my eyes.";
+
+ch17IAmOnMainAve = "I\'ve washed up on Main Avenue. Rows of tall buildings line the road.";
+
+ch17RainStops = "The rain has stopped. Abandoned cars are scattered among the road. All is quiet.";
+
+ch17AveIsEmpty = "No one\'s here. Everybody must be at the airport now, off to the northwest. Either that, or they\'re trapped elsewhere.";
+
+ch17DrKaden = "\"Dr. Kaden?\"";
+
+ch17VaNalIsBehindMe = "I turn around. Va\'Nal is there.";
+
+ch17DoITrulyKnowVaNal = "\"Do you know who we truly are, by now?\" she asks.";
+
+ch17IKnowVaNal = "\"Yeah … I do know,\" I tell her.";
+
+ch17INeglectedVaNal = "Va\'Nal nods. \"Ten years. You have neglected me for ten years. Why?\"";
+
+ch17IAssumedEmpathyVaNal = "\"I assumed that however I felt, everyone else would feel the same way. It even seemed that way too, at first. I didn\'t understand what went wrong.\"";
+
+ch17ILostTrustVaNal = "\"After things did go wrong, I felt that tending to romance was hopeless. After all, if I could not keep the trust of someone I knew since middle school, what chance would I have with someone who would not even know me until later? So I neglected that feeling.\"";
+
+ch17IShouldHaveCared = "\"I kept focusing on all these other people, but, in the end, I was really more concerned with controlling them, rather than caring for them, wasn\'t I?\"";
+
+ch17VaNalAsksWereYou = "\"Were you?\" Va\'Nal asks.";
+
+ch17RebeccaWantsMeToAcceptVaNal = "\"Kaden, more than 500 years ago, our people realized that, in order to live a fulfilling life, they needed to balance several aspects of humanity. Neglecting one aspect, even if it were for the favor of another, would result in depression. I am one of such. Rebecca wants you to accept me again, as do I.\"";
+
+ch17VaNalHoldsHands = "Va\'Nal holds my hands. \"Kaden, my brothers will keep fighting unless you restore that balance. Please, let me be a part of you once more.\"";
+
+ch17ILeanIntoVaNal = "I nod and lean towards her.";
+
+ch17VaNalAbsorbsMe = "I feel myself absorbed into her.";
+
+ch17IMergedWithVaNal = "I look at my hands. They are Va\'Nal\'s. I can feel the plantlike texture of my skin.";
+
+ch17VaNalsSkinChanges = "Moments later, however, that changes. I feel a dull pain throughout my body. I watch as my leafy skin softens into normal flesh.";
+
+ch17IWalkToShop = "There\'s a shop nearby. I walk over to it. I look at my reflection in the display window.";
+
+ch17IExamineVaNal = "I see that not only has my skin changed, but so has my hair. I practically look like a human version of Va\'Nal. Is this really the new me?";
+
+ch17HelicoptersFlyAbove = "Rescue helicopters fly above me.";
+
+ch17IClimbBuildingAsVaNal = "I extend my tentacles from my back, a skill which I luckily still have. I use them to climb the nearby building, to see where those helicopters are headed.";
+
+ch17HelicoptersFlyToCamp = "Sure enough, the helicopters fly to New Ferando Airport to pick up the displaced citizens.";
+
+ch17IOverlookCamp = "I move to a building directly overlooking the airport. I notice that the citizens are happy to see the helicopters, knowing that they will be safe in the mainland.";
+
+ch17SavedCitizensMakesMeHappy = "Seeing the citizens like this makes me happy, too.";
+
+ch17ISeemPleasant = "\"You seem … pleasant.\"";
+
+ch17OtherGodsBehindMe = "I turn around and see the other native gods.";
+
+ch17IJoinKinship = "\"Welcome to our kinship, New Sister,\" smiles Bek\'Shtii, now back in his normal form.";
+
+ch17SezjaLovesMe = "\"Yay! I thought we were done for, but you saved us! I love you, Best Sis, and I\'m going to keep loving you, like any good brother should,\" Sezja squees.";
+
+ch17SezjaHugsMe = "He runs towards me and hugs me, squeezing my chest in the process. Seriously, he\'s squeezing my chest. It even hurts more this time, too.";
+
+ch17HeartyFeast = "\"Well, it looks like we\'re all a big, happy family now,\" Baqer comments. \"How about we celebrate by having a nice, hearty feast, back home?\"";
+
+ch17LetUsEat = "\"Yeah, you bet!\" we all say.";
+
+ch17IExamineMyselfAsPhantom = "I see my black, vaporous face. I see my red, glowing eyes. I obviously didn\'t always look like this, but does it matter at this point? This is me now. This is the path in which I\'m heading. For better or worse, this really is me.";
+
+ch17BekShtiiIsBehindMe = "I turn around. Bek\'Shtii is there, back in his normal form.";
+
+ch17DoITrulyKnowBekShtii = "\"By now, may I assume that you know who we truly are?\" he asks.";
+
+ch17IKnowBekShtii = "\"Yeah … I do know,\" I tell him.";
+
+ch17IHeldBekShtii = "Bek\'Shtii nods. \"Fifteen years. You have held onto me for fifteen years. Why?\"";
+
+ch17IAssumedEmpathyBekShtii = "\"I assumed that however I felt, everyone else would feel the same way. It even seemed that way too, at first. I kept holding onto the past, because I didn\'t understand what went wrong.\"";
+
+ch17ILostTrustBekShtii = "\"After things did go wrong, I felt that continuing on was hopeless. After all, if I could not keep the trust of someone I knew since middle school, what chance would I have with someone who would not even know me until later?\"";
+
+ch17IShouldHaveWorriedAboutMyself = "\"I kept focusing on all these other people, but, in the end, I really should have been worrying about myself, shouldn\'t I?\"";
+
+ch17BekShtiiAsksShouldYou = "\"Should you have?\" Bek\'Shtii asks.";
+
+ch17RebeccaWantsMeToReleaseBekShtii = "\"Kaden, more than 500 years ago, my people realized that, in order to live a fulfilling life, they needed to balance several aspects of humanity. Neglecting one aspect, even if it were for the favor of another, would result in depression. I am only one of several. Rebecca wants you to let go of me, as do I.\"";
+
+ch17BekShtiiGivesMeDagger = "Bek\'Shtii reaches into his coat and pulls out a dagger. He hands it to me. \"You know what you have to do,\" he whispers.";
+
+ch17IStabBekShtii = "I nod. I hold onto his shoulder, and stab him in the heart.";
+
+ch17BekShtiiBleeds = "Blood drips from Bek\'Shtii\'s mouth. \"Thank you,\" he says.";
+
+ch17IAbsorbBekShtii = "Bek\'Shtii dissolves into a black vapor, which gets absorbed into me.";
+
+ch17IShake = "I can feel his power. My body shakes, overwhelmed.";
+
+ch17IKnowWhatToDo = "I know what I have to do now.";
+
+ch17IShootTentacles = "Tentacles shoot out from my body. From my back, from my face, from my arms.";
+
+ch17TentaclesRise = "They rise up into the sky …";
+
+ch17TheyPossessCitizens = "… and fall into the citizens at the evacuation camp.";
+
+ch17Dozens = "I possess dozens of citizens.";
+
+ch17Hundreds = "Hundreds.";
+
+ch17Thousands = "Thousands.";
+
+ch17TenThousands = "Tens of thousands.";
+
+ch17HundredThousands = "Hundreds of thousands.";
+
+ch17IReadEveryone = "I can see through their eyes. I can read their thoughts. Each person has their own memories and ambitions.";
+
+ch17WeMarchIntoCity = "As the citizens of New Ferando, we march out of the evacuation camp and into the city proper. It is time to show these people the gift of a phantom.";
+
+ch17WeRestoreCity = "Within days, we will have restored New Ferando to working order.";
+
+ch17WeExtinguishFire = "We extinguish the fire.";
+
+ch17WeDrainFlood = "I absorb the knowledge of the engineers, and we drain the flood.";
+
+ch17WeRepairBuildings = "We repair the buildings that were damaged.";
+
+ch17WeCelebrate = "We\'re finally done. We cheer and celebrate. Once the rest of the world finds out what happened here, they, too, will find the future that I have shaped. They, too, will appreciate the powers of a phantom.";
+
+ch17IExamineMyRealSelf = "I see my old, familiar face. I see my hood, casting a shadow over my eyes. I\'ve been keeping to myself for a long time, but I can\'t go on like this forever.";
+
+ch17IAssumedEmpathySelf = "I had been so selfish in the past. I assumed that however I felt, everyone else would feel the same way. It even seemed that way too, at first. I didn\'t understand what went wrong.";
+
+ch17ILostTrustSelf = "After things did go wrong, I felt that continuing on was hopeless. After all, if I could not keep the trust of someone I knew since middle school, what chance would I have with someone who would not even know me until later?";
+
+ch17ICanStillLove = "I was being too cynical, though. I realize now that there is still love to be had.";
+
+ch17IGrabMyHood = "I reach for my hood. My hands tremble. I have to let go of the past. I cannot be a stranger anymore.";
+
+ch17ILowerMyHood = "I slowly pull down my hood. I look at my reflection once more. I shiver.";
+
+ch17ThisIsRealMe = "This is me. This is who I have always been, underneath. For better or worse, this really is me.";
+
+ch17IClimbToSeeHotel = "I climb up a tall building. I look over in the distance, to the Kenyon Imperial Hotel. I have one thing left to do.";
+
+ch17IGoToHotel = "I make my way to the hotel. Below, I notice that the floodwater is surrounding the hotel, keeping people trapped inside.";
+
+ch17HotelFloods = "Just then, someone shatters the glass doors of the hotel entrance. The flood flows into the hotel lobby, lowering to ankle height. Hundreds of guests run out of the hotel, some of them pushing other guests away.";
+
+ch17ManShovesLady = "\"Out of the way, Lady!\" I hear a man yell. I look to see where the voice was coming from.";
+
+ch17CaitlynKneels = "I see Caitlyn kneeling on the ground. \"Caitlyn!\" I shout.";
+
+ch17IGoToCaitlyn = "I land on the ground, next to her. \"Kaden, you came back?\" she asks.";
+
+ch17YukioComes = "\"Caitlyn!\" Yukio says, catching up to us.";
+
+ch17TideApproachesCaitlyn = "\"Looks like all three of us are here,\" I smile. I look in the distance and see a tidal wave coming towards us.";
+
+ch17ISaveCaitlyn = "\"Hang on tight. I\'m bringing us to the evacuation camp,\" I say. I hold onto Caitlyn and Yukio with my tentacles and climb back up.";
+
+ch17CaitlynAsksAboutFlood = "I leap between rooftops to reach the camp. \"Thanks again,\" Caitlyn says. \"Do you know how this flood started?\"";
+
+ch17ComplicatedCaitlyn = "\"It\'s a bit complicated,\" I tell her.";
+
+ch17YukioSurprised = "\"Kaden, I have to be honest. I did not expect you to return, but you did. For that, I thank you,\" Yukio smiles earnestly.";
+
+ch17SarahKneels = "I see Sarah kneeling on the ground. \"Sarah!\" I shout.";
+
+ch17IGoToSarah = "I land on the ground, next to her. \"Alexander, is that you?\" she asks.";
+
+ch17TideApproachesSarah = "\"Yeah, it is me,\" I smile. I look in the distance and see a tidal wave coming towards us.";
+
+ch17ISaveSarah = "\"Sarah, I don\'t want to scare you,\" I tell her, extending my tentacles. Sarah gasps. \"I need you to hang on tight. I\'m bringing us to the evacuation camp.\" I hold onto Sarah with my tentacles and climb back up.";
+
+ch17SarahAsksAboutMe = "I leap between rooftops to reach the camp. \"What\'s going on, Alexander? How are you doing this?\"";
+
+ch17ComplicatedSarah = "\"It\'s a bit complicated,\" I tell her. \"Do you remember interviewing a police officer a few days ago?\"";
+
+ch17SarahAsksWhy = "\"Yes, why?\" she asks.";
+
+ch17IAmPhantom = "\"I was the person whom the officer encountered,\" I explain. \"I\'m called a \'phantom\' now, a being who has the ability to possess other people. That officer blacked out because I had been possessing him.\"";
+
+ch17LotToTakeIn = "\"Oh, I see,\" Sarah sighed. \"That\'s a lot to take in, though.\"";
+
+ch17WeReachCamp = "We finally reach the camp. There are at least a hundred thousand people here waiting to be evacuated.";
+
+ch17CaitlynPullsMe = "While we wait among the crowd for rescue, Caitlyn pulls me aside. \"I\'ve been wanting to talk to you about something,\" Caitlyn says.";
+
+ch17WhatIsItCaitlyn = "\"Sure, what is it?\" I ask.";
+
+ch17CaitlynKnowsMeForYears = "Caitlyn says, \"Well, we\'ve known each other for six years, and …\"";
+
+ch17IKnowCaitlynLeadsMe = "\"Oh, I know where this is going,\" I chuckle.";
+
+ch17CaitlynWantsToBeClose = "\"You do? Heheh,\" Caitlyn laughs awkwardly. \"You\'re a good guy, Kaden. I\'d … like to be closer to you.\"";
+
+ch17NoObjectionCaitlyn = "\"No objection here,\" I smile.";
+
+ch17CaitlynStaresAtMe = "\"Heh … that\'s good,\" Cailtyn nods. We look at each other.";
+
+ch17WeKiss = "We kiss.";
+
+ch17IPullSarah = "While we wait among the crowd for rescue, I pull Sarah aside.";
+
+ch17IExplainToSarah = "I explain more to her. I tell her how I studied at university to become a scientist. I tell her how I became a phantom as part of a science project. I finally admit that I had possessed her.";
+
+ch17DidIPossessSarah = "\"So … I don\'t remember anything from yesterday because you possessed me? Is that correct?\" Sarah asks.";
+
+ch17ThatIsCorrect = "\"Yeah, that\'s correct,\" I say.";
+
+ch17WhyDidIPossessSarah = "\"Why did you possess me?\" she asks.";
+
+ch17IWantedSarahToUnderstand = "\"Because … because I knew that you were going to interview someone else who saw me, and I didn\'t want you to misunderstand who I was or what I was doing.\"";
+
+ch17MyPowersAreNew = "I sigh, \"I\'m sorry if I sound selfish. These powers are still new to me. I\'m still trying to make sense of them.\"";
+
+ch17DidSarahAttendReunion = "\"Sarah, I\'ve been meaning to ask you this, but did you at least get to go to our high school reunion after I dispossessed you?\"";
+
+ch17YeahSarahDid = "\"Yes, I did, actually,\" she replies.";
+
+ch17ThatIsGood = "\"Well, that\'s good,\" I say, relieved.";
+
+ch17IAmNotBad = "\"You also did a good job of dressing me up, actually. Maybe you\'re not such a bad guy, after all,\" she smiles.";
+
+ch17ThanksEmbarrassed = "\"Oh, thanks,\" I say, embarrassed.";
+
+ch17SarahAndIWillRoom = "\"Hey, Alex, I don\'t have anywhere to live in the mainland. Once we are evacuated, do you want to be roommates with me? We can split rent,\" she suggests.";
+
+ch17IdLoveTo = "\"Sure, I\'d love to.\"";
+
+ch18Title = "Chapter 18";
+
+ch18pTimeLater = "19 years later …";
+
+ch18pStadium = "Tonight, I am at New Ferando stadium to give a speech. I walk briskly through the tunnels and exit out onto the field.";
+
+ch18pIEnterStage = "I walk onto the stage.";
+
+ch18pCountlessPhantoms = "I look at the countless phantoms around me. It seems like the stadium\'s seats are nearly filled with them.";
+
+ch18pIGreetPhantoms = "I pick up the microphone. \"Good evening, citizens of the western continent,\" I greet them.";
+
+ch18pGrownCommunity = "\"Over 19 years, we have grown into a giant community. From the beginning, this land has been our home.\"";
+
+ch18pNextChapter = "\"We are powerful entities, capable of controlling weaker beings,\" I continue. \"It is clear, then, that we phantoms are the next chapter in our world\'s history.\"";
+
+ch18pInfiltrateSociety = "\"That is why I am pleased to announce that, over the course of the next several years, we will infiltrate the societies of the outside world.\"";
+
+ch18pYeah = "\"Yeah!\" the audience shouts.";
+
+ch18pWeWillRule = "I nod in glee. \"The people of the southern continent will be under phantom rule, as will the people of the southeastern continent, and the eastern continent, and the northern continent. And last, but far from least, the mainland itself will be ours.\"";
+
+ch18pApplause = "The crowd applauds.";
+
+ch18csTimeLater = "6 months later …";
+
+ch18cRaylenPark = "Caitlyn and I are walking Foxtrot around Raylen Central Park, in the mainland. The day is clear and sunny.";
+
+ch18cFoxtrotStoppedHiss = "While he had hissed at me earlier, Foxtrot has since gotten used to me having Bek\'Shtii\'s blood.";
+
+ch18cCaitlynWantsStrawberry = "We come across a man with an ice cream cart. \"Ohh, let\'s get ice cream! I want strawberry,\" Caitlyn says.";
+
+ch18cIWantVanilla = "\"Sure, uh … I\'ll get vanilla,\" I tell her.";
+
+ch18cWeBuyIceCream = "We go up to the vendor and buy our ice cream. \"Right. Strawberry for the fine young lady, and vanilla for the gent. Here you go,\" the vendor says, handing our ice cream.";
+
+ch18cWeEat = "\"Yum! Thanks for taking Foxy and me out,\" Caitlyn says, eating her ice cream. Foxtrot perks up at her.";
+
+ch18csWeGoToFlat = "After our outing, we drive to our new flat.";
+
+ch18cWeCuddle = "The afternoon passes. At night, I light our fireplace. Caitlyn and I cuddle on the couch in front of it.";
+
+ch18cIExaminePhoto = "Caitlyn lays her head on me and closes her eyes. I reach into my pocket and take out an old photograph of Rebecca and me.";
+
+ch18cCaitlynSeesPhoto = "Caitlyn opens her eyes. \"Who\'s that?\" she asks.";
+
+ch18cFormerAngst = "\"A former source of angst,\" I tell her.";
+
+ch18cWeLookedCute = "\"How come?\" Caitlyn looks up at me. \"You two look cute together.\"";
+
+ch18cThingsDoNotWorkOut = "\"Thanks. I thought so, too, but sometimes, things don\'t work out,\" I shrug.";
+
+ch18csIBurnPhoto = "I toss the photograph into the fireplace, and I watch it burn.";
+
+ch18sSupermarket = "Sarah and I are grocery shopping at a supermarket in Raylen, a suburban city in the mainland. Sarah finishes by buying some low-fat yoghurt for herself. \"Thanks for coming out with me,\" Sarah smiles.";
+
+ch18sWeBuyGroceries = "We go to the checkout lane and pay for our groceries. \"I recognise you two from before,\" remarks the grocer. \"What have you been doing?\" he asks.";
+
+ch18sWeMightStay = "\"Oh, I was a news reporter on the western continent, for KNFN News. I\'m looking for a new position in journalism here.\" Sarah glances at me and smiles. \"I think that we might stay here.\"";
+
+ch18sAlwaysAPleasure = "\"Right then, always a pleasure to see westerners such as yourselves,\" smiles the grocer. \"Have a nice day.\"";
+
+ch18sWeCuddle = "The afternoon passes. At night, I light our fireplace. Sarah and I cuddle on the couch in front of it.";
+
+ch18sSarahKnowsMeBetter = "\"I\'m glad that I\'ve gotten to know you better,\" says Sarah.:";
+
+ch18sSoAmI = "\"So am I,\" I say.";
+
+ch18sWeKiss = "We kiss.";
+
+ch18sIExaminePhoto = "Sarah lays her head on me and closes her eyes. I reach into my pocket and take out an old photograph of Rebecca and me.";
+
+ch18sSarahSeesPhoto = "Sarah opens her eyes. \"Is that you and Rebecca?\" she asks.";
+
+ch18sYeahItIs = "\"Yeah, it is,\" I tell her.";
+
+ch18sWeLookedCute = "Sarah looks up at me. \"I didn\'t realize how cute the two of you were together. I\'m sorry that things didn\'t work out.\"";
+
+ch18sINuzzleSarah = "\"It\'s okay. You and I are together now,\" I say, nuzzling her.";
+
+ch18vTimeLater = "1 year later …";
+
+ch18vGoddessOfPride = "I am Va\'Nal-Kaden, the goddess of pride.";
+
+ch18vContinentIsWell = "I look over the western continent, to make sure that all is well with its inhabitants.";
+
+ch18vCaitlynAndYukioResearch = "Caitlyn Rylie and Yukio Kiyoshi, who originally evacuated to the mainland, have since returned to the Arcticon Research Facility. They continue to do research, as usual.";
+
+ch18vCaitlynAndYukioTogether = "They also seem to be quite happy with each other.";
+
+ch18vSarahReports = "Sarah Parson has also returned from her initial evacuation. She has earned much respect as a news reporter for KNFN. The public has since forgotten the \"Phantom of the West\", so Sarah now continuously looks for the next big story.";
+
+ch18vElodieCarleighAndHewittStudy = "Élodie, Carleigh, and Hewitt are now in ninth grade. They\'re all doing well in school.";
+
+ch18vCarleighHonors = "Carleigh is even an honors student now! She can thank me for that.";
+
+ch18vICannotSeeRebecca = "I don\'t know how well Rebecca is doing. I presume that she\'s in the mainland. My powers are limited to this continent, so I can\'t watch over her if she\'s not here. It may as well be for the better, though.";
+
+ch18vSunSets = "I stand by my brothers at the top of our pyramid. The sun sets behind us. Another day ends.";
