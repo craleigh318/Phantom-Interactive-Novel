@@ -13,6 +13,28 @@ A concrete implementation of PStoryPage
 */
 public class StoryPage: PStoryPage {
     
+    private static let storyTextTable = "StoryText"
+    
+    /*
+    Creates a language-localized page from "StoryText.strings".
+    */
+    static func createLocalizedPage(list: StoryPageList, image: UIImage, stringKeys: [String]) -> StoryPage {
+        // Create localized text.
+        var localizedText = ""
+        var firstString = true
+        for k in stringKeys {
+            if !firstString {
+                localizedText += "\n\n"
+            }
+            let kValue = NSLocalizedString(k, tableName: storyTextTable, comment: "")
+            localizedText += kValue
+            firstString = false
+        }
+        // Create page.
+        let newPage = StoryPage(list: list, image: image, text: localizedText)
+        return newPage
+    }
+    
     /*
     The page image.
     */
