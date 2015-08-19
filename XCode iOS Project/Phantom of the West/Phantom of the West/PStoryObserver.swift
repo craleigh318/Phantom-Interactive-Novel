@@ -14,5 +14,5 @@ public protocol PStoryObserver {
     /*
     Notifies this observer that a new collection of pages is set.
     */
-    func update([PStoryPage]);
+    func update(PStory)
 }

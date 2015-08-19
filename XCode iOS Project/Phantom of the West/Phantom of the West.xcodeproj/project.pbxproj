@@ -12,6 +12,9 @@
 		A4015DAD1B65D80000F99486 /* ToIAPMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4015DAC1B65D80000F99486 /* ToIAPMenu.swift */; };
 		A41401381B7D8D86001CEAB1 /* NewGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41401371B7D8D86001CEAB1 /* NewGame.swift */; };
 		A414013A1B7DA79E001CEAB1 /* EventFlagsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41401391B7DA79E001CEAB1 /* EventFlagsCollection.swift */; };
+		A423BD391B84347000C331EE /* StoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423BD381B84347000C331EE /* StoryPage.swift */; };
+		A423BD3B1B8436D700C331EE /* StoryPageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423BD3A1B8436D700C331EE /* StoryPageList.swift */; };
+		A423BD3F1B8444C600C331EE /* PStoryPageListObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423BD3E1B8444C600C331EE /* PStoryPageListObserver.swift */; };
 		A42C26271B61D92800E6F7B5 /* OptionsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42C26261B61D92800E6F7B5 /* OptionsMenu.swift */; };
 		A42C26291B61D9A200E6F7B5 /* POptionsMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42C26281B61D9A200E6F7B5 /* POptionsMenuItem.swift */; };
 		A4384A1E1B59E96700EF2187 /* StoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4384A1D1B59E96700EF2187 /* StoryImage.swift */; };
@@ -60,6 +63,9 @@
 		A4015DAC1B65D80000F99486 /* ToIAPMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToIAPMenu.swift; sourceTree = "<group>"; };
 		A41401371B7D8D86001CEAB1 /* NewGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGame.swift; sourceTree = "<group>"; };
 		A41401391B7DA79E001CEAB1 /* EventFlagsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFlagsCollection.swift; sourceTree = "<group>"; };
+		A423BD381B84347000C331EE /* StoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryPage.swift; sourceTree = "<group>"; };
+		A423BD3A1B8436D700C331EE /* StoryPageList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryPageList.swift; sourceTree = "<group>"; };
+		A423BD3E1B8444C600C331EE /* PStoryPageListObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PStoryPageListObserver.swift; sourceTree = "<group>"; };
 		A42C26261B61D92800E6F7B5 /* OptionsMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsMenu.swift; sourceTree = "<group>"; };
 		A42C26281B61D9A200E6F7B5 /* POptionsMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POptionsMenuItem.swift; sourceTree = "<group>"; };
 		A4384A1D1B59E96700EF2187 /* StoryImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryImage.swift; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				A414013C1B7DAAC0001CEAB1 /* Event Flagging */,
+				A423BD371B84344700C331EE /* Pages */,
 				A43E81391B7EC2DF001CE80F /* StoryText.strings */,
 			);
 			name = "PotW VN";
@@ -141,6 +148,16 @@
 				A41401391B7DA79E001CEAB1 /* EventFlagsCollection.swift */,
 			);
 			name = "Event Flagging";
+			sourceTree = "<group>";
+		};
+		A423BD371B84344700C331EE /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				A423BD381B84347000C331EE /* StoryPage.swift */,
+				A423BD3A1B8436D700C331EE /* StoryPageList.swift */,
+				A423BD3E1B8444C600C331EE /* PStoryPageListObserver.swift */,
+			);
+			name = Pages;
 			sourceTree = "<group>";
 		};
 		A46781F31B58E57400745C98 = {
@@ -396,9 +413,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A423BD3B1B8436D700C331EE /* StoryPageList.swift in Sources */,
 				A4E79B4F1B5A4D4E00BC861B /* StoryViewController.swift in Sources */,
 				A42C26291B61D9A200E6F7B5 /* POptionsMenuItem.swift in Sources */,
 				A4384A221B59F2E400EF2187 /* StoryView.swift in Sources */,
+				A423BD391B84347000C331EE /* StoryPage.swift in Sources */,
+				A423BD3F1B8444C600C331EE /* PStoryPageListObserver.swift in Sources */,
 				A4384A201B59EEC400EF2187 /* StoryText.swift in Sources */,
 				A4C1A63C1B642BDD0007B567 /* LoadGame.swift in Sources */,
 				A467822F1B58FBCD00745C98 /* PNavigatorHandler.swift in Sources */,
