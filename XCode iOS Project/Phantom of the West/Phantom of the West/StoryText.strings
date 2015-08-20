@@ -1766,7 +1766,9 @@ ch17IWantedSarahToUnderstand = "\"Because … because I knew that you were going
 
 ch17MyPowersAreNew = "I sigh, \"I\'m sorry if I sound selfish. These powers are still new to me. I\'m still trying to make sense of them.\"";
 
-ch17DidSarahAttendReunion = "\"Sarah, I\'ve been meaning to ask you this, but did you at least get to go to our high school reunion after I dispossessed you?\"";
+ch17SarahUnsure = "\"I understand, Alex. I'm not sure how to feel about this, myself. Give me some time to think.\" Sarah said.";
+
+ch17DidSarahAttendReunion = "I nod. \"Oh, and Sarah, I\'ve been meaning to ask you this, but did you at least get to go to our high school reunion after I dispossessed you?\"";
 
 ch17YeahSarahDid = "\"Yes, I did, actually,\" she replies.";
 
