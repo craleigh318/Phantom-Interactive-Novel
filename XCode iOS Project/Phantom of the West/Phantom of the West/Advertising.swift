@@ -25,7 +25,7 @@ class Advertising: NSObject, ADBannerViewDelegate {
             removeConstraints()
             if newValue {
                 let ba = ADBannerView(adType: ADAdType.Banner)
-                ba.setTranslatesAutoresizingMaskIntoConstraints(false)
+                //ba.setTranslatesAutoresizingMaskIntoConstraints(false)
                 ba.hidden = true
                 ba.delegate = self
                 view.addSubview(ba)
@@ -72,9 +72,10 @@ class Advertising: NSObject, ADBannerViewDelegate {
     
     private func addConstraintsWithAd(ba: ADBannerView) {
         constraints += [
-            NSLayoutConstraint(item: ba, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
+            /*NSLayoutConstraint(item: ba, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
             NSLayoutConstraint(item: ba, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: ba, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0)
+            NSLayoutConstraint(item: ba, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0)*/
+            NSLayoutConstraint(item: view, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: ba, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0)
         ]
         addConstraints()
     }
