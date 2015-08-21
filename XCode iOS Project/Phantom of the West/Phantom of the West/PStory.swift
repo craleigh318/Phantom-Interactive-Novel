@@ -13,16 +13,9 @@ Some points in the story have multiple choices.
 public protocol PStory {
     
     /*
-    The pages for the UI to show.
-    */
-    var currentPages: [PStoryPage] {
-        get
-    }
-    
-    /*
     The interface displaying this story.
     */
-    var observer: PStoryObserver {
+    var observer: PStoryObserver? {
         get
         set
     }

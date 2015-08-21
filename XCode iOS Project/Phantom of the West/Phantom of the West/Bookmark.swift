@@ -11,7 +11,7 @@ import Foundation
 /*
 Controls the image, text, and buttons for StoryView.
 */
-class Bookmark {
+class Bookmark: PStoryObserver {
     
     /*
     The view for this bookmark to update.
@@ -24,6 +24,10 @@ class Bookmark {
     
     init() {
         index = 0
+    }
+    
+    func update(pages: [PStoryPage]) {
+        showPages(pages)
     }
     
     /*

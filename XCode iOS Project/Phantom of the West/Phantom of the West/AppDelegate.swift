@@ -10,6 +10,8 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    static var potwStory: PhantomOfTheWest = PhantomOfTheWest()
 
     var window: UIWindow?
 

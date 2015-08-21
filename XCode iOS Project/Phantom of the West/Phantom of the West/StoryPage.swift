@@ -13,13 +13,31 @@ A concrete implementation of PStoryPage
 */
 public class StoryPage: PStoryPage {
     
+    private static let storyImagesBundle = NSBundle(path: "StoryImages")
+    
     private static let storyTextTable = "StoryText"
     
     /*
     Creates a language-localized page from "StoryText.strings".
     */
-    static func createLocalizedPage(list: StoryPageList, image: UIImage, stringKeys: [String]) -> StoryPage {
-        // Create localized text.
+    /*static func createLocalizedPage(list: StoryPageList, image: UIImage, stringKeys: [String]) -> StoryPage {
+        let localizedText = getLocalizedText(stringKeys)
+        let newPage = StoryPage(list: list, image: image, text: localizedText)
+        return newPage
+    }*/
+    
+    /*
+    Creates a language-localized string from "StoryImages.xcassets".
+    */
+    static func getLocalizedImage(name: String) -> UIImage {
+        let localizedImage = UIImage(named: name, inBundle: storyImagesBundle, compatibleWithTraitCollection: nil)
+        return localizedImage!
+    }
+    
+    /*
+    Creates a language-localized string from "StoryText.strings".
+    */
+    static func getLocalizedText(stringKeys: [String]) -> String {
         var localizedText = ""
         var firstString = true
         for k in stringKeys {
@@ -30,9 +48,7 @@ public class StoryPage: PStoryPage {
             localizedText += kValue
             firstString = false
         }
-        // Create page.
-        let newPage = StoryPage(list: list, image: image, text: localizedText)
-        return newPage
+        return localizedText
     }
     
     /*
@@ -46,20 +62,20 @@ public class StoryPage: PStoryPage {
     public private(set) var text: String
     
     /*
-    The list holding this page.
+    The observer.
     */
-    private var list: StoryPageList
+    private var observer: PStoryObserver
     
-    init(list: StoryPageList, image: UIImage, text: String) {
-        self.list = list
+    init(image: UIImage, text: String, observer: PStoryObserver) {
         self.image = image
         self.text = text
+        self.observer = observer
     }
     
     /*
     Continues the story from this page.
     */
     public func continueStory() {
-        list.nextPage()
+        observer.update([])
     }
 }

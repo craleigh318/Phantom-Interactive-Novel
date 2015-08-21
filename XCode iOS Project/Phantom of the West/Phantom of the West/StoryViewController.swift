@@ -13,7 +13,7 @@ Initializes with a view controller and story.
 The view controller pops and pushes the options menu as needed.
 The story implements the PStory protocol.
 */
-public class StoryViewController: UIViewController {
+public class StoryViewController: UIViewController, PStoryObserver {
     
     /*
     Set an event handler so that the navigation buttons react.
@@ -58,6 +58,11 @@ public class StoryViewController: UIViewController {
         
         // Enable advertising if ad-removal not purchased.
         adHandler.shouldDisplayAdvertisement = true
+        
+        //Start story.
+        let story = AppDelegate.potwStory
+        story.observer = self
+        story.newGame()
     }
     
     public override func willTransitionToTraitCollection(newCollection: UITraitCollection,
@@ -81,6 +86,10 @@ public class StoryViewController: UIViewController {
             nc.navigationBarHidden = false
         }
         super.viewWillDisappear(animated)
+    }
+    
+    public func update(pages: [PStoryPage]) {
+        bookmark.update(pages)
     }
     
     /*
