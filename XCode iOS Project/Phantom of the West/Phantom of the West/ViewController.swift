@@ -18,6 +18,8 @@ public class ViewController: UINavigationController, PNavigatorHandler {
         rootSubcontroller = viewControllers[0] as? StoryViewController
         if let subcontroller = rootSubcontroller {
             subcontroller.storyViewHandler = self
+            // Enable advertising if ad-removal not purchased.
+            subcontroller.shouldDisplayAdvertisement = true
         }
     }
     

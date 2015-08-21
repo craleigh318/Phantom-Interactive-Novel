@@ -25,7 +25,7 @@ class Advertising: NSObject, ADBannerViewDelegate {
             removeConstraints()
             if newValue {
                 let ba = ADBannerView(adType: ADAdType.Banner)
-                //ba.setTranslatesAutoresizingMaskIntoConstraints(false)
+                //ba.autoresizingMask = UIViewAutoresizing.FlexibleWidth
                 ba.hidden = true
                 ba.delegate = self
                 view.addSubview(ba)

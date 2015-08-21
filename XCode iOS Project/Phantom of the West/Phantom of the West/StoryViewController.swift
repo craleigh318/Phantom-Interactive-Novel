@@ -27,6 +27,19 @@ public class StoryViewController: UIViewController, PStoryObserver {
         }
     }
     
+    /*
+    Set to true if the user should be shown iAds.
+    For example, the user might not have bought advertisment removal.
+    */
+    var shouldDisplayAdvertisement: Bool {
+        get {
+            return adHandler.shouldDisplayAdvertisement
+        }
+        set {
+            adHandler.shouldDisplayAdvertisement = newValue
+        }
+    }
+    
     private lazy var storyView: StoryView = StoryView()
     
     private var adHandler: Advertising = Advertising()
@@ -55,10 +68,6 @@ public class StoryViewController: UIViewController, PStoryObserver {
             NSLayoutConstraint(item: storyView.view, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0)
         ]
         view.addConstraints(constraints)
-        
-        // Enable advertising if ad-removal not purchased.
-        adHandler.shouldDisplayAdvertisement = true
-        
         //Start story.
         let story = AppDelegate.potwStory
         story.observer = self
