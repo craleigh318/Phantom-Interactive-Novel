@@ -197,8 +197,8 @@ class StoryNavigator: PNavigatorHandler, PConstraintsChanger {
     }
     
     func addOrientationConstraints() {
-        let screenWidth = view.traitCollection.verticalSizeClass
-        if (screenWidth == UIUserInterfaceSizeClass.Compact) {
+        let isLandscape = UIApplication.sharedApplication().statusBarOrientation.isLandscape
+        if (isLandscape) {
             addMyConstraints(landscapeConstraints)
         } else {
             addMyConstraints(portraitConstraints)
