@@ -69,13 +69,23 @@ public class StoryViewController: UIViewController, PStoryObserver {
         view.addConstraints(constraints)
     }
     
-    public override func willTransitionToTraitCollection(newCollection: UITraitCollection,
+    /*public override func willTransitionToTraitCollection(newCollection: UITraitCollection,
         withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
             storyView.removeOrientationConstraints()
     }
     
     public override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
         storyView.addOrientationConstraints()
+    }*/
+    
+    override public func viewWillTransitionToSize(size: CGSize,
+        withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+            super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+            storyView.removeOrientationConstraints()
+            coordinator.animateAlongsideTransition(nil, completion: {
+                _ in
+                self.storyView.addOrientationConstraints(size)
+            })
     }
     
     public override func viewWillAppear(animated: Bool) {

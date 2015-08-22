@@ -12,10 +12,16 @@ import UIKit
 Contains methods for reacting to interface orientation changes.
 */
 protocol PConstraintsChanger {
+    
     /*
-    Add new constraints after device rotates.
+    Add new portrait constraints after device rotates.
     */
-    func addOrientationConstraints()
+    func addPortraitConstraints()
+    
+    /*
+    Add new landscape constraints after device rotates.
+    */
+    func addLandscapeConstraints()
     
     /*
     Remove old constraints before device rotates.

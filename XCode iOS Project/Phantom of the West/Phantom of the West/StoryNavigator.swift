@@ -169,7 +169,6 @@ class StoryNavigator: PNavigatorHandler, PConstraintsChanger {
         
         // Add constraints.
         addMyConstraints(universalConstraints)
-        addOrientationConstraints()
     }
     
     dynamic func onButtonContinue() {
@@ -196,13 +195,12 @@ class StoryNavigator: PNavigatorHandler, PConstraintsChanger {
         }
     }
     
-    func addOrientationConstraints() {
-        let isLandscape = UIApplication.sharedApplication().statusBarOrientation.isLandscape
-        if (isLandscape) {
-            addMyConstraints(landscapeConstraints)
-        } else {
-            addMyConstraints(portraitConstraints)
-        }
+    func addPortraitConstraints() {
+        addMyConstraints(portraitConstraints)
+    }
+    
+    func addLandscapeConstraints() {
+        addMyConstraints(landscapeConstraints)
     }
     
     func removeOrientationConstraints() {

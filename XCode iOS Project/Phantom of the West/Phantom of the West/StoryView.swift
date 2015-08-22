@@ -141,17 +141,26 @@ class StoryView: PConstraintsChanger {
         
         // Add constraints.
         addMyConstraints(universalConstraints)
-        addOrientationConstraints()
+        addOrientationConstraints(view.frame.size)
     }
     
-    func addOrientationConstraints() {
-        navigator.addOrientationConstraints()
-        let isLandscape = UIApplication.sharedApplication().statusBarOrientation.isLandscape
-        if (isLandscape) {
-            addMyConstraints(landscapeConstraints)
+    func addOrientationConstraints(size: CGSize) {
+        let isLandscape = (size.width > size.height)
+        if isLandscape {
+            addLandscapeConstraints()
         } else {
-            addMyConstraints(portraitConstraints)
+            addPortraitConstraints()
         }
+    }
+    
+    func addPortraitConstraints() {
+        navigator.addPortraitConstraints()
+        addMyConstraints(portraitConstraints)
+    }
+    
+    func addLandscapeConstraints() {
+        navigator.addLandscapeConstraints()
+        addMyConstraints(landscapeConstraints)
     }
     
     func removeOrientationConstraints() {
