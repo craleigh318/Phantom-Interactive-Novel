@@ -16,14 +16,15 @@ class Bookmark: PStoryObserver {
     /*
     The view for this bookmark to update.
     */
-    var storyView: StoryView?
+    private var storyView: StoryView
     
     private var currentPages: [PStoryPage]?
     
     private var index: Int
     
-    init() {
+    init(storyView: StoryView) {
         index = 0
+        self.storyView = storyView
     }
     
     func update(pages: [PStoryPage]) {
@@ -50,9 +51,7 @@ class Bookmark: PStoryObserver {
             } else {
                 --index
             }
-            if let unwrappedStoryView = storyView {
-                setImageAndText(unwrappedStoryView, unwrappedCurrentPages: unwrappedCurrentPages)
-            }
+            setImageAndText(storyView, unwrappedCurrentPages: unwrappedCurrentPages)
         }
     }
     
@@ -66,9 +65,7 @@ class Bookmark: PStoryObserver {
             } else {
                 ++index
             }
-            if let unwrappedStoryView = storyView {
-                setImageAndText(unwrappedStoryView, unwrappedCurrentPages: unwrappedCurrentPages)
-            }
+            setImageAndText(storyView, unwrappedCurrentPages: unwrappedCurrentPages)
         }
     }
     
@@ -78,22 +75,20 @@ class Bookmark: PStoryObserver {
     func showPages(pages: [PStoryPage]) {
         currentPages = pages;
         index = 0;
-        if let unwrappedStoryView = storyView {
-            let numPages = pages.count
-            if numPages <= 0 {
-                unwrappedStoryView.continueEnabled = false
-                unwrappedStoryView.previousAndNextEnabled = false
-                unwrappedStoryView.image = nil
-                unwrappedStoryView.text = ""
+        let numPages = pages.count
+        if numPages <= 0 {
+            storyView.continueEnabled = false
+            storyView.previousAndNextEnabled = false
+            storyView.image = nil
+            storyView.text = ""
+        } else {
+            storyView.continueEnabled = true
+            if numPages > 1 {
+                storyView.previousAndNextEnabled = true
             } else {
-                unwrappedStoryView.continueEnabled = true
-                if numPages > 1 {
-                    unwrappedStoryView.previousAndNextEnabled = true
-                } else {
-                    unwrappedStoryView.previousAndNextEnabled = false
-                }
-                setImageAndText(unwrappedStoryView, unwrappedCurrentPages: pages)
+                storyView.previousAndNextEnabled = false
             }
+            setImageAndText(storyView, unwrappedCurrentPages: pages)
         }
     }
     

@@ -35,7 +35,7 @@ class Advertising: NSObject, ADBannerViewDelegate {
                 if let ba = bannerAdvertisement {
                     ba.removeFromSuperview()
                     bannerAdvertisement = nil
-                    //addConstraintsWithoutAd()
+                    addConstraintsWithoutAd()
                 }
             }
         }
@@ -58,6 +58,7 @@ class Advertising: NSObject, ADBannerViewDelegate {
         constraints = []
         super.init()
         view.setTranslatesAutoresizingMaskIntoConstraints(false)
+        addConstraintsWithoutAd()
     }
     
     func bannerViewDidLoadAd(banner: ADBannerView!) {
@@ -68,6 +69,13 @@ class Advertising: NSObject, ADBannerViewDelegate {
         didFailToReceiveAdWithError error: NSError!) {
             shouldDisplayAdvertisement = false
             NSLog("%@", error)
+    }
+    
+    private func addConstraintsWithoutAd() {
+        constraints += [
+            NSLayoutConstraint(item: view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1.0, constant: 0.0)
+        ]
+        addConstraints()
     }
     
     private func addConstraintsWithAd(ba: ADBannerView) {

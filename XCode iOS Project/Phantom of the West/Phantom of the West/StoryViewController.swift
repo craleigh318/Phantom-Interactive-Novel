@@ -40,16 +40,15 @@ public class StoryViewController: UIViewController, PStoryObserver {
         }
     }
     
-    private lazy var storyView: StoryView = StoryView()
+    private var storyView: StoryView = StoryView()
     
     private var adHandler: Advertising = Advertising()
     
-    private var bookmark: Bookmark = Bookmark()
+    private lazy var bookmark: Bookmark = Bookmark(storyView: self.storyView)
     
     override public func viewDidLoad() {
         // Set properties.
         super.viewDidLoad()
-        bookmark.storyView = storyView
         
         // Add subviews.
         let subviews = [storyView.view, adHandler.view]
@@ -60,18 +59,14 @@ public class StoryViewController: UIViewController, PStoryObserver {
         // Add constraints.
         let constraints = [
             NSLayoutConstraint(item: adHandler.view, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: adHandler.view, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
+            NSLayoutConstraint(item: adHandler.view, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: topLayoutGuide, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0),
             NSLayoutConstraint(item: adHandler.view, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
             NSLayoutConstraint(item: storyView.view, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
             NSLayoutConstraint(item: storyView.view, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: adHandler.view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0),
             NSLayoutConstraint(item: storyView.view, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: storyView.view, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0)
+            NSLayoutConstraint(item: storyView.view, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: bottomLayoutGuide, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0)
         ]
         view.addConstraints(constraints)
-        //Start story.
-        let story = AppDelegate.potwStory
-        story.observer = self
-        story.newGame()
     }
     
     public override func willTransitionToTraitCollection(newCollection: UITraitCollection,
