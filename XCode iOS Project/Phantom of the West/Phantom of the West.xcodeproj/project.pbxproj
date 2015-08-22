@@ -191,7 +191,6 @@
 		A46781FE1B58E57400745C98 /* Phantom of the West */ = {
 			isa = PBXGroup;
 			children = (
-				A4D525321B5DB32C00F1354D /* Delete These */,
 				A46782271B58F15000745C98 /* Global Files */,
 				A46782211B58E70C00745C98 /* Reusable Classes */,
 				A414013B1B7DA8BD001CEAB1 /* PotW VN */,
@@ -274,13 +273,6 @@
 				A46782301B58FE4800745C98 /* StoryNavigator.swift */,
 			);
 			name = "Story Navigation";
-			sourceTree = "<group>";
-		};
-		A4D525321B5DB32C00F1354D /* Delete These */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Delete These";
 			sourceTree = "<group>";
 		};
 		A4FC54691B5F685D00FA5AFC /* Story View */ = {

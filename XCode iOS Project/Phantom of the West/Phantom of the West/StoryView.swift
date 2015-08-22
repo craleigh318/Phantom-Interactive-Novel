@@ -75,9 +75,23 @@ class StoryView: PConstraintsChanger {
     }
     
     /*
-    Add this to the desired superview.
+    The UIView.
     */
-    private(set) var view: UIView = UIView()
+    var view: UIView? {
+        didSet {
+            if let v = view {
+                // Set up the view.
+                let subviews = [imageView.view, textView.view, navigator.view]
+                for subview in subviews {
+                    v.addSubview(subview)
+                }
+                
+                // Add constraints.
+                addMyConstraints(universalConstraints)
+                addOrientationConstraints(v.frame.size)
+            }
+        }
+    }
     
     private var navigator: StoryNavigator = StoryNavigator()
     
@@ -103,7 +117,7 @@ class StoryView: PConstraintsChanger {
     
     private lazy var textViewLandscapeConstraints: [NSLayoutConstraint] = [
         NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0),
-        NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: self.imageView.view, attribute: NSLayoutAttribute.Height, multiplier: StoryText.landscapeMinHeightRatio, constant: 0.0)
+        NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.GreaterThanOrEqual, toItem: self.imageView.view, attribute: NSLayoutAttribute.Height, multiplier: StoryText.landscapeMinHeightRatio, constant: 0.0)
     ]
     
     private lazy var navigatorUniversalConstraints: [NSLayoutConstraint] = [
@@ -119,7 +133,8 @@ class StoryView: PConstraintsChanger {
     
     private lazy var navigatorLandscapeConstraints: [NSLayoutConstraint] = [
         NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.imageView.view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
-        NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0)
+        NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.GreaterThanOrEqual, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1.0, constant: StoryNavigator.landscapeWidth)
     ]
     
     private lazy var universalConstraints: [[NSLayoutConstraint]] = [self.imageViewUniversalConstraints, self.textViewUniversalConstraints, self.navigatorUniversalConstraints]
@@ -127,22 +142,6 @@ class StoryView: PConstraintsChanger {
     private lazy var portraitConstraints: [[NSLayoutConstraint]] = [self.imageViewPortraitConstraints, self.navigatorPortraitConstraints]
     
     private lazy var landscapeConstraints: [[NSLayoutConstraint]] = [self.textViewLandscapeConstraints, self.navigatorLandscapeConstraints]
-    
-    /*
-    Initializes with the specified handler.
-    */
-    init() {
-        // Set up the view.
-        view.setTranslatesAutoresizingMaskIntoConstraints(false)
-        let subviews = [imageView.view, textView.view, navigator.view]
-        for subview in subviews {
-            view.addSubview(subview)
-        }
-        
-        // Add constraints.
-        addMyConstraints(universalConstraints)
-        addOrientationConstraints(view.frame.size)
-    }
     
     func addOrientationConstraints(size: CGSize) {
         let isLandscape = (size.width > size.height)
@@ -170,14 +169,18 @@ class StoryView: PConstraintsChanger {
     }
     
     private func addMyConstraints(constraintsArray: [[NSLayoutConstraint]]) {
-        for constraints in constraintsArray {
-            view.addConstraints(constraints)
+        if let v = view {
+            for constraints in constraintsArray {
+                v.addConstraints(constraints)
+            }
         }
     }
     
     private func removeMyConstraints (constraintsArray: [[NSLayoutConstraint]]) {
-        for constraints in constraintsArray {
-            view.removeConstraints(constraints)
+        if let v = view {
+            for constraints in constraintsArray {
+                v.removeConstraints(constraints)
+            }
         }
     }
 }

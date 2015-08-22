@@ -31,52 +31,25 @@ public class StoryViewController: UIViewController, PStoryObserver {
     Set to true if the user should be shown iAds.
     For example, the user might not have bought advertisment removal.
     */
-    var shouldDisplayAdvertisement: Bool {
+    /*var shouldDisplayAdvertisement: Bool {
         get {
             return adHandler.shouldDisplayAdvertisement
         }
         set {
             adHandler.shouldDisplayAdvertisement = newValue
         }
-    }
+    }*/
     
-    private var storyView: StoryView = StoryView()
+    private lazy var storyView: StoryView = StoryView()
     
-    private var adHandler: Advertising = Advertising()
+    /*private var adHandler: Advertising = Advertising()*/
     
     private lazy var bookmark: Bookmark = Bookmark(storyView: self.storyView)
     
     override public func viewDidLoad() {
-        // Set properties.
         super.viewDidLoad()
-        
-        // Add subviews.
-        let subviews = [storyView.view, adHandler.view]
-        for subview in subviews {
-            view.addSubview(subview)
-        }
-        
-        // Add constraints.
-        let constraints = [
-            NSLayoutConstraint(item: adHandler.view, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: adHandler.view, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: topLayoutGuide, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: adHandler.view, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: storyView.view, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: storyView.view, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: adHandler.view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: storyView.view, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: storyView.view, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: bottomLayoutGuide, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0)
-        ]
-        view.addConstraints(constraints)
+        storyView.view = view
     }
-    
-    /*public override func willTransitionToTraitCollection(newCollection: UITraitCollection,
-        withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-            storyView.removeOrientationConstraints()
-    }
-    
-    public override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
-        storyView.addOrientationConstraints()
-    }*/
     
     override public func viewWillTransitionToSize(size: CGSize,
         withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
@@ -92,6 +65,10 @@ public class StoryViewController: UIViewController, PStoryObserver {
         if let nc = navigationController {
             nc.navigationBarHidden = true
         }
+        
+        // Enable advertising if ad-removal not purchased.
+        canDisplayBannerAds = true
+        
         super.viewWillAppear(animated)
     }
     
