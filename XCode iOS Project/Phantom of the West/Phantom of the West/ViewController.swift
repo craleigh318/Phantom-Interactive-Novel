@@ -21,7 +21,7 @@ public class ViewController: UINavigationController, PNavigatorHandler {
             
             // Enable advertising if ad-removal not purchased.
             //subcontroller.shouldDisplayAdvertisement = true
-            //subcontroller.canDisplayBannerAds = true
+            subcontroller.canDisplayBannerAds = true
             
             //Start story.
             let story = AppDelegate.potwStory

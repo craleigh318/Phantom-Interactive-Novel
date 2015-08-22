@@ -279,7 +279,6 @@
 		A4D525321B5DB32C00F1354D /* Delete These */ = {
 			isa = PBXGroup;
 			children = (
-				A45B1B731B5C85C400FE33B9 /* PConstraintsChanger.swift */,
 			);
 			name = "Delete These";
 			sourceTree = "<group>";
@@ -288,11 +287,12 @@
 			isa = PBXGroup;
 			children = (
 				A467822D1B58FBBA00745C98 /* Story Navigation */,
+				A4C6033A1B5CCFE400DA4418 /* Advertising.swift */,
+				A45B1B751B5C88B300FE33B9 /* Bookmark.swift */,
+				A45B1B731B5C85C400FE33B9 /* PConstraintsChanger.swift */,
 				A4384A1D1B59E96700EF2187 /* StoryImage.swift */,
 				A4384A1F1B59EEC400EF2187 /* StoryText.swift */,
 				A4384A211B59F2E400EF2187 /* StoryView.swift */,
-				A4C6033A1B5CCFE400DA4418 /* Advertising.swift */,
-				A45B1B751B5C88B300FE33B9 /* Bookmark.swift */,
 				A4E79B4E1B5A4D4E00BC861B /* StoryViewController.swift */,
 			);
 			name = "Story View";

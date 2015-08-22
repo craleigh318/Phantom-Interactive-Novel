@@ -11,19 +11,21 @@ import UIKit
 /*
 Contains buttons that move through the story.
 */
-class StoryNavigator: PNavigatorHandler {
-    
-    /*
-    While in landscape, this view should occupy two thirds of the screen.
-    */
-    static let recommendedLandscapeWidthRatio: CGFloat = (2.0 / 3.0)
+class StoryNavigator: PNavigatorHandler, PConstraintsChanger {
     
     /*
     Make the buttons this tall to ensure easy button tapping.
     */
-    static let recommendedHeight: CGFloat = 44.0
+    static let standardButtonLength: CGFloat = 44.0
     
-    private static let buttonWidthMultiplier: CGFloat = 0.25
+    /*
+    Make the bar this wide to ensure easy button tapping.
+    */
+    static let landscapeWidth: CGFloat = 2.0 * standardButtonLength
+    
+    private static let numButtons: CGFloat = 4.0
+    
+    private static let numLandscapeRows: CGFloat = 3.0
     
     private static func makeButton(title: String?) -> UIButton {
         var newButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
@@ -66,34 +68,37 @@ class StoryNavigator: PNavigatorHandler {
     /*
     Add this to the desired superview.
     */
-    private(set) var view: UIView
+    private(set) var view: UIView = UIView()
     
-    private var buttonPrevious, buttonContinue, buttonNext, buttonOptions: UIButton
+    private var buttonPrevious: UIButton = StoryNavigator.makeButton(Constants.buttonPreviousTitle)
+    
+    private var buttonContinue: UIButton = StoryNavigator.makeButton(Constants.buttonContinueTitle)
+    
+    private var buttonNext: UIButton = StoryNavigator.makeButton(Constants.buttonNextTitle)
+    
+    private var buttonOptions: UIButton = StoryNavigator.makeButton(Constants.buttonOptionsTitle)
+    
+    private lazy var imageViewUniversalConstraints: [NSLayoutConstraint] = [
+        NSLayoutConstraint(item: self.imageView.view, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.imageView.view, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.imageView.view, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: self.imageView.view, attribute: NSLayoutAttribute.Height, multiplier: StoryImage.imageAspectRatio, constant: 0.0)
+    ]
     
     /*
     Initializes with the specified event handler.
     */
     init() {
-        // Initialize view.
-        view = UIView()
-        view.setTranslatesAutoresizingMaskIntoConstraints(false)
-        
-        // Initialize buttons.
-        buttonPrevious = StoryNavigator.makeButton(Constants.buttonPreviousTitle)
-        buttonContinue = StoryNavigator.makeButton(Constants.buttonContinueTitle)
-        buttonNext = StoryNavigator.makeButton(Constants.buttonNextTitle)
-        buttonOptions = StoryNavigator.makeButton(Constants.buttonOptionsTitle)
-        let buttons = [buttonPrevious, buttonContinue, buttonNext, buttonOptions]
-        
         // Initialize contraints.
+        view.setTranslatesAutoresizingMaskIntoConstraints(false)
         var constraints = [NSLayoutConstraint]()
         
         // Add universal constraints for each button.
+        let buttons = [buttonPrevious, buttonContinue, buttonNext, buttonOptions]
         for button in buttons {
             let universalConstraints = [
                 NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
                 NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0),
-                NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Width, multiplier: StoryNavigator.buttonWidthMultiplier, constant: 0.0)
+                NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Width, multiplier: (1.0 / StoryNavigator.numButtons), constant: 0.0)
             ]
             constraints += universalConstraints
         }
@@ -149,5 +154,13 @@ class StoryNavigator: PNavigatorHandler {
         if let unwrappedHandler = handler {
             unwrappedHandler.onButtonOptions()
         }
+    }
+    
+    func addOrientationConstraints() {
+        
+    }
+    
+    func removeOrientationConstraints() {
+        
     }
 }

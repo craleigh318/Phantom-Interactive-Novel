@@ -16,7 +16,7 @@ class StoryImage {
     /*
     All images displayed here should be in 16:9 aspect ratio.
     */
-    static let imageAspectRatioInverse: CGFloat = (9.0 / 16.0)
+    static let imageAspectRatio: CGFloat = (16.0 / 9.0)
     
     /*
     Use this to set the current image.

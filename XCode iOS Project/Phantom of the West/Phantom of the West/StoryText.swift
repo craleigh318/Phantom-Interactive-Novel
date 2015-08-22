@@ -14,6 +14,11 @@ Displays the text for the visual novel reader.
 class StoryText {
     
     /*
+    While in landscape, this view's height should be at least half that of the image's.
+    */
+    static let landscapeMinHeightRatio: CGFloat = 0.5
+    
+    /*
     Use this to set the current text.
     */
     var text: String! {
