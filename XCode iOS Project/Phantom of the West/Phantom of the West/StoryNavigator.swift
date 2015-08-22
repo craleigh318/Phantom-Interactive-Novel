@@ -78,11 +78,68 @@ class StoryNavigator: PNavigatorHandler, PConstraintsChanger {
     
     private var buttonOptions: UIButton = StoryNavigator.makeButton(Constants.buttonOptionsTitle)
     
-    private lazy var imageViewUniversalConstraints: [NSLayoutConstraint] = [
-        NSLayoutConstraint(item: self.imageView.view, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
-        NSLayoutConstraint(item: self.imageView.view, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
-        NSLayoutConstraint(item: self.imageView.view, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: self.imageView.view, attribute: NSLayoutAttribute.Height, multiplier: StoryImage.imageAspectRatio, constant: 0.0)
+    private lazy var buttonPreviousUniversalConstraints: [NSLayoutConstraint] = [
+        NSLayoutConstraint(item: self.buttonPrevious, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0)
     ]
+    
+    private lazy var buttonPreviousPortraitConstraints: [NSLayoutConstraint] = [
+        NSLayoutConstraint(item: self.buttonPrevious, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.buttonPrevious, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0)
+    ]
+    
+    private lazy var buttonContinueUniversalConstraints: [NSLayoutConstraint] = [
+        NSLayoutConstraint(item: self.buttonContinue, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonPrevious, attribute: NSLayoutAttribute.Height, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.buttonContinue, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0)
+    ]
+    
+    private lazy var buttonContinuePortraitConstraints: [NSLayoutConstraint] = [
+        NSLayoutConstraint(item: self.buttonContinue, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonPrevious, attribute: NSLayoutAttribute.Width, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.buttonContinue, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonPrevious, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0)
+    ]
+    
+    private lazy var buttonContinueLandscapeConstraints: [NSLayoutConstraint] = [
+        NSLayoutConstraint(item: self.buttonContinue, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.buttonContinue, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonPrevious, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.buttonContinue, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0)
+    ]
+    
+    private lazy var buttonNextUniversalConstraints: [NSLayoutConstraint] = [
+        NSLayoutConstraint(item: self.buttonNext, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonPrevious, attribute: NSLayoutAttribute.Height, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.buttonNext, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonPrevious, attribute: NSLayoutAttribute.Width, multiplier: 1.0, constant: 0.0)
+    ]
+    
+    private lazy var buttonNextPortraitConstraints: [NSLayoutConstraint] = [
+        NSLayoutConstraint(item: self.buttonNext, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonContinue, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.buttonNext, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonPrevious, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0)
+    ]
+    
+    private lazy var buttonNextLandscapeConstraints: [NSLayoutConstraint] = [
+        NSLayoutConstraint(item: self.buttonNext, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonPrevious, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.buttonNext, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.buttonNext, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonContinue, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0)
+    ]
+    
+    private lazy var buttonOptionsUniversalConstraints: [NSLayoutConstraint] = [
+        NSLayoutConstraint(item: self.buttonOptions, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonPrevious, attribute: NSLayoutAttribute.Height, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.buttonOptions, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.buttonOptions, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0)
+    ]
+    
+    private lazy var buttonOptionsPortraitConstraints: [NSLayoutConstraint] = [
+        NSLayoutConstraint(item: self.buttonOptions, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonPrevious, attribute: NSLayoutAttribute.Width, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.buttonOptions, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonNext, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0)
+    ]
+    
+    private lazy var buttonOptionsLandscapeConstraints: [NSLayoutConstraint] = [
+        NSLayoutConstraint(item: self.buttonOptions, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.buttonOptions, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonPrevious, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0)
+    ]
+    
+    private lazy var universalConstraints: [[NSLayoutConstraint]] = [self.buttonPreviousUniversalConstraints, self.buttonContinueUniversalConstraints, self.buttonNextUniversalConstraints, self.buttonOptionsUniversalConstraints]
+    
+    private lazy var portraitConstraints: [[NSLayoutConstraint]] = [self.buttonPreviousPortraitConstraints, self.buttonContinuePortraitConstraints, self.buttonNextPortraitConstraints, self.buttonOptionsPortraitConstraints]
+    
+    private lazy var landscapeConstraints: [[NSLayoutConstraint]] = [self.buttonContinueLandscapeConstraints, self.buttonNextLandscapeConstraints, self.buttonOptionsLandscapeConstraints]
     
     /*
     Initializes with the specified event handler.
@@ -90,27 +147,9 @@ class StoryNavigator: PNavigatorHandler, PConstraintsChanger {
     init() {
         // Initialize contraints.
         view.setTranslatesAutoresizingMaskIntoConstraints(false)
-        var constraints = [NSLayoutConstraint]()
         
         // Add universal constraints for each button.
         let buttons = [buttonPrevious, buttonContinue, buttonNext, buttonOptions]
-        for button in buttons {
-            let universalConstraints = [
-                NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
-                NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0),
-                NSLayoutConstraint(item: button, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Width, multiplier: (1.0 / StoryNavigator.numButtons), constant: 0.0)
-            ]
-            constraints += universalConstraints
-        }
-        
-        // Add button-specific constraints.
-        let specificConstraints = [
-            NSLayoutConstraint(item: buttonPrevious, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: buttonContinue, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: buttonPrevious, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: buttonNext, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: buttonContinue, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: buttonOptions, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: buttonNext, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0)
-        ]
-        constraints += specificConstraints
         
         // Add targets.
         let buttonsToSelectors: [UIButton: Selector] = [
@@ -129,7 +168,8 @@ class StoryNavigator: PNavigatorHandler, PConstraintsChanger {
         }
         
         // Add constraints.
-        view.addConstraints(constraints)
+        addMyConstraints(universalConstraints)
+        addOrientationConstraints()
     }
     
     dynamic func onButtonContinue() {
@@ -157,10 +197,28 @@ class StoryNavigator: PNavigatorHandler, PConstraintsChanger {
     }
     
     func addOrientationConstraints() {
-        
+        let screenWidth = view.traitCollection.verticalSizeClass
+        if (screenWidth == UIUserInterfaceSizeClass.Compact) {
+            addMyConstraints(landscapeConstraints)
+        } else {
+            addMyConstraints(portraitConstraints)
+        }
     }
     
     func removeOrientationConstraints() {
-        
+        removeMyConstraints(portraitConstraints)
+        removeMyConstraints(landscapeConstraints)
+    }
+    
+    private func addMyConstraints(constraintsArray: [[NSLayoutConstraint]]) {
+        for constraints in constraintsArray {
+            view.addConstraints(constraints)
+        }
+    }
+    
+    private func removeMyConstraints (constraintsArray: [[NSLayoutConstraint]]) {
+        for constraints in constraintsArray {
+            view.removeConstraints(constraints)
+        }
     }
 }

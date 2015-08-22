@@ -140,13 +140,12 @@ class StoryView: PConstraintsChanger {
         }
         
         // Add constraints.
-        let initialConstraints = [universalConstraints, portraitConstraints]
-        for constraint in initialConstraints {
-            addMyConstraints(constraint)
-        }
+        addMyConstraints(universalConstraints)
+        addOrientationConstraints()
     }
     
     func addOrientationConstraints() {
+        navigator.addOrientationConstraints()
         let screenWidth = view.traitCollection.verticalSizeClass
         if (screenWidth == UIUserInterfaceSizeClass.Compact) {
             addMyConstraints(landscapeConstraints)
@@ -156,6 +155,7 @@ class StoryView: PConstraintsChanger {
     }
     
     func removeOrientationConstraints() {
+        navigator.removeOrientationConstraints()
         removeMyConstraints(portraitConstraints)
         removeMyConstraints(landscapeConstraints)
     }
