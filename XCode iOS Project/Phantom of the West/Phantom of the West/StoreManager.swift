@@ -58,18 +58,19 @@ class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObs
     func paymentQueue(queue: SKPaymentQueue!,
         updatedTransactions transactions: [AnyObject]!) {
             if let paymentTransactions = transactions as? [SKPaymentTransaction] {
-                let tRemoveAds = paymentTransactions[0]
-                let state = tRemoveAds.transactionState
-                let purchased = (state == SKPaymentTransactionState.Purchased) || (state == SKPaymentTransactionState.Restored)
-                if purchased {
-                    SaveManager.purchasedAdRemoval = true
-                    queue.finishTransaction(tRemoveAds)
-                } else if state == SKPaymentTransactionState.Failed {
-                    queue.finishTransaction(tRemoveAds)
-                    let error = NSLocalizedString("error", tableName: "GUIElements", comment: "")
-                    let errorMessage = tRemoveAds.error.localizedDescription
-                    let alert = UIAlertView(title: error, message: errorMessage, delegate: nil, cancelButtonTitle: Constants.okTitle)
-                    alert.show()
+                for tRemoveAds in paymentTransactions {
+                    let state = tRemoveAds.transactionState
+                    let purchased = (state == SKPaymentTransactionState.Purchased) || (state == SKPaymentTransactionState.Restored)
+                    if purchased {
+                        SaveManager.purchasedAdRemoval = true
+                        queue.finishTransaction(tRemoveAds)
+                    } else if state == SKPaymentTransactionState.Failed {
+                        queue.finishTransaction(tRemoveAds)
+                        let error = NSLocalizedString("error", tableName: "GUIElements", comment: "")
+                        let errorMessage = tRemoveAds.error.localizedDescription
+                        let alert = UIAlertView(title: error, message: errorMessage, delegate: nil, cancelButtonTitle: Constants.okTitle)
+                        alert.show()
+                    }
                 }
             }
     }
