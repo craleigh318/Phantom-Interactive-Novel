@@ -11,7 +11,7 @@ import UIKit
 /*
 A concrete implementation of PStoryPage
 */
-public class StoryPage: PStoryPage {
+class StoryPage: PStoryPage {
     
     private static let storyImagesBundle = NSBundle(path: "StoryImages")
     
@@ -54,28 +54,40 @@ public class StoryPage: PStoryPage {
     /*
     The page image.
     */
-    public private(set) var image: UIImage
+    private(set) var image: UIImage
     
     /*
     The page text.
     */
-    public private(set) var text: String
+    private(set) var text: String
+    
+    /*
+    The pages to load after selecting OK.
+    */
+    private var nextPages: [PStoryPage]
+    
+    /*
+    Flags used to control story branching.
+    */
+    private var eventFlags: EventFlagsCollection
     
     /*
     The observer.
     */
     private var observer: PStoryObserver
     
-    init(image: UIImage, text: String, observer: PStoryObserver) {
-        self.image = image
-        self.text = text
+    init(image: String, text: [String], nextPages: [PStoryPage], observer: PStoryObserver, eventFlags: EventFlagsCollection) {
+        self.image = StoryPage.getLocalizedImage(image)
+        self.text = StoryPage.getLocalizedText(text)
+        self.nextPages = nextPages
         self.observer = observer
+        self.eventFlags = eventFlags
     }
     
     /*
     Continues the story from this page.
     */
-    public func continueStory() {
-        observer.update([])
+    func continueStory() {
+        observer.update(nextPages)
     }
 }
