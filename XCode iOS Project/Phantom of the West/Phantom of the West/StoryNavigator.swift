@@ -72,7 +72,7 @@ class StoryNavigator: PNavigatorHandler, PConstraintsChanger {
     
     private var buttonPrevious: UIButton = StoryNavigator.makeButton(Constants.buttonPreviousTitle)
     
-    private var buttonContinue: UIButton = StoryNavigator.makeButton(Constants.buttonContinueTitle)
+    private var buttonContinue: UIButton = StoryNavigator.makeButton(Constants.okTitle)
     
     private var buttonNext: UIButton = StoryNavigator.makeButton(Constants.buttonNextTitle)
     

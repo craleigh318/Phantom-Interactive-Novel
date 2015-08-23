@@ -13,7 +13,7 @@ An options submenu that handles in-app purchases.
 */
 public class IAPMenu: OptionsMenu {
     
-    private lazy var storeManager = StoreManager()
+    private lazy var storeManager = StoreManager.manager
     
     private lazy var removeAds: RemoveAds = RemoveAds()
     

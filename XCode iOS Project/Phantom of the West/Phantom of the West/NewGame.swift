@@ -26,6 +26,6 @@ class NewGame: POptionsMenuItem {
     }
     
     func onSelect() {
-        
+        AppDelegate.potwStory.newGame()
     }
 }

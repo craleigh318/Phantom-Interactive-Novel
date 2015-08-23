@@ -23,3 +23,9 @@ removeAds = "Remove Ads";
 inAppPurchases = "In-App Purchases";
 
 restorePurchases = "Restore Purchases";
+
+cannotPay = "Cannot Pay";
+
+cannotPayMessage = "The transaction could not begin.";
+
+error = "Error";

@@ -67,7 +67,7 @@ public class StoryViewController: UIViewController, PStoryObserver {
         }
         
         // Enable advertising if ad-removal not purchased.
-        canDisplayBannerAds = true
+        canDisplayBannerAds = !SaveManager.purchasedAdRemoval
         
         super.viewWillAppear(animated)
     }

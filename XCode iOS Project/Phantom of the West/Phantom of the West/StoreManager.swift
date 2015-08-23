@@ -11,7 +11,11 @@ import StoreKit
 /*
 Handles interactions with the App Store.
 */
-class StoreManager: NSObject, SKProductsRequestDelegate {
+class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObserver {
+    
+    static let manager: StoreManager = StoreManager()
+    
+    static let paymentQueue: SKPaymentQueue = SKPaymentQueue.defaultQueue()
     
     private static let iapRemoveAds: NSObject = "removeAdvertisements"
     
@@ -31,15 +35,41 @@ class StoreManager: NSObject, SKProductsRequestDelegate {
         label.text = formattedPrice
     }
     
+    var productRemoveAds: SKProduct?
+    
     private var labelRemovesAds: UILabel?
+    
+    private override init() {
+        super.init()
+        StoreManager.paymentQueue.addTransactionObserver(self)
+    }
     
     func productsRequest(request: SKProductsRequest!,
         didReceiveResponse response: SKProductsResponse!) {
             let validProducts = response.products
-            let productRemoveAds = validProducts[0] as? SKProduct
+            productRemoveAds = validProducts[0] as? SKProduct
             if let pra = productRemoveAds {
                 if let lra = labelRemovesAds {
                     StoreManager.setLabelTextToPrice(lra, product: pra)
+                }
+            }
+    }
+    
+    func paymentQueue(queue: SKPaymentQueue!,
+        updatedTransactions transactions: [AnyObject]!) {
+            if let paymentTransactions = transactions as? [SKPaymentTransaction] {
+                let tRemoveAds = paymentTransactions[0]
+                let state = tRemoveAds.transactionState
+                let purchased = (state == SKPaymentTransactionState.Purchased) || (state == SKPaymentTransactionState.Restored)
+                if purchased {
+                    SaveManager.purchasedAdRemoval = true
+                    queue.finishTransaction(tRemoveAds)
+                } else if state == SKPaymentTransactionState.Failed {
+                    queue.finishTransaction(tRemoveAds)
+                    let error = NSLocalizedString("error", tableName: "GUIElements", comment: "")
+                    let errorMessage = tRemoveAds.error.localizedDescription
+                    let alert = UIAlertView(title: error, message: errorMessage, delegate: nil, cancelButtonTitle: Constants.okTitle)
+                    alert.show()
                 }
             }
     }
@@ -55,5 +85,19 @@ class StoreManager: NSObject, SKProductsRequestDelegate {
         newRequest.start()
     }
     
-    
+    /*
+    Buy the specified in-app product
+    */
+    func buy(product: SKProduct) {
+        let canPay = SKPaymentQueue.canMakePayments()
+        if canPay {
+            let newPayment = SKPayment(product: product)
+            StoreManager.paymentQueue.addPayment(newPayment)
+        } else {
+            let cannotPay = NSLocalizedString("cannotPay", tableName: "GUIElements", comment: "")
+            let cannotPayMessage = NSLocalizedString("cannotPayMessage", tableName: "GUIElements", comment: "")
+            let alert = UIAlertView(title: cannotPay, message: cannotPayMessage, delegate: nil, cancelButtonTitle: Constants.okTitle)
+            alert.show()
+        }
+    }
 }

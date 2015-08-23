@@ -9,7 +9,7 @@
 public class Constants {
     public static let buttonPreviousTitle = "⬅︎"
     
-    public static let buttonContinueTitle = "OK"
+    public static let okTitle = "OK"
     
     public static let buttonNextTitle = "➡︎"
     

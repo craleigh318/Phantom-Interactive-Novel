@@ -26,6 +26,6 @@ class RestorePurchases: POptionsMenuItem {
     }
     
     func onSelect() {
-        
+        StoreManager.paymentQueue.restoreCompletedTransactions()
     }
 }

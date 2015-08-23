@@ -26,6 +26,8 @@ class RemoveAds: POptionsMenuItem {
     }
     
     func onSelect() {
-        
+        if let pra = StoreManager.manager.productRemoveAds {
+            StoreManager.manager.buy(pra)
+        }
     }
 }
