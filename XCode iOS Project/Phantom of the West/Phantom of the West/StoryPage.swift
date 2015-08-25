@@ -52,6 +52,11 @@ class StoryPage: PStoryPage {
     }
     
     /*
+    The observer.
+    */
+    var observer: PStoryObserver?
+    
+    /*
     The page image.
     */
     private(set) var image: UIImage
@@ -62,32 +67,40 @@ class StoryPage: PStoryPage {
     private(set) var text: String
     
     /*
-    The pages to load after selecting OK.
-    */
-    private var nextPages: [PStoryPage]
-    
-    /*
     Flags used to control story branching.
     */
     private var eventFlags: EventFlagsCollection
     
-    /*
-    The observer.
-    */
-    private var observer: PStoryObserver
-    
-    init(image: String, text: [String], nextPages: [PStoryPage], observer: PStoryObserver, eventFlags: EventFlagsCollection) {
+    init(image: String, text: [String], eventFlags: EventFlagsCollection, observer: PStoryObserver? = nil) {
         self.image = StoryPage.getLocalizedImage(image)
         self.text = StoryPage.getLocalizedText(text)
-        self.nextPages = nextPages
-        self.observer = observer
         self.eventFlags = eventFlags
+        self.observer = observer
+    }
+    
+    func continueStory() {
     }
     
     /*
-    Continues the story from this page.
+    Call this when ready to continue story.
+    This will update the observer, auto-save, play voiceover, et cetera.
     */
-    func continueStory() {
-        observer.update(nextPages)
+    func onNewPages(newPages: [PStoryPage]) {
+        if let o = observer {
+            o.update(newPages)
+        }
+        // Auto save.
+        // Play voice.
+    }
+    
+    /*
+    Converts this object to a saveable format.
+    */
+    func asNSData() -> NSData {
+        let originalObserver = observer
+        observer = nil
+        let data = NSKeyedArchiver.archivedDataWithRootObject(self)
+        observer = originalObserver
+        return data
     }
 }
