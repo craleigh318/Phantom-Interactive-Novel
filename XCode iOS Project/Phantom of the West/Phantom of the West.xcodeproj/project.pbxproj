@@ -17,9 +17,9 @@
 		A418DFB01B8D2E5200C3EED9 /* PSavedGamesObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418DFAF1B8D2E5200C3EED9 /* PSavedGamesObserver.swift */; };
 		A418DFB21B8D43AC00C3EED9 /* PSavedGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418DFB11B8D43AC00C3EED9 /* PSavedGame.swift */; };
 		A418DFB41B8D45C300C3EED9 /* PSavedGameLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418DFB31B8D45C300C3EED9 /* PSavedGameLoader.swift */; };
-		A418DFB61B8D470E00C3EED9 /* OfflineSavedGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418DFB51B8D470E00C3EED9 /* OfflineSavedGame.swift */; };
 		A418DFB81B8D4FE100C3EED9 /* AutoSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418DFB71B8D4FE100C3EED9 /* AutoSave.swift */; };
 		A418DFBA1B8D513500C3EED9 /* StringLocalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418DFB91B8D513500C3EED9 /* StringLocalizer.swift */; };
+		A418DFBC1B8D5E7500C3EED9 /* ManualSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418DFBB1B8D5E7400C3EED9 /* ManualSave.swift */; };
 		A423BD391B84347000C331EE /* StoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423BD381B84347000C331EE /* StoryPage.swift */; };
 		A423BD3B1B8436D700C331EE /* StoryPageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423BD3A1B8436D700C331EE /* StoryPageList.swift */; };
 		A423BD3F1B8444C600C331EE /* PStoryPageListObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423BD3E1B8444C600C331EE /* PStoryPageListObserver.swift */; };
@@ -80,9 +80,9 @@
 		A418DFAF1B8D2E5200C3EED9 /* PSavedGamesObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSavedGamesObserver.swift; sourceTree = "<group>"; };
 		A418DFB11B8D43AC00C3EED9 /* PSavedGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSavedGame.swift; sourceTree = "<group>"; };
 		A418DFB31B8D45C300C3EED9 /* PSavedGameLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSavedGameLoader.swift; sourceTree = "<group>"; };
-		A418DFB51B8D470E00C3EED9 /* OfflineSavedGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfflineSavedGame.swift; sourceTree = "<group>"; };
 		A418DFB71B8D4FE100C3EED9 /* AutoSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoSave.swift; sourceTree = "<group>"; };
 		A418DFB91B8D513500C3EED9 /* StringLocalizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLocalizer.swift; sourceTree = "<group>"; };
+		A418DFBB1B8D5E7400C3EED9 /* ManualSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualSave.swift; sourceTree = "<group>"; };
 		A423BD381B84347000C331EE /* StoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryPage.swift; sourceTree = "<group>"; };
 		A423BD3A1B8436D700C331EE /* StoryPageList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryPageList.swift; sourceTree = "<group>"; };
 		A423BD3E1B8444C600C331EE /* PStoryPageListObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PStoryPageListObserver.swift; sourceTree = "<group>"; };
@@ -305,8 +305,8 @@
 				A418DFAF1B8D2E5200C3EED9 /* PSavedGamesObserver.swift */,
 				A418DFB11B8D43AC00C3EED9 /* PSavedGame.swift */,
 				A418DFB31B8D45C300C3EED9 /* PSavedGameLoader.swift */,
-				A418DFB51B8D470E00C3EED9 /* OfflineSavedGame.swift */,
 				A418DFB71B8D4FE100C3EED9 /* AutoSave.swift */,
+				A418DFBB1B8D5E7400C3EED9 /* ManualSave.swift */,
 			);
 			name = Serialization;
 			sourceTree = "<group>";
@@ -468,7 +468,7 @@
 				A418DFB21B8D43AC00C3EED9 /* PSavedGame.swift in Sources */,
 				A467822F1B58FBCD00745C98 /* PNavigatorHandler.swift in Sources */,
 				A4015DA81B65D4E400F99486 /* IAPMenu.swift in Sources */,
-				A418DFB61B8D470E00C3EED9 /* OfflineSavedGame.swift in Sources */,
+				A418DFBC1B8D5E7500C3EED9 /* ManualSave.swift in Sources */,
 				A467822B1B58F4D900745C98 /* PStoryObserver.swift in Sources */,
 				A4FB1DC81B894444009B648E /* SaveManager.swift in Sources */,
 				A4C1A63F1B642C900007B567 /* VoiceOption.swift in Sources */,

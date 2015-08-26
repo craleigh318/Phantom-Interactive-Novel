@@ -16,14 +16,14 @@ public protocol PSavedGame {
     /*
     The save's label.
     */
-    var name: String? {
+    var name: String! {
         get
     }
     
     /*
     Date of the latest modification.
     */
-    var date: NSDate? {
+    var date: NSDate! {
         get
     }
     
@@ -33,7 +33,7 @@ public protocol PSavedGame {
     func load(loader: PSavedGamesLoader)
     
     /*
-    Removes the data.
+    Deletes the data.
     */
-    func remove()
+    func delete()
 }

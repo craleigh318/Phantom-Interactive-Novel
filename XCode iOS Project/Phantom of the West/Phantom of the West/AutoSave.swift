@@ -27,9 +27,9 @@ public class AutoSave: PSavedGame {
     
     private static let autoSaveDateKey = "autoSave"
     
-    public let name: String? = StringLocalizer.getGUIString("autoSave")
+    public let name: String! = StringLocalizer.getGUIString("autoSave")
     
-    public private(set) var date: NSDate? {
+    public private(set) var date: NSDate! {
         get {
             let dateData = SaveManager.defaults.objectForKey(AutoSave.autoSaveDateKey) as? NSData
             if let dd = dateData {
@@ -57,7 +57,7 @@ public class AutoSave: PSavedGame {
         loader.savedGamesLoaded(data, error: nil)
     }
     
-    public func remove() {
+    public func delete() {
         SaveManager.defaults.setObject(nil, forKey: AutoSave.autoSaveKey)
         date = nil
     }
