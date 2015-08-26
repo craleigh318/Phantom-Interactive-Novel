@@ -14,6 +14,7 @@
 		A4097A921B8C68A200EEFEC9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4097A911B8C68A200EEFEC9 /* GameKit.framework */; };
 		A41401381B7D8D86001CEAB1 /* NewGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41401371B7D8D86001CEAB1 /* NewGame.swift */; };
 		A414013A1B7DA79E001CEAB1 /* EventFlagsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41401391B7DA79E001CEAB1 /* EventFlagsCollection.swift */; };
+		A41716781B8E616D006CE905 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41716771B8E616D006CE905 /* AlertManager.swift */; };
 		A418DFB21B8D43AC00C3EED9 /* PSavedGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418DFB11B8D43AC00C3EED9 /* PSavedGame.swift */; };
 		A418DFB41B8D45C300C3EED9 /* PSavedGameLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418DFB31B8D45C300C3EED9 /* PSavedGameLoader.swift */; };
 		A418DFB81B8D4FE100C3EED9 /* AutoSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418DFB71B8D4FE100C3EED9 /* AutoSave.swift */; };
@@ -77,6 +78,7 @@
 		A4097A911B8C68A200EEFEC9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		A41401371B7D8D86001CEAB1 /* NewGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGame.swift; sourceTree = "<group>"; };
 		A41401391B7DA79E001CEAB1 /* EventFlagsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFlagsCollection.swift; sourceTree = "<group>"; };
+		A41716771B8E616D006CE905 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		A418DFB11B8D43AC00C3EED9 /* PSavedGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSavedGame.swift; sourceTree = "<group>"; };
 		A418DFB31B8D45C300C3EED9 /* PSavedGameLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSavedGameLoader.swift; sourceTree = "<group>"; };
 		A418DFB71B8D4FE100C3EED9 /* AutoSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoSave.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 			children = (
 				A4FC54691B5F685D00FA5AFC /* Story View */,
 				A4FC546A1B5F686900FA5AFC /* Options View */,
+				A41716771B8E616D006CE905 /* AlertManager.swift */,
 			);
 			name = "Visual Novel Reader";
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				A46782261B58F10D00745C98 /* PStory.swift in Sources */,
 				A45B1B741B5C85C400FE33B9 /* PConstraintsChanger.swift in Sources */,
 				A4E31CB11B86A3D500ECFFEE /* ch1IAmDrKaden.swift in Sources */,
+				A41716781B8E616D006CE905 /* AlertManager.swift in Sources */,
 				A46782241B58EBD700745C98 /* PStoryPage.swift in Sources */,
 				A418DFB81B8D4FE100C3EED9 /* AutoSave.swift in Sources */,
 				A4FD363C1B637CEA002EEFD4 /* SaveGame.swift in Sources */,

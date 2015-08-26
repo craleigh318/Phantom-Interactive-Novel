@@ -35,12 +35,7 @@ class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObs
         label.text = formattedPrice
     }
     
-    private static func showError(error: NSError) {
-        let errorTitle = StringLocalizer.getGUIString("error")
-        let errorMessage = error.localizedDescription
-        let alert = UIAlertView(title: errorTitle, message: errorMessage, delegate: nil, cancelButtonTitle: Constants.okTitle)
-        alert.show()
-    }
+    
     
     var productRemoveAds: SKProduct?
     
@@ -73,7 +68,7 @@ class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObs
                         queue.finishTransaction(tRemoveAds)
                     } else if state == SKPaymentTransactionState.Failed {
                         queue.finishTransaction(tRemoveAds)
-                        StoreManager.showError(tRemoveAds.error)
+                        AlertManager.showError(tRemoveAds.error)
                     }
                 }
             }
@@ -81,7 +76,7 @@ class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObs
     
     func paymentQueue(queue: SKPaymentQueue!,
         restoreCompletedTransactionsFailedWithError error: NSError!) {
-            StoreManager.showError(error)
+            AlertManager.showError(error)
     }
     
     /*

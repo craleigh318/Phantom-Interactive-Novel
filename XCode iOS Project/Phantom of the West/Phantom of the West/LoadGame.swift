@@ -13,6 +13,11 @@ Load Game option.
 */
 class LoadGame: POptionsMenuItem {
     
+    /*
+    The view controller displaying this cell.
+    */
+    var displayingVC: UIViewController?
+    
     private(set) var cell: UITableViewCell
     
     /*
@@ -26,6 +31,20 @@ class LoadGame: POptionsMenuItem {
     }
     
     func onSelect() {
-        
+        if ManualSave.localPlayer.authenticated {
+            // Push load game view.
+        } else {
+            // Present Game Center view.
+            ManualSave.localPlayer.authenticateHandler = {
+                (viewController, error) in
+                if let vc = viewController {
+                    if let nc = self.displayingVC?.navigationController {
+                        nc.presentViewController(vc, animated: true, completion: nil)
+                    }
+                } else if let e = error {
+                    AlertManager.showError(e)
+                }
+            }
+        }
     }
 }
