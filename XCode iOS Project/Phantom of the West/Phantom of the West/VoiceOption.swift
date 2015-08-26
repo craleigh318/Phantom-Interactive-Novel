@@ -25,7 +25,7 @@ class VoiceOption: POptionsMenuItem {
         toggle = UISwitch()
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         if let label = cell.textLabel {
-            label.text = NSLocalizedString("voiceOver", tableName: "GUIElements", comment: "")
+            label.text = StringLocalizer.getGUIString("voiceOver")
         }
         cell.accessoryView = toggle
     }

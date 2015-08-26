@@ -21,7 +21,7 @@ class NewGame: POptionsMenuItem {
     init() {
         cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil)
         if let label = cell.textLabel {
-            label.text = NSLocalizedString("newGame", tableName: "GUIElements", comment: "")
+            label.text = StringLocalizer.getGUIString("newGame")
         }
     }
     

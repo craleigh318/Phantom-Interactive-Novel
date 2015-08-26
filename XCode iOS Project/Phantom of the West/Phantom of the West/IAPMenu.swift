@@ -23,7 +23,7 @@ public class IAPMenu: OptionsMenu {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        title = NSLocalizedString("inAppPurchases", tableName: "GUIElements", comment: "")
+        title = StringLocalizer.getGUIString("inAppPurchases")
         if let detailLabel = removeAds.cell.detailTextLabel {
             storeManager.updateLabelsWithPrices(detailLabel)
         }

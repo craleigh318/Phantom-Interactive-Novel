@@ -31,7 +31,7 @@ public class MainOptionsMenu: OptionsMenu {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        title = NSLocalizedString("options", tableName: "GUIElements", comment: "")
+        title = StringLocalizer.getGUIString("options")
     }
     
     override public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

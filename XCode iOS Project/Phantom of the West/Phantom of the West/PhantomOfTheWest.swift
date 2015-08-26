@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
+import Foundation
+
 public class PhantomOfTheWest: PStory, PStoryObserver {
     
     /*
@@ -24,5 +26,16 @@ public class PhantomOfTheWest: PStory, PStoryObserver {
         if let o = observer {
             o.update(pages)
         }
+    }
+    
+    /*
+    Converts an archived NSData save to a usuable class.
+    */
+    func NSDataToStoryPage(data: NSData) -> StoryPage? {
+        let newStoryPage = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? StoryPage
+        if let nsp = newStoryPage {
+            nsp.observer = self
+        }
+        return newStoryPage
     }
 }

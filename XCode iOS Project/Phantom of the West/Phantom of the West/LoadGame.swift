@@ -21,7 +21,7 @@ class LoadGame: POptionsMenuItem {
     init() {
         cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil)
         if let label = cell.textLabel {
-            label.text = NSLocalizedString("load", tableName: "GUIElements", comment: "")
+            label.text = StringLocalizer.getGUIString("load")
         }
     }
     

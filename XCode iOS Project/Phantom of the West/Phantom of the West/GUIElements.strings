@@ -29,3 +29,5 @@ cannotPay = "Cannot Pay";
 cannotPayMessage = "The transaction could not begin.";
 
 error = "Error";
+
+autoSave = "Auto-Save";

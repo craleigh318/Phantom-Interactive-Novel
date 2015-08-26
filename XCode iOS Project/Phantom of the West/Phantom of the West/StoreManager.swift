@@ -36,7 +36,7 @@ class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObs
     }
     
     private static func showError(error: NSError) {
-        let errorTitle = NSLocalizedString("error", tableName: "GUIElements", comment: "")
+        let errorTitle = StringLocalizer.getGUIString("error")
         let errorMessage = error.localizedDescription
         let alert = UIAlertView(title: errorTitle, message: errorMessage, delegate: nil, cancelButtonTitle: Constants.okTitle)
         alert.show()
@@ -104,8 +104,8 @@ class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObs
             let newPayment = SKPayment(product: product)
             StoreManager.paymentQueue.addPayment(newPayment)
         } else {
-            let cannotPay = NSLocalizedString("cannotPay", tableName: "GUIElements", comment: "")
-            let cannotPayMessage = NSLocalizedString("cannotPayMessage", tableName: "GUIElements", comment: "")
+            let cannotPay = StringLocalizer.getGUIString("cannotPay")
+            let cannotPayMessage = StringLocalizer.getGUIString("cannotPayMessage")
             let alert = UIAlertView(title: cannotPay, message: cannotPayMessage, delegate: nil, cancelButtonTitle: Constants.okTitle)
             alert.show()
         }

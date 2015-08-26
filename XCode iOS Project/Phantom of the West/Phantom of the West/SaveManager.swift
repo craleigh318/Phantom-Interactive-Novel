@@ -14,7 +14,7 @@ public class SaveManager {
     
     private static let purchasedAdRemovalKey: String  = "purchasedAdRemoval"
     
-    public static var purchasedAdRemoval: Bool {
+    public internal(set) static var purchasedAdRemoval: Bool {
         get {
         return defaults.boolForKey(purchasedAdRemovalKey)
         }

@@ -21,7 +21,7 @@ class RemoveAds: POptionsMenuItem {
     init() {
         cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: nil)
         if let label = cell.textLabel {
-            label.text = NSLocalizedString("removeAds", tableName: "GUIElements", comment: "")
+            label.text = StringLocalizer.getGUIString("removeAds")
         }
     }
     

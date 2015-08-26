@@ -26,7 +26,7 @@ class ToIAPMenu: POptionsMenuItem {
     init() {
         cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil)
         if let label = cell.textLabel {
-            label.text = NSLocalizedString("removeAds", tableName: "GUIElements", comment: "")
+            label.text = StringLocalizer.getGUIString("removeAds")
         }
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
     }

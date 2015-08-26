@@ -98,7 +98,7 @@ class Bookmark: PStoryObserver {
         let numPages = unwrappedCurrentPages.count
         if numPages > 1 {
             let currentChoiceNumber = index + 1
-            let choiceOf = NSLocalizedString("choiceOf", tableName: "GUIElements", comment: "")
+            let choiceOf = StringLocalizer.getGUIString("choiceOf")
             let header: String! =  String(format: "\(choiceOf):\n\n", arguments: [currentChoiceNumber, numPages])
             text += header
         }

@@ -44,7 +44,7 @@ class StoryPage: PStoryPage {
             if !firstString {
                 localizedText += "\n\n"
             }
-            let kValue = NSLocalizedString(k, tableName: storyTextTable, comment: "")
+            let kValue = StringLocalizer.getStoryTextString(k)
             localizedText += kValue
             firstString = false
         }
