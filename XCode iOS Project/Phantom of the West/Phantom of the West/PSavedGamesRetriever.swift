@@ -1,5 +1,5 @@
 //
-//  PSavedGamesObserver.swift
+//  PSavedGamesRetriever.swift
 //  Phantom of the West
 //
 //  Created by Christopher Raleigh on 2015/08/25.

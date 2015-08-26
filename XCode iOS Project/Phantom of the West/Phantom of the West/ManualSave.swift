@@ -16,6 +16,14 @@ public class ManualSave: PSavedGame {
     
     public static let localPlayer = GKLocalPlayer.localPlayer()
     
+    public static func getSavedGames(retriever: PSavedGamesRetriever) {
+        localPlayer.fetchSavedGamesWithCompletionHandler({
+            (savedGames, error) in
+            let castedSavedGames = savedGames as? [GKSavedGame]
+            retriever.savedGamesRetrieved(castedSavedGames, error: error)
+        })
+    }
+    
     public static func save(data: NSData, name: String) {
         localPlayer.saveGameData(data, withName: name, completionHandler: nil)
     }
