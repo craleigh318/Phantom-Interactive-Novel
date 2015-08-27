@@ -21,7 +21,11 @@ public class MainOptionsMenu: OptionsMenu {
         return newMenu
         }()
     
-    private lazy var newGame: NewGame = NewGame()
+    private lazy var newGame: NewGame = {
+        let newMenu = NewGame()
+        newMenu.displayingVC = self
+        return newMenu
+        }()
     
     private lazy var voiceOption: VoiceOption = VoiceOption()
     

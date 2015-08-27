@@ -13,6 +13,11 @@ New Game option.
 */
 class NewGame: POptionsMenuItem {
     
+    /*
+    The view controller displaying this cell.
+    */
+    var displayingVC: UIViewController?
+    
     private(set) var cell: UITableViewCell
     
     /*
@@ -27,5 +32,8 @@ class NewGame: POptionsMenuItem {
     
     func onSelect() {
         AppDelegate.potwStory.newGame()
+        if let nc = displayingVC?.navigationController {
+            nc.popToRootViewControllerAnimated(true)
+        }
     }
 }
