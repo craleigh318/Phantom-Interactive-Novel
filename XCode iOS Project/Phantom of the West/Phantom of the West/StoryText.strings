@@ -1232,7 +1232,9 @@ ch12TimeAgo = "10 years ago …";
 
 ch12RebeccaAvoidedMe = "Rebecca hadn\'t been meeting up with me for lunch at school as often as she used to. At first, I didn\'t think much about it. I just ate alone and then worked on my homework for the rest of the lunch period. A few weeks passed, and, well, I got curious about what was going on with Rebecca.";
 
-ch12ISpiedOnRebecca = "One weekend, I took my binoculars and entered the building across the street from our apartment building. I went up to the roof. From there, I looked into Rebecca\'s room. It was dim, but from what I was able to make out, Rebecca was sitting on her bed with another person, and they were looking into each other\'s eyes. Then, the other person reached towards Rebecca, and …";
+ch12ISpiedOnRebecca = "One weekend, I took my binoculars and entered the building across the street from our apartment building. I went up to the roof.";
+
+ch12ISawIntoRebeccaRoom = "From there, I looked into Rebecca\'s room. It was dim, but from what I was able to make out, Rebecca was sitting on her bed with another person, and they were looking into each other\'s eyes. Then, the other person reached towards Rebecca, and …";
 
 ch12DidRebeccaLoseInterest = "… And … well … I just felt too nervous. I lowered my binoculars, and I was a bit confused. I understood that Rebecca enjoyed being with her other friends, but … why this? What was wrong with me that had Rebecca lose interest?";
 
