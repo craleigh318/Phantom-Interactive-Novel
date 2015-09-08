@@ -76,6 +76,11 @@ class EventFlagsCollection {
     var ch5SparredWithCheerleader: CheerleaderSpar?
     
     /*
+    In Chapter 7, did Dr. Kaden, as Élodie, accept going out with Hewitt?
+    */
+    var ch7HungOutWithHewitt: HewittHangout?
+    
+    /*
     In Chapter 7, did Dr. Kaden, as Hewitt, kiss Va'Nal, as Élodie?
     */
     var ch7KissedVaNal: VaNalKiss?
@@ -165,6 +170,14 @@ In Chapter 5, at St. Josephine's, how did Dr. Kaden, as Ananya, end the spar wit
 enum CheerleaderSpar {
     case Pinned
     case Kicked
+}
+
+/*
+In Chapter 7, did Dr. Kaden, as Élodie, accept going out with Hewitt?
+*/
+enum HewittHangout {
+    case Accepted
+    case Refused
 }
 
 /*

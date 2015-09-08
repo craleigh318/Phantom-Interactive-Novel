@@ -548,7 +548,11 @@ ch7SezjaIsQuiet = "Sezja doesn\'t speak much as Carleigh, though that\'s probabl
 
 ch7MorningPasses = "The rest of my classes before lunch go fine. I don\'t share any of those classes with Carleigh, so I\'m just hoping that Sezja isn\'t ruining Carleigh\'s image.";
 
-ch7LunchBegins = "Finally, it\'s lunchtime. I promised Hewitt that I would tell him whether I wanted to go out with him. I go to the dining area and see Hewitt eating some chicken strips. I sit in front of him. \"Hello, Hewitt.\" Hewitt looks up at me. \"I\'ve thought about when you asked me to hang out with you later this afternoon. My answer is … yes. I\'d be fine with hanging out,\" I smile.";
+ch7LunchBegins = "Finally, it\'s lunchtime. I promised Hewitt that I would tell him whether I wanted to go out with him. I go to the dining area and see Hewitt eating some chicken strips. I sit in front of him. \"Hello, Hewitt.\" Hewitt looks up at me. \"I\'ve thought about when you asked me to hang out with you later this afternoon. My answer is …\"";
+
+ch7IAcceptHangout = "\"… yes. I\'d be fine with hanging out.\"";
+
+ch7IDeclineHangout = "\"… no. I\'m sorry, Hewitt, but I\'m busy today.\"";
 
 ch7BaqerBurpsAtMe = "\"Yeah, whatever, Babe,\" burps Hewitt, with food still in his mouth. Gross! \"Now buy me some dessert. This chicken isn\'t filling me up,\" he demands.";
 
