@@ -20,7 +20,7 @@ ch1ILeaveHotel = "I leave my hotel room and walk out to the city below. There ar
 
 ch1IGoToAlley = "It\'s been some time now, and I don\'t feel well. My mind is spacing out, and I might be getting weaker. I turn into a nearby alley and fall to my knees.";
 
-ch1MyFaceDisappears = "A patrolling police officer notices me and stops in the alley. \"Are you all right, sir?\" he asks. I\'m still lightheaded, but I manage to tilt my head up to look at the officer. I cannot feel my own face though. Is it missing?";
+ch1MyFaceDisappears = "A patrolling police officer notices me and stops in the alley. \"Are you all right, Sir?\" he asks. I\'m still lightheaded, but I manage to tilt my head up to look at the officer. I cannot feel my own face though. Is it missing?";
 
 ch1IOpenMyEyes = "Just a moment later, I can open my eyes. This has to be it. I\'m as light as vapor now. This is a good opportunity to test my new ability.";
 
@@ -386,7 +386,9 @@ ch5ITieAnanyasHair = "Since I don\'t want to constantly adjust my hair during ph
 
 ch5IEnterPEClass = "When gym class begins, we line up for attendance. I see the cheerleader in the line across from mine. I narrow my eyes and smirk.";
 
-ch5CoachLectures = "After attendance, the coach begins his lecture, \"You are all bright young men and women, and you have the rest of your lives ahead of you. Today, I am going to teach you some basic self-defense so that you can keep that life safe. As many of you know, almost all of the industrialized world bans civilians from possessing firearms, including our country. It\'s been like this for over a decade, and it has been keeping us safe. Now, some rural areas are exempt from the firearms ban, but we won\'t be focusing on those today. Anyway, the problem is that criminals have an obvious tendency of not playing by the rules. It is possible, even if not likely, that, one day, one of them will use a gun to threaten you. Can anyone tell me what they would do if a criminal threatened them with a gun?\" I have a good answer to this question. I raise my hand, and the coach calls on me, \"Yes, Ananya?\"";
+ch5CoachLectures = "After attendance, the coach begins his lecture, \"You are all bright young men and women, and you have the rest of your lives ahead of you. Today, I am going to teach you some basic self-defense so that you can keep that life safe. As many of you know, almost all of the industrialized world bans civilians from possessing firearms, including our country. It\'s been like this for over a decade, and it has been keeping us safe. Now, some rural areas are exempt from the firearms ban, but we won\'t be focusing on those today. Anyway, the problem is that criminals have an obvious tendency of not playing by the rules. It is possible, even if not likely, that, one day, one of them will use a gun to threaten you. Can anyone tell me what they would do if a criminal threatened them with a gun?\"";
+
+ch5IRaiseHand = "I have a good answer to this question. I raise my hand, and the coach calls on me, \"Yes, Ananya?\"";
 
 ch5IWouldSubmit = "\"I would just listen to what the criminal says.\"";
 
