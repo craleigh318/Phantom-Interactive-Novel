@@ -1376,7 +1376,7 @@ ch14ElFantasma = "The figure towered over the mainlanders. They looked up and po
 
 ch15Title = "Chapter 15";
 
-ch15IAmInJail = "I awaken in my gaseous form. I\'m in a vacuum-sealed glass tube. The tube is about the size of a person. Just outside the tube are the confines of a jail cell.";
+ch15IAmInJail = "I awaken in my gaseous form. I\'m in a glass tube, about the size of a person. Just outside the tube are the confines of a jail cell.";
 
 ch15ISeeViolinist = "I hear somber music. I turn around and see a prisoner in another cell playing a violin. He looks down at the ground while playing, deprived of any hope.";
 
@@ -1686,13 +1686,15 @@ ch17WeRepairBuildings = "We repair the buildings that were damaged.";
 
 ch17WeCelebrate = "We\'re finally done. We cheer and celebrate. Once the rest of the world finds out what happened here, they, too, will find the future that I have shaped. They, too, will appreciate the powers of a phantom.";
 
-ch17IExamineMyRealSelf = "I see my old, familiar face. I see my hood, casting a shadow over my eyes. I\'ve been keeping to myself for a long time, but I can\'t go on like this forever.";
+ch17IExamineMyRealSelf = "I see my old, familiar face. I see my hood, casting a shadow over my eyes. I\'ve been keeping to myself for a long time, but can I really go on like this forever?";
 
 ch17IAssumedEmpathySelf = "I had been so selfish in the past. I assumed that however I felt, everyone else would feel the same way. It even seemed that way too, at first. I didn\'t understand what went wrong.";
 
 ch17ILostTrustSelf = "After things did go wrong, I felt that continuing on was hopeless. After all, if I could not keep the trust of someone I knew since middle school, what chance would I have with someone who would not even know me until later?";
 
-ch17ICanStillLove = "I was being too cynical, though. I realize now that there is still love to be had.";
+ch17WhyICreatedTheGods = "I remember that lecture from Prof. Arvin\'s class. He said that the western natives realized that, in order to live a fulfilling life, they needed to balance several aspects of humanity. Neglecting one aspect, even if it were for the favor of another, would result in depression. They personified these aspects into gods and worshipped them. It did not matter whether the gods themselves were real, because the principles that created them were.";
+
+ch17ICanStillLove = "I was being too cynical the whole time. I realize now that there is still love to be had.";
 
 ch17IGrabMyHood = "I reach for my hood. My hands tremble. I have to let go of the past. I cannot be a stranger anymore.";
 
