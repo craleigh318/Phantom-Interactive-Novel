@@ -13,5 +13,5 @@ protocol PStoryPageListObserver {
     /*
     Notifies this observer that StoryPageLisr changed.
     */
-    func update(StoryPageList)
+    func update(_: StoryPageList)
 }

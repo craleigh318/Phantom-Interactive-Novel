@@ -29,9 +29,9 @@ public class SavedGamesList {
     Indices start at 1.
     */
     public func getSave(atIndex: Int) -> [PStoryPage]? {
-        if let sgs = savedGames {
+        /*if let sgs = savedGames {
             let savedGame = sgs[atIndex]
-        }
+        }*/
         
         return nil
     }

@@ -28,8 +28,8 @@ class StoryNavigator: PNavigatorHandler, PConstraintsChanger {
     private static let numLandscapeRows: CGFloat = 3.0
     
     private static func makeButton(title: String?) -> UIButton {
-        var newButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
-        newButton.setTranslatesAutoresizingMaskIntoConstraints(false)
+        let newButton = UIButton(type: UIButtonType.System)
+        newButton.translatesAutoresizingMaskIntoConstraints = false
         newButton.setTitle(title, forState: UIControlState.Normal)
         return newButton
     }
@@ -146,7 +146,7 @@ class StoryNavigator: PNavigatorHandler, PConstraintsChanger {
     */
     init() {
         // Initialize contraints.
-        view.setTranslatesAutoresizingMaskIntoConstraints(false)
+        view.translatesAutoresizingMaskIntoConstraints = false
         
         // Add universal constraints for each button.
         let buttons = [buttonPrevious, buttonContinue, buttonNext, buttonOptions]

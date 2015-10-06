@@ -1746,7 +1746,9 @@ ch17LotToTakeIn = "\"Oh, I see,\" Sarah sighed. \"That\'s a lot to take in, thou
 
 ch17WeReachCamp = "We finally reach the camp. There are at least a hundred thousand people here waiting to be evacuated.";
 
-ch17CaitlynPullsMe = "While we wait among the crowd for rescue, Caitlyn pulls me aside. \"I\'ve been wanting to talk to you about something,\" Caitlyn says.";
+ch17CaitlynPullsMe = "While we wait among the crowd for rescue, Caitlyn pulls me aside.";
+
+ch17WhyDidCaitlynPullMe = "\"I\'ve been wanting to talk to you about something,\" Caitlyn says.";
 
 ch17WhatIsItCaitlyn = "\"Sure, what is it?\" I ask.";
 

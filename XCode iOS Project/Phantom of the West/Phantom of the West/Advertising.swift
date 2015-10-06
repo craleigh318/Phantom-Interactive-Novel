@@ -57,7 +57,7 @@ class Advertising: NSObject, ADBannerViewDelegate {
         view = UIView()
         constraints = []
         super.init()
-        view.setTranslatesAutoresizingMaskIntoConstraints(false)
+        view.translatesAutoresizingMaskIntoConstraints = false
         addConstraintsWithoutAd()
     }
     

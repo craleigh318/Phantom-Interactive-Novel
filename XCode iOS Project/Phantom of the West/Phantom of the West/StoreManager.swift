@@ -17,7 +17,7 @@ class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObs
     
     static let paymentQueue: SKPaymentQueue = SKPaymentQueue.defaultQueue()
     
-    private static let iapRemoveAds: NSObject = "removeAdvertisements"
+    private static let iapRemoveAds = "removeAdvertisements"
     
     /*
     Returns a localized string from the price of the specified product.
@@ -46,10 +46,10 @@ class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObs
         StoreManager.paymentQueue.addTransactionObserver(self)
     }
     
-    func productsRequest(request: SKProductsRequest!,
-        didReceiveResponse response: SKProductsResponse!) {
+    func productsRequest(request: SKProductsRequest,
+        didReceiveResponse response: SKProductsResponse) {
             let validProducts = response.products
-            productRemoveAds = validProducts[0] as? SKProduct
+            productRemoveAds = validProducts[0]
             if let pra = productRemoveAds {
                 if let lra = labelRemovesAds {
                     StoreManager.setLabelTextToPrice(lra, product: pra)
@@ -57,25 +57,23 @@ class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObs
             }
     }
     
-    func paymentQueue(queue: SKPaymentQueue!,
-        updatedTransactions transactions: [AnyObject]!) {
-            if let paymentTransactions = transactions as? [SKPaymentTransaction] {
-                for tRemoveAds in paymentTransactions {
-                    let state = tRemoveAds.transactionState
-                    let purchased = (state == SKPaymentTransactionState.Purchased) || (state == SKPaymentTransactionState.Restored)
-                    if purchased {
-                        SaveManager.purchasedAdRemoval = true
-                        queue.finishTransaction(tRemoveAds)
-                    } else if state == SKPaymentTransactionState.Failed {
-                        queue.finishTransaction(tRemoveAds)
-                        AlertManager.showError(tRemoveAds.error)
-                    }
+    func paymentQueue(queue: SKPaymentQueue,
+        updatedTransactions transactions: [SKPaymentTransaction]) {
+            for tRemoveAds in transactions {
+                let state = tRemoveAds.transactionState
+                let purchased = (state == SKPaymentTransactionState.Purchased) || (state == SKPaymentTransactionState.Restored)
+                if purchased {
+                    SaveManager.purchasedAdRemoval = true
+                    queue.finishTransaction(tRemoveAds)
+                } else if state == SKPaymentTransactionState.Failed {
+                    queue.finishTransaction(tRemoveAds)
+                    AlertManager.showError(tRemoveAds.error!)
                 }
             }
     }
     
-    func paymentQueue(queue: SKPaymentQueue!,
-        restoreCompletedTransactionsFailedWithError error: NSError!) {
+    func paymentQueue(queue: SKPaymentQueue,
+        restoreCompletedTransactionsFailedWithError error: NSError) {
             AlertManager.showError(error)
     }
     
@@ -84,7 +82,7 @@ class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObs
     */
     func updateLabelsWithPrices(newLabelRemovesAds: UILabel) {
         labelRemovesAds = newLabelRemovesAds
-        let productIDs: Set<NSObject> = [StoreManager.iapRemoveAds]
+        let productIDs: Set<String> = [StoreManager.iapRemoveAds]
         let newRequest = SKProductsRequest(productIdentifiers: productIDs)
         newRequest.delegate = self
         newRequest.start()

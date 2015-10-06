@@ -40,7 +40,7 @@ class StoryImage {
     */
     init() {
         view = UIImageView()
-        view.setTranslatesAutoresizingMaskIntoConstraints(false)
+        view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.magnificationFilter = kCAFilterNearest
     }
 }

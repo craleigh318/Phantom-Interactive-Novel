@@ -19,8 +19,7 @@ public class ManualSave: PSavedGame {
     public static func getSavedGames(retriever: PSavedGamesRetriever) {
         localPlayer.fetchSavedGamesWithCompletionHandler({
             (savedGames, error) in
-            let castedSavedGames = savedGames as? [GKSavedGame]
-            retriever.savedGamesRetrieved(castedSavedGames, error: error)
+            retriever.savedGamesRetrieved(savedGames, error: error)
         })
     }
     
