@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "Phantom-Reveal-with-Eyes.png"
+      "filename" : "Phantom-Reveal-with-Eyes.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

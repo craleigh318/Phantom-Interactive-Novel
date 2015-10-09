@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "Officer-on-Bed.png"
+      "filename" : "Officer-on-Bed.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

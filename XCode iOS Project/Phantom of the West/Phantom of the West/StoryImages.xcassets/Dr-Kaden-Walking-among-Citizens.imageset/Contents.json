@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "Dr-Kaden-Walking-among-Citizens.png"
+      "filename" : "Dr-Kaden-Walking-among-Citizens.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

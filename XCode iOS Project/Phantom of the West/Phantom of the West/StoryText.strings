@@ -1686,7 +1686,9 @@ ch17WeRepairBuildings = "We repair the buildings that were damaged.";
 
 ch17WeCelebrate = "We\'re finally done. We cheer and celebrate. Once the rest of the world finds out what happened here, they, too, will find the future that I have shaped. They, too, will appreciate the powers of a phantom.";
 
-ch17IExamineMyRealSelf = "I see my old, familiar face. I see my hood, casting a shadow over my eyes. I\'ve been keeping to myself for a long time, but can I really go on like this forever?";
+ch17IExamineMyRealSelf = "I see my old, familiar face. I see my hood, casting a shadow over my eyes.";
+
+ch17PhantomDefinitions = "\"Phantom.\" It means \"ghost\" or \"spirit\"—a \"fantasma\", as some call it. But it can also mean \"mysterious\", and that\'s how I\'ve been. I\'ve kept to myself for a long time, but can I really go on like this forever?";
 
 ch17IAssumedEmpathySelf = "I had been so selfish in the past. I assumed that however I felt, everyone else would feel the same way. It even seemed that way too, at first. I didn\'t understand what went wrong.";
 
