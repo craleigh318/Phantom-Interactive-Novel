@@ -18,7 +18,8 @@ public class PhantomOfTheWest: PStory, PStoryObserver {
     public var observer: PStoryObserver?
     
     public func newGame() {
-        let firstPage = ch1IAmDrKaden()
+        let emptyFlags = EventFlagsCollection()
+        let firstPage = ch1IAmDrKaden(eventFlags: emptyFlags, observer: self)
         update([firstPage])
     }
     

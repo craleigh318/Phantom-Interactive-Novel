@@ -79,6 +79,10 @@ public class StoryViewController: UIViewController, PStoryObserver {
         super.viewWillDisappear(animated)
     }
     
+    override public func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     public func update(pages: [PStoryPage]) {
         bookmark.update(pages)
     }

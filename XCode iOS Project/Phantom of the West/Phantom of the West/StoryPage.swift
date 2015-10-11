@@ -69,7 +69,7 @@ class StoryPage: PStoryPage {
     /*
     Flags used to control story branching.
     */
-    private var eventFlags: EventFlagsCollection
+    var eventFlags: EventFlagsCollection
     
     init(image: String, text: [String], eventFlags: EventFlagsCollection, observer: PStoryObserver? = nil) {
         self.image = StoryPage.getLocalizedImage(image)
@@ -79,6 +79,7 @@ class StoryPage: PStoryPage {
     }
     
     func continueStory() {
+        onNewPages([])
     }
     
     /*

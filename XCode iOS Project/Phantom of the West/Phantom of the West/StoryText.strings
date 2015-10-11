@@ -20,7 +20,9 @@ ch1ILeaveHotel = "I leave my hotel room and walk out to the city below. There ar
 
 ch1IGoToAlley = "It\'s been some time now, and I don\'t feel well. My mind is spacing out, and I might be getting weaker. I turn into a nearby alley and fall to my knees.";
 
-ch1MyFaceDisappears = "A patrolling police officer notices me and stops in the alley. \"Are you all right, Sir?\" he asks. I\'m still lightheaded, but I manage to tilt my head up to look at the officer. I cannot feel my own face though. Is it missing?";
+ch1OfficerSeesMe = "A patrolling police officer notices me and stops in the alley. \"Are you all right, Sir?\" he asks.";
+
+ch1MyFaceDisappears = "I\'m still lightheaded, but I manage to tilt my head up to look at the officer. I cannot feel my own face though. Is it missing?";
 
 ch1IOpenMyEyes = "Just a moment later, I can open my eyes. This has to be it. I\'m as light as vapor now. This is a good opportunity to test my new ability.";
 
