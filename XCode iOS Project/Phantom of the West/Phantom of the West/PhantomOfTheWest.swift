@@ -30,6 +30,21 @@ public class PhantomOfTheWest: PStory, PStoryObserver {
     }
     
     /*
+    Converts a saveable format to a usable array.
+    */
+    func NSDataToPages(data: NSData) -> [StoryPage] {
+        var savedPages = [StoryPage]()
+        if let individualData = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [NSData] {
+            for datum in individualData {
+                if let p = NSDataToStoryPage(datum) {
+                    savedPages.append(p)
+                }
+            }
+        }
+        return savedPages
+    }
+    
+    /*
     Converts an archived NSData save to a usuable class.
     */
     func NSDataToStoryPage(data: NSData) -> StoryPage? {

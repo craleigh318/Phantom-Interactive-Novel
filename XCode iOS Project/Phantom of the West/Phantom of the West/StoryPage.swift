@@ -52,6 +52,19 @@ class StoryPage: PStoryPage {
     }
     
     /*
+    Converts an array to a saveable format.
+    */
+    static func pagesToNSData(pages: [StoryPage]) -> NSData {
+        var savingPages = [NSData]()
+        for p in pages {
+            let pa = p.asNSData()
+            savingPages.append(pa)
+        }
+        let savingPagesArchived = NSKeyedArchiver.archivedDataWithRootObject(savingPages)
+        return savingPagesArchived
+    }
+    
+    /*
     The observer.
     */
     var observer: PStoryObserver?
@@ -86,11 +99,14 @@ class StoryPage: PStoryPage {
     Call this when ready to continue story.
     This will update the observer, auto-save, play voiceover, et cetera.
     */
-    func onNewPages(newPages: [PStoryPage]) {
+    func onNewPages(newPages: [StoryPage]) {
+        //Display next page.
         if let o = observer {
             o.update(newPages)
         }
         // Auto save.
+        /*let savingPagesArchived = StoryPage.pagesToNSData(newPages)
+        AutoSave.save(savingPagesArchived)*/
         // Play voice.
     }
     
