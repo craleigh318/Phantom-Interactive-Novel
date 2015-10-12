@@ -50,6 +50,8 @@
 		A4C33E121B64A04800130CDD /* MainOptionsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C33E111B64A04800130CDD /* MainOptionsMenu.swift */; };
 		A4C33E141B64A43F00130CDD /* RemoveAds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C33E131B64A43F00130CDD /* RemoveAds.swift */; };
 		A4C6033B1B5CCFE400DA4418 /* Advertising.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C6033A1B5CCFE400DA4418 /* Advertising.swift */; };
+		A4D939A41BCB4D0900160356 /* PPageTurner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D939A31BCB4D0900160356 /* PPageTurner.swift */; settings = {ASSET_TAGS = (); }; };
+		A4D939A61BCB5E9C00160356 /* POTWGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D939A51BCB5E9C00160356 /* POTWGameState.swift */; settings = {ASSET_TAGS = (); }; };
 		A4E31CAF1B86759500ECFFEE /* PhantomOfTheWest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E31CAE1B86759500ECFFEE /* PhantomOfTheWest.swift */; };
 		A4E79B4F1B5A4D4E00BC861B /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E79B4E1B5A4D4E00BC861B /* StoryViewController.swift */; };
 		A4E909261B7C15E300430B9B /* GUIElements.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4E909251B7C15E300430B9B /* GUIElements.strings */; };
@@ -118,6 +120,8 @@
 		A4C33E111B64A04800130CDD /* MainOptionsMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainOptionsMenu.swift; sourceTree = "<group>"; };
 		A4C33E131B64A43F00130CDD /* RemoveAds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveAds.swift; sourceTree = "<group>"; };
 		A4C6033A1B5CCFE400DA4418 /* Advertising.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advertising.swift; sourceTree = "<group>"; };
+		A4D939A31BCB4D0900160356 /* PPageTurner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPageTurner.swift; sourceTree = "<group>"; };
+		A4D939A51BCB5E9C00160356 /* POTWGameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWGameState.swift; sourceTree = "<group>"; };
 		A4E31CAE1B86759500ECFFEE /* PhantomOfTheWest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhantomOfTheWest.swift; sourceTree = "<group>"; };
 		A4E79B4E1B5A4D4E00BC861B /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		A4E909251B7C15E300430B9B /* GUIElements.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = GUIElements.strings; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 				A43E81391B7EC2DF001CE80F /* StoryText.strings */,
 				A4FA49171B85AECA001F72EA /* StoryImages.xcassets */,
 				A4E31CAE1B86759500ECFFEE /* PhantomOfTheWest.swift */,
+				A4D939A51BCB5E9C00160356 /* POTWGameState.swift */,
+				A4D939A31BCB4D0900160356 /* PPageTurner.swift */,
 			);
 			name = "PotW VN";
 			sourceTree = "<group>";
@@ -484,6 +490,7 @@
 				A46782261B58F10D00745C98 /* PStory.swift in Sources */,
 				A45B1B741B5C85C400FE33B9 /* PConstraintsChanger.swift in Sources */,
 				A41716781B8E616D006CE905 /* AlertManager.swift in Sources */,
+				A4D939A41BCB4D0900160356 /* PPageTurner.swift in Sources */,
 				A46782241B58EBD700745C98 /* PStoryPage.swift in Sources */,
 				A418DFB81B8D4FE100C3EED9 /* AutoSave.swift in Sources */,
 				A4FD363C1B637CEA002EEFD4 /* SaveGame.swift in Sources */,
@@ -500,6 +507,7 @@
 				A42C26271B61D92800E6F7B5 /* OptionsMenu.swift in Sources */,
 				A46782331B58FE7600745C98 /* Constants.swift in Sources */,
 				A4384A1E1B59E96700EF2187 /* StoryImage.swift in Sources */,
+				A4D939A61BCB5E9C00160356 /* POTWGameState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

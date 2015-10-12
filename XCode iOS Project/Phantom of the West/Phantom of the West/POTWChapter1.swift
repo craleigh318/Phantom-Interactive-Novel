@@ -8,18 +8,53 @@
 
 import UIKit
 
+class Chapter1: PPageTurner {
+    func goToStoryState(stateID: Int, observer: PhantomOfTheWest) -> [StoryPage] {
+        var nextPages: [StoryPage]
+        switch stateID {
+        case 101:
+            nextPages = [ch1IAmDrKaden(observer: observer)]
+        case 102:
+            nextPages = [ch1ThisIsNewFerando(observer: observer)]
+        case 103:
+            nextPages = [ch1IDrinkElixir(observer: observer)]
+        case 104:
+            nextPages = [ch1ILeaveHotel(observer: observer)]
+        case 105:
+            nextPages = [ch1IGoToAlley(observer: observer)]
+        case 106:
+            nextPages = [ch1OfficerSeesMe(observer: observer)]
+        case 107:
+            nextPages = [ch1MyFaceDisappears(observer: observer)]
+        case 108:
+            nextPages = [ch1IOpenMyEyes(observer: observer)]
+        case 109:
+            nextPages = [ch1IPossessOfficer(observer: observer)]
+        case 110:
+            nextPages = [ch1ILookAtMyHands(observer: observer)]
+        case 111:
+            nextPages = [ch1IGoToOfficersHome(observer: observer)]
+        case 112:
+            nextPages = [ch1ISleep(observer: observer)]
+        default:
+            nextPages = []
+        }
+        return nextPages
+    }
+}
+
 class ch1IAmDrKaden: StoryPage {
     
     let imageName = "I-am-Dr-Kaden"
     
     let textName = ["ch1IAmDrKaden"]
     
-    init(eventFlags: EventFlagsCollection, observer: PStoryObserver? = nil) {
-        super.init(image: imageName, text: textName, eventFlags: eventFlags, observer: observer)
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
     }
     
     override func continueStory() {
-        onNewPages([ch1ThisIsNewFerando(eventFlags: eventFlags, observer: observer)])
+        observer.goToStoryState(102)
     }
 }
 
@@ -29,12 +64,12 @@ class ch1ThisIsNewFerando: StoryPage {
     
     let textName = ["ch1ThisIsNewFerando"]
     
-    init(eventFlags: EventFlagsCollection, observer: PStoryObserver? = nil) {
-        super.init(image: imageName, text: textName, eventFlags: eventFlags, observer: observer)
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
     }
     
     override func continueStory() {
-        onNewPages([ch1IDrinkElixir(eventFlags: eventFlags, observer: observer)])
+        observer.goToStoryState(103)
     }
 }
 
@@ -44,12 +79,12 @@ class ch1IDrinkElixir: StoryPage {
     
     let textName = ["ch1IDrinkElixir"]
     
-    init(eventFlags: EventFlagsCollection, observer: PStoryObserver? = nil) {
-        super.init(image: imageName, text: textName, eventFlags: eventFlags, observer: observer)
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
     }
     
     override func continueStory() {
-        onNewPages([ch1ILeaveHotel(eventFlags: eventFlags, observer: observer)])
+        observer.goToStoryState(104)
     }
 }
 
@@ -59,12 +94,12 @@ class ch1ILeaveHotel: StoryPage {
     
     let textName = ["ch1ILeaveHotel"]
     
-    init(eventFlags: EventFlagsCollection, observer: PStoryObserver? = nil) {
-        super.init(image: imageName, text: textName, eventFlags: eventFlags, observer: observer)
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
     }
     
     override func continueStory() {
-        onNewPages([ch1IGoToAlley(eventFlags: eventFlags, observer: observer)])
+        observer.goToStoryState(105)
     }
 }
 
@@ -74,12 +109,12 @@ class ch1IGoToAlley: StoryPage {
     
     let textName = ["ch1IGoToAlley"]
     
-    init(eventFlags: EventFlagsCollection, observer: PStoryObserver? = nil) {
-        super.init(image: imageName, text: textName, eventFlags: eventFlags, observer: observer)
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
     }
     
     override func continueStory() {
-        onNewPages([ch1OfficerSeesMe(eventFlags: eventFlags, observer: observer)])
+        observer.goToStoryState(106)
     }
 }
 
@@ -89,12 +124,12 @@ class ch1OfficerSeesMe: StoryPage {
     
     let textName = ["ch1OfficerSeesMe"]
     
-    init(eventFlags: EventFlagsCollection, observer: PStoryObserver? = nil) {
-        super.init(image: imageName, text: textName, eventFlags: eventFlags, observer: observer)
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
     }
     
     override func continueStory() {
-        onNewPages([ch1MyFaceDisappears(eventFlags: eventFlags, observer: observer)])
+        observer.goToStoryState(107)
     }
 }
 
@@ -104,12 +139,12 @@ class ch1MyFaceDisappears: StoryPage {
     
     let textName = ["ch1MyFaceDisappears"]
     
-    init(eventFlags: EventFlagsCollection, observer: PStoryObserver? = nil) {
-        super.init(image: imageName, text: textName, eventFlags: eventFlags, observer: observer)
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
     }
     
     override func continueStory() {
-        onNewPages([ch1IOpenMyEyes(eventFlags: eventFlags, observer: observer)])
+        observer.goToStoryState(108)
     }
 }
 
@@ -119,12 +154,12 @@ class ch1IOpenMyEyes: StoryPage {
     
     let textName = ["ch1IOpenMyEyes"]
     
-    init(eventFlags: EventFlagsCollection, observer: PStoryObserver? = nil) {
-        super.init(image: imageName, text: textName, eventFlags: eventFlags, observer: observer)
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
     }
     
     override func continueStory() {
-        onNewPages([ch1IPossessOfficer(eventFlags: eventFlags, observer: observer)])
+        observer.goToStoryState(109)
     }
 }
 
@@ -134,12 +169,12 @@ class ch1IPossessOfficer: StoryPage {
     
     let textName = ["ch1IPossessOfficer"]
     
-    init(eventFlags: EventFlagsCollection, observer: PStoryObserver? = nil) {
-        super.init(image: imageName, text: textName, eventFlags: eventFlags, observer: observer)
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
     }
     
     override func continueStory() {
-        onNewPages([ch1ILookAtMyHands(eventFlags: eventFlags, observer: observer)])
+        observer.goToStoryState(110)
     }
 }
 
@@ -149,12 +184,12 @@ class ch1ILookAtMyHands: StoryPage {
     
     let textName = ["ch1ILookAtMyHands"]
     
-    init(eventFlags: EventFlagsCollection, observer: PStoryObserver? = nil) {
-        super.init(image: imageName, text: textName, eventFlags: eventFlags, observer: observer)
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
     }
     
     override func continueStory() {
-        onNewPages([ch1IGoToOfficersHome(eventFlags: eventFlags, observer: observer)])
+        observer.goToStoryState(111)
     }
 }
 
@@ -164,12 +199,12 @@ class ch1IGoToOfficersHome: StoryPage {
     
     let textName = ["ch1IGoToOfficersHome"]
     
-    init(eventFlags: EventFlagsCollection, observer: PStoryObserver? = nil) {
-        super.init(image: imageName, text: textName, eventFlags: eventFlags, observer: observer)
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
     }
     
     override func continueStory() {
-        onNewPages([ch1ISleep(eventFlags: eventFlags, observer: observer)])
+        observer.goToStoryState(112)
     }
 }
 
@@ -179,8 +214,8 @@ class ch1ISleep: StoryPage {
     
     let textName = ["ch1ISleep"]
     
-    init(eventFlags: EventFlagsCollection, observer: PStoryObserver? = nil) {
-        super.init(image: imageName, text: textName, eventFlags: eventFlags, observer: observer)
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
     }
     
     /*override func continueStory() {

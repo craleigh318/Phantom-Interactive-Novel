@@ -10,6 +10,10 @@ import Foundation
 
 public class PhantomOfTheWest: PStory, PStoryObserver {
     
+    private static let firstPageNumber = 101
+    
+    private var gameState: POTWGameState?
+    
     /*
     The pages for the UI to show.
     */
@@ -19,13 +23,26 @@ public class PhantomOfTheWest: PStory, PStoryObserver {
     
     public func newGame() {
         let emptyFlags = EventFlagsCollection()
-        let firstPage = ch1IAmDrKaden(eventFlags: emptyFlags, observer: self)
-        update([firstPage])
+        gameState = POTWGameState(eventFlags: emptyFlags)
+        goToStoryState(PhantomOfTheWest.firstPageNumber)
+        //let firstPage = ch1IAmDrKaden(eventFlags: emptyFlags, observer: self)
     }
     
     public func update(pages: [PStoryPage]) {
+        currentPages = pages
         if let o = observer {
             o.update(pages)
+        }
+    }
+    
+    func goToStoryState(stateID: Int) {
+        if let gs = gameState {
+            let newPages = gs.goToStoryState(stateID, observer: self)
+            var newPPages = [PStoryPage]()
+            for p in newPages {
+                newPPages.append(p)
+            }
+            update(newPPages)
         }
     }
     

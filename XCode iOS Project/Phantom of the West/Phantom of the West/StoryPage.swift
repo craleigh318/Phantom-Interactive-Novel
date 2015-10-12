@@ -18,15 +18,6 @@ class StoryPage: PStoryPage {
     private static let storyTextTable = "StoryText"
     
     /*
-    Creates a language-localized page from "StoryText.strings".
-    */
-    /*static func createLocalizedPage(list: StoryPageList, image: UIImage, stringKeys: [String]) -> StoryPage {
-        let localizedText = getLocalizedText(stringKeys)
-        let newPage = StoryPage(list: list, image: image, text: localizedText)
-        return newPage
-    }*/
-    
-    /*
     Creates a language-localized string from "StoryImages.xcassets".
     */
     static func getLocalizedImage(name: String) -> UIImage {
@@ -67,7 +58,7 @@ class StoryPage: PStoryPage {
     /*
     The observer.
     */
-    var observer: PStoryObserver?
+    var observer: PhantomOfTheWest
     
     /*
     The page image.
@@ -79,15 +70,9 @@ class StoryPage: PStoryPage {
     */
     private(set) var text: String
     
-    /*
-    Flags used to control story branching.
-    */
-    var eventFlags: EventFlagsCollection
-    
-    init(image: String, text: [String], eventFlags: EventFlagsCollection, observer: PStoryObserver? = nil) {
+    init(image: String, text: [String], observer: PhantomOfTheWest) {
         self.image = StoryPage.getLocalizedImage(image)
         self.text = StoryPage.getLocalizedText(text)
-        self.eventFlags = eventFlags
         self.observer = observer
     }
     
@@ -101,9 +86,7 @@ class StoryPage: PStoryPage {
     */
     func onNewPages(newPages: [StoryPage]) {
         //Display next page.
-        if let o = observer {
-            o.update(newPages)
-        }
+        observer.update(newPages)
         // Auto save.
         /*let savingPagesArchived = StoryPage.pagesToNSData(newPages)
         AutoSave.save(savingPagesArchived)*/
@@ -114,10 +97,10 @@ class StoryPage: PStoryPage {
     Converts this object to a saveable format.
     */
     func asNSData() -> NSData {
-        let originalObserver = observer
-        observer = nil
+        //let originalObserver = observer
+        //observer = nil
         let data = NSKeyedArchiver.archivedDataWithRootObject(self)
-        observer = originalObserver
+        //observer = originalObserver
         return data
     }
 }
