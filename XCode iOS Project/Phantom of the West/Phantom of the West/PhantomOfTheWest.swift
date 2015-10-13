@@ -35,7 +35,12 @@ public class PhantomOfTheWest: PStory, PStoryObserver {
         }
     }
     
+    /*
+    Call this when ready to continue story.
+    This will update the observer, auto-save, play voiceover, et cetera.
+    */
     func goToStoryState(stateID: Int) {
+        //Display next page.
         if let gs = gameState {
             let newPages = gs.goToStoryState(stateID, observer: self)
             var newPPages = [PStoryPage]()
@@ -44,31 +49,11 @@ public class PhantomOfTheWest: PStory, PStoryObserver {
             }
             update(newPPages)
         }
-    }
-    
-    /*
-    Converts a saveable format to a usable array.
-    */
-    func NSDataToPages(data: NSData) -> [StoryPage] {
-        var savedPages = [StoryPage]()
-        if let individualData = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [NSData] {
-            for datum in individualData {
-                if let p = NSDataToStoryPage(datum) {
-                    savedPages.append(p)
-                }
-            }
-        }
-        return savedPages
-    }
-    
-    /*
-    Converts an archived NSData save to a usuable class.
-    */
-    func NSDataToStoryPage(data: NSData) -> StoryPage? {
-        let newStoryPage = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? StoryPage
-        if let nsp = newStoryPage {
-            nsp.observer = self
-        }
-        return newStoryPage
+        // Auto save.
+        /*if let gs = gameState {
+            let gameStateData = NSKeyedArchiver.archivedDataWithRootObject(gs)
+            AutoSave.save(gameStateData)
+        }*/
+        // Play voice.
     }
 }
