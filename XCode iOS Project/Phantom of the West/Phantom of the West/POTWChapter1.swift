@@ -13,33 +13,50 @@ class Chapter1: PPageTurner {
         var nextPages: [StoryPage]
         switch stateID {
         case 101:
-            nextPages = [ch1IAmDrKaden(observer: observer)]
+            nextPages = [ch1Title(observer: observer)]
         case 102:
-            nextPages = [ch1ThisIsNewFerando(observer: observer)]
+            nextPages = [ch1IAmDrKaden(observer: observer)]
         case 103:
-            nextPages = [ch1IDrinkElixir(observer: observer)]
+            nextPages = [ch1ThisIsNewFerando(observer: observer)]
         case 104:
-            nextPages = [ch1ILeaveHotel(observer: observer)]
+            nextPages = [ch1IDrinkElixir(observer: observer)]
         case 105:
-            nextPages = [ch1IGoToAlley(observer: observer)]
+            nextPages = [ch1ILeaveHotel(observer: observer)]
         case 106:
-            nextPages = [ch1OfficerSeesMe(observer: observer)]
+            nextPages = [ch1IGoToAlley(observer: observer)]
         case 107:
-            nextPages = [ch1MyFaceDisappears(observer: observer)]
+            nextPages = [ch1OfficerSeesMe(observer: observer)]
         case 108:
-            nextPages = [ch1IOpenMyEyes(observer: observer)]
+            nextPages = [ch1MyFaceDisappears(observer: observer)]
         case 109:
-            nextPages = [ch1IPossessOfficer(observer: observer)]
+            nextPages = [ch1IOpenMyEyes(observer: observer)]
         case 110:
-            nextPages = [ch1ILookAtMyHands(observer: observer)]
+            nextPages = [ch1IPossessOfficer(observer: observer)]
         case 111:
-            nextPages = [ch1IGoToOfficersHome(observer: observer)]
+            nextPages = [ch1ILookAtMyHands(observer: observer)]
         case 112:
+            nextPages = [ch1IGoToOfficersHome(observer: observer)]
+        case 113:
             nextPages = [ch1ISleep(observer: observer)]
         default:
             nextPages = []
         }
         return nextPages
+    }
+}
+
+class ch1Title: StoryPage {
+    
+    let imageName = "Black"
+    
+    let textName = ["ch1Title"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(102)
     }
 }
 
@@ -54,7 +71,7 @@ class ch1IAmDrKaden: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(102)
+        observer.goToStoryState(103)
     }
 }
 
@@ -69,7 +86,7 @@ class ch1ThisIsNewFerando: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(103)
+        observer.goToStoryState(104)
     }
 }
 
@@ -84,7 +101,7 @@ class ch1IDrinkElixir: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(104)
+        observer.goToStoryState(105)
     }
 }
 
@@ -99,7 +116,7 @@ class ch1ILeaveHotel: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(105)
+        observer.goToStoryState(106)
     }
 }
 
@@ -114,7 +131,7 @@ class ch1IGoToAlley: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(106)
+        observer.goToStoryState(107)
     }
 }
 
@@ -129,7 +146,7 @@ class ch1OfficerSeesMe: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(107)
+        observer.goToStoryState(108)
     }
 }
 
@@ -144,7 +161,7 @@ class ch1MyFaceDisappears: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(108)
+        observer.goToStoryState(109)
     }
 }
 
@@ -159,7 +176,7 @@ class ch1IOpenMyEyes: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(109)
+        observer.goToStoryState(110)
     }
 }
 
@@ -174,7 +191,7 @@ class ch1IPossessOfficer: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(110)
+        observer.goToStoryState(111)
     }
 }
 
@@ -189,7 +206,7 @@ class ch1ILookAtMyHands: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(111)
+        observer.goToStoryState(112)
     }
 }
 
@@ -204,7 +221,7 @@ class ch1IGoToOfficersHome: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(112)
+        observer.goToStoryState(113)
     }
 }
 

@@ -6,10 +6,12 @@
 //  Copyright © 2015 Christopher Raleigh. All rights reserved.
 //
 
+import Foundation
+
 /*
 Contains a state ID and event flag collection.
 */
-class POTWGameState: PPageTurner {
+class POTWGameState: NSObject, NSCoding, PPageTurner {
     /*
     Flags used to control story branching.
     */
@@ -23,6 +25,17 @@ class POTWGameState: PPageTurner {
     init(eventFlags: EventFlagsCollection) {
         id = 0
         self.eventFlags = eventFlags
+        super.init()
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        eventFlags = aDecoder.decodeObjectForKey("eventFlags") as! EventFlagsCollection
+        id = aDecoder.decodeIntegerForKey("id")
+    }
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(eventFlags, forKey: "eventFlags")
+        aCoder.encodeInteger(id, forKey: "id")
     }
     
     func goToStoryState(stateID: Int, observer: PhantomOfTheWest) -> [StoryPage] {

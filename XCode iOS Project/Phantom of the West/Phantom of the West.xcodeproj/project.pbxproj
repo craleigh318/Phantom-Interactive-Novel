@@ -191,9 +191,17 @@
 				A423BD381B84347000C331EE /* StoryPage.swift */,
 				A423BD3A1B8436D700C331EE /* StoryPageList.swift */,
 				A423BD3E1B8444C600C331EE /* PStoryPageListObserver.swift */,
-				A47D3E9A1BCA1C1100296C55 /* POTWChapter1.swift */,
+				A43B20951BCC7D6D009D93C3 /* Chapters */,
 			);
 			name = Pages;
+			sourceTree = "<group>";
+		};
+		A43B20951BCC7D6D009D93C3 /* Chapters */ = {
+			isa = PBXGroup;
+			children = (
+				A47D3E9A1BCA1C1100296C55 /* POTWChapter1.swift */,
+			);
+			name = Chapters;
 			sourceTree = "<group>";
 		};
 		A46781F31B58E57400745C98 = {
