@@ -10,6 +10,7 @@
 		A4015DA81B65D4E400F99486 /* IAPMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4015DA71B65D4E400F99486 /* IAPMenu.swift */; };
 		A4015DAB1B65D6B100F99486 /* RestorePurchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4015DAA1B65D6B100F99486 /* RestorePurchases.swift */; };
 		A4015DAD1B65D80000F99486 /* ToIAPMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4015DAC1B65D80000F99486 /* ToIAPMenu.swift */; };
+		A4048F291BCE0EFC0000AD93 /* POTWChapter2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4048F281BCE0EFC0000AD93 /* POTWChapter2.swift */; settings = {ASSET_TAGS = (); }; };
 		A4097A901B8C621C00EEFEC9 /* SavedGamesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4097A8F1B8C621C00EEFEC9 /* SavedGamesList.swift */; };
 		A4097A921B8C68A200EEFEC9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4097A911B8C68A200EEFEC9 /* GameKit.framework */; };
 		A41401381B7D8D86001CEAB1 /* NewGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41401371B7D8D86001CEAB1 /* NewGame.swift */; };
@@ -76,6 +77,7 @@
 		A4015DA71B65D4E400F99486 /* IAPMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPMenu.swift; sourceTree = "<group>"; };
 		A4015DAA1B65D6B100F99486 /* RestorePurchases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestorePurchases.swift; sourceTree = "<group>"; };
 		A4015DAC1B65D80000F99486 /* ToIAPMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToIAPMenu.swift; sourceTree = "<group>"; };
+		A4048F281BCE0EFC0000AD93 /* POTWChapter2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter2.swift; sourceTree = "<group>"; };
 		A4097A8F1B8C621C00EEFEC9 /* SavedGamesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedGamesList.swift; sourceTree = "<group>"; };
 		A4097A911B8C68A200EEFEC9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		A41401371B7D8D86001CEAB1 /* NewGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGame.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				A47D3E9A1BCA1C1100296C55 /* POTWChapter1.swift */,
+				A4048F281BCE0EFC0000AD93 /* POTWChapter2.swift */,
 			);
 			name = Chapters;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				A42C26291B61D9A200E6F7B5 /* POptionsMenuItem.swift in Sources */,
 				A4384A221B59F2E400EF2187 /* StoryView.swift in Sources */,
 				A423BD391B84347000C331EE /* StoryPage.swift in Sources */,
+				A4048F291BCE0EFC0000AD93 /* POTWChapter2.swift in Sources */,
 				A423BD3F1B8444C600C331EE /* PStoryPageListObserver.swift in Sources */,
 				A418DFB41B8D45C300C3EED9 /* PSavedGameLoader.swift in Sources */,
 				A418DFBE1B8D702A00C3EED9 /* PSavedGamesRetriever.swift in Sources */,

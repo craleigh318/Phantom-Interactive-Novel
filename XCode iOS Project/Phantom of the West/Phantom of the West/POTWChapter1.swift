@@ -6,8 +6,6 @@
 //  Copyright © 2015 Christopher Raleigh. All rights reserved.
 //
 
-import UIKit
-
 class Chapter1: PPageTurner {
     func goToStoryState(stateID: Int, observer: PhantomOfTheWest) -> [StoryPage] {
         var nextPages: [StoryPage]
@@ -235,7 +233,7 @@ class ch1ISleep: StoryPage {
         super.init(image: imageName, text: textName, observer: observer)
     }
     
-    /*override func continueStory() {
-        onNewPages([ch1IPossessOfficer(eventFlags: eventFlags, observer: observer)])
-    }*/
+    override func continueStory() {
+        observer.goToStoryState(201)
+    }
 }

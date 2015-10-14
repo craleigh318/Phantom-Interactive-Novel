@@ -48,6 +48,8 @@ class POTWGameState: NSObject, NSCoding, PPageTurner {
         switch chapterID {
         case 1:
             pageTurner = Chapter1()
+        case 2:
+            pageTurner = Chapter2()
         default:
             break
         }
