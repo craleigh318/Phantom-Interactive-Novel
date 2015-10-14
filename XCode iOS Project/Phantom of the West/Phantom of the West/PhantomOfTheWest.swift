@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class PhantomOfTheWest: PStory, PStoryObserver {
+public class PhantomOfTheWest: PStory, PStoryObserver, PSavedGamesLoader {
     
     private static let firstPageNumber = 101
     
@@ -28,10 +28,39 @@ public class PhantomOfTheWest: PStory, PStoryObserver {
         //let firstPage = ch1IAmDrKaden(eventFlags: emptyFlags, observer: self)
     }
     
+    /*
+    Saves this point in the story.
+    */
+    public func saveGame() -> NSData? {
+        var gameStateData: NSData?
+        if let gs = gameState {
+            gameStateData = NSKeyedArchiver.archivedDataWithRootObject(gs)
+        }
+        return gameStateData
+    }
+    
+    /*
+    Loads a point in the story.
+    */
+    public func loadGame(data: NSData) {
+        gameState = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? POTWGameState
+        if let gs = gameState {
+            goToStoryState(gs.id)
+        }
+    }
+    
     public func update(pages: [PStoryPage]) {
         currentPages = pages
         if let o = observer {
             o.update(pages)
+        }
+    }
+    
+    public func savedGamesLoaded(data: NSData?, error: NSError?) {
+        if let d = data {
+            loadGame(d)
+        } else if let e = error {
+            AlertManager.showError(e)
         }
     }
     
@@ -50,10 +79,10 @@ public class PhantomOfTheWest: PStory, PStoryObserver {
             update(newPPages)
         }
         // Auto save.
-        /*if let gs = gameState {
+        if let gs = gameState {
             let gameStateData = NSKeyedArchiver.archivedDataWithRootObject(gs)
             AutoSave.save(gameStateData)
-        }*/
+        }
         // Play voice.
     }
 }

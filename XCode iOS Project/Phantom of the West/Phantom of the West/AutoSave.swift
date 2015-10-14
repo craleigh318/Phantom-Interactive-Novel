@@ -23,9 +23,13 @@ public class AutoSave: PSavedGame {
         autoSave.date = NSDate()
     }
     
+    public static var data: NSData? {
+        return SaveManager.defaults.objectForKey(AutoSave.autoSaveKey) as? NSData
+    }
+    
     private static let autoSaveKey = "autoSave"
     
-    private static let autoSaveDateKey = "autoSave"
+    private static let autoSaveDateKey = "autoSaveDate"
     
     public let name: String! = StringLocalizer.getGUIString("autoSave")
     
@@ -53,8 +57,7 @@ public class AutoSave: PSavedGame {
     }
     
     public func load(loader: PSavedGamesLoader) {
-        let data = SaveManager.defaults.objectForKey(AutoSave.autoSaveKey) as? NSData
-        loader.savedGamesLoaded(data, error: nil)
+        loader.savedGamesLoaded(AutoSave.data, error: nil)
     }
     
     public func delete() {

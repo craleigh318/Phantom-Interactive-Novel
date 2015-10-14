@@ -22,7 +22,11 @@ public class ViewController: UINavigationController, PNavigatorHandler {
             //Start story.
             let story = AppDelegate.potwStory
             story.observer = subcontroller
-            story.newGame()
+            if let autoSave = AutoSave.data {
+                story.loadGame(autoSave)
+            } else {
+                story.newGame()
+            }
         }
     }
     

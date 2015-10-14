@@ -12,6 +12,8 @@ import Foundation
 Contains a state ID and event flag collection.
 */
 class POTWGameState: NSObject, NSCoding, PPageTurner {
+    private static let idKey = "id"
+    
     /*
     Flags used to control story branching.
     */
@@ -29,13 +31,14 @@ class POTWGameState: NSObject, NSCoding, PPageTurner {
     }
     
     required init(coder aDecoder: NSCoder) {
-        eventFlags = aDecoder.decodeObjectForKey("eventFlags") as! EventFlagsCollection
-        id = aDecoder.decodeIntegerForKey("id")
+        eventFlags = EventFlagsCollection(coder: aDecoder)
+        id = aDecoder.decodeIntegerForKey(POTWGameState.idKey)
+        super.init()
     }
     
     func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(eventFlags, forKey: "eventFlags")
-        aCoder.encodeInteger(id, forKey: "id")
+        eventFlags.encodeWithCoder(aCoder)
+        aCoder.encodeInteger(id, forKey: POTWGameState.idKey)
     }
     
     func goToStoryState(stateID: Int, observer: PhantomOfTheWest) -> [StoryPage] {
