@@ -10,7 +10,7 @@ import Foundation
 
 public class PhantomOfTheWest: PStory, PStoryObserver, PSavedGamesLoader {
     
-    private static let firstPageNumber = 101
+    private static let firstPageNumber = 301
     
     private var gameState: POTWGameState?
     
