@@ -60,6 +60,18 @@ class Chapter3: PPageTurner {
             nextPages = [ch3IEnterArcticon(observer: observer)]
         case 325:
             nextPages = [ch3IDispossessCaitlyn(observer: observer)]
+        case 326:
+            nextPages = [ch3IConjureClothes(observer: observer)]
+        case 327:
+            nextPages = [ch3YukioGreetsMe(observer: observer)]
+        case 328:
+            nextPages = [ch3IGoHome(observer: observer)]
+        case 329:
+            nextPages = [ch3IRelax(observer: observer)]
+        case 330:
+            nextPages = [ch3BekShtiiGreetsMe(observer: observer)]
+        case 331:
+            nextPages = [ch3BekShtiiLeaves(observer: observer)]
         default:
             nextPages = []
         }
@@ -461,5 +473,140 @@ class ch3IDispossessCaitlyn: StoryPage {
     
     override func continueStory() {
         observer.goToStoryState(326)
+    }
+}
+
+class ch3IConjureClothes: StoryPage {
+    
+    let imageName = "Kaden-First-Arrival-to-Arcticon"
+    
+    let textName = ["ch3IConjureClothes", "ch3CaitlynDragsMyHand"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(327)
+    }
+}
+
+class ch3YukioGreetsMe: StoryPage {
+    
+    let imageName = "Yukio-Intro"
+    
+    let textName = ["ch3YukioGreetsMe", "ch3CaitlynExplainsMyGhostliness", "ch3YukioIsAwed", "ch3CaitlynWantsToHelp", "ch3ILeaveCaitlynAndYukio"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(328)
+    }
+}
+
+class ch3IGoHome: StoryPage {
+    
+    let imageName = "Kaden-on-Tram"
+    
+    let textName = ["ch3IGoHome"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(329)
+    }
+}
+
+class ch3IRelax: StoryPage {
+    
+    let imageName = "Kaden-on-Bed"
+    
+    let textName = ["ch3IRelax"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(330)
+    }
+}
+
+class ch3BekShtiiGreetsMe: StoryPage {
+    
+    let imageName = "Bek'Shtii-First-Meets-Kaden"
+    
+    let textName = ["ch3BekShtiiGreetsMe", "ch3IKnowBekShtii", "ch3BekShtiiAsksMeToVisit", "ch3IsItWesternContinentalPark", "ch3BekShtiiAsksMeToStay"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(331)
+    }
+}
+
+class ch3BekShtiiLeaves: StoryPage {
+    
+    let imageName = "Kaden-on-Bed"
+    
+    let textName = ["ch3BekShtiiLeaves"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(332)
+    }
+}
+
+class ch3IVisitCaitlyn: StoryPage {
+    
+    let imageName = "Kaden-on-Bed"
+    
+    let textName = ["ch3IVisitCaitlyn"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(333)
+    }
+}
+
+class ch3IVisitYukio: StoryPage {
+    
+    let imageName = "Kaden-on-Bed"
+    
+    let textName = ["ch3IVisitYukio"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(333)
+    }
+}
+
+class ch3ISleep: StoryPage {
+    
+    let imageName = "Kaden-on-Bed"
+    
+    let textName = ["ch3ISleep"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(333)
     }
 }
