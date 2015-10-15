@@ -12,14 +12,21 @@ public class PhantomOfTheWest: PStory, PStoryObserver, PSavedGamesLoader {
     
     private static let firstPageNumber = 301
     
+    public var observer: PStoryObserver?
+    
+    var eventFlags: EventFlagsCollection? {
+        if let gs = gameState {
+            return gs.eventFlags
+        }
+        return nil
+    }
+    
     private var gameState: POTWGameState?
     
     /*
     The pages for the UI to show.
     */
     private var currentPages: [PStoryPage] = []
-    
-    public var observer: PStoryObserver?
     
     public func newGame() {
         let emptyFlags = EventFlagsCollection()

@@ -30,6 +30,36 @@ class Chapter3: PPageTurner {
             nextPages = [ch3CaitlynAsksMeToDisguiseAsInfant(observer: observer)]
         case 310:
             nextPages = [ch3IDiguiseAsInfant(observer: observer), ch3IRefuseToDiguiseAsInfant(observer: observer)]
+        case 311:
+            nextPages = [ch3CaitlynBringsMeToHotel(observer: observer)]
+        case 312:
+            nextPages = [ch3IEnterHotelRoomFromBlanket(observer: observer)]
+        case 313:
+            nextPages = [ch3CaitlynChecksOut(observer: observer)]
+        case 314:
+            nextPages = [ch3CaitlynTriesToShowReceptionistMe(observer: observer)]
+        case 315:
+            nextPages = [ch3CaitlynCannotBreastFeed(observer: observer)]
+        case 316:
+            nextPages = [ch3CaitlynEntersArcticon(observer: observer)]
+        case 317:
+            nextPages = [ch3ILeaveBlanket(observer: observer)]
+        case 318:
+            nextPages = [ch3IWillOweCaitlynAFavor(observer: observer)]
+        case 319:
+            nextPages = [ch3IGoToHotel(observer: observer)]
+        case 320:
+            nextPages = [ch3IEnterHotelRoomFromCaitlyn(observer: observer)]
+        case 321:
+            nextPages = [ch3ICheckOut(observer: observer)]
+        case 322:
+            nextPages = [ch3IInsultReceptionist(observer: observer)]
+        case 323:
+            nextPages = [ch3IDriveOnHighway(observer: observer)]
+        case 324:
+            nextPages = [ch3IEnterArcticon(observer: observer)]
+        case 325:
+            nextPages = [ch3IDispossessCaitlyn(observer: observer)]
         default:
             nextPages = []
         }
@@ -184,6 +214,9 @@ class ch3IDiguiseAsInfant: StoryPage {
     }
     
     override func continueStory() {
+        if let ef = observer.eventFlags {
+            ef.ch3DroveWithCaitlyn = .DisguisedAsInfant
+        }
         observer.goToStoryState(311)
     }
 }
@@ -199,6 +232,234 @@ class ch3IRefuseToDiguiseAsInfant: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(311)
+        if let ef = observer.eventFlags {
+            ef.ch3DroveWithCaitlyn = .PossessedCaitlyn
+        }
+        observer.goToStoryState(318)
+    }
+}
+
+class ch3CaitlynBringsMeToHotel: StoryPage {
+    
+    let imageName = "Infant-in-Car"
+    
+    let textName = ["ch3CaitlynBringsMeToHotel"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(312)
+    }
+}
+
+class ch3IEnterHotelRoomFromBlanket: StoryPage {
+    
+    let imageName = "Infant-Crawls-Under-Door"
+    
+    let textName = ["ch3IEnterHotelRoomFromBlanket"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(313)
+    }
+}
+
+class ch3CaitlynChecksOut: StoryPage {
+    
+    let imageName = "Caitlyn-with-Infant-Talks-to-Receptionist"
+    
+    let textName = ["ch3CaitlynChecksOut"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(314)
+    }
+}
+
+class ch3CaitlynTriesToShowReceptionistMe: StoryPage {
+    
+    let imageName = "Infant-Shown-to-Receptionist"
+    
+    let textName = ["ch3CaitlynTriesToShowReceptionistMe", "ch3ReceptionistLikesKatie", "ch3CaitlynLeavesHotel"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(315)
+    }
+}
+
+class ch3CaitlynCannotBreastFeed: StoryPage {
+    
+    let imageName = "Caitlyn-Drives-on-Highway"
+    
+    let textName = ["ch3CaitlynCannotBreastFeed", "ch3CaitlynDrivesOnHighway"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(316)
+    }
+}
+
+class ch3CaitlynEntersArcticon: StoryPage {
+    
+    let imageName = "Caitlyn-Drives-to-Arcticon"
+    
+    let textName = ["ch3CaitlynEntersArcticon"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(317)
+    }
+}
+
+class ch3ILeaveBlanket: StoryPage {
+    
+    let imageName = "Kaden-First-Arrival-to-Arcticon"
+    
+    let textName = ["ch3ILeaveBlanket"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(326)
+    }
+}
+
+class ch3IWillOweCaitlynAFavor: StoryPage {
+    
+    let imageName = "Towel-in-Car"
+    
+    let textName = ["ch3IWillOweCaitlynAFavor"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(319)
+    }
+}
+
+class ch3IGoToHotel: StoryPage {
+    
+    let imageName = "Caitlyn-Possessed"
+    
+    let textName = ["ch3IGoToHotel"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(320)
+    }
+}
+
+class ch3IEnterHotelRoomFromCaitlyn: StoryPage {
+    
+    let imageName = "Caitlyn-Crawls-Under-Door"
+    
+    let textName = ["ch3IEnterHotelRoomFromCaitlyn"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(321)
+    }
+}
+
+class ch3ICheckOut: StoryPage {
+    
+    let imageName = "Caitlyn-Talks-to-Receptionist"
+    
+    let textName = ["ch3ICheckOut", "ch3IClaimToBeMyWife", "ch3ReceptionistDoubtsMe"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(322)
+    }
+}
+
+class ch3IInsultReceptionist: StoryPage {
+    
+    let imageName = "Caitlyn-Tosses-Key"
+    
+    let textName = ["ch3IInsultReceptionist"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(323)
+    }
+}
+
+class ch3IDriveOnHighway: StoryPage {
+    
+    let imageName = "Caitlyn-Drives-on-Highway"
+    
+    let textName = ["ch3IDriveOnHighway"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(324)
+    }
+}
+
+class ch3IEnterArcticon: StoryPage {
+    
+    let imageName = "Caitlyn-Drives-to-Arcticon"
+    
+    let textName = ["ch3IEnterArcticon"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(325)
+    }
+}
+
+class ch3IDispossessCaitlyn: StoryPage {
+    
+    let imageName = "Kaden-First-Arrival-to-Arcticon"
+    
+    let textName = ["ch3IDispossessCaitlyn"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(326)
     }
 }
