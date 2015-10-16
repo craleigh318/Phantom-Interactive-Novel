@@ -202,11 +202,11 @@ ch3CaitlynWouldBeGoodMother = "Yeah, probably. You\'re definitely friendly enoug
 
 ch3CaitlynThanksMe = "\"Thanks,\" Caitlyn says, blushing.";
 
-ch3CaitlynMightBeGoodMother = "(Choice 2) \"I\'m not sure. I\'m not much of a family person, so you might want to ask someone who is more knowledgeable about that.\"";
+ch3CaitlynMightBeGoodMother = "\"I\'m not sure. I\'m not much of a family person, so you might want to ask someone who is more knowledgeable about that.\"";
 
 ch3CaitlynAdmitsGoodIdea = "\"Yeah, that\'s a good idea,\" Caitlyn admits.";
 
-ch3CaitlynJustifiesMotherhood = "Caitlyn adds, \"I guess I studied medicine in the first place so that I could care for other people, and if I had kids, they\'d look up to me when I took care of them. I don\'t know. Sorry if this was a stupid question.\"";
+ch3CaitlynJustifiesMotherhood = "Caitlyn adds, \"I guess I studied medicine in the first place so that I could care for other people, and if I had kids, they\'d look up to me when I took care of them. I don\'t know. Sorry. Was this a stupid question?\"";
 
 ch3HowDidCaitlynFeelPossession = "\"When we drove from the city, how did you feel when I possessed you?\" I ask.";
 

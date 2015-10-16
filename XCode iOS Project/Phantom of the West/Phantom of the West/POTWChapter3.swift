@@ -72,9 +72,53 @@ class Chapter3: PPageTurner {
             nextPages = [ch3BekShtiiGreetsMe(observer: observer)]
         case 331:
             nextPages = [ch3BekShtiiLeaves(observer: observer)]
+        case 332:
+            nextPages = ch3EndDecision(observer)
+        case 333:
+            nextPages = [ch3CaitlynPlaysWithFoxtrot(observer: observer)]
+        case 334:
+            nextPages = [ch3IAmAllRight(observer: observer)]
+        case 335:
+            nextPages = [ch3CaitlynAsksIfIWasEmbarrassed(observer: observer)]
+        case 336:
+            nextPages = [ch3CaitlynWouldBeGoodMother(observer: observer), ch3CaitlynMightBeGoodMother(observer: observer)]
+        case 337:
+            nextPages = [ch3CaitlynThanksMe(observer: observer)]
+        case 338:
+            nextPages = [ch3CaitlynAdmitsGoodIdea(observer: observer)]
+        case 339:
+            nextPages = [ch3CaitlynJustifiesMotherhood(observer: observer)]
+        case 340:
+            nextPages = [ch3HowDidCaitlynFeelPossession(observer: observer)]
+        case 341:
+            nextPages = [ch3IEnjoyedPossession(observer: observer), ch3PossessionFeltWeird(observer: observer)]
+        case 342:
+            nextPages = [ch3CaitlynLikesBeingClose(observer: observer)]
+        case 343:
+            nextPages = [ch3CaitlynFeltWeird(observer: observer)]
+        case 344:
+            nextPages = [ch3WasCaitlynsQuestionWeird(observer: observer)]
+        case 345:
+            nextPages = [ch3ILikeTalkingWithCaitlyn(observer: observer)]
+        case 346:
+            nextPages = [ch3YukioWorks(observer: observer)]
         default:
             nextPages = []
         }
+        return nextPages
+    }
+    
+    func ch3EndDecision(observer: PhantomOfTheWest) -> [StoryPage] {
+        var nextPages = [StoryPage]()
+        if let ef = observer.eventFlags {
+            if ef.ch3TalkedWithCaitlyn == .HasNotTalked {
+                nextPages.append(ch3IVisitCaitlyn(observer: observer))
+            }
+            if !ef.ch3TalkedWithYukio {
+                nextPages.append(ch3IVisitYukio(observer: observer))
+            }
+        }
+        nextPages.append(ch3ISleep(observer: observer))
         return nextPages
     }
 }
@@ -592,7 +636,10 @@ class ch3IVisitYukio: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(333)
+        if let ef = observer.eventFlags {
+            ef.ch3TalkedWithYukio = true
+        }
+        observer.goToStoryState(346)
     }
 }
 
@@ -607,6 +654,266 @@ class ch3ISleep: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(333)
+        observer.goToStoryState(401)
+    }
+}
+
+class ch3CaitlynPlaysWithFoxtrot: StoryPage {
+    
+    let imageName = "Foxtrot-Intro"
+    
+    let textName = ["ch3CaitlynPlaysWithFoxtrot"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(334)
+    }
+}
+
+class ch3IAmAllRight: StoryPage {
+    
+    let imageName = "Kaden-Talks-to-Caitlyn"
+    
+    let textName = ["ch3IAmAllRight"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        var possessedCaitlyn = false
+        if let ef = observer.eventFlags {
+            possessedCaitlyn = (ef.ch3DroveWithCaitlyn == .PossessedCaitlyn)
+        }
+        if possessedCaitlyn {
+            observer.goToStoryState(340)
+        } else {
+            observer.goToStoryState(335)
+        }
+    }
+}
+
+class ch3CaitlynAsksIfIWasEmbarrassed: StoryPage {
+    
+    let imageName = "Kaden-Talks-to-Caitlyn"
+    
+    let textName = ["ch3CaitlynAsksIfIWasEmbarrassed", "ch3IAdmitEmbarrassment", "ch3CaitlynHugsMe", "ch3CanCaitlynAskPersonally", "ch3IReplyOK", "ch3WouldCaitlynBeGoodMother", "ch3IThink"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(336)
+    }
+}
+
+class ch3CaitlynWouldBeGoodMother: StoryPage {
+    
+    let imageName = "Kaden-Talks-to-Caitlyn"
+    
+    let textName = ["ch3CaitlynWouldBeGoodMother"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        if let ef = observer.eventFlags {
+            ef.ch3TalkedWithCaitlyn = .SaidGoodMother
+        }
+        observer.goToStoryState(337)
+    }
+}
+
+class ch3CaitlynMightBeGoodMother: StoryPage {
+    
+    let imageName = "Kaden-Talks-to-Caitlyn"
+    
+    let textName = ["ch3CaitlynMightBeGoodMother"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        if let ef = observer.eventFlags {
+            ef.ch3TalkedWithCaitlyn = .SaidMaybeGoodMother
+        }
+        observer.goToStoryState(338)
+    }
+}
+
+class ch3CaitlynThanksMe: StoryPage {
+    
+    let imageName = "Kaden-Talks-to-Caitlyn"
+    
+    let textName = ["ch3CaitlynThanksMe"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(339)
+    }
+}
+
+class ch3CaitlynAdmitsGoodIdea: StoryPage {
+    
+    let imageName = "Kaden-Talks-to-Caitlyn"
+    
+    let textName = ["ch3CaitlynAdmitsGoodIdea"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(339)
+    }
+}
+
+class ch3CaitlynJustifiesMotherhood: StoryPage {
+    
+    let imageName = "Kaden-Talks-to-Caitlyn"
+    
+    let textName = ["ch3CaitlynJustifiesMotherhood"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(345)
+    }
+}
+
+class ch3HowDidCaitlynFeelPossession: StoryPage {
+    
+    let imageName = "Kaden-Talks-to-Caitlyn"
+    
+    let textName = ["ch3HowDidCaitlynFeelPossession", "ch3CaitlynFeltLightheaded", "ch3IAscertainCaitlynsUnconciousness", "ch3CaitlynOnlySlept", "ch3IThankCaitlyn", "ch3CaitlynAcceptsThanks", "ch3HowDidIFeelDuringPossession"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(341)
+    }
+}
+
+class ch3IEnjoyedPossession: StoryPage {
+    
+    let imageName = "Kaden-Talks-to-Caitlyn"
+    
+    let textName = ["ch3IEnjoyedPossession"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        if let ef = observer.eventFlags {
+            ef.ch3TalkedWithCaitlyn = .EnjoyedPossession
+        }
+        observer.goToStoryState(342)
+    }
+}
+
+class ch3PossessionFeltWeird: StoryPage {
+    
+    let imageName = "Kaden-Talks-to-Caitlyn"
+    
+    let textName = ["ch3PossessionFeltWeird"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        if let ef = observer.eventFlags {
+            ef.ch3TalkedWithCaitlyn = .WeirdedByPossession
+        }
+        observer.goToStoryState(343)
+    }
+}
+
+class ch3CaitlynLikesBeingClose: StoryPage {
+    
+    let imageName = "Kaden-Talks-to-Caitlyn"
+    
+    let textName = ["ch3CaitlynLikesBeingClose"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(344)
+    }
+}
+
+class ch3CaitlynFeltWeird: StoryPage {
+    
+    let imageName = "Kaden-Talks-to-Caitlyn"
+    
+    let textName = ["ch3CaitlynFeltWeird"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(344)
+    }
+}
+
+class ch3WasCaitlynsQuestionWeird: StoryPage {
+    
+    let imageName = "Kaden-Talks-to-Caitlyn"
+    
+    let textName = ["ch3WasCaitlynsQuestionWeird"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(345)
+    }
+}
+
+class ch3ILikeTalkingWithCaitlyn: StoryPage {
+    
+    let imageName = "Kaden-Talks-to-Caitlyn"
+    
+    let textName = ["ch3ILikeTalkingWithCaitlyn"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(332)
+    }
+}
+
+class ch3YukioWorks: StoryPage {
+    
+    let imageName = "Kaden-Talks-to-Yukio"
+    
+    let textName = ["ch3YukioWorks", "ch3IsYukioUnimpressed", "ch3YukioLecturesMe", "ch3ITakeCharge"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(332)
     }
 }
