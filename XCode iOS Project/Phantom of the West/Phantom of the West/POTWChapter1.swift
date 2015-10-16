@@ -10,31 +10,31 @@ class Chapter1: PPageTurner {
     func goToStoryState(stateID: Int, observer: PhantomOfTheWest) -> [StoryPage] {
         var nextPages: [StoryPage]
         switch stateID {
-        case 101:
+        case 1001:
             nextPages = [ch1Title(observer: observer)]
-        case 102:
+        case 1002:
             nextPages = [ch1IAmDrKaden(observer: observer)]
-        case 103:
+        case 1003:
             nextPages = [ch1ThisIsNewFerando(observer: observer)]
-        case 104:
+        case 1004:
             nextPages = [ch1IDrinkElixir(observer: observer)]
-        case 105:
+        case 1005:
             nextPages = [ch1ILeaveHotel(observer: observer)]
-        case 106:
+        case 1006:
             nextPages = [ch1IGoToAlley(observer: observer)]
-        case 107:
+        case 1007:
             nextPages = [ch1OfficerSeesMe(observer: observer)]
-        case 108:
+        case 1008:
             nextPages = [ch1MyFaceDisappears(observer: observer)]
-        case 109:
+        case 1009:
             nextPages = [ch1IOpenMyEyes(observer: observer)]
-        case 110:
+        case 1010:
             nextPages = [ch1IPossessOfficer(observer: observer)]
-        case 111:
+        case 1011:
             nextPages = [ch1ILookAtMyHands(observer: observer)]
-        case 112:
+        case 1012:
             nextPages = [ch1IGoToOfficersHome(observer: observer)]
-        case 113:
+        case 1013:
             nextPages = [ch1ISleep(observer: observer)]
         default:
             nextPages = []
@@ -54,7 +54,7 @@ class ch1Title: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(102)
+        observer.goToStoryState(1002)
     }
 }
 
@@ -69,7 +69,7 @@ class ch1IAmDrKaden: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(103)
+        observer.goToStoryState(1003)
     }
 }
 
@@ -84,7 +84,7 @@ class ch1ThisIsNewFerando: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(104)
+        observer.goToStoryState(1004)
     }
 }
 
@@ -99,7 +99,7 @@ class ch1IDrinkElixir: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(105)
+        observer.goToStoryState(1005)
     }
 }
 
@@ -114,7 +114,7 @@ class ch1ILeaveHotel: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(106)
+        observer.goToStoryState(1006)
     }
 }
 
@@ -129,7 +129,7 @@ class ch1IGoToAlley: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(107)
+        observer.goToStoryState(1007)
     }
 }
 
@@ -144,7 +144,7 @@ class ch1OfficerSeesMe: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(108)
+        observer.goToStoryState(1008)
     }
 }
 
@@ -159,7 +159,7 @@ class ch1MyFaceDisappears: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(109)
+        observer.goToStoryState(1009)
     }
 }
 
@@ -174,7 +174,7 @@ class ch1IOpenMyEyes: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(110)
+        observer.goToStoryState(1010)
     }
 }
 
@@ -189,7 +189,7 @@ class ch1IPossessOfficer: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(111)
+        observer.goToStoryState(1011)
     }
 }
 
@@ -204,7 +204,7 @@ class ch1ILookAtMyHands: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(112)
+        observer.goToStoryState(1012)
     }
 }
 
@@ -219,7 +219,7 @@ class ch1IGoToOfficersHome: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(113)
+        observer.goToStoryState(1013)
     }
 }
 
@@ -234,6 +234,6 @@ class ch1ISleep: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(201)
+        observer.goToStoryState(2001)
     }
 }

@@ -10,25 +10,25 @@ class Chapter2: PPageTurner {
     func goToStoryState(stateID: Int, observer: PhantomOfTheWest) -> [StoryPage] {
         var nextPages: [StoryPage]
         switch stateID {
-        case 201:
+        case 2001:
             nextPages = [ch2Title(observer: observer)]
-        case 202:
+        case 2002:
             nextPages = [ch2TimeAgo(observer: observer)]
-        case 203:
+        case 2003:
             nextPages = [ch2ThereWereFourGods(observer: observer)]
-        case 204:
+        case 2004:
             nextPages = [ch2ThereWasSezja(observer: observer)]
-        case 205:
+        case 2005:
             nextPages = [ch2ThereWasBaqer(observer: observer)]
-        case 206:
+        case 2006:
             nextPages = [ch2ThereWasVaNal(observer: observer)]
-        case 207:
+        case 2007:
             nextPages = [ch2ThereWasBekShtii(observer: observer)]
-        case 208:
+        case 2008:
             nextPages = [ch2LectureEnded(observer: observer)]
-        case 209:
+        case 2009:
             nextPages = [ch2IWentToProfArvin(observer: observer)]
-        case 210:
+        case 2010:
             nextPages = [ch2IGreetProf(observer: observer)]
         default:
             nextPages = []
@@ -48,7 +48,7 @@ class ch2Title: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(202)
+        observer.goToStoryState(2002)
     }
 }
 
@@ -63,7 +63,7 @@ class ch2TimeAgo: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(203)
+        observer.goToStoryState(2003)
     }
 }
 
@@ -78,7 +78,7 @@ class ch2ThereWereFourGods: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(204)
+        observer.goToStoryState(2004)
     }
 }
 
@@ -93,7 +93,7 @@ class ch2ThereWasSezja: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(205)
+        observer.goToStoryState(2005)
     }
 }
 
@@ -108,7 +108,7 @@ class ch2ThereWasBaqer: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(206)
+        observer.goToStoryState(2006)
     }
 }
 
@@ -123,7 +123,7 @@ class ch2ThereWasVaNal: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(207)
+        observer.goToStoryState(2007)
     }
 }
 
@@ -138,7 +138,7 @@ class ch2ThereWasBekShtii: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(208)
+        observer.goToStoryState(2008)
     }
 }
 
@@ -153,7 +153,7 @@ class ch2LectureEnded: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(209)
+        observer.goToStoryState(2009)
     }
 }
 
@@ -168,7 +168,7 @@ class ch2IWentToProfArvin: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(210)
+        observer.goToStoryState(2010)
     }
 }
 
@@ -183,6 +183,6 @@ class ch2IGreetProf: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(301)
+        observer.goToStoryState(3001)
     }
 }

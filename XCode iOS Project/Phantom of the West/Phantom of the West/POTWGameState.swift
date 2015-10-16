@@ -43,7 +43,7 @@ class POTWGameState: NSObject, NSCoding, PPageTurner {
     
     func goToStoryState(stateID: Int, observer: PhantomOfTheWest) -> [StoryPage] {
         id = stateID
-        let chapterID = stateID / 100
+        let chapterID = stateID / 1000
         var pageTurner: PPageTurner?
         switch chapterID {
         case 1:
@@ -52,6 +52,8 @@ class POTWGameState: NSObject, NSCoding, PPageTurner {
             pageTurner = Chapter2()
         case 3:
             pageTurner = Chapter3()
+        case 4:
+            pageTurner = Chapter4()
         default:
             break
         }
