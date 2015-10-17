@@ -310,15 +310,15 @@ ch5WhyBeYourself = "Ugh, this class activity is terrible. I never felt peer pres
 
 ch5SureISay = "\"Sure,\" I say.";
 
-ch5YouCannotLowerYourself = "\"The number one reason why you should be yourself is … that you can\'t play to your strengths if you lower yourself to someone else\'s level.\"";
+ch5YouCannotLowerYourself = "\"The number one reason why you should be yourself is …\n\n… that you can\'t play to your strengths if you lower yourself to someone else\'s level.\"";
 
 ch5CannotAssociateWithLowlyPeople = "\"Yeah, you can\'t associate with those lowly people,\" says Carleigh jokingly.";
 
-ch5YouNeedToStayConfident = "\"The number one reason why you should be yourself is … that it\'s how you keep your self-confidence and stay happy.\"";
+ch5YouNeedToStayConfident = "\"The number one reason why you should be yourself is …\n\n… that it\'s how you keep your self-confidence and stay happy.\"";
 
 ch5CarleighWasTeased = "\"You have a point, but we all have been teased for being ourselves,\" sighs Carleigh.";
 
-ch5YouAvoidStupidity = "\"The number one reason why you should be yourself is … that you might follow someone stupid. If you know your role model isn\'t stupid, then it\'s okay to not be yourself, because the role model is obviously doing something right.\"";
+ch5YouAvoidStupidity = "\"The number one reason why you should be yourself is …\n\n… that you might follow someone stupid. If you know your role model isn\'t stupid, then it\'s okay to not be yourself, because the role model is obviously doing something right.\"";
 
 ch5IAmPragmatic = "\"Being pragmatic, eh? Interesting answer,\" says Carleigh.";
 
@@ -360,21 +360,21 @@ ch5IStartMathTest = "Once class starts, the math instructor passes out the test 
 
 ch5MathQuestion1 = "Question 1: \"Farmer McBilly has 40 m of fence that he can use to enclose his livestock. McBilly wants to give his animals the most room to move around in. McBilly hires an Honors Math student from the local school to lay out his enclosure. What is the largest size that McBilly\'s enclosure can be?\"";
 
-ch5MathQuestion1CorrectAnswer = "The largest size from 40 m of fence is …\n… 10 m × 10 m.";
+ch5MathQuestion1CorrectAnswer = "The largest size from 40 m of fence is …\n\n… 10 m × 10 m.";
 
-ch5MathQuestion1IncorrectAnswer = "The largest size from 40 m of fence is …\n… 6 m × 14 m.";
+ch5MathQuestion1IncorrectAnswer = "The largest size from 40 m of fence is …\n\n… 6 m × 14 m.";
 
 ch5MathQuestion4 = "Question 4: \"Four doctoral graduates celebrate by eating dinner at a restaurant. The table that they are seated at had four chairs, but the graduates cannot decide who will sit where. How many possible ways can the graduates sit at the table?\"";
 
-ch5MathQuestion4IncorrectAnswer = "The number of combinations of seating for 4 people is …\n… 16.";
+ch5MathQuestion4IncorrectAnswer = "The number of combinations of seating for 4 people is …\n\n… 16.";
 
-ch5MathQuestion4CorrectAnswer = "The number of combinations of seating for 4 people is …\n… 24.";
+ch5MathQuestion4CorrectAnswer = "The number of combinations of seating for 4 people is …\n\n… 24.";
 
 ch5MathQuestion9 = "Question 9: \"A boy is making a necklace for his girlfriend. He wants to put a gem lookalike inside the necklace\'s pendant. He pours silica into a gemstone-shaped mold and burns it, turning the silica into glass. The boy plans to stain the glass with the color of his girlfriend\'s birthstone. Before the boy colors the glass, he must cut it into a right triangle to fit it inside the pendant. If one side of the fake gem is 9 mm and the other is 12 mm, then how long is the fake gem\'s hypotenuse?\"";
 
-ch5MathQuestion9IncorrectAnswer = "A right triangle with sides of 9 mm and 12 mm has a hypotenuse of …\n… 10.5 mm.";
+ch5MathQuestion9IncorrectAnswer = "A right triangle with sides of 9 mm and 12 mm has a hypotenuse of …\n\n… 10.5 mm.";
 
-ch5MathQuestion9CorrectAnswer = "A right triangle with sides of 9 mm and 12 mm has a hypotenuse of …\n… 15 mm.";
+ch5MathQuestion9CorrectAnswer = "A right triangle with sides of 9 mm and 12 mm has a hypotenuse of …\n\n… 15 mm.";
 
 ch5MathClassEnds = "After finishing all of the questions, I turn in my paper. At the end of class, the instructor says, \"There won\'t be any class tomorrow, but you can still come to pick up your graded tests. Have a good field trip, everyone!\"";
 
