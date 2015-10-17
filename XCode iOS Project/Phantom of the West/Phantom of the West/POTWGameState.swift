@@ -56,6 +56,8 @@ class POTWGameState: NSObject, NSCoding, PPageTurner {
             pageTurner = Chapter4()
         case 5:
             pageTurner = Chapter5()
+        case 6:
+            pageTurner = Chapter6()
         default:
             break
         }
