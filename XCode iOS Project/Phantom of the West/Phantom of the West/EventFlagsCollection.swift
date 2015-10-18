@@ -13,7 +13,6 @@ Stores the story's event flags, so that the story can branch according to the re
 */
 class EventFlagsCollection: NSObject, NSCoding {
     
-    private static let r = "route"
     private static let dwc = "ch3DroveWithCaitlyn"
     private static let twc = "ch3TalkedWithCaitlyn"
     private static let twy = "ch3TalkedWithYukio"
@@ -33,7 +32,16 @@ class EventFlagsCollection: NSObject, NSCoding {
     /*
     The route will determine the ending.
     */
-    var route: Route
+    var route: Route {
+        if (ch3TalkedWithCaitlyn == .SaidGoodMother) || (ch3TalkedWithCaitlyn == .EnjoyedPossession) {
+            return .Caitlyn
+        } else if ch7KissedVaNal == .Kissed {
+            return .VaNal
+        } else if ch11ActedInSarahRoom == .Showered {
+            return .Sarah
+        }
+        return .Phantom
+    }
     
     /*
     In Chapter 3, what did Dr. Kaden do when Caitlyn asked him to disguise as an infant?
@@ -125,7 +133,6 @@ class EventFlagsCollection: NSObject, NSCoding {
     var ch11ActedInSarahRoom: ActivityInSarahRoom
     
     override init() {
-        route = .Phantom
         ch3DroveWithCaitlyn = .NotYetDriven
         ch3TalkedWithCaitlyn = .HasNotTalked
         ch3TalkedWithYukio = false
@@ -145,11 +152,6 @@ class EventFlagsCollection: NSObject, NSCoding {
     }
     
     required init(coder aDecoder: NSCoder) {
-        if let rawValue = Route(rawValue: aDecoder.decodeIntegerForKey(EventFlagsCollection.r)) {
-            route = rawValue
-        } else {
-            route = .Phantom
-        }
         if let rawValue = DriveWithCaitlyn(rawValue: aDecoder.decodeIntegerForKey(EventFlagsCollection.dwc)) {
             ch3DroveWithCaitlyn = rawValue
         } else {
@@ -225,7 +227,6 @@ class EventFlagsCollection: NSObject, NSCoding {
     }
     
     func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeInteger(route.rawValue, forKey: EventFlagsCollection.r)
         aCoder.encodeInteger(ch3DroveWithCaitlyn.rawValue, forKey: EventFlagsCollection.dwc)
         aCoder.encodeInteger(ch3TalkedWithCaitlyn.rawValue, forKey: EventFlagsCollection.twc)
         aCoder.encodeBool(ch3TalkedWithYukio, forKey: EventFlagsCollection.twy)
@@ -247,7 +248,7 @@ class EventFlagsCollection: NSObject, NSCoding {
 /*
 The route will determine the ending.
 */
-enum Route: Int {
+enum Route {
     case Phantom
     case Caitlyn
     case VaNal

@@ -70,8 +70,46 @@ class Chapter7: PPageTurner {
             nextPages = [ch7SezjaReturns(observer: observer)]
         case 7030:
             nextPages = [ch7SezjaGreetsMeAgain(observer: observer)]
+        case 7031:
+            nextPages = [ch7IGetCarleighsTest(observer: observer)]
+        case 7032:
+            nextPages = [ch7IScore10(observer: observer)]
+        case 7033:
+            nextPages = [ch7IScore9(observer: observer)]
+        case 7034:
+            nextPages = [ch7IScore8(observer: observer)]
+        case 7035:
+            nextPages = [ch7IScore7(observer: observer)]
+        case 7036:
+            nextPages = [ch7AfternoonPasses(observer: observer)]
+        case 7037:
+            nextPages = [ch7VaNalEntersDorm(observer: observer)]
+        case 7038:
+            nextPages = [ch7HowDidVaNalEnter(observer: observer)]
+        case 7039:
+            nextPages = ch5KissVaNalDecision(observer)
+        case 7040:
+            nextPages = [ch7WhatIsWrong(observer: observer)]
+        case 7041:
+            nextPages = [ch7HeartMustBeCared(observer: observer)]
+        case 7042:
+            nextPages = [ch7VaNalKissesMe(observer: observer)]
+        case 7043:
+            nextPages = [ch7GodsWillDispossess(observer: observer)]
+        case 7044:
+            nextPages = [ch7ISleep(observer: observer)]
         default:
             nextPages = []
+        }
+        return nextPages
+    }
+    
+    func ch5KissVaNalDecision(observer: PhantomOfTheWest) -> [StoryPage] {
+        var nextPages: [StoryPage] = [ch7IDoNotKissVaNal(observer: observer)]
+        if let ef = observer.eventFlags {
+            if ef.route == .Phantom {
+                nextPages.append(ch7IWillKissVaNal(observer: observer))
+            }
         }
         return nextPages
     }
@@ -556,5 +594,248 @@ class ch7SezjaGreetsMeAgain: StoryPage {
     
     override func continueStory() {
         observer.goToStoryState(7031)
+    }
+}
+
+class ch7IGetCarleighsTest: StoryPage {
+    
+    let imageName = "Carleigh-Gets-Math-Grade"
+    
+    let textName = ["ch7IGetCarleighsTest"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        var nextState = 7035
+        if let ef = observer.eventFlags {
+            let numCorrect = ef.ch5numCorrectMathAnswers
+            if numCorrect >= 3 {
+                nextState = 7032
+            } else if numCorrect == 2 {
+                nextState = 7033
+            }
+            else if numCorrect == 1 {
+                nextState = 7034
+            }
+        }
+        observer.goToStoryState(nextState)
+    }
+}
+
+class ch7IScore10: StoryPage {
+    
+    let imageName = "Carleigh-Gets-Math-Grade"
+    
+    let textName = ["ch7IScore10"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(7036)
+    }
+}
+
+class ch7IScore9: StoryPage {
+    
+    let imageName = "Carleigh-Gets-Math-Grade"
+    
+    let textName = ["ch7IScore9"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(7036)
+    }
+}
+
+class ch7IScore8: StoryPage {
+    
+    let imageName = "Carleigh-Gets-Math-Grade"
+    
+    let textName = ["ch7IScore8"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(7036)
+    }
+}
+
+class ch7IScore7: StoryPage {
+    
+    let imageName = "Carleigh-Gets-Math-Grade"
+    
+    let textName = ["ch7IScore7"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(7036)
+    }
+}
+
+class ch7AfternoonPasses: StoryPage {
+    
+    let imageName = "Hewitt-at-Desk"
+    
+    let textName = ["ch7AfternoonPasses"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(7037)
+    }
+}
+
+class ch7VaNalEntersDorm: StoryPage {
+    
+    let imageName = "Va'Nal-Enters-Bedroom"
+    
+    let textName = ["ch7VaNalEntersDorm", "ch7ElodieIsVaNal"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(7038)
+    }
+}
+
+class ch7HowDidVaNalEnter: StoryPage {
+    
+    let imageName = "Elodie-by-Hewitt-Bed"
+    
+    let textName = ["ch7HowDidVaNalEnter", "ch7VaNalPitiesMe", "ch7WhatDoesVaNalMean", "ch7ISeekCompanionship", "ch7VaNalStrokesMe"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(7039)
+    }
+}
+
+class ch7IDoNotKissVaNal: StoryPage {
+    
+    let imageName = "Elodie-by-Hewitt-Bed"
+    
+    let textName = ["ch7IDoNotKissVaNal"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        if let ef = observer.eventFlags {
+            ef.ch7KissedVaNal = .Refused
+        }
+        observer.goToStoryState(7040)
+    }
+}
+
+class ch7IWillKissVaNal: StoryPage {
+    
+    let imageName = "Elodie-by-Hewitt-Bed"
+    
+    let textName = ["ch7IWillKissVaNal"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        if let ef = observer.eventFlags {
+            ef.ch7KissedVaNal = .Kissed
+        }
+        observer.goToStoryState(7041)
+    }
+}
+
+class ch7WhatIsWrong: StoryPage {
+    
+    let imageName = "Elodie-by-Hewitt-Bed"
+    
+    let textName = ["ch7WhatIsWrong", "ch7WrongAge", "ch7IAmHewitt", "ch7VaNalDisintrestsMe", "ch7VaNalAdmitsDisrespect"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(7043)
+    }
+}
+
+class ch7HeartMustBeCared: StoryPage {
+    
+    let imageName = "Elodie-by-Hewitt-Bed"
+    
+    let textName = ["ch7HeartMustBeCared", "ch7OKINod"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(7042)
+    }
+}
+
+class ch7VaNalKissesMe: StoryPage {
+    
+    let imageName = "Elodie-Kisses-Hewitt"
+    
+    let textName = ["ch7VaNalKissesMe", "ch7VaNalLeavesBed"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(7043)
+    }
+}
+
+class ch7GodsWillDispossess: StoryPage {
+    
+    let imageName = "Va'Nal-Leaves-Bedroom"
+    
+    let textName = ["ch7GodsWillDispossess", "ch7VaNalLeavesDorm"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(7044)
+    }
+}
+
+class ch7ISleep: StoryPage {
+    
+    let imageName = "Hewitt-Sleeps"
+    
+    let textName = ["ch7ISleep"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(8001)
     }
 }

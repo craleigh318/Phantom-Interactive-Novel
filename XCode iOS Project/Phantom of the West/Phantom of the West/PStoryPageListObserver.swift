@@ -11,7 +11,7 @@ A convenience class that supplies the visual novel reader with a linear path of 
 */
 protocol PStoryPageListObserver {
     /*
-    Notifies this observer that StoryPageLisr changed.
+    Notifies this observer that StoryPageList changed.
     */
     func update(_: StoryPageList)
 }
