@@ -58,6 +58,8 @@ class POTWGameState: NSObject, NSCoding, PPageTurner {
             pageTurner = Chapter5()
         case 6:
             pageTurner = Chapter6()
+        case 7:
+            pageTurner = Chapter7()
         default:
             break
         }
@@ -68,5 +70,26 @@ class POTWGameState: NSObject, NSCoding, PPageTurner {
             newPages = []
         }
         return newPages
+    }
+}
+
+class TestGameState: POTWGameState {
+    init() {
+        let ef = EventFlagsCollection()
+        ef.ch3DroveWithCaitlyn = .DisguisedAsInfant
+        ef.ch3TalkedWithCaitlyn = .SaidMaybeGoodMother
+        ef.ch3TalkedWithYukio = true
+        ef.ch5AnsweredLiteratureStory = .StayConfident
+        ef.ch5AnsweredMathQuestion1 = .Correct
+        ef.ch5AnsweredMathQuestion4 = .Correct
+        ef.ch5AnsweredMathQuestion9 = .Correct
+        ef.ch5AnsweredCoach = .Submit
+        ef.ch5SparredWithCheerleader = .Pinned
+        super.init(eventFlags: ef)
+        id = 7001
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
 }

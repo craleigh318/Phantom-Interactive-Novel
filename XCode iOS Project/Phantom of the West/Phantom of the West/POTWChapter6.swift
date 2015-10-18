@@ -133,6 +133,6 @@ class ch6IKissedRebecca: StoryPage {
     }
     
     override func continueStory() {
-        observer.goToStoryState(7000)
+        observer.goToStoryState(7001)
     }
 }
