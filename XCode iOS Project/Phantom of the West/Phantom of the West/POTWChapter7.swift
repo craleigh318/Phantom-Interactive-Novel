@@ -87,7 +87,7 @@ class Chapter7: PPageTurner {
         case 7038:
             nextPages = [ch7HowDidVaNalEnter(observer: observer)]
         case 7039:
-            nextPages = ch5KissVaNalDecision(observer)
+            nextPages = ch7KissVaNalDecision(observer)
         case 7040:
             nextPages = [ch7WhatIsWrong(observer: observer)]
         case 7041:
@@ -104,7 +104,7 @@ class Chapter7: PPageTurner {
         return nextPages
     }
     
-    func ch5KissVaNalDecision(observer: PhantomOfTheWest) -> [StoryPage] {
+    func ch7KissVaNalDecision(observer: PhantomOfTheWest) -> [StoryPage] {
         var nextPages: [StoryPage] = [ch7IDoNotKissVaNal(observer: observer)]
         if let ef = observer.eventFlags {
             if ef.route == .Phantom {
