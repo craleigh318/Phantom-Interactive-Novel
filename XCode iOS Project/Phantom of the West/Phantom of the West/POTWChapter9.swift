@@ -120,6 +120,8 @@ class Chapter9: PPageTurner {
             nextPages = [ch9CaitlynFrownsAtFoxtrot(observer: observer)]
         case 9055:
             nextPages = [ch9IReturnHome(observer: observer)]
+        case 9056:
+            nextPages = [ch9ISleep(observer: observer)]
         default:
             nextPages = []
         }
