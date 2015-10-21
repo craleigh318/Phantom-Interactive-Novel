@@ -33,6 +33,7 @@
 		A4384A201B59EEC400EF2187 /* StoryText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4384A1F1B59EEC400EF2187 /* StoryText.swift */; };
 		A4384A221B59F2E400EF2187 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4384A211B59F2E400EF2187 /* StoryView.swift */; };
 		A43E813A1B7EC2DF001CE80F /* StoryText.strings in Resources */ = {isa = PBXBuildFile; fileRef = A43E81391B7EC2DF001CE80F /* StoryText.strings */; };
+		A44C59691BD6F7B900C20C21 /* POTWChapter11.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44C59681BD6F7B900C20C21 /* POTWChapter11.swift */; settings = {ASSET_TAGS = (); }; };
 		A44FA5B31BD1AA8700E427F4 /* POTWChapter5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44FA5B21BD1AA8700E427F4 /* POTWChapter5.swift */; settings = {ASSET_TAGS = (); }; };
 		A44FA5B71BD208E600E427F4 /* POTWChapter6.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44FA5B61BD208E600E427F4 /* POTWChapter6.swift */; settings = {ASSET_TAGS = (); }; };
 		A45669BB1BD326C000A199FA /* POTWChapter7.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45669BA1BD326C000A199FA /* POTWChapter7.swift */; settings = {ASSET_TAGS = (); }; };
@@ -108,6 +109,7 @@
 		A4384A1F1B59EEC400EF2187 /* StoryText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryText.swift; sourceTree = "<group>"; };
 		A4384A211B59F2E400EF2187 /* StoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		A43E81391B7EC2DF001CE80F /* StoryText.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = StoryText.strings; sourceTree = "<group>"; };
+		A44C59681BD6F7B900C20C21 /* POTWChapter11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter11.swift; sourceTree = "<group>"; };
 		A44FA5B21BD1AA8700E427F4 /* POTWChapter5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter5.swift; sourceTree = "<group>"; };
 		A44FA5B61BD208E600E427F4 /* POTWChapter6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter6.swift; sourceTree = "<group>"; };
 		A45669BA1BD326C000A199FA /* POTWChapter7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter7.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				A42893891BD45ED600C1796B /* POTWChapter8.swift */,
 				A46FC2E41BD5AED6004B2B46 /* POTWChapter9.swift */,
 				A46FC2E61BD602AC004B2B46 /* POTWChapter10.swift */,
+				A44C59681BD6F7B900C20C21 /* POTWChapter11.swift */,
 			);
 			name = Chapters;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				A46FC2E71BD602AC004B2B46 /* POTWChapter10.swift in Sources */,
 				A4E31CAF1B86759500ECFFEE /* PhantomOfTheWest.swift in Sources */,
 				A4E79B4F1B5A4D4E00BC861B /* StoryViewController.swift in Sources */,
+				A44C59691BD6F7B900C20C21 /* POTWChapter11.swift in Sources */,
 				A42C26291B61D9A200E6F7B5 /* POptionsMenuItem.swift in Sources */,
 				A4384A221B59F2E400EF2187 /* StoryView.swift in Sources */,
 				A423BD391B84347000C331EE /* StoryPage.swift in Sources */,

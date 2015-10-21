@@ -29,12 +29,12 @@ public class PhantomOfTheWest: PStory, PStoryObserver, PSavedGamesLoader {
     private var currentPages: [PStoryPage] = []
     
     public func newGame() {
-        /*let emptyFlags = EventFlagsCollection()
+        let emptyFlags = EventFlagsCollection()
         gameState = POTWGameState(eventFlags: emptyFlags)
-        goToStoryState(PhantomOfTheWest.firstPageNumber)*/
-        let gs = TestGameState()
+        goToStoryState(PhantomOfTheWest.firstPageNumber)
+        /*let gs = TestGameState()
         gameState = gs
-        goToStoryState(gs.id)
+        goToStoryState(gs.id)*/
     }
     
     /*
