@@ -1172,9 +1172,9 @@ ch11IGetOffTreadmill = "Once I feel that I\'m done, I stop the treadmill and get
 
 ch11GuestApproachesMe = "I\'m about to leave, when another hotel guest approaches me.";
 
-ch11GuestFlirts = "\"Oh, well … I saw you running on the treadmill. You really seemed to be going at it. That kind of athleticism shouldn\'t go to waste.\"";
+ch11GuestFlirts = "\"Oh, hey … I saw you running on the treadmill. You really seemed to be going at it. That kind of athleticism shouldn\'t go to waste.\"";
 
-ch11AmIGoodOrBad = "The man walks towards me and backs me into a wall. \"I have one more question. Are you a good girl, or are you a bad girl?\"";
+ch11AmIGoodOrBad = "The man walks towards me and backs me into a wall. \"I have a question. Are you a good girl, or are you a bad girl?\"";
 
 ch11GuestWastesMyTime = "Ugh, this man is wasting my time. Should I play along anyway, or just leave him?";
 
