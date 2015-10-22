@@ -132,9 +132,42 @@ class Chapter11: PPageTurner {
             nextPages = [ch11ILeaveHealthClub(observer: observer)]
         case 11061:
             nextPages = [ch11IRelax(observer: observer)]
+        case 11062:
+            nextPages = ch11EndDecision(observer)
+        case 11063:
+            nextPages = [ch11IShouldCool(observer: observer)]
+        case 11064:
+            nextPages = [ch11ILayNewClothes(observer: observer)]
+        case 11065:
+            nextPages = [ch11IAdjustTemperature(observer: observer)]
+        case 11066:
+            nextPages = [ch11IShower(observer: observer)]
+        case 11067:
+            nextPages = [ch11IDry(observer: observer)]
+        case 11068:
+            nextPages = [ch11NewNewsSegment(observer: observer)]
+        case 11069:
+            nextPages = [ch11CameraShowsSeawall(observer: observer)]
+        case 11070:
+            nextPages = [ch11Potholes(observer: observer)]
+        case 11071:
+            nextPages = [ch11MayorsDefense(observer: observer)]
+        case 11072:
+            nextPages = [ch11IWearFormalwear(observer: observer)]
         default:
             nextPages = []
         }
+        return nextPages
+    }
+    
+    func ch11EndDecision(observer: PhantomOfTheWest) -> [StoryPage] {
+        var nextPages = [StoryPage]()
+        if let ef = observer.eventFlags {
+            if ef.route == .Phantom {
+                nextPages.append(ch11IWillShower(observer: observer))
+            }
+        }
+        nextPages.append(ch11IWatchTV(observer: observer))
         return nextPages
     }
 }
@@ -1093,5 +1126,191 @@ class ch11IRelax: StoryPage {
     
     override func continueStory() {
         observer.goToStoryState(11062)
+    }
+}
+
+class ch11IWillShower: StoryPage {
+    
+    let imageName = "Athletic-Sarah-on-Bed"
+    
+    let textName = ["ch11IWillShower"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        if let ef = observer.eventFlags {
+            ef.ch11ActedInSarahRoom = .Showered
+        }
+        observer.goToStoryState(11063)
+    }
+}
+
+class ch11IWatchTV: StoryPage {
+    
+    let imageName = "Athletic-Sarah-on-Bed"
+    
+    let textName = ["ch11IWatchTV"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        if let ef = observer.eventFlags {
+            ef.ch11ActedInSarahRoom = .WatchedTV
+        }
+        observer.goToStoryState(11068)
+    }
+}
+
+class ch11IShouldCool: StoryPage {
+    
+    let imageName = "Athletic-Sarah-on-Bed"
+    
+    let textName = ["ch11IShouldCool"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(11064)
+    }
+}
+
+class ch11ILayNewClothes: StoryPage {
+    
+    let imageName = "Sarah-Gets-Towel"
+    
+    let textName = ["ch11ILayNewClothes", "ch11IGetTowel"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(11065)
+    }
+}
+
+class ch11IAdjustTemperature: StoryPage {
+    
+    let imageName = "Sarah-Starts-Shower"
+    
+    let textName = ["ch11IAdjustTemperature"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(11066)
+    }
+}
+
+class ch11IShower: StoryPage {
+    
+    let imageName = "Sarah-in-Shower"
+    
+    let textName = ["ch11IShower", "ch11IFeelGood"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(11067)
+    }
+}
+
+class ch11IDry: StoryPage {
+    
+    let imageName = "Sarah-Wears-Towel"
+    
+    let textName = ["ch11IDry"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(11072)
+    }
+}
+
+class ch11NewNewsSegment: StoryPage {
+    
+    let imageName = "TV-Seawall-Top"
+    
+    let textName = ["ch11NewNewsSegment", "ch11SeawallIntroduced"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(11069)
+    }
+}
+
+class ch11CameraShowsSeawall: StoryPage {
+    
+    let imageName = "TV-Seawall-Bottom"
+    
+    let textName = ["ch11CameraShowsSeawall", "ch11MayorIsCriticized"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(11070)
+    }
+}
+
+class ch11Potholes: StoryPage {
+    
+    let imageName = "TV-Cars"
+    
+    let textName = ["ch11Potholes"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(11071)
+    }
+}
+
+class ch11MayorsDefense: StoryPage {
+    
+    let imageName = "TV-Mayor"
+    
+    let textName = ["ch11MayorsDefense", "ch11ITurnOffTV"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(11072)
+    }
+}
+
+class ch11IWearFormalwear: StoryPage {
+    
+    let imageName = "Sarah-Formal"
+    
+    let textName = ["ch11IWearFormalwear"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(12001)
     }
 }
