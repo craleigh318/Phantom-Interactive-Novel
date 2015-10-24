@@ -68,7 +68,45 @@ class Chapter17: PPageTurner {
         case 17028:
             nextPages = [ch17WeRepairBuildings(observer: observer)]
         case 17029:
-            nextPages = [ch17WeRepairBuildings(observer: observer)]
+            nextPages = [ch17IExamineMyRealSelf(observer: observer)]
+        case 17030:
+            nextPages = [ch17IGrabMyHood(observer: observer)]
+        case 17031:
+            nextPages = [ch17ThisIsRealMe(observer: observer)]
+        case 17032:
+            nextPages = [ch17IClimbToSeeHotel(observer: observer)]
+        case 17033:
+            nextPages = [ch17IGoToHotel(observer: observer)]
+        case 17034:
+            nextPages = [ch17HotelFloods(observer: observer)]
+        case 17035:
+            nextPages = [ch17CaitlynKneels(observer: observer)]
+        case 17036:
+            nextPages = [ch17IGoToCaitlyn(observer: observer)]
+        case 17037:
+            nextPages = [ch17TideApproachesCaitlyn(observer: observer)]
+        case 17038:
+            nextPages = [ch17ISaveCaitlyn(observer: observer)]
+        case 17039:
+            nextPages = [ch17CaitlynAsksAboutFlood(observer: observer)]
+        case 17040:
+            nextPages = [ch17SarahKneels(observer: observer)]
+        case 17041:
+            nextPages = [ch17IGoToSarah(observer: observer)]
+        case 17042:
+            nextPages = [ch17ISaveSarah(observer: observer)]
+        case 17043:
+            nextPages = [ch17SarahAsksAboutMe(observer: observer)]
+        case 17044:
+            nextPages = [ch17WeReachCamp(observer: observer)]
+        case 17045:
+            nextPages = [ch17CaitlynPullsMe(observer: observer)]
+        case 17046:
+            nextPages = [ch17WhyDidCaitlynPullMe(observer: observer)]
+        case 17047:
+            nextPages = [ch17WeKiss(observer: observer)]
+        case 17048:
+            nextPages = [ch17IPullSarah(observer: observer)]
         default:
             nextPages = []
         }
@@ -218,6 +256,8 @@ class ch17IWalkToShop: StoryPage {
             let r = ef.route
             if r == .VaNal {
                 nextState = 17010
+            } else if (r == .Caitlyn) || (r == .Sarah) {
+                nextState = 17029
             }
         }
         observer.goToStoryState(nextState)
@@ -499,6 +539,318 @@ class ch17WeRepairBuildings: StoryPage {
     let imageName = "Crowd-Repairs-Building"
     
     let textName = ["ch17WeRepairBuildings", "ch17WeCelebrate"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(18001)
+    }
+}
+
+class ch17IExamineMyRealSelf: StoryPage {
+    
+    let imageName = "Shop-Reflection-Kaden-Hooded"
+    
+    let textName = ["ch17IExamineMyRealSelf", "ch17PhantomFirstDefinition", "ch17PhantomSecondDefinition", "ch17IAssumedEmpathySelf", "ch17ILostTrustSelf", "ch17WhyICreatedTheGods", "ch17ICanStillLove"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17030)
+    }
+}
+
+class ch17IGrabMyHood: StoryPage {
+    
+    let imageName = "Dr-Kaden-Pulls-Hood"
+    
+    let textName = ["ch17IGrabMyHood", "ch17ILowerMyHood"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17031)
+    }
+}
+
+class ch17ThisIsRealMe: StoryPage {
+    
+    let imageName = "Shop-Reflection-Kaden-Hoodless"
+    
+    let textName = ["ch17ThisIsRealMe"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17032)
+    }
+}
+
+class ch17IClimbToSeeHotel: StoryPage {
+    
+    let imageName = "Hoodless-Kaden-Climbs"
+    
+    let textName = ["ch17IClimbToSeeHotel"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17033)
+    }
+}
+
+class ch17IGoToHotel: StoryPage {
+    
+    let imageName = "Flooded-Hotel-Entrance"
+    
+    let textName = ["ch17IGoToHotel"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17034)
+    }
+}
+
+class ch17HotelFloods: StoryPage {
+    
+    let imageName = "Flooded-Hotel-Entrance-Evacuated"
+    
+    let textName = ["ch17HotelFloods", "ch17ManShovesLady"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        var nextState = 17035
+        if let ef = observer.eventFlags {
+            if ef.route == .Sarah {
+                nextState = 17040
+            }
+        }
+        observer.goToStoryState(nextState)
+    }
+}
+
+class ch17CaitlynKneels: StoryPage {
+    
+    let imageName = "Caitlyn-Falls-in-Flood"
+    
+    let textName = ["ch17CaitlynKneels"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17036)
+    }
+}
+
+class ch17IGoToCaitlyn: StoryPage {
+    
+    let imageName = "Caitlyn-Falls-in-Flood-with-Kaden"
+    
+    let textName = ["ch17IGoToCaitlyn", "ch17YukioComes"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17037)
+    }
+}
+
+class ch17TideApproachesCaitlyn: StoryPage {
+    
+    let imageName = "Caitlyn-Falls-in-Flood-with-Kaden-and-Yukio"
+    
+    let textName = ["ch17TideApproachesCaitlyn"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17038)
+    }
+}
+
+class ch17ISaveCaitlyn: StoryPage {
+    
+    let imageName = "Caitlyn-Falls-in-Flood-with-Kaden-Yukio-and-Tentacles"
+    
+    let textName = ["ch17ISaveCaitlyn"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17039)
+    }
+}
+
+class ch17CaitlynAsksAboutFlood: StoryPage {
+    
+    let imageName = "Hoodless-Kaden-Carries-Caitlyn-and-Yukio"
+    
+    let textName = ["ch17CaitlynAsksAboutFlood", "ch17ComplicatedCaitlyn", "ch17YukioSurprised"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17044)
+    }
+}
+
+class ch17SarahKneels: StoryPage {
+    
+    let imageName = "Sarah-Falls-in-Flood"
+    
+    let textName = ["ch17SarahKneels"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17041)
+    }
+}
+
+class ch17IGoToSarah: StoryPage {
+    
+    let imageName = "Sarah-Falls-in-Flood-with-Kaden"
+    
+    let textName = ["ch17IGoToSarah", "ch17TideApproachesSarah"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17042)
+    }
+}
+
+class ch17ISaveSarah: StoryPage {
+    
+    let imageName = "Sarah-Falls-in-Flood-with-Tentacles"
+    
+    let textName = ["ch17ISaveSarah"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17043)
+    }
+}
+
+class ch17SarahAsksAboutMe: StoryPage {
+    
+    let imageName = "Hoodless-Kaden-Carries-Sarah"
+    
+    let textName = ["ch17SarahAsksAboutMe", "ch17ComplicatedSarah", "ch17SarahAsksWhy", "ch17IAmPhantom", "ch17LotToTakeIn"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17044)
+    }
+}
+
+class ch17WeReachCamp: StoryPage {
+    
+    let imageName = "Airport-Evacuees"
+    
+    let textName = ["ch17WeReachCamp"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        var nextState = 17045
+        if let ef = observer.eventFlags {
+            if ef.route == .Sarah {
+                nextState = 17048
+            }
+        }
+        observer.goToStoryState(nextState)
+    }
+}
+
+class ch17CaitlynPullsMe: StoryPage {
+    
+    let imageName = "Airport-Kaden-Caitlyn-and-Yukio"
+    
+    let textName = ["ch17CaitlynPullsMe"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17046)
+    }
+}
+
+class ch17WhyDidCaitlynPullMe: StoryPage {
+    
+    let imageName = "Airport-Kaden-and-Caitlyn"
+    
+    let textName = ["ch17WhyDidCaitlynPullMe", "ch17WhatIsItCaitlyn", "ch17CaitlynKnowsMeForYears", "ch17IKnowCaitlynLeadsMe", "ch17CaitlynWantsToBeClose", "ch17NoObjectionCaitlyn", "ch17CaitlynStaresAtMe"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(17047)
+    }
+}
+
+class ch17WeKiss: StoryPage {
+    
+    let imageName = "Airport-Kaden-and-Caitlyn-Kiss"
+    
+    let textName = ["ch17WeKiss"]
+    
+    init(observer: PhantomOfTheWest) {
+        super.init(image: imageName, text: textName, observer: observer)
+    }
+    
+    override func continueStory() {
+        observer.goToStoryState(18001)
+    }
+}
+
+class ch17IPullSarah: StoryPage {
+    
+    let imageName = "Airport-Kaden-and-Sarah"
+    
+    let textName = ["ch17IPullSarah", "ch17IExplainToSarah", "ch17DidIPossessSarah", "ch17ThatIsCorrect", "ch17WhyDidIPossessSarah", "ch17IWantedSarahToUnderstand", "ch17MyPowersAreNew", "ch17SarahUnsure", "ch17DidSarahAttendReunion", "ch17YeahSarahDid", "ch17ThatIsGood", "ch17IAmNotBad", "ch17ThanksEmbarrassed", "ch17SarahAndIWillRoom", "ch17IdLoveTo"]
     
     init(observer: PhantomOfTheWest) {
         super.init(image: imageName, text: textName, observer: observer)
