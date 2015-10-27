@@ -11,6 +11,8 @@
 		A4015DAB1B65D6B100F99486 /* RestorePurchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4015DAA1B65D6B100F99486 /* RestorePurchases.swift */; };
 		A4015DAD1B65D80000F99486 /* ToIAPMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4015DAC1B65D80000F99486 /* ToIAPMenu.swift */; };
 		A4048F291BCE0EFC0000AD93 /* POTWChapter2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4048F281BCE0EFC0000AD93 /* POTWChapter2.swift */; };
+		A4064D7E1BDF207A00840203 /* LoadGameMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4064D7D1BDF207A00840203 /* LoadGameMenu.swift */; };
+		A4064D801BDF286100840203 /* SavedGameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4064D7F1BDF286100840203 /* SavedGameItem.swift */; };
 		A4097A901B8C621C00EEFEC9 /* SavedGamesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4097A8F1B8C621C00EEFEC9 /* SavedGamesList.swift */; };
 		A4097A921B8C68A200EEFEC9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4097A911B8C68A200EEFEC9 /* GameKit.framework */; };
 		A41401381B7D8D86001CEAB1 /* NewGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41401371B7D8D86001CEAB1 /* NewGame.swift */; };
@@ -94,6 +96,8 @@
 		A4015DAA1B65D6B100F99486 /* RestorePurchases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestorePurchases.swift; sourceTree = "<group>"; };
 		A4015DAC1B65D80000F99486 /* ToIAPMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToIAPMenu.swift; sourceTree = "<group>"; };
 		A4048F281BCE0EFC0000AD93 /* POTWChapter2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter2.swift; sourceTree = "<group>"; };
+		A4064D7D1BDF207A00840203 /* LoadGameMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadGameMenu.swift; sourceTree = "<group>"; };
+		A4064D7F1BDF286100840203 /* SavedGameItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedGameItem.swift; sourceTree = "<group>"; };
 		A4097A8F1B8C621C00EEFEC9 /* SavedGamesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedGamesList.swift; sourceTree = "<group>"; };
 		A4097A911B8C68A200EEFEC9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		A41401371B7D8D86001CEAB1 /* NewGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGame.swift; sourceTree = "<group>"; };
@@ -195,6 +199,15 @@
 				A4E909291B7C3D8C00430B9B /* StoreManager.swift */,
 			);
 			name = "In-App Purchasing";
+			sourceTree = "<group>";
+		};
+		A4064D7C1BDF1F3B00840203 /* Save Games Selection */ = {
+			isa = PBXGroup;
+			children = (
+				A4064D7D1BDF207A00840203 /* LoadGameMenu.swift */,
+				A4064D7F1BDF286100840203 /* SavedGameItem.swift */,
+			);
+			name = "Save Games Selection";
 			sourceTree = "<group>";
 		};
 		A414013B1B7DA8BD001CEAB1 /* PotW VN */ = {
@@ -406,6 +419,7 @@
 				A4C1A63E1B642C900007B567 /* VoiceOption.swift */,
 				A4015DAC1B65D80000F99486 /* ToIAPMenu.swift */,
 				A4015DA91B65D54500F99486 /* In-App Purchasing */,
+				A4064D7C1BDF1F3B00840203 /* Save Games Selection */,
 			);
 			name = "Options View";
 			sourceTree = "<group>";
@@ -569,7 +583,9 @@
 				A434AA8E1BDB045F0021B0A3 /* POTWChapter17.swift in Sources */,
 				A442B3AD1BDC3A3300CE90CA /* POTWChapter18.swift in Sources */,
 				A42A98DD1BD0963600F69D8A /* POTWChapter4.swift in Sources */,
+				A4064D7E1BDF207A00840203 /* LoadGameMenu.swift in Sources */,
 				A4015DAD1B65D80000F99486 /* ToIAPMenu.swift in Sources */,
+				A4064D801BDF286100840203 /* SavedGameItem.swift in Sources */,
 				A45669BB1BD326C000A199FA /* POTWChapter7.swift in Sources */,
 				A46782041B58E57400745C98 /* ViewController.swift in Sources */,
 				A414013A1B7DA79E001CEAB1 /* EventFlagsCollection.swift in Sources */,
