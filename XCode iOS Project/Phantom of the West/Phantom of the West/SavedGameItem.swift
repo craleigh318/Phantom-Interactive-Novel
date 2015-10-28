@@ -9,13 +9,13 @@
 import UIKit
 
 /*
-Menu to remove advertisements
+Cell that represents a save game.
 */
 class SavedGameItem: POptionsMenuItem {
     
     private(set) var cell: UITableViewCell
     
-    private var savedGame: ManualSave
+    private(set) var savedGame: ManualSave
     
     /*
     Initializes

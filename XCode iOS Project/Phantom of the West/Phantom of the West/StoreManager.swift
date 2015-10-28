@@ -99,8 +99,7 @@ class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObs
         } else {
             let cannotPay = StringLocalizer.getGUIString("cannotPay")
             let cannotPayMessage = StringLocalizer.getGUIString("cannotPayMessage")
-            let alert = UIAlertView(title: cannotPay, message: cannotPayMessage, delegate: nil, cancelButtonTitle: Constants.okTitle)
-            alert.show()
+            AlertManager.showMessage(cannotPay, message: cannotPayMessage)
         }
     }
 }

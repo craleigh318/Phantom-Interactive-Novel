@@ -31,3 +31,7 @@ cannotPayMessage = "The transaction could not begin.";
 error = "Error";
 
 autoSave = "Auto-Save";
+
+saved = "Saved";
+
+saveSuccessful = "The game was saved successfully.";

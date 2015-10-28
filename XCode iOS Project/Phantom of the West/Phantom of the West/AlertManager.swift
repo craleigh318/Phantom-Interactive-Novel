@@ -14,10 +14,14 @@ Manages UIAlertViews.
 */
 public class AlertManager {
     
+    public static func showMessage(title: String, message: String) {
+        let alert = UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: Constants.okTitle)
+        alert.show()
+    }
+    
     public static func showError(error: NSError) {
         let errorTitle = StringLocalizer.getGUIString("error")
         let errorMessage = error.localizedDescription
-        let alert = UIAlertView(title: errorTitle, message: errorMessage, delegate: nil, cancelButtonTitle: Constants.okTitle)
-        alert.show()
+        showMessage(errorTitle, message: errorMessage)
     }
 }
