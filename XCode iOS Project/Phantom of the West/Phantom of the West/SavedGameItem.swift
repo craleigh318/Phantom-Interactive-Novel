@@ -32,8 +32,37 @@ class SavedGameItem: POptionsMenuItem {
         }
     }
     
-    func onSelect() {
+    func overwrite() {
+        let potw = AppDelegate.potwStory
+        if let newSave = potw.saveGame() {
+            ManualSave.localPlayer.saveGameData(newSave, withName: savedGame.name, completionHandler: {
+                data, error in
+                if let e = error {
+                    AlertManager.showError(e)
+                } else {
+                    let saved = StringLocalizer.getGUIString("saved")
+                    let saveSuccessful = StringLocalizer.getGUIString("saveSuccessful")
+                    AlertManager.showMessage(saved, message: saveSuccessful)
+                }
+            })
+        }
+    }
+    
+    func load() {
         let potw = AppDelegate.potwStory
         savedGame.load(potw)
+    }
+    
+    func delete() {
+        ManualSave.localPlayer.deleteSavedGamesWithName(savedGame.name, completionHandler: {
+            error in
+            if let e = error {
+                AlertManager.showError(e)
+            }
+        })
+    }
+    
+    func onSelect() {
+        load()
     }
 }

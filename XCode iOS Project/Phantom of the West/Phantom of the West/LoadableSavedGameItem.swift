@@ -1,5 +1,5 @@
 //
-//  OverwritableSavedGameItem.swift
+//  LoadableSavedGameItem.swift
 //  Phantom of the West
 //
 //  Created by Christopher Raleigh on 2015/10/27.
@@ -7,11 +7,11 @@
 //
 
 /*
-Overrides the existing saved game when selected
+Loads the existing saved game when selected
 */
-class OverwritableSavedGameItem: SavedGameItem {
+class LoadableSavedGameItem: SavedGameItem {
     
     override func onSelect() {
-        overwrite()
+        load()
     }
 }
