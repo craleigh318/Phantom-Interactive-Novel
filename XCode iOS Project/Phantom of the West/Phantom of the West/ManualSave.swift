@@ -14,17 +14,48 @@ Save data stored on Game Center.
 */
 public class ManualSave: PSavedGame {
     
-    public static let localPlayer = GKLocalPlayer.localPlayer()
+    public static func authenticatePlayer() {
+        let localPlayer = GKLocalPlayer.localPlayer()
+        localPlayer.authenticateHandler = {
+            (viewController, error) in
+            if let vc = viewController {
+                if let nc = vc.navigationController {
+                    nc.presentViewController(vc, animated: true, completion: nil)
+                }
+            } else if let e = error {
+                AlertManager.showError(e)
+            }
+        }
+    }
     
     public static func getSavedGames(retriever: PSavedGamesRetriever) {
+        let localPlayer = GKLocalPlayer.localPlayer()
         localPlayer.fetchSavedGamesWithCompletionHandler({
             (savedGames, error) in
-            retriever.savedGamesRetrieved(savedGames, error: error)
+            if let sg = savedGames {
+                var manualSaves = [ManualSave]()
+                for g in sg {
+                    manualSaves.append(ManualSave(gkSave: g))
+                }
+                retriever.savedGamesRetrieved(manualSaves)
+            } else if let e = error {
+                AlertManager.showError(e)
+            }
         })
     }
     
     public static func save(data: NSData, name: String) {
-        localPlayer.saveGameData(data, withName: name, completionHandler: nil)
+        let localPlayer = GKLocalPlayer.localPlayer()
+        localPlayer.saveGameData(data, withName: name, completionHandler: {
+            data, error in
+            if let e = error {
+                AlertManager.showError(e)
+            } else {
+                let saved = StringLocalizer.getGUIString("saved")
+                let saveSuccessful = StringLocalizer.getGUIString("saveSuccessful")
+                AlertManager.showMessage(saved, message: saveSuccessful)
+            }
+        })
     }
     
     public var name: String! {
@@ -49,6 +80,12 @@ public class ManualSave: PSavedGame {
     }
     
     public func delete() {
-        ManualSave.localPlayer.deleteSavedGamesWithName(name, completionHandler: nil)
+        let localPlayer = GKLocalPlayer.localPlayer()
+        localPlayer.deleteSavedGamesWithName(name, completionHandler: {
+            error in
+            if let e = error {
+                AlertManager.showError(e)
+            }
+        })
     }
 }

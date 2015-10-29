@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
+import GameKit
 import UIKit
 
 /*
@@ -31,20 +32,17 @@ class LoadGame: POptionsMenuItem {
     }
     
     func onSelect() {
-        if ManualSave.localPlayer.authenticated {
+        let localPlayer = GKLocalPlayer.localPlayer()
+        if localPlayer.authenticated {
             // Push load game view.
-        } else {
-            // Present Game Center view.
-            ManualSave.localPlayer.authenticateHandler = {
-                (viewController, error) in
-                if let vc = viewController {
-                    if let nc = self.displayingVC?.navigationController {
-                        nc.presentViewController(vc, animated: true, completion: nil)
-                    }
-                } else if let e = error {
-                    AlertManager.showError(e)
+            if let vc = displayingVC {
+                if let nc = vc.navigationController {
+                    nc.pushViewController(LoadGameMenu(), animated: true)
                 }
             }
+        } else {
+            // Present Game Center view.
+            ManualSave.authenticatePlayer()
         }
     }
 }

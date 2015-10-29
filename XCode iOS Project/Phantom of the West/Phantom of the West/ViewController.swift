@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
+import GameKit
 import UIKit
 
 public class ViewController: UINavigationController, PNavigatorHandler {
@@ -27,6 +28,10 @@ public class ViewController: UINavigationController, PNavigatorHandler {
             } else {
                 story.newGame()
             }
+        }
+        let localPlayer = GKLocalPlayer.localPlayer()
+        if !localPlayer.authenticated {
+            ManualSave.authenticatePlayer()
         }
     }
     

@@ -6,37 +6,26 @@
 //  Copyright © 2015 Christopher Raleigh. All rights reserved.
 //
 
-import GameKit
 import UIKit
 
 /*
 An options submenu that handles in-app purchases.
 */
-public class LoadGameMenu: OptionsMenu, PSavedGamesRetriever {
-    
-    
-    
-    private var options = [POptionsMenuItem]()
-    
-    override public func viewDidLoad() {
+class LoadGameMenu: SaveLoadGameMenu, PSavedGamesRetriever {
+
+    override func viewDidLoad() {
         super.viewDidLoad()
+        //navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "")
         title = StringLocalizer.getGUIString("load")
+        ManualSave.getSavedGames(self)
     }
     
-    public func savedGamesRetrieved(savedGames: [GKSavedGame]?, error: NSError?) {
-        
-    }
-    
-    override public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return options.count
-    }
-    
-    override public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let targetIndex = indexPath.row
-        return options[targetIndex].cell
-    }
-    
-    override public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        OptionsMenu.selectedRow(tableView, indexPath: indexPath, optionsList: options)
+    func savedGamesRetrieved(savedGames: [ManualSave]) {
+        var newItems = [LoadableSavedGameItem]()
+        for sg in savedGames {
+            let i = LoadableSavedGameItem(savedGame: sg)
+            newItems.append(i)
+        }
+        options = newItems
     }
 }

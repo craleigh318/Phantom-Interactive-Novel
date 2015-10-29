@@ -30,6 +30,7 @@
 		A4280E7F1BE04B2A007F069D /* OverwritableSavedGameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4280E7E1BE04B2A007F069D /* OverwritableSavedGameItem.swift */; };
 		A4280E811BE073B9007F069D /* LoadableSavedGameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4280E801BE073B9007F069D /* LoadableSavedGameItem.swift */; };
 		A428938A1BD45ED600C1796B /* POTWChapter8.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42893891BD45ED600C1796B /* POTWChapter8.swift */; };
+		A428CD2C1BE1BD9400758B88 /* SaveLoadGameMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428CD2B1BE1BD9400758B88 /* SaveLoadGameMenu.swift */; };
 		A42A98DD1BD0963600F69D8A /* POTWChapter4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A98DC1BD0963600F69D8A /* POTWChapter4.swift */; };
 		A42C26271B61D92800E6F7B5 /* OptionsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42C26261B61D92800E6F7B5 /* OptionsMenu.swift */; };
 		A42C26291B61D9A200E6F7B5 /* POptionsMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42C26281B61D9A200E6F7B5 /* POptionsMenuItem.swift */; };
@@ -117,6 +118,8 @@
 		A4280E7E1BE04B2A007F069D /* OverwritableSavedGameItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverwritableSavedGameItem.swift; sourceTree = "<group>"; };
 		A4280E801BE073B9007F069D /* LoadableSavedGameItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableSavedGameItem.swift; sourceTree = "<group>"; };
 		A42893891BD45ED600C1796B /* POTWChapter8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter8.swift; sourceTree = "<group>"; };
+		A428CD2B1BE1BD9400758B88 /* SaveLoadGameMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveLoadGameMenu.swift; sourceTree = "<group>"; };
+		A428CD2D1BE1F6F000758B88 /* Phantom of the West.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Phantom of the West.entitlements"; sourceTree = "<group>"; };
 		A42A98DC1BD0963600F69D8A /* POTWChapter4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter4.swift; sourceTree = "<group>"; };
 		A42C26261B61D92800E6F7B5 /* OptionsMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsMenu.swift; sourceTree = "<group>"; };
 		A42C26281B61D9A200E6F7B5 /* POptionsMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POptionsMenuItem.swift; sourceTree = "<group>"; };
@@ -209,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				A4064D7D1BDF207A00840203 /* LoadGameMenu.swift */,
+				A428CD2B1BE1BD9400758B88 /* SaveLoadGameMenu.swift */,
 				A4064D7F1BDF286100840203 /* SavedGameItem.swift */,
 				A4280E7E1BE04B2A007F069D /* OverwritableSavedGameItem.swift */,
 				A4280E801BE073B9007F069D /* LoadableSavedGameItem.swift */,
@@ -297,6 +301,7 @@
 		A46781FE1B58E57400745C98 /* Phantom of the West */ = {
 			isa = PBXGroup;
 			children = (
+				A428CD2D1BE1F6F000758B88 /* Phantom of the West.entitlements */,
 				A46782271B58F15000745C98 /* Global Files */,
 				A46782211B58E70C00745C98 /* Reusable Classes */,
 				A414013B1B7DA8BD001CEAB1 /* PotW VN */,
@@ -488,6 +493,9 @@
 							com.apple.InAppPurchase = {
 								enabled = 1;
 							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
 						};
 					};
 					A46782101B58E57400745C98 = {
@@ -586,6 +594,7 @@
 				A46D31661BCF282B0089C588 /* POTWChapter3.swift in Sources */,
 				A418DFB81B8D4FE100C3EED9 /* AutoSave.swift in Sources */,
 				A4FD363C1B637CEA002EEFD4 /* SaveGame.swift in Sources */,
+				A428CD2C1BE1BD9400758B88 /* SaveLoadGameMenu.swift in Sources */,
 				A4C6033B1B5CCFE400DA4418 /* Advertising.swift in Sources */,
 				A434AA8E1BDB045F0021B0A3 /* POTWChapter17.swift in Sources */,
 				A4280E7F1BE04B2A007F069D /* OverwritableSavedGameItem.swift in Sources */,
@@ -737,6 +746,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Phantom of the West/Phantom of the West.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Phantom of the West/Info.plist";
@@ -751,6 +761,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Phantom of the West/Phantom of the West.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Phantom of the West/Info.plist";

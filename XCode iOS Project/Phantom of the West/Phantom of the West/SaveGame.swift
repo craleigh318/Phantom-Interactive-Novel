@@ -26,6 +26,17 @@ class SaveGame: POptionsMenuItem {
     }
     
     func onSelect() {
-        
+        /*let localPlayer = GKLocalPlayer.localPlayer()
+        if localPlayer.authenticated {
+            // Push load game view.
+            if let vc = displayingVC {
+                if let nc = vc.navigationController {
+                    nc.pushViewController(SaveGameMenu(), animated: true)
+                }
+            }
+        } else {
+            // Present Game Center view.
+            ManualSave.authenticatePlayer()
+        }*/
     }
 }

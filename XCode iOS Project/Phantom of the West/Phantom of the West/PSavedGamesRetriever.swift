@@ -17,5 +17,5 @@ public protocol PSavedGamesRetriever {
     /*
     Called when Game Center sends the saved games.
     */
-    func savedGamesRetrieved(savedGames: [GKSavedGame]?, error: NSError?)
+    func savedGamesRetrieved(savedGames: [ManualSave])
 }
