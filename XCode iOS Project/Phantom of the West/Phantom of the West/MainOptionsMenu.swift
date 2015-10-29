@@ -13,7 +13,11 @@ The first options menu displayed.
 */
 public class MainOptionsMenu: OptionsMenu {
     
-    private lazy var saveGame: SaveGame = SaveGame()
+    private lazy var saveGame: SaveGame = {
+        let newMenu = SaveGame()
+        newMenu.displayingVC = self
+        return newMenu
+    }()
     
     private lazy var loadGame: LoadGame = {
         let newMenu = LoadGame()

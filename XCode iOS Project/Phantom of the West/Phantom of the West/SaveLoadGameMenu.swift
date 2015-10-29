@@ -14,11 +14,10 @@ An options submenu that handles in-app purchases.
 */
 class SaveLoadGameMenu: OptionsMenu {
     
-    var options: [POptionsMenuItem]?
+    var options: [SavedGameItem]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.rightBarButtonItem = editButtonItem()
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,5 +42,21 @@ class SaveLoadGameMenu: OptionsMenu {
         if let o = options {
             OptionsMenu.selectedRow(tableView, indexPath: indexPath, optionsList: o)
         }
+    }
+    
+    override func tableView(tableView: UITableView,
+        canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+            return true
+    }
+    
+    override func tableView(tableView: UITableView,
+        commitEditingStyle editingStyle: UITableViewCellEditingStyle,
+        forRowAtIndexPath indexPath: NSIndexPath) {
+            if let o = options {
+                if editingStyle == .Delete {
+                    let row = indexPath.row
+                    o[row].delete()
+                }
+            }
     }
 }

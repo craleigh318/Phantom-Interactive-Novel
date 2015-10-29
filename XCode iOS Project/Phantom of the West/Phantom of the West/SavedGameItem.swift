@@ -49,6 +49,5 @@ class SavedGameItem: POptionsMenuItem {
     }
     
     func onSelect() {
-        load()
     }
 }

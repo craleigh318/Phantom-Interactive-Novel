@@ -6,12 +6,18 @@
 //  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 //
 
+import GameKit
 import UIKit
 
 /*
 Save Game option.
 */
 class SaveGame: POptionsMenuItem {
+    
+    /*
+    The view controller displaying this cell.
+    */
+    var displayingVC: UIViewController?
     
     private(set) var cell: UITableViewCell
     
@@ -26,7 +32,7 @@ class SaveGame: POptionsMenuItem {
     }
     
     func onSelect() {
-        /*let localPlayer = GKLocalPlayer.localPlayer()
+        let localPlayer = GKLocalPlayer.localPlayer()
         if localPlayer.authenticated {
             // Push load game view.
             if let vc = displayingVC {
@@ -37,6 +43,6 @@ class SaveGame: POptionsMenuItem {
         } else {
             // Present Game Center view.
             ManualSave.authenticatePlayer()
-        }*/
+        }
     }
 }
