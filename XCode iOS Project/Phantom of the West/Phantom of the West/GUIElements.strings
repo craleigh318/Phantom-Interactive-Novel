@@ -35,3 +35,9 @@ autoSave = "Auto-Save";
 saved = "Saved";
 
 saveSuccessful = "The game was saved successfully.";
+
+saveName = "New Save";
+
+saveNameMessage = "Please name your save.";
+
+cancel = "Cancel";

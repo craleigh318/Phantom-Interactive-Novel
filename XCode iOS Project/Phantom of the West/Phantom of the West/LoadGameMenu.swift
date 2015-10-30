@@ -27,5 +27,6 @@ class LoadGameMenu: SaveLoadGameMenu, PSavedGamesRetriever {
             newItems.append(i)
         }
         options = newItems
+        tableView.reloadData()
     }
 }
