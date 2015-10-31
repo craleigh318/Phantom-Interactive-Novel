@@ -613,5 +613,22 @@ class ch18TheEnd: StoryPage {
     
     init(observer: PhantomOfTheWest) {
         super.init(image: imageName, text: textName, observer: observer)
+        var achievementsToUnlock: [POTWAchievement] = [.AnyEnding]
+        if let ef = observer.eventFlags {
+            var ending: POTWAchievement
+            let route = ef.route
+            switch route {
+            case .Phantom:
+                ending = .PhantomEnding
+            case .Caitlyn:
+                ending = .CaitlynEnding
+            case .VaNal:
+                ending = .VaNalEnding
+            case .Sarah:
+                ending = .SarahEnding
+            }
+            achievementsToUnlock.append(ending)
+        }
+        AchievementManager.unlockAchievements(achievementsToUnlock)
     }
 }

@@ -931,6 +931,7 @@ class ch9FoxtrotHisses: StoryPage {
     
     init(observer: PhantomOfTheWest) {
         super.init(image: imageName, text: textName, observer: observer)
+        AchievementManager.unlockAchievements([.FoxtrotHissed])
     }
     
     override func continueStory() {
@@ -982,6 +983,7 @@ class ch9FoxtrotLicksMe: StoryPage {
     
     init(observer: PhantomOfTheWest) {
         super.init(image: imageName, text: textName, observer: observer)
+        AchievementManager.unlockAchievements([.PettedFoxtrot])
     }
     
     override func continueStory() {

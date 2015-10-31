@@ -632,6 +632,7 @@ class ch7IScore10: StoryPage {
     
     init(observer: PhantomOfTheWest) {
         super.init(image: imageName, text: textName, observer: observer)
+        AchievementManager.unlockAchievements([.AcedMathTest])
     }
     
     override func continueStory() {

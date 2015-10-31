@@ -36,6 +36,7 @@
 		A42C26291B61D9A200E6F7B5 /* POptionsMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42C26281B61D9A200E6F7B5 /* POptionsMenuItem.swift */; };
 		A434AA8C1BDAE5B80021B0A3 /* POTWChapter16.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434AA8B1BDAE5B80021B0A3 /* POTWChapter16.swift */; };
 		A434AA8E1BDB045F0021B0A3 /* POTWChapter17.swift in Sources */ = {isa = PBXBuildFile; fileRef = A434AA8D1BDB045F0021B0A3 /* POTWChapter17.swift */; };
+		A436CDE21BE4A86000331006 /* AchievementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436CDE11BE4A86000331006 /* AchievementManager.swift */; };
 		A4384A1E1B59E96700EF2187 /* StoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4384A1D1B59E96700EF2187 /* StoryImage.swift */; };
 		A4384A201B59EEC400EF2187 /* StoryText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4384A1F1B59EEC400EF2187 /* StoryText.swift */; };
 		A4384A221B59F2E400EF2187 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4384A211B59F2E400EF2187 /* StoryView.swift */; };
@@ -127,6 +128,7 @@
 		A42C26281B61D9A200E6F7B5 /* POptionsMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POptionsMenuItem.swift; sourceTree = "<group>"; };
 		A434AA8B1BDAE5B80021B0A3 /* POTWChapter16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter16.swift; sourceTree = "<group>"; };
 		A434AA8D1BDB045F0021B0A3 /* POTWChapter17.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter17.swift; sourceTree = "<group>"; };
+		A436CDE11BE4A86000331006 /* AchievementManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementManager.swift; sourceTree = "<group>"; };
 		A4384A1D1B59E96700EF2187 /* StoryImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryImage.swift; sourceTree = "<group>"; };
 		A4384A1F1B59EEC400EF2187 /* StoryText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryText.swift; sourceTree = "<group>"; };
 		A4384A211B59F2E400EF2187 /* StoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 				A4FB1DC61B894431009B648E /* Serialization */,
 				A467822C1B58FBA100745C98 /* Visual Novel Reader */,
 				A46782221B58E72800745C98 /* Visual Novel */,
+				A436CDE11BE4A86000331006 /* AchievementManager.swift */,
 			);
 			name = "Reusable Classes";
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 				A418DFBA1B8D513500C3EED9 /* StringLocalizer.swift in Sources */,
 				A46FC2E71BD602AC004B2B46 /* POTWChapter10.swift in Sources */,
 				A4410F531BD88E9600CE6570 /* POTWChapter13.swift in Sources */,
+				A436CDE21BE4A86000331006 /* AchievementManager.swift in Sources */,
 				A4E31CAF1B86759500ECFFEE /* PhantomOfTheWest.swift in Sources */,
 				A4E79B4F1B5A4D4E00BC861B /* StoryViewController.swift in Sources */,
 				A44C59691BD6F7B900C20C21 /* POTWChapter11.swift in Sources */,
