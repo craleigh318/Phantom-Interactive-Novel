@@ -56,6 +56,8 @@ public class MainOptionsMenu: OptionsMenu {
     }
     
     override public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        OptionsMenu.selectedRow(tableView, indexPath: indexPath, optionsList: options)
+        let i = indexPath.row
+        let selectedCell = options[i]
+        OptionsMenu.selectedRow(tableView, indexPath: indexPath, option: selectedCell)
     }
 }

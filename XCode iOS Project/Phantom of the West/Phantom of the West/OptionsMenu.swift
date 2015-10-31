@@ -16,10 +16,8 @@ public class OptionsMenu: UITableViewController {
     /*
     Used to create table.
     */
-    static func selectedRow(tableView: UITableView, indexPath: NSIndexPath, optionsList: [POptionsMenuItem]) {
-        let i = indexPath.row
-        let selectedCell = optionsList[i]
-        selectedCell.onSelect()
+    static func selectedRow(tableView: UITableView, indexPath: NSIndexPath, option: POptionsMenuItem) {
+        option.onSelect()
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }

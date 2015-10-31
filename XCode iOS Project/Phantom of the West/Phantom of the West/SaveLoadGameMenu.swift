@@ -40,7 +40,9 @@ class SaveLoadGameMenu: OptionsMenu {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if let o = options {
-            OptionsMenu.selectedRow(tableView, indexPath: indexPath, optionsList: o)
+            let i = indexPath.row
+            let selectedCell = o[i]
+            OptionsMenu.selectedRow(tableView, indexPath: indexPath, option: selectedCell)
         }
     }
     

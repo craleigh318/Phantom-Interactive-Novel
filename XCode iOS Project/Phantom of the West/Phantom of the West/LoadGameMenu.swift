@@ -20,6 +20,13 @@ class LoadGameMenu: SaveLoadGameMenu, PSavedGamesRetriever {
         ManualSave.getSavedGames(self)
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        super.tableView(tableView, didSelectRowAtIndexPath: indexPath)
+        if let nc = navigationController {
+            nc.popToRootViewControllerAnimated(true)
+        }
+    }
+    
     func savedGamesRetrieved(savedGames: [ManualSave]) {
         var newItems = [SavedGameItem]()
         for sg in savedGames {
