@@ -21,9 +21,9 @@ class SaveGameMenu: SaveLoadGameMenu, PSavedGamesRetriever {
     }
     
     func savedGamesRetrieved(savedGames: [ManualSave]) {
-        var newItems = [LoadableSavedGameItem]()
+        var newItems = [SavedGameItem]()
         for sg in savedGames {
-            let i = LoadableSavedGameItem(savedGame: sg)
+            let i = OverwritableSavedGameItem(savedGame: sg)
             newItems.append(i)
         }
         options = newItems
