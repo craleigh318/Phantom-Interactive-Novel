@@ -14,6 +14,8 @@ Save data stored on Game Center.
 */
 public class ManualSave: PSavedGame {
     
+    public static weak var observer: PSaveManagerObserver?
+    
     public static func authenticatePlayer() {
         let localPlayer = GKLocalPlayer.localPlayer()
         localPlayer.authenticateHandler = {
@@ -54,6 +56,9 @@ public class ManualSave: PSavedGame {
                 let saved = StringLocalizer.getGUIString("saved")
                 let saveSuccessful = StringLocalizer.getGUIString("saveSuccessful")
                 AlertManager.showMessage(saved, message: saveSuccessful)
+                if let o = observer {
+                    o.saveManagerUpdated()
+                }
             }
         })
     }
@@ -85,6 +90,8 @@ public class ManualSave: PSavedGame {
             error in
             if let e = error {
                 AlertManager.showError(e)
+            } else if let o = ManualSave.observer {
+                o.saveManagerUpdated()
             }
         })
     }

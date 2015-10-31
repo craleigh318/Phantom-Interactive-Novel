@@ -35,7 +35,6 @@ class SaveLoadGameMenu: OptionsMenu {
         } else {
             return UITableViewCell()
         }
-        
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -49,16 +48,5 @@ class SaveLoadGameMenu: OptionsMenu {
     override func tableView(tableView: UITableView,
         canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
             return true
-    }
-    
-    override func tableView(tableView: UITableView,
-        commitEditingStyle editingStyle: UITableViewCellEditingStyle,
-        forRowAtIndexPath indexPath: NSIndexPath) {
-            if let o = options {
-                if editingStyle == .Delete {
-                    let row = indexPath.row
-                    o[row].delete()
-                }
-            }
     }
 }

@@ -11,12 +11,17 @@ import UIKit
 /*
 An options submenu that handles game loading.
 */
-class LoadGameMenu: SaveLoadGameMenu, PSavedGamesRetriever {
+class LoadGameMenu: SaveLoadGameMenu, PSavedGamesRetriever, PSaveManagerObserver {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = editButtonItem()
         title = StringLocalizer.getGUIString("load")
+        ManualSave.getSavedGames(self)
+        ManualSave.observer = self
+    }
+    
+    func saveManagerUpdated() {
         ManualSave.getSavedGames(self)
     }
     
@@ -35,5 +40,16 @@ class LoadGameMenu: SaveLoadGameMenu, PSavedGamesRetriever {
         }
         options = newItems
         tableView.reloadData()
+    }
+    
+    override func tableView(tableView: UITableView,
+        commitEditingStyle editingStyle: UITableViewCellEditingStyle,
+        forRowAtIndexPath indexPath: NSIndexPath) {
+            if let o = options {
+                if editingStyle == .Delete {
+                    let row = indexPath.row
+                    o[row].delete()
+                }
+            }
     }
 }

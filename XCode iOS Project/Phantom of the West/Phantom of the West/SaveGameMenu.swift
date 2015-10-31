@@ -11,12 +11,17 @@ import UIKit
 /*
 An options submenu that game saving.
 */
-class SaveGameMenu: SaveLoadGameMenu, PSavedGamesRetriever {
+class SaveGameMenu: SaveLoadGameMenu, PSavedGamesRetriever, PSaveManagerObserver {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "newSave")
         title = StringLocalizer.getGUIString("save")
+        ManualSave.getSavedGames(self)
+        ManualSave.observer = self
+    }
+    
+    func saveManagerUpdated() {
         ManualSave.getSavedGames(self)
     }
     
@@ -47,9 +52,7 @@ class SaveGameMenu: SaveLoadGameMenu, PSavedGamesRetriever {
         })
         alert.addAction(actionCancel)
         alert.addAction(actionOK)
-        presentViewController(alert, animated: true, completion: {
-            ManualSave.getSavedGames(self)
-        })
+        presentViewController(alert, animated: true, completion: nil)
     }
     
     func saveCurrentState(name: String) {
