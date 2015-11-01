@@ -260,6 +260,14 @@
 			name = Pages;
 			sourceTree = "<group>";
 		};
+		A42ED3BC1BE5A580004F1364 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				A436CDE11BE4A86000331006 /* AchievementManager.swift */,
+			);
+			name = Achievements;
+			sourceTree = "<group>";
+		};
 		A43B20951BCC7D6D009D93C3 /* Chapters */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,7 +361,7 @@
 				A4FB1DC61B894431009B648E /* Serialization */,
 				A467822C1B58FBA100745C98 /* Visual Novel Reader */,
 				A46782221B58E72800745C98 /* Visual Novel */,
-				A436CDE11BE4A86000331006 /* AchievementManager.swift */,
+				A42ED3BC1BE5A580004F1364 /* Achievements */,
 			);
 			name = "Reusable Classes";
 			sourceTree = "<group>";

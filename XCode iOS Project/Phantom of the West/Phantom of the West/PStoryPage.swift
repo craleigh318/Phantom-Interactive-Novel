@@ -28,7 +28,7 @@ public protocol PStoryPage {
     }
     
     /*
-    Continues the story from this page.
+    Continues the the next part of this story page.
     */
-    func continueStory()
+    func continuePage()
 }

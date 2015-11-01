@@ -37,7 +37,7 @@ class Bookmark: PStoryObserver {
     func onButtonContinue() {
         if let unwrappedCurrentPages = currentPages {
             let currentPage = unwrappedCurrentPages[index]
-            currentPage.continueStory()
+            currentPage.continuePage()
         }
     }
     

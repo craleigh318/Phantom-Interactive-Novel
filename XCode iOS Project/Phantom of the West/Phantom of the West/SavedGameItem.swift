@@ -27,7 +27,7 @@ class SavedGameItem: POptionsMenuItem {
             label.text = savedGame.name
         }
         if let detailLabel = cell.detailTextLabel {
-            let date = NSDateFormatter.localizedStringFromDate(savedGame.date, dateStyle: .ShortStyle, timeStyle: .NoStyle)
+            let date = NSDateFormatter.localizedStringFromDate(savedGame.date, dateStyle: .ShortStyle, timeStyle: .ShortStyle)
             detailLabel.text = date
         }
     }

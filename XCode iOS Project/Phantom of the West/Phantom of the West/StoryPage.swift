@@ -28,16 +28,11 @@ class StoryPage: PStoryPage {
     /*
     Creates a language-localized string from "StoryText.strings".
     */
-    static func getLocalizedText(stringKeys: [String]) -> String {
-        var localizedText = ""
-        var firstString = true
+    static func getLocalizedText(stringKeys: [String]) -> [String] {
+        var localizedText = [String]()
         for k in stringKeys {
-            if !firstString {
-                localizedText += "\n\n"
-            }
             let kValue = StringLocalizer.getStoryTextString(k)
-            localizedText += kValue
-            firstString = false
+            localizedText.append(kValue)
         }
         return localizedText
     }
@@ -55,12 +50,29 @@ class StoryPage: PStoryPage {
     /*
     The page text.
     */
-    private(set) var text: String
+    var text: String {
+        return allText[lineNumber]
+    }
+    
+    private var allText: [String]
+    
+    private var lineNumber: Int
     
     init(image: String, text: [String], observer: PhantomOfTheWest) {
         self.image = StoryPage.getLocalizedImage(image)
-        self.text = StoryPage.getLocalizedText(text)
+        self.allText = StoryPage.getLocalizedText(text)
+        self.lineNumber = 0
         self.observer = observer
+    }
+    
+    func continuePage() {
+        let lastIndex = allText.count - 1
+        if lineNumber >= lastIndex {
+            continueStory()
+        } else {
+            ++lineNumber
+            observer.update([self])
+        }
     }
     
     func continueStory() {
