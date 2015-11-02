@@ -22,12 +22,12 @@ class SavedGameItem: POptionsMenuItem {
     */
     init(savedGame: ManualSave) {
         self.savedGame = savedGame
-        cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: nil)
+        cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: nil)
         if let label = cell.textLabel {
             label.text = savedGame.name
         }
         if let detailLabel = cell.detailTextLabel {
-            let date = NSDateFormatter.localizedStringFromDate(savedGame.date, dateStyle: .ShortStyle, timeStyle: .ShortStyle)
+            let date = NSDateFormatter.localizedStringFromDate(savedGame.date, dateStyle: .MediumStyle, timeStyle: .ShortStyle)
             detailLabel.text = date
         }
     }

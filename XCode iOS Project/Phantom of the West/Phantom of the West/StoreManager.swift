@@ -17,12 +17,10 @@ class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObs
     
     static let paymentQueue: SKPaymentQueue = SKPaymentQueue.defaultQueue()
     
-    private static let iapRemoveAds = "removeAdvertisements"
-    
     /*
     Returns a localized string from the price of the specified product.
     */
-    private static func formattedPrice(product: SKProduct) -> String? {
+    static func formattedPrice(product: SKProduct) -> String? {
         let formatter = NSNumberFormatter()
         formatter.numberStyle = .CurrencyStyle
         formatter.locale = product.priceLocale
@@ -30,16 +28,9 @@ class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObs
         return formattedPrice
     }
     
-    private static func setLabelTextToPrice(label: UILabel, product: SKProduct) {
-        let formattedPrice = StoreManager.formattedPrice(product)
-        label.text = formattedPrice
-    }
     
     
-    
-    var productRemoveAds: SKProduct?
-    
-    private var labelRemovesAds: UILabel?
+    weak var retreiver: PIAPRetreiver?
     
     private override init() {
         super.init()
@@ -48,27 +39,15 @@ class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObs
     
     func productsRequest(request: SKProductsRequest,
         didReceiveResponse response: SKProductsResponse) {
-            let validProducts = response.products
-            productRemoveAds = validProducts[0]
-            if let pra = productRemoveAds {
-                if let lra = labelRemovesAds {
-                    StoreManager.setLabelTextToPrice(lra, product: pra)
-                }
+            if let r = retreiver {
+                r.inAppPurchaseInfoRetreived(request, didReceiveResponse: response)
             }
     }
     
     func paymentQueue(queue: SKPaymentQueue,
         updatedTransactions transactions: [SKPaymentTransaction]) {
-            for tRemoveAds in transactions {
-                let state = tRemoveAds.transactionState
-                let purchased = (state == SKPaymentTransactionState.Purchased) || (state == SKPaymentTransactionState.Restored)
-                if purchased {
-                    SaveManager.purchasedAdRemoval = true
-                    queue.finishTransaction(tRemoveAds)
-                } else if state == SKPaymentTransactionState.Failed {
-                    queue.finishTransaction(tRemoveAds)
-                    AlertManager.showError(tRemoveAds.error!)
-                }
+            if let r = retreiver {
+                r.inAppPurchaseUpdated(queue, updatedTransactions: transactions)
             }
     }
     
@@ -80,9 +59,7 @@ class StoreManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObs
     /*
     Once the in-app purchase prices are retreived, the text of the specified labels will be set to them.
     */
-    func updateLabelsWithPrices(newLabelRemovesAds: UILabel) {
-        labelRemovesAds = newLabelRemovesAds
-        let productIDs: Set<String> = [StoreManager.iapRemoveAds]
+    func updateInfo(productIDs: Set<String>) {
         let newRequest = SKProductsRequest(productIdentifiers: productIDs)
         newRequest.delegate = self
         newRequest.start()

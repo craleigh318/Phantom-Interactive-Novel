@@ -20,13 +20,10 @@ class RemoveAds: POptionsMenuItem {
     */
     init() {
         cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: nil)
-        if let label = cell.textLabel {
-            label.text = StringLocalizer.getGUIString("removeAds")
-        }
     }
     
     func onSelect() {
-        if let pra = StoreManager.manager.productRemoveAds {
+        if let pra = IAPMenu.productRemoveAds {
             StoreManager.manager.buy(pra)
         }
     }

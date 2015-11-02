@@ -27,6 +27,7 @@
 		A423BD391B84347000C331EE /* StoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423BD381B84347000C331EE /* StoryPage.swift */; };
 		A423BD3B1B8436D700C331EE /* StoryPageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423BD3A1B8436D700C331EE /* StoryPageList.swift */; };
 		A423BD3F1B8444C600C331EE /* PStoryPageListObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423BD3E1B8444C600C331EE /* PStoryPageListObserver.swift */; };
+		A427510E1BE6B12500229C10 /* PIAPRetreiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427510D1BE6B12500229C10 /* PIAPRetreiver.swift */; };
 		A4280E7F1BE04B2A007F069D /* OverwritableSavedGameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4280E7E1BE04B2A007F069D /* OverwritableSavedGameItem.swift */; };
 		A4280E811BE073B9007F069D /* LoadableSavedGameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4280E801BE073B9007F069D /* LoadableSavedGameItem.swift */; };
 		A428938A1BD45ED600C1796B /* POTWChapter8.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42893891BD45ED600C1796B /* POTWChapter8.swift */; };
@@ -118,6 +119,7 @@
 		A423BD381B84347000C331EE /* StoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryPage.swift; sourceTree = "<group>"; };
 		A423BD3A1B8436D700C331EE /* StoryPageList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryPageList.swift; sourceTree = "<group>"; };
 		A423BD3E1B8444C600C331EE /* PStoryPageListObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PStoryPageListObserver.swift; sourceTree = "<group>"; };
+		A427510D1BE6B12500229C10 /* PIAPRetreiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIAPRetreiver.swift; sourceTree = "<group>"; };
 		A4280E7E1BE04B2A007F069D /* OverwritableSavedGameItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverwritableSavedGameItem.swift; sourceTree = "<group>"; };
 		A4280E801BE073B9007F069D /* LoadableSavedGameItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableSavedGameItem.swift; sourceTree = "<group>"; };
 		A42893891BD45ED600C1796B /* POTWChapter8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter8.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				A4C33E131B64A43F00130CDD /* RemoveAds.swift */,
 				A4015DAA1B65D6B100F99486 /* RestorePurchases.swift */,
 				A4E909291B7C3D8C00430B9B /* StoreManager.swift */,
+				A427510D1BE6B12500229C10 /* PIAPRetreiver.swift */,
 			);
 			name = "In-App Purchasing";
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A427510E1BE6B12500229C10 /* PIAPRetreiver.swift in Sources */,
 				A423BD3B1B8436D700C331EE /* StoryPageList.swift in Sources */,
 				A4A5A5B21BD9CEC200233718 /* POTWChapter15.swift in Sources */,
 				A418DFBA1B8D513500C3EED9 /* StringLocalizer.swift in Sources */,
