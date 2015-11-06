@@ -78,4 +78,13 @@ class StoryPage: PStoryPage {
     func continueStory() {
         observer.update([])
     }
+    
+    func playAudio() {
+        if SaveManager.voiceover {
+            playAudioSynthesized()
+        }
+    }
+    
+    func playAudioSynthesized() {
+    }
 }

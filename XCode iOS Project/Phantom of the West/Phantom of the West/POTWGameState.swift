@@ -105,10 +105,8 @@ class TestGameState: POTWGameState {
         ef.ch5AnsweredMathQuestion1 = .Correct
         ef.ch5AnsweredMathQuestion4 = .Correct
         ef.ch5AnsweredMathQuestion9 = .Correct
-        ef.ch5AnsweredCoach = .Submit
-        ef.ch5SparredWithCheerleader = .Pinned
         super.init(eventFlags: ef)
-        id = 7001
+        id = 5036
     }
     
     required init(coder aDecoder: NSCoder) {

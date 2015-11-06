@@ -68,7 +68,7 @@ ch3SezjaGreetsMe = "\"Good morning, Sleepy Head!\"";
 
 ch3SezjaStartlesMe = "\"Waah! Who are you?\" I ask the man lying next to me, on the bed. He\'s wearing a robe and a wooden tribal mask, the same mask that the natives of the west wore. I assume that he\'s Sezja, one of the native gods. I don\'t see how any other person could have gotten into this room, especially dressed like that.";
 
-ch3SezjaAnswers = "\"My brother said that he sensed someone drink his blood, so I just came by to see who it was. Now that that mystery\'s solved, I guess I can leave you alone, for now. Oh, and I\'ll see if I can get the rest of the family to meet you. Ta ta!\" Sezja says, and slides off the edge of the bed.";
+ch3SezjaAnswers = "\"My brother said that he sensed someone drinking his blood, so I just came by to see who it was. Now that that mystery\'s solved, I guess I can leave you alone, for now. Oh, and I\'ll see if I can get the rest of the family to meet you. Ta ta!\" Sezja says, and slides off the edge of the bed.";
 
 ch3SezjaLeaves = "I lean over the edge to see him, but he\'s gone.";
 

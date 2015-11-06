@@ -81,17 +81,20 @@ public class PhantomOfTheWest: PStory, PStoryObserver, PSavedGamesLoader {
         //Display next page.
         if let gs = gameState {
             let newPages = gs.goToStoryState(stateID, observer: self)
-            var newPPages = [PStoryPage]()
+            var newPPages = [StoryPage]()
             for p in newPages {
                 newPPages.append(p)
             }
             update(newPPages)
+            // Play voice.
+            if newPPages.count == 1 {
+                newPPages[0].playAudio()
+            }
         }
         // Auto save.
         if let gs = gameState {
             let gameStateData = NSKeyedArchiver.archivedDataWithRootObject(gs)
             AutoSave.save(gameStateData)
         }
-        // Play voice.
     }
 }

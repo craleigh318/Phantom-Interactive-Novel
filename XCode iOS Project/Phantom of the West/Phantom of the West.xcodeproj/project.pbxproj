@@ -69,6 +69,8 @@
 		A46FC2E51BD5AED6004B2B46 /* POTWChapter9.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FC2E41BD5AED6004B2B46 /* POTWChapter9.swift */; };
 		A46FC2E71BD602AC004B2B46 /* POTWChapter10.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FC2E61BD602AC004B2B46 /* POTWChapter10.swift */; };
 		A47D3E9B1BCA1C1100296C55 /* POTWChapter1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47D3E9A1BCA1C1100296C55 /* POTWChapter1.swift */; };
+		A4808E791BEC35D300D2D6DB /* CharacterVoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4808E781BEC35D300D2D6DB /* CharacterVoices.swift */; };
+		A4808E7B1BEC3FA900D2D6DB /* StoryPageVoiced.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4808E7A1BEC3FA900D2D6DB /* StoryPageVoiced.swift */; };
 		A4925B431BE2E5C20076D648 /* SaveGameMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4925B421BE2E5C20076D648 /* SaveGameMenu.swift */; };
 		A4A5A5B21BD9CEC200233718 /* POTWChapter15.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A5A5B11BD9CEC200233718 /* POTWChapter15.swift */; };
 		A4C1A63C1B642BDD0007B567 /* LoadGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C1A63B1B642BDD0007B567 /* LoadGame.swift */; };
@@ -166,6 +168,8 @@
 		A46FC2E41BD5AED6004B2B46 /* POTWChapter9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter9.swift; sourceTree = "<group>"; };
 		A46FC2E61BD602AC004B2B46 /* POTWChapter10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter10.swift; sourceTree = "<group>"; };
 		A47D3E9A1BCA1C1100296C55 /* POTWChapter1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter1.swift; sourceTree = "<group>"; };
+		A4808E781BEC35D300D2D6DB /* CharacterVoices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterVoices.swift; sourceTree = "<group>"; };
+		A4808E7A1BEC3FA900D2D6DB /* StoryPageVoiced.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryPageVoiced.swift; sourceTree = "<group>"; };
 		A4925B421BE2E5C20076D648 /* SaveGameMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveGameMenu.swift; sourceTree = "<group>"; };
 		A4A5A5B11BD9CEC200233718 /* POTWChapter15.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter15.swift; sourceTree = "<group>"; };
 		A4C1A63B1B642BDD0007B567 /* LoadGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadGame.swift; sourceTree = "<group>"; };
@@ -233,6 +237,7 @@
 		A414013B1B7DA8BD001CEAB1 /* PotW VN */ = {
 			isa = PBXGroup;
 			children = (
+				A4808E751BEC351100D2D6DB /* Voices */,
 				A414013C1B7DAAC0001CEAB1 /* Event Flagging */,
 				A423BD371B84344700C331EE /* Pages */,
 				A43E81391B7EC2DF001CE80F /* StoryText.strings */,
@@ -406,6 +411,15 @@
 				A46782301B58FE4800745C98 /* StoryNavigator.swift */,
 			);
 			name = "Story Navigation";
+			sourceTree = "<group>";
+		};
+		A4808E751BEC351100D2D6DB /* Voices */ = {
+			isa = PBXGroup;
+			children = (
+				A4808E781BEC35D300D2D6DB /* CharacterVoices.swift */,
+				A4808E7A1BEC3FA900D2D6DB /* StoryPageVoiced.swift */,
+			);
+			name = Voices;
 			sourceTree = "<group>";
 		};
 		A4FB1DC61B894431009B648E /* Serialization */ = {
@@ -619,12 +633,14 @@
 				A4925B431BE2E5C20076D648 /* SaveGameMenu.swift in Sources */,
 				A4FD363C1B637CEA002EEFD4 /* SaveGame.swift in Sources */,
 				A428CD2C1BE1BD9400758B88 /* SaveLoadGameMenu.swift in Sources */,
+				A4808E7B1BEC3FA900D2D6DB /* StoryPageVoiced.swift in Sources */,
 				A4C6033B1B5CCFE400DA4418 /* Advertising.swift in Sources */,
 				A434AA8E1BDB045F0021B0A3 /* POTWChapter17.swift in Sources */,
 				A4280E7F1BE04B2A007F069D /* OverwritableSavedGameItem.swift in Sources */,
 				A442B3AD1BDC3A3300CE90CA /* POTWChapter18.swift in Sources */,
 				A42A98DD1BD0963600F69D8A /* POTWChapter4.swift in Sources */,
 				A4064D7E1BDF207A00840203 /* LoadGameMenu.swift in Sources */,
+				A4808E791BEC35D300D2D6DB /* CharacterVoices.swift in Sources */,
 				A4015DAD1B65D80000F99486 /* ToIAPMenu.swift in Sources */,
 				A4064D801BDF286100840203 /* SavedGameItem.swift in Sources */,
 				A45669BB1BD326C000A199FA /* POTWChapter7.swift in Sources */,

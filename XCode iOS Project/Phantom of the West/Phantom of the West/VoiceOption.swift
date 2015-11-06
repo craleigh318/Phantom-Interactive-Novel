@@ -23,6 +23,8 @@ class VoiceOption: POptionsMenuItem {
     init() {
         cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil)
         toggle = UISwitch()
+        toggle.on = SaveManager.voiceover
+        toggle.addTarget(self, action: "onSwitchFlip", forControlEvents: .ValueChanged)
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         if let label = cell.textLabel {
             label.text = StringLocalizer.getGUIString("voiceOver")
@@ -31,6 +33,9 @@ class VoiceOption: POptionsMenuItem {
     }
     
     func onSelect() {
-        
+    }
+    
+    dynamic func onSwitchFlip() {
+        SaveManager.voiceover = toggle.on
     }
 }
