@@ -130,7 +130,7 @@ class ch7Title: StoryPage {
     }
 }
 
-class ch7SleepyHead: StoryPage {
+class ch7SleepyHead: StoryPageVoicedKaden {
     
     let imageName = "Black"
     
@@ -160,7 +160,7 @@ class ch7ISnoreAtSezjaPause: StoryPage {
     }
 }
 
-class ch7WasSezjaCarleigh: StoryPage {
+class ch7WasSezjaCarleigh: StoryPageVoicedKaden {
     
     let imageName = "Sezja-Wakes-Elodie"
     
@@ -175,7 +175,7 @@ class ch7WasSezjaCarleigh: StoryPage {
     }
 }
 
-class ch7SezjaFingersChin: StoryPage {
+class ch7SezjaFingersChin: StoryPageVoicedKaden {
     
     let imageName = "Sezja-Fingers-Carleigh-Chin"
     
@@ -190,7 +190,7 @@ class ch7SezjaFingersChin: StoryPage {
     }
 }
 
-class ch7SezjaHugsMe: StoryPage {
+class ch7SezjaHugsMe: StoryPageVoicedKaden {
     
     let imageName = "Sezja-Hugs-Elodie"
     
@@ -205,7 +205,7 @@ class ch7SezjaHugsMe: StoryPage {
     }
 }
 
-class ch7IReturnToLiteratureClass: StoryPage {
+class ch7IReturnToLiteratureClass: StoryPageVoicedKaden {
     
     let imageName = "Literature-Results"
     
@@ -231,7 +231,7 @@ class ch7IReturnToLiteratureClass: StoryPage {
     }
 }
 
-class ch7LostCreditForLoweringSelvesForLiterture: StoryPage {
+class ch7LostCreditForLoweringSelvesForLiterture: StoryPageVoicedKaden {
     
     let imageName = "Literature-Results"
     
@@ -246,7 +246,7 @@ class ch7LostCreditForLoweringSelvesForLiterture: StoryPage {
     }
 }
 
-class ch7FullCreditForLiterature: StoryPage {
+class ch7FullCreditForLiterature: StoryPageVoicedKaden {
     
     let imageName = "Literature-Results"
     
@@ -261,7 +261,7 @@ class ch7FullCreditForLiterature: StoryPage {
     }
 }
 
-class ch7LostCreditForNotBeingOneselfForLiterature: StoryPage {
+class ch7LostCreditForNotBeingOneselfForLiterature: StoryPageVoicedKaden {
     
     let imageName = "Literature-Results"
     
@@ -276,7 +276,7 @@ class ch7LostCreditForNotBeingOneselfForLiterature: StoryPage {
     }
 }
 
-class ch7LiteratureTeacherIsDrag: StoryPage {
+class ch7LiteratureTeacherIsDrag: StoryPageVoicedKaden {
     
     let imageName = "Literature-Results"
     
@@ -291,7 +291,7 @@ class ch7LiteratureTeacherIsDrag: StoryPage {
     }
 }
 
-class ch7CarleighsGroupCheers: StoryPage {
+class ch7CarleighsGroupCheers: StoryPageVoicedKaden {
     
     let imageName = "Literature-Results"
     
@@ -306,7 +306,7 @@ class ch7CarleighsGroupCheers: StoryPage {
     }
 }
 
-class ch7SezjaIsQuiet: StoryPage {
+class ch7SezjaIsQuiet: StoryPageVoicedKaden {
     
     let imageName = "Literature-Results"
     
@@ -321,7 +321,7 @@ class ch7SezjaIsQuiet: StoryPage {
     }
 }
 
-class ch7MorningPasses: StoryPage {
+class ch7MorningPasses: StoryPageVoicedKaden {
     
     let imageName = "Elodie-at-Desk"
     
@@ -336,7 +336,7 @@ class ch7MorningPasses: StoryPage {
     }
 }
 
-class ch7LunchBegins: StoryPage {
+class ch7LunchBegins: StoryPageVoicedKaden {
     
     let imageName = "Elodie-Second-Lunch"
     
@@ -351,7 +351,7 @@ class ch7LunchBegins: StoryPage {
     }
 }
 
-class ch7IAcceptHangout: StoryPage {
+class ch7IAcceptHangout: StoryPageVoicedKaden {
     
     let imageName = "Elodie-Second-Lunch"
     
@@ -369,7 +369,7 @@ class ch7IAcceptHangout: StoryPage {
     }
 }
 
-class ch7IDeclineHangout: StoryPage {
+class ch7IDeclineHangout: StoryPageVoicedKaden {
     
     let imageName = "Elodie-Second-Lunch"
     
@@ -387,7 +387,7 @@ class ch7IDeclineHangout: StoryPage {
     }
 }
 
-class ch7BaqerBurpsAtMe: StoryPage {
+class ch7BaqerBurpsAtMe: StoryPageVoicedKaden {
     
     let imageName = "Hewitt-Burps"
     
@@ -402,7 +402,7 @@ class ch7BaqerBurpsAtMe: StoryPage {
     }
 }
 
-class ch7BaqerIsJerk: StoryPage {
+class ch7BaqerIsJerk: StoryPageVoicedKaden {
     
     let imageName = "Elodie-Angry"
     
@@ -417,7 +417,7 @@ class ch7BaqerIsJerk: StoryPage {
     }
 }
 
-class ch7HewittActsDifferent: StoryPage {
+class ch7HewittActsDifferent: StoryPageVoicedKaden {
     
     let imageName = "Elodie-Leaves-Hewitt"
     
@@ -432,7 +432,7 @@ class ch7HewittActsDifferent: StoryPage {
     }
 }
 
-class ch7BaqerReturns: StoryPage {
+class ch7BaqerReturns: StoryPageVoicedKaden {
     
     let imageName = "Elodie-Meets-Va'Nal"
     
@@ -447,7 +447,7 @@ class ch7BaqerReturns: StoryPage {
     }
 }
 
-class ch7BaqerNoticesVaNal: StoryPage {
+class ch7BaqerNoticesVaNal: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Berates-Baqer"
     
@@ -462,7 +462,7 @@ class ch7BaqerNoticesVaNal: StoryPage {
     }
 }
 
-class ch7BaqerGrabsMe: StoryPage {
+class ch7BaqerGrabsMe: StoryPageVoicedKaden {
     
     let imageName = "Baqer-Grabs-Elodie"
     
@@ -477,7 +477,7 @@ class ch7BaqerGrabsMe: StoryPage {
     }
 }
 
-class ch7VaNalPullsBaqer: StoryPage {
+class ch7VaNalPullsBaqer: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Pulls-Baqer-from-Hewitt"
     
@@ -492,7 +492,7 @@ class ch7VaNalPullsBaqer: StoryPage {
     }
 }
 
-class ch7VaNalSeperatesBaqer: StoryPage {
+class ch7VaNalSeperatesBaqer: StoryPageVoicedKaden {
     
     let imageName = "Baqer-Dispossess-Hewitt"
     
@@ -507,7 +507,7 @@ class ch7VaNalSeperatesBaqer: StoryPage {
     }
 }
 
-class ch7CanIPossessHewitt: StoryPage {
+class ch7CanIPossessHewitt: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Consoles-Elodie"
     
@@ -522,7 +522,7 @@ class ch7CanIPossessHewitt: StoryPage {
     }
 }
 
-class ch7VaNalPossessesElodie: StoryPage {
+class ch7VaNalPossessesElodie: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Possesses-Hewitt"
     
@@ -537,7 +537,7 @@ class ch7VaNalPossessesElodie: StoryPage {
     }
 }
 
-class ch7WeBuyHam: StoryPage {
+class ch7WeBuyHam: StoryPageVoicedKaden {
     
     let imageName = "Hewitt-and-Elodie-Hold-Hands"
     
@@ -552,7 +552,7 @@ class ch7WeBuyHam: StoryPage {
     }
 }
 
-class ch7WeEatHam: StoryPage {
+class ch7WeEatHam: StoryPageVoicedKaden {
     
     let imageName = "Hewitt-Second-Lunch"
     
@@ -567,7 +567,7 @@ class ch7WeEatHam: StoryPage {
     }
 }
 
-class ch7SezjaReturns: StoryPage {
+class ch7SezjaReturns: StoryPageVoicedKaden {
     
     let imageName = "Sezja-Comes-to-Lunch"
     
@@ -582,7 +582,7 @@ class ch7SezjaReturns: StoryPage {
     }
 }
 
-class ch7SezjaGreetsMeAgain: StoryPage {
+class ch7SezjaGreetsMeAgain: StoryPageVoicedKaden {
     
     let imageName = "Sezja-Gasps-at-Lunch"
     
@@ -597,7 +597,7 @@ class ch7SezjaGreetsMeAgain: StoryPage {
     }
 }
 
-class ch7IGetCarleighsTest: StoryPage {
+class ch7IGetCarleighsTest: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-Gets-Math-Grade"
     
@@ -624,7 +624,7 @@ class ch7IGetCarleighsTest: StoryPage {
     }
 }
 
-class ch7IScore10: StoryPage {
+class ch7IScore10: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-Gets-Math-Grade"
     
@@ -640,7 +640,7 @@ class ch7IScore10: StoryPage {
     }
 }
 
-class ch7IScore9: StoryPage {
+class ch7IScore9: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-Gets-Math-Grade"
     
@@ -655,7 +655,7 @@ class ch7IScore9: StoryPage {
     }
 }
 
-class ch7IScore8: StoryPage {
+class ch7IScore8: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-Gets-Math-Grade"
     
@@ -670,7 +670,7 @@ class ch7IScore8: StoryPage {
     }
 }
 
-class ch7IScore7: StoryPage {
+class ch7IScore7: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-Gets-Math-Grade"
     
@@ -685,7 +685,7 @@ class ch7IScore7: StoryPage {
     }
 }
 
-class ch7AfternoonPasses: StoryPage {
+class ch7AfternoonPasses: StoryPageVoicedKaden {
     
     let imageName = "Hewitt-at-Desk"
     
@@ -700,7 +700,7 @@ class ch7AfternoonPasses: StoryPage {
     }
 }
 
-class ch7VaNalEntersDorm: StoryPage {
+class ch7VaNalEntersDorm: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Enters-Bedroom"
     
@@ -715,7 +715,7 @@ class ch7VaNalEntersDorm: StoryPage {
     }
 }
 
-class ch7HowDidVaNalEnter: StoryPage {
+class ch7HowDidVaNalEnter: StoryPageVoicedKaden {
     
     let imageName = "Elodie-by-Hewitt-Bed"
     
@@ -730,7 +730,7 @@ class ch7HowDidVaNalEnter: StoryPage {
     }
 }
 
-class ch7IDoNotKissVaNal: StoryPage {
+class ch7IDoNotKissVaNal: StoryPageVoicedKaden {
     
     let imageName = "Elodie-by-Hewitt-Bed"
     
@@ -748,7 +748,7 @@ class ch7IDoNotKissVaNal: StoryPage {
     }
 }
 
-class ch7IWillKissVaNal: StoryPage {
+class ch7IWillKissVaNal: StoryPageVoicedKaden {
     
     let imageName = "Elodie-by-Hewitt-Bed"
     
@@ -766,7 +766,7 @@ class ch7IWillKissVaNal: StoryPage {
     }
 }
 
-class ch7WhatIsWrong: StoryPage {
+class ch7WhatIsWrong: StoryPageVoicedKaden {
     
     let imageName = "Elodie-by-Hewitt-Bed"
     
@@ -781,7 +781,7 @@ class ch7WhatIsWrong: StoryPage {
     }
 }
 
-class ch7HeartMustBeCared: StoryPage {
+class ch7HeartMustBeCared: StoryPageVoicedKaden {
     
     let imageName = "Elodie-by-Hewitt-Bed"
     
@@ -796,7 +796,7 @@ class ch7HeartMustBeCared: StoryPage {
     }
 }
 
-class ch7VaNalKissesMe: StoryPage {
+class ch7VaNalKissesMe: StoryPageVoicedKaden {
     
     let imageName = "Elodie-Kisses-Hewitt"
     
@@ -811,7 +811,7 @@ class ch7VaNalKissesMe: StoryPage {
     }
 }
 
-class ch7GodsWillDispossess: StoryPage {
+class ch7GodsWillDispossess: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Leaves-Bedroom"
     
@@ -826,7 +826,7 @@ class ch7GodsWillDispossess: StoryPage {
     }
 }
 
-class ch7ISleep: StoryPage {
+class ch7ISleep: StoryPageVoicedKaden {
     
     let imageName = "Hewitt-Sleeps"
     

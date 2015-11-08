@@ -144,7 +144,7 @@ class ch9Title: StoryPage {
     }
 }
 
-class ch9IAwaken: StoryPage {
+class ch9IAwaken: StoryPageVoicedKaden {
     
     let imageName = "Hewitt-Dresses-Casually"
     
@@ -159,7 +159,7 @@ class ch9IAwaken: StoryPage {
     }
 }
 
-class ch9IWaitForBus: StoryPage {
+class ch9IWaitForBus: StoryPageVoicedKaden {
     
     let imageName = "Bus-Wait"
     
@@ -174,7 +174,7 @@ class ch9IWaitForBus: StoryPage {
     }
 }
 
-class ch9DidCarleighTalkAboutMathTest: StoryPage {
+class ch9DidCarleighTalkAboutMathTest: StoryPageVoicedKaden {
     
     let imageName = "Hewitt-and-Co-on-Bus"
     
@@ -201,7 +201,7 @@ class ch9DidCarleighTalkAboutMathTest: StoryPage {
     }
 }
 
-class ch9CarleighScored10: StoryPage {
+class ch9CarleighScored10: StoryPageVoicedKaden {
     
     let imageName = "Hewitt-and-Co-on-Bus"
     
@@ -216,7 +216,7 @@ class ch9CarleighScored10: StoryPage {
     }
 }
 
-class ch9CarleighScored9: StoryPage {
+class ch9CarleighScored9: StoryPageVoicedKaden {
     
     let imageName = "Hewitt-and-Co-on-Bus"
     
@@ -231,7 +231,7 @@ class ch9CarleighScored9: StoryPage {
     }
 }
 
-class ch9CarleighScored8: StoryPage {
+class ch9CarleighScored8: StoryPageVoicedKaden {
     
     let imageName = "Hewitt-and-Co-on-Bus"
     
@@ -246,7 +246,7 @@ class ch9CarleighScored8: StoryPage {
     }
 }
 
-class ch9CarleighScored7: StoryPage {
+class ch9CarleighScored7: StoryPageVoicedKaden {
     
     let imageName = "Hewitt-and-Co-on-Bus"
     
@@ -261,7 +261,7 @@ class ch9CarleighScored7: StoryPage {
     }
 }
 
-class ch9OhElodieSays: StoryPage {
+class ch9OhElodieSays: StoryPageVoicedKaden {
     
     let imageName = "Hewitt-and-Co-on-Bus"
     
@@ -276,7 +276,7 @@ class ch9OhElodieSays: StoryPage {
     }
 }
 
-class ch9IExitBus: StoryPage {
+class ch9IExitBus: StoryPageVoicedKaden {
     
     let imageName = "Bus-Outside-Lodge"
     
@@ -291,7 +291,7 @@ class ch9IExitBus: StoryPage {
     }
 }
 
-class ch9GuideAnnounces: StoryPage {
+class ch9GuideAnnounces: StoryPageVoicedKaden {
     
     let imageName = "Tour-Guide-Announcement"
     
@@ -306,7 +306,7 @@ class ch9GuideAnnounces: StoryPage {
     }
 }
 
-class ch9IEnterLodge: StoryPage {
+class ch9IEnterLodge: StoryPageVoicedKaden {
     
     let imageName = "TV-Sarah"
     
@@ -321,7 +321,7 @@ class ch9IEnterLodge: StoryPage {
     }
 }
 
-class ch9OfficerTalks: StoryPage {
+class ch9OfficerTalks: StoryPageVoicedKaden {
     
     let imageName = "TV-Officer"
     
@@ -336,7 +336,7 @@ class ch9OfficerTalks: StoryPage {
     }
 }
 
-class ch9ISeeMySketch: StoryPage {
+class ch9ISeeMySketch: StoryPageVoicedKaden {
     
     let imageName = "TV-Phantom-Sketch"
     
@@ -351,7 +351,7 @@ class ch9ISeeMySketch: StoryPage {
     }
 }
 
-class ch9SarahSignsOut: StoryPage {
+class ch9SarahSignsOut: StoryPageVoicedKaden {
     
     let imageName = "TV-Sarah-at-Desk"
     
@@ -366,7 +366,7 @@ class ch9SarahSignsOut: StoryPage {
     }
 }
 
-class ch9WeStartWalk: StoryPage {
+class ch9WeStartWalk: StoryPageVoicedKaden {
     
     let imageName = "Nature-Walk"
     
@@ -381,7 +381,7 @@ class ch9WeStartWalk: StoryPage {
     }
 }
 
-class ch9WeFindIvy: StoryPage {
+class ch9WeFindIvy: StoryPageVoicedKaden {
     
     let imageName = "Poison-Ivy"
     
@@ -396,7 +396,7 @@ class ch9WeFindIvy: StoryPage {
     }
 }
 
-class ch9WeFindPolecats: StoryPage {
+class ch9WeFindPolecats: StoryPageVoicedKaden {
     
     let imageName = "Polecat"
     
@@ -411,7 +411,7 @@ class ch9WeFindPolecats: StoryPage {
     }
 }
 
-class ch9WeFindSnakes: StoryPage {
+class ch9WeFindSnakes: StoryPageVoicedKaden {
     
     let imageName = "Snake"
     
@@ -426,7 +426,7 @@ class ch9WeFindSnakes: StoryPage {
     }
 }
 
-class ch9WeSeeRuins: StoryPage {
+class ch9WeSeeRuins: StoryPageVoicedKaden {
     
     let imageName = "Ancient-City-Distant"
     
@@ -441,7 +441,7 @@ class ch9WeSeeRuins: StoryPage {
     }
 }
 
-class ch9IDispossessHewitt: StoryPage {
+class ch9IDispossessHewitt: StoryPageVoicedKaden {
     
     let imageName = "Hewitt-Dispossessed"
     
@@ -456,7 +456,7 @@ class ch9IDispossessHewitt: StoryPage {
     }
 }
 
-class ch9GuideSeesBlackBear: StoryPage {
+class ch9GuideSeesBlackBear: StoryPageVoicedKaden {
     
     let imageName = "Ranger-Sees-Black-Bear"
     
@@ -471,7 +471,7 @@ class ch9GuideSeesBlackBear: StoryPage {
     }
 }
 
-class ch9IEnterRuins: StoryPage {
+class ch9IEnterRuins: StoryPageVoicedKaden {
     
     let imageName = "Kaden-to-Pyramid-Top"
     
@@ -486,7 +486,7 @@ class ch9IEnterRuins: StoryPage {
     }
 }
 
-class ch9BaqerGreetsMe: StoryPage {
+class ch9BaqerGreetsMe: StoryPageVoicedKaden {
     
     let imageName = "Pyramid-Meeting"
     
@@ -507,7 +507,7 @@ class ch9BaqerGreetsMe: StoryPage {
     }
 }
 
-class ch9VaNalsKissIsRuined: StoryPage {
+class ch9VaNalsKissIsRuined: StoryPageVoicedKaden {
     
     let imageName = "Pyramid-Meeting"
     
@@ -522,7 +522,7 @@ class ch9VaNalsKissIsRuined: StoryPage {
     }
 }
 
-class ch9GodsAreInappropriate: StoryPage {
+class ch9GodsAreInappropriate: StoryPageVoicedKaden {
     
     let imageName = "Pyramid-Meeting"
     
@@ -537,7 +537,7 @@ class ch9GodsAreInappropriate: StoryPage {
     }
 }
 
-class ch9BekShtiisNewPlan: StoryPage {
+class ch9BekShtiisNewPlan: StoryPageVoicedKaden {
     
     let imageName = "Pyramid-Meeting"
     
@@ -552,7 +552,7 @@ class ch9BekShtiisNewPlan: StoryPage {
     }
 }
 
-class ch9BeckShtiiFinishesChant: StoryPage {
+class ch9BeckShtiiFinishesChant: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Ill-with-Bek'Shtii"
     
@@ -567,7 +567,7 @@ class ch9BeckShtiiFinishesChant: StoryPage {
     }
 }
 
-class ch9ISolidify: StoryPage {
+class ch9ISolidify: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Feels-Old-Face"
     
@@ -582,7 +582,7 @@ class ch9ISolidify: StoryPage {
     }
 }
 
-class ch9IExtendTentacles: StoryPage {
+class ch9IExtendTentacles: StoryPageVoicedKaden {
     
     let imageName = "Kaden-First-Tentacles"
     
@@ -597,7 +597,7 @@ class ch9IExtendTentacles: StoryPage {
     }
 }
 
-class ch9ILeaveRuins: StoryPage {
+class ch9ILeaveRuins: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Leaves-Ancient-City"
     
@@ -612,7 +612,7 @@ class ch9ILeaveRuins: StoryPage {
     }
 }
 
-class ch9IEncounterRanger: StoryPage {
+class ch9IEncounterRanger: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Encounters-Ranger"
     
@@ -638,7 +638,7 @@ class ch9IEncounterRanger: StoryPage {
     }
 }
 
-class ch9DoNotRunSaysRanger: StoryPage {
+class ch9DoNotRunSaysRanger: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Encounters-Ranger"
     
@@ -653,7 +653,7 @@ class ch9DoNotRunSaysRanger: StoryPage {
     }
 }
 
-class ch9IFalselySurrender: StoryPage {
+class ch9IFalselySurrender: StoryPageVoicedKaden {
     
     let imageName = "Ranger-Handcuffs-Kaden"
     
@@ -668,7 +668,7 @@ class ch9IFalselySurrender: StoryPage {
     }
 }
 
-class ch9IStealRangersGun: StoryPage {
+class ch9IStealRangersGun: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Tentacles-Ranger"
     
@@ -683,7 +683,7 @@ class ch9IStealRangersGun: StoryPage {
     }
 }
 
-class ch9IReturnGun: StoryPage {
+class ch9IReturnGun: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Returns-Rifle"
     
@@ -698,7 +698,7 @@ class ch9IReturnGun: StoryPage {
     }
 }
 
-class ch9RangerKnowsMeOnTV: StoryPage {
+class ch9RangerKnowsMeOnTV: StoryPageVoicedKaden {
     
     let imageName = "I-am-the-Phantom-of-the-West"
     
@@ -713,7 +713,7 @@ class ch9RangerKnowsMeOnTV: StoryPage {
     }
 }
 
-class ch9IAmPhantomOfWest: StoryPage {
+class ch9IAmPhantomOfWest: StoryPageVoicedKaden {
     
     let imageName = "I-am-the-Phantom-of-the-West"
     
@@ -728,7 +728,7 @@ class ch9IAmPhantomOfWest: StoryPage {
     }
 }
 
-class ch9IFlyAboveContinent: StoryPage {
+class ch9IFlyAboveContinent: StoryPageVoicedKaden {
     
     let imageName = "Phantom-above-Continent"
     
@@ -743,7 +743,7 @@ class ch9IFlyAboveContinent: StoryPage {
     }
 }
 
-class ch9IEnterArcticon: StoryPage {
+class ch9IEnterArcticon: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Flies-into-Vent"
     
@@ -758,7 +758,7 @@ class ch9IEnterArcticon: StoryPage {
     }
 }
 
-class ch9IReachMyRoom: StoryPage {
+class ch9IReachMyRoom: StoryPageVoicedKaden {
     
     let imageName = "Kaden-on-Bed"
     
@@ -773,7 +773,7 @@ class ch9IReachMyRoom: StoryPage {
     }
 }
 
-class ch9IGoToLounge: StoryPage {
+class ch9IGoToLounge: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Lab-Alone"
     
@@ -788,7 +788,7 @@ class ch9IGoToLounge: StoryPage {
     }
 }
 
-class ch9CaitlynAndYukioCome: StoryPage {
+class ch9CaitlynAndYukioCome: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn-and-Yukio"
     
@@ -803,7 +803,7 @@ class ch9CaitlynAndYukioCome: StoryPage {
     }
 }
 
-class ch9IWaitForFoxtrot: StoryPage {
+class ch9IWaitForFoxtrot: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn"
     
@@ -824,7 +824,7 @@ class ch9IWaitForFoxtrot: StoryPage {
     }
 }
 
-class ch9IAlreadyMetFoxtrot: StoryPage {
+class ch9IAlreadyMetFoxtrot: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Brings-Foxtrot"
     
@@ -839,7 +839,7 @@ class ch9IAlreadyMetFoxtrot: StoryPage {
     }
 }
 
-class ch9IDidNotMeetFoxtrot: StoryPage {
+class ch9IDidNotMeetFoxtrot: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Brings-Foxtrot"
     
@@ -854,7 +854,7 @@ class ch9IDidNotMeetFoxtrot: StoryPage {
     }
 }
 
-class ch9FoxtrotToCheerMeUp: StoryPage {
+class ch9FoxtrotToCheerMeUp: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Brings-Foxtrot"
     
@@ -869,7 +869,7 @@ class ch9FoxtrotToCheerMeUp: StoryPage {
     }
 }
 
-class ch9ILeaveFoxtrot: StoryPage {
+class ch9ILeaveFoxtrot: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Brings-Foxtrot"
     
@@ -887,7 +887,7 @@ class ch9ILeaveFoxtrot: StoryPage {
     }
 }
 
-class ch9IWillPetFoxtrot: StoryPage {
+class ch9IWillPetFoxtrot: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Brings-Foxtrot"
     
@@ -908,7 +908,7 @@ class ch9IWillPetFoxtrot: StoryPage {
     }
 }
 
-class ch9CaitlynShouldPutFoxtrotBack: StoryPage {
+class ch9CaitlynShouldPutFoxtrotBack: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Brings-Foxtrot"
     
@@ -923,7 +923,7 @@ class ch9CaitlynShouldPutFoxtrotBack: StoryPage {
     }
 }
 
-class ch9FoxtrotHisses: StoryPage {
+class ch9FoxtrotHisses: StoryPageVoicedKaden {
     
     let imageName = "Foxtrot-Hiss"
     
@@ -942,7 +942,7 @@ class ch9FoxtrotHisses: StoryPage {
     }
 }
 
-class ch9FoxtrotAllowsPet: StoryPage {
+class ch9FoxtrotAllowsPet: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Brings-Foxtrot"
     
@@ -960,7 +960,7 @@ class ch9FoxtrotAllowsPet: StoryPage {
     }
 }
 
-class ch9IRubFoxtrot: StoryPage {
+class ch9IRubFoxtrot: StoryPageVoicedKaden {
     
     let imageName = "Foxtrot-Petted"
     
@@ -975,7 +975,7 @@ class ch9IRubFoxtrot: StoryPage {
     }
 }
 
-class ch9FoxtrotLicksMe: StoryPage {
+class ch9FoxtrotLicksMe: StoryPageVoicedKaden {
     
     let imageName = "Foxtrot-Licks-Kaden"
     
@@ -991,7 +991,7 @@ class ch9FoxtrotLicksMe: StoryPage {
     }
 }
 
-class ch9CaitlynFrownsAtFoxtrot: StoryPage {
+class ch9CaitlynFrownsAtFoxtrot: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Brings-Foxtrot"
     
@@ -1006,7 +1006,7 @@ class ch9CaitlynFrownsAtFoxtrot: StoryPage {
     }
 }
 
-class ch9IReturnHome: StoryPage {
+class ch9IReturnHome: StoryPageVoicedKaden {
     
     let imageName = "Kaden-on-Tram"
     
@@ -1021,7 +1021,7 @@ class ch9IReturnHome: StoryPage {
     }
 }
 
-class ch9ISleep: StoryPage {
+class ch9ISleep: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Sleeps"
     

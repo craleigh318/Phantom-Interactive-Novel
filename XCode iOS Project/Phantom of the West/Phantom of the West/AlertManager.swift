@@ -20,8 +20,9 @@ public class AlertManager {
     }
     
     public static func showError(error: NSError) {
-        let errorTitle = StringLocalizer.getGUIString("error")
+        //let errorTitle = StringLocalizer.getGUIString("error")
         let errorMessage = error.localizedDescription
-        showMessage(errorTitle, message: errorMessage)
+        NSLog(errorMessage)
+        //showMessage(errorTitle, message: errorMessage)
     }
 }

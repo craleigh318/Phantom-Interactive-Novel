@@ -48,11 +48,11 @@ class ch16Title: StoryPage {
     }
 }
 
-class ch16DoIGiveUp: StoryPage {
+class ch16DoIGiveUp: StoryPageVoicedKaden {
     
     let imageName = "Black"
     
-    let textName = ["ch16DoIGiveUp", "ch16HerBrotherWon", "ch16WhyAreGodsHere", "ch16IDrankBekShtiisBlood", "ch16IsThatReallyWhy", "ch16SezjaSaidSo", "ch16WhatDoIDream", "ch16VaNalKnows", "ch16SenseStopped", "ch16HowWouldSheFeelAtReunion", "ch16ImNotSure", "ch16DoINotRemember", "ch16RememberWhat", "ch16TimeAgo"]
+    let textName = ["ch16DoIGiveUp", "ch16HerBrotherWon", "ch16WhyAreGodsHere", "ch16IDrankBekShtiisBlood", "ch16IsThatReallyWhy", "ch16SezjaSaidSo", "ch16WhatDoIDream", "ch16VaNalKnows", "ch16WhyDoIKeepDreaming", "ch16SenseStopped", "ch16HowWouldSheFeelAtReunion", "ch16ImNotSure", "ch16DoINotRemember", "ch16RememberWhat", "ch16TimeAgo"]
     
     init(observer: PhantomOfTheWest) {
         super.init(image: imageName, text: textName, observer: observer)
@@ -63,7 +63,7 @@ class ch16DoIGiveUp: StoryPage {
     }
 }
 
-class ch16WhatTimeAgo: StoryPage {
+class ch16WhatTimeAgo: StoryPageVoicedKaden {
     
     let imageName = "Black"
     
@@ -78,7 +78,7 @@ class ch16WhatTimeAgo: StoryPage {
     }
 }
 
-class ch16IWasAtAirport: StoryPage {
+class ch16IWasAtAirport: StoryPageVoicedKaden {
     
     let imageName = "Kaden-and-Rebecca-at-Airport"
     
@@ -99,7 +99,7 @@ class ch16IWasAtAirport: StoryPage {
     }
 }
 
-class ch16BeSuccessful: StoryPage {
+class ch16BeSuccessful: StoryPageVoicedKaden {
     
     let imageName = "Kaden-and-Rebecca-at-Airport"
     
@@ -114,7 +114,7 @@ class ch16BeSuccessful: StoryPage {
     }
 }
 
-class ch16FindSomeoneElse: StoryPage {
+class ch16FindSomeoneElse: StoryPageVoicedKaden {
     
     let imageName = "Kaden-and-Rebecca-at-Airport"
     
@@ -129,7 +129,7 @@ class ch16FindSomeoneElse: StoryPage {
     }
 }
 
-class ch16DoThatOK: StoryPage {
+class ch16DoThatOK: StoryPageVoicedKaden {
     
     let imageName = "Kaden-and-Rebecca-at-Airport"
     
@@ -144,7 +144,7 @@ class ch16DoThatOK: StoryPage {
     }
 }
 
-class ch16RebeccaAndIHugged: StoryPage {
+class ch16RebeccaAndIHugged: StoryPageVoicedKaden {
     
     let imageName = "Kaden-and-Rebecca-Hug-at-Airport"
     

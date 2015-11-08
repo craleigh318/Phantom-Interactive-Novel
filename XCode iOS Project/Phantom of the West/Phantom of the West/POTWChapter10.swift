@@ -59,7 +59,7 @@ class ch10TimeAgo: StoryPage {
     }
 }
 
-class ch10WeFinishedDinner: StoryPage {
+class ch10WeFinishedDinner: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Jim-and-Co"
     
@@ -74,7 +74,7 @@ class ch10WeFinishedDinner: StoryPage {
     }
 }
 
-class ch10CaitlynNoticesRAF: StoryPage {
+class ch10CaitlynNoticesRAF: StoryPageVoicedKaden {
     
     let imageName = "RAF-Sign-at-Ballroom"
     
@@ -89,7 +89,7 @@ class ch10CaitlynNoticesRAF: StoryPage {
     }
 }
 
-class ch10WeExploredRAF: StoryPage {
+class ch10WeExploredRAF: StoryPageVoicedKaden {
     
     let imageName = "RAF-Employee"
     
@@ -104,7 +104,7 @@ class ch10WeExploredRAF: StoryPage {
     }
 }
 
-class ch10CaitlynWantedFerret: StoryPage {
+class ch10CaitlynWantedFerret: StoryPageVoicedKaden {
     
     let imageName = "Ballroom-Ferrets"
     

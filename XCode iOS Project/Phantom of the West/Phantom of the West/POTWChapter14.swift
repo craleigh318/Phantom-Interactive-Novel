@@ -63,7 +63,7 @@ class ch14TimeAgo: StoryPage {
     }
 }
 
-class ch14ItWasDusk: StoryPage {
+class ch14ItWasDusk: StoryPageVoicedArvin {
     
     let imageName = "Warm-Bloody-Dusk"
     
@@ -78,7 +78,7 @@ class ch14ItWasDusk: StoryPage {
     }
 }
 
-class ch14ArmyMarched: StoryPage {
+class ch14ArmyMarched: StoryPageVoicedArvin {
     
     let imageName = "Conquistador-with-Torch"
     
@@ -93,7 +93,7 @@ class ch14ArmyMarched: StoryPage {
     }
 }
 
-class ch14MenCarriedFirearms: StoryPage {
+class ch14MenCarriedFirearms: StoryPageVoicedArvin {
     
     let imageName = "Conquistador-with-Gun"
     
@@ -108,7 +108,7 @@ class ch14MenCarriedFirearms: StoryPage {
     }
 }
 
-class ch14NativesFled: StoryPage {
+class ch14NativesFled: StoryPageVoicedArvin {
     
     let imageName = "Natives-Flee"
     
@@ -123,7 +123,7 @@ class ch14NativesFled: StoryPage {
     }
 }
 
-class ch14ArmyReachedPyramid: StoryPage {
+class ch14ArmyReachedPyramid: StoryPageVoicedArvin {
     
     let imageName = "Warm-Bloody-Dusk"
     
@@ -138,7 +138,7 @@ class ch14ArmyReachedPyramid: StoryPage {
     }
 }
 
-class ch14PhantomArose: StoryPage {
+class ch14PhantomArose: StoryPageVoicedArvin {
     
     let imageName = "Bek'Shtii-Phantom-from-Pyramid"
     

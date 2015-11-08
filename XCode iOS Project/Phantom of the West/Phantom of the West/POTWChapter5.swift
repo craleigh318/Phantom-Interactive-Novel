@@ -150,7 +150,7 @@ class ch5Title: StoryPage {
     }
 }
 
-class ch5BekShtiiWakesMe: StoryPage {
+class ch5BekShtiiWakesMe: StoryPageVoicedKaden {
     
     let imageName = "Bek'Shtii-First-Meets-Kaden"
     
@@ -165,7 +165,7 @@ class ch5BekShtiiWakesMe: StoryPage {
     }
 }
 
-class ch5IEnterVent: StoryPage {
+class ch5IEnterVent: StoryPageVoicedKaden {
     
     let imageName = "Bek'Shtii-Points-at-Vent"
     
@@ -180,7 +180,7 @@ class ch5IEnterVent: StoryPage {
     }
 }
 
-class ch5IExitVent: StoryPage {
+class ch5IExitVent: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Flies-out-of-Vent"
     
@@ -195,7 +195,7 @@ class ch5IExitVent: StoryPage {
     }
 }
 
-class ch5IReachSchool: StoryPage {
+class ch5IReachSchool: StoryPageVoicedKaden {
     
     let imageName = "St-Josephine-at-Dawn"
     
@@ -210,7 +210,7 @@ class ch5IReachSchool: StoryPage {
     }
 }
 
-class ch5IPossessElodie: StoryPage {
+class ch5IPossessElodie: StoryPageVoicedKaden {
     
     let imageName = "Two-Girls-Bedroom-Dark"
     
@@ -225,7 +225,7 @@ class ch5IPossessElodie: StoryPage {
     }
 }
 
-class ch5CarleighWakesMe: StoryPage {
+class ch5CarleighWakesMe: StoryPageVoicedKaden {
     
     let imageName = "Awaken-as-Elodie"
     
@@ -240,7 +240,7 @@ class ch5CarleighWakesMe: StoryPage {
     }
 }
 
-class ch5ISearchElodiesMemory: StoryPage {
+class ch5ISearchElodiesMemory: StoryPageVoicedKaden {
     
     let imageName = "Elodie-Pajamas"
     
@@ -255,7 +255,7 @@ class ch5ISearchElodiesMemory: StoryPage {
     }
 }
 
-class ch5IDressSlowly: StoryPage {
+class ch5IDressSlowly: StoryPageVoicedKaden {
     
     let imageName = "Elodie-and-Carleigh-Pajamas"
     
@@ -270,7 +270,7 @@ class ch5IDressSlowly: StoryPage {
     }
 }
 
-class ch5IDressElodie: StoryPage {
+class ch5IDressElodie: StoryPageVoicedKaden {
     
     let imageName = "Elodie-Uniform"
     
@@ -285,7 +285,7 @@ class ch5IDressElodie: StoryPage {
     }
 }
 
-class ch5IEnterLiteratureClass: StoryPage {
+class ch5IEnterLiteratureClass: StoryPageVoicedKaden {
     
     let imageName = "Elodie-at-Desk"
     
@@ -300,7 +300,7 @@ class ch5IEnterLiteratureClass: StoryPage {
     }
 }
 
-class ch5IReadPaulsStory: StoryPage {
+class ch5IReadPaulsStory: StoryPageVoicedKaden {
     
     let imageName = "Literature-Discussion"
     
@@ -315,7 +315,7 @@ class ch5IReadPaulsStory: StoryPage {
     }
 }
 
-class ch5YouCannotLowerYourself: StoryPage {
+class ch5YouCannotLowerYourself: StoryPageVoicedKaden {
     
     let imageName = "Literature-Discussion"
     
@@ -333,7 +333,7 @@ class ch5YouCannotLowerYourself: StoryPage {
     }
 }
 
-class ch5YouNeedToStayConfident: StoryPage {
+class ch5YouNeedToStayConfident: StoryPageVoicedKaden {
     
     let imageName = "Literature-Discussion"
     
@@ -351,7 +351,7 @@ class ch5YouNeedToStayConfident: StoryPage {
     }
 }
 
-class ch5YouAvoidStupidity: StoryPage {
+class ch5YouAvoidStupidity: StoryPageVoicedKaden {
     
     let imageName = "Literature-Discussion"
     
@@ -369,7 +369,7 @@ class ch5YouAvoidStupidity: StoryPage {
     }
 }
 
-class ch5CannotAssociateWithLowlyPeople: StoryPage {
+class ch5CannotAssociateWithLowlyPeople: StoryPageVoicedKaden {
     
     let imageName = "Literature-Discussion"
     
@@ -384,7 +384,7 @@ class ch5CannotAssociateWithLowlyPeople: StoryPage {
     }
 }
 
-class ch5CarleighWasTeased: StoryPage {
+class ch5CarleighWasTeased: StoryPageVoicedKaden {
     
     let imageName = "Literature-Discussion"
     
@@ -399,7 +399,7 @@ class ch5CarleighWasTeased: StoryPage {
     }
 }
 
-class ch5IAmPragmatic: StoryPage {
+class ch5IAmPragmatic: StoryPageVoicedKaden {
     
     let imageName = "Literature-Discussion"
     
@@ -414,7 +414,7 @@ class ch5IAmPragmatic: StoryPage {
     }
 }
 
-class ch5WasActivityTerrible: StoryPage {
+class ch5WasActivityTerrible: StoryPageVoicedKaden {
     
     let imageName = "Literature-Discussion"
     
@@ -429,7 +429,7 @@ class ch5WasActivityTerrible: StoryPage {
     }
 }
 
-class ch5IPassByCheerleader: StoryPage {
+class ch5IPassByCheerleader: StoryPageVoicedKaden {
     
     let imageName = "Elodie-Passes-Cheerleader"
     
@@ -444,7 +444,7 @@ class ch5IPassByCheerleader: StoryPage {
     }
 }
 
-class ch5CheerleaderTripsMe: StoryPage {
+class ch5CheerleaderTripsMe: StoryPageVoicedKaden {
     
     let imageName = "Elodie-Trips"
     
@@ -459,7 +459,7 @@ class ch5CheerleaderTripsMe: StoryPage {
     }
 }
 
-class ch5HewittConsolesMe: StoryPage {
+class ch5HewittConsolesMe: StoryPageVoicedKaden {
     
     let imageName = "Elodie-First-Lunch"
     
@@ -474,7 +474,7 @@ class ch5HewittConsolesMe: StoryPage {
     }
 }
 
-class ch5ISeeCarleighsTextbook: StoryPage {
+class ch5ISeeCarleighsTextbook: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-Textbook"
     
@@ -489,7 +489,7 @@ class ch5ISeeCarleighsTextbook: StoryPage {
     }
 }
 
-class ch5IPossessCarleigh: StoryPage {
+class ch5IPossessCarleigh: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-Possessed"
     
@@ -504,7 +504,7 @@ class ch5IPossessCarleigh: StoryPage {
     }
 }
 
-class ch5IExamineCarleigh: StoryPage {
+class ch5IExamineCarleigh: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-Hands"
     
@@ -519,7 +519,7 @@ class ch5IExamineCarleigh: StoryPage {
     }
 }
 
-class ch5ILeaveLibrary: StoryPage {
+class ch5ILeaveLibrary: StoryPageVoicedKaden {
     
     let imageName = "Elodie-Leans-on-Carleigh-Shoulder"
     
@@ -534,7 +534,7 @@ class ch5ILeaveLibrary: StoryPage {
     }
 }
 
-class ch5IStartMathTest: StoryPage {
+class ch5IStartMathTest: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-at-Desk"
     
@@ -549,7 +549,7 @@ class ch5IStartMathTest: StoryPage {
     }
 }
 
-class ch5MathQuestion1: StoryPage {
+class ch5MathQuestion1: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-at-Desk"
     
@@ -564,7 +564,7 @@ class ch5MathQuestion1: StoryPage {
     }
 }
 
-class ch5MathQuestion1CorrectAnswer: StoryPage {
+class ch5MathQuestion1CorrectAnswer: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-at-Desk"
     
@@ -582,7 +582,7 @@ class ch5MathQuestion1CorrectAnswer: StoryPage {
     }
 }
 
-class ch5MathQuestion1IncorrectAnswer: StoryPage {
+class ch5MathQuestion1IncorrectAnswer: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-at-Desk"
     
@@ -600,7 +600,7 @@ class ch5MathQuestion1IncorrectAnswer: StoryPage {
     }
 }
 
-class ch5MathQuestion4: StoryPage {
+class ch5MathQuestion4: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-at-Desk"
     
@@ -615,7 +615,7 @@ class ch5MathQuestion4: StoryPage {
     }
 }
 
-class ch5MathQuestion4IncorrectAnswer: StoryPage {
+class ch5MathQuestion4IncorrectAnswer: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-at-Desk"
     
@@ -633,7 +633,7 @@ class ch5MathQuestion4IncorrectAnswer: StoryPage {
     }
 }
 
-class ch5MathQuestion4CorrectAnswer: StoryPage {
+class ch5MathQuestion4CorrectAnswer: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-at-Desk"
     
@@ -651,7 +651,7 @@ class ch5MathQuestion4CorrectAnswer: StoryPage {
     }
 }
 
-class ch5MathQuestion9: StoryPage {
+class ch5MathQuestion9: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-at-Desk"
     
@@ -666,7 +666,7 @@ class ch5MathQuestion9: StoryPage {
     }
 }
 
-class ch5MathQuestion9IncorrectAnswer: StoryPage {
+class ch5MathQuestion9IncorrectAnswer: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-at-Desk"
     
@@ -684,7 +684,7 @@ class ch5MathQuestion9IncorrectAnswer: StoryPage {
     }
 }
 
-class ch5MathQuestion9CorrectAnswer: StoryPage {
+class ch5MathQuestion9CorrectAnswer: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-at-Desk"
     
@@ -702,7 +702,7 @@ class ch5MathQuestion9CorrectAnswer: StoryPage {
     }
 }
 
-class ch5MathClassEnds: StoryPage {
+class ch5MathClassEnds: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-at-Desk"
     
@@ -717,7 +717,7 @@ class ch5MathClassEnds: StoryPage {
     }
 }
 
-class ch5IReencounterCheerleader: StoryPage {
+class ch5IReencounterCheerleader: StoryPageVoicedKaden {
     
     let imageName = "Carleigh-Passes-Cheerleader"
     
@@ -732,7 +732,7 @@ class ch5IReencounterCheerleader: StoryPage {
     }
 }
 
-class ch5IEnterLockerRoom: StoryPage {
+class ch5IEnterLockerRoom: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Intro"
     
@@ -747,7 +747,7 @@ class ch5IEnterLockerRoom: StoryPage {
     }
 }
 
-class ch5IPossessAnanya: StoryPage {
+class ch5IPossessAnanya: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Possessed"
     
@@ -762,7 +762,7 @@ class ch5IPossessAnanya: StoryPage {
     }
 }
 
-class ch5IDressAnanya: StoryPage {
+class ch5IDressAnanya: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Hands"
     
@@ -777,7 +777,7 @@ class ch5IDressAnanya: StoryPage {
     }
 }
 
-class ch5ITieAnanyasHair: StoryPage {
+class ch5ITieAnanyasHair: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Ties-Hair"
     
@@ -792,7 +792,7 @@ class ch5ITieAnanyasHair: StoryPage {
     }
 }
 
-class ch5IEnterPEClass: StoryPage {
+class ch5IEnterPEClass: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Gym-Attendance"
     
@@ -807,7 +807,7 @@ class ch5IEnterPEClass: StoryPage {
     }
 }
 
-class ch5IRaiseHand: StoryPage {
+class ch5IRaiseHand: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Raises-Hand"
     
@@ -822,7 +822,7 @@ class ch5IRaiseHand: StoryPage {
     }
 }
 
-class ch5IWouldSubmit: StoryPage {
+class ch5IWouldSubmit: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Raises-Hand"
     
@@ -840,7 +840,7 @@ class ch5IWouldSubmit: StoryPage {
     }
 }
 
-class ch5IWouldRun: StoryPage {
+class ch5IWouldRun: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Raises-Hand"
     
@@ -858,7 +858,7 @@ class ch5IWouldRun: StoryPage {
     }
 }
 
-class ch5IWouldDisarm: StoryPage {
+class ch5IWouldDisarm: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Raises-Hand"
     
@@ -876,7 +876,7 @@ class ch5IWouldDisarm: StoryPage {
     }
 }
 
-class ch5CoachRespondsToSubmission: StoryPage {
+class ch5CoachRespondsToSubmission: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Raises-Hand"
     
@@ -891,7 +891,7 @@ class ch5CoachRespondsToSubmission: StoryPage {
     }
 }
 
-class ch5CoachRespondsToRunning: StoryPage {
+class ch5CoachRespondsToRunning: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Raises-Hand"
     
@@ -906,7 +906,7 @@ class ch5CoachRespondsToRunning: StoryPage {
     }
 }
 
-class ch5CoachRespondsToDisarming: StoryPage {
+class ch5CoachRespondsToDisarming: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Raises-Hand"
     
@@ -921,7 +921,7 @@ class ch5CoachRespondsToDisarming: StoryPage {
     }
 }
 
-class ch5IDisagreeWithCoach: StoryPage {
+class ch5IDisagreeWithCoach: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Raises-Hand"
     
@@ -936,7 +936,7 @@ class ch5IDisagreeWithCoach: StoryPage {
     }
 }
 
-class ch5CoachStartsSpar: StoryPage {
+class ch5CoachStartsSpar: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Raises-Hand"
     
@@ -951,7 +951,7 @@ class ch5CoachStartsSpar: StoryPage {
     }
 }
 
-class ch5IPartnerWithCheerleader: StoryPage {
+class ch5IPartnerWithCheerleader: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Spar"
     
@@ -966,7 +966,7 @@ class ch5IPartnerWithCheerleader: StoryPage {
     }
 }
 
-class ch5IPinCheerleader: StoryPage {
+class ch5IPinCheerleader: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Spar"
     
@@ -984,7 +984,7 @@ class ch5IPinCheerleader: StoryPage {
     }
 }
 
-class ch5IKickCheerleader: StoryPage {
+class ch5IKickCheerleader: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Spar"
     
@@ -1002,7 +1002,7 @@ class ch5IKickCheerleader: StoryPage {
     }
 }
 
-class ch5CoachCheersMe: StoryPage {
+class ch5CoachCheersMe: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Pins-Cheerleader"
     
@@ -1017,7 +1017,7 @@ class ch5CoachCheersMe: StoryPage {
     }
 }
 
-class ch5CheerleaderFalls: StoryPage {
+class ch5CheerleaderFalls: StoryPageVoicedKaden {
     
     let imageName = "Ananya-Kicks-Cheerleader"
     
@@ -1033,7 +1033,7 @@ class ch5CheerleaderFalls: StoryPage {
 }
 
 
-class ch5PEClassEnds: StoryPage {
+class ch5PEClassEnds: StoryPageVoicedKaden {
     
     let imageName = "Dorms-First-Afternoon"
     
@@ -1048,7 +1048,7 @@ class ch5PEClassEnds: StoryPage {
     }
 }
 
-class ch5IHideInTheCloset: StoryPage {
+class ch5IHideInTheCloset: StoryPageVoicedKaden {
     
     let imageName = "Phantom-in-Closet"
     
@@ -1063,7 +1063,7 @@ class ch5IHideInTheCloset: StoryPage {
     }
 }
 
-class ch5IRepossessElodie: StoryPage {
+class ch5IRepossessElodie: StoryPageVoicedKaden {
     
     let imageName = "Resting-Elodie-Possessed"
     
@@ -1078,7 +1078,7 @@ class ch5IRepossessElodie: StoryPage {
     }
 }
 
-class ch5IRelax: StoryPage {
+class ch5IRelax: StoryPageVoicedKaden {
     
     let imageName = "Resting-Elodie"
     
@@ -1093,7 +1093,7 @@ class ch5IRelax: StoryPage {
     }
 }
 
-class ch5ICallCaitlyn: StoryPage {
+class ch5ICallCaitlyn: StoryPageVoicedKaden {
     
     let imageName = "Resting-Elodie"
     
@@ -1108,7 +1108,7 @@ class ch5ICallCaitlyn: StoryPage {
     }
 }
 
-class ch5IGreetCaitlyn: StoryPage {
+class ch5IGreetCaitlyn: StoryPageVoicedKaden {
     
     let imageName = "Resting-Elodie-on-Phone"
     
@@ -1123,7 +1123,7 @@ class ch5IGreetCaitlyn: StoryPage {
     }
 }
 
-class ch5YukioIsWrong: StoryPage {
+class ch5YukioIsWrong: StoryPageVoicedKaden {
     
     let imageName = "Resting-Elodie"
     
@@ -1138,7 +1138,7 @@ class ch5YukioIsWrong: StoryPage {
     }
 }
 
-class ch5CarleighReturns: StoryPage {
+class ch5CarleighReturns: StoryPageVoicedKaden {
     
     let imageName = "Resting-Elodie-Talk-to-Carleigh"
     
@@ -1153,7 +1153,7 @@ class ch5CarleighReturns: StoryPage {
     }
 }
 
-class ch5HewittCallsMe: StoryPage {
+class ch5HewittCallsMe: StoryPageVoicedKaden {
     
     let imageName = "Resting-Elodie-on-Phone-Evening"
     
@@ -1168,7 +1168,7 @@ class ch5HewittCallsMe: StoryPage {
     }
 }
 
-class ch5ISleep: StoryPage {
+class ch5ISleep: StoryPageVoicedKaden {
     
     let imageName = "Resting-Elodie-Night"
     

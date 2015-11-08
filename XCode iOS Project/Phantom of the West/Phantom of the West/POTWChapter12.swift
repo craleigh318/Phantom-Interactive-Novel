@@ -63,7 +63,7 @@ class ch12TimeAgo: StoryPage {
     }
 }
 
-class ch12RebeccaAvoidedMe: StoryPage {
+class ch12RebeccaAvoidedMe: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Alone-at-School"
     
@@ -78,7 +78,7 @@ class ch12RebeccaAvoidedMe: StoryPage {
     }
 }
 
-class ch12ISpiedOnRebecca: StoryPage {
+class ch12ISpiedOnRebecca: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Binoculars-Raised"
     
@@ -93,7 +93,7 @@ class ch12ISpiedOnRebecca: StoryPage {
     }
 }
 
-class ch12ISawIntoRebeccaRoom: StoryPage {
+class ch12ISawIntoRebeccaRoom: StoryPageVoicedKaden {
     
     let imageName = "Rebecca-Cheats"
     
@@ -108,7 +108,7 @@ class ch12ISawIntoRebeccaRoom: StoryPage {
     }
 }
 
-class ch12DidRebeccaLoseInterest: StoryPage {
+class ch12DidRebeccaLoseInterest: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Binoculars-Lowered-Color"
     
@@ -123,7 +123,7 @@ class ch12DidRebeccaLoseInterest: StoryPage {
     }
 }
 
-class ch12MyHeartStopped: StoryPage {
+class ch12MyHeartStopped: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Binoculars-Lowered-Greyscale"
     
@@ -138,7 +138,7 @@ class ch12MyHeartStopped: StoryPage {
     }
 }
 
-class ch12ICaughtRebecca: StoryPage {
+class ch12ICaughtRebecca: StoryPageVoicedKaden {
     
     let imageName = "Rebecca-Breaks-up-with-Kaden"
     

@@ -57,7 +57,7 @@ class ch4TimeAgo: StoryPage {
     }
 }
 
-class ch4FieldTripBegan: StoryPage {
+class ch4FieldTripBegan: StoryPageVoicedKaden {
     
     let imageName = "Field-Trip"
     
@@ -72,7 +72,7 @@ class ch4FieldTripBegan: StoryPage {
     }
 }
 
-class ch4BobbyTeasedMe: StoryPage {
+class ch4BobbyTeasedMe: StoryPageVoicedKaden {
     
     let imageName = "Field-Trip-Kaden-Bullied"
     
@@ -87,7 +87,7 @@ class ch4BobbyTeasedMe: StoryPage {
     }
 }
 
-class ch4RebeccaComfortedMe: StoryPage {
+class ch4RebeccaComfortedMe: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Meets-Rebecca"
     

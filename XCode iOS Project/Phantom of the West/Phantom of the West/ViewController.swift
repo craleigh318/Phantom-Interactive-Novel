@@ -26,7 +26,7 @@ public class ViewController: UINavigationController, PNavigatorHandler {
             if let autoSave = AutoSave.data {
                 story.loadGame(autoSave)
             } else {
-                story.newGame()
+                story.playTutorial()
             }
         }
         let localPlayer = GKLocalPlayer.localPlayer()

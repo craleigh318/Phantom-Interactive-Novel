@@ -61,7 +61,7 @@ class ch6TimeAgo: StoryPage {
     }
 }
 
-class ch6IDatedRebecca: StoryPage {
+class ch6IDatedRebecca: StoryPageVoicedKaden {
     
     let imageName = "Main-Avenue-Past"
     
@@ -76,7 +76,7 @@ class ch6IDatedRebecca: StoryPage {
     }
 }
 
-class ch6RebeccaPhotographedUs: StoryPage {
+class ch6RebeccaPhotographedUs: StoryPageVoicedKaden {
     
     let imageName = "Rebecca-Takes-Photo"
     
@@ -91,7 +91,7 @@ class ch6RebeccaPhotographedUs: StoryPage {
     }
 }
 
-class ch6WeWentToRestaurant: StoryPage {
+class ch6WeWentToRestaurant: StoryPageVoicedKaden {
     
     let imageName = "Rebecca-Dates-Kaden"
     
@@ -106,7 +106,7 @@ class ch6WeWentToRestaurant: StoryPage {
     }
 }
 
-class ch6WeAte: StoryPage {
+class ch6WeAte: StoryPageVoicedKaden {
     
     let imageName = "Kaden-and-Rebecca-Eat"
     
@@ -122,7 +122,7 @@ class ch6WeAte: StoryPage {
 }
 
 
-class ch6IKissedRebecca: StoryPage {
+class ch6IKissedRebecca: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Kisses-Rebecca"
     

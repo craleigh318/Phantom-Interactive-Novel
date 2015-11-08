@@ -187,7 +187,7 @@ class ch11Title: StoryPage {
     }
 }
 
-class ch11BekShtiiWakesMe: StoryPage {
+class ch11BekShtiiWakesMe: StoryPageVoicedKaden {
     
     let imageName = "Bek'Shtii-with-Flyer"
     
@@ -202,7 +202,7 @@ class ch11BekShtiiWakesMe: StoryPage {
     }
 }
 
-class ch11ReunionWillBeTonight: StoryPage {
+class ch11ReunionWillBeTonight: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Reads-Flyer"
     
@@ -217,7 +217,7 @@ class ch11ReunionWillBeTonight: StoryPage {
     }
 }
 
-class ch11IGoToLab: StoryPage {
+class ch11IGoToLab: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn-and-Yukio"
     
@@ -232,7 +232,7 @@ class ch11IGoToLab: StoryPage {
     }
 }
 
-class ch11ICallSupervisor: StoryPage {
+class ch11ICallSupervisor: StoryPageVoicedKaden {
     
     let imageName = "Kaden-on-Phone"
     
@@ -247,7 +247,7 @@ class ch11ICallSupervisor: StoryPage {
     }
 }
 
-class ch11YukioDrivesDownHighway: StoryPage {
+class ch11YukioDrivesDownHighway: StoryPageVoicedKaden {
     
     let imageName = "Yukio-Drives"
     
@@ -262,7 +262,7 @@ class ch11YukioDrivesDownHighway: StoryPage {
     }
 }
 
-class ch11IRollDownWindow: StoryPage {
+class ch11IRollDownWindow: StoryPageVoicedKaden {
     
     let imageName = "Phantom-Car-Window"
     
@@ -277,7 +277,7 @@ class ch11IRollDownWindow: StoryPage {
     }
 }
 
-class ch11IFlyToVan: StoryPage {
+class ch11IFlyToVan: StoryPageVoicedKaden {
     
     let imageName = "Jump-onto-News-Van"
     
@@ -292,7 +292,7 @@ class ch11IFlyToVan: StoryPage {
     }
 }
 
-class ch11ILandOnVan: StoryPage {
+class ch11ILandOnVan: StoryPageVoicedKaden {
     
     let imageName = "Phantom-Underneath-Van"
     
@@ -307,7 +307,7 @@ class ch11ILandOnVan: StoryPage {
     }
 }
 
-class ch11VanStopsAtLodge: StoryPage {
+class ch11VanStopsAtLodge: StoryPageVoicedKaden {
     
     let imageName = "Phantom-Underneath-Van-Grass"
     
@@ -322,7 +322,7 @@ class ch11VanStopsAtLodge: StoryPage {
     }
 }
 
-class ch11IPossessSarah: StoryPage {
+class ch11IPossessSarah: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Possessed"
     
@@ -337,7 +337,7 @@ class ch11IPossessSarah: StoryPage {
     }
 }
 
-class ch11IExamineSarah: StoryPage {
+class ch11IExamineSarah: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Hands"
     
@@ -352,7 +352,7 @@ class ch11IExamineSarah: StoryPage {
     }
 }
 
-class ch11IGoToCrew: StoryPage {
+class ch11IGoToCrew: StoryPageVoicedKaden {
     
     let imageName = "News-Crew-Preparation"
     
@@ -367,7 +367,7 @@ class ch11IGoToCrew: StoryPage {
     }
 }
 
-class ch11WeStartInterview: StoryPage {
+class ch11WeStartInterview: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Interviews-Ranger"
     
@@ -382,7 +382,7 @@ class ch11WeStartInterview: StoryPage {
     }
 }
 
-class ch11WePackUpToVan: StoryPage {
+class ch11WePackUpToVan: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Return-to-Van"
     
@@ -397,7 +397,7 @@ class ch11WePackUpToVan: StoryPage {
     }
 }
 
-class ch11VanDrivesToNewFerando: StoryPage {
+class ch11VanDrivesToNewFerando: StoryPageVoicedKaden {
     
     let imageName = "Van-Drives-to-City"
     
@@ -412,7 +412,7 @@ class ch11VanDrivesToNewFerando: StoryPage {
     }
 }
 
-class ch11IExitVan: StoryPage {
+class ch11IExitVan: StoryPageVoicedKaden {
     
     let imageName = "Van-Stops-at-Hotel"
     
@@ -427,7 +427,7 @@ class ch11IExitVan: StoryPage {
     }
 }
 
-class ch11IRegroupWithCaitlynAndYukio: StoryPage {
+class ch11IRegroupWithCaitlynAndYukio: StoryPageVoicedKaden {
     
     let imageName = "Sarah-at-Hotel-Entrance"
     
@@ -442,7 +442,7 @@ class ch11IRegroupWithCaitlynAndYukio: StoryPage {
     }
 }
 
-class ch11ILeftMyWallet: StoryPage {
+class ch11ILeftMyWallet: StoryPageVoicedKaden {
     
     let imageName = "Yukio-Withholds-Wallet"
     
@@ -457,7 +457,7 @@ class ch11ILeftMyWallet: StoryPage {
     }
 }
 
-class ch11YukioGivesMeWallet: StoryPage {
+class ch11YukioGivesMeWallet: StoryPageVoicedKaden {
     
     let imageName = "Yukio-Gives-Sarah-Wallet"
     
@@ -472,7 +472,7 @@ class ch11YukioGivesMeWallet: StoryPage {
     }
 }
 
-class ch11WeEnterHotel: StoryPage {
+class ch11WeEnterHotel: StoryPageVoicedKaden {
     
     let imageName = "Sarah-in-Lobby"
     
@@ -487,7 +487,7 @@ class ch11WeEnterHotel: StoryPage {
     }
 }
 
-class ch11IGreetReceptionist: StoryPage {
+class ch11IGreetReceptionist: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Talks-to-Receptionist"
     
@@ -502,7 +502,7 @@ class ch11IGreetReceptionist: StoryPage {
     }
 }
 
-class ch11IPayAsMyself: StoryPage {
+class ch11IPayAsMyself: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Talks-to-Receptionist"
     
@@ -520,7 +520,7 @@ class ch11IPayAsMyself: StoryPage {
     }
 }
 
-class ch11IPayAsSarah: StoryPage {
+class ch11IPayAsSarah: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Talks-to-Receptionist"
     
@@ -538,7 +538,7 @@ class ch11IPayAsSarah: StoryPage {
     }
 }
 
-class ch11IGiveMyCardToReceptionist: StoryPage {
+class ch11IGiveMyCardToReceptionist: StoryPageVoicedKaden {
     
     let imageName = "Receptionist-Examines-Card"
     
@@ -553,7 +553,7 @@ class ch11IGiveMyCardToReceptionist: StoryPage {
     }
 }
 
-class ch11IStare: StoryPage {
+class ch11IStare: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Stares"
     
@@ -568,7 +568,7 @@ class ch11IStare: StoryPage {
     }
 }
 
-class ch11IdentityTheft: StoryPage {
+class ch11IdentityTheft: StoryPageVoicedKaden {
     
     let imageName = "Receptionist-Examines-Card"
     
@@ -583,7 +583,7 @@ class ch11IdentityTheft: StoryPage {
     }
 }
 
-class ch11AmICute: StoryPage {
+class ch11AmICute: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Talks-to-Receptionist"
     
@@ -598,7 +598,7 @@ class ch11AmICute: StoryPage {
     }
 }
 
-class ch11IGiveSarahsCardToReceptionist: StoryPage {
+class ch11IGiveSarahsCardToReceptionist: StoryPageVoicedKaden {
     
     let imageName = "Receptionist-Examines-Card"
     
@@ -613,7 +613,7 @@ class ch11IGiveSarahsCardToReceptionist: StoryPage {
     }
 }
 
-class ch11LovelyFollower: StoryPage {
+class ch11LovelyFollower: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Autographs-Receptionist"
     
@@ -628,7 +628,7 @@ class ch11LovelyFollower: StoryPage {
     }
 }
 
-class ch11ReceptionistSwipesSarahsCard: StoryPage {
+class ch11ReceptionistSwipesSarahsCard: StoryPageVoicedKaden {
     
     let imageName = "Receptionist-Examines-Card"
     
@@ -643,7 +643,7 @@ class ch11ReceptionistSwipesSarahsCard: StoryPage {
     }
 }
 
-class ch11IGetKeycard: StoryPage {
+class ch11IGetKeycard: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Talks-to-Receptionist"
     
@@ -658,7 +658,7 @@ class ch11IGetKeycard: StoryPage {
     }
 }
 
-class ch11IGoToEscalator: StoryPage {
+class ch11IGoToEscalator: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Gives-Yukio-Card"
     
@@ -673,7 +673,7 @@ class ch11IGoToEscalator: StoryPage {
     }
 }
 
-class ch11IAcceptYukiosApology: StoryPage {
+class ch11IAcceptYukiosApology: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Walks-by-Yukio"
     
@@ -688,7 +688,7 @@ class ch11IAcceptYukiosApology: StoryPage {
     }
 }
 
-class ch11HostGreetsUs: StoryPage {
+class ch11HostGreetsUs: StoryPageVoicedKaden {
     
     let imageName = "Habitat-Entrance"
     
@@ -703,7 +703,7 @@ class ch11HostGreetsUs: StoryPage {
     }
 }
 
-class ch11WeSitAtHabitat: StoryPage {
+class ch11WeSitAtHabitat: StoryPageVoicedKaden {
     
     let imageName = "Habitat-Menu"
     
@@ -718,7 +718,7 @@ class ch11WeSitAtHabitat: StoryPage {
     }
 }
 
-class ch11YukioIsLuckyToBeWithUs: StoryPage {
+class ch11YukioIsLuckyToBeWithUs: StoryPageVoicedKaden {
     
     let imageName = "Habitat-Server"
     
@@ -733,7 +733,7 @@ class ch11YukioIsLuckyToBeWithUs: StoryPage {
     }
 }
 
-class ch11IEatBurger: StoryPage {
+class ch11IEatBurger: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Burger"
     
@@ -748,7 +748,7 @@ class ch11IEatBurger: StoryPage {
     }
 }
 
-class ch11HabitatDims: StoryPage {
+class ch11HabitatDims: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Burger-Dark"
     
@@ -763,7 +763,7 @@ class ch11HabitatDims: StoryPage {
     }
 }
 
-class ch11HabitatIsLame: StoryPage {
+class ch11HabitatIsLame: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Burger"
     
@@ -778,7 +778,7 @@ class ch11HabitatIsLame: StoryPage {
     }
 }
 
-class ch11WeGoUpstairs: StoryPage {
+class ch11WeGoUpstairs: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Caitlyn-Yukio-Elevator"
     
@@ -793,7 +793,7 @@ class ch11WeGoUpstairs: StoryPage {
     }
 }
 
-class ch11IEnterHotelRoom: StoryPage {
+class ch11IEnterHotelRoom: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Caitlyn-Yukio-to-Hotel-Rooms"
     
@@ -808,7 +808,7 @@ class ch11IEnterHotelRoom: StoryPage {
     }
 }
 
-class ch11IExamineSarahsRoom: StoryPage {
+class ch11IExamineSarahsRoom: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Hotel-Room"
     
@@ -823,7 +823,7 @@ class ch11IExamineSarahsRoom: StoryPage {
     }
 }
 
-class ch11ICheckSarahsCloset: StoryPage {
+class ch11ICheckSarahsCloset: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Closet"
     
@@ -838,7 +838,7 @@ class ch11ICheckSarahsCloset: StoryPage {
     }
 }
 
-class ch11IChangeIntoAthleticWear: StoryPage {
+class ch11IChangeIntoAthleticWear: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Athletic"
     
@@ -853,7 +853,7 @@ class ch11IChangeIntoAthleticWear: StoryPage {
     }
 }
 
-class ch11ITieSarahsHair: StoryPage {
+class ch11ITieSarahsHair: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Athletic-Ponytail"
     
@@ -868,7 +868,7 @@ class ch11ITieSarahsHair: StoryPage {
     }
 }
 
-class ch11IKnockForCaitlyn: StoryPage {
+class ch11IKnockForCaitlyn: StoryPageVoicedKaden {
     
     let imageName = "Athletic-Sarah-Knock-Door"
     
@@ -883,7 +883,7 @@ class ch11IKnockForCaitlyn: StoryPage {
     }
 }
 
-class ch11CaitlynOpensDoor: StoryPage {
+class ch11CaitlynOpensDoor: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Greets-Athletic-Sarah"
     
@@ -898,7 +898,7 @@ class ch11CaitlynOpensDoor: StoryPage {
     }
 }
 
-class ch11IEnterHealthClub: StoryPage {
+class ch11IEnterHealthClub: StoryPageVoicedKaden {
     
     let imageName = "Health-Club-Entrance"
     
@@ -913,7 +913,7 @@ class ch11IEnterHealthClub: StoryPage {
     }
 }
 
-class ch11ILookForTreadmill: StoryPage {
+class ch11ILookForTreadmill: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Sees-Treadmill"
     
@@ -928,7 +928,7 @@ class ch11ILookForTreadmill: StoryPage {
     }
 }
 
-class ch11IRunOnTreadmill: StoryPage {
+class ch11IRunOnTreadmill: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Runs-Treadmill"
     
@@ -943,7 +943,7 @@ class ch11IRunOnTreadmill: StoryPage {
     }
 }
 
-class ch11GuestApproachesMe: StoryPage {
+class ch11GuestApproachesMe: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Encounters-Guest"
     
@@ -958,7 +958,7 @@ class ch11GuestApproachesMe: StoryPage {
     }
 }
 
-class ch11AmIGoodOrBad: StoryPage {
+class ch11AmIGoodOrBad: StoryPageVoicedKaden {
     
     let imageName = "Guest-Traps-Sarah"
     
@@ -973,7 +973,7 @@ class ch11AmIGoodOrBad: StoryPage {
     }
 }
 
-class ch11ILeaveGuest: StoryPage {
+class ch11ILeaveGuest: StoryPageVoicedKaden {
     
     let imageName = "Guest-Traps-Sarah"
     
@@ -991,7 +991,7 @@ class ch11ILeaveGuest: StoryPage {
     }
 }
 
-class ch11IPlayGuest: StoryPage {
+class ch11IPlayGuest: StoryPageVoicedKaden {
     
     let imageName = "Guest-Traps-Sarah"
     
@@ -1009,7 +1009,7 @@ class ch11IPlayGuest: StoryPage {
     }
 }
 
-class ch11IAmGoodGirl: StoryPage {
+class ch11IAmGoodGirl: StoryPageVoicedKaden {
     
     let imageName = "Guest-Traps-Sarah"
     
@@ -1024,7 +1024,7 @@ class ch11IAmGoodGirl: StoryPage {
     }
 }
 
-class ch11IPushGuest: StoryPage {
+class ch11IPushGuest: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Pushes-Guest"
     
@@ -1039,7 +1039,7 @@ class ch11IPushGuest: StoryPage {
     }
 }
 
-class ch11GuestWillNotForget: StoryPage {
+class ch11GuestWillNotForget: StoryPageVoicedKaden {
     
     let imageName = "Guest-Falls"
     
@@ -1054,7 +1054,7 @@ class ch11GuestWillNotForget: StoryPage {
     }
 }
 
-class ch11IAmNaughtyFemale: StoryPage {
+class ch11IAmNaughtyFemale: StoryPageVoicedKaden {
     
     let imageName = "Guest-Traps-Sarah"
     
@@ -1069,7 +1069,7 @@ class ch11IAmNaughtyFemale: StoryPage {
     }
 }
 
-class ch11IWrapGuest: StoryPage {
+class ch11IWrapGuest: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Wraps-Guest"
     
@@ -1084,7 +1084,7 @@ class ch11IWrapGuest: StoryPage {
     }
 }
 
-class ch11WhatIsMyProblem: StoryPage {
+class ch11WhatIsMyProblem: StoryPageVoicedKaden {
     
     let imageName = "Guest-Falls"
     
@@ -1099,7 +1099,7 @@ class ch11WhatIsMyProblem: StoryPage {
     }
 }
 
-class ch11ILeaveHealthClub: StoryPage {
+class ch11ILeaveHealthClub: StoryPageVoicedKaden {
     
     let imageName = "Fitness-Crowd"
     
@@ -1114,7 +1114,7 @@ class ch11ILeaveHealthClub: StoryPage {
     }
 }
 
-class ch11IRelax: StoryPage {
+class ch11IRelax: StoryPageVoicedKaden {
     
     let imageName = "Athletic-Sarah-on-Bed"
     
@@ -1129,7 +1129,7 @@ class ch11IRelax: StoryPage {
     }
 }
 
-class ch11IWillShower: StoryPage {
+class ch11IWillShower: StoryPageVoicedKaden {
     
     let imageName = "Athletic-Sarah-on-Bed"
     
@@ -1147,7 +1147,7 @@ class ch11IWillShower: StoryPage {
     }
 }
 
-class ch11IWatchTV: StoryPage {
+class ch11IWatchTV: StoryPageVoicedKaden {
     
     let imageName = "Athletic-Sarah-on-Bed"
     
@@ -1165,7 +1165,7 @@ class ch11IWatchTV: StoryPage {
     }
 }
 
-class ch11IShouldCool: StoryPage {
+class ch11IShouldCool: StoryPageVoicedKaden {
     
     let imageName = "Athletic-Sarah-on-Bed"
     
@@ -1180,7 +1180,7 @@ class ch11IShouldCool: StoryPage {
     }
 }
 
-class ch11ILayNewClothes: StoryPage {
+class ch11ILayNewClothes: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Gets-Towel"
     
@@ -1195,7 +1195,7 @@ class ch11ILayNewClothes: StoryPage {
     }
 }
 
-class ch11IAdjustTemperature: StoryPage {
+class ch11IAdjustTemperature: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Starts-Shower"
     
@@ -1210,7 +1210,7 @@ class ch11IAdjustTemperature: StoryPage {
     }
 }
 
-class ch11IShower: StoryPage {
+class ch11IShower: StoryPageVoicedKaden {
     
     let imageName = "Sarah-in-Shower"
     
@@ -1225,7 +1225,7 @@ class ch11IShower: StoryPage {
     }
 }
 
-class ch11IDry: StoryPage {
+class ch11IDry: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Wears-Towel"
     
@@ -1240,7 +1240,7 @@ class ch11IDry: StoryPage {
     }
 }
 
-class ch11NewNewsSegment: StoryPage {
+class ch11NewNewsSegment: StoryPageVoicedKaden {
     
     let imageName = "TV-Seawall-Top"
     
@@ -1255,7 +1255,7 @@ class ch11NewNewsSegment: StoryPage {
     }
 }
 
-class ch11CameraShowsSeawall: StoryPage {
+class ch11CameraShowsSeawall: StoryPageVoicedKaden {
     
     let imageName = "TV-Seawall-Bottom"
     
@@ -1270,7 +1270,7 @@ class ch11CameraShowsSeawall: StoryPage {
     }
 }
 
-class ch11Potholes: StoryPage {
+class ch11Potholes: StoryPageVoicedKaden {
     
     let imageName = "TV-Cars"
     
@@ -1285,7 +1285,7 @@ class ch11Potholes: StoryPage {
     }
 }
 
-class ch11MayorsDefense: StoryPage {
+class ch11MayorsDefense: StoryPageVoicedKaden {
     
     let imageName = "TV-Mayor"
     
@@ -1300,7 +1300,7 @@ class ch11MayorsDefense: StoryPage {
     }
 }
 
-class ch11IWearFormalwear: StoryPage {
+class ch11IWearFormalwear: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Formal"
     

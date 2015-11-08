@@ -10,7 +10,8 @@ import AVFoundation
 
 class StoryPageVoiced {
     static func speak(utterance: AVSpeechUtterance) {
-        utterance.preUtteranceDelay = 0.5
+        CharacterVoices.synthesizer.stopSpeakingAtBoundary(.Immediate)
+        //utterance.preUtteranceDelay = 0.5
         CharacterVoices.synthesizer.speakUtterance(utterance)
     }
 }

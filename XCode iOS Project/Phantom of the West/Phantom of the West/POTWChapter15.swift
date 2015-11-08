@@ -110,7 +110,7 @@ class ch15Title: StoryPage {
     }
 }
 
-class ch15IAmInJail: StoryPage {
+class ch15IAmInJail: StoryPageVoicedKaden {
     
     let imageName = "Phantom-Jail"
     
@@ -125,7 +125,7 @@ class ch15IAmInJail: StoryPage {
     }
 }
 
-class ch15ISeeViolinist: StoryPage {
+class ch15ISeeViolinist: StoryPageVoicedKaden {
     
     let imageName = "Jail-Violinist"
     
@@ -140,7 +140,7 @@ class ch15ISeeViolinist: StoryPage {
     }
 }
 
-class ch15ISeeBeggar: StoryPage {
+class ch15ISeeBeggar: StoryPageVoicedKaden {
     
     let imageName = "Jail-Beggar"
     
@@ -155,7 +155,7 @@ class ch15ISeeBeggar: StoryPage {
     }
 }
 
-class ch15ISeeAddict: StoryPage {
+class ch15ISeeAddict: StoryPageVoicedKaden {
     
     let imageName = "Jail-Addict"
     
@@ -170,7 +170,7 @@ class ch15ISeeAddict: StoryPage {
     }
 }
 
-class ch15IHaveCivilRights: StoryPage {
+class ch15IHaveCivilRights: StoryPageVoicedKaden {
     
     let imageName = "Jail-Window"
     
@@ -185,7 +185,7 @@ class ch15IHaveCivilRights: StoryPage {
     }
 }
 
-class ch15BallBreaksMyCell: StoryPage {
+class ch15BallBreaksMyCell: StoryPageVoicedKaden {
     
     let imageName = "Phantom-Jailbreak"
     
@@ -200,7 +200,7 @@ class ch15BallBreaksMyCell: StoryPage {
     }
 }
 
-class ch15ConstructorGreetsMe: StoryPage {
+class ch15ConstructorGreetsMe: StoryPageVoicedKaden {
     
     let imageName = "Construction-Worker-Waves"
     
@@ -215,7 +215,7 @@ class ch15ConstructorGreetsMe: StoryPage {
     }
 }
 
-class ch15ConstructorIsDispossessed: StoryPage {
+class ch15ConstructorIsDispossessed: StoryPageVoicedKaden {
     
     let imageName = "Construction-Worker-Dispossessed"
     
@@ -230,7 +230,7 @@ class ch15ConstructorIsDispossessed: StoryPage {
     }
 }
 
-class ch15ItsSezja: StoryPage {
+class ch15ItsSezja: StoryPageVoicedKaden {
     
     let imageName = "Sezja-from-Construction-Worker"
     
@@ -245,7 +245,7 @@ class ch15ItsSezja: StoryPage {
     }
 }
 
-class ch15ILookAround: StoryPage {
+class ch15ILookAround: StoryPageVoicedKaden {
     
     let imageName = "Flooded-Roads"
     
@@ -260,7 +260,7 @@ class ch15ILookAround: StoryPage {
     }
 }
 
-class ch15BekShtiiAndBaqerFight: StoryPage {
+class ch15BekShtiiAndBaqerFight: StoryPageVoicedKaden {
     
     let imageName = "Kaden-and-Sezja-Backs"
     
@@ -275,7 +275,7 @@ class ch15BekShtiiAndBaqerFight: StoryPage {
     }
 }
 
-class ch15SezjaPaddles: StoryPage {
+class ch15SezjaPaddles: StoryPageVoicedKaden {
     
     let imageName = "Sezja-Raft"
     
@@ -290,7 +290,7 @@ class ch15SezjaPaddles: StoryPage {
     }
 }
 
-class ch15ILookAtConstructor: StoryPage {
+class ch15ILookAtConstructor: StoryPageVoicedKaden {
     
     let imageName = "Construction-Worker-Dazed"
     
@@ -305,7 +305,7 @@ class ch15ILookAtConstructor: StoryPage {
     }
 }
 
-class ch15IPossessConstructor: StoryPage {
+class ch15IPossessConstructor: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Possesses-Construction-Worker"
     
@@ -320,7 +320,7 @@ class ch15IPossessConstructor: StoryPage {
     }
 }
 
-class ch15MyTeethAreBad: StoryPage {
+class ch15MyTeethAreBad: StoryPageVoicedKaden {
     
     let imageName = "Construction-Worker-Teeth"
     
@@ -335,7 +335,7 @@ class ch15MyTeethAreBad: StoryPage {
     }
 }
 
-class ch15IClimbBuilding: StoryPage {
+class ch15IClimbBuilding: StoryPageVoicedKaden {
     
     let imageName = "Construction-Worker-Climbs"
     
@@ -350,7 +350,7 @@ class ch15IClimbBuilding: StoryPage {
     }
 }
 
-class ch15ISeeRestOfCity: StoryPage {
+class ch15ISeeRestOfCity: StoryPageVoicedKaden {
     
     let imageName = "Whole-City-Flooded"
     
@@ -365,7 +365,7 @@ class ch15ISeeRestOfCity: StoryPage {
     }
 }
 
-class ch15IFindConstructionSite: StoryPage {
+class ch15IFindConstructionSite: StoryPageVoicedKaden {
     
     let imageName = "Construction-Site"
     
@@ -380,7 +380,7 @@ class ch15IFindConstructionSite: StoryPage {
     }
 }
 
-class ch15IGetPickaxe: StoryPage {
+class ch15IGetPickaxe: StoryPageVoicedKaden {
     
     let imageName = "Construction-Worker-Pickaxe"
     
@@ -395,7 +395,7 @@ class ch15IGetPickaxe: StoryPage {
     }
 }
 
-class ch15IJumpBetweenRooftops: StoryPage {
+class ch15IJumpBetweenRooftops: StoryPageVoicedKaden {
     
     let imageName = "Construction-Worker-Leaps"
     
@@ -410,7 +410,7 @@ class ch15IJumpBetweenRooftops: StoryPage {
     }
 }
 
-class ch15PeopleBelowTrapped: StoryPage {
+class ch15PeopleBelowTrapped: StoryPageVoicedKaden {
     
     let imageName = "Flooded-City-Below"
     
@@ -425,7 +425,7 @@ class ch15PeopleBelowTrapped: StoryPage {
     }
 }
 
-class ch15IFindFireSpirits: StoryPage {
+class ch15IFindFireSpirits: StoryPageVoicedKaden {
     
     let imageName = "Fire-Spirits-Below"
     
@@ -440,7 +440,7 @@ class ch15IFindFireSpirits: StoryPage {
     }
 }
 
-class ch15SpiritsSurroundMe: StoryPage {
+class ch15SpiritsSurroundMe: StoryPageVoicedKaden {
     
     let imageName = "Fire-Spirits-Surround-Worker"
     
@@ -455,7 +455,7 @@ class ch15SpiritsSurroundMe: StoryPage {
     }
 }
 
-class ch15ISlamSpirits: StoryPage {
+class ch15ISlamSpirits: StoryPageVoicedKaden {
     
     let imageName = "Worker-Axes-Fire-Spirits"
     
@@ -476,7 +476,7 @@ class ch15ISlamSpirits: StoryPage {
     }
 }
 
-class ch15IDeathByOverconfidence: StoryPage {
+class ch15IDeathByOverconfidence: StoryPageVoicedKaden {
     
     let imageName = "Worker-Leans-over-Fire-Spirit"
     
@@ -491,7 +491,7 @@ class ch15IDeathByOverconfidence: StoryPage {
     }
 }
 
-class ch15KeptYouWaiting: StoryPage {
+class ch15KeptYouWaiting: StoryPageVoicedKaden {
     
     let imageName = "Worker-Leans-over-Fire-Spirit"
     
@@ -506,7 +506,7 @@ class ch15KeptYouWaiting: StoryPage {
     }
 }
 
-class ch15IStrikeSpirit: StoryPage {
+class ch15IStrikeSpirit: StoryPageVoicedKaden {
     
     let imageName = "Worker-Kills-Fire-Spirit"
     
@@ -521,7 +521,7 @@ class ch15IStrikeSpirit: StoryPage {
     }
 }
 
-class ch15ILeaveSpirits: StoryPage {
+class ch15ILeaveSpirits: StoryPageVoicedKaden {
     
     let imageName = "Construction-Worker-Climbs-with-Pickaxe"
     
@@ -536,7 +536,7 @@ class ch15ILeaveSpirits: StoryPage {
     }
 }
 
-class ch15SchoolBusNeedsHelp: StoryPage {
+class ch15SchoolBusNeedsHelp: StoryPageVoicedKaden {
     
     let imageName = "Flooded-School-Bus-Below"
     
@@ -551,7 +551,7 @@ class ch15SchoolBusNeedsHelp: StoryPage {
     }
 }
 
-class ch15IDispossessConstructor: StoryPage {
+class ch15IDispossessConstructor: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Dispossesses-Construction-Worker"
     
@@ -566,7 +566,7 @@ class ch15IDispossessConstructor: StoryPage {
     }
 }
 
-class ch15IAmHero: StoryPage {
+class ch15IAmHero: StoryPageVoicedKaden {
     
     let imageName = "School-Bus-Passengers-See-Kaden"
     
@@ -581,7 +581,7 @@ class ch15IAmHero: StoryPage {
     }
 }
 
-class ch15ILiftBus: StoryPage {
+class ch15ILiftBus: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Lifts-Bus"
     
@@ -596,7 +596,7 @@ class ch15ILiftBus: StoryPage {
     }
 }
 
-class ch15StudentsThankMe: StoryPage {
+class ch15StudentsThankMe: StoryPageVoicedKaden {
     
     let imageName = "Students-Thank-Kaden"
     
@@ -611,7 +611,7 @@ class ch15StudentsThankMe: StoryPage {
     }
 }
 
-class ch15WowStudentsSay: StoryPage {
+class ch15WowStudentsSay: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Flies-from-Bus"
     
@@ -626,7 +626,7 @@ class ch15WowStudentsSay: StoryPage {
     }
 }
 
-class ch15PhantomGoesToHotel: StoryPage {
+class ch15PhantomGoesToHotel: StoryPageVoicedKaden {
     
     let imageName = "Bek'Shtii-Phantom-in-Distance"
     
@@ -641,7 +641,7 @@ class ch15PhantomGoesToHotel: StoryPage {
     }
 }
 
-class ch15ModernSelfishness: StoryPage {
+class ch15ModernSelfishness: StoryPageVoicedKaden {
     
     let imageName = "Bek'Shtii-Phantom-in-City"
     
@@ -656,7 +656,7 @@ class ch15ModernSelfishness: StoryPage {
     }
 }
 
-class ch15BekShtiiThrowsMe: StoryPage {
+class ch15BekShtiiThrowsMe: StoryPageVoicedKaden {
     
     let imageName = "Bek'Shtii-Phantom-Grabs-Kaden"
     
@@ -671,7 +671,7 @@ class ch15BekShtiiThrowsMe: StoryPage {
     }
 }
 
-class ch15IDrift: StoryPage {
+class ch15IDrift: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Floats-on-River"
     

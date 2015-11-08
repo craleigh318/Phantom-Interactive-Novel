@@ -12,6 +12,8 @@ public class PhantomOfTheWest: PStory, PStoryObserver, PSavedGamesLoader {
     
     private static let firstPageNumber = 1001
     
+    private static let tutorialStart = 1
+    
     public var observer: PStoryObserver?
     
     var eventFlags: EventFlagsCollection? {
@@ -32,6 +34,15 @@ public class PhantomOfTheWest: PStory, PStoryObserver, PSavedGamesLoader {
         let emptyFlags = EventFlagsCollection()
         gameState = POTWGameState(eventFlags: emptyFlags)
         goToStoryState(PhantomOfTheWest.firstPageNumber)
+        /*let gs = TestGameState()
+        gameState = gs
+        goToStoryState(gs.id)*/
+    }
+    
+    public func playTutorial() {
+        let emptyFlags = EventFlagsCollection()
+        gameState = POTWGameState(eventFlags: emptyFlags)
+        goToStoryState(PhantomOfTheWest.tutorialStart)
         /*let gs = TestGameState()
         gameState = gs
         goToStoryState(gs.id)*/
@@ -62,6 +73,12 @@ public class PhantomOfTheWest: PStory, PStoryObserver, PSavedGamesLoader {
         currentPages = pages
         if let o = observer {
             o.update(pages)
+            // Play voice.
+            if pages.count == 1 {
+                if let firstPage = pages[0] as? StoryPage {
+                    firstPage.playAudio()
+                }
+            }
         }
     }
     
@@ -81,15 +98,11 @@ public class PhantomOfTheWest: PStory, PStoryObserver, PSavedGamesLoader {
         //Display next page.
         if let gs = gameState {
             let newPages = gs.goToStoryState(stateID, observer: self)
-            var newPPages = [StoryPage]()
+            var newPPages = [PStoryPage]()
             for p in newPages {
                 newPPages.append(p)
             }
             update(newPPages)
-            // Play voice.
-            if newPPages.count == 1 {
-                newPPages[0].playAudio()
-            }
         }
         // Auto save.
         if let gs = gameState {

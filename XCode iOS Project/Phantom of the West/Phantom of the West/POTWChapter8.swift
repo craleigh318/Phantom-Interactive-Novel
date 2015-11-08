@@ -57,7 +57,7 @@ class ch8TimeAgo: StoryPage {
     }
 }
 
-class ch8INeededHelpWithReport: StoryPage {
+class ch8INeededHelpWithReport: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Walks-Around-High-School"
     
@@ -72,7 +72,7 @@ class ch8INeededHelpWithReport: StoryPage {
     }
 }
 
-class ch8IMetSarah: StoryPage {
+class ch8IMetSarah: StoryPageVoicedKaden {
     
     let imageName = "Young-Sarah-Looks-Down"
     
@@ -87,7 +87,7 @@ class ch8IMetSarah: StoryPage {
     }
 }
 
-class ch8SarahAskedColdly: StoryPage {
+class ch8SarahAskedColdly: StoryPageVoicedKaden {
     
     let imageName = "Young-Sarah-Looks-Up"
     

@@ -6,6 +6,18 @@
   Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 */
 
+ch0Welcome = "Welcome to \"Phantom of the West\". Please tap \"%@\" to continue.";
+
+ch0POTWSimple = "Playing \"Phantom of the West\" is simple. The story is presented as a series of pages with text, accompanied with images. Tapping \"%@\" will continue to the next page.";
+
+ch0MultipleChoices = "Occasionally, you will be presented with multiple choices. Some choices will affect the story more than others. Please tap \"%@\" to see an example of multiple choices.";
+
+ch0FirstChoice = "This is the first choice. Tap \"%1$@\" if you would like to see the second choice, or tap \"%2$@\" to continue.";
+
+ch0SecondChoice = "This is the second choice. Tap \"%1$@\" if you would like to see the first choice, or tap \"%2$@\" to continue.";
+
+ch0Options = "Finally, tapping \"%1$@\" will open the options menu. When you are ready, please press \"%2$@\" to start the game.";
+
 ellipsis = "…";
 
 ch1Title = "Chapter 1";
@@ -28,7 +40,7 @@ ch1IOpenMyEyes = "Just a moment later, I can open my eyes. This has to be it. I\
 
 ch1IPossessOfficer = "Without hesitation, I leap towards the officer. My body is now a black, gaseous mass, and I can feel myself flying. My old pile of clothes is left behind as I absorb myself into the officer.";
 
-ch1ILookAtMyHands = "My hand, my skin, my clothes, they\'re all different. The elixir must have worked.";
+ch1ILookAtMyHands = "My hands, my skin, my clothes, they\'re all different. The elixir must have worked.";
 
 ch1IGoToOfficersHome = "I need to rest and think about what I\'ll do. I find the officer\'s car nearby and drive to his home. I didn\'t really need to think about where this officer lived. It just came naturally to me.";
 
@@ -154,7 +166,7 @@ ch3CaitlynDragsMyHand = "\"Come on, we need to meet Yuki,\" Caitlyn says, draggi
 
 ch3YukioGreetsMe = "Caitlyn leads me to a lounge with Dr. Yukio Kiyoshi, another coworker of ours. \"Hello, Caitlyn … and Kaden?\" he says, surprised.";
 
-ch3CaitlynExplainsMyGhostliness = "\"Yuki, you know how I said Kaden called me a couple of hours ago? Well, this what he\'s like now. He can go inside other people and control them, like a ghost.\"";
+ch3CaitlynExplainsMyGhostliness = "\"Yuki, you know how I said Kaden called me a couple of hours ago? Well, this is what he\'s like now. He can go inside other people and control them, like a ghost.\"";
 
 ch3YukioIsAwed = "\"Amazing,\" Yukio says. \"So, what do we do now?\" asks Yukio.";
 
@@ -336,7 +348,7 @@ ch5CheerleaderIsJealous = "\"You\'re right, they are just jealous,\" I say, agre
 
 ch5CanIStudyWithCarleigh = "\"Oh, Ellie,\" adds Carleigh, \"can you help me study with a math test?\"";
 
-ch5IEnterLibrary = "I know I\'ve technically never met Carleigh until today, but it feels like I\'ve known her for a long time. I can\'t let her down. I have to help her. \"Yeah, I can help you with math,\" I say. We finish our lunch, and Caleigh and I go to the school library.";
+ch5IEnterLibrary = "I know I\'ve technically never met Carleigh until today, but it feels like I\'ve known her for a long time. I can\'t let her down. I have to help her. \"Yeah, I can help you with math,\" I say. We finish our lunch, and Carleigh and I go to the school library.";
 
 ch5ISeeCarleighsTextbook = "Carleigh opens her math textbook and shows it to me. The math looks familiar to me. As a scientist, I use math on a somewhat regular basis. The only difference is that, in the professional field, I do mathematics with a computer. Here in school, I\'ll have to do that math by hand. Hopefully, my written math skills haven\'t faded away yet. \"Are you ready to help?\" whispers Carleigh.";
 
@@ -600,7 +612,7 @@ ch7VaNalIntoducesHerself = "\"Yes, Dr. Kaden. I am Va\'Nal, the goddess of roman
 
 ch7WhyWillIGoToRuins = "\"I see, but haven\'t I met all of you now? Why do I need to go to your ancient city if you\'re all just going to stop by and say \'hi\' to me anyway?\"";
 
-ch7GoingWillMakeSense = "\"Dr. Kaden, it will make sense when the times comes.\"";
+ch7GoingWillMakeSense = "\"Dr. Kaden, it will make sense when the time comes.\"";
 
 ch7SezjaReturns = "I see Carleigh coming towards us. \"Hello again, Best Friend,\" Carleigh says to Va\'Nal-as-Élodie. It seems that Sezja is still possessing Carleigh, but doesn\'t realize that I\'m Hewitt now and that Élodie is actually Va\'Nal. Sezja-as-Carleigh sits next to Va\'Nal-as-Élodie and smiles at her.";
 
@@ -616,7 +628,7 @@ ch7CanSezjaGetCarleighsTest = "\"Hello,\" I say back. \"Sezja, can you remember 
 
 ch7WhyDoIAskSezja = "\"Uh … sure. Why are you asking?\" Sezja asks.";
 
-ch7ITookCarleighsTest = "\"I helped Carleigh with her math text. Well, really, I just took the test for her,\" I say.";
+ch7ITookCarleighsTest = "\"I helped Carleigh with her math test. Well, really, I just took the test for her,\" I say.";
 
 ch7SezjaGetsNervousTalking = "\"Hey, hey, that was sweet of you. You really are a most bestest friend!\" Sezja says. \"You seem excited to get your grade back, Best Friend. You can come with me to math class. You can even do the talking. I get nervous talking to most mortals, anyway.\"";
 
@@ -660,7 +672,7 @@ ch7VaNalAdmitsDisrespect = "Va\'Nal looks sad. \"You are right. We would have be
 
 ch7IWillKissVaNal = "\"Only if you\'re sure that kissing will help me.\"";
 
-ch7HeartMustBeCared = "\"Of course. The heart is like any other part of the body. It needs to cared for. I want you to stay well.\"";
+ch7HeartMustBeCared = "\"Of course. The heart is like any other part of the body. It needs to be cared for. I want you to stay well.\"";
 
 ch7OKINod = "\"Okay,\" I nod.";
 
@@ -760,7 +772,7 @@ ch9WeStartWalk = "Free time is over, and we\'re separated into groups, each lead
 
 ch9WeFindIvy = "We pass by poison ivy. \"That\'s poison ivy over there, kids. Don\'t touch,\" the guide says.";
 
-ch9WeFindPolecats = "On our walk, we see polecats climbing nearby trees. \"See those critters in the trees?\" the tour guides asks. \"Those are polecats. They originate from the mainland. Several centuries ago, some explorers from the mainland brought polecats into this continent. We\'ve been keeping the migrated polecats safe here in the park. Nowadays, most polecats have been domesticated into ferrets, and ferrets have become popular household pets.\"";
+ch9WeFindPolecats = "On our walk, we see polecats climbing nearby trees. \"See those critters in the trees?\" the tour guide asks. \"Those are polecats. They originate from the mainland. Several centuries ago, some explorers from the mainland brought polecats into this continent. We\'ve been keeping the migrated polecats safe here in the park. Nowadays, most polecats have been domesticated into ferrets, and ferrets have become popular household pets.\"";
 
 ch9WeFindSnakes = "Later on in the walk, we see snakes slithering on the ground. \"Careful, kids. Some snakes are venomous. You kids know how to tell whether they\'re venomous, right? My old co-worker Billy told me this saying: \'black and yellow, friendly fellow; red and black, get back\'.\" I\'m not a snake expert, but our tour guide might have gotten that mnemonic wrong. It\'s okay, though. He\'s only endangering a dozen students.";
 
@@ -878,7 +890,7 @@ ch9CaitlynRemembersOfficer = "Caitlyn nods, \"Yeah, that man was a police office
 
 ch9IMayReappearOnTV = "I continue, \"Well, that might not be the last time that I\'m mentioned on television. Let me explain.\"";
 
-ch9ISummarizeToYukio = "I tell Caitlyn and Yukio my story. \"Okay, so I already told you on the phone how I went outside to get some fresh air, right? And that I was about to be seen and that I had to possess a student? Well, after that phone call, I continue going to school the next day as my new self. Then, the day after that, it turned out that we had to go on a field trip to the Western Continental Park. So, we go there, and we go on a boring hike with some tour guides. In the middle of the hike, gaseous tentacles grow out from my back. It turned out that my powers were expanding. The tour guide gets scared and he\'s about to shoot me, when I use my tentacles to grab his gun, and I crush it into tiny bits. Then, I came back here. Also, I can switch between my normal self and my spirit self now.\"";
+ch9ISummarizeToYukio = "I tell Caitlyn and Yukio my story. \"Okay, so I already told you on the phone how I went outside to get some fresh air, right? And that I was about to be seen and that I had to possess a student? Well, after that phone call, I continued going to school the next day as my new self. Then, the day after that, it turned out that we had to go on a field trip to the Western Continental Park. So, we went there, and we went on a boring hike with some tour guides. In the middle of the hike, gaseous tentacles grew out from my back. It turned out that my powers were expanding. The tour guide got scared and he was about to shoot me, but then I used my tentacles to grab his gun, and I crushed it into tiny bits. Then, I came back here. Also, I can switch between my normal self and my spirit self now.\"";
 
 ch9YukioSimplifiesMySummary = "\"Okay, okay. That is a lot of information to give us at once. Let me understand the basics. Essentially, you are becoming more powerful, and you let yet another outsider discover your powers. Is that correct?\" asks Yukio.";
 
@@ -958,7 +970,7 @@ ch11BekShtiiWakesMe = "\"I hope that you slept well,\" Bek\'Shtii says. \"You\'r
 
 ch11ReunionWillBeTonight = "The flyer is about a reunion for former students of New Ferando State High School, the same school that I attended many years ago. According to the flyer, the reunion will be held in the Kenyon Imperial Hotel ballroom … late tonight!";
 
-ch11ICannotPrepare = "This could be a problem. I don\'t have much time to prepare. I\'ve already missed several says of work, and I should probably talk to my supervisor about why I\'ll be gone today as well. I don\'t have any proper clothes to wear for this type of social event. I haven\'t even booked a room at the Kenyon Hotel, although perhaps that part isn\'t as important, since I can fly back here. I also have to deal with Sarah Parson. I bet the park ranger who saw me yesterday is going to run to the media, and Sarah, or a co-worker of hers, will interview him, and my reputation will be ruined.";
+ch11ICannotPrepare = "This could be a problem. I don\'t have much time to prepare. I\'ve already missed several days of work, and I should probably talk to my supervisor about why I\'ll be gone today as well. I don\'t have any proper clothes to wear for this type of social event. I haven\'t even booked a room at the Kenyon Hotel, although perhaps that part isn\'t as important, since I can fly back here. I also have to deal with Sarah Parson. I bet the park ranger who saw me yesterday is going to run to the media, and Sarah, or a co-worker of hers, will interview him, and my reputation will be ruined.";
 
 ch11ICouldPossessSarah = "Wait a minute. Sarah went to high school with me. She might go to the reunion tonight. If so, then I could possess Sarah, bias the interview, and go to the reunion as her. I mean, I don\'t have to go to the reunion, but I would be possessing Sarah anyway, and I\'d bet Sarah would have wanted to go. Also, I might see Rebecca there.";
 
@@ -1136,7 +1148,7 @@ ch11HabitatIsLame = "The lights finally brighten back to normal. Well, that was 
 
 ch11IFinishEating = "We finish our food. We each pay for our own meals.";
 
-ch11WeGoUpstairs = "We leave the restaurant and take the elevators up to our rooms.";
+ch11WeGoUpstairs = "We leave the restaurant and take the elevator up to our rooms.";
 
 ch11IEnterHotelRoom = "\"I\'ll let you guys know when the event starts,\" I say to Caitlyn and Yukio. They go into their room. I look for my own keycard in my handbag.";
 
@@ -1160,13 +1172,13 @@ ch11CaitlynOpensDoor = "Caitlyn opens the door. \"Hi there,\" she says.";
 
 ch11WillCaitlynExcerciseWithMe = "\"Hi, Caitlyn. You said that I should maintain Sarah\'s weight earlier, so I\'m going down to the fitness center to work out. Do you want to come with me?\"";
 
-ch11CaitlynDoesNotExcerciseWithMe = "\"Sorry, Kadey, but Yuki and I are busy right now. Still, it\'s nice of you to think about Sarah\'s health. You must really care about her,\" Cailtyn says. \"Take it easy,\" she says, hugging me.";
+ch11CaitlynDoesNotExcerciseWithMe = "\"Sorry, Kadey, but Yuki and I are busy right now. Still, it\'s nice of you to think about Sarah\'s health. You must really care about her,\" Caitlyn says. \"Take it easy,\" she says, hugging me.";
 
 ch11IEnterHealthClub = "I take the elevator down to the Kenyon Imperial Hotel Health Club. I swipe my key through the card reader and head inside.";
 
 ch11ILookForTreadmill = "There are other people inside. I see an unused treadmill and decide to use it.";
 
-ch11IRunOnTreadmill = "I run on the treadmill, and I manage to keep a steady pace. Yeah, I\'m working off those 150 grams! I can even feel Sarah\'s average-strength muscles building up. This feels great! Now I know why it\'s good idea to exercise every week.";
+ch11IRunOnTreadmill = "I run on the treadmill, and I manage to keep a steady pace. Yeah, I\'m working off those 150 grams! I can even feel Sarah\'s average-strength muscles building up. This feels great! Now I know why it\'s a good idea to exercise every week.";
 
 ch11IGetOffTreadmill = "Once I feel that I\'m done, I stop the treadmill and get off.";
 
@@ -1284,7 +1296,7 @@ ch13WeWalkToBallroom = "We walk through the halls of the hotel on our way to the
 
 ch13IFeelLightheaded = "I start to feel lightheaded.";
 
-ch13ILeanOnWall = "I tell Caitlyn and Yuko that I need to stop and lean on the wall for a moment. I take more deep breaths.";
+ch13ILeanOnWall = "I tell Caitlyn and Yukio that I need to stop and lean on the wall for a moment. I take more deep breaths.";
 
 ch13AnxietyAttack = "Tentacles come out of my back. Now what\'s happening? Am I losing control of my powers? It must be the anxiety. Why am I so worried? Rebecca won\'t see me anyway, when I talk to her. She\'ll see Sarah.";
 
@@ -1332,7 +1344,7 @@ ch13PoliceReceivedComplaint = "\"Hello, Sarah Parson. We were looking for you. O
 
 ch13OhReallyIAsk = "\"Oh, really?\" I ask sarcastically.";
 
-ch13DidIDealWithScientists = "\"Miss Parson, I do believe that you interviewed a park ranger about a man who shapeshifted into a dark figure with glowing red eyes. And, the day before, you interviewed another police officer about that same dark figured with red eyes. I always thought you were the deceptive type, Miss Parson. Tell me, what do you know about this dark phantom? Did you make a deal with those mad scientists up in the mountains?\"";
+ch13DidIDealWithScientists = "\"Miss Parson, I do believe that you interviewed a park ranger about a man who shapeshifted into a dark figure with glowing red eyes. And, the day before, you interviewed another police officer about that same dark figure with red eyes. I always thought you were the deceptive type, Miss Parson. Tell me, what do you know about this dark phantom? Did you make a deal with those mad scientists up in the mountains?\"";
 
 ch13HotScoop = "The officer turns to Caitlyn and Yukio and looks back at me. \"Ah, that would explain it,\" he says. \"Maybe you are the phantom who attacked my coworker earlier this week. Why did you do it, Young Lady? Did you want even more fame? Was being a successful journalist not good enough for you? I bet you wanted a big story that would push you to the top! You wanted a hit so bad, you went to these mad scientists to make you one of these phantom-things so that you would be the talk of the town, so that you would be your own hot scoop.\"";
 
@@ -1768,7 +1780,7 @@ ch17CaitlynWantsToBeClose = "\"You do? Heheh,\" Caitlyn laughs awkwardly. \"You\
 
 ch17NoObjectionCaitlyn = "\"No objection here,\" I smile.";
 
-ch17CaitlynStaresAtMe = "\"Heh … that\'s good,\" Cailtyn nods. We look at each other.";
+ch17CaitlynStaresAtMe = "\"Heh … that\'s good,\" Caitlyn nods. We look at each other.";
 
 ch17WeKiss = "We kiss.";
 

@@ -129,7 +129,7 @@ class ch17Title: StoryPage {
     }
 }
 
-class ch17IOpenEyes: StoryPage {
+class ch17IOpenEyes: StoryPageVoicedKaden {
     
     let imageName = "Main-Avenue-Present"
     
@@ -150,7 +150,7 @@ class ch17IOpenEyes: StoryPage {
     }
 }
 
-class ch17DrKaden: StoryPage {
+class ch17DrKaden: StoryPageVoicedKaden {
     
     let imageName = "Main-Avenue-Present"
     
@@ -165,7 +165,7 @@ class ch17DrKaden: StoryPage {
     }
 }
 
-class ch17VaNalIsBehindMe: StoryPage {
+class ch17VaNalIsBehindMe: StoryPageVoicedKaden {
     
     let imageName = "Main-Avenue-Va'Nal-Talks"
     
@@ -180,7 +180,7 @@ class ch17VaNalIsBehindMe: StoryPage {
     }
 }
 
-class ch17VaNalHoldsHands: StoryPage {
+class ch17VaNalHoldsHands: StoryPageVoicedKaden {
     
     let imageName = "Main-Avenue-Va'Nal-Holds-Hands"
     
@@ -195,7 +195,7 @@ class ch17VaNalHoldsHands: StoryPage {
     }
 }
 
-class ch17VaNalAbsorbsMe: StoryPage {
+class ch17VaNalAbsorbsMe: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Possesses-Va'Nal"
     
@@ -210,7 +210,7 @@ class ch17VaNalAbsorbsMe: StoryPage {
     }
 }
 
-class ch17IMergedWithVaNal: StoryPage {
+class ch17IMergedWithVaNal: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Hands-Green"
     
@@ -225,7 +225,7 @@ class ch17IMergedWithVaNal: StoryPage {
     }
 }
 
-class ch17VaNalsSkinChanges: StoryPage {
+class ch17VaNalsSkinChanges: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Hands-Brown"
     
@@ -240,7 +240,7 @@ class ch17VaNalsSkinChanges: StoryPage {
     }
 }
 
-class ch17IWalkToShop: StoryPage {
+class ch17IWalkToShop: StoryPageVoicedKaden {
     
     let imageName = "Shop-Storefront"
     
@@ -264,7 +264,7 @@ class ch17IWalkToShop: StoryPage {
     }
 }
 
-class ch17IExamineVaNal: StoryPage {
+class ch17IExamineVaNal: StoryPageVoicedKaden {
     
     let imageName = "Shop-Reflection-Va'Nal-Kaden"
     
@@ -279,7 +279,7 @@ class ch17IExamineVaNal: StoryPage {
     }
 }
 
-class ch17HelicoptersFlyAbove: StoryPage {
+class ch17HelicoptersFlyAbove: StoryPageVoicedKaden {
     
     let imageName = "Helicopter-in-Sky"
     
@@ -294,7 +294,7 @@ class ch17HelicoptersFlyAbove: StoryPage {
     }
 }
 
-class ch17IClimbBuildingAsVaNal: StoryPage {
+class ch17IClimbBuildingAsVaNal: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Kaden-Climbs"
     
@@ -309,7 +309,7 @@ class ch17IClimbBuildingAsVaNal: StoryPage {
     }
 }
 
-class ch17HelicoptersFlyToCamp: StoryPage {
+class ch17HelicoptersFlyToCamp: StoryPageVoicedKaden {
     
     let imageName = "Airport-Evacuees"
     
@@ -324,7 +324,7 @@ class ch17HelicoptersFlyToCamp: StoryPage {
     }
 }
 
-class ch17OtherGodsBehindMe: StoryPage {
+class ch17OtherGodsBehindMe: StoryPageVoicedKaden {
     
     let imageName = "Gods-Meet-Va'Nal-Kaden"
     
@@ -339,7 +339,7 @@ class ch17OtherGodsBehindMe: StoryPage {
     }
 }
 
-class ch17SezjaHugsMe: StoryPage {
+class ch17SezjaHugsMe: StoryPageVoicedKaden {
     
     let imageName = "Sezja-Hugs-Va'Nal-Kaden"
     
@@ -354,7 +354,7 @@ class ch17SezjaHugsMe: StoryPage {
     }
 }
 
-class ch17IExamineMyselfAsPhantom: StoryPage {
+class ch17IExamineMyselfAsPhantom: StoryPageVoicedKaden {
     
     let imageName = "Shop-Reflection-Phantom"
     
@@ -369,7 +369,7 @@ class ch17IExamineMyselfAsPhantom: StoryPage {
     }
 }
 
-class ch17BekShtiiIsBehindMe: StoryPage {
+class ch17BekShtiiIsBehindMe: StoryPageVoicedKaden {
     
     let imageName = "Main-Avenue-Bek'Shtii-Talks"
     
@@ -384,7 +384,7 @@ class ch17BekShtiiIsBehindMe: StoryPage {
     }
 }
 
-class ch17BekShtiiGivesMeDagger: StoryPage {
+class ch17BekShtiiGivesMeDagger: StoryPageVoicedKaden {
     
     let imageName = "Bek'Shtii-Pulls-Dagger"
     
@@ -399,7 +399,7 @@ class ch17BekShtiiGivesMeDagger: StoryPage {
     }
 }
 
-class ch17IStabBekShtii: StoryPage {
+class ch17IStabBekShtii: StoryPageVoicedKaden {
     
     let imageName = "Bek'Shtii-Stabbed"
     
@@ -414,7 +414,7 @@ class ch17IStabBekShtii: StoryPage {
     }
 }
 
-class ch17IAbsorbBekShtii: StoryPage {
+class ch17IAbsorbBekShtii: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Absorbs-Bek'Shtii"
     
@@ -429,7 +429,7 @@ class ch17IAbsorbBekShtii: StoryPage {
     }
 }
 
-class ch17IShake: StoryPage {
+class ch17IShake: StoryPageVoicedKaden {
     
     let imageName = "Super-Kaden-Shakes-Greyscale"
     
@@ -444,7 +444,7 @@ class ch17IShake: StoryPage {
     }
 }
 
-class ch17IKnowWhatToDo: StoryPage {
+class ch17IKnowWhatToDo: StoryPageVoicedKaden {
     
     let imageName = "Super-Kaden-Shakes-Color"
     
@@ -459,7 +459,7 @@ class ch17IKnowWhatToDo: StoryPage {
     }
 }
 
-class ch17IShootTentacles: StoryPage {
+class ch17IShootTentacles: StoryPageVoicedKaden {
     
     let imageName = "Super-Kaden-Unleashes-Tentacles"
     
@@ -474,7 +474,7 @@ class ch17IShootTentacles: StoryPage {
     }
 }
 
-class ch17TheyPossessCitizens: StoryPage {
+class ch17TheyPossessCitizens: StoryPageVoicedKaden {
     
     let imageName = "Airport-Evacuees-Possessed"
     
@@ -489,7 +489,7 @@ class ch17TheyPossessCitizens: StoryPage {
     }
 }
 
-class ch17WeMarchIntoCity: StoryPage {
+class ch17WeMarchIntoCity: StoryPageVoicedKaden {
     
     let imageName = "Main-Avenue-Crowd"
     
@@ -504,7 +504,7 @@ class ch17WeMarchIntoCity: StoryPage {
     }
 }
 
-class ch17WeExtinguishFire: StoryPage {
+class ch17WeExtinguishFire: StoryPageVoicedKaden {
     
     let imageName = "Crowd-Extinguishes-Fire"
     
@@ -519,7 +519,7 @@ class ch17WeExtinguishFire: StoryPage {
     }
 }
 
-class ch17WeDrainFlood: StoryPage {
+class ch17WeDrainFlood: StoryPageVoicedKaden {
     
     let imageName = "Crowd-Drains-Water"
     
@@ -534,7 +534,7 @@ class ch17WeDrainFlood: StoryPage {
     }
 }
 
-class ch17WeRepairBuildings: StoryPage {
+class ch17WeRepairBuildings: StoryPageVoicedKaden {
     
     let imageName = "Crowd-Repairs-Building"
     
@@ -549,7 +549,7 @@ class ch17WeRepairBuildings: StoryPage {
     }
 }
 
-class ch17IExamineMyRealSelf: StoryPage {
+class ch17IExamineMyRealSelf: StoryPageVoicedKaden {
     
     let imageName = "Shop-Reflection-Kaden-Hooded"
     
@@ -564,7 +564,7 @@ class ch17IExamineMyRealSelf: StoryPage {
     }
 }
 
-class ch17IGrabMyHood: StoryPage {
+class ch17IGrabMyHood: StoryPageVoicedKaden {
     
     let imageName = "Dr-Kaden-Pulls-Hood"
     
@@ -579,7 +579,7 @@ class ch17IGrabMyHood: StoryPage {
     }
 }
 
-class ch17ThisIsRealMe: StoryPage {
+class ch17ThisIsRealMe: StoryPageVoicedKaden {
     
     let imageName = "Shop-Reflection-Kaden-Hoodless"
     
@@ -594,7 +594,7 @@ class ch17ThisIsRealMe: StoryPage {
     }
 }
 
-class ch17IClimbToSeeHotel: StoryPage {
+class ch17IClimbToSeeHotel: StoryPageVoicedKaden {
     
     let imageName = "Hoodless-Kaden-Climbs"
     
@@ -609,7 +609,7 @@ class ch17IClimbToSeeHotel: StoryPage {
     }
 }
 
-class ch17IGoToHotel: StoryPage {
+class ch17IGoToHotel: StoryPageVoicedKaden {
     
     let imageName = "Flooded-Hotel-Entrance"
     
@@ -624,7 +624,7 @@ class ch17IGoToHotel: StoryPage {
     }
 }
 
-class ch17HotelFloods: StoryPage {
+class ch17HotelFloods: StoryPageVoicedKaden {
     
     let imageName = "Flooded-Hotel-Entrance-Evacuated"
     
@@ -645,7 +645,7 @@ class ch17HotelFloods: StoryPage {
     }
 }
 
-class ch17CaitlynKneels: StoryPage {
+class ch17CaitlynKneels: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Falls-in-Flood"
     
@@ -660,7 +660,7 @@ class ch17CaitlynKneels: StoryPage {
     }
 }
 
-class ch17IGoToCaitlyn: StoryPage {
+class ch17IGoToCaitlyn: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Falls-in-Flood-with-Kaden"
     
@@ -675,7 +675,7 @@ class ch17IGoToCaitlyn: StoryPage {
     }
 }
 
-class ch17TideApproachesCaitlyn: StoryPage {
+class ch17TideApproachesCaitlyn: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Falls-in-Flood-with-Kaden-and-Yukio"
     
@@ -690,7 +690,7 @@ class ch17TideApproachesCaitlyn: StoryPage {
     }
 }
 
-class ch17ISaveCaitlyn: StoryPage {
+class ch17ISaveCaitlyn: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Falls-in-Flood-with-Kaden-Yukio-and-Tentacles"
     
@@ -705,7 +705,7 @@ class ch17ISaveCaitlyn: StoryPage {
     }
 }
 
-class ch17CaitlynAsksAboutFlood: StoryPage {
+class ch17CaitlynAsksAboutFlood: StoryPageVoicedKaden {
     
     let imageName = "Hoodless-Kaden-Carries-Caitlyn-and-Yukio"
     
@@ -720,7 +720,7 @@ class ch17CaitlynAsksAboutFlood: StoryPage {
     }
 }
 
-class ch17SarahKneels: StoryPage {
+class ch17SarahKneels: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Falls-in-Flood"
     
@@ -735,7 +735,7 @@ class ch17SarahKneels: StoryPage {
     }
 }
 
-class ch17IGoToSarah: StoryPage {
+class ch17IGoToSarah: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Falls-in-Flood-with-Kaden"
     
@@ -750,7 +750,7 @@ class ch17IGoToSarah: StoryPage {
     }
 }
 
-class ch17ISaveSarah: StoryPage {
+class ch17ISaveSarah: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Falls-in-Flood-with-Tentacles"
     
@@ -765,7 +765,7 @@ class ch17ISaveSarah: StoryPage {
     }
 }
 
-class ch17SarahAsksAboutMe: StoryPage {
+class ch17SarahAsksAboutMe: StoryPageVoicedKaden {
     
     let imageName = "Hoodless-Kaden-Carries-Sarah"
     
@@ -780,7 +780,7 @@ class ch17SarahAsksAboutMe: StoryPage {
     }
 }
 
-class ch17WeReachCamp: StoryPage {
+class ch17WeReachCamp: StoryPageVoicedKaden {
     
     let imageName = "Airport-Evacuees"
     
@@ -801,7 +801,7 @@ class ch17WeReachCamp: StoryPage {
     }
 }
 
-class ch17CaitlynPullsMe: StoryPage {
+class ch17CaitlynPullsMe: StoryPageVoicedKaden {
     
     let imageName = "Airport-Kaden-Caitlyn-and-Yukio"
     
@@ -816,7 +816,7 @@ class ch17CaitlynPullsMe: StoryPage {
     }
 }
 
-class ch17WhyDidCaitlynPullMe: StoryPage {
+class ch17WhyDidCaitlynPullMe: StoryPageVoicedKaden {
     
     let imageName = "Airport-Kaden-and-Caitlyn"
     
@@ -831,7 +831,7 @@ class ch17WhyDidCaitlynPullMe: StoryPage {
     }
 }
 
-class ch17WeKiss: StoryPage {
+class ch17WeKiss: StoryPageVoicedKaden {
     
     let imageName = "Airport-Kaden-and-Caitlyn-Kiss"
     
@@ -846,7 +846,7 @@ class ch17WeKiss: StoryPage {
     }
 }
 
-class ch17IPullSarah: StoryPage {
+class ch17IPullSarah: StoryPageVoicedKaden {
     
     let imageName = "Airport-Kaden-and-Sarah"
     

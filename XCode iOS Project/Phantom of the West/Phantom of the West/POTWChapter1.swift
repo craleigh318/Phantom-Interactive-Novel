@@ -58,7 +58,7 @@ class ch1Title: StoryPage {
     }
 }
 
-class ch1IAmDrKaden: StoryPage {
+class ch1IAmDrKaden: StoryPageVoicedKaden {
     
     let imageName = "I-am-Dr-Kaden"
     
@@ -73,7 +73,7 @@ class ch1IAmDrKaden: StoryPage {
     }
 }
 
-class ch1ThisIsNewFerando: StoryPage {
+class ch1ThisIsNewFerando: StoryPageVoicedKaden {
     
     let imageName = "Cityscape-from-Window"
     
@@ -88,7 +88,7 @@ class ch1ThisIsNewFerando: StoryPage {
     }
 }
 
-class ch1IDrinkElixir: StoryPage {
+class ch1IDrinkElixir: StoryPageVoicedKaden {
     
     let imageName = "Dr-Kaden-Drinks-Elixir"
     
@@ -103,7 +103,7 @@ class ch1IDrinkElixir: StoryPage {
     }
 }
 
-class ch1ILeaveHotel: StoryPage {
+class ch1ILeaveHotel: StoryPageVoicedKaden {
     
     let imageName = "Dr-Kaden-Walking-among-Citizens"
     
@@ -118,7 +118,7 @@ class ch1ILeaveHotel: StoryPage {
     }
 }
 
-class ch1IGoToAlley: StoryPage {
+class ch1IGoToAlley: StoryPageVoicedKaden {
     
     let imageName = "Dr-Kaden-Ill"
     
@@ -133,7 +133,7 @@ class ch1IGoToAlley: StoryPage {
     }
 }
 
-class ch1OfficerSeesMe: StoryPage {
+class ch1OfficerSeesMe: StoryPageVoicedKaden {
     
     let imageName = "Officer-Notices-Dr-Kaden"
     
@@ -148,7 +148,7 @@ class ch1OfficerSeesMe: StoryPage {
     }
 }
 
-class ch1MyFaceDisappears: StoryPage {
+class ch1MyFaceDisappears: StoryPageVoicedKaden {
     
     let imageName = "Phantom-Reveal"
     
@@ -163,7 +163,7 @@ class ch1MyFaceDisappears: StoryPage {
     }
 }
 
-class ch1IOpenMyEyes: StoryPage {
+class ch1IOpenMyEyes: StoryPageVoicedKaden {
     
     let imageName = "Phantom-Reveal-with-Eyes"
     
@@ -178,7 +178,7 @@ class ch1IOpenMyEyes: StoryPage {
     }
 }
 
-class ch1IPossessOfficer: StoryPage {
+class ch1IPossessOfficer: StoryPageVoicedKaden {
     
     let imageName = "Possess-Police-Officer"
     
@@ -193,7 +193,7 @@ class ch1IPossessOfficer: StoryPage {
     }
 }
 
-class ch1ILookAtMyHands: StoryPage {
+class ch1ILookAtMyHands: StoryPageVoicedKaden {
     
     let imageName = "Officer-Hands"
     
@@ -208,7 +208,7 @@ class ch1ILookAtMyHands: StoryPage {
     }
 }
 
-class ch1IGoToOfficersHome: StoryPage {
+class ch1IGoToOfficersHome: StoryPageVoicedKaden {
     
     let imageName = "Drive-to-Officer-Home"
     
@@ -223,7 +223,7 @@ class ch1IGoToOfficersHome: StoryPage {
     }
 }
 
-class ch1ISleep: StoryPage {
+class ch1ISleep: StoryPageVoicedKaden {
     
     let imageName = "Officer-on-Bed"
     

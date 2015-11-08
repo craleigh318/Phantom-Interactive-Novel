@@ -46,6 +46,8 @@ class POTWGameState: NSObject, NSCoding, PPageTurner {
         let chapterID = stateID / 1000
         var pageTurner: PPageTurner?
         switch chapterID {
+        case 0:
+            pageTurner = Chapter0()
         case 1:
             pageTurner = Chapter1()
         case 2:

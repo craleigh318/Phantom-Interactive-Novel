@@ -67,7 +67,7 @@ class ch2TimeAgo: StoryPage {
     }
 }
 
-class ch2ThereWereFourGods: StoryPage {
+class ch2ThereWereFourGods: StoryPageVoicedKaden {
     
     let imageName = "Professor-Lecture"
     
@@ -82,7 +82,7 @@ class ch2ThereWereFourGods: StoryPage {
     }
 }
 
-class ch2ThereWasSezja: StoryPage {
+class ch2ThereWasSezja: StoryPageVoicedKaden {
     
     let imageName = "Sezja-Intro"
     
@@ -97,7 +97,7 @@ class ch2ThereWasSezja: StoryPage {
     }
 }
 
-class ch2ThereWasBaqer: StoryPage {
+class ch2ThereWasBaqer: StoryPageVoicedKaden {
     
     let imageName = "Baqer-Intro"
     
@@ -112,7 +112,7 @@ class ch2ThereWasBaqer: StoryPage {
     }
 }
 
-class ch2ThereWasVaNal: StoryPage {
+class ch2ThereWasVaNal: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Intro"
     
@@ -127,7 +127,7 @@ class ch2ThereWasVaNal: StoryPage {
     }
 }
 
-class ch2ThereWasBekShtii: StoryPage {
+class ch2ThereWasBekShtii: StoryPageVoicedKaden {
     
     let imageName = "Bek'Shtii-Intro"
     
@@ -142,7 +142,7 @@ class ch2ThereWasBekShtii: StoryPage {
     }
 }
 
-class ch2LectureEnded: StoryPage {
+class ch2LectureEnded: StoryPageVoicedKaden {
     
     let imageName = "Kaden-in-Lecture"
     
@@ -157,7 +157,7 @@ class ch2LectureEnded: StoryPage {
     }
 }
 
-class ch2IWentToProfArvin: StoryPage {
+class ch2IWentToProfArvin: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Walks-in-School-Hall"
     
@@ -172,7 +172,7 @@ class ch2IWentToProfArvin: StoryPage {
     }
 }
 
-class ch2IGreetProf: StoryPage {
+class ch2IGreetProf: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Prof"
     

@@ -138,7 +138,7 @@ class ch3Title: StoryPage {
     }
 }
 
-class ch3IAwaken: StoryPage {
+class ch3IAwaken: StoryPageVoicedKaden {
     
     let imageName = "Officer-Awakens"
     
@@ -153,7 +153,7 @@ class ch3IAwaken: StoryPage {
     }
 }
 
-class ch3SezjaGreetsMe: StoryPage {
+class ch3SezjaGreetsMe: StoryPageVoicedKaden {
     
     let imageName = "Officer-Lies-with-Sezja"
     
@@ -183,7 +183,7 @@ class ch3SezjaGreetsMePause: StoryPage {
     }
 }
 
-class ch3SezjaStartlesMe: StoryPage {
+class ch3SezjaStartlesMe: StoryPageVoicedKaden {
     
     let imageName = "Officer-Falls-from-Bed"
     
@@ -198,7 +198,7 @@ class ch3SezjaStartlesMe: StoryPage {
     }
 }
 
-class ch3SezjaLeaves: StoryPage {
+class ch3SezjaLeaves: StoryPageVoicedKaden {
     
     let imageName = "Officer-Leans-over-Bed"
     
@@ -213,7 +213,7 @@ class ch3SezjaLeaves: StoryPage {
     }
 }
 
-class ch3ICallCaitlyn: StoryPage {
+class ch3ICallCaitlyn: StoryPageVoicedKaden {
     
     let imageName = "Officer-on-Phone"
     
@@ -228,7 +228,7 @@ class ch3ICallCaitlyn: StoryPage {
     }
 }
 
-class ch3CaitlynComes: StoryPage {
+class ch3CaitlynComes: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Drives-to-Officer"
     
@@ -243,7 +243,7 @@ class ch3CaitlynComes: StoryPage {
     }
 }
 
-class ch3CaitlynAsksMeToDisguiseAsInfant: StoryPage {
+class ch3CaitlynAsksMeToDisguiseAsInfant: StoryPageVoicedKaden {
     
     let imageName = "Towel-in-Car"
     
@@ -259,7 +259,7 @@ class ch3CaitlynAsksMeToDisguiseAsInfant: StoryPage {
 }
 
 
-class ch3IDiguiseAsInfant: StoryPage {
+class ch3IDiguiseAsInfant: StoryPageVoicedKaden {
     
     let imageName = "Towel-in-Car"
     
@@ -277,7 +277,7 @@ class ch3IDiguiseAsInfant: StoryPage {
     }
 }
 
-class ch3IRefuseToDiguiseAsInfant: StoryPage {
+class ch3IRefuseToDiguiseAsInfant: StoryPageVoicedKaden {
     
     let imageName = "Towel-in-Car"
     
@@ -295,7 +295,7 @@ class ch3IRefuseToDiguiseAsInfant: StoryPage {
     }
 }
 
-class ch3CaitlynBringsMeToHotel: StoryPage {
+class ch3CaitlynBringsMeToHotel: StoryPageVoicedKaden {
     
     let imageName = "Infant-in-Car"
     
@@ -310,7 +310,7 @@ class ch3CaitlynBringsMeToHotel: StoryPage {
     }
 }
 
-class ch3IEnterHotelRoomFromBlanket: StoryPage {
+class ch3IEnterHotelRoomFromBlanket: StoryPageVoicedKaden {
     
     let imageName = "Infant-Crawls-Under-Door"
     
@@ -325,7 +325,7 @@ class ch3IEnterHotelRoomFromBlanket: StoryPage {
     }
 }
 
-class ch3CaitlynChecksOut: StoryPage {
+class ch3CaitlynChecksOut: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-with-Infant-Talks-to-Receptionist"
     
@@ -340,7 +340,7 @@ class ch3CaitlynChecksOut: StoryPage {
     }
 }
 
-class ch3CaitlynTriesToShowReceptionistMe: StoryPage {
+class ch3CaitlynTriesToShowReceptionistMe: StoryPageVoicedKaden {
     
     let imageName = "Infant-Shown-to-Receptionist"
     
@@ -355,7 +355,7 @@ class ch3CaitlynTriesToShowReceptionistMe: StoryPage {
     }
 }
 
-class ch3CaitlynCannotBreastFeed: StoryPage {
+class ch3CaitlynCannotBreastFeed: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Drives-on-Highway"
     
@@ -370,7 +370,7 @@ class ch3CaitlynCannotBreastFeed: StoryPage {
     }
 }
 
-class ch3CaitlynEntersArcticon: StoryPage {
+class ch3CaitlynEntersArcticon: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Drives-to-Arcticon"
     
@@ -385,7 +385,7 @@ class ch3CaitlynEntersArcticon: StoryPage {
     }
 }
 
-class ch3ILeaveBlanket: StoryPage {
+class ch3ILeaveBlanket: StoryPageVoicedKaden {
     
     let imageName = "Kaden-First-Arrival-to-Arcticon"
     
@@ -400,7 +400,7 @@ class ch3ILeaveBlanket: StoryPage {
     }
 }
 
-class ch3IWillOweCaitlynAFavor: StoryPage {
+class ch3IWillOweCaitlynAFavor: StoryPageVoicedKaden {
     
     let imageName = "Towel-in-Car"
     
@@ -415,7 +415,7 @@ class ch3IWillOweCaitlynAFavor: StoryPage {
     }
 }
 
-class ch3IGoToHotel: StoryPage {
+class ch3IGoToHotel: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Possessed"
     
@@ -430,7 +430,7 @@ class ch3IGoToHotel: StoryPage {
     }
 }
 
-class ch3IEnterHotelRoomFromCaitlyn: StoryPage {
+class ch3IEnterHotelRoomFromCaitlyn: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Crawls-Under-Door"
     
@@ -445,7 +445,7 @@ class ch3IEnterHotelRoomFromCaitlyn: StoryPage {
     }
 }
 
-class ch3ICheckOut: StoryPage {
+class ch3ICheckOut: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Talks-to-Receptionist"
     
@@ -460,7 +460,7 @@ class ch3ICheckOut: StoryPage {
     }
 }
 
-class ch3IInsultReceptionist: StoryPage {
+class ch3IInsultReceptionist: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Tosses-Key"
     
@@ -475,7 +475,7 @@ class ch3IInsultReceptionist: StoryPage {
     }
 }
 
-class ch3IDriveOnHighway: StoryPage {
+class ch3IDriveOnHighway: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Drives-on-Highway"
     
@@ -490,7 +490,7 @@ class ch3IDriveOnHighway: StoryPage {
     }
 }
 
-class ch3IEnterArcticon: StoryPage {
+class ch3IEnterArcticon: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Drives-to-Arcticon"
     
@@ -505,7 +505,7 @@ class ch3IEnterArcticon: StoryPage {
     }
 }
 
-class ch3IDispossessCaitlyn: StoryPage {
+class ch3IDispossessCaitlyn: StoryPageVoicedKaden {
     
     let imageName = "Kaden-First-Arrival-to-Arcticon"
     
@@ -520,7 +520,7 @@ class ch3IDispossessCaitlyn: StoryPage {
     }
 }
 
-class ch3IConjureClothes: StoryPage {
+class ch3IConjureClothes: StoryPageVoicedKaden {
     
     let imageName = "Kaden-First-Arrival-to-Arcticon"
     
@@ -535,7 +535,7 @@ class ch3IConjureClothes: StoryPage {
     }
 }
 
-class ch3YukioGreetsMe: StoryPage {
+class ch3YukioGreetsMe: StoryPageVoicedKaden {
     
     let imageName = "Yukio-Intro"
     
@@ -550,7 +550,7 @@ class ch3YukioGreetsMe: StoryPage {
     }
 }
 
-class ch3IGoHome: StoryPage {
+class ch3IGoHome: StoryPageVoicedKaden {
     
     let imageName = "Kaden-on-Tram"
     
@@ -565,7 +565,7 @@ class ch3IGoHome: StoryPage {
     }
 }
 
-class ch3IRelax: StoryPage {
+class ch3IRelax: StoryPageVoicedKaden {
     
     let imageName = "Kaden-on-Bed"
     
@@ -580,7 +580,7 @@ class ch3IRelax: StoryPage {
     }
 }
 
-class ch3BekShtiiGreetsMe: StoryPage {
+class ch3BekShtiiGreetsMe: StoryPageVoicedKaden {
     
     let imageName = "Bek'Shtii-First-Meets-Kaden"
     
@@ -595,7 +595,7 @@ class ch3BekShtiiGreetsMe: StoryPage {
     }
 }
 
-class ch3BekShtiiLeaves: StoryPage {
+class ch3BekShtiiLeaves: StoryPageVoicedKaden {
     
     let imageName = "Kaden-on-Bed"
     
@@ -610,7 +610,7 @@ class ch3BekShtiiLeaves: StoryPage {
     }
 }
 
-class ch3IVisitCaitlyn: StoryPage {
+class ch3IVisitCaitlyn: StoryPageVoicedKaden {
     
     let imageName = "Kaden-on-Bed"
     
@@ -625,7 +625,7 @@ class ch3IVisitCaitlyn: StoryPage {
     }
 }
 
-class ch3IVisitYukio: StoryPage {
+class ch3IVisitYukio: StoryPageVoicedKaden {
     
     let imageName = "Kaden-on-Bed"
     
@@ -643,7 +643,7 @@ class ch3IVisitYukio: StoryPage {
     }
 }
 
-class ch3ISleep: StoryPage {
+class ch3ISleep: StoryPageVoicedKaden {
     
     let imageName = "Kaden-on-Bed"
     
@@ -658,7 +658,7 @@ class ch3ISleep: StoryPage {
     }
 }
 
-class ch3CaitlynPlaysWithFoxtrot: StoryPage {
+class ch3CaitlynPlaysWithFoxtrot: StoryPageVoicedKaden {
     
     let imageName = "Foxtrot-Intro"
     
@@ -673,7 +673,7 @@ class ch3CaitlynPlaysWithFoxtrot: StoryPage {
     }
 }
 
-class ch3IAmAllRight: StoryPage {
+class ch3IAmAllRight: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn"
     
@@ -696,7 +696,7 @@ class ch3IAmAllRight: StoryPage {
     }
 }
 
-class ch3CaitlynAsksIfIWasEmbarrassed: StoryPage {
+class ch3CaitlynAsksIfIWasEmbarrassed: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn"
     
@@ -711,7 +711,7 @@ class ch3CaitlynAsksIfIWasEmbarrassed: StoryPage {
     }
 }
 
-class ch3CaitlynWouldBeGoodMother: StoryPage {
+class ch3CaitlynWouldBeGoodMother: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn"
     
@@ -729,7 +729,7 @@ class ch3CaitlynWouldBeGoodMother: StoryPage {
     }
 }
 
-class ch3CaitlynMightBeGoodMother: StoryPage {
+class ch3CaitlynMightBeGoodMother: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn"
     
@@ -747,7 +747,7 @@ class ch3CaitlynMightBeGoodMother: StoryPage {
     }
 }
 
-class ch3CaitlynThanksMe: StoryPage {
+class ch3CaitlynThanksMe: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn"
     
@@ -762,7 +762,7 @@ class ch3CaitlynThanksMe: StoryPage {
     }
 }
 
-class ch3CaitlynAdmitsGoodIdea: StoryPage {
+class ch3CaitlynAdmitsGoodIdea: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn"
     
@@ -777,7 +777,7 @@ class ch3CaitlynAdmitsGoodIdea: StoryPage {
     }
 }
 
-class ch3CaitlynJustifiesMotherhood: StoryPage {
+class ch3CaitlynJustifiesMotherhood: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn"
     
@@ -792,7 +792,7 @@ class ch3CaitlynJustifiesMotherhood: StoryPage {
     }
 }
 
-class ch3HowDidCaitlynFeelPossession: StoryPage {
+class ch3HowDidCaitlynFeelPossession: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn"
     
@@ -807,7 +807,7 @@ class ch3HowDidCaitlynFeelPossession: StoryPage {
     }
 }
 
-class ch3IEnjoyedPossession: StoryPage {
+class ch3IEnjoyedPossession: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn"
     
@@ -825,7 +825,7 @@ class ch3IEnjoyedPossession: StoryPage {
     }
 }
 
-class ch3PossessionFeltWeird: StoryPage {
+class ch3PossessionFeltWeird: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn"
     
@@ -843,7 +843,7 @@ class ch3PossessionFeltWeird: StoryPage {
     }
 }
 
-class ch3CaitlynLikesBeingClose: StoryPage {
+class ch3CaitlynLikesBeingClose: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn"
     
@@ -858,7 +858,7 @@ class ch3CaitlynLikesBeingClose: StoryPage {
     }
 }
 
-class ch3CaitlynFeltWeird: StoryPage {
+class ch3CaitlynFeltWeird: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn"
     
@@ -873,7 +873,7 @@ class ch3CaitlynFeltWeird: StoryPage {
     }
 }
 
-class ch3WasCaitlynsQuestionWeird: StoryPage {
+class ch3WasCaitlynsQuestionWeird: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn"
     
@@ -888,7 +888,7 @@ class ch3WasCaitlynsQuestionWeird: StoryPage {
     }
 }
 
-class ch3ILikeTalkingWithCaitlyn: StoryPage {
+class ch3ILikeTalkingWithCaitlyn: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Caitlyn"
     
@@ -903,7 +903,7 @@ class ch3ILikeTalkingWithCaitlyn: StoryPage {
     }
 }
 
-class ch3YukioWorks: StoryPage {
+class ch3YukioWorks: StoryPageVoicedKaden {
     
     let imageName = "Kaden-Talks-to-Yukio"
     

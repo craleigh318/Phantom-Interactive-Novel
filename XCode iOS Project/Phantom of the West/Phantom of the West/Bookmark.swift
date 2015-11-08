@@ -99,7 +99,7 @@ class Bookmark: PStoryObserver {
         if numPages > 1 {
             let currentChoiceNumber = index + 1
             let choiceOf = StringLocalizer.getGUIString("choiceOf")
-            let header: String! =  String(format: "\(choiceOf):\n\n", arguments: [currentChoiceNumber, numPages])
+            let header: String! = String(format: "\(choiceOf):\n\n", arguments: [currentChoiceNumber, numPages])
             text = header + text
         }
         unwrappedStoryView.text = text

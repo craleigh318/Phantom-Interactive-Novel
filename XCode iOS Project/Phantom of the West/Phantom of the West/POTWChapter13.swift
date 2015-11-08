@@ -76,7 +76,7 @@ class ch13Title: StoryPage {
     }
 }
 
-class ch13IAwaken: StoryPage {
+class ch13IAwaken: StoryPageVoicedKaden {
     
     let imageName = "Formal-Sarah-on-Bed"
     
@@ -91,7 +91,7 @@ class ch13IAwaken: StoryPage {
     }
 }
 
-class ch13IPace: StoryPage {
+class ch13IPace: StoryPageVoicedKaden {
     
     let imageName = "Formal-Sarah-Daydreams"
     
@@ -106,7 +106,7 @@ class ch13IPace: StoryPage {
     }
 }
 
-class ch13IConcentrate: StoryPage {
+class ch13IConcentrate: StoryPageVoicedKaden {
     
     let imageName = "Formal-Sarah-Headache"
     
@@ -121,7 +121,7 @@ class ch13IConcentrate: StoryPage {
     }
 }
 
-class ch13RebeccaAppears: StoryPage {
+class ch13RebeccaAppears: StoryPageVoicedKaden {
     
     let imageName = "Rebecca-Hallucination-Talks"
     
@@ -136,7 +136,7 @@ class ch13RebeccaAppears: StoryPage {
     }
 }
 
-class ch13RebeccaVanishes: StoryPage {
+class ch13RebeccaVanishes: StoryPageVoicedKaden {
     
     let imageName = "Rebecca-Hallucination-Vanishes"
     
@@ -151,7 +151,7 @@ class ch13RebeccaVanishes: StoryPage {
     }
 }
 
-class ch13IWashMyFace: StoryPage {
+class ch13IWashMyFace: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Splashes-Face"
     
@@ -166,7 +166,7 @@ class ch13IWashMyFace: StoryPage {
     }
 }
 
-class ch13IGetCaitlynAndYukio: StoryPage {
+class ch13IGetCaitlynAndYukio: StoryPageVoicedKaden {
     
     let imageName = "Formal-Sarah-Knock-Door"
     
@@ -181,7 +181,7 @@ class ch13IGetCaitlynAndYukio: StoryPage {
     }
 }
 
-class ch13WeWalkToBallroom: StoryPage {
+class ch13WeWalkToBallroom: StoryPageVoicedKaden {
     
     let imageName = "Formal-Sarah-Walkway"
     
@@ -196,7 +196,7 @@ class ch13WeWalkToBallroom: StoryPage {
     }
 }
 
-class ch13ILeanOnWall: StoryPage {
+class ch13ILeanOnWall: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Leans-Wall"
     
@@ -211,7 +211,7 @@ class ch13ILeanOnWall: StoryPage {
     }
 }
 
-class ch13AnxietyAttack: StoryPage {
+class ch13AnxietyAttack: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Leans-Wall-with-Tentacles"
     
@@ -226,7 +226,7 @@ class ch13AnxietyAttack: StoryPage {
     }
 }
 
-class ch13IGoToBalcony: StoryPage {
+class ch13IGoToBalcony: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Balcony-Alone"
     
@@ -241,7 +241,7 @@ class ch13IGoToBalcony: StoryPage {
     }
 }
 
-class ch13IWasNeverTheProblem: StoryPage {
+class ch13IWasNeverTheProblem: StoryPageVoicedKaden {
     
     let imageName = "Baqer-Balcony-Behind"
     
@@ -256,7 +256,7 @@ class ch13IWasNeverTheProblem: StoryPage {
     }
 }
 
-class ch13WeKnowRealProblem: StoryPage {
+class ch13WeKnowRealProblem: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Balcony-with-Baqer"
     
@@ -271,7 +271,7 @@ class ch13WeKnowRealProblem: StoryPage {
     }
 }
 
-class ch13BaqerIsGloomy: StoryPage {
+class ch13BaqerIsGloomy: StoryPageVoicedKaden {
     
     let imageName = "Balcony-Sezja"
     
@@ -286,7 +286,7 @@ class ch13BaqerIsGloomy: StoryPage {
     }
 }
 
-class ch13ICanBeAnyoneIWant: StoryPage {
+class ch13ICanBeAnyoneIWant: StoryPageVoicedKaden {
     
     let imageName = "Balcony-Sezja-Sees-Sarah"
     
@@ -301,7 +301,7 @@ class ch13ICanBeAnyoneIWant: StoryPage {
     }
 }
 
-class ch13GodsGaveInput: StoryPage {
+class ch13GodsGaveInput: StoryPageVoicedKaden {
     
     let imageName = "Balcony-Bek'Shtii"
     
@@ -316,7 +316,7 @@ class ch13GodsGaveInput: StoryPage {
     }
 }
 
-class ch13IEncounterOfficer: StoryPage {
+class ch13IEncounterOfficer: StoryPageVoicedKaden {
     
     let imageName = "Officer-Talks-to-Sarah"
     
@@ -331,7 +331,7 @@ class ch13IEncounterOfficer: StoryPage {
     }
 }
 
-class ch13OfficerIsAboutToShockMe: StoryPage {
+class ch13OfficerIsAboutToShockMe: StoryPageVoicedKaden {
     
     let imageName = "Officer-Gun-to-Sarah"
     
@@ -346,7 +346,7 @@ class ch13OfficerIsAboutToShockMe: StoryPage {
     }
 }
 
-class ch13ICounterOfficer: StoryPage {
+class ch13ICounterOfficer: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Disarms-Officer"
     
@@ -361,7 +361,7 @@ class ch13ICounterOfficer: StoryPage {
     }
 }
 
-class ch13IAmVacuumed: StoryPage {
+class ch13IAmVacuumed: StoryPageVoicedKaden {
     
     let imageName = "Ghost-Hunter"
     
@@ -376,7 +376,7 @@ class ch13IAmVacuumed: StoryPage {
     }
 }
 
-class ch13ItIsDark: StoryPage {
+class ch13ItIsDark: StoryPageVoicedKaden {
     
     let imageName = "Black"
     

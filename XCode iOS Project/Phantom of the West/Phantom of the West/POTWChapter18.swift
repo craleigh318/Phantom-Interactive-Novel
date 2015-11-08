@@ -128,7 +128,7 @@ class ch18pTimeLater: StoryPage {
     }
 }
 
-class ch18pStadium: StoryPage {
+class ch18pStadium: StoryPageVoicedKaden {
     
     let imageName = "Phantom-Epilogue-Stadium-Entrance"
     
@@ -143,7 +143,7 @@ class ch18pStadium: StoryPage {
     }
 }
 
-class ch18pIEnterStage: StoryPage {
+class ch18pIEnterStage: StoryPageVoicedKaden {
     
     let imageName = "Phantom-Epilogue-Stadium-Field"
     
@@ -158,7 +158,7 @@ class ch18pIEnterStage: StoryPage {
     }
 }
 
-class ch18pCountlessPhantoms: StoryPage {
+class ch18pCountlessPhantoms: StoryPageVoicedKaden {
     
     let imageName = "Phantom-Epilogue-Phantom-Crowd"
     
@@ -173,7 +173,7 @@ class ch18pCountlessPhantoms: StoryPage {
     }
 }
 
-class ch18pIGreetPhantoms: StoryPage {
+class ch18pIGreetPhantoms: StoryPageVoicedKaden {
     
     let imageName = "Phantom-Epilogue-Stadium-Field"
     
@@ -188,7 +188,7 @@ class ch18pIGreetPhantoms: StoryPage {
     }
 }
 
-class ch18pWeWillRule: StoryPage {
+class ch18pWeWillRule: StoryPageVoicedKaden {
     
     let imageName = "Phantom-Epilogue-Stadium-Field-Raised-Fist"
     
@@ -218,7 +218,7 @@ class ch18cTimeLater: StoryPage {
     }
 }
 
-class ch18cRaylenPark: StoryPage {
+class ch18cRaylenPark: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Epilogue-Park"
     
@@ -239,7 +239,7 @@ class ch18cRaylenPark: StoryPage {
     }
 }
 
-class ch18cFoxtrotStoppedHiss: StoryPage {
+class ch18cFoxtrotStoppedHiss: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Epilogue-Park"
     
@@ -254,7 +254,7 @@ class ch18cFoxtrotStoppedHiss: StoryPage {
     }
 }
 
-class ch18cCaitlynWantsStrawberry: StoryPage {
+class ch18cCaitlynWantsStrawberry: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Epilogue-Ice-Cream-Vendor"
     
@@ -269,7 +269,7 @@ class ch18cCaitlynWantsStrawberry: StoryPage {
     }
 }
 
-class ch18cWeEat: StoryPage {
+class ch18cWeEat: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Epilogue-Eating-Ice-Cream"
     
@@ -284,7 +284,7 @@ class ch18cWeEat: StoryPage {
     }
 }
 
-class ch18cWeGoToFlat: StoryPage {
+class ch18cWeGoToFlat: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Epilogue-In-Car"
     
@@ -299,7 +299,7 @@ class ch18cWeGoToFlat: StoryPage {
     }
 }
 
-class ch18cWeCuddle: StoryPage {
+class ch18cWeCuddle: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Epilogue-Fireplace"
     
@@ -314,7 +314,7 @@ class ch18cWeCuddle: StoryPage {
     }
 }
 
-class ch18cIExaminePhoto: StoryPage {
+class ch18cIExaminePhoto: StoryPageVoicedKaden {
     
     let imageName = "Epilogue-Rebecca-Photo"
     
@@ -329,7 +329,7 @@ class ch18cIExaminePhoto: StoryPage {
     }
 }
 
-class ch18cCaitlynSeesPhoto: StoryPage {
+class ch18cCaitlynSeesPhoto: StoryPageVoicedKaden {
     
     let imageName = "Caitlyn-Epilogue-Caitlyn-Sees-Photo"
     
@@ -359,7 +359,7 @@ class ch18sTimeLater: StoryPage {
     }
 }
 
-class ch18sSupermarket: StoryPage {
+class ch18sSupermarket: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Epilogue-Grocery-Shopping"
     
@@ -374,7 +374,7 @@ class ch18sSupermarket: StoryPage {
     }
 }
 
-class ch18sWeBuyGroceries: StoryPage {
+class ch18sWeBuyGroceries: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Epilogue-Grocer"
     
@@ -389,7 +389,7 @@ class ch18sWeBuyGroceries: StoryPage {
     }
 }
 
-class ch18sWeGoToFlat: StoryPage {
+class ch18sWeGoToFlat: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Epilogue-In-Car"
     
@@ -404,7 +404,7 @@ class ch18sWeGoToFlat: StoryPage {
     }
 }
 
-class ch18sWeCuddle: StoryPage {
+class ch18sWeCuddle: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Epilogue-Fireplace"
     
@@ -419,7 +419,7 @@ class ch18sWeCuddle: StoryPage {
     }
 }
 
-class ch18sWeKiss: StoryPage {
+class ch18sWeKiss: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Epilogue-Fireplace-Kiss"
     
@@ -434,7 +434,7 @@ class ch18sWeKiss: StoryPage {
     }
 }
 
-class ch18sIExaminePhoto: StoryPage {
+class ch18sIExaminePhoto: StoryPageVoicedKaden {
     
     let imageName = "Epilogue-Rebecca-Photo"
     
@@ -449,7 +449,7 @@ class ch18sIExaminePhoto: StoryPage {
     }
 }
 
-class ch18sSarahSeesPhoto: StoryPage {
+class ch18sSarahSeesPhoto: StoryPageVoicedKaden {
     
     let imageName = "Sarah-Epilogue-Sarah-Sees-Photo"
     
@@ -464,7 +464,7 @@ class ch18sSarahSeesPhoto: StoryPage {
     }
 }
 
-class ch18csIBurnPhoto: StoryPage {
+class ch18csIBurnPhoto: StoryPageVoicedKaden {
     
     let imageName = "Epilogue-Rebecca-Photo-Burns"
     
@@ -494,7 +494,7 @@ class ch18vTimeLater: StoryPage {
     }
 }
 
-class ch18vGoddessOfPride: StoryPage {
+class ch18vGoddessOfPride: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Epilogue-Va'Nal-Kaden-Alone"
     
@@ -509,7 +509,7 @@ class ch18vGoddessOfPride: StoryPage {
     }
 }
 
-class ch18vCaitlynAndYukioResearch: StoryPage {
+class ch18vCaitlynAndYukioResearch: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Epilogue-Caitlyn-and-Yukio"
     
@@ -524,7 +524,7 @@ class ch18vCaitlynAndYukioResearch: StoryPage {
     }
 }
 
-class ch18vSarahReports: StoryPage {
+class ch18vSarahReports: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Epilogue-Sarah"
     
@@ -539,7 +539,7 @@ class ch18vSarahReports: StoryPage {
     }
 }
 
-class ch18vElodieCarleighAndHewittStudy: StoryPage {
+class ch18vElodieCarleighAndHewittStudy: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Epilogue-Students"
     
@@ -560,7 +560,7 @@ class ch18vElodieCarleighAndHewittStudy: StoryPage {
     }
 }
 
-class ch18vCarleighHonors: StoryPage {
+class ch18vCarleighHonors: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Epilogue-Students"
     
@@ -575,7 +575,7 @@ class ch18vCarleighHonors: StoryPage {
     }
 }
 
-class ch18vICannotSeeRebecca: StoryPage {
+class ch18vICannotSeeRebecca: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Epilogue-Va'Nal-Kaden-Alone"
     
@@ -590,7 +590,7 @@ class ch18vICannotSeeRebecca: StoryPage {
     }
 }
 
-class ch18vSunSets: StoryPage {
+class ch18vSunSets: StoryPageVoicedKaden {
     
     let imageName = "Va'Nal-Epilogue-Sunset"
     
