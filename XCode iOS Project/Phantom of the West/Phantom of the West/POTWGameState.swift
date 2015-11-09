@@ -14,6 +14,8 @@ Contains a state ID and event flag collection.
 class POTWGameState: NSObject, NSCoding, PPageTurner {
     private static let idKey = "id"
     
+    private static let lineNumberKey = "lineNumber"
+    
     /*
     Flags used to control story branching.
     */
@@ -24,8 +26,11 @@ class POTWGameState: NSObject, NSCoding, PPageTurner {
     */
     private(set) var id: Int
     
+    var lineNumber: Int
+    
     init(eventFlags: EventFlagsCollection) {
         id = 0
+        lineNumber = 0
         self.eventFlags = eventFlags
         super.init()
     }
@@ -33,12 +38,14 @@ class POTWGameState: NSObject, NSCoding, PPageTurner {
     required init(coder aDecoder: NSCoder) {
         eventFlags = EventFlagsCollection(coder: aDecoder)
         id = aDecoder.decodeIntegerForKey(POTWGameState.idKey)
+        lineNumber = aDecoder.decodeIntegerForKey(POTWGameState.lineNumberKey)
         super.init()
     }
     
     func encodeWithCoder(aCoder: NSCoder) {
         eventFlags.encodeWithCoder(aCoder)
         aCoder.encodeInteger(id, forKey: POTWGameState.idKey)
+        aCoder.encodeInteger(lineNumber, forKey: POTWGameState.lineNumberKey)
     }
     
     func goToStoryState(stateID: Int, observer: PhantomOfTheWest) -> [StoryPage] {

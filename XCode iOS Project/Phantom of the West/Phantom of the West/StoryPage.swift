@@ -56,7 +56,7 @@ class StoryPage: PStoryPage {
     
     private var allText: [String]
     
-    private var lineNumber: Int
+    var lineNumber: Int
     
     init(image: String, text: [String], observer: PhantomOfTheWest) {
         self.image = StoryPage.getLocalizedImage(image)

@@ -65,20 +65,28 @@ public class PhantomOfTheWest: PStory, PStoryObserver, PSavedGamesLoader {
     public func loadGame(data: NSData) {
         gameState = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? POTWGameState
         if let gs = gameState {
-            goToStoryState(gs.id)
+            goToStoryState(gs.id, lineNumber: gs.lineNumber)
         }
     }
     
     public func update(pages: [PStoryPage]) {
         currentPages = pages
         if let o = observer {
-            o.update(pages)
-            // Play voice.
-            if pages.count == 1 {
-                if let firstPage = pages[0] as? StoryPage {
-                    firstPage.playAudio()
+            if let gs = gameState {
+                // Play voice.
+                if pages.count == 1 {
+                    if let firstPage = pages[0] as? StoryPage {
+                        gs.lineNumber = firstPage.lineNumber
+                        firstPage.playAudio()
+                    }
+                } else {
+                    gs.lineNumber = 0
                 }
+                // Auto save.
+                let gameStateData = NSKeyedArchiver.archivedDataWithRootObject(gs)
+                AutoSave.save(gameStateData)
             }
+            o.update(pages)
         }
     }
     
@@ -94,20 +102,18 @@ public class PhantomOfTheWest: PStory, PStoryObserver, PSavedGamesLoader {
     Call this when ready to continue story.
     This will update the observer, auto-save, play voiceover, et cetera.
     */
-    func goToStoryState(stateID: Int) {
+    func goToStoryState(stateID: Int, lineNumber: Int? = nil) {
         //Display next page.
         if let gs = gameState {
             let newPages = gs.goToStoryState(stateID, observer: self)
             var newPPages = [PStoryPage]()
             for p in newPages {
+                if let ln = lineNumber {
+                    p.lineNumber = ln
+                }
                 newPPages.append(p)
             }
             update(newPPages)
-        }
-        // Auto save.
-        if let gs = gameState {
-            let gameStateData = NSKeyedArchiver.archivedDataWithRootObject(gs)
-            AutoSave.save(gameStateData)
         }
     }
 }
