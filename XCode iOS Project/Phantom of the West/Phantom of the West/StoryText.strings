@@ -6,17 +6,17 @@
   Copyright (c) 2015 Christopher Raleigh. All rights reserved.
 */
 
-ch0Welcome = "Welcome to \"Phantom of the West\". Please tap \"%@\" to continue.";
+ch0Welcome = "Welcome to \"Phantom of the West\". Please select \"%@\" to continue.";
 
-ch0POTWSimple = "Playing \"Phantom of the West\" is simple. The story is presented as a series of pages with text, accompanied with images. Tapping \"%@\" will continue to the next page.";
+ch0POTWSimple = "Playing \"Phantom of the West\" is simple. The story is presented as a series of pages with text, accompanied with images. Selecting \"%@\" will continue to the next page.";
 
-ch0MultipleChoices = "Occasionally, you will be presented with multiple choices. Some choices will affect the story more than others. Please tap \"%@\" to see an example of multiple choices.";
+ch0MultipleChoices = "Occasionally, you will be presented with multiple choices. Some choices will affect the story more than others. Please select \"%@\" to see an example of multiple choices.";
 
-ch0FirstChoice = "This is the first choice. Tap \"%1$@\" if you would like to see the second choice, or tap \"%2$@\" to continue.";
+ch0FirstChoice = "This is the first choice. Select \"%1$@\" if you would like to see the second choice, or select \"%2$@\" to continue.";
 
-ch0SecondChoice = "This is the second choice. Tap \"%1$@\" if you would like to see the first choice, or tap \"%2$@\" to continue.";
+ch0SecondChoice = "This is the second choice. Select \"%1$@\" if you would like to see the first choice, or select \"%2$@\" to continue.";
 
-ch0Options = "Finally, tapping \"%1$@\" will open the options menu. When you are ready, please press \"%2$@\" to start the game.";
+ch0Options = "Finally, selecting \"%1$@\" will open the options menu. When you are ready, please select \"%2$@\" to start the game.";
 
 ellipsis = "…";
 
