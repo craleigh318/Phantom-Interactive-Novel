@@ -1,0 +1,9 @@
+/ignoreAccessChecks
+/metadataFile "c:\users\christopher\documents\visual studio 2015\Projects\Phantom of the West\Phantom of the West\obj\x86\Release\ilc\intermediate\ILTransformed\Phantom of the West.metadata"
+/reflectionMetadataAssemblyName "System.Private.CoreLib"
+/o
+/sharedGenerics
+/ilmergeinfo "c:\users\christopher\documents\visual studio 2015\Projects\Phantom of the West\Phantom of the West\obj\x86\Release\ilc\intermediate\ILTransformed\Phantom of the West.csv"
+/sharedGenericsMode StandardHeuristics
+/in "c:\users\christopher\documents\visual studio 2015\Projects\Phantom of the West\Phantom of the West\obj\x86\Release\ilc\intermediate\ILTransformed\Phantom of the West.ilexe"
+/out "c:\users\christopher\documents\visual studio 2015\Projects\Phantom of the West\Phantom of the West\obj\x86\Release\ilc\intermediate\MDIL\Phantom of the West.mdilexe"
