@@ -7,12 +7,12 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="210f958c-0ac2-4009-8c74-a878cbce8805" Publisher="CN=Christopher" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="44128ChristopherRaleigh.PhantomoftheWest" Publisher="CN=496925B5-1C8D-4310-A936-9C320593256F" Version="0.1.0.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="210f958c-0ac2-4009-8c74-a878cbce8805" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Phantom of the West</DisplayName>
-    <PublisherDisplayName>Christopher</PublisherDisplayName>
-    <Logo>Assets\StoreLogo.png</Logo>
+    <PublisherDisplayName>Christopher Raleigh</PublisherDisplayName>
+    <Logo>Assets\Phantom-Icon-50x50.png</Logo>
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
@@ -22,9 +22,16 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="Phantom of the West.exe" EntryPoint="Phantom_of_the_West.App">
-      <uap:VisualElements DisplayName="Phantom of the West" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Phantom of the West" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
-        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      <uap:VisualElements DisplayName="Phantom of the West" Square150x150Logo="Assets\Phantom-Icon-150x150.png" Square44x44Logo="Assets\Phantom-Icon-44x44.png" Description="Phantom of the West" BackgroundColor="#000099">
+        <uap:LockScreen Notification="badgeAndTileText" BadgeLogo="Assets\Phantom-Icon-24x24.png" />
+        <uap:DefaultTile Wide310x150Logo="Assets\Phantom-Icon-310x150.png" ShortName="Phantom of the West" Square310x310Logo="Assets\Phantom-Icon-310x310.png" Square71x71Logo="Assets\Phantom-Icon-71x71.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\Phantom-Icon-620x300.png" BackgroundColor="#000099" />
       </uap:VisualElements>
     </Application>
   </Applications>
@@ -36,11 +43,12 @@
     <build:Item Name="VisualStudio" Version="14.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2015" />
     <build:Item Name="OperatingSystem" Version="10.0.10240.16384 (th1.150709-1700)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.23121.0" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.23315.0" />
     <build:Item Name="ProjectGUID" Value="{37158AB8-C6B8-4236-A24C-BEBA76313C55}" />
-    <build:Item Name="ilc.exe" Version="1.0.23117.00 built by: PROJECTNREL" />
+    <build:Item Name="ilc.exe" Version="1.1.23309.00 built by: PROJECTNREL" />
     <build:Item Name="OptimizingToolset" Value="ilc.exe" />
-    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="14.0.23121.0" />
+    <build:Item Name="UseDotNetNativeSharedAssemblyFrameworkPackage" Value="false" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="14.0.23309.0" />
     <build:Item Name="MakePri.exe" Version="10.0.10240.16384 (th1.150709-1700)" />
   </build:Metadata>
 </Package>

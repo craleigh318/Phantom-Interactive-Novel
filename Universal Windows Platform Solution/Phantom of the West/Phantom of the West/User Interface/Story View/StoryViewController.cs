@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-namespace Phantom_of_the_West.User_Interface
+namespace Phantom_of_the_West.User_Interface.Story_View
 {
 	public class StoryViewController
 	{
@@ -15,7 +15,7 @@ namespace Phantom_of_the_West.User_Interface
 
 		private int index;
 
-		internal Page StoryView
+		internal StoryView StoryView
 		{
 			get;
 			private set;
@@ -66,7 +66,8 @@ namespace Phantom_of_the_West.User_Interface
 
 		private void SetImage(ImageSource source)
 		{
-
+			Image imageView = (Image)StoryView.FindName("imageView");
+			imageView.Source = source;
 		}
 
 		private void UpdateText()
@@ -76,7 +77,8 @@ namespace Phantom_of_the_West.User_Interface
 
 		private void SetText(string text)
 		{
-
+			TextBlock textView = (TextBlock)StoryView.FindName("textView");
+			textView.Text = text;
 		}
 
 		private void UpdateButtons()
@@ -90,7 +92,7 @@ namespace Phantom_of_the_West.User_Interface
 
 		private void enableButtonContinue(bool enabled)
 		{
-
+			enableButton("buttonContinue", enabled);
 		}
 
 		private void enableButtonsPreviousAndNextChoice(bool enabled)
@@ -101,12 +103,18 @@ namespace Phantom_of_the_West.User_Interface
 
 		private void enableButtonPreviousChoice(bool enabled)
 		{
-
+			enableButton("buttonPrevious", enabled);
 		}
 
 		private void enableButtonNextChoice(bool enabled)
 		{
+			enableButton("buttonNext", enabled);
+		}
 
+		private void enableButton(string buttonName, bool enabled)
+		{
+			Button button = (Button)StoryView.FindName(buttonName);
+			button.IsEnabled = enabled;
 		}
 	}
 }

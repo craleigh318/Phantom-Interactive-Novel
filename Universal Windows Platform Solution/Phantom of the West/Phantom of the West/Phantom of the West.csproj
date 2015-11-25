@@ -56,7 +56,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
-    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    <UseDotNetNativeToolchain>false</UseDotNetNativeToolchain>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <OutputPath>bin\x64\Release\</OutputPath>
@@ -80,11 +80,11 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>false</Prefer32Bit>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <EnableGatekeeperAnalysis>true</EnableGatekeeperAnalysis>
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
     <RunCodeAnalysis>true</RunCodeAnalysis>
-    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    <UseDotNetNativeToolchain>false</UseDotNetNativeToolchain>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>bin\x86\Release\</OutputPath>
@@ -118,6 +118,10 @@
     <Compile Include="User Interface\FrameController.cs" />
     <Compile Include="User Interface\IFrameController.cs" />
     <Compile Include="User Interface\IPageController.cs" />
+    <Compile Include="User Interface\Story View\ImageViewAspectRatio.cs" />
+    <Compile Include="User Interface\Story View\StoryView.xaml.cs">
+      <DependentUpon>StoryView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="User Interface\Story View\StoryViewController.cs" />
     <Compile Include="Visual Novel\IStoryChoice.cs" />
     <Compile Include="Visual Novel\IStoryChoiceList.cs" />

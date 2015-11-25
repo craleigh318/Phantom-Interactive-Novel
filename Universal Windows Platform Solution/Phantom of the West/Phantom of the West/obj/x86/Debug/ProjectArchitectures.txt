@@ -1,1 +1,1 @@
-c:\users\christopher\documents\visual studio 2015\Projects\Phantom of the West\Phantom of the West\Phantom of the West.csproj;x86
+C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\Phantom of the West.csproj;x86

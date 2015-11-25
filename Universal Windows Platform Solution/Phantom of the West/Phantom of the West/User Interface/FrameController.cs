@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Phantom_of_the_West.User_Interface.Story_View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
