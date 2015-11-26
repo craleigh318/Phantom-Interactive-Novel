@@ -1,9 +1,0 @@
-/ignoreAccessChecks
-/metadataFile "C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\obj\x86\Debug\ilc\intermediate\ILTransformed\Phantom of the West.metadata"
-/gvmAssemblyName "System.Private.CoreLib"
-/o
-/sharedGenerics
-/ilmergeinfo "C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\obj\x86\Debug\ilc\intermediate\ILTransformed\Phantom of the West.csv"
-/sharedGenericsMode StandardHeuristics
-/in "C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\obj\x86\Debug\ilc\intermediate\ILTransformed\Phantom of the West.ilexe"
-/out "C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\obj\x86\Debug\ilc\intermediate\MDIL\Phantom of the West.mdilexe"

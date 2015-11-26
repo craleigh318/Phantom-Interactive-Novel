@@ -33,6 +33,7 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 		{
 			storyChoiceList = list;
 			index = 0;
+			UpdateButtons();
 			SetImage(list.Image);
 			UpdateText();
 		}
