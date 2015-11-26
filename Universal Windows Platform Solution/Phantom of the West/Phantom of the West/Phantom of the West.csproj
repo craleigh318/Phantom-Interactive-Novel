@@ -117,6 +117,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User Interface\FrameController.cs" />
     <Compile Include="User Interface\IFrameController.cs" />
+    <Compile Include="User Interface\Input\GamepadEventsDelegator.cs" />
+    <Compile Include="User Interface\Input\IGamepadEvents.cs" />
     <Compile Include="User Interface\IPageController.cs" />
     <Compile Include="User Interface\Story View\ImageViewAspectRatio.cs" />
     <Compile Include="User Interface\Story View\StoryView.xaml.cs">
@@ -165,7 +167,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Gaming\" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
