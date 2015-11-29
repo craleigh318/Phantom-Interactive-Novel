@@ -29,6 +29,11 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 			}
 		}
 
+		internal StoryViewController()
+		{
+			FrameController.MainFrameController.RootViewController = this;
+		}
+
 		public void SetStoryChoiceList(IStoryChoiceList list)
 		{
 			storyChoiceList = list;

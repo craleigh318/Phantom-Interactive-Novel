@@ -10,6 +10,16 @@ namespace Phantom_of_the_West.User_Interface
 {
 	public class FrameController: IFrameController
 	{
+		private static FrameController mainFrameController = new FrameController();
+
+		public static FrameController MainFrameController
+		{
+			get
+			{
+				return mainFrameController;
+			}
+		}
+
 		public Frame Frame
 		{
 			get;
@@ -19,7 +29,13 @@ namespace Phantom_of_the_West.User_Interface
 		public StoryViewController RootViewController
 		{
 			get;
-			private set;
+			internal set;
+		}
+
+		public FrameController()
+		{
+			Frame = new Frame();
+			PushPage(typeof(User_Interface.Story_View.StoryView));
 		}
 
 		public bool PushPage(Type type)

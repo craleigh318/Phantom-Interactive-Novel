@@ -132,6 +132,23 @@
     <Compile Include="User Interface\Story View\StoryViewController.cs" />
     <Compile Include="Visual Novel\IStoryChoice.cs" />
     <Compile Include="Visual Novel\IStoryChoiceList.cs" />
+    <Compile Include="Visual Novel\PotWVN.cs" />
+    <Compile Include="Visual Novel\Serialization\Event Flagging\ActivityInSarahRoom.cs" />
+    <Compile Include="Visual Novel\Serialization\Event Flagging\CheerleaderSpar.cs" />
+    <Compile Include="Visual Novel\Serialization\Event Flagging\DriveWithCaitlyn.cs" />
+    <Compile Include="Visual Novel\Serialization\Event Flagging\EventFlagsCollection.cs" />
+    <Compile Include="Visual Novel\Serialization\Event Flagging\FoxtrotReaction.cs" />
+    <Compile Include="Visual Novel\Serialization\Event Flagging\HewittHangout.cs" />
+    <Compile Include="Visual Novel\Serialization\Event Flagging\HotelRoomPayment.cs" />
+    <Compile Include="Visual Novel\Serialization\Event Flagging\LiteratureStoryAnswer.cs" />
+    <Compile Include="Visual Novel\Serialization\Event Flagging\PhysicalEducationAnswer.cs" />
+    <Compile Include="Visual Novel\Serialization\Event Flagging\Route.cs" />
+    <Compile Include="Visual Novel\Serialization\Event Flagging\TalkWithCaitlyn.cs" />
+    <Compile Include="Visual Novel\Serialization\Event Flagging\TwoChoiceAnswer.cs" />
+    <Compile Include="Visual Novel\Serialization\Event Flagging\VaNalKiss.cs" />
+    <Compile Include="Visual Novel\Serialization\Event Flagging\WorkoutHarassment.cs" />
+    <Compile Include="Visual Novel\Serialization\GameState.cs" />
+    <Compile Include="Visual Novel\StoryChoice.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
