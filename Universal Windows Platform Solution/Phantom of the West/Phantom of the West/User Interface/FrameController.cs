@@ -1,26 +1,23 @@
 ﻿using Phantom_of_the_West.User_Interface.Story_View;
+using Phantom_of_the_West.Visual_Novel;
 using System;
 using Windows.UI.Xaml.Controls;
 
 namespace Phantom_of_the_West.User_Interface
 {
-	public class FrameController: IFrameController
+	public class FrameController : IFrameController, IVisualNovelObserver
 	{
-		private static FrameController mainFrameController = new FrameController();
-
 		public static FrameController MainFrameController
 		{
-			get
-			{
-				return mainFrameController;
-			}
-		}
+			get;
+			private set;
+		} = new FrameController();
 
 		public Frame Frame
 		{
 			get;
 			private set;
-		}
+		} = new Frame();
 
 		public StoryViewController RootViewController
 		{
@@ -30,7 +27,6 @@ namespace Phantom_of_the_West.User_Interface
 
 		public FrameController()
 		{
-			Frame = new Frame();
 			PushPage(typeof(User_Interface.Story_View.StoryView));
 		}
 
@@ -47,9 +43,23 @@ namespace Phantom_of_the_West.User_Interface
 		public void PopPageToRoot()
 		{
 			Frame f = Frame;
-            while (f.CanGoBack)
+			while (f.CanGoBack)
 			{
 				f.GoBack();
+			}
+		}
+
+		public void Update(IVisualNovel vn)
+		{
+			IStoryChoiceList choices = vn.CurrentChoices;
+			if (choices == null)
+			{
+				choices = new BlankStoryChoiceList();
+			}
+			StoryViewController rootViewController = RootViewController;
+			if (rootViewController != null)
+			{
+				rootViewController.SetStoryChoiceList(choices);
 			}
 		}
 	}

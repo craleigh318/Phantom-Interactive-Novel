@@ -130,6 +130,9 @@
       <DependentUpon>StoryView.xaml</DependentUpon>
     </Compile>
     <Compile Include="User Interface\Story View\StoryViewController.cs" />
+    <Compile Include="Visual Novel\BlankStoryChoice.cs" />
+    <Compile Include="Visual Novel\BlankStoryChoiceList.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 0\Chapter0.cs" />
     <Compile Include="Visual Novel\Chapters\ChapterSelector.cs" />
     <Compile Include="Visual Novel\Chapters\IChapter.cs" />
     <Compile Include="Visual Novel\Chapters\StoryChoice.cs" />
@@ -550,7 +553,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Gaming\" />
-    <Folder Include="Visual Novel\Chapters\Chapter 0\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

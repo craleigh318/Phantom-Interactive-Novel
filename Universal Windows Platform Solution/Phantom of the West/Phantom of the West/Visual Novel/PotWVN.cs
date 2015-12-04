@@ -6,15 +6,11 @@ namespace Phantom_of_the_West.Visual_Novel
 {
 	public class PotWVN : IVisualNovel
 	{
-		private static PotWVN mainVN = new PotWVN();
-
 		public static PotWVN MainVN
 		{
-			get
-			{
-				return mainVN;
-			}
-		}
+			get;
+			private set;
+		} = new PotWVN();
 
 		private IStoryChoiceList currentChoices = null;
 
@@ -65,7 +61,7 @@ namespace Phantom_of_the_West.Visual_Novel
 
 		internal void GoToState(int id)
 		{
-			ChapterSelector.GoToState(id, this);
+			ChapterSelector.GoToState(id);
 		}
 
 		private void NotifyObservers()

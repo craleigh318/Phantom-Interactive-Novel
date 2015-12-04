@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-02T07:30:36.252</Modified>
+      <Modified>2015-12-04T10:05:54.189</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -1520,7 +1520,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\bin\x64\Debug\Core\entrypoint\Phantom of the West.exe">
       <PackagePath>entrypoint\Phantom of the West.exe</PackagePath>
-      <Modified>2015-12-02T07:30:16.989</Modified>
+      <Modified>2015-12-04T10:05:52.133</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\bin\x64\Debug\Core\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -1548,7 +1548,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\bin\x64\Debug\Core\Phantom of the West.exe">
       <PackagePath>Phantom of the West.exe</PackagePath>
-      <Modified>2015-12-02T07:30:36.252</Modified>
+      <Modified>2015-12-04T10:05:54.187</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\bin\x64\Debug\Core\Phantom of the West.xr.xml">
       <PackagePath>Phantom of the West.xr.xml</PackagePath>
@@ -1560,7 +1560,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\bin\x64\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-02T07:30:21.458</Modified>
+      <Modified>2015-12-04T08:16:54.599</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\bin\x64\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

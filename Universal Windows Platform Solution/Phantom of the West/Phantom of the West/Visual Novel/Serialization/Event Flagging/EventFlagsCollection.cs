@@ -10,49 +10,49 @@ namespace Phantom_of_the_West.Visual_Novel.Serialization.Event_Flagging
 		{
 			get;
 			set;
-		}
+		} = DriveWithCaitlyn.NotYetDriven;
 
 		[DataMember]
 		internal TalkWithCaitlyn Ch3TalkedWithCaitlyn
 		{
 			get;
 			set;
-		}
+		} = TalkWithCaitlyn.HasNotTalked;
 
 		[DataMember]
 		internal bool Ch3TalkedWithYukio
 		{
 			get;
 			set;
-		}
+		} = false;
 
 		[DataMember]
 		internal LiteratureStoryAnswer Ch5AnsweredLiteratureStory
 		{
 			get;
 			set;
-		}
+		} = LiteratureStoryAnswer.NotYetAnswered;
 
 		[DataMember]
 		internal TwoChoiceAnswer Ch5AnsweredMathQuestion1
 		{
 			get;
 			set;
-		}
+		} = TwoChoiceAnswer.NotYetAnswered;
 
 		[DataMember]
 		internal TwoChoiceAnswer Ch5AnsweredMathQuestion4
 		{
 			get;
 			set;
-		}
+		} = TwoChoiceAnswer.NotYetAnswered;
 
 		[DataMember]
 		internal TwoChoiceAnswer Ch5AnsweredMathQuestion9
 		{
 			get;
 			set;
-		}
+		} = TwoChoiceAnswer.NotYetAnswered;
 
 		internal int Ch5NumCorrectMathAnswers
 		{
@@ -76,74 +76,55 @@ namespace Phantom_of_the_West.Visual_Novel.Serialization.Event_Flagging
 		{
 			get;
 			set;
-		}
+		} = PhysicalEducationAnswer.NotYetAnswered;
 
 		[DataMember]
 		internal CheerleaderSpar Ch5SparredWithCheerleader
 		{
 			get;
 			set;
-		}
+		} = CheerleaderSpar.NotYetSparred;
 
 		[DataMember]
 		internal HewittHangout Ch7HungOutWithHewitt
 		{
 			get;
 			set;
-		}
+		} = HewittHangout.NotYetAsked;
 
 		[DataMember]
 		internal VaNalKiss Ch7KissedVaNal
 		{
 			get;
 			set;
-		}
+		} = VaNalKiss.NotYetAsked;
 
 		[DataMember]
 		internal FoxtrotReaction Ch9FoxtrotReacted
 		{
 			get;
 			set;
-		}
+		} = FoxtrotReaction.NotYetEncountered;
 
 		[DataMember]
 		internal HotelRoomPayment Ch11PayedForHotelRoom
 		{
 			get;
 			set;
-		}
+		} = HotelRoomPayment.NotYetPaid;
 
 		[DataMember]
 		internal WorkoutHarassment Ch11HarassedAfterWorkout
 		{
 			get;
 			set;
-		}
+		} = WorkoutHarassment.NotYetHarassed;
 
 		[DataMember]
 		internal ActivityInSarahRoom Ch11ActedInSarahRoom
 		{
 			get;
 			set;
-		}
-
-		internal EventFlagsCollection()
-		{
-			Ch3DroveWithCaitlyn = DriveWithCaitlyn.NotYetDriven;
-			Ch3TalkedWithCaitlyn = TalkWithCaitlyn.HasNotTalked;
-			Ch3TalkedWithYukio = false;
-			Ch5AnsweredLiteratureStory = LiteratureStoryAnswer.NotYetAnswered;
-			Ch5AnsweredMathQuestion1 = TwoChoiceAnswer.NotYetAnswered;
-			Ch5AnsweredMathQuestion4 = TwoChoiceAnswer.NotYetAnswered;
-			Ch5AnsweredMathQuestion9 = TwoChoiceAnswer.NotYetAnswered;
-			Ch5AnsweredCoach = PhysicalEducationAnswer.NotYetAnswered;
-			Ch5SparredWithCheerleader = CheerleaderSpar.NotYetSparred;
-			Ch7HungOutWithHewitt = HewittHangout.NotYetAsked;
-			Ch7KissedVaNal = VaNalKiss.NotYetAsked;
-			Ch9FoxtrotReacted = FoxtrotReaction.NotYetEncountered;
-			Ch11PayedForHotelRoom = HotelRoomPayment.NotYetPaid;
-			Ch11HarassedAfterWorkout = WorkoutHarassment.NotYetHarassed;
-			Ch11ActedInSarahRoom = ActivityInSarahRoom.NotYetReturned;
-		}
+		} = ActivityInSarahRoom.NotYetReturned;
 	}
 }

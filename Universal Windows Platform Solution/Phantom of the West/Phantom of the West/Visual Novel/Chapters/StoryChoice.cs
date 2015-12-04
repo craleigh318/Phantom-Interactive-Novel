@@ -4,23 +4,21 @@
 	{
 		private int nextState;
 
-		private PotWVN vn;
-
 		public string Text
 		{
 			get;
 			private set;
 		}
 
-		internal StoryChoice(string text, int nextState, PotWVN vn)
+		internal StoryChoice(string text, int nextState)
 		{
 			Text = text;
 			this.nextState = nextState;
-			this.vn = vn;
 		}
 
 		public void Select()
 		{
+			PotWVN vn = PotWVN.MainVN;
 			vn.GoToState(nextState);
 		}
 	}
