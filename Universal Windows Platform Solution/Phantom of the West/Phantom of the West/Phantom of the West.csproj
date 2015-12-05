@@ -141,6 +141,7 @@
     <Compile Include="Visual Novel\IStoryChoiceList.cs" />
     <Compile Include="Visual Novel\IVisualNovel.cs" />
     <Compile Include="Visual Novel\IVisualNovelObserver.cs" />
+    <Compile Include="Visual Novel\ObservableVisualNovel.cs" />
     <Compile Include="Visual Novel\PotWVN.cs" />
     <Compile Include="Visual Novel\Serialization\Event Flagging\ActivityInSarahRoom.cs" />
     <Compile Include="Visual Novel\Serialization\Event Flagging\CheerleaderSpar.cs" />
@@ -157,6 +158,7 @@
     <Compile Include="Visual Novel\Serialization\Event Flagging\VaNalKiss.cs" />
     <Compile Include="Visual Novel\Serialization\Event Flagging\WorkoutHarassment.cs" />
     <Compile Include="Visual Novel\Serialization\GameState.cs" />
+    <Compile Include="Visual Novel\VisualNovelUnsubscriber.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

@@ -12,9 +12,13 @@ namespace Phantom_of_the_West.Visual_Novel
 			private set;
 		} = new PotWVN();
 
-		private IStoryChoiceList currentChoices = null;
+		public ObservableVisualNovel Observable
+		{
+			get;
+			private set;
+		} = new ObservableVisualNovel();
 
-		private HashSet<IVisualNovelObserver> observers = new HashSet<IVisualNovelObserver>();
+		private IStoryChoiceList currentChoices = null;
 
 		public IStoryChoiceList CurrentChoices
 		{
@@ -49,16 +53,6 @@ namespace Phantom_of_the_West.Visual_Novel
 
 		}
 
-		public void AddObserver(IVisualNovelObserver o)
-		{
-			observers.Add(o);
-		}
-
-		public void DeleteObserver(IVisualNovelObserver o)
-		{
-			observers.Remove(o);
-		}
-
 		internal void GoToState(int id)
 		{
 			ChapterSelector.GoToState(id);
@@ -66,10 +60,7 @@ namespace Phantom_of_the_West.Visual_Novel
 
 		private void NotifyObservers()
 		{
-			foreach (IVisualNovelObserver o in observers)
-			{
-				o.Update(this);
-			}
+			Observable.NotifyObservers(this);
 		}
 	}
 }

@@ -8,9 +8,5 @@
 		}
 
 		void NewGame();
-
-		void AddObserver(IVisualNovelObserver o);
-
-		void DeleteObserver(IVisualNovelObserver o);
 	}
 }

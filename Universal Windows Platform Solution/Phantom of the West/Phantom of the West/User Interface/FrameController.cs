@@ -5,8 +5,10 @@ using Windows.UI.Xaml.Controls;
 
 namespace Phantom_of_the_West.User_Interface
 {
-	public class FrameController : IFrameController, IVisualNovelObserver
+	public class FrameController : IFrameController, IObserver<IVisualNovel>
 	{
+		StoryViewController rootViewController = null;
+
 		public static FrameController MainFrameController
 		{
 			get;
@@ -21,11 +23,18 @@ namespace Phantom_of_the_West.User_Interface
 
 		public StoryViewController RootViewController
 		{
-			get;
-			internal set;
+			get
+			{
+				return rootViewController;
+			}
+			internal set
+			{
+				rootViewController = value;
+				UpdateStoryView(PotWVN.MainVN);
+			}
 		}
 
-		public FrameController()
+		private FrameController()
 		{
 			PushPage(typeof(User_Interface.Story_View.StoryView));
 		}
@@ -49,7 +58,21 @@ namespace Phantom_of_the_West.User_Interface
 			}
 		}
 
-		public void Update(IVisualNovel vn)
+		public void OnCompleted()
+		{
+		}
+
+		public void OnError(Exception error)
+		{
+			throw error;
+		}
+
+		public void OnNext(IVisualNovel value)
+		{
+			UpdateStoryView(value);
+		}
+
+		private void UpdateStoryView(IVisualNovel vn)
 		{
 			IStoryChoiceList choices = vn.CurrentChoices;
 			if (choices == null)

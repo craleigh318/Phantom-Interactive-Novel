@@ -50,10 +50,10 @@ namespace Phantom_of_the_West
 			{
 				// Create a Frame to act as the navigation context and navigate to the first page
 				PotWVN mainVN = PotWVN.MainVN;
+				mainVN.PlayTutorial();
 				FrameController mainFrameController = FrameController.MainFrameController;
 				rootFrame = mainFrameController.Frame;
-				mainVN.AddObserver(mainFrameController);
-				mainVN.PlayTutorial();
+				mainVN.Observable.Subscribe(mainFrameController);
 
 				rootFrame.NavigationFailed += OnNavigationFailed;
 
