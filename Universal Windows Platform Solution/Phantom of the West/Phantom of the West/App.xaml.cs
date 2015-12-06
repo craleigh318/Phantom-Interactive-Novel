@@ -53,7 +53,6 @@ namespace Phantom_of_the_West
 				mainVN.PlayTutorial();
 				FrameController mainFrameController = FrameController.MainFrameController;
 				rootFrame = mainFrameController.Frame;
-				mainVN.Observable.Subscribe(mainFrameController);
 
 				rootFrame.NavigationFailed += OnNavigationFailed;
 

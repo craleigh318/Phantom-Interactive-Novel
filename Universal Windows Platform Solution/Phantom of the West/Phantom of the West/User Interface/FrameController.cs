@@ -5,10 +5,8 @@ using Windows.UI.Xaml.Controls;
 
 namespace Phantom_of_the_West.User_Interface
 {
-	public class FrameController : IFrameController, IObserver<IVisualNovel>
+	public class FrameController : IFrameController
 	{
-		StoryViewController rootViewController = null;
-
 		public static FrameController MainFrameController
 		{
 			get;
@@ -20,19 +18,6 @@ namespace Phantom_of_the_West.User_Interface
 			get;
 			private set;
 		} = new Frame();
-
-		public StoryViewController RootViewController
-		{
-			get
-			{
-				return rootViewController;
-			}
-			internal set
-			{
-				rootViewController = value;
-				UpdateStoryView(PotWVN.MainVN);
-			}
-		}
 
 		private FrameController()
 		{
@@ -55,34 +40,6 @@ namespace Phantom_of_the_West.User_Interface
 			while (f.CanGoBack)
 			{
 				f.GoBack();
-			}
-		}
-
-		public void OnCompleted()
-		{
-		}
-
-		public void OnError(Exception error)
-		{
-			throw error;
-		}
-
-		public void OnNext(IVisualNovel value)
-		{
-			UpdateStoryView(value);
-		}
-
-		private void UpdateStoryView(IVisualNovel vn)
-		{
-			IStoryChoiceList choices = vn.CurrentChoices;
-			if (choices == null)
-			{
-				choices = new BlankStoryChoiceList();
-			}
-			StoryViewController rootViewController = RootViewController;
-			if (rootViewController != null)
-			{
-				rootViewController.SetStoryChoiceList(choices);
 			}
 		}
 	}
