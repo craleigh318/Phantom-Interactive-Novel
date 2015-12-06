@@ -124,12 +124,10 @@
     <Compile Include="User Interface\IFrameController.cs" />
     <Compile Include="User Interface\Input\GamepadEventsDelegator.cs" />
     <Compile Include="User Interface\Input\IGamepadEvents.cs" />
-    <Compile Include="User Interface\IPageController.cs" />
     <Compile Include="User Interface\Story View\ImageViewAspectRatio.cs" />
     <Compile Include="User Interface\Story View\StoryView.xaml.cs">
       <DependentUpon>StoryView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="User Interface\Story View\StoryViewController.cs" />
     <Compile Include="Visual Novel\BlankStoryChoice.cs" />
     <Compile Include="Visual Novel\BlankStoryChoiceList.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 0\Chapter0.cs" />
