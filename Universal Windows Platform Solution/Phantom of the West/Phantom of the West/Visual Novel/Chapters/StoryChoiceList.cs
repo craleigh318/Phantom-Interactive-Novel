@@ -13,7 +13,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 			return newList;
 		}
 
-		private static BitmapImage GetImgSrc(string imgName)
+		internal static BitmapImage GetImgSrc(string imgName)
 		{
 			string uriString = "ms-appx:///Assets/Story Images/" + imgName;
 			Uri uri = new Uri(uriString);

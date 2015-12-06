@@ -10,6 +10,14 @@
 	<Page.Resources>
 		<GridLength x:Key="buttonLength">60</GridLength>
 		<local:ImageViewAspectRatio x:Key="imageViewAspectRatio" />
+		<x:String x:Key="leftArrow">⬅︎</x:String>
+		<x:String x:Key="ok">OK</x:String>
+		<x:String x:Key="rightArrow">➡︎</x:String>
+		<x:String x:Key="menuIcon">≣</x:String>
+		<SolidColorBrush x:Key="blue" Color="#FF0000CC"/>
+		<SolidColorBrush x:Key="green" Color="#FF00CC00"/>
+		<SolidColorBrush x:Key="red" Color="#FFCC0000"/>
+		<SolidColorBrush x:Key="yellow" Color="#FFCCCC00"/>
 	</Page.Resources>
 
 	<Grid x:Name="storyViewGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -24,11 +32,11 @@
 			<RowDefinition />
 			<RowDefinition Height="{StaticResource buttonLength}"/>
 		</Grid.RowDefinitions>
-		<Image x:Name="imageView" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" />
-		<TextBlock x:Name="textView" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" />
-		<Button x:Name="buttonPrevious" Grid.Row="2" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="⬅︎" Foreground="#0000cc" Background="Transparent" />
-		<Button x:Name="buttonContinue" Grid.Row="2" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="OK" Foreground="#00cc00" Background="Transparent" />
-		<Button x:Name="buttonNext" Grid.Row="2" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="➡︎" Foreground="#cc0000" Background="Transparent" />
-		<Button x:Name="buttonOptions" Grid.Row="2" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="≣" Foreground="#cccc00" Background="Transparent" />
+		<Image x:Name="imageView"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" />
+		<TextBlock x:Name="textView" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" TextWrapping="WrapWholeWords" />
+		<Button x:Name="buttonPrevious" Grid.Row="2" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource leftArrow}"/>
+		<Button x:Name="buttonContinue" Grid.Row="2" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource ok}"/>
+		<Button x:Name="buttonNext" Grid.Row="2" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource rightArrow}"/>
+		<Button x:Name="buttonOptions" Grid.Row="2" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource menuIcon}"/>
 	</Grid>
 </Page>

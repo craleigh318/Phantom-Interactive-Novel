@@ -30,6 +30,10 @@
     <RootType FullName="Phantom_of_the_West.MainPage" />
     <RootType FullName="Windows.UI.Xaml.GridLength" />
     <RootType FullName="Phantom_of_the_West.User_Interface.Story_View.ImageViewAspectRatio" />
+    <RootType FullName="System.String" />
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
@@ -40,13 +44,13 @@
       <RootProperty Name="ElementName" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image" />
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="TextWrapping" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Content" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Phantom_of_the_West.User_Interface.Story_View.StoryView" />
   </Roots.RootTypes>

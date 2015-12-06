@@ -30,6 +30,7 @@
     <RootType FullName="Phantom_of_the_West.MainPage" />
     <RootType FullName="Windows.UI.Xaml.GridLength" />
     <RootType FullName="Phantom_of_the_West.User_Interface.Story_View.ImageViewAspectRatio" />
+    <RootType FullName="System.String" />
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />

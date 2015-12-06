@@ -11,7 +11,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 			return newChoice;
 		}
 
-		private static string GetLocalizedString(string stringName)
+		internal static string GetLocalizedString(string stringName)
 		{
 			ResourceLoader resourceLoader = ResourceLoader.GetForViewIndependentUse("StoryText");
 			string localizedString = resourceLoader.GetString(stringName);
