@@ -1,5 +1,5 @@
-﻿using Phantom_of_the_West.Visual_Novel;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
@@ -10,146 +10,101 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 	/// <summary>
 	/// An empty page that can be used on its own or navigated to within a Frame.
 	/// </summary>
-	public sealed partial class StoryView : Page, IObserver<IVisualNovel>
+	public sealed partial class StoryView : Page, IStoryView
 	{
-		private IStoryChoiceList storyChoiceList = null;
-
-		private int index = 0;
-
-		private IStoryChoice Choice
-		{
-			get
-			{
-				return storyChoiceList.GetChoice(index);
-			}
-		}
+		private StoryViewController controller;
 
 		public StoryView()
 		{
 			this.InitializeComponent();
-			InitializeVariables();
+			controller = new StoryViewController(this);
 		}
 
-		public void OnCompleted()
+		public void SetImage(ImageSource source)
 		{
-		}
-
-		public void OnError(Exception error)
-		{
-			throw error;
-		}
-
-		public void OnNext(IVisualNovel value)
-		{
-			UpdateStoryView(value);
-		}
-
-		internal void SetStoryChoiceList(IStoryChoiceList list)
-		{
-			if (list != null)
+			Image[] images = new Image[] { (FindName("imageView") as Image), (FindName("imageView2") as Image) };
+			foreach (Image imageView in images)
 			{
-				storyChoiceList = list;
-			}
-			else
-			{
-				storyChoiceList = new BlankStoryChoiceList();
-			}
-			index = 0;
-			UpdateButtons();
-			SetImage(storyChoiceList.Image);
-			UpdateText();
-		}
-
-		internal void PreviousChoice()
-		{
-			if (index <= 0)
-			{
-				int lastIndex = storyChoiceList.NumChoices - 1;
-				index = lastIndex;
-			}
-			else
-			{
-				--index;
+				imageView.Source = source;
 			}
 		}
 
-		internal void NextChoice()
+		public void SetText(string text)
 		{
-			int lastIndex = storyChoiceList.NumChoices - 1;
-			if (index >= lastIndex)
+			TextBlock[] textBlocks = new TextBlock[] { (FindName("textView") as TextBlock), (FindName("textView2") as TextBlock) };
+			foreach (TextBlock textView in textBlocks)
 			{
-
-				index = 0;
-			}
-			else
-			{
-				++index;
+				textView.Text = text;
 			}
 		}
 
-		private void InitializeVariables()
+		public void EnableButtonContinue(bool enabled)
 		{
-			PotWVN mainVN = PotWVN.MainVN;
-			mainVN.Observable.Subscribe(this);
-			UpdateStoryView(mainVN);
+			string[] buttons = new string[] { "buttonContinue", "buttonContinue2" };
+			EnableButtons(buttons, enabled);
 		}
 
-		private void UpdateStoryView(IVisualNovel vn)
+		public void EnableButtonPreviousChoice(bool enabled)
 		{
-			SetStoryChoiceList(vn.CurrentChoices);
+			string[] buttons = new string[] { "buttonPrevious", "buttonPrevious2" };
+			EnableButtons(buttons, enabled);
 		}
 
-		private void SetImage(ImageSource source)
+		public void EnableButtonNextChoice(bool enabled)
 		{
-			Image imageView = FindName("imageView") as Image;
-			imageView.Source = source;
+			string[] buttons = new string[] { "buttonNext", "buttonNext2" };
+			EnableButtons(buttons, enabled);
 		}
 
-		private void UpdateText()
+		public bool FrameNavigate(Type sourcePageType)
 		{
-			SetText(Choice.Text);
+			return Frame.Navigate(sourcePageType);
 		}
 
-		private void SetText(string text)
+		/*private ICollection<T> GetPortraitAndLandscapeObjects<T>(string objectName)
 		{
-			TextBlock textView = FindName("textView") as TextBlock;
-			textView.Text = text;
+			string secondObjectName = objectName + "2";
+			string[] objectNames = new string[] { objectName, secondObjectName };
+			HashSet<T> objects = new HashSet<T>();
+			foreach (string name in objectNames)
+			{
+				T o = (T)FindName(name);
+				objects.Add(o);
+			}
+			return objects;
+		}*/
+
+		private void EnableButtons(string[] buttonNames, bool enabled)
+		{
+			foreach (string name in buttonNames)
+			{
+				EnableButton(name, enabled);
+			}
 		}
 
-		private void UpdateButtons()
-		{
-			int numChoices = storyChoiceList.NumChoices;
-			bool willEnableContinue = (numChoices > 0);
-			bool willEnablePreviousAndNext = (numChoices > 1);
-			enableButtonContinue(willEnableContinue);
-			enableButtonsPreviousAndNextChoice(willEnablePreviousAndNext);
-		}
-
-		private void enableButtonContinue(bool enabled)
-		{
-			enableButton("buttonContinue", enabled);
-		}
-
-		private void enableButtonsPreviousAndNextChoice(bool enabled)
-		{
-			enableButtonPreviousChoice(enabled);
-			enableButtonNextChoice(enabled);
-		}
-
-		private void enableButtonPreviousChoice(bool enabled)
-		{
-			enableButton("buttonPrevious", enabled);
-		}
-
-		private void enableButtonNextChoice(bool enabled)
-		{
-			enableButton("buttonNext", enabled);
-		}
-
-		private void enableButton(string buttonName, bool enabled)
+		private void EnableButton(string buttonName, bool enabled)
 		{
 			Button button = FindName(buttonName) as Button;
 			button.IsEnabled = enabled;
+		}
+
+		private void buttonPrevious_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+		{
+			controller.PreviousChoice();
+		}
+
+		private void buttonContinue_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+		{
+			controller.SelectChoice();
+		}
+
+		private void buttonNext_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+		{
+			controller.NextChoice();
+		}
+
+		private void buttonOptions_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+		{
 		}
 	}
 }

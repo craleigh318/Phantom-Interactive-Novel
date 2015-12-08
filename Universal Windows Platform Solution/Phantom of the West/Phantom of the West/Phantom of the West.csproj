@@ -123,9 +123,11 @@
     <Compile Include="User Interface\Input\GamepadEventsDelegator.cs" />
     <Compile Include="User Interface\Input\IGamepadEvents.cs" />
     <Compile Include="User Interface\Story View\ImageViewAspectRatio.cs" />
+    <Compile Include="User Interface\Story View\IStoryView.cs" />
     <Compile Include="User Interface\Story View\StoryView.xaml.cs">
       <DependentUpon>StoryView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="User Interface\Story View\StoryViewController.cs" />
     <Compile Include="User Interface\StoryFrame.cs" />
     <Compile Include="Visual Novel\BlankStoryChoice.cs" />
     <Compile Include="Visual Novel\BlankStoryChoiceList.cs" />
@@ -170,8 +172,8 @@
     <Content Include="Assets\Phantom-Icon-24x24.png" />
     <Content Include="Assets\Phantom-Icon-310x150.png" />
     <Content Include="Assets\Phantom-Icon-310x310.png" />
-    <Content Include="Assets\Phantom-Icon-44x44.png" />
-    <Content Include="Assets\Phantom-Icon-50x50.png" />
+    <Content Include="Assets\Phantom-Icon-44x44-with-Background.png" />
+    <Content Include="Assets\Phantom-Icon-50x50-with-Background.png" />
     <Content Include="Assets\Phantom-Icon-620x300.png" />
     <Content Include="Assets\Phantom-Icon-71x71.png" />
     <Content Include="Assets\Story Images\Airport-Evacuees-Possessed.png" />
@@ -529,13 +531,6 @@
     <Content Include="Assets\Story Images\Yukio-Intro.png" />
     <Content Include="Assets\Story Images\Yukio-Withholds-Wallet.png" />
     <Content Include="Properties\Default.rd.xml" />
-    <Content Include="Assets\LockScreenLogo.scale-200.png" />
-    <Content Include="Assets\SplashScreen.scale-200.png" />
-    <Content Include="Assets\Square150x150Logo.scale-200.png" />
-    <Content Include="Assets\Square44x44Logo.scale-200.png" />
-    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
-    <Content Include="Assets\StoreLogo.png" />
-    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
