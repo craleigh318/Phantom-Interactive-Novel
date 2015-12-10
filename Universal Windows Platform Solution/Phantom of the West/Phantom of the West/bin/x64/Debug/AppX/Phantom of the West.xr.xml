@@ -25,6 +25,19 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Phantom_of_the_West.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="Items" />
+      <RootEvent Name="ItemClick" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
+      <RootProperty Name="Header" />
+    </RootType>
+    <RootType FullName="Phantom_of_the_West.User_Interface.Menus.MainOptionsMenu" />
     <RootType FullName="Windows.UI.Xaml.GridLength" />
     <RootType FullName="System.String" />
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">

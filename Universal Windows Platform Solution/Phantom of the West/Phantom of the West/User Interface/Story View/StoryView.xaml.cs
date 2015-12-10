@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Phantom_of_the_West.User_Interface.Menus;
+using System;
 using System.Collections.Generic;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
@@ -105,6 +106,7 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 
 		private void buttonOptions_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
 		{
+			FrameNavigate(typeof(MainOptionsMenu));
 		}
 	}
 }

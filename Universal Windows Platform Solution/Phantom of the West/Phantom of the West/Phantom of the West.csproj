@@ -122,6 +122,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User Interface\Input\GamepadEventsDelegator.cs" />
     <Compile Include="User Interface\Input\IGamepadEvents.cs" />
+    <Compile Include="User Interface\Menus\MainOptionsMenu.xaml.cs">
+      <DependentUpon>MainOptionsMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="User Interface\Story View\ImageViewAspectRatio.cs" />
     <Compile Include="User Interface\Story View\IStoryView.cs" />
     <Compile Include="User Interface\Story View\StoryView.xaml.cs">
@@ -540,6 +543,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="User Interface\Menus\MainOptionsMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="User Interface\Story View\StoryView.xaml">
       <SubType>Designer</SubType>
