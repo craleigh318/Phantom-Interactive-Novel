@@ -1,11 +1,15 @@
-﻿using Phantom_of_the_West.Visual_Novel;
+﻿using Phantom_of_the_West.Data_Management;
+using Phantom_of_the_West.Visual_Novel;
+using Phantom_of_the_West.Visual_Novel.Serialization;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.Storage.Pickers;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
@@ -32,6 +36,8 @@ namespace Phantom_of_the_West.User_Interface.Menus
 		{
 			this.InitializeComponent();
 			PickerLocationId gameSavesFolder = PickerLocationId.DocumentsLibrary;
+			savePicker.SuggestedStartLocation = gameSavesFolder;
+			openPicker.SuggestedStartLocation = gameSavesFolder;
 		}
 
 		protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -70,14 +76,26 @@ namespace Phantom_of_the_West.User_Interface.Menus
 			}
 		}
 
-		private void SaveGame()
+		private async void SaveGame()
 		{
-
+			StorageFile file = await savePicker.PickSaveFileAsync();
+			if (file != null)
+			{
+				CachedFileManager.DeferUpdates(file);
+				GameState data = PotWVN.MainVN.SaveGame();
+				await DataManager.ManualSave(data, file);
+				await CachedFileManager.CompleteUpdatesAsync(file);
+			}
 		}
 
-		private void LoadGame()
+		private async void LoadGame()
 		{
-
+			StorageFile file = await openPicker.PickSingleFileAsync();
+			if (file != null)
+			{
+				GameState data = await DataManager.ManualLoad(file);
+				PotWVN.MainVN.LoadGame(data);
+			}
 		}
 
 		private void NewGame()

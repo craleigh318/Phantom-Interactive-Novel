@@ -42,14 +42,7 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 
 		internal void SetStoryChoiceList(IStoryChoiceList list)
 		{
-			if (list != null)
-			{
-				storyChoiceList = list;
-			}
-			else
-			{
-				storyChoiceList = new BlankStoryChoiceList();
-			}
+			storyChoiceList = list;
 			index = 0;
 			UpdateButtons();
 			UpdateImageAndText();
@@ -103,7 +96,16 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 
 		private void UpdateImageAndText()
 		{
-			SetImage(storyChoiceList.Image);
+			ImageSource img;
+			if (storyChoiceList != null)
+			{
+				img = storyChoiceList.Image;
+			}
+			else
+			{
+				img = null;
+			}
+			SetImage(img);
 			UpdateText();
 		}
 
@@ -114,7 +116,16 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 
 		private void UpdateText()
 		{
-			SetText(Choice.Text);
+			string txt;
+			if (storyChoiceList != null)
+			{
+				txt = Choice.Text;
+			}
+			else
+			{
+				txt = "";
+			}
+			SetText(txt);
 		}
 
 		private void SetText(string text)
@@ -124,7 +135,15 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 
 		private void UpdateButtons()
 		{
-			int numChoices = storyChoiceList.NumChoices;
+			int numChoices;
+			if (storyChoiceList != null)
+			{
+				numChoices = storyChoiceList.NumChoices;
+			}
+			else
+			{
+				numChoices = 0;
+			}
 			bool willEnableContinue = (numChoices > 0);
 			bool willEnablePreviousAndNext = (numChoices > 1);
 			EnableButtonContinue(willEnableContinue);

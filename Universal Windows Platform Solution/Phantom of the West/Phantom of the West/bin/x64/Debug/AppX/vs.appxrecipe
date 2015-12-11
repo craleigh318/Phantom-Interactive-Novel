@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>210f958c-0ac2-4009-8c74-a878cbce8805</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\obj\x64\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>AC10D2EEAF7F976B167198D542D215DE0B975E9D3F9E0E588F9111612D7682E0</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>55CD8D266BC8D33317FACE30A653F8B2999AFFB86C84472E7D74762959728BF4</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>44128ChristopherRaleigh.PhantomoftheWest_0.1.0.0_x64__8en5jq2r0shka</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>44128ChristopherRaleigh.PhantomoftheWest_8en5jq2r0shka!App</RegisteredUserModeAppID>
     <RegisteredPackageID>44128ChristopherRaleigh.PhantomoftheWest</RegisteredPackageID>
@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-11T03:21:41.478</Modified>
+      <Modified>2015-12-11T09:54:27.507</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -1492,7 +1492,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\bin\x64\Debug\Core\entrypoint\Phantom of the West.exe">
       <PackagePath>entrypoint\Phantom of the West.exe</PackagePath>
-      <Modified>2015-12-11T03:21:38.464</Modified>
+      <Modified>2015-12-11T09:54:19.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\bin\x64\Debug\Core\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -1520,7 +1520,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\bin\x64\Debug\Core\Phantom of the West.exe">
       <PackagePath>Phantom of the West.exe</PackagePath>
-      <Modified>2015-12-11T03:21:41.476</Modified>
+      <Modified>2015-12-11T09:54:27.507</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\bin\x64\Debug\Core\Phantom of the West.xr.xml">
       <PackagePath>Phantom of the West.xr.xml</PackagePath>
@@ -1532,7 +1532,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\bin\x64\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-11T03:16:22.940</Modified>
+      <Modified>2015-12-11T09:54:21.891</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\bin\x64\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

@@ -116,6 +116,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Data Management\DataManager.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -132,8 +133,6 @@
     </Compile>
     <Compile Include="User Interface\Story View\StoryViewController.cs" />
     <Compile Include="User Interface\StoryFrame.cs" />
-    <Compile Include="Visual Novel\BlankStoryChoice.cs" />
-    <Compile Include="Visual Novel\BlankStoryChoiceList.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 0\Chapter0.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 1\Chapter1.cs" />
     <Compile Include="Visual Novel\Chapters\ChapterSelector.cs" />
