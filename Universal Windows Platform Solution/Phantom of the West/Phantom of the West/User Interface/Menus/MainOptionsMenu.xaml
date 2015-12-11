@@ -10,13 +10,19 @@
 	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 		<ListView x:Name="listOptions" SelectionMode="None" IsItemClickEnabled="True" ItemClick="listOptions_ItemClick">
 			<ListViewItem x:Name="itemSaveGame">
-				Save
+				<TextBlock x:Name="blockSaveGame">
+					Save
+				</TextBlock>
 			</ListViewItem>
 			<ListViewItem x:Name="itemLoadGame">
-				Load
+				<TextBlock x:Name="blockLoadGame">
+					Load
+				</TextBlock>
 			</ListViewItem>
 			<ListViewItem x:Name="itemNewGame">
-				New Game
+				<TextBlock x:Name="blockNewGame">
+					New Game
+				</TextBlock>
 			</ListViewItem>
 			<ListViewItem x:Name="itemVoiceover">
 				<ToggleSwitch x:Name="switchVoiceover" Header="Voice-Over" />

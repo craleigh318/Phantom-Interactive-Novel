@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Phantom_of_the_West.Visual_Novel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -31,7 +32,7 @@ namespace Phantom_of_the_West.User_Interface.Menus
 		{
 			this.InitializeComponent();
 			PickerLocationId gameSavesFolder = PickerLocationId.DocumentsLibrary;
-        }
+		}
 
 		protected override void OnNavigatedTo(NavigationEventArgs e)
 		{
@@ -51,9 +52,37 @@ namespace Phantom_of_the_West.User_Interface.Menus
 
 		private void listOptions_ItemClick(object sender, ItemClickEventArgs e)
 		{
-			/*ListViewItem clickedItem = e.ClickedItem as ListViewItem;
-			string clickedItemName = clickedItem.Name;*/
+			FrameworkElement clickedItem = e.ClickedItem as FrameworkElement;
+			string clickedItemName = clickedItem.Name;
+			switch (clickedItemName)
+			{
+				case "blockSaveGame":
+					SaveGame();
+					break;
+				case "blockLoadGame":
+					LoadGame();
+					break;
+				case "blockNewGame":
+					NewGame();
+					break;
+				default:
+					break;
+			}
+		}
 
+		private void SaveGame()
+		{
+
+		}
+
+		private void LoadGame()
+		{
+
+		}
+
+		private void NewGame()
+		{
+			PotWVN.MainVN.NewGame();
 		}
 	}
 }

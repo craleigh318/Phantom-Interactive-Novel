@@ -37,6 +37,10 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
       <RootProperty Name="Header" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="TextWrapping" />
+    </RootType>
     <RootType FullName="Phantom_of_the_West.User_Interface.Menus.MainOptionsMenu" />
     <RootType FullName="Windows.UI.Xaml.GridLength" />
     <RootType FullName="System.String" />
@@ -51,9 +55,6 @@
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image" />
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="TextWrapping" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
