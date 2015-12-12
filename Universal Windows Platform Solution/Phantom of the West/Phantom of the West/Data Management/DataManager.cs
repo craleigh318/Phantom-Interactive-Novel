@@ -11,9 +11,13 @@ namespace Phantom_of_the_West.Data_Management
 {
 	public class DataManager
 	{
+		private static StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+
 		private static ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
 
 		private const string voiceoverName = "voiceover";
+
+		private const string autoSaveName = "autoSave.xml";
 
 		public static bool Voiceover
 		{
@@ -58,6 +62,19 @@ namespace Phantom_of_the_West.Data_Management
 				}
 			}
 			return data;
+		}
+
+		public static async Task AutoSave(GameState data)
+		{
+			StorageFile file = await storageFolder.CreateFileAsync(autoSaveName, CreationCollisionOption.ReplaceExisting);
+			await ManualSave(data, file);
+		}
+
+		public static async Task<GameState> LoadAutoSave(StorageFile fromFile)
+		{
+			StorageFile file = await storageFolder.GetFileAsync(autoSaveName);
+			GameState gs = await ManualLoad(file);
+			return gs;
 		}
 	}
 }
