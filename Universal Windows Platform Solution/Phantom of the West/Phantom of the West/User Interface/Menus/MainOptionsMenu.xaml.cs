@@ -3,21 +3,13 @@ using Phantom_of_the_West.Visual_Novel;
 using Phantom_of_the_West.Visual_Novel.Serialization;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
+using System.Diagnostics;
 using System.Threading.Tasks;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.Storage;
 using Windows.Storage.Pickers;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -29,15 +21,15 @@ namespace Phantom_of_the_West.User_Interface.Menus
 	/// </summary>
 	public sealed partial class MainOptionsMenu : Page
 	{
-		private FileSavePicker savePicker = new FileSavePicker();
-		private FileOpenPicker openPicker = new FileOpenPicker();
+		private const string saveFileTypeName = "XML Save File";
+
+		private static readonly string[] saveFileTypeExtensions = new string[] { ".xml" };
+
+		private const PickerLocationId gameSavesFolder = PickerLocationId.DocumentsLibrary;
 
 		public MainOptionsMenu()
 		{
 			this.InitializeComponent();
-			PickerLocationId gameSavesFolder = PickerLocationId.DocumentsLibrary;
-			savePicker.SuggestedStartLocation = gameSavesFolder;
-			openPicker.SuggestedStartLocation = gameSavesFolder;
 		}
 
 		protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -76,8 +68,16 @@ namespace Phantom_of_the_West.User_Interface.Menus
 			}
 		}
 
-		private async void SaveGame()
+		private void SaveGame()
 		{
+			Task t = SaveGameAsync();
+		}
+
+		private async Task SaveGameAsync()
+		{
+			FileSavePicker savePicker = new FileSavePicker();
+			savePicker.SuggestedStartLocation = gameSavesFolder;
+			savePicker.FileTypeChoices.Add(saveFileTypeName, saveFileTypeExtensions);
 			StorageFile file = await savePicker.PickSaveFileAsync();
 			if (file != null)
 			{
@@ -88,8 +88,19 @@ namespace Phantom_of_the_West.User_Interface.Menus
 			}
 		}
 
-		private async void LoadGame()
+		private void LoadGame()
 		{
+			Task t = LoadGameAsync();
+		}
+
+		private async Task LoadGameAsync()
+		{
+			FileOpenPicker openPicker = new FileOpenPicker();
+			openPicker.SuggestedStartLocation = gameSavesFolder;
+			foreach (string ext in saveFileTypeExtensions)
+			{
+				openPicker.FileTypeFilter.Add(ext);
+			}
 			StorageFile file = await openPicker.PickSingleFileAsync();
 			if (file != null)
 			{
