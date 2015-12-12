@@ -29,7 +29,9 @@ namespace Phantom_of_the_West.User_Interface.Menus
 
 		public MainOptionsMenu()
 		{
-			this.InitializeComponent();
+			InitializeComponent();
+			ToggleSwitch ts = FindName("switchVoiceover") as ToggleSwitch;
+			ts.IsOn = DataManager.Voiceover;
 		}
 
 		protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -112,6 +114,13 @@ namespace Phantom_of_the_West.User_Interface.Menus
 		private void NewGame()
 		{
 			PotWVN.MainVN.NewGame();
+			StoryFrame.GoBackToRoot(Frame);
+		}
+
+		private void switchVoiceover_Toggled(object sender, RoutedEventArgs e)
+		{
+			ToggleSwitch ts = sender as ToggleSwitch;
+			DataManager.Voiceover = ts.IsOn;
 		}
 	}
 }

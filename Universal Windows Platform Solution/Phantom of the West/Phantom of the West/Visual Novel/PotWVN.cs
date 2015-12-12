@@ -1,6 +1,6 @@
 ﻿using Phantom_of_the_West.Visual_Novel.Chapters;
 using Phantom_of_the_West.Visual_Novel.Serialization;
-using System.Collections.Generic;
+using Phantom_of_the_West.Visual_Novel.Serialization.Event_Flagging;
 
 namespace Phantom_of_the_West.Visual_Novel
 {
@@ -18,7 +18,15 @@ namespace Phantom_of_the_West.Visual_Novel
 			private set;
 		} = new ObservableVisualNovel();
 
+		internal EventFlagsCollection EventFlags
+		{
+			get;
+			private set;
+		} = null;
+
 		private IStoryChoiceList currentChoices = null;
+
+		private int id = 0;
 
 		public IStoryChoiceList CurrentChoices
 		{
@@ -35,26 +43,31 @@ namespace Phantom_of_the_West.Visual_Novel
 
 		public void NewGame()
 		{
+			EventFlags = new EventFlagsCollection();
 			GoToState(101);
 		}
 
 		public void PlayTutorial()
 		{
+			EventFlags = new EventFlagsCollection();
 			GoToState(1);
 		}
 
 		public GameState SaveGame()
 		{
-			throw new System.InvalidOperationException();
+			GameState gs = new GameState(EventFlags, id);
+			return gs;
 		}
 
 		public void LoadGame(GameState gs)
 		{
-
+			EventFlags = gs.EventFlags;
+			GoToState(gs.ID);
 		}
 
 		internal void GoToState(int id)
 		{
+			this.id = id;
 			ChapterSelector.GoToState(id);
 		}
 

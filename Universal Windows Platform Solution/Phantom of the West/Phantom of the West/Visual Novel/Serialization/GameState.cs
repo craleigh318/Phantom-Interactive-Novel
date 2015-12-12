@@ -10,14 +10,20 @@ namespace Phantom_of_the_West.Visual_Novel.Serialization
 		internal EventFlagsCollection EventFlags
 		{
 			get;
-			set;
+			private set;
 		}
 
 		[DataMember]
 		internal int ID
 		{
 			get;
-			set;
+			private set;
+		}
+
+		internal GameState(EventFlagsCollection eventFlags, int id)
+		{
+			EventFlags = eventFlags;
+			ID = id;
 		}
 	}
 }
