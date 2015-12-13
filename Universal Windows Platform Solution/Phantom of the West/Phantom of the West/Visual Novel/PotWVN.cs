@@ -1,6 +1,9 @@
-﻿using Phantom_of_the_West.Visual_Novel.Chapters;
+﻿using Phantom_of_the_West.Data_Management;
+using Phantom_of_the_West.Visual_Novel.Chapters;
 using Phantom_of_the_West.Visual_Novel.Serialization;
 using Phantom_of_the_West.Visual_Novel.Serialization.Event_Flagging;
+using System.Threading.Tasks;
+using Windows.Storage;
 
 namespace Phantom_of_the_West.Visual_Novel
 {
@@ -41,6 +44,19 @@ namespace Phantom_of_the_West.Visual_Novel
 			}
 		}
 
+		public async Task StartUp()
+		{
+			GameState autoSave = await LoadAutoSave();
+			if (autoSave != null)
+			{
+				LoadGame(autoSave);
+			}
+			else
+			{
+				PlayTutorial();
+			}
+		}
+
 		public void NewGame()
 		{
 			EventFlags = new EventFlagsCollection();
@@ -73,7 +89,20 @@ namespace Phantom_of_the_West.Visual_Novel
 
 		private void NotifyObservers()
 		{
+			AutoSave();
 			Observable.NotifyObservers(this);
+		}
+
+		private void AutoSave()
+		{
+			GameState gs = SaveGame();
+			Task t = DataManager.AutoSave(gs);
+		}
+
+		private async Task<GameState> LoadAutoSave()
+		{
+			GameState gs = await DataManager.LoadAutoSave();
+			return gs;
 		}
 	}
 }

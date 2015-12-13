@@ -70,7 +70,7 @@ namespace Phantom_of_the_West.Data_Management
 			await ManualSave(data, file);
 		}
 
-		public static async Task<GameState> LoadAutoSave(StorageFile fromFile)
+		public static async Task<GameState> LoadAutoSave()
 		{
 			StorageFile file = await storageFolder.GetFileAsync(autoSaveName);
 			GameState gs = await ManualLoad(file);

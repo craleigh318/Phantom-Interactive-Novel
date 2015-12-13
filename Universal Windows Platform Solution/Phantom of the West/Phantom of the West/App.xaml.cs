@@ -1,6 +1,8 @@
 ﻿using Phantom_of_the_West.User_Interface;
 using Phantom_of_the_West.Visual_Novel;
 using System;
+using System.Diagnostics;
+using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
@@ -25,6 +27,28 @@ namespace Phantom_of_the_West
 				Microsoft.ApplicationInsights.WindowsCollectors.Session);
 			this.InitializeComponent();
 			this.Suspending += OnSuspending;
+			UnhandledException += App_UnhandledException;
+		}
+
+
+
+		void App_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+		{
+			if (e != null)
+			{
+				Exception exception = e.Exception;
+				if (exception is NullReferenceException && exception.ToString().ToUpper().Contains("SOMA"))
+				{
+					Debug.WriteLine("Handled Smaato null reference exception {0}", exception);
+					e.Handled = true;
+					return;
+				}
+			}
+			if (Debugger.IsAttached)
+			{
+				// An unhandled exception has occurred; break into the debugger
+				Debugger.Break();
+			}
 		}
 
 		/// <summary>
@@ -50,7 +74,7 @@ namespace Phantom_of_the_West
 			{
 				// Create a Frame to act as the navigation context and navigate to the first page
 				PotWVN mainVN = PotWVN.MainVN;
-				mainVN.PlayTutorial();
+				Task t = mainVN.StartUp();
 				rootFrame = StoryFrame.MainStoryFrame;
 
 				rootFrame.NavigationFailed += OnNavigationFailed;

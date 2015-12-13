@@ -1,6 +1,8 @@
 ﻿using Phantom_of_the_West.User_Interface.Menus;
 using System;
 using System.Collections.Generic;
+using Windows.Foundation;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
@@ -17,7 +19,7 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 
 		public StoryView()
 		{
-			this.InitializeComponent();
+			InitializeComponent();
 			controller = new StoryViewController(this);
 		}
 
@@ -89,6 +91,26 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 			button.IsEnabled = enabled;
 		}
 
+		private void UpdateOrientation(Windows.UI.Xaml.SizeChangedEventArgs e)
+		{
+			Size newSize = e.NewSize;
+			double newWidth = newSize.Width;
+			double newHeight = newSize.Height;
+			bool isLandscape = (newWidth > newHeight);
+			UIElement gridPortrait = FindName("gridPortrait") as UIElement;
+			UIElement gridLandscape = FindName("gridLandscape") as UIElement;
+			if (isLandscape)
+			{
+				gridPortrait.Visibility = Visibility.Collapsed;
+				gridLandscape.Visibility = Visibility.Visible;
+			}
+			else
+			{
+				gridPortrait.Visibility = Visibility.Visible;
+				gridLandscape.Visibility = Visibility.Collapsed;
+			}
+		}
+
 		private void buttonPrevious_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
 		{
 			controller.PreviousChoice();
@@ -107,6 +129,11 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 		private void buttonOptions_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
 		{
 			FrameNavigate(typeof(MainOptionsMenu));
+		}
+
+		private void Page_SizeChanged(object sender, Windows.UI.Xaml.SizeChangedEventArgs e)
+		{
+			UpdateOrientation(e);
 		}
 	}
 }

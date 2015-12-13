@@ -1,11 +1,11 @@
-﻿<Page
+﻿<Page xmlns:Universal="using:Microsoft.AdMediator.Universal" 
     x:Class="Phantom_of_the_West.User_Interface.Story_View.StoryView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Phantom_of_the_West.User_Interface.Story_View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" SizeChanged="Page_SizeChanged">
 
 	<Page.Resources>
 		<GridLength x:Key="buttonLength">60</GridLength>
@@ -18,10 +18,16 @@
 		<SolidColorBrush x:Key="green" Color="#FF00CC00"/>
 		<SolidColorBrush x:Key="red" Color="#FFCC0000"/>
 		<SolidColorBrush x:Key="yellow" Color="#FFCCCC00"/>
+		<x:String x:Key="tabletBannerAdID">9de59942-44ff-43bf-8a05-191895ef97eb</x:String>
 	</Page.Resources>
 
 	<Grid x:Name="gridStoryView" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-		<Grid x:Name="gridPortrait" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition />
+		</Grid.RowDefinitions>
+		<Universal:AdMediatorControl x:Name="potwMainAdMediator" Grid.Row="0" Id="{StaticResource tabletBannerAdID}" VerticalAlignment="Top" />
+		<Grid x:Name="gridPortrait" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Grid.Row="1">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition />
 				<ColumnDefinition />
@@ -40,7 +46,7 @@
 			<Button x:Name="buttonNext" Grid.Row="2" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource rightArrow}" Click="buttonNext_Click"/>
 			<Button x:Name="buttonOptions" Grid.Row="2" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource menuIcon}" Click="buttonOptions_Click"/>
 		</Grid>
-		<Grid x:Name="gridLandscape" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Visibility="Collapsed">
+		<Grid x:Name="gridLandscape" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Visibility="Collapsed" Grid.Row="1">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition />
 				<ColumnDefinition Width="{StaticResource buttonLength}" />
