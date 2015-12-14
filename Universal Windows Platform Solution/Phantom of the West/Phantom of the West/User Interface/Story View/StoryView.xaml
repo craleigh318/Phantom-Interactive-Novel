@@ -26,7 +26,7 @@
 			<RowDefinition Height="Auto" />
 			<RowDefinition />
 		</Grid.RowDefinitions>
-		<Universal:AdMediatorControl x:Name="potwMainAdMediator" Grid.Row="0" Id="{StaticResource tabletBannerAdID}" VerticalAlignment="Top" />
+		<Universal:AdMediatorControl x:Name="potwMainAdMediator" Grid.Row="0" Id="{StaticResource tabletBannerAdID}" VerticalAlignment="Top" HorizontalAlignment="Center" />
 		<Grid x:Name="gridPortrait" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Grid.Row="1">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition />
