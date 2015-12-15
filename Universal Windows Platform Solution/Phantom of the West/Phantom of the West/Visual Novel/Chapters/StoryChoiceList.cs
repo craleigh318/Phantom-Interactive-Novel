@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 
@@ -29,7 +31,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 			private set;
 		}
 
-		public int NumChoices
+		public int Count
 		{
 			get
 			{
@@ -37,15 +39,28 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 			}
 		}
 
+		public IStoryChoice this[int index]
+		{
+			get
+			{
+				return choices[index];
+			}
+		}
+
+		public IEnumerator<IStoryChoice> GetEnumerator()
+		{
+			return GetEnumerator() as IEnumerator<IStoryChoice>;
+		}
+
+		IEnumerator IEnumerable.GetEnumerator()
+		{
+			return choices.GetEnumerator();
+		}
+
 		internal StoryChoiceList(ImageSource image, IStoryChoice[] choices)
 		{
 			Image = image;
 			this.choices = choices;
-		}
-
-		public IStoryChoice GetChoice(int index)
-		{
-			return choices[index];
 		}
 	}
 }

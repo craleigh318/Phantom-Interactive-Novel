@@ -16,7 +16,7 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 		{
 			get
 			{
-				return storyChoiceList.GetChoice(index);
+				return storyChoiceList[index];
 			}
 		}
 
@@ -52,7 +52,7 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 		{
 			if (index <= 0)
 			{
-				int lastIndex = storyChoiceList.NumChoices - 1;
+				int lastIndex = storyChoiceList.Count - 1;
 				index = lastIndex;
 			}
 			else
@@ -64,7 +64,7 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 
 		internal void NextChoice()
 		{
-			int lastIndex = storyChoiceList.NumChoices - 1;
+			int lastIndex = storyChoiceList.Count - 1;
 			if (index >= lastIndex)
 			{
 
@@ -85,7 +85,7 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 		private void InitializeVariables()
 		{
 			PotWVN mainVN = PotWVN.MainVN;
-			mainVN.Observable.Subscribe(this);
+			mainVN.Subscribe(this);
 			UpdateStoryView(mainVN);
 		}
 
@@ -138,7 +138,7 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 			int numChoices;
 			if (storyChoiceList != null)
 			{
-				numChoices = storyChoiceList.NumChoices;
+				numChoices = storyChoiceList.Count;
 			}
 			else
 			{

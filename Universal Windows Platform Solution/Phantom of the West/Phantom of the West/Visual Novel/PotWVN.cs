@@ -2,12 +2,12 @@
 using Phantom_of_the_West.Visual_Novel.Chapters;
 using Phantom_of_the_West.Visual_Novel.Serialization;
 using Phantom_of_the_West.Visual_Novel.Serialization.Event_Flagging;
+using System;
 using System.Threading.Tasks;
-using Windows.Storage;
 
 namespace Phantom_of_the_West.Visual_Novel
 {
-	public class PotWVN : IVisualNovel
+	public class PotWVN : IVisualNovel, IObservable<IVisualNovel>
 	{
 		public static PotWVN MainVN
 		{
@@ -15,17 +15,13 @@ namespace Phantom_of_the_West.Visual_Novel
 			private set;
 		} = new PotWVN();
 
-		public ObservableVisualNovel Observable
-		{
-			get;
-			private set;
-		} = new ObservableVisualNovel();
-
 		internal EventFlagsCollection EventFlags
 		{
 			get;
 			private set;
 		} = null;
+
+		private ObservableVisualNovel observable = new ObservableVisualNovel();
 
 		private IStoryChoiceList currentChoices = null;
 
@@ -81,6 +77,11 @@ namespace Phantom_of_the_West.Visual_Novel
 			GoToState(gs.ID);
 		}
 
+		public IDisposable Subscribe(IObserver<IVisualNovel> observer)
+		{
+			return observable.Subscribe(observer);
+		}
+
 		internal void GoToState(int id)
 		{
 			this.id = id;
@@ -90,7 +91,7 @@ namespace Phantom_of_the_West.Visual_Novel
 		private void NotifyObservers()
 		{
 			AutoSave();
-			Observable.NotifyObservers(this);
+			observable.NotifyObservers(this);
 		}
 
 		private void AutoSave()
