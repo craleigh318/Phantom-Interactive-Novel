@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_1
 {
-	internal class Chapter1
+	internal class Chapter1 : Chapter
 	{
-		internal static Dictionary<int, StoryChoiceListDelegate> IDToChoices
-		{
-			get;
-			private set;
-		} = new Dictionary<int, StoryChoiceListDelegate>
+		internal static Dictionary<int, StoryChoiceListDelegate> dictionary = new Dictionary<int, StoryChoiceListDelegate>
 		{
 			{1001, Ch1Title},
 			{1002, Ch1IAmDrKaden},
@@ -28,6 +20,10 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_1
 			{1012, Ch1IGoToOfficersHome},
 			{1013, Ch1ISleep},
 		};
+
+		internal Chapter1() : base(dictionary)
+		{
+		}
 
 		private static IStoryChoiceList Ch1Title()
 		{

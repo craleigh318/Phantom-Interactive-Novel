@@ -8,27 +8,23 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 
 	internal class ChapterSelector
 	{
-		private static Dictionary<int, Dictionary<int, StoryChoiceListDelegate>> idToChapter = new Dictionary<int, Dictionary<int, StoryChoiceListDelegate>>()
+		private static Dictionary<int, IChapter> idToChapter = new Dictionary<int, IChapter>()
 		{
-			{0, Chapter0.IDToChoices},
-            {1, Chapter1.IDToChoices}
+			{0, new Chapter0()},
+			{1, new Chapter1()}
 		};
 
-		internal static void GoToState(int id)
+		internal static IStoryChoiceList GoToState(int id)
 		{
 			const int chapterMaxPages = 1000;
 			int chapterNumber = id / chapterMaxPages;
 			IStoryChoiceList nextList = null;
 			if (idToChapter.ContainsKey(chapterNumber))
 			{
-				Dictionary<int, StoryChoiceListDelegate> chapter = idToChapter[chapterNumber];
-				if (chapter.ContainsKey(id))
-				{
-					StoryChoiceListDelegate nextListDelegate = chapter[id];
-					nextList = nextListDelegate();
-				}
+				IChapter chapter = idToChapter[chapterNumber];
+				nextList = chapter.GoToState(id);
 			}
-			PotWVN.MainVN.CurrentChoices = nextList;
+			return nextList;
 		}
 	}
 }

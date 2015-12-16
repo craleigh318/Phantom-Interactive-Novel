@@ -136,6 +136,7 @@
     <Compile Include="User Interface\StoryFrame.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 0\Chapter0.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 1\Chapter1.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter.cs" />
     <Compile Include="Visual Novel\Chapters\ChapterSelector.cs" />
     <Compile Include="Visual Novel\Chapters\IChapter.cs" />
     <Compile Include="Visual Novel\Chapters\StoryChoice.cs" />

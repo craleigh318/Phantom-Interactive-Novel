@@ -3,18 +3,14 @@ using System.Collections.Generic;
 
 namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_0
 {
-	internal class Chapter0
+	internal class Chapter0 : Chapter
 	{
 		private const string leftArrow = "⬅︎";
 		private const string ok = "OK";
 		private const string rightArrow = "➡︎";
 		private const string menuIcon = "≣";
 
-		internal static Dictionary<int, StoryChoiceListDelegate> IDToChoices
-		{
-			get;
-			private set;
-		} = new Dictionary<int, StoryChoiceListDelegate>
+		private static Dictionary<int, StoryChoiceListDelegate> dictionary = new Dictionary<int, StoryChoiceListDelegate>
 		{
 			{1, Ch0Welcome },
 			{2, Ch0POTWSimple },
@@ -22,6 +18,10 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_0
 			{4, Ch0FirstChoice },
 			{5, Ch0Options }
 		};
+
+		internal Chapter0() : base(dictionary)
+		{
+		}
 
 		private static IStoryChoiceList Ch0Welcome()
 		{

@@ -2,6 +2,6 @@
 {
 	internal interface IChapter
 	{
-		void GoToState(int id);
+		IStoryChoiceList GoToState(int id);
 	}
 }

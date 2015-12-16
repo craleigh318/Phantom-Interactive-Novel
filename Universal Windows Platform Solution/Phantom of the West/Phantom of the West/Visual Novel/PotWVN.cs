@@ -85,7 +85,7 @@ namespace Phantom_of_the_West.Visual_Novel
 		internal void GoToState(int id)
 		{
 			this.id = id;
-			ChapterSelector.GoToState(id);
+			CurrentChoices = ChapterSelector.GoToState(id);
 		}
 
 		private void NotifyObservers()

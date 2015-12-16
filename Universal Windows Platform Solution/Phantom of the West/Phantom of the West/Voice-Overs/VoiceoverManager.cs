@@ -40,7 +40,7 @@ namespace Phantom_of_the_West.Voice_Overs
 		{
 			get;
 			set;
-		} = SpeechSynthesizer.DefaultVoice;
+		} = null;
 
 		public VoiceInformation enGBMaleVoice
 		{
