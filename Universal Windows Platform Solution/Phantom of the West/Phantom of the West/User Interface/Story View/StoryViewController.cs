@@ -46,6 +46,7 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 			index = 0;
 			UpdateButtons();
 			UpdateImageAndText();
+			list.PlayAudio();
 		}
 
 		internal void PreviousChoice()

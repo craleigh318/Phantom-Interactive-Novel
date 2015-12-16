@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Phantom_of_the_West.Visual_Novel.Chapters
 {
-	internal delegate IStoryChoiceList StoryChoiceListDelegate();
+	internal delegate StoryChoiceList StoryChoiceListDelegate();
 
 	internal class ChapterSelector
 	{

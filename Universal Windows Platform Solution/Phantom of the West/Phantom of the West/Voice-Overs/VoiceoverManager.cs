@@ -36,7 +36,7 @@ namespace Phantom_of_the_West.Voice_Overs
 			return voiceInfo;
 		}
 
-		public VoiceInformation mainVoice
+		public VoiceInformation MainVoice
 		{
 			get;
 			set;

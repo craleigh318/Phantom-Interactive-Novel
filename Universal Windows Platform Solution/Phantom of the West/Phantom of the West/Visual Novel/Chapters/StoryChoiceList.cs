@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Phantom_of_the_West.Voice_Overs;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Windows.UI.Xaml.Media;
@@ -31,6 +32,21 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 			private set;
 		}
 
+		internal IVoiceover AudioComponent
+		{
+			get;
+			set;
+		}
+
+		public void PlayAudio()
+		{
+			IVoiceover audio = AudioComponent;
+			if (audio != null)
+			{
+				audio.Play();
+			}
+		}
+
 		public int Count
 		{
 			get
@@ -57,10 +73,11 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 			return choices.GetEnumerator();
 		}
 
-		internal StoryChoiceList(ImageSource image, IStoryChoice[] choices)
+		internal StoryChoiceList(ImageSource image, IStoryChoice[] choices, IVoiceover audioComponent = null)
 		{
 			Image = image;
 			this.choices = choices;
+			AudioComponent = audioComponent;
 		}
 	}
 }

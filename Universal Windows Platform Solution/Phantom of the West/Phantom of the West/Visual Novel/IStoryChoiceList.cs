@@ -9,5 +9,7 @@ namespace Phantom_of_the_West.Visual_Novel
 		{
 			get;
 		}
+
+		void PlayAudio();
 	}
 }

@@ -25,67 +25,67 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_1
 		{
 		}
 
-		private static IStoryChoiceList Ch1Title()
+		private static StoryChoiceList Ch1Title()
 		{
 			return StoryChoiceList.FromResource("Black.png", new IStoryChoice[] { StoryChoice.FromResource("ch1Title", 1002) });
 		}
 
-		private static IStoryChoiceList Ch1IAmDrKaden()
+		private static StoryChoiceList Ch1IAmDrKaden()
 		{
 			return StoryChoiceList.FromResource("I-am-Dr-Kaden.png", new IStoryChoice[] { StoryChoice.FromResource("ch1IAmDrKaden", 1003) });
 		}
 
-		private static IStoryChoiceList Ch1ThisIsNewFerando()
+		private static StoryChoiceList Ch1ThisIsNewFerando()
 		{
 			return StoryChoiceList.FromResource("Cityscape-from-Window.png", new IStoryChoice[] { StoryChoice.FromResource("ch1ThisIsNewFerando", 1004) });
 		}
 
-		private static IStoryChoiceList Ch1IDrinkElixir()
+		private static StoryChoiceList Ch1IDrinkElixir()
 		{
 			return StoryChoiceList.FromResource("Dr-Kaden-Drinks-Elixir.png", new IStoryChoice[] { StoryChoice.FromResource("ch1IDrinkElixir", 1005) });
 		}
 
-		private static IStoryChoiceList Ch1ILeaveHotel()
+		private static StoryChoiceList Ch1ILeaveHotel()
 		{
 			return StoryChoiceList.FromResource("Dr-Kaden-Walking-among-Citizens.png", new IStoryChoice[] { StoryChoice.FromResource("ch1ILeaveHotel", 1006) });
 		}
 
-		private static IStoryChoiceList Ch1IGoToAlley()
+		private static StoryChoiceList Ch1IGoToAlley()
 		{
 			return StoryChoiceList.FromResource("Dr-Kaden-Ill.png", new IStoryChoice[] { StoryChoice.FromResource("ch1IGoToAlley", 1007) });
 		}
 
-		private static IStoryChoiceList Ch1OfficerSeesMe()
+		private static StoryChoiceList Ch1OfficerSeesMe()
 		{
 			return StoryChoiceList.FromResource("Officer-Notices-Dr-Kaden.png", new IStoryChoice[] { StoryChoice.FromResource("ch1OfficerSeesMe", 1008) });
 		}
 
-		private static IStoryChoiceList Ch1MyFaceDisappears()
+		private static StoryChoiceList Ch1MyFaceDisappears()
 		{
 			return StoryChoiceList.FromResource("Phantom-Reveal.png", new IStoryChoice[] { StoryChoice.FromResource("ch1MyFaceDisappears", 1009) });
 		}
 
-		private static IStoryChoiceList Ch1IOpenMyEyes()
+		private static StoryChoiceList Ch1IOpenMyEyes()
 		{
 			return StoryChoiceList.FromResource("Phantom-Reveal-with-Eyes.png", new IStoryChoice[] { StoryChoice.FromResource("ch1IOpenMyEyes", 1010) });
 		}
 
-		private static IStoryChoiceList Ch1IPossessOfficer()
+		private static StoryChoiceList Ch1IPossessOfficer()
 		{
 			return StoryChoiceList.FromResource("Possess-Police-Officer.png", new IStoryChoice[] { StoryChoice.FromResource("ch1IPossessOfficer", 1011) });
 		}
 
-		private static IStoryChoiceList Ch1ILookAtMyHands()
+		private static StoryChoiceList Ch1ILookAtMyHands()
 		{
 			return StoryChoiceList.FromResource("Officer-Hands.png", new IStoryChoice[] { StoryChoice.FromResource("ch1ILookAtMyHands", 1012) });
 		}
 
-		private static IStoryChoiceList Ch1IGoToOfficersHome()
+		private static StoryChoiceList Ch1IGoToOfficersHome()
 		{
 			return StoryChoiceList.FromResource("Drive-to-Officer-Home.png", new IStoryChoice[] { StoryChoice.FromResource("ch1IGoToOfficersHome", 1013) });
 		}
 
-		private static IStoryChoiceList Ch1ISleep()
+		private static StoryChoiceList Ch1ISleep()
 		{
 			return StoryChoiceList.FromResource("Officer-on-Bed.png", new IStoryChoice[] { StoryChoice.FromResource("ch1ISleep", 2001) });
 		}

@@ -56,7 +56,7 @@ namespace Phantom_of_the_West.Visual_Novel
 		public void NewGame()
 		{
 			EventFlags = new EventFlagsCollection();
-			GoToState(101);
+			GoToState(1001);
 		}
 
 		public void PlayTutorial()
