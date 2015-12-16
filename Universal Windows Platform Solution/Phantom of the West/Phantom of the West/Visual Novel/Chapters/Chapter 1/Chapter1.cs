@@ -25,6 +25,16 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_1
 		{
 		}
 
+		public override IStoryChoiceList GoToState(int id)
+		{
+			StoryChoiceList nextList = base.GoToState(id) as StoryChoiceList;
+			if (nextList != null)
+			{
+				AddAudio(nextList);
+			}
+			return nextList;
+		}
+
 		private static StoryChoiceList Ch1Title()
 		{
 			return StoryChoiceList.FromResource("Black.png", new IStoryChoice[] { StoryChoice.FromResource("ch1Title", 1002) });

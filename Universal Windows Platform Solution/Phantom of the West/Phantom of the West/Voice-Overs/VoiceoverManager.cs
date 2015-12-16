@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using Phantom_of_the_West.Data_Management;
+using System.Collections.Generic;
 using Windows.Media.SpeechSynthesis;
+using Windows.UI.Xaml.Controls;
 
 namespace Phantom_of_the_West.Voice_Overs
 {
@@ -38,9 +40,16 @@ namespace Phantom_of_the_West.Voice_Overs
 
 		public VoiceInformation MainVoice
 		{
-			get;
-			set;
-		} = null;
+			get
+			{
+				bool voiceEnabled = DataManager.Voiceover;
+				if (voiceEnabled)
+				{
+					return enUSMaleVoice;
+				}
+				return null;
+			}
+		}
 
 		public VoiceInformation enGBMaleVoice
 		{
@@ -62,9 +71,17 @@ namespace Phantom_of_the_West.Voice_Overs
 
 		private SpeechSynthesizer synthesizer = new SpeechSynthesizer();
 
+		private MediaElement mediaElement = new MediaElement();
+
 		public IVoiceover MakeSynthesizedVoiceover(VoiceInformation voice, string text)
 		{
 			return new SynthesizedVoiceover(synthesizer, voice, text);
+		}
+
+		internal void PlayStream(SpeechSynthesisStream stream)
+		{
+			mediaElement.SetSource(stream, stream.ContentType);
+			mediaElement.Play();
 		}
 	}
 }

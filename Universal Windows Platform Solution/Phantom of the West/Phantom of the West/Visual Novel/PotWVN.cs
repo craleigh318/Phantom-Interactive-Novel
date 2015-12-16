@@ -92,6 +92,7 @@ namespace Phantom_of_the_West.Visual_Novel
 		{
 			AutoSave();
 			observable.NotifyObservers(this);
+			PlayAudio();
 		}
 
 		private void AutoSave()
@@ -104,6 +105,14 @@ namespace Phantom_of_the_West.Visual_Novel
 		{
 			GameState gs = await DataManager.LoadAutoSave();
 			return gs;
+		}
+
+		private void PlayAudio()
+		{
+			if (currentChoices != null)
+			{
+				currentChoices.PlayAudio();
+			}
 		}
 	}
 }

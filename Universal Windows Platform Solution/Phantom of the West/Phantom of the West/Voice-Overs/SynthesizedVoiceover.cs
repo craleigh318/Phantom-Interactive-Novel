@@ -1,4 +1,6 @@
-﻿using Windows.Foundation;
+﻿using System;
+using System.Threading.Tasks;
+using Windows.Foundation;
 using Windows.Media.SpeechSynthesis;
 
 namespace Phantom_of_the_West.Voice_Overs
@@ -22,6 +24,14 @@ namespace Phantom_of_the_West.Voice_Overs
 		{
 			synthesizer.Voice = voice;
 			IAsyncOperation<SpeechSynthesisStream> op = synthesizer.SynthesizeTextToStreamAsync(text);
+			Task t = PlayAsync(op);
+		}
+
+		private async Task PlayAsync(IAsyncOperation<SpeechSynthesisStream> operation)
+		{
+			SpeechSynthesisStream stream = await operation;
+			VoiceoverManager vm = VoiceoverManager.MainManager;
+			vm.PlayStream(stream);
 		}
 	}
 }

@@ -165,6 +165,7 @@
     <Compile Include="Voice-Overs\IVoiceover.cs" />
     <Compile Include="Voice-Overs\SynthesizedVoiceover.cs" />
     <Compile Include="Voice-Overs\VoiceoverManager.cs" />
+    <Compile Include="Voice-Overs\VoiceType.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
