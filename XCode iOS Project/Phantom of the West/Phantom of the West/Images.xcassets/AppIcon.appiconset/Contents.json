@@ -45,7 +45,7 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "Phantom-Icon-120-1.png",
+      "filename" : "Phantom-Icon-121.png",
       "scale" : "2x"
     },
     {
@@ -57,13 +57,13 @@
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "Phantom-Icon-29-1.png",
+      "filename" : "Phantom-Icon-30.png",
       "scale" : "1x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "Phantom-Icon-58-1.png",
+      "filename" : "Phantom-Icon-59.png",
       "scale" : "2x"
     },
     {
@@ -75,7 +75,7 @@
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "Phantom-Icon-80-1.png",
+      "filename" : "Phantom-Icon-81.png",
       "scale" : "2x"
     },
     {
@@ -115,6 +115,12 @@
       "scale" : "2x"
     },
     {
+      "size" : "83.5x83.5",
+      "idiom" : "ipad",
+      "filename" : "Phantom-Icon-167.png",
+      "scale" : "2x"
+    },
+    {
       "size" : "24x24",
       "idiom" : "watch",
       "filename" : "Phantom-Icon-48.png",
@@ -133,21 +139,21 @@
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "Phantom-Icon-58-2.png",
+      "filename" : "Phantom-Icon-60.png",
       "role" : "companionSettings",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "watch",
-      "filename" : "Phantom-Icon-87-1.png",
+      "filename" : "Phantom-Icon-89.png",
       "role" : "companionSettings",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "watch",
-      "filename" : "Phantom-Icon-80-2.png",
+      "filename" : "Phantom-Icon-82.png",
       "scale" : "2x",
       "role" : "appLauncher",
       "subtype" : "38mm"
