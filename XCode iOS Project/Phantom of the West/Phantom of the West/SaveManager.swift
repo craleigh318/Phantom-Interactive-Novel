@@ -12,18 +12,18 @@ public class SaveManager {
     
     public static let defaults = NSUserDefaults.standardUserDefaults()
     
-    private static let purchasedAdRemovalKey: String  = "purchasedAdRemoval"
+    //private static let purchasedAdRemovalKey: String  = "purchasedAdRemoval"
     
     private static let voiceoverKey: String  = "voiceoverEnabled"
     
-    public internal(set) static var purchasedAdRemoval: Bool {
+    /*public internal(set) static var purchasedAdRemoval: Bool {
         get {
         return defaults.boolForKey(purchasedAdRemovalKey)
         }
         set {
             defaults.setBool(newValue, forKey: purchasedAdRemovalKey)
         }
-    }
+    }*/
     
     public internal(set) static var voiceover: Bool {
         get {

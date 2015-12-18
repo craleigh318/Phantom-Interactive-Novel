@@ -33,13 +33,13 @@ public class MainOptionsMenu: OptionsMenu {
     
     private lazy var voiceOption: VoiceOption = VoiceOption()
     
-    private lazy var toIAPMenu: ToIAPMenu = {
+    /*private lazy var toIAPMenu: ToIAPMenu = {
         let newMenu = ToIAPMenu()
         newMenu.viewController = self
         return newMenu
-    }()
+    }()*/
     
-    private lazy var options: [POptionsMenuItem] = [self.saveGame, self.loadGame, self.newGame, self.voiceOption, self.toIAPMenu]
+    private lazy var options: [POptionsMenuItem] = [self.saveGame, self.loadGame, self.newGame, self.voiceOption/*, self.toIAPMenu*/]
     
     override public func viewDidLoad() {
         super.viewDidLoad()
