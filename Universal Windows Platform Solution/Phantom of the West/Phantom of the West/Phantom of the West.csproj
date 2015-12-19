@@ -175,14 +175,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Package.StoreAssociation.xml" />
-    <Content Include="Assets\Phantom-Icon-150x150.png" />
-    <Content Include="Assets\Phantom-Icon-24x24.png" />
-    <Content Include="Assets\Phantom-Icon-310x150.png" />
-    <Content Include="Assets\Phantom-Icon-310x310.png" />
-    <Content Include="Assets\Phantom-Icon-44x44-with-Background.png" />
-    <Content Include="Assets\Phantom-Icon-50x50-with-Background.png" />
-    <Content Include="Assets\Phantom-Icon-620x300.png" />
-    <Content Include="Assets\Phantom-Icon-71x71.png" />
+    <Content Include="Assets\Phantom-Icon-150x150.scale-100.png" />
+    <Content Include="Assets\Phantom-Icon-150x150.scale-125.png" />
+    <Content Include="Assets\Phantom-Icon-150x150.scale-150.png" />
+    <Content Include="Assets\Phantom-Icon-150x150.scale-200.png" />
+    <Content Include="Assets\Phantom-Icon-150x150.scale-400.png" />
+    <Content Include="Assets\Phantom-Icon-24x24.scale-100.png" />
+    <Content Include="Assets\Phantom-Icon-24x24.scale-125.png" />
+    <Content Include="Assets\Phantom-Icon-24x24.scale-150.png" />
+    <Content Include="Assets\Phantom-Icon-24x24.scale-200.png" />
+    <Content Include="Assets\Phantom-Icon-24x24.scale-400.png" />
+    <Content Include="Assets\Phantom-Icon-310x150.scale-100.png" />
+    <Content Include="Assets\Phantom-Icon-310x150.scale-125.png" />
+    <Content Include="Assets\Phantom-Icon-310x150.scale-150.png" />
+    <Content Include="Assets\Phantom-Icon-310x150.scale-200.png" />
+    <Content Include="Assets\Phantom-Icon-310x150.scale-400.png" />
+    <Content Include="Assets\Phantom-Icon-310x310.scale-100.png" />
+    <Content Include="Assets\Phantom-Icon-310x310.scale-125.png" />
+    <Content Include="Assets\Phantom-Icon-310x310.scale-150.png" />
+    <Content Include="Assets\Phantom-Icon-310x310.scale-200.png" />
+    <Content Include="Assets\Phantom-Icon-310x310.scale-400.png" />
+    <Content Include="Assets\Phantom-Icon-50x50-with-Background.scale-100.png" />
+    <Content Include="Assets\Phantom-Icon-50x50-with-Background.scale-125.png" />
+    <Content Include="Assets\Phantom-Icon-50x50-with-Background.scale-150.png" />
+    <Content Include="Assets\Phantom-Icon-50x50-with-Background.scale-200.png" />
+    <Content Include="Assets\Phantom-Icon-50x50-with-Background.scale-400.png" />
+    <Content Include="Assets\Phantom-Icon-620x300.scale-100.png" />
+    <Content Include="Assets\Phantom-Icon-620x300.scale-125.png" />
+    <Content Include="Assets\Phantom-Icon-620x300.scale-150.png" />
+    <Content Include="Assets\Phantom-Icon-620x300.scale-200.png" />
+    <Content Include="Assets\Phantom-Icon-620x300.scale-400.png" />
+    <Content Include="Assets\Phantom-Icon-71x71.scale-100.png" />
+    <Content Include="Assets\Phantom-Icon-71x71.scale-125.png" />
+    <Content Include="Assets\Phantom-Icon-71x71.scale-150.png" />
+    <Content Include="Assets\Phantom-Icon-71x71.scale-200.png" />
+    <Content Include="Assets\Phantom-Icon-71x71.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.scale-100.png" />
+    <Content Include="Assets\Square44x44Logo.scale-125.png" />
+    <Content Include="Assets\Square44x44Logo.scale-150.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-16_altform-unplated.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-256_altform-unplated.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-48.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-48_altform-unplated.png" />
     <Content Include="Assets\Story Images\Airport-Evacuees-Possessed.png" />
     <Content Include="Assets\Story Images\Airport-Evacuees.png" />
     <Content Include="Assets\Story Images\Airport-Kaden-and-Caitlyn-Kiss.png" />
@@ -561,15 +601,7 @@
     <Folder Include="Gaming\" />
   </ItemGroup>
   <ItemGroup>
-    <SDKReference Include="Microsoft.AdMediator.Universal, Version=1.0">
-      <Name>Microsoft.AdMediator.Universal</Name>
-    </SDKReference>
-    <SDKReference Include="Microsoft.Advertising.Xaml, Version=10.0">
-      <Name>Microsoft Advertising SDK for XAML</Name>
-    </SDKReference>
-    <SDKReference Include="Microsoft.VCLibs, Version=14.0">
-      <Name>Visual C++ 2015 Runtime for Universal Windows Platform Apps</Name>
-    </SDKReference>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

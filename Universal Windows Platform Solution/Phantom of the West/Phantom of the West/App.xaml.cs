@@ -30,8 +30,6 @@ namespace Phantom_of_the_West
 			UnhandledException += App_UnhandledException;
 		}
 
-
-
 		void App_UnhandledException(object sender, UnhandledExceptionEventArgs e)
 		{
 			if (e != null)

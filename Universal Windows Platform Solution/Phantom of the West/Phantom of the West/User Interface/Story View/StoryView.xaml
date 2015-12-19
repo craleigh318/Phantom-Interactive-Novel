@@ -22,12 +22,7 @@
 	</Page.Resources>
 
 	<Grid x:Name="gridStoryView" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto" />
-			<RowDefinition />
-		</Grid.RowDefinitions>
-		<Universal:AdMediatorControl x:Name="potwMainAdMediator" Grid.Row="0" Id="{StaticResource tabletBannerAdID}" VerticalAlignment="Top" HorizontalAlignment="Center" />
-		<Grid x:Name="gridPortrait" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Grid.Row="1">
+		<Grid x:Name="gridPortrait" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition />
 				<ColumnDefinition />
@@ -46,7 +41,7 @@
 			<Button x:Name="buttonNext" Grid.Row="2" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource rightArrow}" Click="buttonNext_Click"/>
 			<Button x:Name="buttonOptions" Grid.Row="2" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource menuIcon}" Click="buttonOptions_Click"/>
 		</Grid>
-		<Grid x:Name="gridLandscape" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Visibility="Collapsed" Grid.Row="1">
+		<Grid x:Name="gridLandscape" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Visibility="Collapsed">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition />
 				<ColumnDefinition Width="{StaticResource buttonLength}" />
