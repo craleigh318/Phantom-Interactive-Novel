@@ -7,26 +7,24 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-		<ListView x:Name="listOptions" SelectionMode="None" IsItemClickEnabled="True" ItemClick="listOptions_ItemClick">
-			<ListViewItem x:Name="itemSaveGame">
-				<TextBlock x:Name="blockSaveGame">
+	<ListView x:Name="listOptions" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" SelectionMode="None" IsItemClickEnabled="True" ItemClick="listOptions_ItemClick">
+		<ListViewItem x:Name="itemSaveGame">
+			<TextBlock x:Name="blockSaveGame">
 					Save
-				</TextBlock>
-			</ListViewItem>
-			<ListViewItem x:Name="itemLoadGame">
-				<TextBlock x:Name="blockLoadGame">
+			</TextBlock>
+		</ListViewItem>
+		<ListViewItem x:Name="itemLoadGame">
+			<TextBlock x:Name="blockLoadGame">
 					Load
-				</TextBlock>
-			</ListViewItem>
-			<ListViewItem x:Name="itemNewGame">
-				<TextBlock x:Name="blockNewGame">
+			</TextBlock>
+		</ListViewItem>
+		<ListViewItem x:Name="itemNewGame">
+			<TextBlock x:Name="blockNewGame">
 					New Game
-				</TextBlock>
-			</ListViewItem>
-			<ListViewItem x:Name="itemVoiceover">
-				<ToggleSwitch x:Name="switchVoiceover" Header="Voice-Over" Toggled="switchVoiceover_Toggled" />
-			</ListViewItem>
-		</ListView>
-	</Grid>
+			</TextBlock>
+		</ListViewItem>
+		<ListViewItem x:Name="itemVoiceover">
+			<ToggleSwitch x:Name="switchVoiceover" Header="Voice-Over" Toggled="switchVoiceover_Toggled" />
+		</ListViewItem>
+	</ListView>
 </Page>
