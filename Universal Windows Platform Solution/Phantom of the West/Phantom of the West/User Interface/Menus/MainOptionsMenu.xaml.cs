@@ -50,26 +50,6 @@ namespace Phantom_of_the_West.User_Interface.Menus
 			}
 		}
 
-		private void listOptions_ItemClick(object sender, ItemClickEventArgs e)
-		{
-			FrameworkElement clickedItem = e.ClickedItem as FrameworkElement;
-			string clickedItemName = clickedItem.Name;
-			switch (clickedItemName)
-			{
-				case "blockSaveGame":
-					SaveGame();
-					break;
-				case "blockLoadGame":
-					LoadGame();
-					break;
-				case "blockNewGame":
-					NewGame();
-					break;
-				default:
-					break;
-			}
-		}
-
 		private void SaveGame()
 		{
 			Task t = SaveGameAsync();
@@ -121,6 +101,21 @@ namespace Phantom_of_the_West.User_Interface.Menus
 		{
 			ToggleSwitch ts = sender as ToggleSwitch;
 			DataManager.Voiceover = ts.IsOn;
+		}
+
+		private void buttonSaveGame_Click(object sender, RoutedEventArgs e)
+		{
+			SaveGame();
+		}
+
+		private void buttonLoadGame_Click(object sender, RoutedEventArgs e)
+		{
+			LoadGame();
+		}
+
+		private void buttonNewGame_Click(object sender, RoutedEventArgs e)
+		{
+			NewGame();
 		}
 	}
 }

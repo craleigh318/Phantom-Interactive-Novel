@@ -7,24 +7,21 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-	<ListView x:Name="listOptions" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" SelectionMode="None" IsItemClickEnabled="True" ItemClick="listOptions_ItemClick">
-		<ListViewItem x:Name="itemSaveGame">
-			<TextBlock x:Name="blockSaveGame">
-					Save
-			</TextBlock>
-		</ListViewItem>
-		<ListViewItem x:Name="itemLoadGame">
-			<TextBlock x:Name="blockLoadGame">
-					Load
-			</TextBlock>
-		</ListViewItem>
-		<ListViewItem x:Name="itemNewGame">
-			<TextBlock x:Name="blockNewGame">
-					New Game
-			</TextBlock>
-		</ListViewItem>
-		<ListViewItem x:Name="itemVoiceover">
-			<ToggleSwitch x:Name="switchVoiceover" Header="Voice-Over" Toggled="switchVoiceover_Toggled" />
-		</ListViewItem>
-	</ListView>
+	<Page.Resources>
+		<Style BasedOn="{StaticResource TextBlockButtonStyle}" TargetType="Button" />
+		<x:Double x:Key="buttonLength">60</x:Double>
+	</Page.Resources>
+
+	<StackPanel x:Name="panelOptions" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+		<Button x:Name="buttonSaveGame" MinHeight="{StaticResource buttonLength}" Click="buttonSaveGame_Click">
+			Save
+		</Button>
+		<Button x:Name="buttonLoadGame" MinHeight="{StaticResource buttonLength}" Click="buttonLoadGame_Click">
+			Load
+		</Button>
+		<Button x:Name="buttonNewGame" MinHeight="{StaticResource buttonLength}" Click="buttonNewGame_Click">
+			New Game
+		</Button>
+		<ToggleSwitch x:Name="switchVoiceover" Header="Voice-Over" Toggled="switchVoiceover_Toggled" MinHeight="{StaticResource buttonLength}" />
+	</StackPanel>
 </Page>

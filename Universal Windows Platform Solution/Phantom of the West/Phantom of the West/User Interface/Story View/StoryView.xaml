@@ -7,6 +7,7 @@
     mc:Ignorable="d" SizeChanged="Page_SizeChanged">
 
 	<Page.Resources>
+		<Style BasedOn="{StaticResource TextBlockButtonStyle}" TargetType="Button" />
 		<GridLength x:Key="buttonLength">60</GridLength>
 		<x:String x:Key="leftArrow">⬅︎</x:String>
 		<x:String x:Key="ok">OK</x:String>
@@ -56,14 +57,4 @@
 			<Button x:Name="buttonOptions2" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource menuIcon}" Click="buttonOptions_Click"/>
 		</Grid>
 	</Grid>
-	<!--<VisualStateManager.VisualStateGroups>
-		<VisualStateGroup>
-			<VisualState x:Name="statePortrait">
-				
-			</VisualState>
-			<VisualState x:Name="stateLandscape">
-				
-			</VisualState>
-		</VisualStateGroup>
-	</VisualStateManager.VisualStateGroups>-->
 </Page>
