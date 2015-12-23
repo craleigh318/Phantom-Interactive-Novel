@@ -1,4 +1,5 @@
 ﻿using Phantom_of_the_West.Visual_Novel.Serialization;
+using Phantom_of_the_West.Voice_Overs;
 using System;
 using System.IO;
 using System.Runtime.Serialization;
@@ -32,6 +33,11 @@ namespace Phantom_of_the_West.Data_Management
 			}
 			set
 			{
+				if (!value)
+				{
+					VoiceoverManager vm = VoiceoverManager.MainManager;
+					vm.StopSpeech();
+				}
 				localSettings.Values[voiceoverName] = value;
 			}
 		}

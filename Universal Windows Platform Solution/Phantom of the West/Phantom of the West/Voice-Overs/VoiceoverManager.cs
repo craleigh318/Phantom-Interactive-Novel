@@ -78,6 +78,11 @@ namespace Phantom_of_the_West.Voice_Overs
 			return new SynthesizedVoiceover(synthesizer, voice, text);
 		}
 
+		public void StopSpeech()
+		{
+			mediaElement.Stop();
+		}
+
 		internal void PlayStream(SpeechSynthesisStream stream)
 		{
 			mediaElement.SetSource(stream, stream.ContentType);

@@ -136,11 +136,13 @@
     <Compile Include="User Interface\StoryFrame.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 0\Chapter0.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 1\Chapter1.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 2\Chapter2.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter.cs" />
     <Compile Include="Visual Novel\Chapters\ChapterSelector.cs" />
     <Compile Include="Visual Novel\Chapters\IChapter.cs" />
     <Compile Include="Visual Novel\Chapters\StoryChoice.cs" />
     <Compile Include="Visual Novel\Chapters\StoryChoiceList.cs" />
+    <Compile Include="Visual Novel\Chapters\VoicedChapter.cs" />
     <Compile Include="Visual Novel\IStoryChoice.cs" />
     <Compile Include="Visual Novel\IStoryChoiceList.cs" />
     <Compile Include="Visual Novel\IVisualNovel.cs" />

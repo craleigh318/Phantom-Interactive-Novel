@@ -7,7 +7,14 @@
     mc:Ignorable="d" SizeChanged="Page_SizeChanged">
 
 	<Page.Resources>
-		<Style BasedOn="{StaticResource TextBlockButtonStyle}" TargetType="Button" />
+		<Style BasedOn="{StaticResource TextBlockButtonStyle}" TargetType="Button">
+			<Setter Property="HorizontalAlignment" Value="Stretch" />
+			<Setter Property="VerticalAlignment" Value="Stretch" />
+		</Style>
+		<Style TargetType="TextBlock">
+			<Setter Property="TextWrapping" Value="WrapWholeWords" />
+			<Setter Property="FontSize" Value="{ThemeResource TextStyleLargeFontSize}" />
+		</Style>
 		<GridLength x:Key="buttonLength">60</GridLength>
 		<x:String x:Key="leftArrow">⬅︎</x:String>
 		<x:String x:Key="ok">OK</x:String>
@@ -29,11 +36,11 @@
 				<RowDefinition Height="{StaticResource buttonLength}"/>
 			</Grid.RowDefinitions>
 			<Image x:Name="imageView"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" />
-			<TextBlock x:Name="textView" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" TextWrapping="WrapWholeWords" />
-			<Button x:Name="buttonPrevious" Grid.Row="2" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource leftArrow}" Click="buttonPrevious_Click"/>
-			<Button x:Name="buttonContinue" Grid.Row="2" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource ok}" Click="buttonContinue_Click"/>
-			<Button x:Name="buttonNext" Grid.Row="2" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource rightArrow}" Click="buttonNext_Click"/>
-			<Button x:Name="buttonOptions" Grid.Row="2" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource menuIcon}" Click="buttonOptions_Click"/>
+			<TextBlock x:Name="textView" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" />
+			<Button x:Name="buttonPrevious" Grid.Row="2" Grid.Column="0" Content="{StaticResource leftArrow}" Click="buttonPrevious_Click"/>
+			<Button x:Name="buttonContinue" Grid.Row="2" Grid.Column="1" Content="{StaticResource ok}" Click="buttonContinue_Click"/>
+			<Button x:Name="buttonNext" Grid.Row="2" Grid.Column="2" Content="{StaticResource rightArrow}" Click="buttonNext_Click"/>
+			<Button x:Name="buttonOptions" Grid.Row="2" Grid.Column="3" Content="{StaticResource menuIcon}" Click="buttonOptions_Click"/>
 		</Grid>
 		<Grid x:Name="gridLandscape" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Visibility="Collapsed">
 			<Grid.ColumnDefinitions>
@@ -50,11 +57,11 @@
 				<RowDefinition />
 			</Grid.RowDefinitions>
 			<Image x:Name="imageView2"  Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" />
-			<TextBlock x:Name="textView2" Grid.Row="3" Grid.Column="0" Grid.RowSpan="3" TextWrapping="WrapWholeWords" />
-			<Button x:Name="buttonPrevious2" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource leftArrow}" Click="buttonPrevious_Click"/>
-			<Button x:Name="buttonContinue2" Grid.Row="4" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource ok}" Click="buttonContinue_Click"/>
-			<Button x:Name="buttonNext2" Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource rightArrow}" Click="buttonNext_Click"/>
-			<Button x:Name="buttonOptions2" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="{StaticResource menuIcon}" Click="buttonOptions_Click"/>
+			<TextBlock x:Name="textView2" Grid.Row="3" Grid.Column="0" Grid.RowSpan="3" />
+			<Button x:Name="buttonPrevious2" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" Content="{StaticResource leftArrow}" Click="buttonPrevious_Click"/>
+			<Button x:Name="buttonContinue2" Grid.Row="4" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Content="{StaticResource ok}" Click="buttonContinue_Click"/>
+			<Button x:Name="buttonNext2" Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Content="{StaticResource rightArrow}" Click="buttonNext_Click"/>
+			<Button x:Name="buttonOptions2" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Content="{StaticResource menuIcon}" Click="buttonOptions_Click"/>
 		</Grid>
 	</Grid>
 </Page>

@@ -2,7 +2,7 @@
 
 namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_1
 {
-	internal class Chapter1 : Chapter
+	internal class Chapter1 : VoicedChapter
 	{
 		internal static Dictionary<int, StoryChoiceListDelegate> dictionary = new Dictionary<int, StoryChoiceListDelegate>
 		{
@@ -21,18 +21,8 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_1
 			{1013, Ch1ISleep},
 		};
 
-		internal Chapter1() : base(dictionary)
+		internal Chapter1() : base(dictionary, 1002)
 		{
-		}
-
-		public override IStoryChoiceList GoToState(int id)
-		{
-			StoryChoiceList nextList = base.GoToState(id) as StoryChoiceList;
-			if (nextList != null)
-			{
-				AddAudio(nextList);
-			}
-			return nextList;
 		}
 
 		private static StoryChoiceList Ch1Title()
