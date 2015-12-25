@@ -1,4 +1,5 @@
 ﻿using Phantom_of_the_West.Data_Management;
+using System;
 using System.Collections.Generic;
 using Windows.Media.SpeechSynthesis;
 using Windows.UI.Xaml.Controls;
@@ -13,6 +14,8 @@ namespace Phantom_of_the_West.Voice_Overs
 			private set;
 		} = new VoiceoverManager();
 
+		private const string english = "en-";
+
 		private const string britishEnglish = "en-GB";
 
 		private const string americanEnglish = "en-US";
@@ -25,11 +28,11 @@ namespace Phantom_of_the_West.Voice_Overs
 			IReadOnlyList<VoiceInformation> voiceList = SpeechSynthesizer.AllVoices;
 			foreach (VoiceInformation vi in voiceList)
 			{
-				int comparison = string.Compare(language, vi.Language, true);
-				if (comparison == 0)
+				if (gender == vi.Gender)
 				{
 					voiceInfo = vi;
-					if (gender == vi.Gender)
+					int comparison = vi.Language.IndexOf(language, StringComparison.OrdinalIgnoreCase);
+					if (comparison >= 0)
 					{
 						break;
 					}
@@ -45,11 +48,17 @@ namespace Phantom_of_the_West.Voice_Overs
 				bool voiceEnabled = DataManager.Voiceover;
 				if (voiceEnabled)
 				{
-					return enUSMaleVoice;
+					return enGBMaleVoice;
 				}
 				return null;
 			}
 		}
+
+		public VoiceInformation enMaleVoice
+		{
+			get;
+			private set;
+		} = GetVoiceInfo(english, VoiceGender.Male);
 
 		public VoiceInformation enGBMaleVoice
 		{
