@@ -116,16 +116,23 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 
 		private void UpdateText()
 		{
-			string txt;
+			string txt = "";
 			if (storyChoiceList != null)
 			{
-				txt = Choice.Text;
-			}
-			else
-			{
-				txt = "";
+
+				if (storyChoiceList.Count > 1)
+				{
+					txt = AppendChoiceHeader(txt);
+				}
+				txt += Choice.Text;
 			}
 			SetText(txt);
+		}
+
+		private string AppendChoiceHeader(string text)
+		{
+			string newString = "Choice " + (index + 1) + " of " + storyChoiceList.Count + ":\n\n";
+			return newString;
 		}
 
 		private void SetText(string text)

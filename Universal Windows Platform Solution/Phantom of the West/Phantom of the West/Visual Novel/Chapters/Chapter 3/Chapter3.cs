@@ -33,6 +33,28 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_3
 			{3021, Ch3CaitlynHesitatesPossession},
 			{3022, Ch3IJustifyPossession},
 			{3023, Ch3CaitlynAsksMeToDisguiseAsInfant},
+			{3024, Ch3IDiguiseAsInfant},
+			{3025, Ch3CaitlynBringsMeToHotel},
+			{3026, Ch3IEnterHotelRoomFromBlanket},
+			{3027, Ch3CaitlynChecksOut},
+			{3028, Ch3CaitlynTriesToShowReceptionistMe},
+			{3029, Ch3ReceptionistLikesKatie},
+			{3030, Ch3CaitlynLeavesHotel},
+			{3031, Ch3CaitlynCannotBreastFeed},
+			{3032, Ch3CaitlynDrivesOnHighway},
+			{3033, Ch3CaitlynEntersArcticon},
+			{3034, Ch3ILeaveBlanket},
+			{3035, Ch3IWillOweCaitlynAFavor},
+			{3036, Ch3IGoToHotel},
+			{3037, Ch3IEnterHotelRoomFromCaitlyn},
+			{3038, Ch3ICheckOut},
+			{3039, Ch3IClaimToBeMyWife},
+			{3040, Ch3ReceptionistDoubtsMe},
+			{3041, Ch3IInsultReceptionist},
+			{3042, Ch3IDriveOnHighway},
+			{3043, Ch3IEnterArcticon},
+			{3044, Ch3IDispossessCaitlyn},
+			{3045, Ch3IConjureClothes},
 		};
 
 		internal Chapter3() : base(dictionary, 3002)
@@ -152,6 +174,116 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_3
 		private static StoryChoiceList Ch3CaitlynAsksMeToDisguiseAsInfant()
 		{
 			return StoryChoiceList.FromResource("Towel-in-Car.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynAsksMeToDisguiseAsInfant", 3024) });
+		}
+
+		private static StoryChoiceList Ch3IDiguiseAsInfant()
+		{
+			return StoryChoiceList.FromResource("Towel-in-Car.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IDiguiseAsInfant", 3025), StoryChoice.FromResource("ch3IRefuseToDiguiseAsInfant", 3035) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynBringsMeToHotel()
+		{
+			return StoryChoiceList.FromResource("Infant-in-Car.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynBringsMeToHotel", 3026) });
+		}
+
+		private static StoryChoiceList Ch3IEnterHotelRoomFromBlanket()
+		{
+			return StoryChoiceList.FromResource("Infant-Crawls-Under-Door.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IEnterHotelRoomFromBlanket", 3027) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynChecksOut()
+		{
+			return StoryChoiceList.FromResource("Caitlyn-with-Infant-Talks-to-Receptionist.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynChecksOut", 3028) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynTriesToShowReceptionistMe()
+		{
+			return StoryChoiceList.FromResource("Infant-Shown-to-Receptionist.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynTriesToShowReceptionistMe", 3029) });
+		}
+
+		private static StoryChoiceList Ch3ReceptionistLikesKatie()
+		{
+			return StoryChoiceList.FromResource("Infant-Shown-to-Receptionist.png", new IStoryChoice[] { StoryChoice.FromResource("ch3ReceptionistLikesKatie", 3030) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynLeavesHotel()
+		{
+			return StoryChoiceList.FromResource("Infant-Shown-to-Receptionist.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynLeavesHotel", 3031) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynCannotBreastFeed()
+		{
+			return StoryChoiceList.FromResource("Caitlyn-Drives-on-Highway.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynCannotBreastFeed", 3032) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynDrivesOnHighway()
+		{
+			return StoryChoiceList.FromResource("Caitlyn-Drives-on-Highway.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynDrivesOnHighway", 3033) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynEntersArcticon()
+		{
+			return StoryChoiceList.FromResource("Caitlyn-Drives-to-Arcticon.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynEntersArcticon", 3034) });
+		}
+
+		private static StoryChoiceList Ch3ILeaveBlanket()
+		{
+			return StoryChoiceList.FromResource("Kaden-First-Arrival-to-Arcticon.png", new IStoryChoice[] { StoryChoice.FromResource("ch3ILeaveBlanket", 3045) });
+		}
+
+		private static StoryChoiceList Ch3IWillOweCaitlynAFavor()
+		{
+			return StoryChoiceList.FromResource("Towel-in-Car.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IWillOweCaitlynAFavor", 3036) });
+		}
+
+		private static StoryChoiceList Ch3IGoToHotel()
+		{
+			return StoryChoiceList.FromResource("Caitlyn-Possessed.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IGoToHotel", 3037) });
+		}
+
+		private static StoryChoiceList Ch3IEnterHotelRoomFromCaitlyn()
+		{
+			return StoryChoiceList.FromResource("Caitlyn-Crawls-Under-Door.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IEnterHotelRoomFromCaitlyn", 3038) });
+		}
+
+		private static StoryChoiceList Ch3ICheckOut()
+		{
+			return StoryChoiceList.FromResource("Caitlyn-Talks-to-Receptionist.png", new IStoryChoice[] { StoryChoice.FromResource("ch3ICheckOut", 3039) });
+		}
+
+		private static StoryChoiceList Ch3IClaimToBeMyWife()
+		{
+			return StoryChoiceList.FromResource("Caitlyn-Talks-to-Receptionist.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IClaimToBeMyWife", 3040) });
+		}
+
+		private static StoryChoiceList Ch3ReceptionistDoubtsMe()
+		{
+			return StoryChoiceList.FromResource("Caitlyn-Talks-to-Receptionist.png", new IStoryChoice[] { StoryChoice.FromResource("ch3ReceptionistDoubtsMe", 3041) });
+		}
+
+		private static StoryChoiceList Ch3IInsultReceptionist()
+		{
+			return StoryChoiceList.FromResource("Caitlyn-Tosses-Key.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IInsultReceptionist", 3042) });
+		}
+
+		private static StoryChoiceList Ch3IDriveOnHighway()
+		{
+			return StoryChoiceList.FromResource("Caitlyn-Drives-on-Highway.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IDriveOnHighway", 3043) });
+		}
+
+		private static StoryChoiceList Ch3IEnterArcticon()
+		{
+			return StoryChoiceList.FromResource("Caitlyn-Drives-to-Arcticon.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IEnterArcticon", 3044) });
+		}
+
+		private static StoryChoiceList Ch3IDispossessCaitlyn()
+		{
+			return StoryChoiceList.FromResource("Kaden-First-Arrival-to-Arcticon.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IDispossessCaitlyn", 3045) });
+		}
+
+		private static StoryChoiceList Ch3IConjureClothes()
+		{
+			return StoryChoiceList.FromResource("Kaden-First-Arrival-to-Arcticon.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IConjureClothes", 3046) });
 		}
 	}
 }

@@ -89,6 +89,7 @@ namespace Phantom_of_the_West.User_Interface.Menus
 				GameState data = await DataManager.ManualLoad(file);
 				PotWVN.MainVN.LoadGame(data);
 			}
+			StoryFrame.GoBackToRoot(Frame);
 		}
 
 		private void NewGame()

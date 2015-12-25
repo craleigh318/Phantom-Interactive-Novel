@@ -1,6 +1,7 @@
 ﻿using Phantom_of_the_West.Visual_Novel.Chapters.Chapter_0;
 using Phantom_of_the_West.Visual_Novel.Chapters.Chapter_1;
 using Phantom_of_the_West.Visual_Novel.Chapters.Chapter_2;
+using Phantom_of_the_West.Visual_Novel.Chapters.Chapter_3;
 using System.Collections.Generic;
 
 namespace Phantom_of_the_West.Visual_Novel.Chapters
@@ -13,7 +14,8 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 		{
 			{0, new Chapter0()},
 			{1, new Chapter1()},
-			{2, new Chapter2()}
+			{2, new Chapter2()},
+			{3, new Chapter3()}
 		};
 
 		internal static IStoryChoiceList GoToState(int id)

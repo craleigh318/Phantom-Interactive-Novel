@@ -64,19 +64,6 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 			return Frame.Navigate(sourcePageType);
 		}
 
-		/*private ICollection<T> GetPortraitAndLandscapeObjects<T>(string objectName)
-		{
-			string secondObjectName = objectName + "2";
-			string[] objectNames = new string[] { objectName, secondObjectName };
-			HashSet<T> objects = new HashSet<T>();
-			foreach (string name in objectNames)
-			{
-				T o = (T)FindName(name);
-				objects.Add(o);
-			}
-			return objects;
-		}*/
-
 		private void EnableButtons(string[] buttonNames, bool enabled)
 		{
 			foreach (string name in buttonNames)
