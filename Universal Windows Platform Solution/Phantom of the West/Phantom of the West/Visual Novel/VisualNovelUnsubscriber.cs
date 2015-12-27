@@ -8,11 +8,11 @@ namespace Phantom_of_the_West.Visual_Novel
 {
 	internal class VisualNovelUnsubscriber : IDisposable
 	{
-		private IObserver<IVisualNovel> observer;
+		private WeakReference<IObserver<IVisualNovel>> observer;
 
 		private ObservableVisualNovel visualNovel;
 
-		internal VisualNovelUnsubscriber(IObserver<IVisualNovel> observer, ObservableVisualNovel visualNovel)
+		internal VisualNovelUnsubscriber(WeakReference<IObserver<IVisualNovel>> observer, ObservableVisualNovel visualNovel)
 		{
 			this.observer = observer;
 			this.visualNovel = visualNovel;
@@ -20,7 +20,7 @@ namespace Phantom_of_the_West.Visual_Novel
 
 		public void Dispose()
 		{
-			visualNovel.Unsubscribe(observer);
+			visualNovel.RemoveReference(observer);
 		}
 	}
 }

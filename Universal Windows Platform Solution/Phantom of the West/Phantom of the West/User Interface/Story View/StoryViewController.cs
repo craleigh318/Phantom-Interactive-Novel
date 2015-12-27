@@ -6,11 +6,21 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 {
 	internal class StoryViewController : IObserver<IVisualNovel>
 	{
-		private IStoryView view;
+		private WeakReference<IStoryView> viewRef;
 
 		private IStoryChoiceList storyChoiceList = null;
 
 		private int index = 0;
+
+		private IStoryView View
+		{
+			get
+			{
+				IStoryView v = null;
+				viewRef.TryGetTarget(out v);
+				return v;
+			}
+		}
 
 		private IStoryChoice Choice
 		{
@@ -20,9 +30,9 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 			}
 		}
 
-		internal StoryViewController(IStoryView view)
+		internal StoryViewController(WeakReference<IStoryView> view)
 		{
-			this.view = view;
+			viewRef = view;
 			InitializeVariables();
 		}
 
@@ -111,7 +121,11 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 
 		private void SetImage(ImageSource source)
 		{
-			view.SetImage(source);
+			IStoryView view = View;
+			if (view != null)
+			{
+				view.SetImage(source);
+			}
 		}
 
 		private void UpdateText()
@@ -137,7 +151,11 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 
 		private void SetText(string text)
 		{
-			view.SetText(text);
+			IStoryView view = View;
+			if (view != null)
+			{
+				view.SetText(text);
+			}
 		}
 
 		private void UpdateButtons()
@@ -159,7 +177,11 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 
 		private void EnableButtonContinue(bool enabled)
 		{
-			view.EnableButtonContinue(enabled);
+			IStoryView view = View;
+			if (view != null)
+			{
+				view.EnableButtonContinue(enabled);
+			}
 		}
 
 		private void EnableButtonsPreviousAndNextChoice(bool enabled)
@@ -170,12 +192,20 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 
 		private void EnableButtonPreviousChoice(bool enabled)
 		{
-			view.EnableButtonPreviousChoice(enabled);
+			IStoryView view = View;
+			if (view != null)
+			{
+				view.EnableButtonPreviousChoice(enabled);
+			}
 		}
 
 		private void EnableButtonNextChoice(bool enabled)
 		{
-			view.EnableButtonNextChoice(enabled);
+			IStoryView view = View;
+			if (view != null)
+			{
+				view.EnableButtonNextChoice(enabled);
+			}
 		}
 	}
 }

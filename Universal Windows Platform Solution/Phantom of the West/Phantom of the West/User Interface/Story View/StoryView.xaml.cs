@@ -1,6 +1,5 @@
 ﻿using Phantom_of_the_West.User_Interface.Menus;
 using System;
-using System.Collections.Generic;
 using Windows.Foundation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -20,7 +19,9 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 		public StoryView()
 		{
 			InitializeComponent();
-			controller = new StoryViewController(this);
+			NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
+			WeakReference<IStoryView> weakThis = new WeakReference<IStoryView>(this);
+			controller = new StoryViewController(weakThis);
 		}
 
 		public void SetImage(ImageSource source)
