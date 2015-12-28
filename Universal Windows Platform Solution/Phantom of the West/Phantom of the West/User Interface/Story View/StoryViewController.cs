@@ -1,11 +1,20 @@
 ﻿using Phantom_of_the_West.Visual_Novel;
 using System;
+using System.Threading.Tasks;
+using Windows.Graphics.Imaging;
+using Windows.Storage;
+using Windows.Storage.Streams;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace Phantom_of_the_West.User_Interface.Story_View
 {
 	internal class StoryViewController : IObserver<IVisualNovel>
 	{
+		private const uint imageWidth = 1920;
+
+		private const uint imageHeight = 1080;
+
 		private WeakReference<IStoryView> viewRef;
 
 		private IStoryChoiceList storyChoiceList = null;
@@ -115,8 +124,46 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 			{
 				img = null;
 			}
-			SetImage(img);
+			Task t = WillSetImage(img);
 			UpdateText();
+		}
+
+		private async Task WillSetImage(ImageSource source)
+		{
+			BitmapImage bmp = source as BitmapImage;
+			if (bmp != null)
+			{
+				await EncodeImageAsync(bmp);
+			}
+			SetImage(source);
+		}
+
+		private async Task EncodeImageAsync(BitmapImage bmp)
+		{
+			SoftwareBitmap sbmp = await BitmapImageToSoftwareBitmap(bmp);
+			using (InMemoryRandomAccessStream ras = new InMemoryRandomAccessStream())
+			{
+				BitmapEncoder encoder = await BitmapEncoder.CreateAsync(BitmapEncoder.PngEncoderId, ras);
+				encoder.BitmapTransform.InterpolationMode = BitmapInterpolationMode.NearestNeighbor;
+				encoder.BitmapTransform.ScaledWidth = imageWidth;
+				encoder.BitmapTransform.ScaledHeight = imageHeight;
+				encoder.SetSoftwareBitmap(sbmp);
+				await encoder.FlushAsync();
+				ras.Seek(0);
+				bmp.SetSource(ras);
+			}
+		}
+
+		private async Task<SoftwareBitmap> BitmapImageToSoftwareBitmap(BitmapImage bmp)
+		{
+			StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(bmp.UriSource);
+			SoftwareBitmap sbmp;
+			using (IRandomAccessStream stream = await file.OpenAsync(FileAccessMode.Read))
+			{
+				BitmapDecoder decoder = await BitmapDecoder.CreateAsync(stream);
+				sbmp = await decoder.GetSoftwareBitmapAsync();
+			}
+			return sbmp;
 		}
 
 		private void SetImage(ImageSource source)
