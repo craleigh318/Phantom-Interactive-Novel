@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Phantom_of_the_West.Visual_Novel.Serialization.Event_Flagging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -55,6 +56,50 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_3
 			{3043, Ch3IEnterArcticon},
 			{3044, Ch3IDispossessCaitlyn},
 			{3045, Ch3IConjureClothes},
+			{3046, Ch3CaitlynDragsMyHand},
+			{3047, Ch3YukioGreetsMe},
+			{3048, Ch3CaitlynExplainsMyGhostliness},
+			{3049, Ch3YukioIsAwed},
+			{3050, Ch3CaitlynWantsToHelp},
+			{3051, Ch3ILeaveCaitlynAndYukio},
+			{3052, Ch3IGoHome},
+			{3053, Ch3IRelax},
+			{3054, Ch3BekShtiiGreetsMe},
+			{3055, Ch3IKnowBekShtii},
+			{3056, Ch3BekShtiiAsksMeToVisit},
+			{3057, Ch3IsItWesternContinentalPark},
+			{3058, Ch3BekShtiiAsksMeToStay},
+			{3059, Ch3BekShtiiLeaves},
+			{3060, Ch3EndDecision},
+			{3061, Ch3CaitlynPlaysWithFoxtrot},
+			{3062, Ch3IAmAllRight},
+			{3063, Ch3CaitlynAsksIfIWasEmbarrassed},
+			{3064, Ch3IAdmitEmbarrassment},
+			{3065, Ch3CaitlynHugsMe},
+			{3066, Ch3CanCaitlynAskPersonally},
+			{3067, Ch3IReplyOK},
+			{3068, Ch3WouldCaitlynBeGoodMother},
+			{3069, Ch3IThink},
+			{3070, Ch3CaitlynWouldBeGoodMother},
+			{3071, Ch3CaitlynThanksMe},
+			{3072, Ch3CaitlynAdmitsGoodIdea},
+			{3073, Ch3CaitlynJustifiesMotherhood},
+			{3074, Ch3HowDidCaitlynFeelPossession},
+			{3075, Ch3CaitlynFeltLightheaded},
+			{3076, Ch3IAscertainCaitlynsUnconciousness},
+			{3077, Ch3CaitlynOnlySlept},
+			{3078, Ch3IThankCaitlyn},
+			{3079, Ch3CaitlynAcceptsThanks},
+			{3080, Ch3HowDidIFeelDuringPossession},
+			{3081, Ch3IEnjoyedPossession},
+			{3082, Ch3CaitlynLikesBeingClose},
+			{3083, Ch3CaitlynFeltWeird},
+			{3084, Ch3WasCaitlynsQuestionWeird},
+			{3085, Ch3ILikeTalkingWithCaitlyn},
+			{3086, Ch3YukioWorks},
+			{3087, Ch3IsYukioUnimpressed},
+			{3088, Ch3YukioLecturesMe},
+			{3089, Ch3ITakeCharge},
 		};
 
 		internal Chapter3() : base(dictionary, 3002)
@@ -178,7 +223,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_3
 
 		private static StoryChoiceList Ch3IDiguiseAsInfant()
 		{
-			return StoryChoiceList.FromResource("Towel-in-Car.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IDiguiseAsInfant", 3025), StoryChoice.FromResource("ch3IRefuseToDiguiseAsInfant", 3035) });
+			return StoryChoiceList.FromResource("Towel-in-Car.png", new IStoryChoice[] { new IDiguiseAsInfant(), new IRefuseToDiguiseAsInfant() });
 		}
 
 		private static StoryChoiceList Ch3CaitlynBringsMeToHotel()
@@ -284,6 +329,250 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_3
 		private static StoryChoiceList Ch3IConjureClothes()
 		{
 			return StoryChoiceList.FromResource("Kaden-First-Arrival-to-Arcticon.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IConjureClothes", 3046) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynDragsMyHand()
+		{
+			return StoryChoiceList.FromResource("Kaden-First-Arrival-to-Arcticon.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynDragsMyHand", 3047) });
+		}
+
+		private static StoryChoiceList Ch3YukioGreetsMe()
+		{
+			return StoryChoiceList.FromResource("Yukio-Intro.png", new IStoryChoice[] { StoryChoice.FromResource("ch3YukioGreetsMe", 3048) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynExplainsMyGhostliness()
+		{
+			return StoryChoiceList.FromResource("Yukio-Intro.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynExplainsMyGhostliness", 3049) });
+		}
+
+		private static StoryChoiceList Ch3YukioIsAwed()
+		{
+			return StoryChoiceList.FromResource("Yukio-Intro.png", new IStoryChoice[] { StoryChoice.FromResource("ch3YukioIsAwed", 3050) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynWantsToHelp()
+		{
+			return StoryChoiceList.FromResource("Yukio-Intro.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynWantsToHelp", 3051) });
+		}
+
+		private static StoryChoiceList Ch3ILeaveCaitlynAndYukio()
+		{
+			return StoryChoiceList.FromResource("Yukio-Intro.png", new IStoryChoice[] { StoryChoice.FromResource("ch3ILeaveCaitlynAndYukio", 3052) });
+		}
+
+		private static StoryChoiceList Ch3IGoHome()
+		{
+			return StoryChoiceList.FromResource("Kaden-on-Tram.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IGoHome", 3053) });
+		}
+
+		private static StoryChoiceList Ch3IRelax()
+		{
+			return StoryChoiceList.FromResource("Kaden-on-Bed.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IRelax", 3054) });
+		}
+
+		private static StoryChoiceList Ch3BekShtiiGreetsMe()
+		{
+			return StoryChoiceList.FromResource("Bek'Shtii-First-Meets-Kaden.png", new IStoryChoice[] { StoryChoice.FromResource("ch3BekShtiiGreetsMe", 3055) });
+		}
+
+		private static StoryChoiceList Ch3IKnowBekShtii()
+		{
+			return StoryChoiceList.FromResource("Bek'Shtii-First-Meets-Kaden.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IKnowBekShtii", 3056) });
+		}
+
+		private static StoryChoiceList Ch3BekShtiiAsksMeToVisit()
+		{
+			return StoryChoiceList.FromResource("Bek'Shtii-First-Meets-Kaden.png", new IStoryChoice[] { StoryChoice.FromResource("ch3BekShtiiAsksMeToVisit", 3057) });
+		}
+
+		private static StoryChoiceList Ch3IsItWesternContinentalPark()
+		{
+			return StoryChoiceList.FromResource("Bek'Shtii-First-Meets-Kaden.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IsItWesternContinentalPark", 3058) });
+		}
+
+		private static StoryChoiceList Ch3BekShtiiAsksMeToStay()
+		{
+			return StoryChoiceList.FromResource("Bek'Shtii-First-Meets-Kaden.png", new IStoryChoice[] { StoryChoice.FromResource("ch3BekShtiiAsksMeToStay", 3059) });
+		}
+
+		private static StoryChoiceList Ch3BekShtiiLeaves()
+		{
+			return StoryChoiceList.FromResource("Kaden-on-Bed.png", new IStoryChoice[] { StoryChoice.FromResource("ch3BekShtiiLeaves", 3060) });
+		}
+
+		private static StoryChoiceList Ch3EndDecision()
+		{
+			List<IStoryChoice> nextPages = new List<IStoryChoice>();
+			PotWVN vn = PotWVN.MainVN;
+			EventFlagsCollection flags = vn.EventFlags;
+			if (flags.Ch3TalkedWithCaitlyn == TalkWithCaitlyn.HasNotTalked)
+			{
+				nextPages.Add(StoryChoice.FromResource("ch3IVisitCaitlyn", 3061));
+			}
+			if (!flags.Ch3TalkedWithYukio)
+			{
+				nextPages.Add(new IVisitYukio());
+			}
+			nextPages.Add(StoryChoice.FromResource("ch3ISleep", 4001));
+			StoryChoiceList newList = StoryChoiceList.FromResource("Kaden-on-Bed.png", nextPages);
+			return newList;
+		}
+
+		private static StoryChoiceList Ch3CaitlynPlaysWithFoxtrot()
+		{
+			return StoryChoiceList.FromResource("Foxtrot-Intro.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynPlaysWithFoxtrot", 3062) });
+		}
+
+		private static StoryChoiceList Ch3IAmAllRight()
+		{
+			PotWVN vn = PotWVN.MainVN;
+			EventFlagsCollection flags = vn.EventFlags;
+			int nextState;
+			if (flags.Ch3DroveWithCaitlyn == DriveWithCaitlyn.PossessedCaitlyn)
+			{
+				nextState = 3074;
+			}
+			else
+			{
+				nextState = 3063;
+			}
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IAmAllRight", nextState) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynAsksIfIWasEmbarrassed()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynAsksIfIWasEmbarrassed", 3064) });
+		}
+
+		private static StoryChoiceList Ch3IAdmitEmbarrassment()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IAdmitEmbarrassment", 3065) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynHugsMe()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynHugsMe", 3066) });
+		}
+
+		private static StoryChoiceList Ch3CanCaitlynAskPersonally()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CanCaitlynAskPersonally", 3067) });
+		}
+
+		private static StoryChoiceList Ch3IReplyOK()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IReplyOK", 3068) });
+		}
+
+		private static StoryChoiceList Ch3WouldCaitlynBeGoodMother()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3WouldCaitlynBeGoodMother", 3069) });
+		}
+
+		private static StoryChoiceList Ch3IThink()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IThink", 3070) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynWouldBeGoodMother()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { new CaitlynWouldBeGoodMother(), new CaitlynMightBeGoodMother() });
+		}
+
+		private static StoryChoiceList Ch3CaitlynThanksMe()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynThanksMe", 3073) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynAdmitsGoodIdea()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynAdmitsGoodIdea", 3073) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynJustifiesMotherhood()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynJustifiesMotherhood", 3085) });
+		}
+
+		private static StoryChoiceList Ch3HowDidCaitlynFeelPossession()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3HowDidCaitlynFeelPossession", 3075) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynFeltLightheaded()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynFeltLightheaded", 3076) });
+		}
+
+		private static StoryChoiceList Ch3IAscertainCaitlynsUnconciousness()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IAscertainCaitlynsUnconciousness", 3077) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynOnlySlept()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynOnlySlept", 3078) });
+		}
+
+		private static StoryChoiceList Ch3IThankCaitlyn()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IThankCaitlyn", 3079) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynAcceptsThanks()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynAcceptsThanks", 3080) });
+		}
+
+		private static StoryChoiceList Ch3HowDidIFeelDuringPossession()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3HowDidIFeelDuringPossession", 3081) });
+		}
+
+		private static StoryChoiceList Ch3IEnjoyedPossession()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { new IEnjoyedPossession(), new PossessionFeltWeird() });
+		}
+
+		private static StoryChoiceList Ch3CaitlynLikesBeingClose()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynLikesBeingClose", 3084) });
+		}
+
+		private static StoryChoiceList Ch3CaitlynFeltWeird()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3CaitlynFeltWeird", 3084) });
+		}
+
+		private static StoryChoiceList Ch3WasCaitlynsQuestionWeird()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3WasCaitlynsQuestionWeird", 3085) });
+		}
+
+		private static StoryChoiceList Ch3ILikeTalkingWithCaitlyn()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[] { StoryChoice.FromResource("ch3ILikeTalkingWithCaitlyn", 3060) });
+		}
+
+		private static StoryChoiceList Ch3YukioWorks()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Yukio.png", new IStoryChoice[] { StoryChoice.FromResource("ch3YukioWorks", 3087) });
+		}
+
+		private static StoryChoiceList Ch3IsYukioUnimpressed()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Yukio.png", new IStoryChoice[] { StoryChoice.FromResource("ch3IsYukioUnimpressed", 3088) });
+		}
+
+		private static StoryChoiceList Ch3YukioLecturesMe()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Yukio.png", new IStoryChoice[] { StoryChoice.FromResource("ch3YukioLecturesMe", 3089) });
+		}
+
+		private static StoryChoiceList Ch3ITakeCharge()
+		{
+			return StoryChoiceList.FromResource("Kaden-Talks-to-Yukio.png", new IStoryChoice[] { StoryChoice.FromResource("ch3ITakeCharge", 3060) });
 		}
 	}
 }

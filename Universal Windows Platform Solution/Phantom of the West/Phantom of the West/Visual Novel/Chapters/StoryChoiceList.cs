@@ -9,7 +9,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 {
 	internal class StoryChoiceList : IStoryChoiceList
 	{
-		internal static StoryChoiceList FromResource(string imageName, IStoryChoice[] choices)
+		internal static StoryChoiceList FromResource(string imageName, IList<IStoryChoice> choices)
 		{
 			BitmapImage imgSrc = GetImgSrc(imageName);
 			StoryChoiceList newList = new StoryChoiceList(imgSrc, choices);
@@ -24,7 +24,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 			return bmp;
 		}
 
-		private IStoryChoice[] choices;
+		private IList<IStoryChoice> choices;
 
 		public ImageSource Image
 		{
@@ -51,7 +51,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 		{
 			get
 			{
-				return choices.Length;
+				return choices.Count;
 			}
 		}
 
@@ -73,7 +73,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 			return choices.GetEnumerator();
 		}
 
-		internal StoryChoiceList(ImageSource image, IStoryChoice[] choices, IVoiceover audioComponent = null)
+		internal StoryChoiceList(ImageSource image, IList<IStoryChoice> choices, IVoiceover audioComponent = null)
 		{
 			Image = image;
 			this.choices = choices;

@@ -137,7 +137,14 @@
     <Compile Include="Visual Novel\Chapters\Chapter 0\Chapter0.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 1\Chapter1.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 2\Chapter2.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 3\CaitlynMightBeGoodMother.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 3\CaitlynWouldBeGoodMother.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 3\Chapter3.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 3\IDiguiseAsInfant.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 3\IEnjoyedPossession.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 3\IRefuseToDiguiseAsInfant.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 3\IVisitYukio.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 3\PossessionFeltWeird.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter.cs" />
     <Compile Include="Visual Novel\Chapters\ChapterSelector.cs" />
     <Compile Include="Visual Novel\Chapters\IChapter.cs" />

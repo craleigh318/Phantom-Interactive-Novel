@@ -32,7 +32,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 			this.nextState = nextState;
 		}
 
-		public void Select()
+		public virtual void Select()
 		{
 			PotWVN vn = PotWVN.MainVN;
 			vn.GoToState(nextState);
