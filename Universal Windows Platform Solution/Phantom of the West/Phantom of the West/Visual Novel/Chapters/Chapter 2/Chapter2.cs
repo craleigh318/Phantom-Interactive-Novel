@@ -18,7 +18,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_2
 			{2010, Ch2IGreetProf},
 			{2011, Ch2ProfGreetsMe},
 			{2012, Ch2IConfideToProf},
-			{2013, Ch2ProfDismissesMe},
+			{2013, Ch2ProfDismissesMe}
 		};
 
 		internal Chapter2() : base(dictionary, 2003)

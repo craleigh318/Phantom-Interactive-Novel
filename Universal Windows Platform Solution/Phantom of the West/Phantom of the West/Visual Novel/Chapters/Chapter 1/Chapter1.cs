@@ -18,7 +18,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_1
 			{1010, Ch1IPossessOfficer},
 			{1011, Ch1ILookAtMyHands},
 			{1012, Ch1IGoToOfficersHome},
-			{1013, Ch1ISleep},
+			{1013, Ch1ISleep}
 		};
 
 		internal Chapter1() : base(dictionary, 1002)

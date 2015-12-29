@@ -99,7 +99,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_3
 			{3086, Ch3YukioWorks},
 			{3087, Ch3IsYukioUnimpressed},
 			{3088, Ch3YukioLecturesMe},
-			{3089, Ch3ITakeCharge},
+			{3089, Ch3ITakeCharge}
 		};
 
 		internal Chapter3() : base(dictionary, 3002)
