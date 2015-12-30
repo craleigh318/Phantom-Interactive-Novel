@@ -161,6 +161,7 @@
     <Compile Include="Visual Novel\Chapters\Chapter 5\YouAvoidStupidity.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 5\YouCannotLowerYourself.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 5\YouNeedToStayConfident.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 6\Chapter6.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter.cs" />
     <Compile Include="Visual Novel\Chapters\ChapterSelector.cs" />
     <Compile Include="Visual Novel\Chapters\IChapter.cs" />
