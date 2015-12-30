@@ -5,6 +5,26 @@ namespace Phantom_of_the_West.Visual_Novel.Serialization.Event_Flagging
 	[DataContract]
 	internal class EventFlagsCollection
 	{
+		internal Route StoryRoute
+		{
+			get
+			{
+				if ((Ch3TalkedWithCaitlyn == TalkWithCaitlyn.SaidGoodMother) || (Ch3TalkedWithCaitlyn == TalkWithCaitlyn.EnjoyedPossession))
+				{
+					return Route.Caitlyn;
+				}
+				else if (Ch7KissedVaNal == VaNalKiss.Kissed)
+				{
+					return Route.VaNal;
+				}
+				else if (Ch11ActedInSarahRoom == ActivityInSarahRoom.Showered)
+				{
+					return Route.Sarah;
+				}
+				return Route.Phantom;
+			}
+		}
+
 		[DataMember]
 		internal DriveWithCaitlyn Ch3DroveWithCaitlyn
 		{

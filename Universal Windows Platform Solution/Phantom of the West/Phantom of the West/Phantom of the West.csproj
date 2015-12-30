@@ -147,6 +147,17 @@
     <Compile Include="Visual Novel\Chapters\Chapter 3\PossessionFeltWeird.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 4\Chapter4.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 5\Chapter5.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 5\IKickCheerleader.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 5\IPinCheerleader.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 5\IWouldDisarm.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 5\IWouldRun.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 5\IWouldSubmit.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 5\MathQuestion1CorrectAnswer.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 5\MathQuestion1IncorrectAnswer.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 5\MathQuestion4CorrectAnswer.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 5\MathQuestion4IncorrectAnswer.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 5\MathQuestion9CorrectAnswer.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 5\MathQuestion9IncorrectAnswer.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 5\YouAvoidStupidity.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 5\YouCannotLowerYourself.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 5\YouNeedToStayConfident.cs" />

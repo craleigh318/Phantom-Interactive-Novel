@@ -55,7 +55,71 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_5
 			{5043, Ch5ElodieIsDizzy},
 			{5044, Ch5IEnterMathClass},
 			{5045, Ch5IStartMathTest},
-			{5046, Ch5IStartMathTest},
+			{5046, Ch5MathQuestion1},
+			{5047, Ch5MathQuestion1Answer},
+			{5048, Ch5MathQuestion4},
+			{5049, Ch5MathQuestion4Answer},
+			{5050, Ch5MathQuestion9},
+			{5051, Ch5MathQuestion9Answer},
+			{5052, Ch5MathClassEnds},
+			{5053, Ch5IReencounterCheerleader},
+			{5054, Ch5IEnterLockerRoom},
+			{5055, Ch5IPossessAnanya},
+			{5056, Ch5IDressAnanya},
+			{5057, Ch5ITieAnanyasHair},
+			{5058, Ch5IEnterPEClass},
+			{5059, Ch5CoachLectures},
+			{5060, Ch5IRaiseHand},
+			{5061, Ch5IWouldSubmit},
+			{5062, Ch5CoachRespondsToSubmission},
+			{5063, Ch5CoachRespondsToRunning},
+			{5064, Ch5CoachRespondsToDisarming},
+			{5065, Ch5IDisagreeWithCoach},
+			{5066, Ch5CoachStartsSpar},
+			{5067, Ch5IPartnerWithCheerleader},
+			{5068, Ch5CheerleaderAndISpar},
+			{5069, Ch5IPinCheerleader},
+			{5070, Ch5CoachCheersMe},
+			{5071, Ch5CheerleaderFalls},
+			{5072, Ch5IBringCoachToCheerleader},
+			{5073, Ch5CoachAsksWhatHappened},
+			{5074, Ch5CheerleaderIsBruised},
+			{5075, Ch5IApologizeToCheerleader},
+			{5076, Ch5CoachTellsMeToBeCareful},
+			{5077, Ch5INodAtCoach},
+			{5078, Ch5PEClassEnds},
+			{5079, Ch5IDispossessAnanya},
+			{5080, Ch5IHideInTheCloset},
+			{5081, Ch5IRepossessElodie},
+			{5082, Ch5IRelax},
+			{5083, Ch5ICallCaitlyn},
+			{5084, Ch5IGreetCaitlyn},
+			{5085, Ch5AmIOK},
+			{5086, Ch5ITellCaitlynAboutSchool},
+			{5087, Ch5CaitlynOffersToDrive},
+			{5088, Ch5IDeclineCaitlynsOffer},
+			{5089, Ch5OK},
+			{5090, Ch5YukioWantsToTalk},
+			{5091, Ch5YukioGreetsMe},
+			{5092, Ch5IGreetYukio},
+			{5093, Ch5YukioDislikesMeGettingFreshAir},
+			{5094, Ch5IWillCallSupervisor},
+			{5095, Ch5IAmApathetic},
+			{5096, Ch5IApologizeToYukio},
+			{5097, Ch5YukioDismissesMe},
+			{5098, Ch5YukioIsWrong},
+			{5099, Ch5IThinkTooLong},
+			{5100, Ch5CarleighReturns},
+			{5101, Ch5HowWasCarleighsMath},
+			{5102, Ch5CarleighForgets},
+			{5103, Ch5CarleighWillBeStar},
+			{5104, Ch5ElodieCanBeCool},
+			{5105, Ch5CarleighAndILaugh},
+			{5106, Ch5HewittCallsMe},
+			{5107, Ch5IGreetHewitt},
+			{5108, Ch5CanIHangOutWithHewitt},
+			{5109, Ch5IMightHangOutWithHewitt},
+			{5110, Ch5ISleep}
 		};
 
 		internal Chapter5() : base(dictionary, 5002)
@@ -285,6 +349,331 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_5
 		private static StoryChoiceList Ch5IStartMathTest()
 		{
 			return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IStartMathTest", 5046) });
+		}
+
+		private static StoryChoiceList Ch5MathQuestion1()
+		{
+			return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { StoryChoice.FromResource("ch5MathQuestion1", 5047) });
+		}
+
+		private static StoryChoiceList Ch5MathQuestion1Answer()
+		{
+			return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { new MathQuestion1CorrectAnswer(), new MathQuestion1IncorrectAnswer() });
+		}
+
+		private static StoryChoiceList Ch5MathQuestion4()
+		{
+			return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { StoryChoice.FromResource("ch5MathQuestion4", 5049) });
+		}
+
+		private static StoryChoiceList Ch5MathQuestion4Answer()
+		{
+			return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { new MathQuestion4IncorrectAnswer(), new MathQuestion4CorrectAnswer() });
+		}
+
+		private static StoryChoiceList Ch5MathQuestion9()
+		{
+			return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { StoryChoice.FromResource("ch5MathQuestion9", 5051) });
+		}
+
+		private static StoryChoiceList Ch5MathQuestion9Answer()
+		{
+			return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { new MathQuestion9IncorrectAnswer(), new MathQuestion9CorrectAnswer() });
+		}
+
+		private static StoryChoiceList Ch5MathClassEnds()
+		{
+			return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { StoryChoice.FromResource("ch5MathClassEnds", 5053) });
+		}
+
+		private static StoryChoiceList Ch5IReencounterCheerleader()
+		{
+			return StoryChoiceList.FromResource("Carleigh-Passes-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IReencounterCheerleader", 5054) });
+		}
+
+		private static StoryChoiceList Ch5IEnterLockerRoom()
+		{
+			return StoryChoiceList.FromResource("Ananya-Intro.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IEnterLockerRoom", 5055) });
+		}
+
+		private static StoryChoiceList Ch5IPossessAnanya()
+		{
+			return StoryChoiceList.FromResource("Ananya-Possessed.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IPossessAnanya", 5056) });
+		}
+
+		private static StoryChoiceList Ch5IDressAnanya()
+		{
+			return StoryChoiceList.FromResource("Ananya-Hands.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IDressAnanya", 5057) });
+		}
+
+		private static StoryChoiceList Ch5ITieAnanyasHair()
+		{
+			return StoryChoiceList.FromResource("Ananya-Ties-Hair.png", new IStoryChoice[] { StoryChoice.FromResource("ch5ITieAnanyasHair", 5058) });
+		}
+
+		private static StoryChoiceList Ch5IEnterPEClass()
+		{
+			return StoryChoiceList.FromResource("Ananya-Gym-Attendance.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IEnterPEClass", 5059) });
+		}
+
+		private static StoryChoiceList Ch5CoachLectures()
+		{
+			return StoryChoiceList.FromResource("Ananya-Gym-Attendance.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachLectures", 5060) });
+		}
+
+		private static StoryChoiceList Ch5IRaiseHand()
+		{
+			return StoryChoiceList.FromResource("Ananya-Raises-Hand.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IRaiseHand", 5061) });
+		}
+
+		private static StoryChoiceList Ch5IWouldSubmit()
+		{
+			return StoryChoiceList.FromResource("Ananya-Raises-Hand.png", new IStoryChoice[] { new IWouldSubmit(), new IWouldRun(), new IWouldDisarm() });
+		}
+
+		private static StoryChoiceList Ch5CoachRespondsToSubmission()
+		{
+			return StoryChoiceList.FromResource("Ananya-Raises-Hand.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachRespondsToSubmission", 5066) });
+		}
+
+		private static StoryChoiceList Ch5CoachRespondsToRunning()
+		{
+			return StoryChoiceList.FromResource("Ananya-Raises-Hand.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachRespondsToRunning", 5065) });
+		}
+
+		private static StoryChoiceList Ch5CoachRespondsToDisarming()
+		{
+			return StoryChoiceList.FromResource("Ananya-Raises-Hand.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachRespondsToDisarming", 5065) });
+		}
+
+		private static StoryChoiceList Ch5IDisagreeWithCoach()
+		{
+			return StoryChoiceList.FromResource("Ananya-Raises-Hand.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IDisagreeWithCoach", 5066) });
+		}
+
+		private static StoryChoiceList Ch5CoachStartsSpar()
+		{
+			return StoryChoiceList.FromResource("Ananya-Raises-Hand.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachStartsSpar", 5067) });
+		}
+
+		private static StoryChoiceList Ch5IPartnerWithCheerleader()
+		{
+			return StoryChoiceList.FromResource("Ananya-Spar.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IPartnerWithCheerleader", 5068) });
+		}
+
+		private static StoryChoiceList Ch5CheerleaderAndISpar()
+		{
+			return StoryChoiceList.FromResource("Ananya-Spar.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CheerleaderAndISpar", 5069) });
+		}
+
+		private static StoryChoiceList Ch5IPinCheerleader()
+		{
+			return StoryChoiceList.FromResource("Ananya-Spar.png", new IStoryChoice[] { new IPinCheerleader(), new IKickCheerleader() });
+		}
+
+		private static StoryChoiceList Ch5CoachCheersMe()
+		{
+			return StoryChoiceList.FromResource("Ananya-Pins-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachCheersMe", 5078) });
+		}
+
+		private static StoryChoiceList Ch5CheerleaderFalls()
+		{
+			return StoryChoiceList.FromResource("Ananya-Kicks-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CheerleaderFalls", 5072) });
+		}
+
+		private static StoryChoiceList Ch5IBringCoachToCheerleader()
+		{
+			return StoryChoiceList.FromResource("Ananya-Kicks-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IBringCoachToCheerleader", 5073) });
+		}
+
+		private static StoryChoiceList Ch5CoachAsksWhatHappened()
+		{
+			return StoryChoiceList.FromResource("Ananya-Kicks-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachAsksWhatHappened", 5074) });
+		}
+
+		private static StoryChoiceList Ch5CheerleaderIsBruised()
+		{
+			return StoryChoiceList.FromResource("Ananya-Kicks-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CheerleaderIsBruised", 5075) });
+		}
+
+		private static StoryChoiceList Ch5IApologizeToCheerleader()
+		{
+			return StoryChoiceList.FromResource("Ananya-Kicks-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IApologizeToCheerleader", 5076) });
+		}
+
+		private static StoryChoiceList Ch5CoachTellsMeToBeCareful()
+		{
+			return StoryChoiceList.FromResource("Ananya-Kicks-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachTellsMeToBeCareful", 5077) });
+		}
+
+		private static StoryChoiceList Ch5INodAtCoach()
+		{
+			return StoryChoiceList.FromResource("Ananya-Kicks-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5INodAtCoach", 5078) });
+		}
+
+		private static StoryChoiceList Ch5PEClassEnds()
+		{
+			return StoryChoiceList.FromResource("Dorms-First-Afternoon.png", new IStoryChoice[] { StoryChoice.FromResource("ch5PEClassEnds", 5079) });
+		}
+
+		private static StoryChoiceList Ch5IDispossessAnanya()
+		{
+			return StoryChoiceList.FromResource("Dorms-First-Afternoon.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IDispossessAnanya", 5080) });
+		}
+
+		private static StoryChoiceList Ch5IHideInTheCloset()
+		{
+			return StoryChoiceList.FromResource("Phantom-in-Closet.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IHideInTheCloset", 5081) });
+		}
+
+		private static StoryChoiceList Ch5IRepossessElodie()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-Possessed.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IRepossessElodie", 5082) });
+		}
+
+		private static StoryChoiceList Ch5IRelax()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IRelax", 5083) });
+		}
+
+		private static StoryChoiceList Ch5ICallCaitlyn()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie.png", new IStoryChoice[] { StoryChoice.FromResource("ch5ICallCaitlyn", 5084) });
+		}
+
+		private static StoryChoiceList Ch5IGreetCaitlyn()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IGreetCaitlyn", 5085) });
+		}
+
+		private static StoryChoiceList Ch5AmIOK()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone.png", new IStoryChoice[] { StoryChoice.FromResource("ch5AmIOK", 5086) });
+		}
+
+		private static StoryChoiceList Ch5ITellCaitlynAboutSchool()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone.png", new IStoryChoice[] { StoryChoice.FromResource("ch5ITellCaitlynAboutSchool", 5087) });
+		}
+
+		private static StoryChoiceList Ch5CaitlynOffersToDrive()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CaitlynOffersToDrive", 5088) });
+		}
+
+		private static StoryChoiceList Ch5IDeclineCaitlynsOffer()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IDeclineCaitlynsOffer", 5089) });
+		}
+
+		private static StoryChoiceList Ch5OK()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone.png", new IStoryChoice[] { StoryChoice.FromResource("ch5OK", 5090) });
+		}
+
+		private static StoryChoiceList Ch5YukioWantsToTalk()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone.png", new IStoryChoice[] { StoryChoice.FromResource("ch5YukioWantsToTalk", 5091) });
+		}
+
+		private static StoryChoiceList Ch5YukioGreetsMe()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone.png", new IStoryChoice[] { StoryChoice.FromResource("ch5YukioGreetsMe", 5092) });
+		}
+
+		private static StoryChoiceList Ch5IGreetYukio()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IGreetYukio", 5093) });
+		}
+
+		private static StoryChoiceList Ch5YukioDislikesMeGettingFreshAir()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone.png", new IStoryChoice[] { StoryChoice.FromResource("ch5YukioDislikesMeGettingFreshAir", 5094) });
+		}
+
+		private static StoryChoiceList Ch5IWillCallSupervisor()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IWillCallSupervisor", 5095) });
+		}
+
+		private static StoryChoiceList Ch5IAmApathetic()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IAmApathetic", 5096) });
+		}
+
+		private static StoryChoiceList Ch5IApologizeToYukio()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IApologizeToYukio", 5097) });
+		}
+
+		private static StoryChoiceList Ch5YukioDismissesMe()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone.png", new IStoryChoice[] { StoryChoice.FromResource("ch5YukioDismissesMe", 5098) });
+		}
+
+		private static StoryChoiceList Ch5YukioIsWrong()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie.png", new IStoryChoice[] { StoryChoice.FromResource("ch5YukioIsWrong", 5099) });
+		}
+
+		private static StoryChoiceList Ch5IThinkTooLong()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IThinkTooLong", 5100) });
+		}
+
+		private static StoryChoiceList Ch5CarleighReturns()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-Talk-to-Carleigh.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CarleighReturns", 5101) });
+		}
+
+		private static StoryChoiceList Ch5HowWasCarleighsMath()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-Talk-to-Carleigh.png", new IStoryChoice[] { StoryChoice.FromResource("ch5HowWasCarleighsMath", 5102) });
+		}
+
+		private static StoryChoiceList Ch5CarleighForgets()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-Talk-to-Carleigh.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CarleighForgets", 5103) });
+		}
+
+		private static StoryChoiceList Ch5CarleighWillBeStar()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-Talk-to-Carleigh.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CarleighWillBeStar", 5104) });
+		}
+
+		private static StoryChoiceList Ch5ElodieCanBeCool()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-Talk-to-Carleigh.png", new IStoryChoice[] { StoryChoice.FromResource("ch5ElodieCanBeCool", 5105) });
+		}
+
+		private static StoryChoiceList Ch5CarleighAndILaugh()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-Talk-to-Carleigh.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CarleighAndILaugh", 5106) });
+		}
+
+		private static StoryChoiceList Ch5HewittCallsMe()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone-Evening.png", new IStoryChoice[] { StoryChoice.FromResource("ch5HewittCallsMe", 5107) });
+		}
+
+		private static StoryChoiceList Ch5IGreetHewitt()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone-Evening.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IGreetHewitt", 5108) });
+		}
+
+		private static StoryChoiceList Ch5CanIHangOutWithHewitt()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone-Evening.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CanIHangOutWithHewitt", 5109) });
+		}
+
+		private static StoryChoiceList Ch5IMightHangOutWithHewitt()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-on-Phone-Evening.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IMightHangOutWithHewitt", 5110) });
+		}
+
+		private static StoryChoiceList Ch5ISleep()
+		{
+			return StoryChoiceList.FromResource("Resting-Elodie-Night.png", new IStoryChoice[] { StoryChoice.FromResource("ch5ISleep", 6001) });
 		}
 	}
 }
