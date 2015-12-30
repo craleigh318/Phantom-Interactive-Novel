@@ -146,6 +146,10 @@
     <Compile Include="Visual Novel\Chapters\Chapter 3\IVisitYukio.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 3\PossessionFeltWeird.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 4\Chapter4.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 5\Chapter5.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 5\YouAvoidStupidity.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 5\YouCannotLowerYourself.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 5\YouNeedToStayConfident.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter.cs" />
     <Compile Include="Visual Novel\Chapters\ChapterSelector.cs" />
     <Compile Include="Visual Novel\Chapters\IChapter.cs" />

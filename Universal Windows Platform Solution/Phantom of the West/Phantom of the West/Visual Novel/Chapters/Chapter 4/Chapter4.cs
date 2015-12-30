@@ -2,7 +2,7 @@
 
 namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_4
 {
-	class Chapter4 : VoicedChapter
+	internal class Chapter4 : VoicedChapter
 	{
 		internal static Dictionary<int, StoryChoiceListDelegate> dictionary = new Dictionary<int, StoryChoiceListDelegate>
 		{
@@ -17,7 +17,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_4
 			{4009, Ch4IThankedRebecca}
 		};
 
-		internal Chapter4() : base(dictionary, 2003)
+		internal Chapter4() : base(dictionary, 4003)
 		{
 		}
 
