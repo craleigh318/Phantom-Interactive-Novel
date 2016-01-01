@@ -162,6 +162,12 @@
     <Compile Include="Visual Novel\Chapters\Chapter 5\YouCannotLowerYourself.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 5\YouNeedToStayConfident.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 6\Chapter6.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 7\Chapter7.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 7\IAcceptHangout.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 7\IDeclineHangout.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 7\IDoNotKissVaNal.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 7\IWillKissVaNal.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 8\Chapter8.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter.cs" />
     <Compile Include="Visual Novel\Chapters\ChapterSelector.cs" />
     <Compile Include="Visual Novel\Chapters\IChapter.cs" />
