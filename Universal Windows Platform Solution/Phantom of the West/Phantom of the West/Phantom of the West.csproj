@@ -135,6 +135,7 @@
     <Compile Include="User Interface\Story View\StoryViewController.cs" />
     <Compile Include="User Interface\StoryFrame.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 0\Chapter0.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 10\Chapter10.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 1\Chapter1.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 2\Chapter2.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 3\CaitlynMightBeGoodMother.cs" />
@@ -168,6 +169,9 @@
     <Compile Include="Visual Novel\Chapters\Chapter 7\IDoNotKissVaNal.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 7\IWillKissVaNal.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 8\Chapter8.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 9\Chapter9.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 9\ILeaveFoxtrot.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 9\IWillPetFoxtrot.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter.cs" />
     <Compile Include="Visual Novel\Chapters\ChapterSelector.cs" />
     <Compile Include="Visual Novel\Chapters\IChapter.cs" />

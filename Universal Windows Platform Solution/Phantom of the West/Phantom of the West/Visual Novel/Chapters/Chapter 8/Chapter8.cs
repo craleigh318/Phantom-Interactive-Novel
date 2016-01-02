@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_8
 {
@@ -27,7 +23,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_8
 			{8015, Ch8ILookedAtSarahsJournal},
 			{8016, Ch8SarahStudiedJournalism},
 			{8017, Ch8IWishedSarahLuck},
-			{8018, Ch8SarahThankedMe},
+			{8018, Ch8SarahThankedMe}
 		};
 
 		internal Chapter8() : base(dictionary, 8003)

@@ -18,24 +18,28 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 			return localizedString;
 		}
 
-		private int nextState;
-
 		public string Text
 		{
 			get;
 			private set;
 		}
 
+		protected int NextState
+		{
+			get;
+			set;
+		}
+
 		internal StoryChoice(string text, int nextState)
 		{
 			Text = text;
-			this.nextState = nextState;
+			NextState = nextState;
 		}
 
 		public virtual void Select()
 		{
 			PotWVN vn = PotWVN.MainVN;
-			vn.GoToState(nextState);
+			vn.GoToState(NextState);
 		}
 	}
 }
