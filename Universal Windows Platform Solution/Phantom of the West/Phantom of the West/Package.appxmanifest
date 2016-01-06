@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Phantom_of_the_West.App">
-      <uap:VisualElements DisplayName="Phantom of the West" Square150x150Logo="Assets\Phantom-Icon-150x150.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Make decisions as an enigmatic phantom in this interactive story." BackgroundColor="#000099">
+      <uap:VisualElements DisplayName="Phantom of the West" Square150x150Logo="Assets\Phantom-Icon-150x150.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="As the enigmatic phantom, possess other characters in this interactive story." BackgroundColor="#000099">
         <uap:LockScreen Notification="badgeAndTileText" BadgeLogo="Assets\Phantom-Icon-24x24.png" />
         <uap:DefaultTile Wide310x150Logo="Assets\Phantom-Icon-310x150.png" ShortName="Phantom of the West" Square310x310Logo="Assets\Phantom-Icon-310x310.png" Square71x71Logo="Assets\Phantom-Icon-71x71.png">
           <uap:ShowNameOnTiles>

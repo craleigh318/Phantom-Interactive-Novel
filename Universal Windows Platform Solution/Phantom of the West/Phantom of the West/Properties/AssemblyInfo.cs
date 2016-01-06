@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Phantom of the West")]
-[assembly: AssemblyDescription("Make decisions as an enigmatic phantom in this interactive story.")]
+[assembly: AssemblyDescription("As the enigmatic phantom, possess other characters in this interactive story.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Christopher Raleigh")]
 [assembly: AssemblyProduct("Phantom of the West")]

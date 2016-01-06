@@ -122,7 +122,33 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_11
 			{11110, Ch11GuestFlirts},
 			{11111, Ch11AmIGoodOrBad},
 			{11112, Ch11GuestWastesMyTime},
-			{11113, Ch11GuestWastesMyTime},
+			{11113, Ch11ILeaveGuest},
+			{11114, Ch11IAmGoodGirl},
+			{11115, Ch11IPushGuest},
+			{11116, Ch11GuestWillNotForget},
+			{11117, Ch11IAmNaughtyFemale},
+			{11118, Ch11GladToHearIt},
+			{11119, Ch11IWrapGuest},
+			{11120, Ch11WhatIsMyProblem},
+			{11121, Ch11GuestAskedForIt},
+			{11122, Ch11ILeaveHealthClub},
+			{11123, Ch11IRelax},
+			{11124, Ch11IWillShower},
+			{11125, Ch11IShouldCool},
+			{11126, Ch11ILayNewClothes},
+			{11127, Ch11IGetTowel},
+			{11128, Ch11IAdjustTemperature},
+			{11129, Ch11IShower},
+			{11130, Ch11IFeelGood},
+			{11131, Ch11IDry},
+			{11132, Ch11NewNewsSegment},
+			{11133, Ch11SeawallIntroduced},
+			{11134, Ch11CameraShowsSeawall},
+			{11135, Ch11MayorIsCriticized},
+			{11136, Ch11Potholes},
+			{11137, Ch11MayorsDefense},
+			{11138, Ch11ITurnOffTV},
+			{11139, Ch11IWearFormalwear},
 		};
 
 		internal Chapter11() : base(dictionary, 11003)
@@ -687,6 +713,141 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_11
 		private static StoryChoiceList Ch11GuestWastesMyTime()
 		{
 			return StoryChoiceList.FromResource("Guest-Traps-Sarah.png", new IStoryChoice[] { StoryChoice.FromResource("ch11GuestWastesMyTime", 11113) });
+		}
+
+		private static StoryChoiceList Ch11ILeaveGuest()
+		{
+			return StoryChoiceList.FromResource("Guest-Traps-Sarah.png", new IStoryChoice[] { new ILeaveGuest(), new IPlayGuest() });
+		}
+
+		private static StoryChoiceList Ch11IAmGoodGirl()
+		{
+			return StoryChoiceList.FromResource("Guest-Traps-Sarah.png", new IStoryChoice[] { StoryChoice.FromResource("ch11IAmGoodGirl", 11115) });
+		}
+
+		private static StoryChoiceList Ch11IPushGuest()
+		{
+			return StoryChoiceList.FromResource("Sarah-Pushes-Guest.png", new IStoryChoice[] { StoryChoice.FromResource("ch11IPushGuest", 11116) });
+		}
+
+		private static StoryChoiceList Ch11GuestWillNotForget()
+		{
+			return StoryChoiceList.FromResource("Guest-Falls.png", new IStoryChoice[] { StoryChoice.FromResource("ch11GuestWillNotForget", 11122) });
+		}
+
+		private static StoryChoiceList Ch11IAmNaughtyFemale()
+		{
+			return StoryChoiceList.FromResource("Guest-Traps-Sarah.png", new IStoryChoice[] { StoryChoice.FromResource("ch11IAmNaughtyFemale", 11118) });
+		}
+
+		private static StoryChoiceList Ch11GladToHearIt()
+		{
+			return StoryChoiceList.FromResource("Guest-Traps-Sarah.png", new IStoryChoice[] { StoryChoice.FromResource("ch11GladToHearIt", 11119) });
+		}
+
+		private static StoryChoiceList Ch11IWrapGuest()
+		{
+			return StoryChoiceList.FromResource("Sarah-Wraps-Guest.png", new IStoryChoice[] { StoryChoice.FromResource("ch11IWrapGuest", 11120) });
+		}
+
+		private static StoryChoiceList Ch11WhatIsMyProblem()
+		{
+			return StoryChoiceList.FromResource("Guest-Falls.png", new IStoryChoice[] { StoryChoice.FromResource("ch11WhatIsMyProblem", 11121) });
+		}
+
+		private static StoryChoiceList Ch11GuestAskedForIt()
+		{
+			return StoryChoiceList.FromResource("Guest-Falls.png", new IStoryChoice[] { StoryChoice.FromResource("ch11GuestAskedForIt", 11122) });
+		}
+
+		private static StoryChoiceList Ch11ILeaveHealthClub()
+		{
+			return StoryChoiceList.FromResource("Fitness-Crowd.png", new IStoryChoice[] { StoryChoice.FromResource("ch11ILeaveHealthClub", 11123) });
+		}
+
+		private static StoryChoiceList Ch11IRelax()
+		{
+			return StoryChoiceList.FromResource("Athletic-Sarah-on-Bed.png", new IStoryChoice[] { StoryChoice.FromResource("ch11IRelax", 11124) });
+		}
+
+		private static StoryChoiceList Ch11IWillShower()
+		{
+			return StoryChoiceList.FromResource("Athletic-Sarah-on-Bed.png", new IStoryChoice[] { new IWillShower(), new IWatchTV() });
+		}
+
+		private static StoryChoiceList Ch11IShouldCool()
+		{
+			return StoryChoiceList.FromResource("Athletic-Sarah-on-Bed.png", new IStoryChoice[] { StoryChoice.FromResource("ch11IShouldCool", 11126) });
+		}
+
+		private static StoryChoiceList Ch11ILayNewClothes()
+		{
+			return StoryChoiceList.FromResource("Sarah-Gets-Towel.png", new IStoryChoice[] { StoryChoice.FromResource("ch11ILayNewClothes", 11127) });
+		}
+
+		private static StoryChoiceList Ch11IGetTowel()
+		{
+			return StoryChoiceList.FromResource("Sarah-Gets-Towel.png", new IStoryChoice[] { StoryChoice.FromResource("ch11IGetTowel", 11128) });
+		}
+
+		private static StoryChoiceList Ch11IAdjustTemperature()
+		{
+			return StoryChoiceList.FromResource("Sarah-Starts-Shower.png", new IStoryChoice[] { StoryChoice.FromResource("ch11IAdjustTemperature", 11129) });
+		}
+
+		private static StoryChoiceList Ch11IShower()
+		{
+			return StoryChoiceList.FromResource("Sarah-in-Shower.png", new IStoryChoice[] { StoryChoice.FromResource("ch11IShower", 11130) });
+		}
+
+		private static StoryChoiceList Ch11IFeelGood()
+		{
+			return StoryChoiceList.FromResource("Sarah-in-Shower.png", new IStoryChoice[] { StoryChoice.FromResource("ch11IFeelGood", 11131) });
+		}
+
+		private static StoryChoiceList Ch11IDry()
+		{
+			return StoryChoiceList.FromResource("Sarah-Wears-Towel.png", new IStoryChoice[] { StoryChoice.FromResource("ch11IDry", 11139) });
+		}
+
+		private static StoryChoiceList Ch11NewNewsSegment()
+		{
+			return StoryChoiceList.FromResource("TV-Seawall-Top.png", new IStoryChoice[] { StoryChoice.FromResource("ch11NewNewsSegment", 11133) });
+		}
+
+		private static StoryChoiceList Ch11SeawallIntroduced()
+		{
+			return StoryChoiceList.FromResource("TV-Seawall-Top.png", new IStoryChoice[] { StoryChoice.FromResource("ch11SeawallIntroduced", 11134) });
+		}
+
+		private static StoryChoiceList Ch11CameraShowsSeawall()
+		{
+			return StoryChoiceList.FromResource("TV-Seawall-Bottom.png", new IStoryChoice[] { StoryChoice.FromResource("ch11CameraShowsSeawall", 11135) });
+		}
+
+		private static StoryChoiceList Ch11MayorIsCriticized()
+		{
+			return StoryChoiceList.FromResource("TV-Seawall-Bottom.png", new IStoryChoice[] { StoryChoice.FromResource("ch11MayorIsCriticized", 11136) });
+		}
+
+		private static StoryChoiceList Ch11Potholes()
+		{
+			return StoryChoiceList.FromResource("TV-Cars.png", new IStoryChoice[] { StoryChoice.FromResource("ch11Potholes", 11137) });
+		}
+
+		private static StoryChoiceList Ch11MayorsDefense()
+		{
+			return StoryChoiceList.FromResource("TV-Mayor.png", new IStoryChoice[] { StoryChoice.FromResource("ch11MayorsDefense", 11138) });
+		}
+
+		private static StoryChoiceList Ch11ITurnOffTV()
+		{
+			return StoryChoiceList.FromResource("TV-Mayor.png", new IStoryChoice[] { StoryChoice.FromResource("ch11ITurnOffTV", 11139) });
+		}
+
+		private static StoryChoiceList Ch11IWearFormalwear()
+		{
+			return StoryChoiceList.FromResource("Sarah-Formal.png", new IStoryChoice[] { StoryChoice.FromResource("ch11IWearFormalwear", 12001) });
 		}
 	}
 }
