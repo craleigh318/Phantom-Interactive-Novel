@@ -1,8 +1,5 @@
-﻿using System;
+﻿using Phantom_of_the_West.Visual_Novel.Serialization.Event_Flagging;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_11
 {
@@ -151,7 +148,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_11
 			{11139, Ch11IWearFormalwear},
 		};
 
-		internal Chapter11() : base(dictionary, 11003)
+		internal Chapter11() : base(dictionary, 11002)
 		{
 		}
 
@@ -772,7 +769,16 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_11
 
 		private static StoryChoiceList Ch11IWillShower()
 		{
-			return StoryChoiceList.FromResource("Athletic-Sarah-on-Bed.png", new IStoryChoice[] { new IWillShower(), new IWatchTV() });
+			List<IStoryChoice> nextPages = new List<IStoryChoice>();
+			PotWVN vn = PotWVN.MainVN;
+			EventFlagsCollection flags = vn.EventFlags;
+			if (flags.StoryRoute == Route.Phantom)
+			{
+				nextPages.Add(new IWillShower());
+			}
+			nextPages.Add(new IWatchTV());
+			StoryChoiceList newList = StoryChoiceList.FromResource("Athletic-Sarah-on-Bed.png", nextPages);
+			return newList;
 		}
 
 		private static StoryChoiceList Ch11IShouldCool()

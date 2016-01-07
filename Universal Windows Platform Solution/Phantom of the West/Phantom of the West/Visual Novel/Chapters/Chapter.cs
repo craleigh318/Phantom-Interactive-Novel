@@ -1,4 +1,5 @@
-﻿using Phantom_of_the_West.Voice_Overs;
+﻿using Phantom_of_the_West.Data_Management;
+using Phantom_of_the_West.Voice_Overs;
 using System.Collections.Generic;
 using Windows.Media.SpeechSynthesis;
 
@@ -6,7 +7,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 {
 	internal class Chapter : IChapter
 	{
-		protected VoiceInformation Voiceover
+		protected virtual VoiceInformation Voiceover
 		{
 			get
 			{
@@ -41,8 +42,10 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 		{
 			if (nextList.Count == 1)
 			{
+
+				bool voiceEnabled = DataManager.Voiceover;
 				VoiceInformation v = Voiceover;
-				if (v != null)
+				if ((voiceEnabled) && (v != null))
 				{
 					string text = nextList[0].Text;
 					IVoiceover audio = VoiceoverManager.MainManager.MakeSynthesizedVoiceover(v, text);

@@ -143,6 +143,9 @@
     <Compile Include="Visual Novel\Chapters\Chapter 11\IPlayGuest.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 11\IWatchTV.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 11\IWillShower.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 12\Chapter12.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 13\Chapter13.cs" />
+    <Compile Include="Visual Novel\Chapters\Chapter 14\Chapter14.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 1\Chapter1.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 2\Chapter2.cs" />
     <Compile Include="Visual Novel\Chapters\Chapter 3\CaitlynMightBeGoodMother.cs" />

@@ -2,6 +2,7 @@
 using Phantom_of_the_West.Visual_Novel.Chapters;
 using Phantom_of_the_West.Visual_Novel.Serialization;
 using Phantom_of_the_West.Visual_Novel.Serialization.Event_Flagging;
+using Phantom_of_the_West.Voice_Overs;
 using System;
 using System.Threading.Tasks;
 
@@ -90,9 +91,15 @@ namespace Phantom_of_the_West.Visual_Novel
 
 		private void NotifyObservers()
 		{
+			StopAudio();
 			AutoSave();
 			observable.NotifyObservers(this);
 			PlayAudio();
+		}
+
+		private void StopAudio()
+		{
+			VoiceoverManager.MainManager.StopSpeech();
 		}
 
 		private void AutoSave()

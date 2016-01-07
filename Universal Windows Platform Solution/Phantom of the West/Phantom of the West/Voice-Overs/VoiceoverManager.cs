@@ -45,12 +45,7 @@ namespace Phantom_of_the_West.Voice_Overs
 		{
 			get
 			{
-				bool voiceEnabled = DataManager.Voiceover;
-				if (voiceEnabled)
-				{
-					return enGBMaleVoice;
-				}
-				return null;
+				return enGBMaleVoice;
 			}
 		}
 
