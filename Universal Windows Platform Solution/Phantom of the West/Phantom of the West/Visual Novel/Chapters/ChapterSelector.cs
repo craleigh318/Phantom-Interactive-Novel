@@ -7,6 +7,7 @@ using Phantom_of_the_West.Visual_Novel.Chapters.Chapter_13;
 using Phantom_of_the_West.Visual_Novel.Chapters.Chapter_14;
 using Phantom_of_the_West.Visual_Novel.Chapters.Chapter_15;
 using Phantom_of_the_West.Visual_Novel.Chapters.Chapter_16;
+using Phantom_of_the_West.Visual_Novel.Chapters.Chapter_17;
 using Phantom_of_the_West.Visual_Novel.Chapters.Chapter_2;
 using Phantom_of_the_West.Visual_Novel.Chapters.Chapter_3;
 using Phantom_of_the_West.Visual_Novel.Chapters.Chapter_4;
@@ -41,7 +42,8 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters
 			{13, new Chapter13()},
 			{14, new Chapter14()},
 			{15, new Chapter15()},
-			{16, new Chapter16()}
+			{16, new Chapter16()},
+			{17, new Chapter17()}
 		};
 
 		internal static IStoryChoiceList GoToState(int id)

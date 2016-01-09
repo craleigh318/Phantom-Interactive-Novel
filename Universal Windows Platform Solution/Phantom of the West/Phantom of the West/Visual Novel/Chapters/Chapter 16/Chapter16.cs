@@ -34,7 +34,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_16
 			{16025, Ch16BeSuccessful},
 			{16026, Ch16FindSomeoneElse},
 			{16027, Ch16DoThatOK},
-			{16028, Ch16RebeccaAndIHugged},
+			{16028, Ch16RebeccaAndIHugged}
 		};
 
 		internal Chapter16() : base(dictionary, 16003)
