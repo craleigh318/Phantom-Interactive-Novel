@@ -15,6 +15,9 @@
 			<Setter Property="TextWrapping" Value="WrapWholeWords" />
 			<Setter Property="FontSize" Value="{ThemeResource TextStyleLargeFontSize}" />
 		</Style>
+		<Style TargetType="ScrollViewer">
+			<Setter Property="VerticalScrollBarVisibility" Value="Auto" />
+		</Style>
 		<GridLength x:Key="buttonLength">60</GridLength>
 		<x:String x:Key="leftArrow">⬅︎</x:String>
 		<x:String x:Key="ok">OK</x:String>
@@ -36,7 +39,9 @@
 				<RowDefinition Height="{StaticResource buttonLength}"/>
 			</Grid.RowDefinitions>
 			<Image x:Name="imageView"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" />
-			<TextBlock x:Name="textView" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" />
+			<ScrollViewer Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4">
+				<TextBlock x:Name="textView" />
+			</ScrollViewer>
 			<Button x:Name="buttonPrevious" Grid.Row="2" Grid.Column="0" Content="{StaticResource leftArrow}" Click="buttonPrevious_Click"/>
 			<Button x:Name="buttonContinue" Grid.Row="2" Grid.Column="1" Content="{StaticResource ok}" Click="buttonContinue_Click"/>
 			<Button x:Name="buttonNext" Grid.Row="2" Grid.Column="2" Content="{StaticResource rightArrow}" Click="buttonNext_Click"/>
@@ -57,7 +62,9 @@
 				<RowDefinition />
 			</Grid.RowDefinitions>
 			<Image x:Name="imageView2"  Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" />
-			<TextBlock x:Name="textView2" Grid.Row="3" Grid.Column="0" Grid.RowSpan="3" />
+			<ScrollViewer Grid.Row="3" Grid.Column="0" Grid.RowSpan="3">
+				<TextBlock x:Name="textView2" />
+			</ScrollViewer>
 			<Button x:Name="buttonPrevious2" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" Content="{StaticResource leftArrow}" Click="buttonPrevious_Click"/>
 			<Button x:Name="buttonContinue2" Grid.Row="4" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Content="{StaticResource ok}" Click="buttonContinue_Click"/>
 			<Button x:Name="buttonNext2" Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Content="{StaticResource rightArrow}" Click="buttonNext_Click"/>

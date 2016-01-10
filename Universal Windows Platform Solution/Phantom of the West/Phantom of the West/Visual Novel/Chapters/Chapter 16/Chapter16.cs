@@ -37,7 +37,7 @@ namespace Phantom_of_the_West.Visual_Novel.Chapters.Chapter_16
 			{16028, Ch16RebeccaAndIHugged}
 		};
 
-		internal Chapter16() : base(dictionary, 16003)
+		internal Chapter16() : base(dictionary, 16002)
 		{
 		}
 

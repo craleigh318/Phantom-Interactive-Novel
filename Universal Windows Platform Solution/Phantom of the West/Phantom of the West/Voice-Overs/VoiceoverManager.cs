@@ -6,7 +6,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace Phantom_of_the_West.Voice_Overs
 {
-	public class VoiceoverManager
+	public sealed class VoiceoverManager : IDisposable
 	{
 		public static VoiceoverManager MainManager
 		{
@@ -85,6 +85,11 @@ namespace Phantom_of_the_West.Voice_Overs
 		public void StopSpeech()
 		{
 			mediaElement.Stop();
+		}
+
+		public void Dispose()
+		{
+			synthesizer.Dispose();
 		}
 
 		internal void PlayStream(SpeechSynthesisStream stream)
