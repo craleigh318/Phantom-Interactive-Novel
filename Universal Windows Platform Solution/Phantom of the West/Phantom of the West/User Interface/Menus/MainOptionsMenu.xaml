@@ -22,6 +22,9 @@
 		<Button x:Name="buttonNewGame" MinHeight="{StaticResource buttonLength}" Click="buttonNewGame_Click">
 			New Game
 		</Button>
+		<Button x:Name="buttonPlayTutorial" MinHeight="{StaticResource buttonLength}" Click="buttonPlayTutorial_Click">
+			Play Tutorial
+		</Button>
 		<ToggleSwitch x:Name="switchVoiceover" Header="Voice-Over" Toggled="switchVoiceover_Toggled" MinHeight="{StaticResource buttonLength}" />
 	</StackPanel>
 </Page>

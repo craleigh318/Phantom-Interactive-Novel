@@ -98,6 +98,12 @@ namespace Phantom_of_the_West.User_Interface.Menus
 			StoryFrame.GoBackToRoot(Frame);
 		}
 
+		private void PlayTutorial()
+		{
+			PotWVN.MainVN.PlayTutorial();
+			StoryFrame.GoBackToRoot(Frame);
+		}
+
 		private void switchVoiceover_Toggled(object sender, RoutedEventArgs e)
 		{
 			ToggleSwitch ts = sender as ToggleSwitch;
@@ -117,6 +123,11 @@ namespace Phantom_of_the_West.User_Interface.Menus
 		private void buttonNewGame_Click(object sender, RoutedEventArgs e)
 		{
 			NewGame();
+		}
+
+		private void buttonPlayTutorial_Click(object sender, RoutedEventArgs e)
+		{
+			PlayTutorial();
 		}
 	}
 }
