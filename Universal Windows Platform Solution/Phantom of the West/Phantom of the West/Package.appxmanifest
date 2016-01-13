@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="44128ChristopherRaleigh.PhantomoftheWest" Publisher="CN=496925B5-1C8D-4310-A936-9C320593256F" Version="1.1.0.0" />
+  <Identity Name="44128ChristopherRaleigh.PhantomoftheWest" Publisher="CN=496925B5-1C8D-4310-A936-9C320593256F" Version="1.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="210f958c-0ac2-4009-8c74-a878cbce8805" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Phantom of the West</DisplayName>

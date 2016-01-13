@@ -13,6 +13,7 @@
     <UseSimulator>false</UseSimulator>
     <DeviceId>9E663E22-CF9E-4F8A-AAC9-DC758E55304E</DeviceId>
     <UseEmulator>false</UseEmulator>
+    <AuthenticationMode>Windows</AuthenticationMode>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DeviceId>9E663E22-CF9E-4F8A-AAC9-DC758E55304E</DeviceId>
