@@ -1,2 +1,2 @@
-MainPackage=c:\users\christopher\documents\visual studio 2015\Projects\Phantom of the West\Phantom of the West\bin\x86\Release\Phantom of the West_0.1.0.0_x86.appx
-SymbolPackage=c:\users\christopher\documents\visual studio 2015\Projects\Phantom of the West\Phantom of the West\AppPackages\Phantom of the West_0.1.0.0\Phantom of the West_0.1.0.0_x86.appxsym
+MainPackage=C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\bin\x86\Release\Phantom of the West_1.1.0.0_x86.appx
+SymbolPackage=C:\Users\Christopher\Documents\GitHub\Phantom-Interactive-Novel\Universal Windows Platform Solution\Phantom of the West\Phantom of the West\AppPackages\Phantom of the West_1.1.0.0_Test\Phantom of the West_1.1.0.0_x86.appxsym

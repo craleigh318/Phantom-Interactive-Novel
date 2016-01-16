@@ -2,8 +2,6 @@
 using Phantom_of_the_West.Visual_Novel;
 using Phantom_of_the_West.Visual_Novel.Serialization;
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Threading.Tasks;
 using Windows.Storage;
 using Windows.Storage.Pickers;

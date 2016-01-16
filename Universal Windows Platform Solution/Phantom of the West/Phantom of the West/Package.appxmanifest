@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="44128ChristopherRaleigh.PhantomoftheWest" Publisher="CN=496925B5-1C8D-4310-A936-9C320593256F" Version="1.0.0.0" />
+  <Identity Name="44128ChristopherRaleigh.PhantomoftheWest" Publisher="CN=496925B5-1C8D-4310-A936-9C320593256F" Version="1.1.0.0" />
   <mp:PhoneIdentity PhoneProductId="210f958c-0ac2-4009-8c74-a878cbce8805" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Phantom of the West</DisplayName>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Phantom_of_the_West.App">
-      <uap:VisualElements DisplayName="Phantom of the West" Square150x150Logo="Assets\Phantom-Icon-150x150.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="As the enigmatic phantom, possess other characters in this interactive story." BackgroundColor="#000099">
+      <uap:VisualElements DisplayName="Phantom of the West" Square150x150Logo="Assets\Phantom-Icon-150x150.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="As the enigmatic phantom, possess other characters in this interactive story." BackgroundColor="#666666">
         <uap:LockScreen Notification="badgeAndTileText" BadgeLogo="Assets\Phantom-Icon-24x24.png" />
         <uap:DefaultTile Wide310x150Logo="Assets\Phantom-Icon-310x150.png" ShortName="Phantom of the West" Square310x310Logo="Assets\Phantom-Icon-310x310.png" Square71x71Logo="Assets\Phantom-Icon-71x71.png">
           <uap:ShowNameOnTiles>
