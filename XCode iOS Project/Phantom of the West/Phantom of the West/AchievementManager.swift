@@ -10,14 +10,14 @@ import GameKit
 
 public class AchievementManager {
     private static let achievementToString: [POTWAchievement: String] = [
-        .AnyEnding: "heroOfTheWest",
-        .PhantomEnding: "lonelyAtTheTop",
-        .CaitlynEnding: "doctorNextDoor",
-        .SarahEnding: "oldPeerNewFlame",
-        .VaNalEnding: "goddessOfPride",
-        .AcedMathTest: "acedMathTest",
-        .PettedFoxtrot: "pettedFoxtrot",
-        .FoxtrotHissed: "foxtrotHissed"
+        .AnyEnding: "grp.heroOfTheWest",
+        .PhantomEnding: "grp.lonelyAtTheTop",
+        .CaitlynEnding: "grp.doctorNextDoor",
+        .SarahEnding: "grp.oldPeerNewFlame",
+        .VaNalEnding: "grp.goddessOfPride",
+        .AcedMathTest: "grp.acedMathTest",
+        .PettedFoxtrot: "grp.pettedFoxtrot",
+        .FoxtrotHissed: "grp.foxtrotHissed"
     ]
     
     static func unlockAchievements(achievements: [POTWAchievement]) {

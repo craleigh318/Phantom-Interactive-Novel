@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Phantom of the Hotel.xcscheme</key>
+		<key>Phantom of the West.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A490E25C1A7B0A070099E3FE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A490E26F1A7B0A070099E3FE</key>
+		<key>A403B6331C4B2F7600C06871</key>
 		<dict>
 			<key>primary</key>
 			<true/>
