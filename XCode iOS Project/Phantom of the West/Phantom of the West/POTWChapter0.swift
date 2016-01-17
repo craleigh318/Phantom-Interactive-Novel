@@ -34,11 +34,7 @@ class ch0Welcome: StoryPage {
     let textName = ["ch0Welcome"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(2)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 2)
     }
     
     override var text: String {
@@ -54,11 +50,7 @@ class ch0POTWSimple: StoryPage {
     let textName = ["ch0POTWSimple"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(3)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 3)
     }
     
     override var text: String {
@@ -74,11 +66,7 @@ class ch0MultipleChoices: StoryPage {
     let textName = ["ch0MultipleChoices"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(4)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 4)
     }
     
     override var text: String {
@@ -94,11 +82,7 @@ class ch0FirstChoice: StoryPage {
     let textName = ["ch0FirstChoice"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(5)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 5)
     }
     
     override var text: String {
@@ -114,11 +98,7 @@ class ch0SecondChoice: StoryPage {
     let textName = ["ch0SecondChoice"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(5)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 5)
     }
     
     override var text: String {

@@ -44,11 +44,7 @@ class ch2Title: StoryPage {
     let textName = ["ch2Title"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(2002)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 2002)
     }
 }
 
@@ -59,11 +55,7 @@ class ch2TimeAgo: StoryPage {
     let textName = ["ch2TimeAgo"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(2003)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 2003)
     }
 }
 
@@ -74,11 +66,7 @@ class ch2ThereWereFourGods: StoryPageVoicedKaden {
     let textName = ["ch2ThereWereFourGods"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(2004)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 2004)
     }
 }
 
@@ -89,11 +77,7 @@ class ch2ThereWasSezja: StoryPageVoicedKaden {
     let textName = ["ch2ThereWasSezja"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(2005)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 2005)
     }
 }
 
@@ -104,11 +88,7 @@ class ch2ThereWasBaqer: StoryPageVoicedKaden {
     let textName = ["ch2ThereWasBaqer"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(2006)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 2006)
     }
 }
 
@@ -119,11 +99,7 @@ class ch2ThereWasVaNal: StoryPageVoicedKaden {
     let textName = ["ch2ThereWasVaNal"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(2007)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 2007)
     }
 }
 
@@ -134,11 +110,7 @@ class ch2ThereWasBekShtii: StoryPageVoicedKaden {
     let textName = ["ch2ThereWasBekShtii"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(2008)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 2008)
     }
 }
 
@@ -149,11 +121,7 @@ class ch2LectureEnded: StoryPageVoicedKaden {
     let textName = ["ch2LectureEnded"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(2009)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 2009)
     }
 }
 
@@ -164,11 +132,7 @@ class ch2IWentToProfArvin: StoryPageVoicedKaden {
     let textName = ["ch2IWentToProfArvin"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(2010)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 2010)
     }
 }
 
@@ -179,10 +143,6 @@ class ch2IGreetProf: StoryPageVoicedKaden {
     let textName = ["ch2IGreetProf", "ch2ProfGreetsMe", "ch2IConfideToProf", "ch2ProfDismissesMe"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(3001)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 3001)
     }
 }

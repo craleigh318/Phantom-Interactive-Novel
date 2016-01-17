@@ -179,11 +179,7 @@ class ch11Title: StoryPage {
     let textName = ["ch11Title"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11002)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11002)
     }
 }
 
@@ -194,11 +190,7 @@ class ch11BekShtiiWakesMe: StoryPageVoicedKaden {
     let textName = ["ch11BekShtiiWakesMe"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11003)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11003)
     }
 }
 
@@ -209,11 +201,7 @@ class ch11ReunionWillBeTonight: StoryPageVoicedKaden {
     let textName = ["ch11ReunionWillBeTonight", "ch11ICannotPrepare", "ch11ICouldPossessSarah", "ch11IReallyWantRebecca", "ch11BekShtiiLeaves"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11004)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11004)
     }
 }
 
@@ -224,11 +212,7 @@ class ch11IGoToLab: StoryPageVoicedKaden {
     let textName = ["ch11IGoToLab", "ch11IWantUsToGoToHotel", "ch11YukioIsNotPaidToGoWithMe", "ch11IWillCallSupervisor", "ch11YukioShrugs"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11005)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11005)
     }
 }
 
@@ -239,11 +223,7 @@ class ch11ICallSupervisor: StoryPageVoicedKaden {
     let textName = ["ch11ICallSupervisor", "ch11WeDriveOutOfArcticon"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11006)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11006)
     }
 }
 
@@ -254,11 +234,7 @@ class ch11YukioDrivesDownHighway: StoryPageVoicedKaden {
     let textName = ["ch11YukioDrivesDownHighway", "ch11KNFNVanPassesUs"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11007)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11007)
     }
 }
 
@@ -269,11 +245,7 @@ class ch11IRollDownWindow: StoryPageVoicedKaden {
     let textName = ["ch11IRollDownWindow"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11008)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11008)
     }
 }
 
@@ -284,11 +256,7 @@ class ch11IFlyToVan: StoryPageVoicedKaden {
     let textName = ["ch11IFlyToVan"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11009)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11009)
     }
 }
 
@@ -299,11 +267,7 @@ class ch11ILandOnVan: StoryPageVoicedKaden {
     let textName = ["ch11ILandOnVan", "ch11VanEntersPark"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11010)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11010)
     }
 }
 
@@ -314,11 +278,7 @@ class ch11VanStopsAtLodge: StoryPageVoicedKaden {
     let textName = ["ch11VanStopsAtLodge", "ch11SarahLooksAtMirror"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11011)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11011)
     }
 }
 
@@ -329,11 +289,7 @@ class ch11IPossessSarah: StoryPageVoicedKaden {
     let textName = ["ch11IPossessSarah"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11012)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11012)
     }
 }
 
@@ -344,11 +300,7 @@ class ch11IExamineSarah: StoryPageVoicedKaden {
     let textName = ["ch11IExamineSarah"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11013)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11013)
     }
 }
 
@@ -359,11 +311,7 @@ class ch11IGoToCrew: StoryPageVoicedKaden {
     let textName = ["ch11IGoToCrew", "ch11RangerComes"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11014)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11014)
     }
 }
 
@@ -374,11 +322,7 @@ class ch11WeStartInterview: StoryPageVoicedKaden {
     let textName = ["ch11WeStartInterview", "ch11AnchorStarts", "ch11IIntroduceRanger", "ch11RangerSawMe", "ch11WasIAggressive", "ch11RangerWasToDetainMe", "ch11WasIDangerous", "ch11StandardProcedure", "ch11GoOnINod", "ch11ISaidIWasPhantomOfWest", "ch11WhatShouldIKnow", "ch11IShouldTurnIn", "ch11RangerMisunderstoodMe", "ch11ISignOff", "ch11AnchorThanksMe"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11015)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11015)
     }
 }
 
@@ -389,11 +333,7 @@ class ch11WePackUpToVan: StoryPageVoicedKaden {
     let textName = ["ch11WePackUpToVan"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11016)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11016)
     }
 }
 
@@ -404,11 +344,7 @@ class ch11VanDrivesToNewFerando: StoryPageVoicedKaden {
     let textName = ["ch11VanDrivesToNewFerando"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11017)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11017)
     }
 }
 
@@ -419,11 +355,7 @@ class ch11IExitVan: StoryPageVoicedKaden {
     let textName = ["ch11IExitVan"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11018)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11018)
     }
 }
 
@@ -434,11 +366,7 @@ class ch11IRegroupWithCaitlynAndYukio: StoryPageVoicedKaden {
     let textName = ["ch11IRegroupWithCaitlynAndYukio", "ch11SecretFantasy", "ch11YukioFlattersMe"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11019)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11019)
     }
 }
 
@@ -449,11 +377,7 @@ class ch11ILeftMyWallet: StoryPageVoicedKaden {
     let textName = ["ch11ILeftMyWallet", "ch11YukioPullsBackWallet", "ch11WhatDoesYukioWant", "ch11WillIBookYukioARoom", "ch11SarahAlreadyBooked", "ch11YukioNeedsSeparateRoom", "ch11YukiItsFine"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11020)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11020)
     }
 }
 
@@ -464,11 +388,7 @@ class ch11YukioGivesMeWallet: StoryPageVoicedKaden {
     let textName = ["ch11YukioGivesMeWallet"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11021)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11021)
     }
 }
 
@@ -479,11 +399,7 @@ class ch11WeEnterHotel: StoryPageVoicedKaden {
     let textName = ["ch11WeEnterHotel", "ch11YukioWaitsByEscalator"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11022)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11022)
     }
 }
 
@@ -494,11 +410,7 @@ class ch11IGreetReceptionist: StoryPageVoicedKaden {
     let textName = ["ch11IGreetReceptionist", "ch11ReceptionistBooksRoom", "ch11HowDoIPay"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11023)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11023)
     }
 }
 
@@ -509,14 +421,14 @@ class ch11IPayAsMyself: StoryPageVoicedKaden {
     let textName = ["ch11IPayAsMyself"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11024)
     }
     
     override func continueStory() {
         if let ef = observer.eventFlags {
             ef.ch11PayedForHotelRoom = .KadenMoney
         }
-        observer.goToStoryState(11024)
+        super.continueStory()
     }
 }
 
@@ -527,14 +439,14 @@ class ch11IPayAsSarah: StoryPageVoicedKaden {
     let textName = ["ch11IPayAsSarah"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11028)
     }
     
     override func continueStory() {
         if let ef = observer.eventFlags {
             ef.ch11PayedForHotelRoom = .SarahMoney
         }
-        observer.goToStoryState(11028)
+        super.continueStory()
     }
 }
 
@@ -545,11 +457,7 @@ class ch11IGiveMyCardToReceptionist: StoryPageVoicedKaden {
     let textName = ["ch11IGiveMyCardToReceptionist", "ch11IAmMyBoyfriend", "ch11ProveIt"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11025)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11025)
     }
 }
 
@@ -560,11 +468,7 @@ class ch11IStare: StoryPageVoicedKaden {
     let textName = ["ch11IStare"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11026)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11026)
     }
 }
 
@@ -575,11 +479,7 @@ class ch11IdentityTheft: StoryPageVoicedKaden {
     let textName = ["ch11IdentityTheft"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11027)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11027)
     }
 }
 
@@ -590,11 +490,7 @@ class ch11AmICute: StoryPageVoicedKaden {
     let textName = ["ch11AmICute", "ch11YeahIBlush"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11031)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11031)
     }
 }
 
@@ -605,11 +501,7 @@ class ch11IGiveSarahsCardToReceptionist: StoryPageVoicedKaden {
     let textName = ["ch11IGiveSarahsCardToReceptionist", "ch11ReceptionistKnowsMeAsSarah", "ch11YeahINod", "ch11ReceptionistIsFanOfSarah"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11029)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11029)
     }
 }
 
@@ -620,11 +512,7 @@ class ch11LovelyFollower: StoryPageVoicedKaden {
     let textName = ["ch11LovelyFollower"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11030)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11030)
     }
 }
 
@@ -635,11 +523,7 @@ class ch11ReceptionistSwipesSarahsCard: StoryPageVoicedKaden {
     let textName = ["ch11ReceptionistSwipesSarahsCard"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11031)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11031)
     }
 }
 
@@ -650,11 +534,7 @@ class ch11IGetKeycard: StoryPageVoicedKaden {
     let textName = ["ch11IGetKeycard"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11032)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11032)
     }
 }
 
@@ -665,11 +545,7 @@ class ch11IGoToEscalator: StoryPageVoicedKaden {
     let textName = ["ch11IGoToEscalator", "ch11IGiveYukioKeycard", "ch11WhereDoWeEat", "ch11WeGoToHabitat"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11033)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11033)
     }
 }
 
@@ -680,11 +556,7 @@ class ch11IAcceptYukiosApology: StoryPageVoicedKaden {
     let textName = ["ch11IAcceptYukiosApology"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11034)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11034)
     }
 }
 
@@ -695,11 +567,7 @@ class ch11HostGreetsUs: StoryPageVoicedKaden {
     let textName = ["ch11HostGreetsUs"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11035)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11035)
     }
 }
 
@@ -710,11 +578,7 @@ class ch11WeSitAtHabitat: StoryPageVoicedKaden {
     let textName = ["ch11WeSitAtHabitat", "ch11INeedToWatchSarahsWeight", "ch11SarahWillBeFine"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11036)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11036)
     }
 }
 
@@ -725,11 +589,7 @@ class ch11YukioIsLuckyToBeWithUs: StoryPageVoicedKaden {
     let textName = ["ch11YukioIsLuckyToBeWithUs"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11037)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11037)
     }
 }
 
@@ -740,11 +600,7 @@ class ch11IEatBurger: StoryPageVoicedKaden {
     let textName = ["ch11IEatBurger"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11038)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11038)
     }
 }
 
@@ -755,11 +611,7 @@ class ch11HabitatDims: StoryPageVoicedKaden {
     let textName = ["ch11HabitatDims", "ch11FakeThunder", "ch11FakeMonkey"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11039)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11039)
     }
 }
 
@@ -770,11 +622,7 @@ class ch11HabitatIsLame: StoryPageVoicedKaden {
     let textName = ["ch11HabitatIsLame", "ch11IFinishEating"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11040)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11040)
     }
 }
 
@@ -785,11 +633,7 @@ class ch11WeGoUpstairs: StoryPageVoicedKaden {
     let textName = ["ch11WeGoUpstairs"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11041)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11041)
     }
 }
 
@@ -800,11 +644,7 @@ class ch11IEnterHotelRoom: StoryPageVoicedKaden {
     let textName = ["ch11IEnterHotelRoom"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11042)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11042)
     }
 }
 
@@ -815,11 +655,7 @@ class ch11IExamineSarahsRoom: StoryPageVoicedKaden {
     let textName = ["ch11IExamineSarahsRoom"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11043)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11043)
     }
 }
 
@@ -830,11 +666,7 @@ class ch11ICheckSarahsCloset: StoryPageVoicedKaden {
     let textName = ["ch11ICheckSarahsCloset", "ch11IWillExcercise"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11044)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11044)
     }
 }
 
@@ -845,11 +677,7 @@ class ch11IChangeIntoAthleticWear: StoryPageVoicedKaden {
     let textName = ["ch11IChangeIntoAthleticWear", "ch11ILookAtHotelMirror", "ch11IWorePonytailAsAnanya"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11045)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11045)
     }
 }
 
@@ -860,11 +688,7 @@ class ch11ITieSarahsHair: StoryPageVoicedKaden {
     let textName = ["ch11ITieSarahsHair"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11046)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11046)
     }
 }
 
@@ -875,11 +699,7 @@ class ch11IKnockForCaitlyn: StoryPageVoicedKaden {
     let textName = ["ch11IKnockForCaitlyn"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11047)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11047)
     }
 }
 
@@ -890,11 +710,7 @@ class ch11CaitlynOpensDoor: StoryPageVoicedKaden {
     let textName = ["ch11CaitlynOpensDoor", "ch11WillCaitlynExcerciseWithMe", "ch11CaitlynDoesNotExcerciseWithMe"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11048)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11048)
     }
 }
 
@@ -905,11 +721,7 @@ class ch11IEnterHealthClub: StoryPageVoicedKaden {
     let textName = ["ch11IEnterHealthClub"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11049)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11049)
     }
 }
 
@@ -920,11 +732,7 @@ class ch11ILookForTreadmill: StoryPageVoicedKaden {
     let textName = ["ch11ILookForTreadmill"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11050)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11050)
     }
 }
 
@@ -935,11 +743,7 @@ class ch11IRunOnTreadmill: StoryPageVoicedKaden {
     let textName = ["ch11IRunOnTreadmill", "ch11IGetOffTreadmill"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11051)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11051)
     }
 }
 
@@ -950,11 +754,7 @@ class ch11GuestApproachesMe: StoryPageVoicedKaden {
     let textName = ["ch11GuestApproachesMe", "ch11GuestFlirts"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11052)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11052)
     }
 }
 
@@ -965,11 +765,7 @@ class ch11AmIGoodOrBad: StoryPageVoicedKaden {
     let textName = ["ch11AmIGoodOrBad", "ch11GuestWastesMyTime"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11053)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11053)
     }
 }
 
@@ -980,14 +776,14 @@ class ch11ILeaveGuest: StoryPageVoicedKaden {
     let textName = ["ch11ILeaveGuest"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11054)
     }
     
     override func continueStory() {
         if let ef = observer.eventFlags {
             ef.ch11HarassedAfterWorkout = .Left
         }
-        observer.goToStoryState(11054)
+        super.continueStory()
     }
 }
 
@@ -998,14 +794,14 @@ class ch11IPlayGuest: StoryPageVoicedKaden {
     let textName = ["ch11IPlayGuest"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11057)
     }
     
     override func continueStory() {
         if let ef = observer.eventFlags {
             ef.ch11HarassedAfterWorkout = .PlayedAlong
         }
-        observer.goToStoryState(11057)
+        super.continueStory()
     }
 }
 
@@ -1016,11 +812,7 @@ class ch11IAmGoodGirl: StoryPageVoicedKaden {
     let textName = ["ch11IAmGoodGirl"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11055)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11055)
     }
 }
 
@@ -1031,11 +823,7 @@ class ch11IPushGuest: StoryPageVoicedKaden {
     let textName = ["ch11IPushGuest"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11056)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11056)
     }
 }
 
@@ -1046,11 +834,7 @@ class ch11GuestWillNotForget: StoryPageVoicedKaden {
     let textName = ["ch11GuestWillNotForget"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11060)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11060)
     }
 }
 
@@ -1061,11 +845,7 @@ class ch11IAmNaughtyFemale: StoryPageVoicedKaden {
     let textName = ["ch11IAmNaughtyFemale", "ch11GladToHearIt"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11058)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11058)
     }
 }
 
@@ -1076,11 +856,7 @@ class ch11IWrapGuest: StoryPageVoicedKaden {
     let textName = ["ch11IWrapGuest"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11059)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11059)
     }
 }
 
@@ -1091,11 +867,7 @@ class ch11WhatIsMyProblem: StoryPageVoicedKaden {
     let textName = ["ch11WhatIsMyProblem", "ch11GuestAskedForIt"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11060)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11060)
     }
 }
 
@@ -1106,11 +878,7 @@ class ch11ILeaveHealthClub: StoryPageVoicedKaden {
     let textName = ["ch11ILeaveHealthClub"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11061)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11061)
     }
 }
 
@@ -1121,11 +889,7 @@ class ch11IRelax: StoryPageVoicedKaden {
     let textName = ["ch11IRelax"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11062)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11062)
     }
 }
 
@@ -1136,14 +900,14 @@ class ch11IWillShower: StoryPageVoicedKaden {
     let textName = ["ch11IWillShower"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11063)
     }
     
     override func continueStory() {
         if let ef = observer.eventFlags {
             ef.ch11ActedInSarahRoom = .Showered
         }
-        observer.goToStoryState(11063)
+        super.continueStory()
     }
 }
 
@@ -1154,14 +918,14 @@ class ch11IWatchTV: StoryPageVoicedKaden {
     let textName = ["ch11IWatchTV"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11068)
     }
     
     override func continueStory() {
         if let ef = observer.eventFlags {
             ef.ch11ActedInSarahRoom = .WatchedTV
         }
-        observer.goToStoryState(11068)
+        super.continueStory()
     }
 }
 
@@ -1172,11 +936,7 @@ class ch11IShouldCool: StoryPageVoicedKaden {
     let textName = ["ch11IShouldCool"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11064)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11064)
     }
 }
 
@@ -1187,11 +947,7 @@ class ch11ILayNewClothes: StoryPageVoicedKaden {
     let textName = ["ch11ILayNewClothes", "ch11IGetTowel"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11065)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11065)
     }
 }
 
@@ -1202,11 +958,7 @@ class ch11IAdjustTemperature: StoryPageVoicedKaden {
     let textName = ["ch11IAdjustTemperature"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11066)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11066)
     }
 }
 
@@ -1217,11 +969,7 @@ class ch11IShower: StoryPageVoicedKaden {
     let textName = ["ch11IShower", "ch11IFeelGood"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11067)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11067)
     }
 }
 
@@ -1232,11 +980,7 @@ class ch11IDry: StoryPageVoicedKaden {
     let textName = ["ch11IDry"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11072)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11072)
     }
 }
 
@@ -1247,11 +991,7 @@ class ch11NewNewsSegment: StoryPageVoicedKaden {
     let textName = ["ch11NewNewsSegment", "ch11SeawallIntroduced"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11069)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11069)
     }
 }
 
@@ -1262,11 +1002,7 @@ class ch11CameraShowsSeawall: StoryPageVoicedKaden {
     let textName = ["ch11CameraShowsSeawall", "ch11MayorIsCriticized"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11070)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11070)
     }
 }
 
@@ -1277,11 +1013,7 @@ class ch11Potholes: StoryPageVoicedKaden {
     let textName = ["ch11Potholes"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11071)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11071)
     }
 }
 
@@ -1292,11 +1024,7 @@ class ch11MayorsDefense: StoryPageVoicedKaden {
     let textName = ["ch11MayorsDefense", "ch11ITurnOffTV"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(11072)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 11072)
     }
 }
 
@@ -1307,10 +1035,6 @@ class ch11IWearFormalwear: StoryPageVoicedKaden {
     let textName = ["ch11IWearFormalwear"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(12001)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 12001)
     }
 }

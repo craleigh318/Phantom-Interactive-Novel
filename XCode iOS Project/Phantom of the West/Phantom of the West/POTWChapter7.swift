@@ -122,11 +122,7 @@ class ch7Title: StoryPage {
     let textName = ["ch7Title"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7002)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7002)
     }
 }
 
@@ -137,11 +133,7 @@ class ch7SleepyHead: StoryPageVoicedKaden {
     let textName = ["ch7SleepyHead", "ch7ISnoreAtSezja"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7003)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7003)
     }
 }
 
@@ -152,11 +144,7 @@ class ch7ISnoreAtSezjaPause: StoryPage {
     let textName = ["ellipsis"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7004)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7004)
     }
 }
 
@@ -167,11 +155,7 @@ class ch7WasSezjaCarleigh: StoryPageVoicedKaden {
     let textName = ["ch7WasSezjaCarleigh"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7005)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7005)
     }
 }
 
@@ -182,11 +166,7 @@ class ch7SezjaFingersChin: StoryPageVoicedKaden {
     let textName = ["ch7SezjaFingersChin", "ch7SezjaAsBestFriend"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7006)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7006)
     }
 }
 
@@ -197,11 +177,7 @@ class ch7SezjaHugsMe: StoryPageVoicedKaden {
     let textName = ["ch7SezjaHugsMe", "ch7WhyIsSezjaHere", "ch7SezjaStaysWithMe", "ch7CanSezjaActNormal"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7007)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7007)
     }
 }
 
@@ -238,11 +214,7 @@ class ch7LostCreditForLoweringSelvesForLiterture: StoryPageVoicedKaden {
     let textName = ["ch7LostCreditForLoweringSelvesForLiterture"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7011)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7011)
     }
 }
 
@@ -253,11 +225,7 @@ class ch7FullCreditForLiterature: StoryPageVoicedKaden {
     let textName = ["ch7FullCreditForLiterature"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7012)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7012)
     }
 }
 
@@ -268,11 +236,7 @@ class ch7LostCreditForNotBeingOneselfForLiterature: StoryPageVoicedKaden {
     let textName = ["ch7LostCreditForNotBeingOneselfForLiterature"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7011)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7011)
     }
 }
 
@@ -283,11 +247,7 @@ class ch7LiteratureTeacherIsDrag: StoryPageVoicedKaden {
     let textName = ["ch7LiteratureTeacherIsDrag"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7013)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7013)
     }
 }
 
@@ -298,11 +258,7 @@ class ch7CarleighsGroupCheers: StoryPageVoicedKaden {
     let textName = ["ch7CarleighsGroupCheers"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7013)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7013)
     }
 }
 
@@ -313,11 +269,7 @@ class ch7SezjaIsQuiet: StoryPageVoicedKaden {
     let textName = ["ch7SezjaIsQuiet"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7014)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7014)
     }
 }
 
@@ -328,11 +280,7 @@ class ch7MorningPasses: StoryPageVoicedKaden {
     let textName = ["ch7MorningPasses"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7015)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7015)
     }
 }
 
@@ -343,11 +291,7 @@ class ch7LunchBegins: StoryPageVoicedKaden {
     let textName = ["ch7LunchBegins"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7016)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7016)
     }
 }
 
@@ -358,14 +302,14 @@ class ch7IAcceptHangout: StoryPageVoicedKaden {
     let textName = ["ch7IAcceptHangout"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7017)
     }
     
     override func continueStory() {
         if let ef = observer.eventFlags {
             ef.ch7HungOutWithHewitt = .Accepted
         }
-        observer.goToStoryState(7017)
+        super.continueStory()
     }
 }
 
@@ -376,14 +320,14 @@ class ch7IDeclineHangout: StoryPageVoicedKaden {
     let textName = ["ch7IDeclineHangout"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7017)
     }
     
     override func continueStory() {
         if let ef = observer.eventFlags {
             ef.ch7HungOutWithHewitt = .Refused
         }
-        observer.goToStoryState(7017)
+        super.continueStory()
     }
 }
 
@@ -394,11 +338,7 @@ class ch7BaqerBurpsAtMe: StoryPageVoicedKaden {
     let textName = ["ch7BaqerBurpsAtMe"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7018)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7018)
     }
 }
 
@@ -409,11 +349,7 @@ class ch7BaqerIsJerk: StoryPageVoicedKaden {
     let textName = ["ch7BaqerIsJerk"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7019)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7019)
     }
 }
 
@@ -424,11 +360,7 @@ class ch7HewittActsDifferent: StoryPageVoicedKaden {
     let textName = ["ch7HewittActsDifferent", "ch7VaNalCallsMe"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7020)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7020)
     }
 }
 
@@ -439,11 +371,7 @@ class ch7BaqerReturns: StoryPageVoicedKaden {
     let textName = ["ch7BaqerReturns"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7021)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7021)
     }
 }
 
@@ -454,11 +382,7 @@ class ch7BaqerNoticesVaNal: StoryPageVoicedKaden {
     let textName = ["ch7BaqerNoticesVaNal", "ch7HewittDoesNotDeserveBaqer", "ch7VaNalDaresToWatchBaqer", "ch7BaqerFollowedMe"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7022)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7022)
     }
 }
 
@@ -469,11 +393,7 @@ class ch7BaqerGrabsMe: StoryPageVoicedKaden {
     let textName = ["ch7BaqerGrabsMe"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7023)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7023)
     }
 }
 
@@ -484,11 +404,7 @@ class ch7VaNalPullsBaqer: StoryPageVoicedKaden {
     let textName = ["ch7VaNalPullsBaqer"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7024)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7024)
     }
 }
 
@@ -499,11 +415,7 @@ class ch7VaNalSeperatesBaqer: StoryPageVoicedKaden {
     let textName = ["ch7VaNalSeperatesBaqer", "ch7BaqerFlees"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7025)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7025)
     }
 }
 
@@ -514,11 +426,7 @@ class ch7CanIPossessHewitt: StoryPageVoicedKaden {
     let textName = ["ch7CanIPossessHewitt", "ch7SureINod"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7026)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7026)
     }
 }
 
@@ -529,11 +437,7 @@ class ch7VaNalPossessesElodie: StoryPageVoicedKaden {
     let textName = ["ch7VaNalPossessesElodie"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7027)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7027)
     }
 }
 
@@ -544,11 +448,7 @@ class ch7WeBuyHam: StoryPageVoicedKaden {
     let textName = ["ch7WeBuyHam"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7028)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7028)
     }
 }
 
@@ -559,11 +459,7 @@ class ch7WeEatHam: StoryPageVoicedKaden {
     let textName = ["ch7WeEatHam", "ch7VaNalIntoducesHerself", "ch7WhyWillIGoToRuins", "ch7GoingWillMakeSense"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7029)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7029)
     }
 }
 
@@ -574,11 +470,7 @@ class ch7SezjaReturns: StoryPageVoicedKaden {
     let textName = ["ch7SezjaReturns", "ch7SezjaCallsVaNalBestFriend", "ch7SezjaMistakesVaNal", "ch7IAmHere"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7030)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7030)
     }
 }
 
@@ -589,11 +481,7 @@ class ch7SezjaGreetsMeAgain: StoryPageVoicedKaden {
     let textName = ["ch7SezjaGreetsMeAgain", "ch7CanSezjaGetCarleighsTest", "ch7WhyDoIAskSezja", "ch7ITookCarleighsTest", "ch7SezjaGetsNervousTalking"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7031)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7031)
     }
 }
 
@@ -631,12 +519,8 @@ class ch7IScore10: StoryPageVoicedKaden {
     let textName = ["ch7IScore10"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7036)
         AchievementManager.unlockAchievements([.AcedMathTest])
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7036)
     }
 }
 
@@ -647,11 +531,7 @@ class ch7IScore9: StoryPageVoicedKaden {
     let textName = ["ch7IScore9"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7036)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7036)
     }
 }
 
@@ -662,11 +542,7 @@ class ch7IScore8: StoryPageVoicedKaden {
     let textName = ["ch7IScore8"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7036)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7036)
     }
 }
 
@@ -677,11 +553,7 @@ class ch7IScore7: StoryPageVoicedKaden {
     let textName = ["ch7IScore7"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7036)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7036)
     }
 }
 
@@ -692,11 +564,7 @@ class ch7AfternoonPasses: StoryPageVoicedKaden {
     let textName = ["ch7AfternoonPasses"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7037)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7037)
     }
 }
 
@@ -707,11 +575,7 @@ class ch7VaNalEntersDorm: StoryPageVoicedKaden {
     let textName = ["ch7VaNalEntersDorm", "ch7ElodieIsVaNal"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7038)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7038)
     }
 }
 
@@ -722,11 +586,7 @@ class ch7HowDidVaNalEnter: StoryPageVoicedKaden {
     let textName = ["ch7HowDidVaNalEnter", "ch7VaNalPitiesMe", "ch7WhatDoesVaNalMean", "ch7ISeekCompanionship", "ch7VaNalStrokesMe"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7039)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7039)
     }
 }
 
@@ -737,14 +597,14 @@ class ch7IDoNotKissVaNal: StoryPageVoicedKaden {
     let textName = ["ch7IDoNotKissVaNal"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7040)
     }
     
     override func continueStory() {
         if let ef = observer.eventFlags {
             ef.ch7KissedVaNal = .Refused
         }
-        observer.goToStoryState(7040)
+        super.continueStory()
     }
 }
 
@@ -755,14 +615,14 @@ class ch7IWillKissVaNal: StoryPageVoicedKaden {
     let textName = ["ch7IWillKissVaNal"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7041)
     }
     
     override func continueStory() {
         if let ef = observer.eventFlags {
             ef.ch7KissedVaNal = .Kissed
         }
-        observer.goToStoryState(7041)
+        super.continueStory()
     }
 }
 
@@ -773,11 +633,7 @@ class ch7WhatIsWrong: StoryPageVoicedKaden {
     let textName = ["ch7WhatIsWrong", "ch7WrongAge", "ch7IAmHewitt", "ch7VaNalDisintrestsMe", "ch7VaNalAdmitsDisrespect"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7043)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7043)
     }
 }
 
@@ -788,11 +644,7 @@ class ch7HeartMustBeCared: StoryPageVoicedKaden {
     let textName = ["ch7HeartMustBeCared", "ch7OKINod"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7042)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7042)
     }
 }
 
@@ -803,11 +655,7 @@ class ch7VaNalKissesMe: StoryPageVoicedKaden {
     let textName = ["ch7VaNalKissesMe", "ch7VaNalLeavesBed"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7043)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7043)
     }
 }
 
@@ -818,11 +666,7 @@ class ch7GodsWillDispossess: StoryPageVoicedKaden {
     let textName = ["ch7GodsWillDispossess", "ch7VaNalLeavesDorm"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(7044)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 7044)
     }
 }
 
@@ -833,10 +677,6 @@ class ch7ISleep: StoryPageVoicedKaden {
     let textName = ["ch7ISleep"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(8001)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 8001)
     }
 }

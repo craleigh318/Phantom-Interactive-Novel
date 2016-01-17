@@ -40,11 +40,7 @@ class ch14Title: StoryPage {
     let textName = ["ch14Title"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(14002)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 14002)
     }
 }
 
@@ -55,11 +51,7 @@ class ch14TimeAgo: StoryPage {
     let textName = ["ch14TimeAgo"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(14003)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 14003)
     }
 }
 
@@ -70,11 +62,7 @@ class ch14ItWasDusk: StoryPageVoicedArvin {
     let textName = ["ch14ItWasDusk"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(14004)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 14004)
     }
 }
 
@@ -85,11 +73,7 @@ class ch14ArmyMarched: StoryPageVoicedArvin {
     let textName = ["ch14ArmyMarched", "ch14MenCarriedTorches"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(14005)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 14005)
     }
 }
 
@@ -100,11 +84,7 @@ class ch14MenCarriedFirearms: StoryPageVoicedArvin {
     let textName = ["ch14MenCarriedFirearms"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(14006)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 14006)
     }
 }
 
@@ -115,11 +95,7 @@ class ch14NativesFled: StoryPageVoicedArvin {
     let textName = ["ch14NativesFled"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(14007)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 14007)
     }
 }
 
@@ -130,11 +106,7 @@ class ch14ArmyReachedPyramid: StoryPageVoicedArvin {
     let textName = ["ch14ArmyReachedPyramid"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(14008)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 14008)
     }
 }
 
@@ -145,10 +117,6 @@ class ch14PhantomArose: StoryPageVoicedArvin {
     let textName = ["ch14PhantomArose", "ch14ElFantasma"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(15001)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 15001)
     }
 }

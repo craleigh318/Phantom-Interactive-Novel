@@ -34,11 +34,7 @@ class ch8Title: StoryPage {
     let textName = ["ch8Title"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(8002)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 8002)
     }
 }
 
@@ -49,11 +45,7 @@ class ch8TimeAgo: StoryPage {
     let textName = ["ch8TimeAgo"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(8003)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 8003)
     }
 }
 
@@ -64,11 +56,7 @@ class ch8INeededHelpWithReport: StoryPageVoicedKaden {
     let textName = ["ch8INeededHelpWithReport"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(8004)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 8004)
     }
 }
 
@@ -79,11 +67,7 @@ class ch8IMetSarah: StoryPageVoicedKaden {
     let textName = ["ch8IMetSarah"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(8005)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 8005)
     }
 }
 
@@ -94,10 +78,6 @@ class ch8SarahAskedColdly: StoryPageVoicedKaden {
     let textName = ["ch8SarahAskedColdly", "ch8DidSarahKnowMe", "ch8OKAndSarahAsked", "ch8IAskedSarahForHelp", "ch8SarahDeclinesHelping", "ch8RebeccaCouldNotHelp", "ch8DidIKnowRebecca", "ch8IDatedRebecca", "ch8SarahAgreedToHelp", "ch8Thanks", "ch8ILookedAtSarahsJournal", "ch8SarahStudiedJournalism", "ch8IWishedSarahLuck", "ch8SarahThankedMe"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(9001)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 9001)
     }
 }

@@ -56,13 +56,16 @@ class StoryPage: PStoryPage {
     
     private var allText: [String]
     
+    private var nextState: Int?
+    
     var lineNumber: Int
     
-    init(image: String, text: [String], observer: PhantomOfTheWest) {
+    init(image: String, text: [String], observer: PhantomOfTheWest, nextState: Int? = nil) {
         self.image = StoryPage.getLocalizedImage(image)
         self.allText = StoryPage.getLocalizedText(text)
         self.lineNumber = 0
         self.observer = observer
+        self.nextState = nextState
     }
     
     func continuePage() {
@@ -76,7 +79,14 @@ class StoryPage: PStoryPage {
     }
     
     func continueStory() {
-        observer.update([])
+        if let state = nextState
+        {
+            observer.goToStoryState(state)
+        }
+        else
+        {
+            observer.update([])
+        }
     }
     
     func playAudio() {

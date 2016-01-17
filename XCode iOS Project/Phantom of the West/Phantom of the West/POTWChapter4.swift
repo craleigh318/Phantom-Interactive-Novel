@@ -34,11 +34,7 @@ class ch4Title: StoryPage {
     let textName = ["ch4Title"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(4002)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 4002)
     }
 }
 
@@ -49,11 +45,7 @@ class ch4TimeAgo: StoryPage {
     let textName = ["ch4TimeAgo"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(4003)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 4003)
     }
 }
 
@@ -64,11 +56,7 @@ class ch4FieldTripBegan: StoryPageVoicedKaden {
     let textName = ["ch4FieldTripBegan"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(4004)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 4004)
     }
 }
 
@@ -79,11 +67,7 @@ class ch4BobbyTeasedMe: StoryPageVoicedKaden {
     let textName = ["ch4BobbyTeasedMe", "ch4RebeccaDefendedMe"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(4005)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 4005)
     }
 }
 
@@ -94,10 +78,6 @@ class ch4RebeccaComfortedMe: StoryPageVoicedKaden {
     let textName = ["ch4RebeccaComfortedMe", "ch4RebeccaLookedFamiliar", "ch4RebeccaLivedDownstairs", "ch4IThankedRebecca"]
     
     init(observer: PhantomOfTheWest) {
-        super.init(image: imageName, text: textName, observer: observer)
-    }
-    
-    override func continueStory() {
-        observer.goToStoryState(5001)
+        super.init(image: imageName, text: textName, observer: observer, nextState: 5001)
     }
 }

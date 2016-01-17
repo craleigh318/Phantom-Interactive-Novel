@@ -1,10 +1,10 @@
-/* 
-  GUIElements.strings
-  Phantom of the West
-
-  Created by Christopher Raleigh on 2015/08/12.
-  Copyright (c) 2015 Christopher Raleigh. All rights reserved.
-*/
+/*
+ GUIElements.strings
+ Phantom of the West
+ 
+ Created by Christopher Raleigh on 2015/08/12.
+ Copyright (c) 2015 Christopher Raleigh. All rights reserved.
+ */
 
 choiceOf = "Choice %1$d of %2$d";
 
@@ -41,3 +41,5 @@ saveName = "New Save";
 saveNameMessage = "Please name your save.";
 
 cancel = "Cancel";
+
+playTutorial = "Play Tutorial";
