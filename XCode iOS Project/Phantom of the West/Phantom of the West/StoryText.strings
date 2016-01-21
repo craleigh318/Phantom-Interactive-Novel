@@ -18,6 +18,18 @@ ch0SecondChoice = "This is the second choice. Tap \"%1$@\" if you would like to 
 
 ch0Options = "Finally, tapping \"%1$@\" will open the options menu. When you are ready, please press \"%2$@\" to start the game.";
 
+ch0MacWelcome = "Welcome to \"Phantom of the West\". Please click \"%@\" to continue.";
+
+ch0MacPOTWSimple = "Playing \"Phantom of the West\" is simple. The story is presented as a series of pages with text, accompanied with images. Clicking \"%@\" will continue to the next page.";
+
+ch0MacMultipleChoices = "Occasionally, you will be presented with multiple choices. Some choices will affect the story more than others. Please click \"%@\" to see an example of multiple choices.";
+
+ch0MacFirstChoice = "This is the first choice. Click \"%1$@\" if you would like to see the second choice, or click \"%2$@\" to continue.";
+
+ch0MacSecondChoice = "This is the second choice. Click \"%1$@\" if you would like to see the first choice, or click \"%2$@\" to continue.";
+
+ch0MacOptions = "Finally, you can access options at the top of the screen. When you are ready, please press \"%2$@\" to start the game.";
+
 ellipsis = "…";
 
 ch1Title = "Chapter 1";
