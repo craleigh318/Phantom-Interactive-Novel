@@ -31,38 +31,21 @@
 		A43919E21C5084B900D2B231 /* POTWChapter3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A439199B1C5084B900D2B231 /* POTWChapter3.swift */; };
 		A43919E31C5084B900D2B231 /* POTWChapter2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A439199C1C5084B900D2B231 /* POTWChapter2.swift */; };
 		A43919E41C5084B900D2B231 /* POTWChapter1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A439199D1C5084B900D2B231 /* POTWChapter1.swift */; };
-		A43919E61C5084B900D2B231 /* StoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A439199F1C5084B900D2B231 /* StoryPage.swift */; };
-		A43919E71C5084B900D2B231 /* MainOptionsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919A01C5084B900D2B231 /* MainOptionsMenu.swift */; };
-		A43919E81C5084B900D2B231 /* PlayTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919A11C5084B900D2B231 /* PlayTutorial.swift */; };
 		A43919E91C5084B900D2B231 /* GUIElements.strings in Resources */ = {isa = PBXBuildFile; fileRef = A43919A21C5084B900D2B231 /* GUIElements.strings */; };
-		A43919EA1C5084B900D2B231 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A43919A31C5084B900D2B231 /* Info.plist */; };
-		A43919EB1C5084B900D2B231 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919A41C5084B900D2B231 /* StoryViewController.swift */; };
 		A43919EC1C5084B900D2B231 /* SaveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919A51C5084B900D2B231 /* SaveManager.swift */; };
 		A43919ED1C5084B900D2B231 /* StoryImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43919A61C5084B900D2B231 /* StoryImages.xcassets */; };
 		A43919EE1C5084B900D2B231 /* PhantomOfTheWest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919A71C5084B900D2B231 /* PhantomOfTheWest.swift */; };
 		A43919EF1C5084B900D2B231 /* POTWGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919A81C5084B900D2B231 /* POTWGameState.swift */; };
 		A43919F01C5084B900D2B231 /* PPageTurner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919A91C5084B900D2B231 /* PPageTurner.swift */; };
-		A43919F11C5084B900D2B231 /* CharacterVoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919AA1C5084B900D2B231 /* CharacterVoices.swift */; };
 		A43919F31C5084B900D2B231 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919AC1C5084B900D2B231 /* Bookmark.swift */; };
-		A43919F41C5084B900D2B231 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919AD1C5084B900D2B231 /* ViewController.swift */; };
-		A43919F51C5084B900D2B231 /* StoryPageVoiced.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919AE1C5084B900D2B231 /* StoryPageVoiced.swift */; };
-		A43919F61C5084B900D2B231 /* VoiceOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919AF1C5084B900D2B231 /* VoiceOption.swift */; };
-		A43919F71C5084B900D2B231 /* SavedGameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919B01C5084B900D2B231 /* SavedGameItem.swift */; };
-		A43919F81C5084B900D2B231 /* PStoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919B11C5084B900D2B231 /* PStoryPage.swift */; };
 		A43919FB1C5084B900D2B231 /* ManualSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919B41C5084B900D2B231 /* ManualSave.swift */; };
 		A43919FC1C5084B900D2B231 /* PSaveManagerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919B51C5084B900D2B231 /* PSaveManagerObserver.swift */; };
-		A43919FE1C5084B900D2B231 /* OptionsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919B71C5084B900D2B231 /* OptionsMenu.swift */; };
-		A43919FF1C5084B900D2B231 /* POptionsMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919B81C5084B900D2B231 /* POptionsMenuItem.swift */; };
 		A4391A011C5084B900D2B231 /* OverwritableSavedGameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919BA1C5084B900D2B231 /* OverwritableSavedGameItem.swift */; };
-		A4391A021C5084B900D2B231 /* LoadableSavedGameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919BB1C5084B900D2B231 /* LoadableSavedGameItem.swift */; };
 		A4391A031C5084B900D2B231 /* PSavedGamesRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919BC1C5084B900D2B231 /* PSavedGamesRetriever.swift */; };
 		A4391A051C5084B900D2B231 /* PStoryPageListObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919BE1C5084B900D2B231 /* PStoryPageListObserver.swift */; };
 		A4391A061C5084B900D2B231 /* EventFlagsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919BF1C5084B900D2B231 /* EventFlagsCollection.swift */; };
-		A4391A071C5084B900D2B231 /* StoryText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919C01C5084B900D2B231 /* StoryText.swift */; };
 		A4391A081C5084B900D2B231 /* AutoSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919C11C5084B900D2B231 /* AutoSave.swift */; };
-		A4391A091C5084B900D2B231 /* StoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919C21C5084B900D2B231 /* StoryImage.swift */; };
 		A4391A0B1C5084B900D2B231 /* SavedGamesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919C41C5084B900D2B231 /* SavedGamesList.swift */; };
-		A4391A0C1C5084B900D2B231 /* NewGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919C51C5084B900D2B231 /* NewGame.swift */; };
 		A4391A0D1C5084B900D2B231 /* PSavedGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919C61C5084B900D2B231 /* PSavedGame.swift */; };
 		A4391A0E1C5084B900D2B231 /* StringLocalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919C71C5084B900D2B231 /* StringLocalizer.swift */; };
 		A4391A0F1C5084B900D2B231 /* PSavedGameLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919C81C5084B900D2B231 /* PSavedGameLoader.swift */; };
@@ -71,11 +54,17 @@
 		A4391A131C5084B900D2B231 /* PStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919CC1C5084B900D2B231 /* PStory.swift */; };
 		A4391A141C5084B900D2B231 /* PStoryObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919CD1C5084B900D2B231 /* PStoryObserver.swift */; };
 		A4391A151C5084B900D2B231 /* StoryPageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919CE1C5084B900D2B231 /* StoryPageList.swift */; };
-		A4391A161C5084B900D2B231 /* PNavigatorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43919CF1C5084B900D2B231 /* PNavigatorHandler.swift */; };
 		A4391A191C50912B00D2B231 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4391A181C50912B00D2B231 /* StoryView.swift */; };
 		A4391A1B1C5091C500D2B231 /* POTWChapter0.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4391A1A1C5091C500D2B231 /* POTWChapter0.swift */; };
 		A4391A1D1C509B4B00D2B231 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4391A1C1C509B4B00D2B231 /* AlertManager.swift */; };
 		A4391A1F1C509F2F00D2B231 /* StoryNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4391A1E1C509F2F00D2B231 /* StoryNavigator.swift */; };
+		A4FE2FB11C56F06F003A386A /* StoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE2FB01C56F06F003A386A /* StoryImage.swift */; };
+		A4FE2FB31C56F1FB003A386A /* StoryText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE2FB21C56F1FB003A386A /* StoryText.swift */; };
+		A4FE2FB51C56F983003A386A /* PStoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE2FB41C56F983003A386A /* PStoryPage.swift */; };
+		A4FE2FB71C56FA28003A386A /* StoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE2FB61C56FA28003A386A /* StoryPage.swift */; };
+		A4FE2FB91C570197003A386A /* PNavigatorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE2FB81C570197003A386A /* PNavigatorHandler.swift */; };
+		A4FE2FBB1C571B28003A386A /* CharacterVoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE2FBA1C571B28003A386A /* CharacterVoices.swift */; };
+		A4FE2FBD1C572446003A386A /* StoryPageVoiced.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE2FBC1C572446003A386A /* StoryPageVoiced.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,38 +95,21 @@
 		A439199B1C5084B900D2B231 /* POTWChapter3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POTWChapter3.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/POTWChapter3.swift"; sourceTree = "<group>"; };
 		A439199C1C5084B900D2B231 /* POTWChapter2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POTWChapter2.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/POTWChapter2.swift"; sourceTree = "<group>"; };
 		A439199D1C5084B900D2B231 /* POTWChapter1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POTWChapter1.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/POTWChapter1.swift"; sourceTree = "<group>"; };
-		A439199F1C5084B900D2B231 /* StoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryPage.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/StoryPage.swift"; sourceTree = "<group>"; };
-		A43919A01C5084B900D2B231 /* MainOptionsMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainOptionsMenu.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/MainOptionsMenu.swift"; sourceTree = "<group>"; };
-		A43919A11C5084B900D2B231 /* PlayTutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayTutorial.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/PlayTutorial.swift"; sourceTree = "<group>"; };
 		A43919A21C5084B900D2B231 /* GUIElements.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = GUIElements.strings; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/GUIElements.strings"; sourceTree = "<group>"; };
-		A43919A31C5084B900D2B231 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/Info.plist"; sourceTree = "<group>"; };
-		A43919A41C5084B900D2B231 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryViewController.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/StoryViewController.swift"; sourceTree = "<group>"; };
 		A43919A51C5084B900D2B231 /* SaveManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SaveManager.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/SaveManager.swift"; sourceTree = "<group>"; };
 		A43919A61C5084B900D2B231 /* StoryImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = StoryImages.xcassets; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/StoryImages.xcassets"; sourceTree = "<group>"; };
 		A43919A71C5084B900D2B231 /* PhantomOfTheWest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhantomOfTheWest.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/PhantomOfTheWest.swift"; sourceTree = "<group>"; };
 		A43919A81C5084B900D2B231 /* POTWGameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POTWGameState.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/POTWGameState.swift"; sourceTree = "<group>"; };
 		A43919A91C5084B900D2B231 /* PPageTurner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PPageTurner.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/PPageTurner.swift"; sourceTree = "<group>"; };
-		A43919AA1C5084B900D2B231 /* CharacterVoices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterVoices.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/CharacterVoices.swift"; sourceTree = "<group>"; };
 		A43919AC1C5084B900D2B231 /* Bookmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bookmark.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/Bookmark.swift"; sourceTree = "<group>"; };
-		A43919AD1C5084B900D2B231 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/ViewController.swift"; sourceTree = "<group>"; };
-		A43919AE1C5084B900D2B231 /* StoryPageVoiced.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryPageVoiced.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/StoryPageVoiced.swift"; sourceTree = "<group>"; };
-		A43919AF1C5084B900D2B231 /* VoiceOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VoiceOption.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/VoiceOption.swift"; sourceTree = "<group>"; };
-		A43919B01C5084B900D2B231 /* SavedGameItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SavedGameItem.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/SavedGameItem.swift"; sourceTree = "<group>"; };
-		A43919B11C5084B900D2B231 /* PStoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PStoryPage.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/PStoryPage.swift"; sourceTree = "<group>"; };
 		A43919B41C5084B900D2B231 /* ManualSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManualSave.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/ManualSave.swift"; sourceTree = "<group>"; };
 		A43919B51C5084B900D2B231 /* PSaveManagerObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PSaveManagerObserver.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/PSaveManagerObserver.swift"; sourceTree = "<group>"; };
-		A43919B71C5084B900D2B231 /* OptionsMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OptionsMenu.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/OptionsMenu.swift"; sourceTree = "<group>"; };
-		A43919B81C5084B900D2B231 /* POptionsMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = POptionsMenuItem.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/POptionsMenuItem.swift"; sourceTree = "<group>"; };
 		A43919BA1C5084B900D2B231 /* OverwritableSavedGameItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverwritableSavedGameItem.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/OverwritableSavedGameItem.swift"; sourceTree = "<group>"; };
-		A43919BB1C5084B900D2B231 /* LoadableSavedGameItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadableSavedGameItem.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/LoadableSavedGameItem.swift"; sourceTree = "<group>"; };
 		A43919BC1C5084B900D2B231 /* PSavedGamesRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PSavedGamesRetriever.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/PSavedGamesRetriever.swift"; sourceTree = "<group>"; };
 		A43919BE1C5084B900D2B231 /* PStoryPageListObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PStoryPageListObserver.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/PStoryPageListObserver.swift"; sourceTree = "<group>"; };
 		A43919BF1C5084B900D2B231 /* EventFlagsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventFlagsCollection.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/EventFlagsCollection.swift"; sourceTree = "<group>"; };
-		A43919C01C5084B900D2B231 /* StoryText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryText.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/StoryText.swift"; sourceTree = "<group>"; };
 		A43919C11C5084B900D2B231 /* AutoSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoSave.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/AutoSave.swift"; sourceTree = "<group>"; };
-		A43919C21C5084B900D2B231 /* StoryImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryImage.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/StoryImage.swift"; sourceTree = "<group>"; };
 		A43919C41C5084B900D2B231 /* SavedGamesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SavedGamesList.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/SavedGamesList.swift"; sourceTree = "<group>"; };
-		A43919C51C5084B900D2B231 /* NewGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewGame.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/NewGame.swift"; sourceTree = "<group>"; };
 		A43919C61C5084B900D2B231 /* PSavedGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PSavedGame.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/PSavedGame.swift"; sourceTree = "<group>"; };
 		A43919C71C5084B900D2B231 /* StringLocalizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringLocalizer.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/StringLocalizer.swift"; sourceTree = "<group>"; };
 		A43919C81C5084B900D2B231 /* PSavedGameLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PSavedGameLoader.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/PSavedGameLoader.swift"; sourceTree = "<group>"; };
@@ -146,11 +118,17 @@
 		A43919CC1C5084B900D2B231 /* PStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PStory.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/PStory.swift"; sourceTree = "<group>"; };
 		A43919CD1C5084B900D2B231 /* PStoryObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PStoryObserver.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/PStoryObserver.swift"; sourceTree = "<group>"; };
 		A43919CE1C5084B900D2B231 /* StoryPageList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryPageList.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/StoryPageList.swift"; sourceTree = "<group>"; };
-		A43919CF1C5084B900D2B231 /* PNavigatorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PNavigatorHandler.swift; path = "../../../XCode iOS Project/Phantom of the West/Phantom of the West/PNavigatorHandler.swift"; sourceTree = "<group>"; };
 		A4391A181C50912B00D2B231 /* StoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		A4391A1A1C5091C500D2B231 /* POTWChapter0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTWChapter0.swift; sourceTree = "<group>"; };
 		A4391A1C1C509B4B00D2B231 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		A4391A1E1C509F2F00D2B231 /* StoryNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryNavigator.swift; sourceTree = "<group>"; };
+		A4FE2FB01C56F06F003A386A /* StoryImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryImage.swift; sourceTree = "<group>"; };
+		A4FE2FB21C56F1FB003A386A /* StoryText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryText.swift; sourceTree = "<group>"; };
+		A4FE2FB41C56F983003A386A /* PStoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PStoryPage.swift; sourceTree = "<group>"; };
+		A4FE2FB61C56FA28003A386A /* StoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryPage.swift; sourceTree = "<group>"; };
+		A4FE2FB81C570197003A386A /* PNavigatorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNavigatorHandler.swift; sourceTree = "<group>"; };
+		A4FE2FBA1C571B28003A386A /* CharacterVoices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterVoices.swift; sourceTree = "<group>"; };
+		A4FE2FBC1C572446003A386A /* StoryPageVoiced.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryPageVoiced.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,38 +197,21 @@
 				A439199B1C5084B900D2B231 /* POTWChapter3.swift */,
 				A439199C1C5084B900D2B231 /* POTWChapter2.swift */,
 				A439199D1C5084B900D2B231 /* POTWChapter1.swift */,
-				A439199F1C5084B900D2B231 /* StoryPage.swift */,
-				A43919A01C5084B900D2B231 /* MainOptionsMenu.swift */,
-				A43919A11C5084B900D2B231 /* PlayTutorial.swift */,
 				A43919A21C5084B900D2B231 /* GUIElements.strings */,
-				A43919A31C5084B900D2B231 /* Info.plist */,
-				A43919A41C5084B900D2B231 /* StoryViewController.swift */,
 				A43919A51C5084B900D2B231 /* SaveManager.swift */,
 				A43919A61C5084B900D2B231 /* StoryImages.xcassets */,
 				A43919A71C5084B900D2B231 /* PhantomOfTheWest.swift */,
 				A43919A81C5084B900D2B231 /* POTWGameState.swift */,
 				A43919A91C5084B900D2B231 /* PPageTurner.swift */,
-				A43919AA1C5084B900D2B231 /* CharacterVoices.swift */,
 				A43919AC1C5084B900D2B231 /* Bookmark.swift */,
-				A43919AD1C5084B900D2B231 /* ViewController.swift */,
-				A43919AE1C5084B900D2B231 /* StoryPageVoiced.swift */,
-				A43919AF1C5084B900D2B231 /* VoiceOption.swift */,
-				A43919B01C5084B900D2B231 /* SavedGameItem.swift */,
-				A43919B11C5084B900D2B231 /* PStoryPage.swift */,
 				A43919B41C5084B900D2B231 /* ManualSave.swift */,
 				A43919B51C5084B900D2B231 /* PSaveManagerObserver.swift */,
-				A43919B71C5084B900D2B231 /* OptionsMenu.swift */,
-				A43919B81C5084B900D2B231 /* POptionsMenuItem.swift */,
 				A43919BA1C5084B900D2B231 /* OverwritableSavedGameItem.swift */,
-				A43919BB1C5084B900D2B231 /* LoadableSavedGameItem.swift */,
 				A43919BC1C5084B900D2B231 /* PSavedGamesRetriever.swift */,
 				A43919BE1C5084B900D2B231 /* PStoryPageListObserver.swift */,
 				A43919BF1C5084B900D2B231 /* EventFlagsCollection.swift */,
-				A43919C01C5084B900D2B231 /* StoryText.swift */,
 				A43919C11C5084B900D2B231 /* AutoSave.swift */,
-				A43919C21C5084B900D2B231 /* StoryImage.swift */,
 				A43919C41C5084B900D2B231 /* SavedGamesList.swift */,
-				A43919C51C5084B900D2B231 /* NewGame.swift */,
 				A43919C61C5084B900D2B231 /* PSavedGame.swift */,
 				A43919C71C5084B900D2B231 /* StringLocalizer.swift */,
 				A43919C81C5084B900D2B231 /* PSavedGameLoader.swift */,
@@ -259,7 +220,6 @@
 				A43919CC1C5084B900D2B231 /* PStory.swift */,
 				A43919CD1C5084B900D2B231 /* PStoryObserver.swift */,
 				A43919CE1C5084B900D2B231 /* StoryPageList.swift */,
-				A43919CF1C5084B900D2B231 /* PNavigatorHandler.swift */,
 			);
 			name = "iOS Files";
 			sourceTree = "<group>";
@@ -271,6 +231,13 @@
 				A4391A1A1C5091C500D2B231 /* POTWChapter0.swift */,
 				A4391A1C1C509B4B00D2B231 /* AlertManager.swift */,
 				A4391A1E1C509F2F00D2B231 /* StoryNavigator.swift */,
+				A4FE2FB01C56F06F003A386A /* StoryImage.swift */,
+				A4FE2FB21C56F1FB003A386A /* StoryText.swift */,
+				A4FE2FB41C56F983003A386A /* PStoryPage.swift */,
+				A4FE2FB61C56FA28003A386A /* StoryPage.swift */,
+				A4FE2FB81C570197003A386A /* PNavigatorHandler.swift */,
+				A4FE2FBA1C571B28003A386A /* CharacterVoices.swift */,
+				A4FE2FBC1C572446003A386A /* StoryPageVoiced.swift */,
 			);
 			name = "Mac Files";
 			sourceTree = "<group>";
@@ -348,7 +315,6 @@
 				A43919D01C5084B900D2B231 /* StoryText.strings in Resources */,
 				A43919E91C5084B900D2B231 /* GUIElements.strings in Resources */,
 				A403B63A1C4B2F7600C06871 /* Assets.xcassets in Resources */,
-				A43919EA1C5084B900D2B231 /* Info.plist in Resources */,
 				A403B63D1C4B2F7600C06871 /* MainMenu.xib in Resources */,
 				A43919ED1C5084B900D2B231 /* StoryImages.xcassets in Resources */,
 			);
@@ -361,44 +327,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A43919F51C5084B900D2B231 /* StoryPageVoiced.swift in Sources */,
+				A4FE2FBB1C571B28003A386A /* CharacterVoices.swift in Sources */,
 				A43919D51C5084B900D2B231 /* POTWChapter16.swift in Sources */,
 				A43919D31C5084B900D2B231 /* POTWChapter18.swift in Sources */,
-				A4391A021C5084B900D2B231 /* LoadableSavedGameItem.swift in Sources */,
+				A4FE2FBD1C572446003A386A /* StoryPageVoiced.swift in Sources */,
 				A4391A101C5084B900D2B231 /* Constants.swift in Sources */,
 				A43919E01C5084B900D2B231 /* POTWChapter5.swift in Sources */,
-				A4391A161C5084B900D2B231 /* PNavigatorHandler.swift in Sources */,
 				A4391A0F1C5084B900D2B231 /* PSavedGameLoader.swift in Sources */,
 				A4391A051C5084B900D2B231 /* PStoryPageListObserver.swift in Sources */,
 				A4391A061C5084B900D2B231 /* EventFlagsCollection.swift in Sources */,
 				A4391A081C5084B900D2B231 /* AutoSave.swift in Sources */,
-				A43919F11C5084B900D2B231 /* CharacterVoices.swift in Sources */,
 				A43919E41C5084B900D2B231 /* POTWChapter1.swift in Sources */,
 				A403B6381C4B2F7600C06871 /* AppDelegate.swift in Sources */,
 				A4391A011C5084B900D2B231 /* OverwritableSavedGameItem.swift in Sources */,
+				A4FE2FB51C56F983003A386A /* PStoryPage.swift in Sources */,
 				A43919DF1C5084B900D2B231 /* POTWChapter6.swift in Sources */,
 				A4391A031C5084B900D2B231 /* PSavedGamesRetriever.swift in Sources */,
+				A4FE2FB91C570197003A386A /* PNavigatorHandler.swift in Sources */,
+				A4FE2FB11C56F06F003A386A /* StoryImage.swift in Sources */,
 				A43919DB1C5084B900D2B231 /* POTWChapter10.swift in Sources */,
 				A43919E21C5084B900D2B231 /* POTWChapter3.swift in Sources */,
 				A43919FB1C5084B900D2B231 /* ManualSave.swift in Sources */,
 				A43919D91C5084B900D2B231 /* POTWChapter12.swift in Sources */,
 				A43919EF1C5084B900D2B231 /* POTWGameState.swift in Sources */,
+				A4FE2FB31C56F1FB003A386A /* StoryText.swift in Sources */,
 				A4391A1B1C5091C500D2B231 /* POTWChapter0.swift in Sources */,
-				A43919E61C5084B900D2B231 /* StoryPage.swift in Sources */,
-				A43919F61C5084B900D2B231 /* VoiceOption.swift in Sources */,
-				A4391A0C1C5084B900D2B231 /* NewGame.swift in Sources */,
 				A43919D71C5084B900D2B231 /* POTWChapter14.swift in Sources */,
-				A4391A071C5084B900D2B231 /* StoryText.swift in Sources */,
 				A43919DE1C5084B900D2B231 /* POTWChapter8.swift in Sources */,
 				A43919FC1C5084B900D2B231 /* PSaveManagerObserver.swift in Sources */,
 				A43919EE1C5084B900D2B231 /* PhantomOfTheWest.swift in Sources */,
 				A4391A0D1C5084B900D2B231 /* PSavedGame.swift in Sources */,
-				A43919FF1C5084B900D2B231 /* POptionsMenuItem.swift in Sources */,
 				A43919D41C5084B900D2B231 /* POTWChapter17.swift in Sources */,
-				A43919E81C5084B900D2B231 /* PlayTutorial.swift in Sources */,
 				A43919F01C5084B900D2B231 /* PPageTurner.swift in Sources */,
 				A4391A131C5084B900D2B231 /* PStory.swift in Sources */,
-				A43919E71C5084B900D2B231 /* MainOptionsMenu.swift in Sources */,
 				A43919EC1C5084B900D2B231 /* SaveManager.swift in Sources */,
 				A43919E31C5084B900D2B231 /* POTWChapter2.swift in Sources */,
 				A43919F31C5084B900D2B231 /* Bookmark.swift in Sources */,
@@ -406,13 +367,9 @@
 				A4391A151C5084B900D2B231 /* StoryPageList.swift in Sources */,
 				A43919D61C5084B900D2B231 /* POTWChapter15.swift in Sources */,
 				A43919DD1C5084B900D2B231 /* POTWChapter9.swift in Sources */,
-				A43919FE1C5084B900D2B231 /* OptionsMenu.swift in Sources */,
 				A4391A1F1C509F2F00D2B231 /* StoryNavigator.swift in Sources */,
-				A43919F41C5084B900D2B231 /* ViewController.swift in Sources */,
+				A4FE2FB71C56FA28003A386A /* StoryPage.swift in Sources */,
 				A4391A191C50912B00D2B231 /* StoryView.swift in Sources */,
-				A43919F81C5084B900D2B231 /* PStoryPage.swift in Sources */,
-				A43919EB1C5084B900D2B231 /* StoryViewController.swift in Sources */,
-				A4391A091C5084B900D2B231 /* StoryImage.swift in Sources */,
 				A4391A1D1C509B4B00D2B231 /* AlertManager.swift in Sources */,
 				A43919D81C5084B900D2B231 /* POTWChapter13.swift in Sources */,
 				A43919D21C5084B900D2B231 /* AchievementManager.swift in Sources */,
@@ -422,7 +379,6 @@
 				A4391A141C5084B900D2B231 /* PStoryObserver.swift in Sources */,
 				A4391A0B1C5084B900D2B231 /* SavedGamesList.swift in Sources */,
 				A43919DA1C5084B900D2B231 /* POTWChapter11.swift in Sources */,
-				A43919F71C5084B900D2B231 /* SavedGameItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -514,7 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};

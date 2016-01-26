@@ -18,14 +18,12 @@ class CharacterVoices {
     static func kadenUtter(string: String) -> AVSpeechUtterance {
         let newUtterance = AVSpeechUtterance(string: string)
         newUtterance.voice = voiceKaden
-        //newUtterance.pitchMultiplier = 0.75
         return newUtterance
     }
     
     static func arvinUtter(string: String) -> AVSpeechUtterance {
         let newUtterance = AVSpeechUtterance(string: string)
         newUtterance.voice = voiceArvin
-        //newUtterance.pitchMultiplier = 0.75
         return newUtterance
     }
     

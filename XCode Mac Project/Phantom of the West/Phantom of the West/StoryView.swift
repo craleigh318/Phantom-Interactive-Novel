@@ -53,7 +53,7 @@ class StoryView: NSWindow {
     /*
     Use this to set the current image.
     */
-    var image: UIImage? {
+    var image: NSImage? {
         get {
             return imageView.image
         }
@@ -75,9 +75,9 @@ class StoryView: NSWindow {
     }
     
     /*
-    The UIView.
+    The NSView.
     */
-    var view: UIView? {
+    var view: NSView? {
         didSet {
             if let v = view {
                 // Set up the view.
@@ -98,6 +98,8 @@ class StoryView: NSWindow {
     private var imageView: StoryImage = StoryImage()
     
     private var textView: StoryText = StoryText()
+    
+    private var bookmark: Bookmark?
     
     private lazy var imageViewUniversalConstraints: [NSLayoutConstraint] = [
         NSLayoutConstraint(item: self.imageView.view, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
@@ -143,9 +145,36 @@ class StoryView: NSWindow {
     
     private lazy var landscapeConstraints: [[NSLayoutConstraint]] = [self.textViewLandscapeConstraints, self.navigatorLandscapeConstraints]
     
-    public init() {
-        super.init()
+    override func awakeFromNib() {
+        bookmark = Bookmark(storyView: self)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "NSWindowDidResizeNotification", name:"NSWindowDidResizeNotification", object: nil)
+    }
+    
+    /*
+    The continue button is pressed.
+    */
+    func onButtonContinue() {
+        if let b = bookmark {
+            b.onButtonContinue()
+        }
+    }
+    
+    /*
+    The previous button is pressed.
+    */
+    func onButtonPrevious() {
+        if let b = bookmark {
+            b.onButtonPrevious()
+        }
+    }
+    
+    /*
+    The next button is pressed.
+    */
+    func onButtonNext() {
+        if let b = bookmark {
+            b.onButtonNext()
+        }
     }
     
     func NSWindowDidResizeNotification() {

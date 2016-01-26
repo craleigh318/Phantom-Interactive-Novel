@@ -15,8 +15,10 @@ Manages UIAlertViews.
 public class AlertManager {
     
     public static func showMessage(title: String, message: String) {
-        let alert = NSAlert(title: title, message: message, delegate: nil, cancelButtonTitle: Constants.okTitle)
-        alert.show()
+        let alert = NSAlert()
+        alert.messageText = title
+        alert.informativeText = message
+        alert.runModal()
     }
     
     public static func showError(error: NSError) {
