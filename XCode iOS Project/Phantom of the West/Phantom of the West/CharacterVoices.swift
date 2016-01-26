@@ -27,6 +27,10 @@ class CharacterVoices {
         return newUtterance
     }
     
+    static func stopUtterance() {
+        synthesizer.stopSpeakingAtBoundary(.Immediate)
+    }
+    
     private static func preferLanguage(language: String) -> AVSpeechSynthesisVoice? {
         var voice = AVSpeechSynthesisVoice(language: language)
         if voice == nil {

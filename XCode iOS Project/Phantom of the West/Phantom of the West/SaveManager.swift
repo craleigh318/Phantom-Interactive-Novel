@@ -32,7 +32,7 @@ public class SaveManager {
         set {
             defaults.setBool(newValue, forKey: voiceoverKey)
             if !newValue {
-                CharacterVoices.synthesizer.stopSpeakingAtBoundary(.Immediate)
+                CharacterVoices.stopUtterance()
             }
         }
     }

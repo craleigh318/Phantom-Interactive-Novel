@@ -13,7 +13,7 @@ A concrete implementation of PStoryPage
 */
 class StoryPage: PStoryPage {
     
-    private static let storyImagesBundle = NSBundle(path: "StoryImages")
+    private static let storyImagesBundle = NSBundle(path: "StoryImages")!
     
     private static let storyTextTable = "StoryText"
     
@@ -21,9 +21,8 @@ class StoryPage: PStoryPage {
     Creates a language-localized string from "StoryImages.xcassets".
     */
     static func getLocalizedImage(name: String) -> NSImage {
-        let filePath = storyImagesBundle!.pathForImageResource(name)!
-        let localizedImage = NSImage(named: filePath)
-        return localizedImage!
+        let localizedImage = storyImagesBundle.imageForResource(name)!
+        return localizedImage
     }
     
     /*

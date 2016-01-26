@@ -11,7 +11,7 @@ import AppKit
 /*
 Contains buttons that move through the story.
 */
-class StoryNavigator: PNavigatorHandler, PConstraintsChanger {
+class StoryNavigator: NSObject, PNavigatorHandler, PConstraintsChanger {
     
     /*
     Make the buttons this tall to ensure easy button tapping.
@@ -126,7 +126,8 @@ class StoryNavigator: PNavigatorHandler, PConstraintsChanger {
     /*
     Initializes with the specified event handler.
     */
-    init() {
+    override init() {
+        super.init()
         // Initialize contraints.
         view.translatesAutoresizingMaskIntoConstraints = false
         
