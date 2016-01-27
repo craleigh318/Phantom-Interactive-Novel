@@ -26,9 +26,6 @@ class StoryImage {
             return view.image
         }
         set {
-            if let context = NSGraphicsContext.currentContext() {
-                context.imageInterpolation = .None
-            }
             view.image = newValue
         }
     }
@@ -36,13 +33,12 @@ class StoryImage {
     /*
     Add this to the desired superview.
     */
-    private(set) var view: NSImageView
+    private(set) var view: NSImageView = CustomNSImageView()
     
     /*
     Initializes.
     */
     init() {
-        view = NSImageView()
         view.imageScaling = .ScaleAxesIndependently
         view.translatesAutoresizingMaskIntoConstraints = false
     }

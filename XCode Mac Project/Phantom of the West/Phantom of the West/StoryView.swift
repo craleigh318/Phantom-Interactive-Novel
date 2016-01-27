@@ -103,7 +103,7 @@ class StoryView: NSWindow, PNavigatorHandler, PStoryObserver {
     
     private lazy var textViewLandscapeConstraints: [NSLayoutConstraint] = [
         NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self.contentView, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0),
-        NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: self.imageView.view, attribute: NSLayoutAttribute.Height, multiplier: StoryText.landscapeMinHeightRatio, constant: 0.0)
+        NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: self.imageView.view, attribute: NSLayoutAttribute.Height, multiplier: 1.0, constant: 0.0)
     ]
     
     private lazy var navigatorUniversalConstraints: [NSLayoutConstraint] = [

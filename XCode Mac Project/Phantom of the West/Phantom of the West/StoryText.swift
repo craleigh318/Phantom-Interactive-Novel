@@ -32,13 +32,16 @@ class StoryText {
             if let intTxt = internalText {
                 intTxt.setString(newValue)
             }
-            view.scrollToBeginningOfDocument(nil)
+            if let tv = textView {
+                tv.font = NSFont.systemFontOfSize(18)
+            }
+            view.scrollPoint(NSPoint.zero)
         }
     }
     
     private var internalText: NSMutableString? {
         var intTxt: NSMutableString?
-        if let txtStorage = view.textStorage {
+        if let txtStorage = textView?.textStorage {
             intTxt = txtStorage.mutableString
         }
         return intTxt
@@ -47,15 +50,29 @@ class StoryText {
     /*
     Add this to the desired superview.
     */
-    private(set) var view: NSTextView
+    private(set) var view: NSScrollView = NSScrollView()
+    
+    /*
+    Add this to the scroll view.
+    */
+    private var textView: NSTextView? {
+        get {
+            return view.documentView as? NSTextView
+        }
+        set {
+            view.documentView = newValue
+        }
+    }
     
     /*
     Initializes.
     */
     init() {
-        view = NSTextView()
+        view.hasVerticalScroller = true
+        let tv = NSTextView()
+        textView = tv
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.font = NSFont.systemFontOfSize(0)
-        view.editable = false
+        tv.editable = false
+        tv.autoresizingMask = .ViewWidthSizable
     }
 }
