@@ -11,7 +11,7 @@ import AppKit
 /*
 The main part of the view.
 */
-class StoryView: NSWindow {
+class StoryView: NSWindow, PNavigatorHandler, PStoryObserver {
     
     /*
     Set an event handler so that the navigation buttons react.
@@ -74,25 +74,6 @@ class StoryView: NSWindow {
         }
     }
     
-    /*
-    The NSView.
-    */
-    var view: NSView? {
-        didSet {
-            if let v = view {
-                // Set up the view.
-                let subviews = [imageView.view, textView.view, navigator.view]
-                for subview in subviews {
-                    v.addSubview(subview)
-                }
-                
-                // Add constraints.
-                addMyConstraints(universalConstraints)
-                addOrientationConstraints(v.frame.size)
-            }
-        }
-    }
-    
     private var navigator: StoryNavigator = StoryNavigator()
     
     private var imageView: StoryImage = StoryImage()
@@ -102,50 +83,55 @@ class StoryView: NSWindow {
     private var bookmark: Bookmark?
     
     private lazy var imageViewUniversalConstraints: [NSLayoutConstraint] = [
-        NSLayoutConstraint(item: self.imageView.view, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
-        NSLayoutConstraint(item: self.imageView.view, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.imageView.view, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self.contentView, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
         NSLayoutConstraint(item: self.imageView.view, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: self.imageView.view, attribute: NSLayoutAttribute.Height, multiplier: StoryImage.imageAspectRatio, constant: 0.0)
     ]
     
     private lazy var imageViewPortraitConstraints: [NSLayoutConstraint] = [
-        NSLayoutConstraint(item: self.imageView.view, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0)
+        NSLayoutConstraint(item: self.imageView.view, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: self.contentView, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0)
     ]
     
     private lazy var textViewUniversalConstraints: [NSLayoutConstraint] = [
-        NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.contentView, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
         NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self.imageView.view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0),
-        NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: self.imageView.view, attribute: NSLayoutAttribute.Width, multiplier: 1.0, constant: 0.0)
+        NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self.imageView.view, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0.0)
+    ]
+    
+    private lazy var textViewPortraitConstraints: [NSLayoutConstraint] = [
+        NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: self.contentView, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0)
     ]
     
     private lazy var textViewLandscapeConstraints: [NSLayoutConstraint] = [
-        NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0),
-        NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.GreaterThanOrEqual, toItem: self.imageView.view, attribute: NSLayoutAttribute.Height, multiplier: StoryText.landscapeMinHeightRatio, constant: 0.0)
+        NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self.contentView, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.textView.view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: self.imageView.view, attribute: NSLayoutAttribute.Height, multiplier: StoryText.landscapeMinHeightRatio, constant: 0.0)
     ]
     
     private lazy var navigatorUniversalConstraints: [NSLayoutConstraint] = [
-        NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
-        NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0)
+        NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: self.contentView, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self.contentView, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0)
     ]
     
     private lazy var navigatorPortraitConstraints: [NSLayoutConstraint] = [
-        NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.contentView, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0),
         NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self.textView.view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0),
         NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1.0, constant: StoryNavigator.standardButtonLength)
     ]
     
     private lazy var navigatorLandscapeConstraints: [NSLayoutConstraint] = [
-        NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.imageView.view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
-        NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
-        NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.GreaterThanOrEqual, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1.0, constant: StoryNavigator.landscapeWidth)
+        NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.textView.view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self.contentView, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint(item: self.navigator.view, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1.0, constant: StoryNavigator.landscapeWidth)
     ]
     
     private lazy var universalConstraints: [[NSLayoutConstraint]] = [self.imageViewUniversalConstraints, self.textViewUniversalConstraints, self.navigatorUniversalConstraints]
     
-    private lazy var portraitConstraints: [[NSLayoutConstraint]] = [self.imageViewPortraitConstraints, self.navigatorPortraitConstraints]
+    private lazy var portraitConstraints: [[NSLayoutConstraint]] = [self.imageViewPortraitConstraints, self.textViewPortraitConstraints, self.navigatorPortraitConstraints]
     
     private lazy var landscapeConstraints: [[NSLayoutConstraint]] = [self.textViewLandscapeConstraints, self.navigatorLandscapeConstraints]
     
     override func awakeFromNib() {
+        navigator.handler = self
+        setUpView()
         bookmark = Bookmark(storyView: self)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "NSWindowDidResizeNotification", name:"NSWindowDidResizeNotification", object: nil)
     }
@@ -174,6 +160,12 @@ class StoryView: NSWindow {
     func onButtonNext() {
         if let b = bookmark {
             b.onButtonNext()
+        }
+    }
+    
+    func update(pages: [PStoryPage]) {
+        if let bm = bookmark {
+            bm.update(pages)
         }
     }
     
@@ -208,8 +200,21 @@ class StoryView: NSWindow {
         removeMyConstraints(landscapeConstraints)
     }
     
+    private func setUpView() {
+        if let cv = contentView {
+            // Set up the view.
+            let subviews = [imageView.view, textView.view, navigator.view]
+            for subview in subviews {
+                cv.addSubview(subview)
+            }
+            // Add constraints.
+            addMyConstraints(universalConstraints)
+            addOrientationConstraints(cv.frame.size)
+        }
+    }
+    
     private func addMyConstraints(constraintsArray: [[NSLayoutConstraint]]) {
-        if let v = view {
+        if let v = contentView {
             for constraints in constraintsArray {
                 v.addConstraints(constraints)
             }
@@ -217,7 +222,7 @@ class StoryView: NSWindow {
     }
     
     private func removeMyConstraints (constraintsArray: [[NSLayoutConstraint]]) {
-        if let v = view {
+        if let v = contentView {
             for constraints in constraintsArray {
                 v.removeConstraints(constraints)
             }

@@ -26,6 +26,9 @@ class StoryImage {
             return view.image
         }
         set {
+            if let context = NSGraphicsContext.currentContext() {
+                context.imageInterpolation = .None
+            }
             view.image = newValue
         }
     }
@@ -40,9 +43,7 @@ class StoryImage {
     */
     init() {
         view = NSImageView()
+        view.imageScaling = .ScaleAxesIndependently
         view.translatesAutoresizingMaskIntoConstraints = false
-        if let layer = view.layer {
-            layer.magnificationFilter = kCAFilterNearest
-        }
     }
 }

@@ -13,7 +13,7 @@ A concrete implementation of PStoryPage
 */
 class StoryPage: PStoryPage {
     
-    private static let storyImagesBundle = NSBundle(path: "StoryImages")!
+    private static let storyImagesBundle = NSBundle.mainBundle()
     
     private static let storyTextTable = "StoryText"
     
