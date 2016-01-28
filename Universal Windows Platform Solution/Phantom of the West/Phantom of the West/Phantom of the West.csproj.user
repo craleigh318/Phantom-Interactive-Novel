@@ -25,7 +25,10 @@
     <UseEmulator>true</UseEmulator>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <DeviceId>98CD6FA8-9114-4179-ACA3-38E5D23C77EE</DeviceId>
+    <DeviceId>90F4E8F4-EC5F-4B64-B2E8-6EDE6F813BD3</DeviceId>
     <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <AuthenticationMode>Windows</AuthenticationMode>
   </PropertyGroup>
 </Project>

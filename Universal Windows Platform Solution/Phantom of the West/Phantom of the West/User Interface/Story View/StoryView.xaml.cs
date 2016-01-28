@@ -1,9 +1,11 @@
 ﻿using Phantom_of_the_West.User_Interface.Menus;
 using System;
 using Windows.Foundation;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -63,6 +65,12 @@ namespace Phantom_of_the_West.User_Interface.Story_View
 		public bool FrameNavigate(Type sourcePageType)
 		{
 			return Frame.Navigate(sourcePageType);
+		}
+
+		protected override void OnNavigatedTo(NavigationEventArgs e)
+		{
+			SystemNavigationManager nm = SystemNavigationManager.GetForCurrentView();
+			nm.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
 		}
 
 		private void EnableButtons(string[] buttonNames, bool enabled)
