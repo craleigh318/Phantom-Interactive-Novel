@@ -38,4 +38,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             ManualSave.authenticatePlayer()
         }
     }
+    
+    @IBAction func saveDocument(sender: NSMenuItem) {
+        ManualSave.save()
+    }
+    
+    @IBAction func openDocument(sender: NSMenuItem) {
+        ManualSave.load()
+    }
 }

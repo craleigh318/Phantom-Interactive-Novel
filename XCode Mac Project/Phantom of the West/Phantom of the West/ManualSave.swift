@@ -12,9 +12,9 @@ import GameKit
 /*
 Save data stored on Game Center.
 */
-public class ManualSave: PSavedGame {
+public class ManualSave {
     
-    public static weak var observer: PSaveManagerObserver?
+    private static let manager: NSFileManager = NSFileManager.defaultManager()
     
     public static func authenticatePlayer() {
         let localPlayer = GKLocalPlayer.localPlayer()
@@ -29,68 +29,31 @@ public class ManualSave: PSavedGame {
         }
     }
     
-    public static func getSavedGames(retriever: PSavedGamesRetriever) {
-        let localPlayer = GKLocalPlayer.localPlayer()
-        localPlayer.fetchSavedGamesWithCompletionHandler({
-            (savedGames, error) in
-            if let sg = savedGames {
-                var manualSaves = [ManualSave]()
-                for g in sg {
-                    manualSaves.append(ManualSave(gkSave: g))
-                }
-                retriever.savedGamesRetrieved(manualSaves)
-            } else if let e = error {
-                AlertManager.showError(e)
-            }
-        })
-    }
-    
-    public static func save(data: NSData, name: String) {
-        let localPlayer = GKLocalPlayer.localPlayer()
-        localPlayer.saveGameData(data, withName: name, completionHandler: {
-            data, error in
-            if let e = error {
-                AlertManager.showError(e)
-            } else {
-                let saved = StringLocalizer.getGUIString("saved")
-                let saveSuccessful = StringLocalizer.getGUIString("saveSuccessful")
-                AlertManager.showMessage(saved, message: saveSuccessful)
-                if let o = observer {
-                    o.saveManagerUpdated()
+    public static func save() {
+        let data = AppDelegate.potwStory.saveGame()
+        let savePanel = NSSavePanel()
+        savePanel.allowedFileTypes = ["game"]
+        savePanel.beginWithCompletionHandler({
+            (result: Int) in
+            if result == NSFileHandlingPanelOKButton {
+                if let urlPath = savePanel.URL?.path {
+                    manager.createFileAtPath(urlPath, contents: data, attributes: nil)
                 }
             }
         })
     }
     
-    public var name: String! {
-        return gkSave.name
-    }
-    
-    public var date: NSDate! {
-        return gkSave.modificationDate
-    }
-    
-    private var gkSave: GKSavedGame
-    
-    private init(gkSave: GKSavedGame) {
-        self.gkSave = gkSave
-    }
-    
-    public func load(loader: PSavedGamesLoader) {
-        gkSave.loadDataWithCompletionHandler({
-            data, error in
-            loader.savedGamesLoaded(data, error: error)
-        })
-    }
-    
-    public func delete() {
-        let localPlayer = GKLocalPlayer.localPlayer()
-        localPlayer.deleteSavedGamesWithName(name, completionHandler: {
-            error in
-            if let e = error {
-                AlertManager.showError(e)
-            } else if let o = ManualSave.observer {
-                o.saveManagerUpdated()
+    public static func load() {
+        let openPanel = NSOpenPanel()
+        openPanel.allowedFileTypes = ["game"]
+        openPanel.beginWithCompletionHandler({
+            (result: Int) in
+            if result == NSFileHandlingPanelOKButton {
+                if let urlPath = openPanel.URL?.path {
+                    if let data = manager.contentsAtPath(urlPath) {
+                        AppDelegate.potwStory.loadGame(data)
+                    }
+                }
             }
         })
     }

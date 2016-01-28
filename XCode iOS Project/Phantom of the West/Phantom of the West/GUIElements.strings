@@ -43,3 +43,7 @@ saveNameMessage = "Please name your save.";
 cancel = "Cancel";
 
 playTutorial = "Play Tutorial";
+
+loadFailed = "Load Failed";
+
+loadFailedMessage = "The save could not be loaded.";

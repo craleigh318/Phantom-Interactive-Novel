@@ -63,9 +63,11 @@ public class PhantomOfTheWest: PStory, PStoryObserver, PSavedGamesLoader {
     Loads a point in the story.
     */
     public func loadGame(data: NSData) {
-        gameState = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? POTWGameState
-        if let gs = gameState {
+        if let gs = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? POTWGameState {
+            gameState = gs
             goToStoryState(gs.id, lineNumber: gs.lineNumber)
+        } else {
+            AlertManager.showMessage(StringLocalizer.getGUIString("loadFailed"), message: StringLocalizer.getGUIString("loadFailedMessage"))
         }
     }
     
