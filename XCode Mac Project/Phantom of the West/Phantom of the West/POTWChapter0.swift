@@ -122,7 +122,7 @@ class ch0Options: StoryPage {
     }
     
     override var text: String {
-        let formattedText = String(format: super.text, arguments: [Constants.buttonOptionsTitle, Constants.okTitle])
+        let formattedText = String(format: super.text, arguments: [Constants.okTitle])
         return formattedText
     }
 }

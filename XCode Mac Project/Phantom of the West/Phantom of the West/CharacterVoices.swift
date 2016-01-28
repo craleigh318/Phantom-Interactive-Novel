@@ -11,9 +11,9 @@ import AppKit
 class CharacterVoices {
     static let synthesizer = NSSpeechSynthesizer()
     
-    private static let voiceKaden = CharacterVoices.preferVoice("Daniel")
+    private static let voiceKaden = CharacterVoices.preferVoice("com.apple.speech.synthesis.voice.Daniel")
     
-    private static let voiceArvin = CharacterVoices.preferVoice("Thomas")
+    private static let voiceArvin = CharacterVoices.preferVoice("com.apple.speech.synthesis.voice.Thomas")
     
     static func kadenUtter(string: String) -> Bool {
         let newUtterance = utter(string, synthesizer: voiceKaden)
@@ -44,10 +44,15 @@ class CharacterVoices {
     }
     
     private static func preferVoice(voiceName: String) -> NSSpeechSynthesizer? {
-        var voice = NSSpeechSynthesizer(voice: voiceName)
-        if voice == nil {
-            voice = NSSpeechSynthesizer()
+        let lowercaseName = voiceName.lowercaseString
+        let voices = NSSpeechSynthesizer.availableVoices()
+        for v in voices {
+            if v.lowercaseString.rangeOfString(lowercaseName) != nil {
+                let bestVoice = NSSpeechSynthesizer(voice: v)
+                return bestVoice
+            }
         }
-        return voice
+        let bestVoice = NSSpeechSynthesizer()
+        return bestVoice
     }
 }

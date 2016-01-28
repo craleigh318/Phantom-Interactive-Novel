@@ -13,6 +13,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Phantom_of_the_West" customModuleProvider="target">
             <connections>
+                <outlet property="voiceOverItem" destination="2rf-bT-EyS" id="A6J-66-rQ4"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -99,6 +100,9 @@
                         <items>
                             <menuItem title="Voice-Over" id="2rf-bT-EyS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="voiceOver:" target="Voe-Tx-rLC" id="5Yk-lf-O4o"/>
+                                </connections>
                             </menuItem>
                         </items>
                     </menu>

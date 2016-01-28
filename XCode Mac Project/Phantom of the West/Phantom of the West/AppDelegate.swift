@@ -16,6 +16,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBOutlet weak var window: NSWindow!
     
+    @IBOutlet weak var voiceOverItem: NSMenuItem!
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
         startUp()
@@ -37,6 +39,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if !localPlayer.authenticated {
             ManualSave.authenticatePlayer()
         }
+        let voiceOverEnabled = SaveManager.voiceover
+        if voiceOverEnabled {
+            voiceOverItem.state = NSOnState
+        }
     }
     
     func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
@@ -57,5 +63,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBAction func openDocument(sender: NSMenuItem) {
         ManualSave.load()
+    }
+    
+    @IBAction func voiceOver(sender: NSMenuItem) {
+        let voiceOverEnabled = sender.state == NSOnState
+        if voiceOverEnabled {
+            sender.state = NSOffState
+        } else {
+            sender.state = NSOnState
+        }
+        SaveManager.voiceover = !voiceOverEnabled
     }
 }

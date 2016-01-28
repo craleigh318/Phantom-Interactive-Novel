@@ -115,7 +115,6 @@ class StoryNavigator: NSObject, PNavigatorHandler, PConstraintsChanger {
     
     private lazy var buttonNextLandscapeConstraints: [NSLayoutConstraint] = [
         NSLayoutConstraint(item: self.buttonNext, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonPrevious, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
-        NSLayoutConstraint(item: self.buttonNext, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0),
         NSLayoutConstraint(item: self.buttonNext, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self.buttonContinue, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0)
     ]
     
