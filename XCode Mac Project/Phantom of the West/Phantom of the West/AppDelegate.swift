@@ -39,8 +39,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
-    @IBAction func saveDocument(sender: NSMenuItem) {
-        ManualSave.save()
+    func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
+        return true
+    }
+    
+    @IBAction func newDocument(sender: NSMenuItem) {
+        AppDelegate.potwStory.newGame()
+    }
+    
+    @IBAction func playTutorial(sender: NSMenuItem) {
+        AppDelegate.potwStory.playTutorial()
+    }
+    
+    @IBAction func saveDocumentAs(sender: NSMenuItem) {
+        ManualSave.saveAs()
     }
     
     @IBAction func openDocument(sender: NSMenuItem) {

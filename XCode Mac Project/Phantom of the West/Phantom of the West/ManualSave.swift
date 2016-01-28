@@ -29,18 +29,22 @@ public class ManualSave {
         }
     }
     
-    public static func save() {
-        let data = AppDelegate.potwStory.saveGame()
+    public static func saveAs() {
         let savePanel = NSSavePanel()
         savePanel.allowedFileTypes = ["game"]
         savePanel.beginWithCompletionHandler({
             (result: Int) in
             if result == NSFileHandlingPanelOKButton {
                 if let urlPath = savePanel.URL?.path {
-                    manager.createFileAtPath(urlPath, contents: data, attributes: nil)
+                    saveAtPath(urlPath)
                 }
             }
         })
+    }
+    
+    private static func saveAtPath(path: String) {
+        let data = AppDelegate.potwStory.saveGame()
+        manager.createFileAtPath(path, contents: data, attributes: nil)
     }
     
     public static func load() {
