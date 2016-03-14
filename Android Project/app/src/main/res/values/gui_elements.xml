@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Loco xml export: Android string resources
+     Project: GUIElements.strings conversion
+     Release: Working copy
+     Locale: en, English
+     Exported by: Unregistered user
+     Exported at: Tue, 08 Mar 2016 00:25:49 +0000
+    -->
+<resources>
+    <!-- GUIElements.strings
+        Phantom of the West
+
+        Created by Christopher Raleigh on 2015/08/12.
+        Copyright (c) 2015 Christopher Raleigh. All rights reserved. -->
+    <string name="buttonPreviousText">⬅︎</string>
+    <string name="buttonOKText">OK</string>
+    <string name="buttonNextText">➡︎</string>
+    <string name="buttonMenuText">≣</string>
+    <string name="choiceOf">Choice %1$d of %2$d</string>
+    <string name="options">Options</string>
+    <string name="save">Save</string>
+    <string name="load">Load</string>
+    <string name="newGame">New Game</string>
+    <string name="voiceOver">Voice-Over</string>
+    <string name="removeAds">Remove Ads</string>
+    <string name="inAppPurchases">In-App Purchases</string>
+    <string name="restorePurchases">Restore Purchases</string>
+    <string name="cannotPay">Cannot Pay</string>
+    <string name="cannotPayMessage">The transaction could not begin.</string>
+    <string name="error">Error</string>
+    <string name="autoSave">Auto-Save</string>
+    <string name="saved">Saved</string>
+    <string name="saveSuccessful">The game was saved successfully.</string>
+    <string name="saveName">New Save</string>
+    <string name="saveNameMessage">Please name your save.</string>
+    <string name="cancel">Cancel</string>
+    <string name="playTutorial">Play Tutorial</string>
+    <string name="loadFailed">Load Failed</string>
+    <string name="loadFailedMessage">The save could not be loaded.</string>
+</resources>
