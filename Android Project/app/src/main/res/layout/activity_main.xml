@@ -12,69 +12,65 @@
     tools:context="com.christopherraleigh.phantomofthewest.MainActivity">
 
     <GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:columnCount="1"
         android:rowCount="2">
 
         <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_row="0"
             android:columnCount="1"
-            android:rowCount="2">
+            android:rowCount="2"
+            android:layout_gravity="fill">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/imageView"
                 android:layout_row="0"
                 android:contentDescription="@string/imageViewDescription"
-                android:src="@drawable/ananya_hands" />
+                android:src="@drawable/ananya_hands"
+                android:layout_gravity="fill_horizontal"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Large Text"
                 android:id="@+id/textView"
-                android:layout_row="1" />
+                android:layout_row="1"
+                android:layout_gravity="fill" />
         </GridLayout>
 
         <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_row="1"
             android:columnCount="4"
-            android:rowCount="1">
+            android:rowCount="1"
+            android:layout_gravity="fill_horizontal">
 
             <Button
                 android:id="@+id/buttonPrevious"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_column="0"
-                android:text="@string/buttonPreviousText" />
+                android:text="@string/buttonPreviousText"
+                android:layout_gravity="fill" />
 
             <Button
                 android:id="@+id/buttonOK"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
-                android:text="@string/buttonOKText" />
+                android:text="@string/buttonOKText"
+                android:layout_gravity="fill" />
 
             <Button
                 android:id="@+id/buttonNext"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_column="2"
-                android:text="@string/buttonNextText" />
+                android:text="@string/buttonNextText"
+                android:layout_gravity="fill" />
 
             <Button
                 android:id="@+id/buttonMenu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_column="3"
-                android:text="@string/buttonMenuText" />
+                android:text="@string/buttonMenuText"
+                android:layout_gravity="fill" />
         </GridLayout>
     </GridLayout>
 
