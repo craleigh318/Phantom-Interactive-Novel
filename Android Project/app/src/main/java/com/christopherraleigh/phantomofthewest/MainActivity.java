@@ -4,6 +4,8 @@ import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,22 +17,34 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        //setImageViewHeight();
+    void setImage(BitmapDrawable image) {
+        View v = findViewById(R.id.imageView);
+        if (v instanceof ImageView) {
+            ImageView iv = (ImageView) v;
+            image.setAntiAlias(false);
+            iv.setImageDrawable(image);
+        }
     }
 
-    private void aliasImageView() {
-        View iv = findViewById(R.id.imageView);
-        //BitmapDrawable draw = new BitmapDrawable(iv.getsr);
-        draw.setAntiAlias(false);
-        imageView.setImageDrawable(draw);
+    void setText(CharSequence text) {
+        View v = findViewById(R.id.textView);
+        if (v instanceof TextView) {
+            TextView tv = (TextView) v;
+            tv.setText(text);
+        }
+    }
 
-        iv.requestLayout();
-        float ivWidth = (float) iv.getWidth();
-        float newHeight = ivWidth / IMAGE_VIEW_ASPECT_RATIO;
-        int newHeightInt = Math.round(newHeight);
-        iv.getLayoutParams().height = newHeightInt;
+    void enableChoiceButtons(boolean enabled) {
+        enableButton(R.id.buttonPrevious, enabled);
+        enableButton(R.id.buttonNext, enabled);
+    }
+
+    void enableOKButton(boolean enabled) {
+        enableButton(R.id.buttonOK, enabled);
+    }
+
+    private void enableButton(int buttonID, boolean enabled) {
+        View v = findViewById(buttonID);
+        v.setEnabled(enabled);
     }
 }
