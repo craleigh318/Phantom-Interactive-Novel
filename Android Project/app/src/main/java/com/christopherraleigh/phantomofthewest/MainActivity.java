@@ -12,6 +12,22 @@ public class MainActivity extends AppCompatActivity {
 
     private static final float IMAGE_VIEW_ASPECT_RATIO = 16 / 9;
 
+    public void onButtonPreviousClick(View view) {
+
+    }
+
+    public void onButtonOKClick(View view) {
+
+    }
+
+    public void onButtonNextClick(View view) {
+
+    }
+
+    public void onButtonMenuClick(View view) {
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         View v = findViewById(R.id.imageView);
         if (v instanceof ImageView) {
             ImageView iv = (ImageView) v;
-            image.setAntiAlias(false);
+            image.setFilterBitmap(false);
             iv.setImageDrawable(image);
         }
     }
