@@ -1,5 +1,8 @@
 package com.christopherraleigh.phantomofthewest.visual_novel;
 
+import com.christopherraleigh.phantomofthewest.data_management.DataManager;
+import com.christopherraleigh.phantomofthewest.visual_novel.chapters.*;
+
 import com.christopherraleigh.phantomofthewest.visual_novel.serialization.*;
 
 import com.christopherraleigh.phantomofthewest.visual_novel.serialization.event_flagging.*;
@@ -43,9 +46,8 @@ public class PotWVN extends Observable {
     }
 
     public GameState saveGame() {
-        /*GameState gs = new GameState(EventFlags, id);
-        return gs;*/
-        throw new UnsupportedOperationException();
+        GameState gs = new GameState(EventFlags, id);
+        return gs;
     }
 
     public void startUp() {
@@ -62,8 +64,8 @@ public class PotWVN extends Observable {
     }
 
     void goToState(int id) {
-        /*this.id = id;
-        CurrentChoices = ChapterSelector.GoToState(id);*/
+        this.id = id;
+        setCurrentChoices(ChapterSelector.goToState(id));
     }
 
     void setCurrentChoices(IStoryChoiceList choices) {
@@ -77,15 +79,14 @@ public class PotWVN extends Observable {
     }
 
     private GameState loadAutoSave() {
-        /*GameState gs = await DataManager.LoadAutoSave();
-        return gs;*/
-        throw new UnsupportedOperationException();
+        GameState gs = DataManager.loadAutoSave();
+        return gs;
     }
 
     private void playAudio() {
-        /*if (currentChoices != null) {
-            currentChoices.PlayAudio();
-        }*/
+        if (currentChoices != null) {
+            currentChoices.playAudio();
+        }
     }
 
     private void prepareToNotifyObservers() {
