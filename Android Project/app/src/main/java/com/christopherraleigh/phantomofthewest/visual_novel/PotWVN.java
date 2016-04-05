@@ -61,23 +61,18 @@ public class PotWVN extends Observable {
         }
     }
 
-    EventFlagsCollection getEventFlags() {
-        return eventFlags;
-    }
-
-    void goToState(int id) {
-        this.id = id;
-        setCurrentChoices(ChapterSelector.goToState(id));
-    }
-
-    void setCurrentChoices(IStoryChoiceList choices) {
-        currentChoices = choices;
-        prepareToNotifyObservers();
-    }
-
     private void autoSave() {
         GameState gs = saveGame();
         DataManager.autoSave(gs);
+    }
+
+    private EventFlagsCollection getEventFlags() {
+        return eventFlags;
+    }
+
+    private void goToState(int id) {
+        this.id = id;
+        setCurrentChoices(ChapterSelector.goToState(id));
     }
 
     private GameState loadAutoSave() {
@@ -101,6 +96,11 @@ public class PotWVN extends Observable {
         autoSave();
         notifyObservers(this);
         playAudio();
+    }
+
+    private void setCurrentChoices(IStoryChoiceList choices) {
+        currentChoices = choices;
+        prepareToNotifyObservers();
     }
 
     private void stopAudio() {
