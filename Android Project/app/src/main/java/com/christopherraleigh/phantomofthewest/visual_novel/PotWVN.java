@@ -20,6 +20,10 @@ public class PotWVN extends Observable {
         return mainVN;
     }
 
+    private static final int STORY_START = 1001;
+
+    private static final int TUTORIAL_START = 1;
+
     private IStoryChoiceList currentChoices = null;
 
     private EventFlagsCollection eventFlags = null;
@@ -31,32 +35,30 @@ public class PotWVN extends Observable {
     }
 
     public void loadGame(GameState gs) {
-        /*EventFlags = gs.EventFlags;
-        GoToState(gs.ID);*/
+        eventFlags = gs.getEventFlags();
+        goToState(gs.getID());
     }
 
     public void newGame() {
-        /*EventFlags = new EventFlagsCollection();
-        GoToState(1001);*/
+        newGameAt(STORY_START);
     }
 
     public void playTutorial() {
-        /*EventFlags = new EventFlagsCollection();
-        GoToState(1);*/
+        newGameAt(TUTORIAL_START);
     }
 
     public GameState saveGame() {
-        GameState gs = new GameState(EventFlags, id);
+        GameState gs = new GameState(eventFlags, id);
         return gs;
     }
 
     public void startUp() {
-        /*GameState autoSave = await LoadAutoSave();
+        GameState autoSave = loadAutoSave();
         if (autoSave != null) {
-            LoadGame(autoSave);
+            loadGame(autoSave);
         } else {
-            PlayTutorial();
-        }*/
+            playTutorial();
+        }
     }
 
     EventFlagsCollection getEventFlags() {
@@ -74,13 +76,18 @@ public class PotWVN extends Observable {
     }
 
     private void autoSave() {
-        /*GameState gs = SaveGame();
-        Task t = DataManager.AutoSave(gs);*/
+        GameState gs = saveGame();
+        DataManager.autoSave(gs);
     }
 
     private GameState loadAutoSave() {
         GameState gs = DataManager.loadAutoSave();
         return gs;
+    }
+
+    private void newGameAt(int startingPage) {
+        eventFlags = new EventFlagsCollection();
+        goToState(startingPage);
     }
 
     private void playAudio() {
@@ -90,10 +97,10 @@ public class PotWVN extends Observable {
     }
 
     private void prepareToNotifyObservers() {
-        /*StopAudio();
-        AutoSave();
-        observable.NotifyObservers(this);
-        PlayAudio();*/
+        stopAudio();
+        autoSave();
+        notifyObservers(this);
+        playAudio();
     }
 
     private void stopAudio() {

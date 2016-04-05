@@ -6,9 +6,20 @@ import com.christopherraleigh.phantomofthewest.visual_novel.serialization.event_
  * Created by christopherraleigh on 2016-04-01.
  */
 public class GameState {
-    public GameState(EventFlagsCollection eventFlags, int id)
-    {
-        /*EventFlags = eventFlags;
-        ID = id;*/
+    private EventFlagsCollection eventFlags;
+
+    private int id;
+
+    public GameState(EventFlagsCollection eventFlags, int id) {
+        this.eventFlags = eventFlags;
+        this.id = id;
+    }
+
+    public EventFlagsCollection getEventFlags() {
+        return eventFlags;
+    }
+
+    public int getID() {
+        return id;
     }
 }
