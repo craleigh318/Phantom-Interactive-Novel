@@ -34,6 +34,11 @@ public class PotWVN extends Observable {
         return currentChoices;
     }
 
+    public void goToState(int id) {
+        this.id = id;
+        setCurrentChoices(ChapterSelector.goToState(id));
+    }
+
     public void loadGame(GameState gs) {
         eventFlags = gs.getEventFlags();
         goToState(gs.getID());
@@ -44,6 +49,7 @@ public class PotWVN extends Observable {
     }
 
     public void playTutorial() {
+
         newGameAt(TUTORIAL_START);
     }
 
@@ -68,11 +74,6 @@ public class PotWVN extends Observable {
 
     private EventFlagsCollection getEventFlags() {
         return eventFlags;
-    }
-
-    private void goToState(int id) {
-        this.id = id;
-        setCurrentChoices(ChapterSelector.goToState(id));
     }
 
     private GameState loadAutoSave() {
