@@ -1,7 +1,10 @@
 package com.christopherraleigh.phantomofthewest.visual_novel.chapters;
 
+import android.content.Context;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 
 import com.christopherraleigh.phantomofthewest.visual_novel.IStoryChoice;
 import com.christopherraleigh.phantomofthewest.visual_novel.IStoryChoiceList;
@@ -20,22 +23,24 @@ public class StoryChoiceList implements IStoryChoiceList {
 
     private List<IStoryChoice> choices;
 
-    private Drawable image;
+    private int imageID;
 
-    StoryChoiceList(Drawable image, List<IStoryChoice> choices)
+    StoryChoiceList(int image, List<IStoryChoice> choices)
     {
         this(image, choices, null);
     }
 
-    StoryChoiceList(Drawable image, List<IStoryChoice> choices, IVoiceover audioComponent)
+    StoryChoiceList(int imageID, List<IStoryChoice> choices, IVoiceover audioComponent)
     {
-        this.image = image;
+        this.imageID = imageID;
         this.choices = choices;
         this.audioComponent = audioComponent;
     }
 
     @Override
-    public Drawable getImage() {
+    public Drawable getImage(Context c) {
+        Drawable image = ContextCompat.getDrawable(c, imageID);
+        removeAliasing(image);
         return image;
     }
 
@@ -165,5 +170,12 @@ public class StoryChoiceList implements IStoryChoiceList {
     @Override
     public <T> T[] toArray(T[] array) {
         return choices.toArray(array);
+    }
+
+    private void removeAliasing(Drawable d) {
+        if (d instanceof BitmapDrawable) {
+            BitmapDrawable bd = (BitmapDrawable) d;
+            bd.setFilterBitmap(false);
+        }
     }
 }
