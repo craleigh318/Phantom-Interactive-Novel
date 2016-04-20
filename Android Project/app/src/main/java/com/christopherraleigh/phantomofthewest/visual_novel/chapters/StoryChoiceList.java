@@ -25,12 +25,12 @@ public class StoryChoiceList implements IStoryChoiceList {
 
     private int imageID;
 
-    StoryChoiceList(int image, List<IStoryChoice> choices)
+    public StoryChoiceList(int image, List<IStoryChoice> choices)
     {
         this(image, choices, null);
     }
 
-    StoryChoiceList(int imageID, List<IStoryChoice> choices, IVoiceover audioComponent)
+    public StoryChoiceList(int imageID, List<IStoryChoice> choices, IVoiceover audioComponent)
     {
         this.imageID = imageID;
         this.choices = choices;

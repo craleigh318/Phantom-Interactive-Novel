@@ -1,5 +1,7 @@
 package com.christopherraleigh.phantomofthewest.visual_novel.chapters;
 
+import android.content.Context;
+
 import com.christopherraleigh.phantomofthewest.visual_novel.IStoryChoice;
 import com.christopherraleigh.phantomofthewest.visual_novel.PotWVN;
 
@@ -9,16 +11,16 @@ import com.christopherraleigh.phantomofthewest.visual_novel.PotWVN;
 public class StoryChoice implements IStoryChoice {
     private int nextState;
 
-    private CharSequence text;
+    private int textID;
 
-    StoryChoice(CharSequence text, int nextState) {
-        this.text = text;
+    public StoryChoice(int textID, int nextState) {
+        this.textID = textID;
         this.nextState = nextState;
     }
 
     @Override
-    public CharSequence getText() {
-        return text;
+    public CharSequence getText(Context c) {
+        return c.getText(textID);
     }
 
     @Override
