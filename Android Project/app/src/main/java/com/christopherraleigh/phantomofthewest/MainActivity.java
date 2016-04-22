@@ -1,6 +1,7 @@
 package com.christopherraleigh.phantomofthewest;
 
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -8,20 +9,26 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.christopherraleigh.phantomofthewest.visual_novel.PotWVN;
+
+import java.lang.ref.WeakReference;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final float IMAGE_VIEW_ASPECT_RATIO = 16 / 9;
 
-    public void onButtonPreviousClick(View view) {
+    private Bookmark bookmark = null;
 
+    public void onButtonPreviousClick(View view) {
+        bookmark.previousChoice();
     }
 
     public void onButtonOKClick(View view) {
-
+        bookmark.selectChoice();
     }
 
     public void onButtonNextClick(View view) {
-
+        bookmark.nextChoice();
     }
 
     public void onButtonMenuClick(View view) {
@@ -33,15 +40,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        BitmapDrawable drawable = (BitmapDrawable) ContextCompat.getDrawable(this, R.drawable.ananya_hands);
-        setImage(drawable);
+        WeakReference<MainActivity> weakSelf = new WeakReference<>(this);
+        bookmark = new Bookmark(weakSelf);
+        PotWVN vn = PotWVN.getMainVN();
+        vn.addObserver(bookmark);
+        vn.playTutorial();
     }
 
-    void setImage(BitmapDrawable image) {
+    void setImage(Drawable image) {
         View v = findViewById(R.id.imageView);
         if (v instanceof ImageView) {
             ImageView iv = (ImageView) v;
-            image.setFilterBitmap(false);
             iv.setImageDrawable(image);
         }
     }

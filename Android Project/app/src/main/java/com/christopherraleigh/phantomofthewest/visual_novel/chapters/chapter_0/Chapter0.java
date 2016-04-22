@@ -41,7 +41,7 @@ public class Chapter0 extends Chapter {
         put(5, ch0Options);
     }};
 
-    public Chapter0(Map<Integer, StoryChoiceList> idToChoices) {
-        super(idToChoices);
+    public Chapter0() {
+        super(dictionary);
     }
 }
