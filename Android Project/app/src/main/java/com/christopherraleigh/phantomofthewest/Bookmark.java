@@ -33,26 +33,20 @@ class Bookmark implements Observer {
 
     void nextChoice() {
         int lastIndex = currentList.size() - 1;
-        if (index >= lastIndex)
-        {
+        if (index >= lastIndex) {
 
             index = 0;
-        }
-        else
-        {
+        } else {
             ++index;
         }
         choiceUpdated();
     }
 
     void previousChoice() {
-        if (index <= 0)
-        {
+        if (index <= 0) {
             int lastIndex = currentList.size() - 1;
             index = lastIndex;
-        }
-        else
-        {
+        } else {
             --index;
         }
         choiceUpdated();
@@ -68,7 +62,10 @@ class Bookmark implements Observer {
     }
 
     private IStoryChoice getCurrentChoice() {
-        return currentList.get(index);
+        if (currentList != null) {
+            return currentList.get(index);
+        }
+        return null;
     }
 
     private void listUpdated() {
@@ -81,12 +78,9 @@ class Bookmark implements Observer {
         MainActivity strongStoryView = storyView.get();
         if (strongStoryView != null) {
             int numChoices;
-            if (currentList != null)
-            {
+            if (currentList != null) {
                 numChoices = currentList.size();
-            }
-            else
-            {
+            } else {
                 numChoices = 0;
             }
             boolean willEnableContinue = (numChoices > 0);
@@ -99,7 +93,12 @@ class Bookmark implements Observer {
     private void updateImage() {
         MainActivity strongStoryView = storyView.get();
         if (strongStoryView != null) {
-            Drawable newImage = currentList.getImage(strongStoryView);
+            Drawable newImage;
+            if (currentList != null) {
+                newImage = currentList.getImage(strongStoryView);
+            } else {
+                newImage = null;
+            }
             strongStoryView.setImage(newImage);
         }
     }
@@ -108,7 +107,12 @@ class Bookmark implements Observer {
         MainActivity strongStoryView = storyView.get();
         if (strongStoryView != null) {
             IStoryChoice currentChoice = getCurrentChoice();
-            CharSequence newText = currentChoice.getText(strongStoryView);
+            CharSequence newText;
+            if (currentChoice != null) {
+                newText = currentChoice.getText(strongStoryView);
+            } else {
+                newText = "";
+            }
             strongStoryView.setText(newText);
         }
     }

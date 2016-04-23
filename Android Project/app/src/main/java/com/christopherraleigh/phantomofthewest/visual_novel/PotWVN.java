@@ -95,6 +95,7 @@ public class PotWVN extends Observable {
     private void prepareToNotifyObservers() {
         stopAudio();
         autoSave();
+        setChanged();
         notifyObservers(this);
         playAudio();
     }
