@@ -7,12 +7,10 @@ import java.util.Map;
 /**
  * Created by christopherraleigh on 2016-04-19.
  */
-public class Chapter implements IChapter {
-    Map<Integer, StoryChoiceList> idToChoices;
+public abstract class Chapter implements IChapter {
+    //Map<Integer, StoryChoiceList> idToChoices;
 
-    public Chapter(Map<Integer, StoryChoiceList> idToChoices) {
-        this.idToChoices = idToChoices;
-    }
+    public Chapter() { }
 
     /*public void addAudio(StoryChoiceList nextList) {
         if (nextList.Count == 1) {
@@ -30,9 +28,4 @@ public class Chapter implements IChapter {
     /*public VoiceInformation getVoiceover() {
         throw new UnsupportedOperationException();
     }*/
-
-    @Override
-    public IStoryChoiceList goToState(int id) {
-        return idToChoices.get(id);
-    }
 }

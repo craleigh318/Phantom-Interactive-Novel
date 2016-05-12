@@ -2,6 +2,7 @@ package com.christopherraleigh.phantomofthewest.visual_novel.chapters.chapter_0;
 
 import com.christopherraleigh.phantomofthewest.R;
 import com.christopherraleigh.phantomofthewest.visual_novel.IStoryChoice;
+import com.christopherraleigh.phantomofthewest.visual_novel.IStoryChoiceList;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.Chapter;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.StoryChoice;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.StoryChoiceList;
@@ -33,15 +34,24 @@ public class Chapter0 extends Chapter {
     private static StoryChoiceList ch0Options = new StoryChoiceList(R.drawable.black,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch0Options, 1001)}));
 
-    private static HashMap<Integer, StoryChoiceList> dictionary = new HashMap<Integer, StoryChoiceList>(){{
-        put(1, ch0Welcome);
-        put(2, ch0POTWSimple);
-        put(3, ch0MultipleChoices);
-        put(4, ch0FirstChoice);
-        put(5, ch0Options);
-    }};
+    @Override
+    public IStoryChoiceList goToState(int id) {
+        switch (id) {
+            case 1:
+                return ch0Welcome;
+            case 2:
+                return ch0POTWSimple;
+            case 3:
+                return ch0MultipleChoices;
+            case 4:
+                return ch0FirstChoice;
+            case 5:
+                return ch0Options;
+        }
+        return null;
+    }
 
     public Chapter0() {
-        super(dictionary);
+        super();
     }
 }

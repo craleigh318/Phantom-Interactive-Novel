@@ -51,30 +51,32 @@
                 android:layout_column="0"
                 android:text="@string/buttonPreviousText"
                 android:layout_gravity="fill"
-                android:onClick="onButtonPreviousClick" />
+                android:onClick="onButtonPreviousClick"
+                android:layout_columnWeight="1" />
 
             <Button
                 android:id="@+id/buttonOK"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:text="@string/buttonOKText"
                 android:layout_gravity="fill"
-                android:onClick="onButtonOKClick" />
+                android:onClick="onButtonOKClick"
+                android:layout_columnWeight="1" />
 
             <Button
                 android:id="@+id/buttonNext"
                 android:layout_column="2"
                 android:text="@string/buttonNextText"
                 android:layout_gravity="fill"
-                android:onClick="onButtonNextClick" />
+                android:onClick="onButtonNextClick"
+                android:layout_columnWeight="1" />
 
             <Button
                 android:id="@+id/buttonMenu"
                 android:layout_column="3"
                 android:text="@string/buttonMenuText"
                 android:layout_gravity="fill"
-                android:onClick="onButtonMenuClick" />
+                android:onClick="onButtonMenuClick"
+                android:layout_columnWeight="1" />
         </GridLayout>
     </GridLayout>
 
