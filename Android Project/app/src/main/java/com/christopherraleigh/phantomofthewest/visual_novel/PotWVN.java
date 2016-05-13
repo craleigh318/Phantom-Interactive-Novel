@@ -34,6 +34,10 @@ public class PotWVN extends Observable {
         return currentChoices;
     }
 
+    public EventFlagsCollection getEventFlags() {
+        return eventFlags;
+    }
+
     public void goToState(int id) {
         this.id = id;
         setCurrentChoices(ChapterSelector.goToState(id));
@@ -70,10 +74,6 @@ public class PotWVN extends Observable {
     private void autoSave() {
         GameState gs = saveGame();
         DataManager.autoSave(gs);
-    }
-
-    private EventFlagsCollection getEventFlags() {
-        return eventFlags;
     }
 
     private GameState loadAutoSave() {
