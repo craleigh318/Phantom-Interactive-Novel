@@ -87,8 +87,8 @@ public class Chapter3 extends Chapter {
     private static StoryChoiceList ch3CaitlynAsksMeToDisguiseAsInfant = new StoryChoiceList(R.drawable.towel_in_car,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynAsksMeToDisguiseAsInfant, 3024)}));
 
-    private static StoryChoiceList ch3IDiguiseAsInfant = new StoryChoiceList(R.drawable.towel_in_car", new IStoryChoice[] { new IDiguiseAsInfant(), new IRefuseToDiguiseAsInfant() });
-}
+    private static StoryChoiceList ch3IDiguiseAsInfant = new StoryChoiceList(R.drawable.
+            towel_in_car, Arrays.asList(new IStoryChoice[]{new IDiguiseAsInfant(), new IRefuseToDiguiseAsInfant()}));
 
     private static StoryChoiceList ch3CaitlynBringsMeToHotel = new StoryChoiceList(R.drawable.infant_in_car,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynBringsMeToHotel, 3026)}));
@@ -222,7 +222,8 @@ public class Chapter3 extends Chapter {
         } else {
             nextState = 3063;
         }
-        return new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn, Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3IAmAllRight, nextState)}));
+        return new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn, Arrays.asList(new
+                IStoryChoice[]{new StoryChoice(R.string.ch3IAmAllRight, nextState)}));
     }
 
     private static StoryChoiceList ch3CaitlynAsksIfIWasEmbarrassed = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
@@ -246,7 +247,8 @@ public class Chapter3 extends Chapter {
     private static StoryChoiceList ch3IThink = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3IThink, 3070)}));
 
-    private static StoryChoiceList ch3CaitlynWouldBeGoodMother = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn, new IStoryChoice[]{new CaitlynWouldBeGoodMother(), new CaitlynMightBeGoodMother()});
+    private static StoryChoiceList ch3CaitlynWouldBeGoodMother = new StoryChoiceList(R.drawable
+            .kaden_talks_to_caitlyn, Arrays.asList(new IStoryChoice[]{new CaitlynWouldBeGoodMother(), new CaitlynMightBeGoodMother()}));
 
     private static StoryChoiceList ch3CaitlynThanksMe = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynThanksMe, 3073)}));
@@ -278,7 +280,8 @@ public class Chapter3 extends Chapter {
     private static StoryChoiceList ch3HowDidIFeelDuringPossession = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3HowDidIFeelDuringPossession, 3081)}));
 
-    private static StoryChoiceList ch3IEnjoyedPossession = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn, new IStoryChoice[]{new IEnjoyedPossession(), new PossessionFeltWeird()});
+    private static StoryChoiceList ch3IEnjoyedPossession = new StoryChoiceList(R.drawable.
+            kaden_talks_to_caitlyn, Arrays.asList(new IStoryChoice[]{new IEnjoyedPossession(), new PossessionFeltWeird()}));
 
     private static StoryChoiceList ch3CaitlynLikesBeingClose = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynLikesBeingClose, 3084)}));
@@ -426,11 +429,11 @@ public class Chapter3 extends Chapter {
             case 3059:
                 return ch3BekShtiiLeaves;
             case 3060:
-                return ch3EndDecision;
+                return ch3EndDecision();
             case 3061:
                 return ch3CaitlynPlaysWithFoxtrot;
             case 3062:
-                return ch3IAmAllRight;
+                return ch3IAmAllRight();
             case 3063:
                 return ch3CaitlynAsksIfIWasEmbarrassed;
             case 3064:
