@@ -17,22 +17,22 @@ import java.util.Map;
  */
 public class Chapter0 extends Chapter {
     private static StoryChoiceList ch0Welcome = new StoryChoiceList(R.drawable.black,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch0Welcome, 2)}));
+            Arrays.asList(new IStoryChoice[]{new Welcome()}));
 
     private static StoryChoiceList ch0POTWSimple = new StoryChoiceList(R.drawable.black,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch0POTWSimple, 3)}));
+            Arrays.asList(new IStoryChoice[]{new POTWSimple()}));
 
     private static StoryChoiceList ch0MultipleChoices = new StoryChoiceList(R.drawable.black,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch0MultipleChoices, 4)}));
+            Arrays.asList(new IStoryChoice[]{new MultipleChoices()}));
 
     private static StoryChoiceList ch0FirstChoice = new StoryChoiceList(R.drawable.black,
             Arrays.asList(new IStoryChoice[]{
-                    new StoryChoice(R.string.ch0FirstChoice, 5),
-                    new StoryChoice(R.string.ch0SecondChoice, 5)
+                    new FirstChoice(),
+                    new SecondChoice()
             }));
 
     private static StoryChoiceList ch0Options = new StoryChoiceList(R.drawable.black,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch0Options, 1001)}));
+            Arrays.asList(new IStoryChoice[]{new Options()}));
 
     @Override
     public IStoryChoiceList goToState(int id) {

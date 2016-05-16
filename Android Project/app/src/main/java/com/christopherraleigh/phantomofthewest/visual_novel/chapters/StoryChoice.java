@@ -28,4 +28,8 @@ public class StoryChoice implements IStoryChoice {
         PotWVN vn = PotWVN.getMainVN();
         vn.goToState(nextState);
     }
+
+    protected int getTextID() {
+        return textID;
+    }
 }

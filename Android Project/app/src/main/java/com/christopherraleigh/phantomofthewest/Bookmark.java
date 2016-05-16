@@ -110,6 +110,12 @@ class Bookmark implements Observer {
             CharSequence newText;
             if (currentChoice != null) {
                 newText = currentChoice.getText(strongStoryView);
+                int size = currentList.size();
+                if (size > 1) {
+                    int choiceNum = index + 1;
+                    String choicesOf = strongStoryView.getString(R.string.choiceOf, choiceNum, size);
+                    newText = choicesOf + ":\n\n" + newText;
+                }
             } else {
                 newText = "";
             }
