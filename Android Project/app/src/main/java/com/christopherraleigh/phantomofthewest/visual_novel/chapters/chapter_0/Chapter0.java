@@ -50,8 +50,4 @@ public class Chapter0 extends Chapter {
         }
         return null;
     }
-
-    public Chapter0() {
-        super();
-    }
 }

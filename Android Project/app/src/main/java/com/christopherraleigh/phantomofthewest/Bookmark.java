@@ -54,6 +54,7 @@ class Bookmark implements Observer {
 
     void selectChoice() {
         IStoryChoice currentChoice = getCurrentChoice();
+        index = 0;
         currentChoice.select();
     }
 

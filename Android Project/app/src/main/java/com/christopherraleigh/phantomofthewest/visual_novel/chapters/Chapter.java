@@ -10,8 +10,6 @@ import java.util.Map;
 public abstract class Chapter implements IChapter {
     //Map<Integer, StoryChoiceList> idToChoices;
 
-    public Chapter() { }
-
     /*public void addAudio(StoryChoiceList nextList) {
         if (nextList.Count == 1) {
 
