@@ -27,7 +27,7 @@ public class PotWVN extends Observable {
 
     private static final int TUTORIAL_START = 1;
 
-    public static void startUp(WeakReference<Context> c) {
+    public static void startUp(Context c) {
         mainVN = new PotWVN(c);
         GameState autoSave = mainVN.loadAutoSave();
         if (autoSave != null) {
@@ -77,8 +77,8 @@ public class PotWVN extends Observable {
         return gs;
     }
 
-    private PotWVN(WeakReference<Context> context) {
-        this.context = context;
+    private PotWVN(Context context) {
+        this.context = new WeakReference<>(context);
     }
 
     private void autoSave() {

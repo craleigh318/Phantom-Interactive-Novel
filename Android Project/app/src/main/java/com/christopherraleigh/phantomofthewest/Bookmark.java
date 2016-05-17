@@ -18,8 +18,8 @@ class Bookmark implements Observer {
     private int index = 0;
     private WeakReference<MainActivity> storyView;
 
-    Bookmark(WeakReference<MainActivity> storyView) {
-        this.storyView = storyView;
+    Bookmark(MainActivity storyView) {
+        this.storyView = new WeakReference<>(storyView);
     }
 
     @Override

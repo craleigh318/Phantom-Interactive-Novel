@@ -42,10 +42,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        WeakReference<MainActivity> weakSelf = new WeakReference<>(this);
-        WeakReference<Context> weakContext = new WeakReference<Context>(this);
-        bookmark = new Bookmark(weakSelf);
-        PotWVN.startUp(weakContext);
+        bookmark = new Bookmark(this);
+        PotWVN.startUp(this);
         PotWVN vn = PotWVN.getMainVN();
         vn.addObserver(bookmark);
         bookmark.update(vn, vn);
