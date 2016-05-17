@@ -1,9 +1,11 @@
 package com.christopherraleigh.phantomofthewest.visual_novel.serialization.event_flagging;
 
+import java.io.Serializable;
+
 /**
  * Created by christopherraleigh on 2016-04-01.
  */
-public class EventFlagsCollection {
+public class EventFlagsCollection implements Serializable {
     private DriveWithCaitlyn ch3DroveWithCaitlyn = DriveWithCaitlyn.NotYetDriven;
 
     private TalkWithCaitlyn ch3TalkedWithCaitlyn = TalkWithCaitlyn.HasNotTalked;

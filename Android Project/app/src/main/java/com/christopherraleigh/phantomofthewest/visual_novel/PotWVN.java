@@ -1,5 +1,7 @@
 package com.christopherraleigh.phantomofthewest.visual_novel;
 
+import android.content.Context;
+
 import com.christopherraleigh.phantomofthewest.data_management.DataManager;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.*;
 
@@ -7,6 +9,7 @@ import com.christopherraleigh.phantomofthewest.visual_novel.serialization.*;
 
 import com.christopherraleigh.phantomofthewest.visual_novel.serialization.event_flagging.*;
 
+import java.lang.ref.WeakReference;
 import java.util.Observable;
 
 /**
@@ -14,7 +17,7 @@ import java.util.Observable;
  */
 public class PotWVN extends Observable {
 
-    private static PotWVN mainVN = new PotWVN();
+    private static PotWVN mainVN = null;
 
     public static PotWVN getMainVN() {
         return mainVN;
@@ -23,6 +26,18 @@ public class PotWVN extends Observable {
     private static final int STORY_START = 1001;
 
     private static final int TUTORIAL_START = 1;
+
+    public static void startUp(WeakReference<Context> c) {
+        mainVN = new PotWVN(c);
+        GameState autoSave = mainVN.loadAutoSave();
+        if (autoSave != null) {
+            mainVN.loadGame(autoSave);
+        } else {
+            mainVN.playTutorial();
+        }
+    }
+
+    private WeakReference<Context> context;
 
     private IStoryChoiceList currentChoices = null;
 
@@ -62,22 +77,24 @@ public class PotWVN extends Observable {
         return gs;
     }
 
-    public void startUp() {
-        GameState autoSave = loadAutoSave();
-        if (autoSave != null) {
-            loadGame(autoSave);
-        } else {
-            playTutorial();
-        }
+    private PotWVN(WeakReference<Context> context) {
+        this.context = context;
     }
 
     private void autoSave() {
-        GameState gs = saveGame();
-        DataManager.autoSave(gs);
+        Context strongContext = context.get();
+        if (strongContext != null) {
+            GameState gs = saveGame();
+            DataManager.autoSave(strongContext, gs);
+        }
     }
 
     private GameState loadAutoSave() {
-        GameState gs = DataManager.loadAutoSave();
+        GameState gs = null;
+        Context strongContext = context.get();
+        if (strongContext != null) {
+            gs = DataManager.loadAutoSave(strongContext);
+        }
         return gs;
     }
 

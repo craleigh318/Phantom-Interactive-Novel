@@ -1,5 +1,6 @@
 package com.christopherraleigh.phantomofthewest;
 
+import android.content.Context;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -39,12 +40,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         WeakReference<MainActivity> weakSelf = new WeakReference<>(this);
+        WeakReference<Context> weakContext = new WeakReference<Context>(this);
         bookmark = new Bookmark(weakSelf);
+        PotWVN.startUp(weakContext);
         PotWVN vn = PotWVN.getMainVN();
         vn.addObserver(bookmark);
-        vn.playTutorial();
+        bookmark.update(vn, vn);
     }
 
     void setImage(Drawable image) {
