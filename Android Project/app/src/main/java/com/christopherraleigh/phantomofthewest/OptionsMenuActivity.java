@@ -1,6 +1,7 @@
 package com.christopherraleigh.phantomofthewest;
 
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
@@ -13,8 +14,19 @@ public class OptionsMenuActivity extends AppCompatActivity {
     public void onButtonSaveClick(View view) {
         PotWVN vn = PotWVN.getMainVN();
         GameState game = vn.saveGame();
-        DataManager.manuallySave(this, game);
-        goBack();
+        boolean saveSuccessful = DataManager.manuallySave(this, game);
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+        int dialogMessageID;
+        if (saveSuccessful) {
+            dialogMessageID = R.string.saveSuccessful;
+        } else {
+            dialogMessageID = R.string.saveUnsuccessful;
+        }
+        CharSequence dialogMessage = getText(dialogMessageID);
+        dialogBuilder.setMessage(dialogMessage);
+        dialogBuilder.setPositiveButton(android.R.string.ok, null);
+        AlertDialog dialog = dialogBuilder.create();
+        dialog.show();
     }
 
     public void onButtonLoadClick(View view) {

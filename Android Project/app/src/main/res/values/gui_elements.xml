@@ -31,6 +31,7 @@
     <string name="autoSave">Auto-Save</string>
     <string name="saved">Saved</string>
     <string name="saveSuccessful">The game was saved successfully.</string>
+    <string name="saveUnsuccessful">The game could not be saved.</string>
     <string name="saveName">New Save</string>
     <string name="saveNameMessage">Please name your save.</string>
     <string name="cancel">Cancel</string>
