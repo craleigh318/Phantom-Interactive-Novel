@@ -16,395 +16,239 @@ public class Chapter5 extends Chapter {
     private static StoryChoiceList ch5Title = new StoryChoiceList(R.drawable.black,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5Title, 5002)}));
 
-    private static StoryChoiceList Ch5BekShtiiWakesMe()
-    {
-        return StoryChoiceList.FromResource("Bek'Shtii-First-Meets-Kaden.png", new IStoryChoice[] { StoryChoice.FromResource("ch5BekShtiiWakesMe", 5003) });
-    }
-
-    private static StoryChoiceList Ch5PlanIsRoundabout()
-    {
-        return StoryChoiceList.FromResource("Bek'Shtii-First-Meets-Kaden.png", new IStoryChoice[] { StoryChoice.FromResource("ch5PlanIsRoundabout", 5004) });
-    }
-
-    private static StoryChoiceList Ch5RangersCannotCaptureMe()
-    {
-        return StoryChoiceList.FromResource("Bek'Shtii-First-Meets-Kaden.png", new IStoryChoice[] { StoryChoice.FromResource("ch5RangersCannotCaptureMe", 5005) });
-    }
-
-    private static StoryChoiceList Ch5IEnterVent()
-    {
-        return StoryChoiceList.FromResource("Bek'Shtii-Points-at-Vent.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IEnterVent", 5006) });
-    }
-
-    private static StoryChoiceList Ch5IExitVent()
-    {
-        return StoryChoiceList.FromResource("Kaden-Flies-out-of-Vent.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IExitVent", 5007) });
-    }
-
-    private static StoryChoiceList Ch5IReachSchool()
-    {
-        return StoryChoiceList.FromResource("St-Josephine-at-Dawn.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IReachSchool", 5008) });
-    }
-
-    private static StoryChoiceList Ch5IPossessElodie()
-    {
-        return StoryChoiceList.FromResource("Two-Girls-Bedroom-Dark.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IPossessElodie", 5009) });
-    }
-
-    private static StoryChoiceList Ch5CarleighWakesMe()
-    {
-        return StoryChoiceList.FromResource("Awaken-as-Elodie.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CarleighWakesMe", 5010) });
-    }
-
-    private static StoryChoiceList Ch5ISearchElodiesMemory()
-    {
-        return StoryChoiceList.FromResource("Elodie-Pajamas.png", new IStoryChoice[] { StoryChoice.FromResource("ch5ISearchElodiesMemory", 5011) });
-    }
-
-    private static StoryChoiceList Ch5IDressSlowly()
-    {
-        return StoryChoiceList.FromResource("Elodie-and-Carleigh-Pajamas.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IDressSlowly", 5012) });
-    }
-
-    private static StoryChoiceList Ch5INodAtCarleigh()
-    {
-        return StoryChoiceList.FromResource("Elodie-and-Carleigh-Pajamas.png", new IStoryChoice[] { StoryChoice.FromResource("ch5INodAtCarleigh", 5013) });
-    }
-
-    private static StoryChoiceList Ch5IDressElodie()
-    {
-        return StoryChoiceList.FromResource("Elodie-Uniform.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IDressElodie", 5014) });
-    }
-
-    private static StoryChoiceList Ch5IEnterLiteratureClass()
-    {
-        return StoryChoiceList.FromResource("Elodie-at-Desk.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IEnterLiteratureClass", 5015) });
-    }
-
-    private static StoryChoiceList Ch5IReadPaulsStory()
-    {
-        return StoryChoiceList.FromResource("Literature-Discussion.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IReadPaulsStory", 5016) });
-    }
-
-    private static StoryChoiceList Ch5WhyDidPaulWantToFitIn()
-    {
-        return StoryChoiceList.FromResource("Literature-Discussion.png", new IStoryChoice[] { StoryChoice.FromResource("ch5WhyDidPaulWantToFitIn", 5017) });
-    }
-
-    private static StoryChoiceList Ch5BadWriting()
-    {
-        return StoryChoiceList.FromResource("Literature-Discussion.png", new IStoryChoice[] { StoryChoice.FromResource("ch5BadWriting", 5018) });
-    }
-
-    private static StoryChoiceList Ch5PutWhatTeacherWants()
-    {
-        return StoryChoiceList.FromResource("Literature-Discussion.png", new IStoryChoice[] { StoryChoice.FromResource("ch5PutWhatTeacherWants", 5019) });
-    }
-
-    private static StoryChoiceList Ch5PaulHadNothingUnique()
-    {
-        return StoryChoiceList.FromResource("Literature-Discussion.png", new IStoryChoice[] { StoryChoice.FromResource("ch5PaulHadNothingUnique", 5020) });
-    }
-
-    private static StoryChoiceList Ch5SureCarleighWrites()
-    {
-        return StoryChoiceList.FromResource("Literature-Discussion.png", new IStoryChoice[] { StoryChoice.FromResource("ch5SureCarleighWrites", 5021) });
-    }
-
-    private static StoryChoiceList Ch5WasPaulJustified()
-    {
-        return StoryChoiceList.FromResource("Literature-Discussion.png", new IStoryChoice[] { StoryChoice.FromResource("ch5WasPaulJustified", 5022) });
-    }
-
-    private static StoryChoiceList Ch5WhyBeYourself()
-    {
-        return StoryChoiceList.FromResource("Literature-Discussion.png", new IStoryChoice[] { StoryChoice.FromResource("ch5WhyBeYourself", 5023) });
-    }
-
-    private static StoryChoiceList Ch5SureISay()
-    {
-        return StoryChoiceList.FromResource("Literature-Discussion.png", new IStoryChoice[] { StoryChoice.FromResource("ch5SureISay", 5024) });
-    }
-
-    private static StoryChoiceList Ch5YouCannotLowerYourself()
-    {
-        return StoryChoiceList.FromResource("Literature-Discussion.png", new IStoryChoice[] { new YouCannotLowerYourself(), new YouNeedToStayConfident(), new YouAvoidStupidity() });
-    }
-
-    private static StoryChoiceList Ch5CannotAssociateWithLowlyPeople()
-    {
-        return StoryChoiceList.FromResource("Literature-Discussion.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CannotAssociateWithLowlyPeople", 5028) });
-    }
-
-    private static StoryChoiceList Ch5CarleighWasTeased()
-    {
-        return StoryChoiceList.FromResource("Literature-Discussion.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CarleighWasTeased", 5028) });
-    }
-
-    private static StoryChoiceList Ch5IAmPragmatic()
-    {
-        return StoryChoiceList.FromResource("Literature-Discussion.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IAmPragmatic", 5028) });
-    }
-
-    private static StoryChoiceList Ch5WasActivityTerrible()
-    {
-        return StoryChoiceList.FromResource("Literature-Discussion.png", new IStoryChoice[] { StoryChoice.FromResource("ch5WasActivityTerrible", 5029) });
-    }
-
-    private static StoryChoiceList Ch5WriterThinksKidsAreDumb()
-    {
-        return StoryChoiceList.FromResource("Literature-Discussion.png", new IStoryChoice[] { StoryChoice.FromResource("ch5WriterThinksKidsAreDumb", 5030) });
-    }
-
-    private static StoryChoiceList Ch5IPassByCheerleader()
-    {
-        return StoryChoiceList.FromResource("Elodie-Passes-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IPassByCheerleader", 5031) });
-    }
-
-    private static StoryChoiceList Ch5CheerleaderTripsMe()
-    {
-        return StoryChoiceList.FromResource("Elodie-Trips.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CheerleaderTripsMe", 5032) });
-    }
-
-    private static StoryChoiceList Ch5HewittConsolesMe()
-    {
-        return StoryChoiceList.FromResource("Elodie-First-Lunch.png", new IStoryChoice[] { StoryChoice.FromResource("ch5HewittConsolesMe", 5033) });
-    }
-
-    private static StoryChoiceList Ch5CheerleaderIsJealous()
-    {
-        return StoryChoiceList.FromResource("Elodie-First-Lunch.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CheerleaderIsJealous", 5034) });
-    }
-
-    private static StoryChoiceList Ch5CanIStudyWithCarleigh()
-    {
-        return StoryChoiceList.FromResource("Elodie-First-Lunch.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CanIStudyWithCarleigh", 5035) });
-    }
-
-    private static StoryChoiceList Ch5IEnterLibrary()
-    {
-        return StoryChoiceList.FromResource("Elodie-First-Lunch.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IEnterLibrary", 5036) });
-    }
-
-    private static StoryChoiceList Ch5ISeeCarleighsTextbook()
-    {
-        return StoryChoiceList.FromResource("Carleigh-Textbook.png", new IStoryChoice[] { StoryChoice.FromResource("ch5ISeeCarleighsTextbook", 5037) });
-    }
-
-    private static StoryChoiceList Ch5IPrepareToPossessCarleigh()
-    {
-        return StoryChoiceList.FromResource("Carleigh-Textbook.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IPrepareToPossessCarleigh", 5038) });
-    }
-
-    private static StoryChoiceList Ch5IPossessCarleigh()
-    {
-        return StoryChoiceList.FromResource("Carleigh-Possessed.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IPossessCarleigh", 5039) });
-    }
-
-    private static StoryChoiceList Ch5IExamineCarleigh()
-    {
-        return StoryChoiceList.FromResource("Carleigh-Hands.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IExamineCarleigh", 5040) });
-    }
-
-    private static StoryChoiceList Ch5ILeaveLibrary()
-    {
-        return StoryChoiceList.FromResource("Elodie-Leans-on-Carleigh-Shoulder.png", new IStoryChoice[] { StoryChoice.FromResource("ch5ILeaveLibrary", 5041) });
-    }
-
-    private static StoryChoiceList Ch5WhyIsElodieHere()
-    {
-        return StoryChoiceList.FromResource("Elodie-Leans-on-Carleigh-Shoulder.png", new IStoryChoice[] { StoryChoice.FromResource("ch5WhyIsElodieHere", 5042) });
-    }
-
-    private static StoryChoiceList Ch5ElodieIsExhausted()
-    {
-        return StoryChoiceList.FromResource("Elodie-Leans-on-Carleigh-Shoulder.png", new IStoryChoice[] { StoryChoice.FromResource("ch5ElodieIsExhausted", 5043) });
-    }
-
-    private static StoryChoiceList Ch5ElodieIsDizzy()
-    {
-        return StoryChoiceList.FromResource("Elodie-Leans-on-Carleigh-Shoulder.png", new IStoryChoice[] { StoryChoice.FromResource("ch5ElodieIsDizzy", 5044) });
-    }
-
-    private static StoryChoiceList Ch5IEnterMathClass()
-    {
-        return StoryChoiceList.FromResource("Elodie-Leans-on-Carleigh-Shoulder.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IEnterMathClass", 5045) });
-    }
-
-    private static StoryChoiceList Ch5IStartMathTest()
-    {
-        return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IStartMathTest", 5046) });
-    }
-
-    private static StoryChoiceList Ch5MathQuestion1()
-    {
-        return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { StoryChoice.FromResource("ch5MathQuestion1", 5047) });
-    }
-
-    private static StoryChoiceList Ch5MathQuestion1Answer()
-    {
-        return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { new MathQuestion1CorrectAnswer(), new MathQuestion1IncorrectAnswer() });
-    }
-
-    private static StoryChoiceList Ch5MathQuestion4()
-    {
-        return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { StoryChoice.FromResource("ch5MathQuestion4", 5049) });
-    }
-
-    private static StoryChoiceList Ch5MathQuestion4Answer()
-    {
-        return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { new MathQuestion4IncorrectAnswer(), new MathQuestion4CorrectAnswer() });
-    }
-
-    private static StoryChoiceList Ch5MathQuestion9()
-    {
-        return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { StoryChoice.FromResource("ch5MathQuestion9", 5051) });
-    }
-
-    private static StoryChoiceList Ch5MathQuestion9Answer()
-    {
-        return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { new MathQuestion9IncorrectAnswer(), new MathQuestion9CorrectAnswer() });
-    }
-
-    private static StoryChoiceList Ch5MathClassEnds()
-    {
-        return StoryChoiceList.FromResource("Carleigh-at-Desk.png", new IStoryChoice[] { StoryChoice.FromResource("ch5MathClassEnds", 5053) });
-    }
-
-    private static StoryChoiceList Ch5IReencounterCheerleader()
-    {
-        return StoryChoiceList.FromResource("Carleigh-Passes-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IReencounterCheerleader", 5054) });
-    }
-
-    private static StoryChoiceList Ch5IEnterLockerRoom()
-    {
-        return StoryChoiceList.FromResource("Ananya-Intro.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IEnterLockerRoom", 5055) });
-    }
-
-    private static StoryChoiceList Ch5IPossessAnanya()
-    {
-        return StoryChoiceList.FromResource("Ananya-Possessed.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IPossessAnanya", 5056) });
-    }
-
-    private static StoryChoiceList Ch5IDressAnanya()
-    {
-        return StoryChoiceList.FromResource("Ananya-Hands.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IDressAnanya", 5057) });
-    }
-
-    private static StoryChoiceList Ch5ITieAnanyasHair()
-    {
-        return StoryChoiceList.FromResource("Ananya-Ties-Hair.png", new IStoryChoice[] { StoryChoice.FromResource("ch5ITieAnanyasHair", 5058) });
-    }
-
-    private static StoryChoiceList Ch5IEnterPEClass()
-    {
-        return StoryChoiceList.FromResource("Ananya-Gym-Attendance.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IEnterPEClass", 5059) });
-    }
-
-    private static StoryChoiceList Ch5CoachLectures()
-    {
-        return StoryChoiceList.FromResource("Ananya-Gym-Attendance.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachLectures", 5060) });
-    }
-
-    private static StoryChoiceList Ch5IRaiseHand()
-    {
-        return StoryChoiceList.FromResource("Ananya-Raises-Hand.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IRaiseHand", 5061) });
-    }
-
-    private static StoryChoiceList Ch5IWouldSubmit()
-    {
-        return StoryChoiceList.FromResource("Ananya-Raises-Hand.png", new IStoryChoice[] { new IWouldSubmit(), new IWouldRun(), new IWouldDisarm() });
-    }
-
-    private static StoryChoiceList Ch5CoachRespondsToSubmission()
-    {
-        return StoryChoiceList.FromResource("Ananya-Raises-Hand.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachRespondsToSubmission", 5066) });
-    }
-
-    private static StoryChoiceList Ch5CoachRespondsToRunning()
-    {
-        return StoryChoiceList.FromResource("Ananya-Raises-Hand.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachRespondsToRunning", 5065) });
-    }
-
-    private static StoryChoiceList Ch5CoachRespondsToDisarming()
-    {
-        return StoryChoiceList.FromResource("Ananya-Raises-Hand.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachRespondsToDisarming", 5065) });
-    }
-
-    private static StoryChoiceList Ch5IDisagreeWithCoach()
-    {
-        return StoryChoiceList.FromResource("Ananya-Raises-Hand.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IDisagreeWithCoach", 5066) });
-    }
-
-    private static StoryChoiceList Ch5CoachStartsSpar()
-    {
-        return StoryChoiceList.FromResource("Ananya-Raises-Hand.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachStartsSpar", 5067) });
-    }
-
-    private static StoryChoiceList Ch5IPartnerWithCheerleader()
-    {
-        return StoryChoiceList.FromResource("Ananya-Spar.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IPartnerWithCheerleader", 5068) });
-    }
-
-    private static StoryChoiceList Ch5CheerleaderAndISpar()
-    {
-        return StoryChoiceList.FromResource("Ananya-Spar.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CheerleaderAndISpar", 5069) });
-    }
-
-    private static StoryChoiceList Ch5IPinCheerleader()
-    {
-        return StoryChoiceList.FromResource("Ananya-Spar.png", new IStoryChoice[] { new IPinCheerleader(), new IKickCheerleader() });
-    }
-
-    private static StoryChoiceList Ch5CoachCheersMe()
-    {
-        return StoryChoiceList.FromResource("Ananya-Pins-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachCheersMe", 5078) });
-    }
-
-    private static StoryChoiceList Ch5CheerleaderFalls()
-    {
-        return StoryChoiceList.FromResource("Ananya-Kicks-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CheerleaderFalls", 5072) });
-    }
-
-    private static StoryChoiceList Ch5IBringCoachToCheerleader()
-    {
-        return StoryChoiceList.FromResource("Ananya-Kicks-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IBringCoachToCheerleader", 5073) });
-    }
-
-    private static StoryChoiceList Ch5CoachAsksWhatHappened()
-    {
-        return StoryChoiceList.FromResource("Ananya-Kicks-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachAsksWhatHappened", 5074) });
-    }
-
-    private static StoryChoiceList Ch5CheerleaderIsBruised()
-    {
-        return StoryChoiceList.FromResource("Ananya-Kicks-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CheerleaderIsBruised", 5075) });
-    }
-
-    private static StoryChoiceList Ch5IApologizeToCheerleader()
-    {
-        return StoryChoiceList.FromResource("Ananya-Kicks-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IApologizeToCheerleader", 5076) });
-    }
-
-    private static StoryChoiceList Ch5CoachTellsMeToBeCareful()
-    {
-        return StoryChoiceList.FromResource("Ananya-Kicks-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5CoachTellsMeToBeCareful", 5077) });
-    }
-
-    private static StoryChoiceList Ch5INodAtCoach()
-    {
-        return StoryChoiceList.FromResource("Ananya-Kicks-Cheerleader.png", new IStoryChoice[] { StoryChoice.FromResource("ch5INodAtCoach", 5078) });
-    }
-
-    private static StoryChoiceList Ch5PEClassEnds()
-    {
-        return StoryChoiceList.FromResource("Dorms-First-Afternoon.png", new IStoryChoice[] { StoryChoice.FromResource("ch5PEClassEnds", 5079) });
-    }
-
-    private static StoryChoiceList Ch5IDispossessAnanya()
-    {
-        return StoryChoiceList.FromResource("Dorms-First-Afternoon.png", new IStoryChoice[] { StoryChoice.FromResource("ch5IDispossessAnanya", 5080) });
-    }
+    private static StoryChoiceList ch5BekShtiiWakesMe = new StoryChoiceList(R.drawable.bekshtii_first_meets_kaden,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5BekShtiiWakesMe, 5003)}));
+
+    private static StoryChoiceList ch5PlanIsRoundabout = new StoryChoiceList(R.drawable.bekshtii_first_meets_kaden,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5PlanIsRoundabout, 5004)}));
+
+    private static StoryChoiceList ch5RangersCannotCaptureMe = new StoryChoiceList(R.drawable.bekshtii_first_meets_kaden,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5RangersCannotCaptureMe, 5005)}));
+
+    private static StoryChoiceList ch5IEnterVent = new StoryChoiceList(R.drawable.bekshtii_points_at_vent,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IEnterVent, 5006)}));
+
+    private static StoryChoiceList ch5IExitVent = new StoryChoiceList(R.drawable.kaden_flies_out_of_vent,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IExitVent, 5007)}));
+
+    private static StoryChoiceList ch5IReachSchool = new StoryChoiceList(R.drawable.st_josephine_at_dawn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IReachSchool, 5008)}));
+
+    private static StoryChoiceList ch5IPossessElodie = new StoryChoiceList(R.drawable.two_girls_bedroom_dark,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IPossessElodie, 5009)}));
+
+    private static StoryChoiceList ch5CarleighWakesMe = new StoryChoiceList(R.drawable.awaken_as_elodie,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CarleighWakesMe, 5010)}));
+
+    private static StoryChoiceList ch5ISearchElodiesMemory = new StoryChoiceList(R.drawable.elodie_pajamas,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5ISearchElodiesMemory, 5011)}));
+
+    private static StoryChoiceList ch5IDressSlowly = new StoryChoiceList(R.drawable.elodie_and_carleigh_pajamas,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IDressSlowly, 5012)}));
+
+    private static StoryChoiceList ch5INodAtCarleigh = new StoryChoiceList(R.drawable.elodie_and_carleigh_pajamas,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5INodAtCarleigh, 5013)}));
+
+    private static StoryChoiceList ch5IDressElodie = new StoryChoiceList(R.drawable.elodie_uniform,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IDressElodie, 5014)}));
+
+    private static StoryChoiceList ch5IEnterLiteratureClass = new StoryChoiceList(R.drawable.elodie_at_desk,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IEnterLiteratureClass, 5015)}));
+
+    private static StoryChoiceList ch5IReadPaulsStory = new StoryChoiceList(R.drawable.literature_discussion,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IReadPaulsStory, 5016)}));
+
+    private static StoryChoiceList ch5WhyDidPaulWantToFitIn = new StoryChoiceList(R.drawable.literature_discussion,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5WhyDidPaulWantToFitIn, 5017)}));
+
+    private static StoryChoiceList ch5BadWriting = new StoryChoiceList(R.drawable.literature_discussion,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5BadWriting, 5018)}));
+
+    private static StoryChoiceList ch5PutWhatTeacherWants = new StoryChoiceList(R.drawable.literature_discussion,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5PutWhatTeacherWants, 5019)}));
+
+    private static StoryChoiceList ch5PaulHadNothingUnique = new StoryChoiceList(R.drawable.literature_discussion,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5PaulHadNothingUnique, 5020)}));
+
+    private static StoryChoiceList ch5SureCarleighWrites = new StoryChoiceList(R.drawable.literature_discussion,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5SureCarleighWrites, 5021)}));
+
+    private static StoryChoiceList ch5WasPaulJustified = new StoryChoiceList(R.drawable.literature_discussion,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5WasPaulJustified, 5022)}));
+
+    private static StoryChoiceList ch5WhyBeYourself = new StoryChoiceList(R.drawable.literature_discussion,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5WhyBeYourself, 5023)}));
+
+    private static StoryChoiceList ch5SureISay = new StoryChoiceList(R.drawable.literature_discussion,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5SureISay, 5024)}));
+
+    private static StoryChoiceList ch5YouCannotLowerYourself = new StoryChoiceList(R.drawable.literature_discussion,
+            Arrays.asList(new IStoryChoice[]{new YouCannotLowerYourself(), new YouNeedToStayConfident(), new YouAvoidStupidity()}));
+
+    private static StoryChoiceList ch5CannotAssociateWithLowlyPeople = new StoryChoiceList(R.drawable.literature_discussion,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CannotAssociateWithLowlyPeople, 5028)}));
+
+    private static StoryChoiceList ch5CarleighWasTeased = new StoryChoiceList(R.drawable.literature_discussion,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CarleighWasTeased, 5028)}));
+
+    private static StoryChoiceList ch5IAmPragmatic = new StoryChoiceList(R.drawable.literature_discussion,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IAmPragmatic, 5028)}));
+
+    private static StoryChoiceList ch5WasActivityTerrible = new StoryChoiceList(R.drawable.literature_discussion,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5WasActivityTerrible, 5029)}));
+
+    private static StoryChoiceList ch5WriterThinksKidsAreDumb = new StoryChoiceList(R.drawable.literature_discussion,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5WriterThinksKidsAreDumb, 5030)}));
+
+    private static StoryChoiceList ch5IPassByCheerleader = new StoryChoiceList(R.drawable.elodie_passes_cheerleader,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IPassByCheerleader, 5031)}));
+
+    private static StoryChoiceList ch5CheerleaderTripsMe = new StoryChoiceList(R.drawable.elodie_trips,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CheerleaderTripsMe, 5032)}));
+
+    private static StoryChoiceList ch5HewittConsolesMe = new StoryChoiceList(R.drawable.elodie_first_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5HewittConsolesMe, 5033)}));
+
+    private static StoryChoiceList ch5CheerleaderIsJealous = new StoryChoiceList(R.drawable.elodie_first_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CheerleaderIsJealous, 5034)}));
+
+    private static StoryChoiceList ch5CanIStudyWithCarleigh = new StoryChoiceList(R.drawable.elodie_first_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CanIStudyWithCarleigh, 5035)}));
+
+    private static StoryChoiceList ch5IEnterLibrary = new StoryChoiceList(R.drawable.elodie_first_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IEnterLibrary, 5036)}));
+
+    private static StoryChoiceList ch5ISeeCarleighsTextbook = new StoryChoiceList(R.drawable.carleigh_textbook,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5ISeeCarleighsTextbook, 5037)}));
+
+    private static StoryChoiceList ch5IPrepareToPossessCarleigh = new StoryChoiceList(R.drawable.carleigh_textbook,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IPrepareToPossessCarleigh, 5038)}));
+
+    private static StoryChoiceList ch5IPossessCarleigh = new StoryChoiceList(R.drawable.carleigh_possessed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IPossessCarleigh, 5039)}));
+
+    private static StoryChoiceList ch5IExamineCarleigh = new StoryChoiceList(R.drawable.carleigh_hands,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IExamineCarleigh, 5040)}));
+
+    private static StoryChoiceList ch5ILeaveLibrary = new StoryChoiceList(R.drawable.elodie_leans_on_carleigh_shoulder,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5ILeaveLibrary, 5041)}));
+
+    private static StoryChoiceList ch5WhyIsElodieHere = new StoryChoiceList(R.drawable.elodie_leans_on_carleigh_shoulder,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5WhyIsElodieHere, 5042)}));
+
+    private static StoryChoiceList ch5ElodieIsExhausted = new StoryChoiceList(R.drawable.elodie_leans_on_carleigh_shoulder,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5ElodieIsExhausted, 5043)}));
+
+    private static StoryChoiceList ch5ElodieIsDizzy = new StoryChoiceList(R.drawable.elodie_leans_on_carleigh_shoulder,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5ElodieIsDizzy, 5044)}));
+
+    private static StoryChoiceList ch5IEnterMathClass = new StoryChoiceList(R.drawable.elodie_leans_on_carleigh_shoulder,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IEnterMathClass, 5045)}));
+
+    private static StoryChoiceList ch5IStartMathTest = new StoryChoiceList(R.drawable.carleigh_at_desk,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IStartMathTest, 5046)}));
+
+    private static StoryChoiceList ch5MathQuestion1 = new StoryChoiceList(R.drawable.carleigh_at_desk,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5MathQuestion1, 5047)}));
+
+    private static StoryChoiceList ch5MathQuestion1Answer = new StoryChoiceList(R.drawable.carleigh_at_desk,
+            Arrays.asList(new IStoryChoice[]{new MathQuestion1CorrectAnswer(), new MathQuestion1IncorrectAnswer()}));
+
+    private static StoryChoiceList ch5MathQuestion4 = new StoryChoiceList(R.drawable.carleigh_at_desk,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5MathQuestion4, 5049)}));
+
+    private static StoryChoiceList ch5MathQuestion4Answer = new StoryChoiceList(R.drawable.carleigh_at_desk,
+            Arrays.asList(new IStoryChoice[]{new MathQuestion4IncorrectAnswer(), new MathQuestion4CorrectAnswer()}));
+
+    private static StoryChoiceList ch5MathQuestion9 = new StoryChoiceList(R.drawable.carleigh_at_desk,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5MathQuestion9, 5051)}));
+
+    private static StoryChoiceList ch5MathQuestion9Answer = new StoryChoiceList(R.drawable.carleigh_at_desk,
+            Arrays.asList(new IStoryChoice[]{new MathQuestion9IncorrectAnswer(), new MathQuestion9CorrectAnswer()}));
+
+    private static StoryChoiceList ch5MathClassEnds = new StoryChoiceList(R.drawable.carleigh_at_desk,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5MathClassEnds, 5053)}));
+
+    private static StoryChoiceList ch5IReencounterCheerleader = new StoryChoiceList(R.drawable.carleigh_passes_cheerleader,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IReencounterCheerleader, 5054)}));
+
+    private static StoryChoiceList ch5IEnterLockerRoom = new StoryChoiceList(R.drawable.ananya_intro,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IEnterLockerRoom, 5055)}));
+
+    private static StoryChoiceList ch5IPossessAnanya = new StoryChoiceList(R.drawable.ananya_possessed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IPossessAnanya, 5056)}));
+
+    private static StoryChoiceList ch5IDressAnanya = new StoryChoiceList(R.drawable.ananya_hands,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IDressAnanya, 5057)}));
+
+    private static StoryChoiceList ch5ITieAnanyasHair = new StoryChoiceList(R.drawable.ananya_ties_hair,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5ITieAnanyasHair, 5058)}));
+
+    private static StoryChoiceList ch5IEnterPEClass = new StoryChoiceList(R.drawable.ananya_gym_attendance,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IEnterPEClass, 5059)}));
+
+    private static StoryChoiceList ch5CoachLectures = new StoryChoiceList(R.drawable.ananya_gym_attendance,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CoachLectures, 5060)}));
+
+    private static StoryChoiceList ch5IRaiseHand = new StoryChoiceList(R.drawable.ananya_raises_hand,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IRaiseHand, 5061)}));
+
+    private static StoryChoiceList ch5IWouldSubmit = new StoryChoiceList(R.drawable.ananya_raises_hand,
+            Arrays.asList(new IStoryChoice[]{new IWouldSubmit(), new IWouldRun(), new IWouldDisarm()}));
+
+    private static StoryChoiceList ch5CoachRespondsToSubmission = new StoryChoiceList(R.drawable.ananya_raises_hand,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CoachRespondsToSubmission, 5066)}));
+
+    private static StoryChoiceList ch5CoachRespondsToRunning = new StoryChoiceList(R.drawable.ananya_raises_hand,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CoachRespondsToRunning, 5065)}));
+
+    private static StoryChoiceList ch5CoachRespondsToDisarming = new StoryChoiceList(R.drawable.ananya_raises_hand,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CoachRespondsToDisarming, 5065)}));
+
+    private static StoryChoiceList ch5IDisagreeWithCoach = new StoryChoiceList(R.drawable.ananya_raises_hand,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IDisagreeWithCoach, 5066)}));
+
+    private static StoryChoiceList ch5CoachStartsSpar = new StoryChoiceList(R.drawable.ananya_raises_hand,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CoachStartsSpar, 5067)}));
+
+    private static StoryChoiceList ch5IPartnerWithCheerleader = new StoryChoiceList(R.drawable.ananya_spar,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IPartnerWithCheerleader, 5068)}));
+
+    private static StoryChoiceList ch5CheerleaderAndISpar = new StoryChoiceList(R.drawable.ananya_spar,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CheerleaderAndISpar, 5069)}));
+
+    private static StoryChoiceList ch5IPinCheerleader = new StoryChoiceList(R.drawable.ananya_spar,
+            Arrays.asList(new IStoryChoice[]{new IPinCheerleader(), new IKickCheerleader()}));
+
+    private static StoryChoiceList ch5CoachCheersMe = new StoryChoiceList(R.drawable.ananya_pins_cheerleader,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CoachCheersMe, 5078)}));
+
+    private static StoryChoiceList ch5CheerleaderFalls = new StoryChoiceList(R.drawable.ananya_kicks_cheerleader,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CheerleaderFalls, 5072)}));
+
+    private static StoryChoiceList ch5IBringCoachToCheerleader = new StoryChoiceList(R.drawable.ananya_kicks_cheerleader,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IBringCoachToCheerleader, 5073)}));
+
+    private static StoryChoiceList ch5CoachAsksWhatHappened = new StoryChoiceList(R.drawable.ananya_kicks_cheerleader,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CoachAsksWhatHappened, 5074)}));
+
+    private static StoryChoiceList ch5CheerleaderIsBruised = new StoryChoiceList(R.drawable.ananya_kicks_cheerleader,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CheerleaderIsBruised, 5075)}));
+
+    private static StoryChoiceList ch5IApologizeToCheerleader = new StoryChoiceList(R.drawable.ananya_kicks_cheerleader,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IApologizeToCheerleader, 5076)}));
+
+    private static StoryChoiceList ch5CoachTellsMeToBeCareful = new StoryChoiceList(R.drawable.ananya_kicks_cheerleader,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5CoachTellsMeToBeCareful, 5077)}));
+
+    private static StoryChoiceList ch5INodAtCoach = new StoryChoiceList(R.drawable.ananya_kicks_cheerleader,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5INodAtCoach, 5078)}));
+
+    private static StoryChoiceList ch5PEClassEnds = new StoryChoiceList(R.drawable.dorms_first_afternoon,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5PEClassEnds, 5079)}));
+
+    private static StoryChoiceList ch5IDispossessAnanya = new StoryChoiceList(R.drawable.dorms_first_afternoon,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch5IDispossessAnanya, 5080)}));
 
     private static StoryChoiceList Ch5IHideInTheCloset()
     {
