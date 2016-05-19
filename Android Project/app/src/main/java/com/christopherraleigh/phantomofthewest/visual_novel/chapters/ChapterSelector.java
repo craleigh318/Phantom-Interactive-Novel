@@ -6,6 +6,7 @@ import com.christopherraleigh.phantomofthewest.visual_novel.chapters.chapter_1.C
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.chapter_2.Chapter2;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.chapter_3.Chapter3;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.chapter_4.Chapter4;
+import com.christopherraleigh.phantomofthewest.visual_novel.chapters.chapter_5.Chapter5;
 
 import java.util.HashMap;
 
@@ -22,6 +23,7 @@ public class ChapterSelector {
                 put(2, new Chapter2());
                 put(3, new Chapter3());
                 put(4, new Chapter4());
+                put(5, new Chapter5());
             }};
 
     public static IStoryChoiceList goToState(int id) {
