@@ -59,8 +59,10 @@ public class PotWVN extends Observable {
     }
 
     public void loadGame(GameState gs) {
-        eventFlags = gs.getEventFlags();
-        goToState(gs.getID());
+        if (gs != null) {
+            eventFlags = gs.getEventFlags();
+            goToState(gs.getID());
+        }
     }
 
     public void newGame() {

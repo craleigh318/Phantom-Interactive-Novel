@@ -9,6 +9,8 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -43,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //enableTextScroll();
         bookmark = new Bookmark(this);
         PotWVN.startUp(this);
         PotWVN vn = PotWVN.getMainVN();
@@ -81,8 +82,17 @@ public class MainActivity extends AppCompatActivity {
         v.setEnabled(enabled);
     }
 
-    private void enableTextScroll() {
-        TextView txtView = (TextView) findViewById(R.id.textView);
-        txtView.setMovementMethod(new ScrollingMovementMethod());
+    private void setTextViewHeight() {
+        View textView = findViewById(R.id.scrollView);
+        View gridLayout = findViewById(R.id.mainGrid);
+        View imageView = findViewById(R.id.imageView);
+        View button = findViewById(R.id.buttonOK);
+        int gridLayoutHeight = gridLayout.getMeasuredHeight();
+        int imageViewHeight = imageView.getMeasuredHeight();
+        int buttonHeight = button.getMeasuredHeight();
+        int newHeight = gridLayoutHeight - imageViewHeight - buttonHeight;
+        ViewGroup.LayoutParams newParams = textView.getLayoutParams();
+        newParams.height = newHeight;
+        textView.setLayoutParams(newParams);
     }
 }
