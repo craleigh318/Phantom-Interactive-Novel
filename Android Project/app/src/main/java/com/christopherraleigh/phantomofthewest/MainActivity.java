@@ -7,6 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //enableTextScroll();
         bookmark = new Bookmark(this);
         PotWVN.startUp(this);
         PotWVN vn = PotWVN.getMainVN();
@@ -77,5 +79,10 @@ public class MainActivity extends AppCompatActivity {
     private void enableButton(int buttonID, boolean enabled) {
         View v = findViewById(buttonID);
         v.setEnabled(enabled);
+    }
+
+    private void enableTextScroll() {
+        TextView txtView = (TextView) findViewById(R.id.textView);
+        txtView.setMovementMethod(new ScrollingMovementMethod());
     }
 }
