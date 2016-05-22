@@ -21,7 +21,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96d3b5bc-b268-4142-972d-64f4fa0dde8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_9/Chapter9.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_9/Chapter9.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_10/Chapter10.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/ChapterSelector.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/ChapterSelector.java" />
     </list>
     <ignored path="Android Project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,114 +43,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Chapter9.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_9/Chapter9.java">
+      <file leaf-file-name="Chapter8.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_8/Chapter8.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="556" column="43" selection-start-line="556" selection-start-column="43" selection-end-line="556" selection-end-column="43" />
+              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1297#1314#0" expanded="true" />
-                <element signature="e#1492#1511#0" expanded="true" />
-                <element signature="e#1678#1701#0" expanded="true" />
-                <element signature="e#1884#1923#0" expanded="true" />
-                <element signature="e#2100#2133#0" expanded="true" />
-                <element signature="e#2298#2319#0" expanded="true" />
-                <element signature="e#2952#3017#0" expanded="true" />
-                <element signature="e#3212#3240#0" expanded="true" />
-                <element signature="e#3423#3450#0" expanded="true" />
-                <element signature="e#3633#3660#0" expanded="true" />
-                <element signature="e#3843#3870#0" expanded="true" />
-                <element signature="e#4050#4074#0" expanded="true" />
-                <element signature="e#4257#4284#0" expanded="true" />
-                <element signature="e#4471#4502#0" expanded="true" />
-                <element signature="e#4675#4695#0" expanded="true" />
-                <element signature="e#4880#4906#0" expanded="true" />
-                <element signature="e#5088#5111#0" expanded="true" />
-                <element signature="e#5278#5301#0" expanded="true" />
-                <element signature="e#5477#5509#0" expanded="true" />
-                <element signature="e#5679#5703#0" expanded="true" />
-                <element signature="e#5880#5904#0" expanded="true" />
-                <element signature="e#6081#6106#0" expanded="true" />
-                <element signature="e#6283#6308#0" expanded="true" />
-                <element signature="e#6478#6501#0" expanded="true" />
-                <element signature="e#6668#6689#0" expanded="true" />
-                <element signature="e#6858#6884#0" expanded="true" />
-                <element signature="e#7049#7073#0" expanded="true" />
-                <element signature="e#7251#7273#0" expanded="true" />
-                <element signature="e#7451#7473#0" expanded="true" />
-                <element signature="e#7657#7686#0" expanded="true" />
-                <element signature="e#7874#7904#0" expanded="true" />
-                <element signature="e#8083#8106#0" expanded="true" />
-                <element signature="e#8282#8307#0" expanded="true" />
-                <element signature="e#8480#8502#0" expanded="true" />
-                <element signature="e#8683#8713#0" expanded="true" />
-                <element signature="e#8896#8928#0" expanded="true" />
-                <element signature="e#9430#9455#0" expanded="true" />
-                <element signature="e#9647#9677#0" expanded="true" />
-                <element signature="e#9860#9892#0" expanded="true" />
-                <element signature="e#10071#10099#0" expanded="true" />
-                <element signature="e#10271#10292#0" expanded="true" />
-                <element signature="e#10473#10503#0" expanded="true" />
-                <element signature="e#10685#10716#0" expanded="true" />
-                <element signature="e#10893#10919#0" expanded="true" />
-                <element signature="e#11112#11146#0" expanded="true" />
-                <element signature="e#11323#11344#0" expanded="true" />
-                <element signature="e#11537#11574#0" expanded="true" />
-                <element signature="e#11759#11787#0" expanded="true" />
-                <element signature="e#11976#12008#0" expanded="true" />
-                <element signature="e#12196#12227#0" expanded="true" />
-                <element signature="e#12412#12440#0" expanded="true" />
-                <element signature="e#12626#12655#0" expanded="true" />
-                <element signature="e#12841#12870#0" expanded="true" />
-                <element signature="e#13054#13077#0" expanded="true" />
-                <element signature="e#13264#13292#0" expanded="true" />
-                <element signature="e#13473#13495#0" expanded="true" />
-                <element signature="e#13682#13710#0" expanded="true" />
-                <element signature="e#13896#13923#0" expanded="true" />
-                <element signature="e#14112#14142#0" expanded="true" />
-                <element signature="e#14808#14829#0" expanded="true" />
-                <element signature="e#15029#15059#0" expanded="true" />
-                <element signature="e#15246#15275#0" expanded="true" />
-                <element signature="e#15461#15489#0" expanded="true" />
-                <element signature="e#15673#15699#0" expanded="true" />
-                <element signature="e#15876#15898#0" expanded="true" />
-                <element signature="e#16071#16089#0" expanded="true" />
-                <element signature="e#16282#16311#0" expanded="true" />
-                <element signature="e#16500#16525#0" expanded="true" />
-                <element signature="e#16717#16745#0" expanded="true" />
-                <element signature="e#16934#16964#0" expanded="true" />
-                <element signature="e#17154#17185#0" expanded="true" />
-                <element signature="e#17369#17394#0" expanded="true" />
-                <element signature="e#17582#17611#0" expanded="true" />
-                <element signature="e#17798#17826#0" expanded="true" />
-                <element signature="e#18009#18035#0" expanded="true" />
-                <element signature="e#18207#18231#0" expanded="true" />
-                <element signature="e#18405#18428#0" expanded="true" />
-                <element signature="e#18627#18658#0" expanded="true" />
-                <element signature="e#18846#18866#0" expanded="true" />
-                <element signature="e#19068#19102#0" expanded="true" />
-                <element signature="e#19296#19322#0" expanded="true" />
-                <element signature="e#19521#19552#0" expanded="true" />
-                <element signature="e#19755#19790#0" expanded="true" />
-                <element signature="e#19986#20014#0" expanded="true" />
-                <element signature="e#20211#20240#0" expanded="true" />
-                <element signature="e#20444#20480#0" expanded="true" />
-                <element signature="e#20673#20698#0" expanded="true" />
-                <element signature="e#21233#21260#0" expanded="true" />
-                <element signature="e#21459#21489#0" expanded="true" />
-                <element signature="e#21677#21707#0" expanded="true" />
-                <element signature="e#21895#21925#0" expanded="true" />
-                <element signature="e#22108#22133#0" expanded="true" />
-                <element signature="e#22532#22571#0" expanded="true" />
-                <element signature="e#22744#22769#0" expanded="true" />
-                <element signature="e#22955#22983#0" expanded="true" />
-                <element signature="e#23156#23179#0" expanded="true" />
-                <element signature="e#23360#23386#0" expanded="true" />
-                <element signature="e#23578#23612#0" expanded="true" />
-                <element signature="e#23784#23807#0" expanded="true" />
-                <element signature="e#23973#23991#0" expanded="true" />
+                <element signature="e#798#815#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chapter10.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Universal Windows Platform Solution/Phantom of the West/Phantom of the West/Visual Novel/Chapters/Chapter 10/Chapter10.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="126" column="9" selection-start-line="33" selection-start-column="8" selection-end-line="126" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,9 +69,40 @@
       <file leaf-file-name="ChapterSelector.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/ChapterSelector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48238897">
-              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.5053599">
+              <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chapter10.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_10/Chapter10.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="70" column="104" selection-start-line="70" selection-start-column="104" selection-end-line="70" selection-end-column="104" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#801#819#0" expanded="true" />
+                <element signature="e#981#1001#0" expanded="true" />
+                <element signature="e#1183#1212#0" expanded="true" />
+                <element signature="e#1396#1427#0" expanded="true" />
+                <element signature="e#1608#1636#0" expanded="true" />
+                <element signature="e#1827#1865#0" expanded="true" />
+                <element signature="e#2049#2080#0" expanded="true" />
+                <element signature="e#2257#2281#0" expanded="true" />
+                <element signature="e#2468#2498#0" expanded="true" />
+                <element signature="e#2693#2731#0" expanded="true" />
+                <element signature="e#2923#2958#0" expanded="true" />
+                <element signature="e#3149#3183#0" expanded="true" />
+                <element signature="e#3376#3412#0" expanded="true" />
+                <element signature="e#3593#3617#0" expanded="true" />
+                <element signature="e#3792#3818#0" expanded="true" />
+                <element signature="e#4002#4037#0" expanded="true" />
+                <element signature="e#4222#4254#0" expanded="true" />
+                <element signature="e#4435#4463#0" expanded="true" />
+                <element signature="e#4647#4678#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1744,7 +1687,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_3/IVisitYukio.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_3/PossessionFeltWeird.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_3/Chapter3.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/StoryChoice.java" />
@@ -1791,10 +1733,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_8/Chapter8.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/ChapterSelector.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_9/ILeaveFoxtrot.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_9/IWillPetFoxtrot.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_9/Chapter9.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/ChapterSelector.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_10/Chapter10.java" />
       </list>
     </option>
   </component>
@@ -1963,7 +1906,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="chapter_10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android Project" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phantomofthewest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="visual_novel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="chapter_9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android Project" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phantomofthewest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="visual_novel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapter_8" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2008,7 +2011,7 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="G0K0H40460520M66" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_23_x86" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Universal Windows Platform Solution/Phantom of the West/Phantom of the West/Visual Novel/Chapters/Chapter 9/Chapter9.cs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Universal Windows Platform Solution/Phantom of the West/Phantom of the West/Visual Novel/Chapters/Chapter 10/Chapter10.cs" />
     <property name="device.picker.selection" value="G0K0H40460520M66" />
   </component>
   <component name="RecentsManager">
@@ -2387,20 +2390,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_5/IWouldDisarm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="5" selection-start-line="11" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Universal Windows Platform Solution/Phantom of the West/Phantom of the West/Visual Novel/Chapters/Chapter 5/IWouldSubmit.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="75" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_5/IWouldSubmit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2747,17 +2736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_8/Chapter8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="89" selection-start-line="15" selection-start-column="4" selection-end-line="16" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4374#4400#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Universal Windows Platform Solution/Phantom of the West/Phantom of the West/Visual Novel/Chapters/Chapter 9/Chapter9.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2876,10 +2854,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_8/Chapter8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#798#815#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Universal Windows Platform Solution/Phantom of the West/Phantom of the West/Visual Novel/Chapters/Chapter 10/Chapter10.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="126" column="9" selection-start-line="33" selection-start-column="8" selection-end-line="126" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_10/Chapter10.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="104" selection-start-line="70" selection-start-column="104" selection-end-line="70" selection-end-column="104" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#801#819#0" expanded="true" />
+            <element signature="e#981#1001#0" expanded="true" />
+            <element signature="e#1183#1212#0" expanded="true" />
+            <element signature="e#1396#1427#0" expanded="true" />
+            <element signature="e#1608#1636#0" expanded="true" />
+            <element signature="e#1827#1865#0" expanded="true" />
+            <element signature="e#2049#2080#0" expanded="true" />
+            <element signature="e#2257#2281#0" expanded="true" />
+            <element signature="e#2468#2498#0" expanded="true" />
+            <element signature="e#2693#2731#0" expanded="true" />
+            <element signature="e#2923#2958#0" expanded="true" />
+            <element signature="e#3149#3183#0" expanded="true" />
+            <element signature="e#3376#3412#0" expanded="true" />
+            <element signature="e#3593#3617#0" expanded="true" />
+            <element signature="e#3792#3818#0" expanded="true" />
+            <element signature="e#4002#4037#0" expanded="true" />
+            <element signature="e#4222#4254#0" expanded="true" />
+            <element signature="e#4435#4463#0" expanded="true" />
+            <element signature="e#4647#4678#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/ChapterSelector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48238897">
-          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.5053599">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
           <folding />
         </state>
       </provider>
