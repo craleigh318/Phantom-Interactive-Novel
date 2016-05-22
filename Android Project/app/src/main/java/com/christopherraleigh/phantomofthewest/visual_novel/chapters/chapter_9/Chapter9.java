@@ -8,6 +8,8 @@ import com.christopherraleigh.phantomofthewest.visual_novel.chapters.Chapter;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.StoryChoice;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.StoryChoiceList;
 import com.christopherraleigh.phantomofthewest.visual_novel.serialization.event_flagging.EventFlagsCollection;
+import com.christopherraleigh.phantomofthewest.visual_novel.serialization.event_flagging.PhysicalEducationAnswer;
+import com.christopherraleigh.phantomofthewest.visual_novel.serialization.event_flagging.TalkWithCaitlyn;
 import com.christopherraleigh.phantomofthewest.visual_novel.serialization.event_flagging.VaNalKiss;
 
 import java.util.Arrays;
@@ -220,197 +222,159 @@ public class Chapter9 extends Chapter {
     private static StoryChoiceList ch9RangerMustDetainMe = new StoryChoiceList(R.drawable.kaden_encounters_ranger,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9RangerMustDetainMe, 9060)}));
 
-    private static StoryChoiceList Ch9IRemember() {
-        PotWVN vn = PotWVN.MainVN;
-        EventFlagsCollection flags = vn.EventFlags;
+    private static StoryChoiceList ch9IRemember() {
+        PotWVN vn = PotWVN.getMainVN();
+        EventFlagsCollection flags = vn.getEventFlags();
         int nextState;
-        PhysicalEducationAnswer answer = flags.Ch5AnsweredCoach;
+        PhysicalEducationAnswer answer = flags.getCh5AnsweredCoach();
         switch (answer) {
-            case PhysicalEducationAnswer.Run:
+            case Run:
                 nextState = 9061;
                 break;
-            case PhysicalEducationAnswer.Disarm:
+            case Disarm:
                 nextState = 9063;
                 break;
             default:
                 nextState = 9062;
                 break;
         }
-        return StoryChoiceList.FromResource("Kaden-Encounters-Ranger.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IRemember", nextState)});
+        return new StoryChoiceList(R.drawable.kaden_encounters_ranger,
+                Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IRemember, nextState)}));
     }
 
-    private static StoryChoiceList Ch9DoNotRunSaysRanger() {
-        return StoryChoiceList.FromResource("Kaden-Encounters-Ranger.png", new IStoryChoice[]{StoryChoice.FromResource("ch9DoNotRunSaysRanger", 9063)});
-    }
+    private static StoryChoiceList ch9DoNotRunSaysRanger = new StoryChoiceList(R.drawable.kaden_encounters_ranger,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9DoNotRunSaysRanger, 9063)}));
 
-    private static StoryChoiceList Ch9IFalselySurrender() {
-        return StoryChoiceList.FromResource("Ranger-Handcuffs-Kaden.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IFalselySurrender", 9063)});
-    }
+    private static StoryChoiceList ch9IFalselySurrender = new StoryChoiceList(R.drawable.ranger_handcuffs_kaden,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IFalselySurrender, 9063)}));
 
-    private static StoryChoiceList Ch9IStealRangersGun() {
-        return StoryChoiceList.FromResource("Kaden-Tentacles-Ranger.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IStealRangersGun", 9064)});
-    }
+    private static StoryChoiceList ch9IStealRangersGun = new StoryChoiceList(R.drawable.kaden_tentacles_ranger,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IStealRangersGun, 9064)}));
 
-    private static StoryChoiceList Ch9ICrushMagazine() {
-        return StoryChoiceList.FromResource("Kaden-Tentacles-Ranger.png", new IStoryChoice[]{StoryChoice.FromResource("ch9ICrushMagazine", 9065)});
-    }
+    private static StoryChoiceList ch9ICrushMagazine = new StoryChoiceList(R.drawable.kaden_tentacles_ranger,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9ICrushMagazine, 9065)}));
 
-    private static StoryChoiceList Ch9IReturnGun() {
-        return StoryChoiceList.FromResource("Kaden-Returns-Rifle.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IReturnGun", 9066)});
-    }
+    private static StoryChoiceList ch9IReturnGun = new StoryChoiceList(R.drawable.kaden_returns_rifle,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IReturnGun, 9066)}));
 
-    private static StoryChoiceList Ch9WhoAmI() {
-        return StoryChoiceList.FromResource("Kaden-Returns-Rifle.png", new IStoryChoice[]{StoryChoice.FromResource("ch9WhoAmI", 9067)});
-    }
+    private static StoryChoiceList ch9WhoAmI = new StoryChoiceList(R.drawable.kaden_returns_rifle,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9WhoAmI, 9067)}));
 
-    private static StoryChoiceList Ch9RangerKnowsMeOnTV() {
-        return StoryChoiceList.FromResource("I-am-the-Phantom-of-the-West.png", new IStoryChoice[]{StoryChoice.FromResource("ch9RangerKnowsMeOnTV", 9068)});
-    }
+    private static StoryChoiceList ch9RangerKnowsMeOnTV = new StoryChoiceList(R.drawable.i_am_the_phantom_of_the_west,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9RangerKnowsMeOnTV, 9068)}));
 
-    private static StoryChoiceList Ch9IWantToBeLeft() {
-        return StoryChoiceList.FromResource("I-am-the-Phantom-of-the-West.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IWantToBeLeft", 9069)});
-    }
+    private static StoryChoiceList ch9IWantToBeLeft = new StoryChoiceList(R.drawable.i_am_the_phantom_of_the_west,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IWantToBeLeft, 9069)}));
 
-    private static StoryChoiceList Ch9IAmPhantomOfWest() {
-        return StoryChoiceList.FromResource("I-am-the-Phantom-of-the-West.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IAmPhantomOfWest", 9070)});
-    }
+    private static StoryChoiceList ch9IAmPhantomOfWest = new StoryChoiceList(R.drawable.i_am_the_phantom_of_the_west,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IAmPhantomOfWest, 9070)}));
 
-    private static StoryChoiceList Ch9IFlyAboveContinent() {
-        return StoryChoiceList.FromResource("Phantom-above-Continent.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IFlyAboveContinent", 9071)});
-    }
+    private static StoryChoiceList ch9IFlyAboveContinent = new StoryChoiceList(R.drawable.phantom_above_continent,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IFlyAboveContinent, 9071)}));
 
-    private static StoryChoiceList Ch9IOverlookNewFerando() {
-        return StoryChoiceList.FromResource("Phantom-above-Continent.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IOverlookNewFerando", 9072)});
-    }
+    private static StoryChoiceList ch9IOverlookNewFerando = new StoryChoiceList(R.drawable.phantom_above_continent,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IOverlookNewFerando, 9072)}));
 
-    private static StoryChoiceList Ch9IOverlookPark() {
-        return StoryChoiceList.FromResource("Phantom-above-Continent.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IOverlookPark", 9073)});
-    }
+    private static StoryChoiceList ch9IOverlookPark = new StoryChoiceList(R.drawable.phantom_above_continent,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IOverlookPark, 9073)}));
 
-    private static StoryChoiceList Ch9IOverlookArcticon() {
-        return StoryChoiceList.FromResource("Phantom-above-Continent.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IOverlookArcticon", 9074)});
-    }
+    private static StoryChoiceList ch9IOverlookArcticon = new StoryChoiceList(R.drawable.phantom_above_continent,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IOverlookArcticon, 9074)}));
 
-    private static StoryChoiceList Ch9IOverlookHighway() {
-        return StoryChoiceList.FromResource("Phantom-above-Continent.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IOverlookHighway", 9075)});
-    }
+    private static StoryChoiceList ch9IOverlookHighway = new StoryChoiceList(R.drawable.phantom_above_continent,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IOverlookHighway, 9075)}));
 
-    private static StoryChoiceList Ch9IEnterArcticon() {
-        return StoryChoiceList.FromResource("Kaden-Flies-into-Vent.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IEnterArcticon", 9076)});
-    }
+    private static StoryChoiceList ch9IEnterArcticon = new StoryChoiceList(R.drawable.kaden_flies_into_vent,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IEnterArcticon, 9076)}));
 
-    private static StoryChoiceList Ch9IReachMyRoom() {
-        return StoryChoiceList.FromResource("Kaden-on-Bed.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IReachMyRoom", 9077)});
-    }
+    private static StoryChoiceList ch9IReachMyRoom = new StoryChoiceList(R.drawable.kaden_on_bed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IReachMyRoom, 9077)}));
 
-    private static StoryChoiceList Ch9IGoToLounge() {
-        return StoryChoiceList.FromResource("Kaden-Lab-Alone.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IGoToLounge", 9078)});
-    }
+    private static StoryChoiceList ch9IGoToLounge = new StoryChoiceList(R.drawable.kaden_lab_alone,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IGoToLounge, 9078)}));
 
-    private static StoryChoiceList Ch9CaitlynAndYukioCome() {
-        return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn-and-Yukio.png", new IStoryChoice[]{StoryChoice.FromResource("ch9CaitlynAndYukioCome", 9079)});
-    }
+    private static StoryChoiceList ch9CaitlynAndYukioCome = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn_and_yukio,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9CaitlynAndYukioCome, 9079)}));
 
-    private static StoryChoiceList Ch9ThereIAm() {
-        return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn-and-Yukio.png", new IStoryChoice[]{StoryChoice.FromResource("ch9ThereIAm", 9080)});
-    }
+    private static StoryChoiceList ch9ThereIAm = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn_and_yukio,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9ThereIAm, 9080)}));
 
-    private static StoryChoiceList Ch9CaitlynAndYukioWorried() {
-        return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn-and-Yukio.png", new IStoryChoice[]{StoryChoice.FromResource("ch9CaitlynAndYukioWorried", 9081)});
-    }
+    private static StoryChoiceList ch9CaitlynAndYukioWorried = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn_and_yukio,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9CaitlynAndYukioWorried, 9081)}));
 
-    private static StoryChoiceList Ch9YukioSawMeOnTV() {
-        return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn-and-Yukio.png", new IStoryChoice[]{StoryChoice.FromResource("ch9YukioSawMeOnTV", 9082)});
-    }
+    private static StoryChoiceList ch9YukioSawMeOnTV = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn_and_yukio,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9YukioSawMeOnTV, 9082)}));
 
-    private static StoryChoiceList Ch9DoesCaitlynRemember() {
-        return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn-and-Yukio.png", new IStoryChoice[]{StoryChoice.FromResource("ch9DoesCaitlynRemember", 9083)});
-    }
+    private static StoryChoiceList ch9DoesCaitlynRemember = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn_and_yukio,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9DoesCaitlynRemember, 9083)}));
 
-    private static StoryChoiceList Ch9CaitlynRemembersOfficer() {
-        return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn-and-Yukio.png", new IStoryChoice[]{StoryChoice.FromResource("ch9CaitlynRemembersOfficer", 9084)});
-    }
+    private static StoryChoiceList ch9CaitlynRemembersOfficer = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn_and_yukio,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9CaitlynRemembersOfficer, 9084)}));
 
-    private static StoryChoiceList Ch9IMayReappearOnTV() {
-        return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn-and-Yukio.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IMayReappearOnTV", 9085)});
-    }
+    private static StoryChoiceList ch9IMayReappearOnTV = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn_and_yukio,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IMayReappearOnTV, 9085)}));
 
-    private static StoryChoiceList Ch9ISummarizeToYukio() {
-        return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn-and-Yukio.png", new IStoryChoice[]{StoryChoice.FromResource("ch9ISummarizeToYukio", 9086)});
-    }
+    private static StoryChoiceList ch9ISummarizeToYukio = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn_and_yukio,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9ISummarizeToYukio, 9086)}));
 
-    private static StoryChoiceList Ch9YukioSimplifiesMySummary() {
-        return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn-and-Yukio.png", new IStoryChoice[]{StoryChoice.FromResource("ch9YukioSimplifiesMySummary", 9087)});
-    }
+    private static StoryChoiceList ch9YukioSimplifiesMySummary = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn_and_yukio,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9YukioSimplifiesMySummary, 9087)}));
 
-    private static StoryChoiceList Ch9YeahBasically() {
-        return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn-and-Yukio.png", new IStoryChoice[]{StoryChoice.FromResource("ch9YeahBasically", 9088)});
-    }
+    private static StoryChoiceList ch9YeahBasically = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn_and_yukio,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9YeahBasically, 9088)}));
 
-    private static StoryChoiceList Ch9IWaitForFoxtrot() {
-        PotWVN vn = PotWVN.MainVN;
-        EventFlagsCollection flags = vn.EventFlags;
+    private static StoryChoiceList ch9IWaitForFoxtrot() {
+        PotWVN vn = PotWVN.getMainVN();
+        EventFlagsCollection flags = vn.getEventFlags();
         int nextState;
-        bool metFoxtrot = (flags.Ch3TalkedWithCaitlyn != TalkWithCaitlyn.HasNotTalked);
+        boolean metFoxtrot = (flags.getCh3TalkedWithCaitlyn() != TalkWithCaitlyn.HasNotTalked);
         if (metFoxtrot) {
             nextState = 9089;
         } else {
             nextState = 9090;
         }
-        return StoryChoiceList.FromResource("Kaden-Talks-to-Caitlyn.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IWaitForFoxtrot", nextState)});
+        return new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+                Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IWaitForFoxtrot, nextState)}));
     }
 
-    private static StoryChoiceList Ch9IAlreadyMetFoxtrot() {
-        return StoryChoiceList.FromResource("Caitlyn-Brings-Foxtrot.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IAlreadyMetFoxtrot", 9091)});
-    }
+    private static StoryChoiceList ch9IAlreadyMetFoxtrot = new StoryChoiceList(R.drawable.caitlyn_brings_foxtrot,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IAlreadyMetFoxtrot, 9091)}));
 
-    private static StoryChoiceList Ch9IDidNotMeetFoxtrot() {
-        return StoryChoiceList.FromResource("Caitlyn-Brings-Foxtrot.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IDidNotMeetFoxtrot", 9091)});
-    }
+    private static StoryChoiceList ch9IDidNotMeetFoxtrot = new StoryChoiceList(R.drawable.caitlyn_brings_foxtrot,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IDidNotMeetFoxtrot, 9091)}));
 
-    private static StoryChoiceList Ch9FoxtrotToCheerMeUp() {
-        return StoryChoiceList.FromResource("Caitlyn-Brings-Foxtrot.png", new IStoryChoice[]{StoryChoice.FromResource("ch9FoxtrotToCheerMeUp", 9092)});
-    }
+    private static StoryChoiceList ch9FoxtrotToCheerMeUp = new StoryChoiceList(R.drawable.caitlyn_brings_foxtrot,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9FoxtrotToCheerMeUp, 9092)}));
 
-    private static StoryChoiceList Ch9FoxtrotStares() {
-        return StoryChoiceList.FromResource("Caitlyn-Brings-Foxtrot.png", new IStoryChoice[]{StoryChoice.FromResource("ch9FoxtrotStares", 9093)});
-    }
+    private static StoryChoiceList ch9FoxtrotStares = new StoryChoiceList(R.drawable.caitlyn_brings_foxtrot,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9FoxtrotStares, 9093)}));
 
-    private static StoryChoiceList Ch9ILeaveFoxtrot() {
-        return StoryChoiceList.FromResource("Caitlyn-Brings-Foxtrot.png", new IStoryChoice[]{new ILeaveFoxtrot(), new IWillPetFoxtrot()});
-    }
+    private static StoryChoiceList ch9ILeaveFoxtrot = new StoryChoiceList(R.drawable.caitlyn_brings_foxtrot,
+            Arrays.asList(new IStoryChoice[]{new ILeaveFoxtrot(), new IWillPetFoxtrot()}));
 
-    private static StoryChoiceList Ch9CaitlynShouldPutFoxtrotBack() {
-        return StoryChoiceList.FromResource("Caitlyn-Brings-Foxtrot.png", new IStoryChoice[]{StoryChoice.FromResource("ch9CaitlynShouldPutFoxtrotBack", 9099)});
-    }
+    private static StoryChoiceList ch9CaitlynShouldPutFoxtrotBack = new StoryChoiceList(R.drawable.caitlyn_brings_foxtrot,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9CaitlynShouldPutFoxtrotBack, 9099)}));
 
-    private static StoryChoiceList Ch9FoxtrotHisses() {
-        return StoryChoiceList.FromResource("Foxtrot-Hiss.png", new IStoryChoice[]{StoryChoice.FromResource("ch9FoxtrotHisses", 9099)});
-    }
+    private static StoryChoiceList ch9FoxtrotHisses = new StoryChoiceList(R.drawable.foxtrot_hiss,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9FoxtrotHisses, 9099)}));
 
-    private static StoryChoiceList Ch9FoxtrotAllowsPet() {
-        return StoryChoiceList.FromResource("Caitlyn-Brings-Foxtrot.png", new IStoryChoice[]{StoryChoice.FromResource("ch9FoxtrotAllowsPet", 9097)});
-    }
+    private static StoryChoiceList ch9FoxtrotAllowsPet = new StoryChoiceList(R.drawable.caitlyn_brings_foxtrot,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9FoxtrotAllowsPet, 9097)}));
 
-    private static StoryChoiceList Ch9IRubFoxtrot() {
-        return StoryChoiceList.FromResource("Foxtrot-Petted.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IRubFoxtrot", 9098)});
-    }
+    private static StoryChoiceList ch9IRubFoxtrot = new StoryChoiceList(R.drawable.foxtrot_petted,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IRubFoxtrot, 9098)}));
 
-    private static StoryChoiceList Ch9FoxtrotLicksMe() {
-        return StoryChoiceList.FromResource("Foxtrot-Licks-Kaden.png", new IStoryChoice[]{StoryChoice.FromResource("ch9FoxtrotLicksMe", 9100)});
-    }
+    private static StoryChoiceList ch9FoxtrotLicksMe = new StoryChoiceList(R.drawable.foxtrot_licks_kaden,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9FoxtrotLicksMe, 9100)}));
 
-    private static StoryChoiceList Ch9CaitlynFrownsAtFoxtrot() {
-        return StoryChoiceList.FromResource("Caitlyn-Brings-Foxtrot.png", new IStoryChoice[]{StoryChoice.FromResource("ch9CaitlynFrownsAtFoxtrot", 9100)});
-    }
+    private static StoryChoiceList ch9CaitlynFrownsAtFoxtrot = new StoryChoiceList(R.drawable.caitlyn_brings_foxtrot,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9CaitlynFrownsAtFoxtrot, 9100)}));
 
-    private static StoryChoiceList Ch9IReturnHome() {
-        return StoryChoiceList.FromResource("Kaden-on-Tram.png", new IStoryChoice[]{StoryChoice.FromResource("ch9IReturnHome", 9101)});
-    }
+    private static StoryChoiceList ch9IReturnHome = new StoryChoiceList(R.drawable.kaden_on_tram,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IReturnHome, 9101)}));
 
-    private static StoryChoiceList Ch9ISleep() {
-        return StoryChoiceList.FromResource("Kaden-Sleeps.png", new IStoryChoice[]{StoryChoice.FromResource("ch9ISleep", 10001)});
-    }
+    private static StoryChoiceList ch9ISleep = new StoryChoiceList(R.drawable.kaden_sleeps,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9ISleep, 10001)}));
 
     @Override
     public IStoryChoiceList goToState(int id) {
@@ -428,7 +392,7 @@ public class Chapter9 extends Chapter {
             case 9006:
                 return ch9IBoardBus;
             case 9007:
-                return ch9DidCarleighTalkAboutMathTest;
+                return ch9DidCarleighTalkAboutMathTest();
             case 9008:
                 return ch9CarleighScored10;
             case 9009:
@@ -488,7 +452,7 @@ public class Chapter9 extends Chapter {
             case 9036:
                 return ch9BekShtiiAndBaqerYell;
             case 9037:
-                return ch9GodsAreFlawed;
+                return ch9GodsAreFlawed();
             case 9038:
                 return ch9VaNalsKissIsRuined;
             case 9039:
@@ -534,7 +498,7 @@ public class Chapter9 extends Chapter {
             case 9059:
                 return ch9RangerMustDetainMe;
             case 9060:
-                return ch9IRemember;
+                return ch9IRemember();
             case 9061:
                 return ch9DoNotRunSaysRanger;
             case 9062:
@@ -590,7 +554,7 @@ public class Chapter9 extends Chapter {
             case 9087:
                 return ch9YeahBasically;
             case 9088:
-                return ch9IWaitForFoxtrot;
+                return ch9IWaitForFoxtrot();
             case 9089:
                 return ch9IAlreadyMetFoxtrot;
             case 9090:
