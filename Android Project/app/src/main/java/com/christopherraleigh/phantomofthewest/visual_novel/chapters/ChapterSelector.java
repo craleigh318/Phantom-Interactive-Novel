@@ -13,6 +13,7 @@ import com.christopherraleigh.phantomofthewest.visual_novel.chapters.chapter_14.
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.chapter_15.Chapter15;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.chapter_16.Chapter16;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.chapter_17.Chapter17;
+import com.christopherraleigh.phantomofthewest.visual_novel.chapters.chapter_18.Chapter18;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.chapter_2.Chapter2;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.chapter_3.Chapter3;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.chapter_4.Chapter4;
@@ -48,6 +49,7 @@ public class ChapterSelector {
                 put(15, new Chapter15());
                 put(16, new Chapter16());
                 put(17, new Chapter17());
+                put(18, new Chapter18());
             }};
 
     public static IStoryChoiceList goToState(int id) {

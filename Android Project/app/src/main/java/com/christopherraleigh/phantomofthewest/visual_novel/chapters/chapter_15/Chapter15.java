@@ -25,7 +25,7 @@ public class Chapter15 extends Chapter {
     private static StoryChoiceList ch15ISeeViolinist = new StoryChoiceList(R.drawable.jail_violinist,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15ISeeViolinist, 15004)}));
 
-    private static StoryChoiceList ch15ISeeBeggar = new StoryChoiceList(R.drawable.jail_violinist,
+    private static StoryChoiceList ch15ISeeBeggar = new StoryChoiceList(R.drawable.jail_beggar,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15ISeeBeggar, 15005)}));
 
     private static StoryChoiceList ch15ISeeAddict = new StoryChoiceList(R.drawable.jail_addict,

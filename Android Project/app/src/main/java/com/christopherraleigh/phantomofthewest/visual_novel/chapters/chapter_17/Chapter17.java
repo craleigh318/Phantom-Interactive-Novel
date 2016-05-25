@@ -201,7 +201,7 @@ public class Chapter17 extends Chapter {
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch17TentaclesRise, 17053)}));
 
     private static StoryChoiceList ch17TheyPossessCitizens = new StoryChoiceList(R.drawable.airport_evacuees_possessed,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch17TheyPossessCitizens, 17054)}));
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch17TheyPossessCitizens, 17121)}));
 
     private static StoryChoiceList ch17Hundreds = new StoryChoiceList(R.drawable.airport_evacuees_possessed,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch17Hundreds, 17055)}));
@@ -425,6 +425,9 @@ public class Chapter17 extends Chapter {
 
     private static StoryChoiceList ch17IdLoveTo = new StoryChoiceList(R.drawable.airport_kaden_and_sarah,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch17IdLoveTo, 18001)}));
+
+    private static StoryChoiceList ch17Dozens = new StoryChoiceList(R.drawable.airport_evacuees_possessed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch17Dozens, 17054)}));
 
     @Override
     public IStoryChoiceList goToState(int id) {
@@ -669,6 +672,8 @@ public class Chapter17 extends Chapter {
                 return ch17SarahAndIWillRoom;
             case 17120:
                 return ch17IdLoveTo;
+            case 17121:
+                return ch17Dozens;
         }
         return null;
     }
