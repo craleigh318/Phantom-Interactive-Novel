@@ -50,6 +50,132 @@ public class Chapter7 extends Chapter {
 
     private static StoryChoiceList ch7CanSezjaActNormal = new StoryChoiceList(R.drawable.sezja_hugs_elodie,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7CanSezjaActNormal, 7012)}));
+    private static StoryChoiceList ch7LostCreditForLoweringSelvesForLiterture = new StoryChoiceList(R.drawable.literature_results,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7LostCreditForLoweringSelvesForLiterture, 7016)}));
+    private static StoryChoiceList ch7FullCreditForLiterature = new StoryChoiceList(R.drawable.literature_results,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7FullCreditForLiterature, 7017)}));
+    private static StoryChoiceList ch7LostCreditForNotBeingOneselfForLiterature = new StoryChoiceList(R.drawable.literature_results,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7LostCreditForNotBeingOneselfForLiterature, 7016)}));
+    private static StoryChoiceList ch7LiteratureTeacherIsDrag = new StoryChoiceList(R.drawable.literature_results,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7LiteratureTeacherIsDrag, 7018)}));
+    private static StoryChoiceList ch7CarleighsGroupCheers = new StoryChoiceList(R.drawable.literature_results,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7CarleighsGroupCheers, 7018)}));
+    private static StoryChoiceList ch7SezjaIsQuiet = new StoryChoiceList(R.drawable.literature_results,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7SezjaIsQuiet, 7019)}));
+    private static StoryChoiceList ch7MorningPasses = new StoryChoiceList(R.drawable.elodie_at_desk,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7MorningPasses, 7020)}));
+    private static StoryChoiceList ch7LunchBegins = new StoryChoiceList(R.drawable.elodie_second_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7LunchBegins, 7021)}));
+    private static StoryChoiceList ch7IAcceptHangout = new StoryChoiceList(R.drawable.elodie_second_lunch,
+            Arrays.asList(new IStoryChoice[]{new IAcceptHangout(), new IDeclineHangout()}));
+    private static StoryChoiceList ch7BaqerBurpsAtMe = new StoryChoiceList(R.drawable.hewitt_burps,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7BaqerBurpsAtMe, 7023)}));
+    private static StoryChoiceList ch7BaqerIsJerk = new StoryChoiceList(R.drawable.elodie_angry,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7BaqerIsJerk, 7024)}));
+    private static StoryChoiceList ch7HewittActsDifferent = new StoryChoiceList(R.drawable.elodie_leaves_hewitt,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7HewittActsDifferent, 7025)}));
+    private static StoryChoiceList ch7VaNalCallsMe = new StoryChoiceList(R.drawable.elodie_leaves_hewitt,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalCallsMe, 7026)}));
+    private static StoryChoiceList ch7BaqerReturns = new StoryChoiceList(R.drawable.elodie_meets_vanal,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7BaqerReturns, 7027)}));
+    private static StoryChoiceList ch7BaqerNoticesVaNal = new StoryChoiceList(R.drawable.vanal_berates_baqer,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7BaqerNoticesVaNal, 7028)}));
+    private static StoryChoiceList ch7HewittDoesNotDeserveBaqer = new StoryChoiceList(R.drawable.vanal_berates_baqer,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7HewittDoesNotDeserveBaqer, 7029)}));
+    private static StoryChoiceList ch7VaNalDaresToWatchBaqer = new StoryChoiceList(R.drawable.vanal_berates_baqer,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalDaresToWatchBaqer, 7030)}));
+    private static StoryChoiceList ch7BaqerFollowedMe = new StoryChoiceList(R.drawable.vanal_berates_baqer,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7BaqerFollowedMe, 7031)}));
+    private static StoryChoiceList ch7BaqerGrabsMe = new StoryChoiceList(R.drawable.baqer_grabs_elodie,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7BaqerGrabsMe, 7032)}));
+    private static StoryChoiceList ch7VaNalPullsBaqer = new StoryChoiceList(R.drawable.vanal_pulls_baqer_from_hewitt,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalPullsBaqer, 7033)}));
+    private static StoryChoiceList ch7VaNalSeperatesBaqer = new StoryChoiceList(R.drawable.baqer_dispossess_hewitt,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalSeperatesBaqer, 7034)}));
+    private static StoryChoiceList ch7BaqerFlees = new StoryChoiceList(R.drawable.baqer_dispossess_hewitt,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7BaqerFlees, 7035)}));
+    private static StoryChoiceList ch7CanIPossessHewitt = new StoryChoiceList(R.drawable.vanal_consoles_elodie,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7CanIPossessHewitt, 7036)}));
+    private static StoryChoiceList ch7SureINod = new StoryChoiceList(R.drawable.vanal_consoles_elodie,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7SureINod, 7037)}));
+    private static StoryChoiceList ch7VaNalPossessesElodie = new StoryChoiceList(R.drawable.kaden_possesses_hewitt,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalPossessesElodie, 7038)}));
+    private static StoryChoiceList ch7WeBuyHam = new StoryChoiceList(R.drawable.hewitt_and_elodie_hold_hands,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7WeBuyHam, 7039)}));
+    private static StoryChoiceList ch7WeEatHam = new StoryChoiceList(R.drawable.hewitt_second_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7WeEatHam, 7040)}));
+    private static StoryChoiceList ch7VaNalIntoducesHerself = new StoryChoiceList(R.drawable.hewitt_second_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalIntoducesHerself, 7041)}));
+    private static StoryChoiceList ch7WhyWillIGoToRuins = new StoryChoiceList(R.drawable.hewitt_second_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7WhyWillIGoToRuins, 7042)}));
+    private static StoryChoiceList ch7GoingWillMakeSense = new StoryChoiceList(R.drawable.hewitt_second_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7GoingWillMakeSense, 7043)}));
+    private static StoryChoiceList ch7SezjaReturns = new StoryChoiceList(R.drawable.sezja_comes_to_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7SezjaReturns, 7044)}));
+    private static StoryChoiceList ch7SezjaCallsVaNalBestFriend = new StoryChoiceList(R.drawable.sezja_comes_to_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7SezjaCallsVaNalBestFriend, 7045)}));
+    private static StoryChoiceList ch7SezjaMistakesVaNal = new StoryChoiceList(R.drawable.sezja_comes_to_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7SezjaMistakesVaNal, 7046)}));
+    private static StoryChoiceList ch7IAmHere = new StoryChoiceList(R.drawable.sezja_comes_to_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7IAmHere, 7047)}));
+    private static StoryChoiceList ch7SezjaGreetsMeAgain = new StoryChoiceList(R.drawable.sezja_gasps_at_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7SezjaGreetsMeAgain, 7048)}));
+    private static StoryChoiceList ch7CanSezjaGetCarleighsTest = new StoryChoiceList(R.drawable.sezja_gasps_at_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7CanSezjaGetCarleighsTest, 7049)}));
+    private static StoryChoiceList ch7WhyDoIAskSezja = new StoryChoiceList(R.drawable.sezja_gasps_at_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7WhyDoIAskSezja, 7050)}));
+    private static StoryChoiceList ch7ITookCarleighsTest = new StoryChoiceList(R.drawable.sezja_gasps_at_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7ITookCarleighsTest, 7051)}));
+    private static StoryChoiceList ch7SezjaGetsNervousTalking = new StoryChoiceList(R.drawable.sezja_gasps_at_lunch,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7SezjaGetsNervousTalking, 7052)}));
+    private static StoryChoiceList ch7IScore10 = new StoryChoiceList(R.drawable.carleigh_gets_math_grade,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7IScore10, 7057)}));
+    private static StoryChoiceList ch7IScore9 = new StoryChoiceList(R.drawable.carleigh_gets_math_grade,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7IScore9, 7057)}));
+    private static StoryChoiceList ch7IScore8 = new StoryChoiceList(R.drawable.carleigh_gets_math_grade,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7IScore8, 7057)}));
+    private static StoryChoiceList ch7IScore7 = new StoryChoiceList(R.drawable.carleigh_gets_math_grade,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7IScore7, 7057)}));
+    private static StoryChoiceList ch7AfternoonPasses = new StoryChoiceList(R.drawable.hewitt_at_desk,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7AfternoonPasses, 7058)}));
+    private static StoryChoiceList ch7VaNalEntersDorm = new StoryChoiceList(R.drawable.vanal_enters_bedroom,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalEntersDorm, 7059)}));
+    private static StoryChoiceList ch7ElodieIsVaNal = new StoryChoiceList(R.drawable.vanal_enters_bedroom,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7ElodieIsVaNal, 7060)}));
+    private static StoryChoiceList ch7HowDidVaNalEnter = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7HowDidVaNalEnter, 7061)}));
+    private static StoryChoiceList ch7VaNalPitiesMe = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalPitiesMe, 7062)}));
+    private static StoryChoiceList ch7WhatDoesVaNalMean = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7WhatDoesVaNalMean, 7063)}));
+    private static StoryChoiceList ch7ISeekCompanionship = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7ISeekCompanionship, 7064)}));
+    private static StoryChoiceList ch7VaNalStrokesMe = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalStrokesMe, 7065)}));
+    private static StoryChoiceList ch7WhatIsWrong = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7WhatIsWrong, 7067)}));
+    private static StoryChoiceList ch7WrongAge = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7WrongAge, 7068)}));
+    private static StoryChoiceList ch7IAmHewitt = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7IAmHewitt, 7069)}));
+    private static StoryChoiceList ch7VaNalDisintrestsMe = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalDisintrestsMe, 7070)}));
+    private static StoryChoiceList ch7VaNalAdmitsDisrespect = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalAdmitsDisrespect, 7075)}));
+    private static StoryChoiceList ch7HeartMustBeCared = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7HeartMustBeCared, 7072)}));
+    private static StoryChoiceList ch7OKINod = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7OKINod, 7073)}));
+    private static StoryChoiceList ch7VaNalKissesMe = new StoryChoiceList(R.drawable.elodie_kisses_hewitt,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalKissesMe, 7074)}));
+    private static StoryChoiceList ch7VaNalLeavesBed = new StoryChoiceList(R.drawable.elodie_kisses_hewitt,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalLeavesBed, 7075)}));
+    private static StoryChoiceList ch7GodsWillDispossess = new StoryChoiceList(R.drawable.vanal_leaves_bedroom,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7GodsWillDispossess, 7076)}));
+    private static StoryChoiceList ch7VaNalLeavesDorm = new StoryChoiceList(R.drawable.vanal_leaves_bedroom,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalLeavesDorm, 7077)}));
+    private static StoryChoiceList ch7ISleep = new StoryChoiceList(R.drawable.hewitt_sleeps,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7ISleep, 8001)}));
 
     private static StoryChoiceList ch7IReturnToLiteratureClass() {
         PotWVN vn = PotWVN.getMainVN();
@@ -72,123 +198,6 @@ public class Chapter7 extends Chapter {
                         ch7IReturnToLiteratureClass, nextState)}));
     }
 
-    private static StoryChoiceList ch7LostCreditForLoweringSelvesForLiterture = new StoryChoiceList(R.drawable.literature_results,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7LostCreditForLoweringSelvesForLiterture, 7016)}));
-
-    private static StoryChoiceList ch7FullCreditForLiterature = new StoryChoiceList(R.drawable.literature_results,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7FullCreditForLiterature, 7017)}));
-
-    private static StoryChoiceList ch7LostCreditForNotBeingOneselfForLiterature = new StoryChoiceList(R.drawable.literature_results,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7LostCreditForNotBeingOneselfForLiterature, 7016)}));
-
-    private static StoryChoiceList ch7LiteratureTeacherIsDrag = new StoryChoiceList(R.drawable.literature_results,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7LiteratureTeacherIsDrag, 7018)}));
-
-    private static StoryChoiceList ch7CarleighsGroupCheers = new StoryChoiceList(R.drawable.literature_results,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7CarleighsGroupCheers, 7018)}));
-
-    private static StoryChoiceList ch7SezjaIsQuiet = new StoryChoiceList(R.drawable.literature_results,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7SezjaIsQuiet, 7019)}));
-
-    private static StoryChoiceList ch7MorningPasses = new StoryChoiceList(R.drawable.elodie_at_desk,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7MorningPasses, 7020)}));
-
-    private static StoryChoiceList ch7LunchBegins = new StoryChoiceList(R.drawable.elodie_second_lunch,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7LunchBegins, 7021)}));
-
-    private static StoryChoiceList ch7IAcceptHangout = new StoryChoiceList(R.drawable.elodie_second_lunch,
-            Arrays.asList(new IStoryChoice[]{new IAcceptHangout(), new IDeclineHangout()}));
-
-    private static StoryChoiceList ch7BaqerBurpsAtMe = new StoryChoiceList(R.drawable.hewitt_burps,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7BaqerBurpsAtMe, 7023)}));
-
-    private static StoryChoiceList ch7BaqerIsJerk = new StoryChoiceList(R.drawable.elodie_angry,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7BaqerIsJerk, 7024)}));
-
-    private static StoryChoiceList ch7HewittActsDifferent = new StoryChoiceList(R.drawable.elodie_leaves_hewitt,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7HewittActsDifferent, 7025)}));
-
-    private static StoryChoiceList ch7VaNalCallsMe = new StoryChoiceList(R.drawable.elodie_leaves_hewitt,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalCallsMe, 7026)}));
-
-    private static StoryChoiceList ch7BaqerReturns = new StoryChoiceList(R.drawable.elodie_meets_vanal,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7BaqerReturns, 7027)}));
-
-    private static StoryChoiceList ch7BaqerNoticesVaNal = new StoryChoiceList(R.drawable.vanal_berates_baqer,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7BaqerNoticesVaNal, 7028)}));
-
-    private static StoryChoiceList ch7HewittDoesNotDeserveBaqer = new StoryChoiceList(R.drawable.vanal_berates_baqer,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7HewittDoesNotDeserveBaqer, 7029)}));
-
-    private static StoryChoiceList ch7VaNalDaresToWatchBaqer = new StoryChoiceList(R.drawable.vanal_berates_baqer,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalDaresToWatchBaqer, 7030)}));
-
-    private static StoryChoiceList ch7BaqerFollowedMe = new StoryChoiceList(R.drawable.vanal_berates_baqer,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7BaqerFollowedMe, 7031)}));
-
-    private static StoryChoiceList ch7BaqerGrabsMe = new StoryChoiceList(R.drawable.baqer_grabs_elodie,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7BaqerGrabsMe, 7032)}));
-
-    private static StoryChoiceList ch7VaNalPullsBaqer = new StoryChoiceList(R.drawable.vanal_pulls_baqer_from_hewitt,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalPullsBaqer, 7033)}));
-
-    private static StoryChoiceList ch7VaNalSeperatesBaqer = new StoryChoiceList(R.drawable.baqer_dispossess_hewitt,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalSeperatesBaqer, 7034)}));
-
-    private static StoryChoiceList ch7BaqerFlees = new StoryChoiceList(R.drawable.baqer_dispossess_hewitt,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7BaqerFlees, 7035)}));
-
-    private static StoryChoiceList ch7CanIPossessHewitt = new StoryChoiceList(R.drawable.vanal_consoles_elodie,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7CanIPossessHewitt, 7036)}));
-
-    private static StoryChoiceList ch7SureINod = new StoryChoiceList(R.drawable.vanal_consoles_elodie,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7SureINod, 7037)}));
-
-    private static StoryChoiceList ch7VaNalPossessesElodie = new StoryChoiceList(R.drawable.kaden_possesses_hewitt,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalPossessesElodie, 7038)}));
-
-    private static StoryChoiceList ch7WeBuyHam = new StoryChoiceList(R.drawable.hewitt_and_elodie_hold_hands,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7WeBuyHam, 7039)}));
-
-    private static StoryChoiceList ch7WeEatHam = new StoryChoiceList(R.drawable.hewitt_second_lunch,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7WeEatHam, 7040)}));
-
-    private static StoryChoiceList ch7VaNalIntoducesHerself = new StoryChoiceList(R.drawable.hewitt_second_lunch,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalIntoducesHerself, 7041)}));
-
-    private static StoryChoiceList ch7WhyWillIGoToRuins = new StoryChoiceList(R.drawable.hewitt_second_lunch,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7WhyWillIGoToRuins, 7042)}));
-
-    private static StoryChoiceList ch7GoingWillMakeSense = new StoryChoiceList(R.drawable.hewitt_second_lunch,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7GoingWillMakeSense, 7043)}));
-
-    private static StoryChoiceList ch7SezjaReturns = new StoryChoiceList(R.drawable.sezja_comes_to_lunch,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7SezjaReturns, 7044)}));
-
-    private static StoryChoiceList ch7SezjaCallsVaNalBestFriend = new StoryChoiceList(R.drawable.sezja_comes_to_lunch,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7SezjaCallsVaNalBestFriend, 7045)}));
-
-    private static StoryChoiceList ch7SezjaMistakesVaNal = new StoryChoiceList(R.drawable.sezja_comes_to_lunch,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7SezjaMistakesVaNal, 7046)}));
-
-    private static StoryChoiceList ch7IAmHere = new StoryChoiceList(R.drawable.sezja_comes_to_lunch,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7IAmHere, 7047)}));
-
-    private static StoryChoiceList ch7SezjaGreetsMeAgain = new StoryChoiceList(R.drawable.sezja_gasps_at_lunch,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7SezjaGreetsMeAgain, 7048)}));
-
-    private static StoryChoiceList ch7CanSezjaGetCarleighsTest = new StoryChoiceList(R.drawable.sezja_gasps_at_lunch,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7CanSezjaGetCarleighsTest, 7049)}));
-
-    private static StoryChoiceList ch7WhyDoIAskSezja = new StoryChoiceList(R.drawable.sezja_gasps_at_lunch,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7WhyDoIAskSezja, 7050)}));
-
-    private static StoryChoiceList ch7ITookCarleighsTest = new StoryChoiceList(R.drawable.sezja_gasps_at_lunch,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7ITookCarleighsTest, 7051)}));
-
-    private static StoryChoiceList ch7SezjaGetsNervousTalking = new StoryChoiceList(R.drawable.sezja_gasps_at_lunch,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7SezjaGetsNervousTalking, 7052)}));
-
     private static StoryChoiceList ch7IGetCarleighsTest() {
         PotWVN vn = PotWVN.getMainVN();
         EventFlagsCollection flags = vn.getEventFlags();
@@ -207,42 +216,6 @@ public class Chapter7 extends Chapter {
                 Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7IGetCarleighsTest, nextState)}));
     }
 
-    private static StoryChoiceList ch7IScore10 = new StoryChoiceList(R.drawable.carleigh_gets_math_grade,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7IScore10, 7057)}));
-
-    private static StoryChoiceList ch7IScore9 = new StoryChoiceList(R.drawable.carleigh_gets_math_grade,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7IScore9, 7057)}));
-
-    private static StoryChoiceList ch7IScore8 = new StoryChoiceList(R.drawable.carleigh_gets_math_grade,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7IScore8, 7057)}));
-
-    private static StoryChoiceList ch7IScore7 = new StoryChoiceList(R.drawable.carleigh_gets_math_grade,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7IScore7, 7057)}));
-
-    private static StoryChoiceList ch7AfternoonPasses = new StoryChoiceList(R.drawable.hewitt_at_desk,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7AfternoonPasses, 7058)}));
-
-    private static StoryChoiceList ch7VaNalEntersDorm = new StoryChoiceList(R.drawable.vanal_enters_bedroom,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalEntersDorm, 7059)}));
-
-    private static StoryChoiceList ch7ElodieIsVaNal = new StoryChoiceList(R.drawable.vanal_enters_bedroom,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7ElodieIsVaNal, 7060)}));
-
-    private static StoryChoiceList ch7HowDidVaNalEnter = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7HowDidVaNalEnter, 7061)}));
-
-    private static StoryChoiceList ch7VaNalPitiesMe = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalPitiesMe, 7062)}));
-
-    private static StoryChoiceList ch7WhatDoesVaNalMean = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7WhatDoesVaNalMean, 7063)}));
-
-    private static StoryChoiceList ch7ISeekCompanionship = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7ISeekCompanionship, 7064)}));
-
-    private static StoryChoiceList ch7VaNalStrokesMe = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalStrokesMe, 7065)}));
-
     private static StoryChoiceList ch7KissVaNalDecision() {
         ArrayList<IStoryChoice> nextPages = new ArrayList<>();
         PotWVN vn = PotWVN.getMainVN();
@@ -254,42 +227,6 @@ public class Chapter7 extends Chapter {
         StoryChoiceList newList = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed, nextPages);
         return newList;
     }
-
-    private static StoryChoiceList ch7WhatIsWrong = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7WhatIsWrong, 7067)}));
-
-    private static StoryChoiceList ch7WrongAge = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7WrongAge, 7068)}));
-
-    private static StoryChoiceList ch7IAmHewitt = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7IAmHewitt, 7069)}));
-
-    private static StoryChoiceList ch7VaNalDisintrestsMe = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalDisintrestsMe, 7070)}));
-
-    private static StoryChoiceList ch7VaNalAdmitsDisrespect = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalAdmitsDisrespect, 7075)}));
-
-    private static StoryChoiceList ch7HeartMustBeCared = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7HeartMustBeCared, 7072)}));
-
-    private static StoryChoiceList ch7OKINod = new StoryChoiceList(R.drawable.elodie_by_hewitt_bed,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7OKINod, 7073)}));
-
-    private static StoryChoiceList ch7VaNalKissesMe = new StoryChoiceList(R.drawable.elodie_kisses_hewitt,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalKissesMe, 7074)}));
-
-    private static StoryChoiceList ch7VaNalLeavesBed = new StoryChoiceList(R.drawable.elodie_kisses_hewitt,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalLeavesBed, 7075)}));
-
-    private static StoryChoiceList ch7GodsWillDispossess = new StoryChoiceList(R.drawable.vanal_leaves_bedroom,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7GodsWillDispossess, 7076)}));
-
-    private static StoryChoiceList ch7VaNalLeavesDorm = new StoryChoiceList(R.drawable.vanal_leaves_bedroom,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7VaNalLeavesDorm, 7077)}));
-
-    private static StoryChoiceList ch7ISleep = new StoryChoiceList(R.drawable.hewitt_sleeps,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch7ISleep, 8001)}));
 
     @Override
     public IStoryChoiceList goToState(int id) {

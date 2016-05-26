@@ -84,6 +84,14 @@ public class Chapter16 extends Chapter {
 
     private static StoryChoiceList ch16WhatDidYouSay = new StoryChoiceList(R.drawable.kaden_and_rebecca_at_airport,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch16WhatDidYouSay, 16024)}));
+    private static StoryChoiceList ch16BeSuccessful = new StoryChoiceList(R.drawable.kaden_and_rebecca_at_airport,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch16BeSuccessful, 16027)}));
+    private static StoryChoiceList ch16FindSomeoneElse = new StoryChoiceList(R.drawable.kaden_and_rebecca_at_airport,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch16FindSomeoneElse, 16027)}));
+    private static StoryChoiceList ch16DoThatOK = new StoryChoiceList(R.drawable.kaden_and_rebecca_at_airport,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch16DoThatOK, 16028)}));
+    private static StoryChoiceList ch16RebeccaAndIHugged = new StoryChoiceList(R.drawable.kaden_and_rebecca_hug_at_airport,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch16RebeccaAndIHugged, 17001)}));
 
     private static StoryChoiceList ch16IAmStillBadWithPeople() {
         PotWVN vn = PotWVN.getMainVN();
@@ -99,18 +107,6 @@ public class Chapter16 extends Chapter {
                 Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.
                         ch16IAmStillBadWithPeople, nextState)}));
     }
-
-    private static StoryChoiceList ch16BeSuccessful = new StoryChoiceList(R.drawable.kaden_and_rebecca_at_airport,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch16BeSuccessful, 16027)}));
-
-    private static StoryChoiceList ch16FindSomeoneElse = new StoryChoiceList(R.drawable.kaden_and_rebecca_at_airport,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch16FindSomeoneElse, 16027)}));
-
-    private static StoryChoiceList ch16DoThatOK = new StoryChoiceList(R.drawable.kaden_and_rebecca_at_airport,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch16DoThatOK, 16028)}));
-
-    private static StoryChoiceList ch16RebeccaAndIHugged = new StoryChoiceList(R.drawable.kaden_and_rebecca_hug_at_airport,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch16RebeccaAndIHugged, 17001)}));
 
     @Override
     public IStoryChoiceList goToState(int id) {

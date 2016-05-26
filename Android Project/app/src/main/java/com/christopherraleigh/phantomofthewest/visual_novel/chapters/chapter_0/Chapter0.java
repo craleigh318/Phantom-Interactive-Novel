@@ -4,13 +4,9 @@ import com.christopherraleigh.phantomofthewest.R;
 import com.christopherraleigh.phantomofthewest.visual_novel.IStoryChoice;
 import com.christopherraleigh.phantomofthewest.visual_novel.IStoryChoiceList;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.Chapter;
-import com.christopherraleigh.phantomofthewest.visual_novel.chapters.StoryChoice;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.StoryChoiceList;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by christopherraleigh on 2016-04-19.

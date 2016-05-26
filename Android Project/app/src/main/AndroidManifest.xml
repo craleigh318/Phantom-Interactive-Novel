@@ -19,8 +19,7 @@
         </activity>
         <activity
             android:name=".OptionsMenuActivity"
-            android:screenOrientation="portrait"
-            ></activity>
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

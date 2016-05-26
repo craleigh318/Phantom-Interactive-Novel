@@ -3,11 +3,9 @@ package com.christopherraleigh.phantomofthewest.visual_novel;
 import android.content.Context;
 
 import com.christopherraleigh.phantomofthewest.data_management.DataManager;
-import com.christopherraleigh.phantomofthewest.visual_novel.chapters.*;
-
-import com.christopherraleigh.phantomofthewest.visual_novel.serialization.*;
-
-import com.christopherraleigh.phantomofthewest.visual_novel.serialization.event_flagging.*;
+import com.christopherraleigh.phantomofthewest.visual_novel.chapters.ChapterSelector;
+import com.christopherraleigh.phantomofthewest.visual_novel.serialization.GameState;
+import com.christopherraleigh.phantomofthewest.visual_novel.serialization.event_flagging.EventFlagsCollection;
 
 import java.lang.ref.WeakReference;
 import java.util.Observable;
@@ -17,15 +15,21 @@ import java.util.Observable;
  */
 public class PotWVN extends Observable {
 
+    private static final int STORY_START = 1001;
+    private static final int TUTORIAL_START = 1;
     private static PotWVN mainVN = null;
+    private WeakReference<Context> context;
+    private IStoryChoiceList currentChoices = null;
+    private EventFlagsCollection eventFlags = null;
+    private int id = 0;
+
+    private PotWVN(Context context) {
+        this.context = new WeakReference<>(context);
+    }
 
     public static PotWVN getMainVN() {
         return mainVN;
     }
-
-    private static final int STORY_START = 1001;
-
-    private static final int TUTORIAL_START = 1;
 
     public static void startUp(Context c) {
         mainVN = new PotWVN(c);
@@ -37,16 +41,13 @@ public class PotWVN extends Observable {
         }
     }
 
-    private WeakReference<Context> context;
-
-    private IStoryChoiceList currentChoices = null;
-
-    private EventFlagsCollection eventFlags = null;
-
-    private int id = 0;
-
     public IStoryChoiceList getCurrentChoices() {
         return currentChoices;
+    }
+
+    private void setCurrentChoices(IStoryChoiceList choices) {
+        currentChoices = choices;
+        prepareToNotifyObservers();
     }
 
     public EventFlagsCollection getEventFlags() {
@@ -77,10 +78,6 @@ public class PotWVN extends Observable {
     public GameState saveGame() {
         GameState gs = new GameState(eventFlags, id);
         return gs;
-    }
-
-    private PotWVN(Context context) {
-        this.context = new WeakReference<>(context);
     }
 
     private void autoSave() {
@@ -117,11 +114,6 @@ public class PotWVN extends Observable {
         setChanged();
         notifyObservers(this);
         playAudio();
-    }
-
-    private void setCurrentChoices(IStoryChoiceList choices) {
-        currentChoices = choices;
-        prepareToNotifyObservers();
     }
 
     private void stopAudio() {

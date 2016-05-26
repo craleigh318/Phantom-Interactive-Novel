@@ -1,9 +1,5 @@
 package com.christopherraleigh.phantomofthewest.visual_novel.chapters;
 
-import com.christopherraleigh.phantomofthewest.visual_novel.IStoryChoiceList;
-
-import java.util.Map;
-
 /**
  * Created by christopherraleigh on 2016-04-19.
  */

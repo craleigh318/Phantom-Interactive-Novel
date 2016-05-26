@@ -194,6 +194,62 @@ public class Chapter3 extends Chapter {
 
     private static StoryChoiceList ch3BekShtiiLeaves = new StoryChoiceList(R.drawable.kaden_on_bed,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3BekShtiiLeaves, 3060)}));
+    private static StoryChoiceList ch3CaitlynPlaysWithFoxtrot = new StoryChoiceList(R.drawable.foxtrot_intro,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynPlaysWithFoxtrot, 3062)}));
+    private static StoryChoiceList ch3CaitlynAsksIfIWasEmbarrassed = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynAsksIfIWasEmbarrassed, 3064)}));
+    private static StoryChoiceList ch3IAdmitEmbarrassment = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3IAdmitEmbarrassment, 3065)}));
+    private static StoryChoiceList ch3CaitlynHugsMe = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynHugsMe, 3066)}));
+    private static StoryChoiceList ch3CanCaitlynAskPersonally = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CanCaitlynAskPersonally, 3067)}));
+    private static StoryChoiceList ch3IReplyOK = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3IReplyOK, 3068)}));
+    private static StoryChoiceList ch3WouldCaitlynBeGoodMother = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3WouldCaitlynBeGoodMother, 3069)}));
+    private static StoryChoiceList ch3IThink = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3IThink, 3070)}));
+    private static StoryChoiceList ch3CaitlynWouldBeGoodMother = new StoryChoiceList(R.drawable
+            .kaden_talks_to_caitlyn, Arrays.asList(new IStoryChoice[]{new CaitlynWouldBeGoodMother(), new CaitlynMightBeGoodMother()}));
+    private static StoryChoiceList ch3CaitlynThanksMe = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynThanksMe, 3073)}));
+    private static StoryChoiceList ch3CaitlynAdmitsGoodIdea = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynAdmitsGoodIdea, 3073)}));
+    private static StoryChoiceList ch3CaitlynJustifiesMotherhood = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynJustifiesMotherhood, 3085)}));
+    private static StoryChoiceList ch3HowDidCaitlynFeelPossession = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3HowDidCaitlynFeelPossession, 3075)}));
+    private static StoryChoiceList ch3CaitlynFeltLightheaded = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynFeltLightheaded, 3076)}));
+    private static StoryChoiceList ch3IAscertainCaitlynsUnconciousness = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3IAscertainCaitlynsUnconciousness, 3077)}));
+    private static StoryChoiceList ch3CaitlynOnlySlept = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynOnlySlept, 3078)}));
+    private static StoryChoiceList ch3IThankCaitlyn = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3IThankCaitlyn, 3079)}));
+    private static StoryChoiceList ch3CaitlynAcceptsThanks = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynAcceptsThanks, 3080)}));
+    private static StoryChoiceList ch3HowDidIFeelDuringPossession = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3HowDidIFeelDuringPossession, 3081)}));
+    private static StoryChoiceList ch3IEnjoyedPossession = new StoryChoiceList(R.drawable.
+            kaden_talks_to_caitlyn, Arrays.asList(new IStoryChoice[]{new IEnjoyedPossession(), new PossessionFeltWeird()}));
+    private static StoryChoiceList ch3CaitlynLikesBeingClose = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynLikesBeingClose, 3084)}));
+    private static StoryChoiceList ch3CaitlynFeltWeird = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynFeltWeird, 3084)}));
+    private static StoryChoiceList ch3WasCaitlynsQuestionWeird = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3WasCaitlynsQuestionWeird, 3085)}));
+    private static StoryChoiceList ch3ILikeTalkingWithCaitlyn = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3ILikeTalkingWithCaitlyn, 3060)}));
+    private static StoryChoiceList ch3YukioWorks = new StoryChoiceList(R.drawable.kaden_talks_to_yukio,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3YukioWorks, 3087)}));
+    private static StoryChoiceList ch3IsYukioUnimpressed = new StoryChoiceList(R.drawable.kaden_talks_to_yukio,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3IsYukioUnimpressed, 3088)}));
+    private static StoryChoiceList ch3YukioLecturesMe = new StoryChoiceList(R.drawable.kaden_talks_to_yukio,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3YukioLecturesMe, 3089)}));
+    private static StoryChoiceList ch3ITakeCharge = new StoryChoiceList(R.drawable.kaden_talks_to_yukio,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3ITakeCharge, 3060)}));
 
     private static StoryChoiceList ch3EndDecision() {
         ArrayList<IStoryChoice> nextPages = new ArrayList<>();
@@ -210,9 +266,6 @@ public class Chapter3 extends Chapter {
         return newList;
     }
 
-    private static StoryChoiceList ch3CaitlynPlaysWithFoxtrot = new StoryChoiceList(R.drawable.foxtrot_intro,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynPlaysWithFoxtrot, 3062)}));
-
     private static StoryChoiceList ch3IAmAllRight() {
         PotWVN vn = PotWVN.getMainVN();
         EventFlagsCollection flags = vn.getEventFlags();
@@ -225,87 +278,6 @@ public class Chapter3 extends Chapter {
         return new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn, Arrays.asList(new
                 IStoryChoice[]{new StoryChoice(R.string.ch3IAmAllRight, nextState)}));
     }
-
-    private static StoryChoiceList ch3CaitlynAsksIfIWasEmbarrassed = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynAsksIfIWasEmbarrassed, 3064)}));
-
-    private static StoryChoiceList ch3IAdmitEmbarrassment = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3IAdmitEmbarrassment, 3065)}));
-
-    private static StoryChoiceList ch3CaitlynHugsMe = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynHugsMe, 3066)}));
-
-    private static StoryChoiceList ch3CanCaitlynAskPersonally = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CanCaitlynAskPersonally, 3067)}));
-
-    private static StoryChoiceList ch3IReplyOK = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3IReplyOK, 3068)}));
-
-    private static StoryChoiceList ch3WouldCaitlynBeGoodMother = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3WouldCaitlynBeGoodMother, 3069)}));
-
-    private static StoryChoiceList ch3IThink = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3IThink, 3070)}));
-
-    private static StoryChoiceList ch3CaitlynWouldBeGoodMother = new StoryChoiceList(R.drawable
-            .kaden_talks_to_caitlyn, Arrays.asList(new IStoryChoice[]{new CaitlynWouldBeGoodMother(), new CaitlynMightBeGoodMother()}));
-
-    private static StoryChoiceList ch3CaitlynThanksMe = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynThanksMe, 3073)}));
-
-    private static StoryChoiceList ch3CaitlynAdmitsGoodIdea = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynAdmitsGoodIdea, 3073)}));
-
-    private static StoryChoiceList ch3CaitlynJustifiesMotherhood = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynJustifiesMotherhood, 3085)}));
-
-    private static StoryChoiceList ch3HowDidCaitlynFeelPossession = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3HowDidCaitlynFeelPossession, 3075)}));
-
-    private static StoryChoiceList ch3CaitlynFeltLightheaded = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynFeltLightheaded, 3076)}));
-
-    private static StoryChoiceList ch3IAscertainCaitlynsUnconciousness = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3IAscertainCaitlynsUnconciousness, 3077)}));
-
-    private static StoryChoiceList ch3CaitlynOnlySlept = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynOnlySlept, 3078)}));
-
-    private static StoryChoiceList ch3IThankCaitlyn = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3IThankCaitlyn, 3079)}));
-
-    private static StoryChoiceList ch3CaitlynAcceptsThanks = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynAcceptsThanks, 3080)}));
-
-    private static StoryChoiceList ch3HowDidIFeelDuringPossession = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3HowDidIFeelDuringPossession, 3081)}));
-
-    private static StoryChoiceList ch3IEnjoyedPossession = new StoryChoiceList(R.drawable.
-            kaden_talks_to_caitlyn, Arrays.asList(new IStoryChoice[]{new IEnjoyedPossession(), new PossessionFeltWeird()}));
-
-    private static StoryChoiceList ch3CaitlynLikesBeingClose = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynLikesBeingClose, 3084)}));
-
-    private static StoryChoiceList ch3CaitlynFeltWeird = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3CaitlynFeltWeird, 3084)}));
-
-    private static StoryChoiceList ch3WasCaitlynsQuestionWeird = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3WasCaitlynsQuestionWeird, 3085)}));
-
-    private static StoryChoiceList ch3ILikeTalkingWithCaitlyn = new StoryChoiceList(R.drawable.kaden_talks_to_caitlyn,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3ILikeTalkingWithCaitlyn, 3060)}));
-
-    private static StoryChoiceList ch3YukioWorks = new StoryChoiceList(R.drawable.kaden_talks_to_yukio,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3YukioWorks, 3087)}));
-
-    private static StoryChoiceList ch3IsYukioUnimpressed = new StoryChoiceList(R.drawable.kaden_talks_to_yukio,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3IsYukioUnimpressed, 3088)}));
-
-    private static StoryChoiceList ch3YukioLecturesMe = new StoryChoiceList(R.drawable.kaden_talks_to_yukio,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3YukioLecturesMe, 3089)}));
-
-    private static StoryChoiceList ch3ITakeCharge = new StoryChoiceList(R.drawable.kaden_talks_to_yukio,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch3ITakeCharge, 3060)}));
 
     @Override
     public IStoryChoiceList goToState(int id) {

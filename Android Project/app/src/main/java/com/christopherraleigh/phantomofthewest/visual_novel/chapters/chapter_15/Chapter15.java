@@ -132,6 +132,52 @@ public class Chapter15 extends Chapter {
 
     private static StoryChoiceList ch15SpiritsSurroundMe = new StoryChoiceList(R.drawable.fire_spirits_surround_worker,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15SpiritsSurroundMe, 15040)}));
+    private static StoryChoiceList ch15IDeathByOverconfidence = new StoryChoiceList(R.drawable.worker_leans_over_fire_spirit,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IDeathByOverconfidence, 15043)}));
+    private static StoryChoiceList ch15KeptYouWaiting = new StoryChoiceList(R.drawable.worker_leans_over_fire_spirit,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15KeptYouWaiting, 15043)}));
+    private static StoryChoiceList ch15IStrikeSpirit = new StoryChoiceList(R.drawable.worker_kills_fire_spirit,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IStrikeSpirit, 15044)}));
+    private static StoryChoiceList ch15ILeaveSpirits = new StoryChoiceList(R.drawable.construction_worker_climbs_with_pickaxe,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15ILeaveSpirits, 15045)}));
+    private static StoryChoiceList ch15SchoolBusNeedsHelp = new StoryChoiceList(R.drawable.flooded_school_bus_below,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15SchoolBusNeedsHelp, 15046)}));
+    private static StoryChoiceList ch15IDispossessConstructor = new StoryChoiceList(R.drawable.kaden_dispossesses_construction_worker,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IDispossessConstructor, 15047)}));
+    private static StoryChoiceList ch15IAmHero = new StoryChoiceList(R.drawable.school_bus_passengers_see_kaden,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IAmHero, 15048)}));
+    private static StoryChoiceList ch15ILiftBus = new StoryChoiceList(R.drawable.kaden_lifts_bus,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15ILiftBus, 15049)}));
+    private static StoryChoiceList ch15StudentsThankMe = new StoryChoiceList(R.drawable.students_thank_kaden,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15StudentsThankMe, 15050)}));
+    private static StoryChoiceList ch15IKnowElodie = new StoryChoiceList(R.drawable.students_thank_kaden,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IKnowElodie, 15051)}));
+    private static StoryChoiceList ch15KeepFriendsClose = new StoryChoiceList(R.drawable.students_thank_kaden,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15KeepFriendsClose, 15052)}));
+    private static StoryChoiceList ch15ICanSayEllie = new StoryChoiceList(R.drawable.students_thank_kaden,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15ICanSayEllie, 15053)}));
+    private static StoryChoiceList ch15KeepStudentsSafe = new StoryChoiceList(R.drawable.students_thank_kaden,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15KeepStudentsSafe, 15054)}));
+    private static StoryChoiceList ch15WowStudentsSay = new StoryChoiceList(R.drawable.kaden_flies_from_bus,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15WowStudentsSay, 15055)}));
+    private static StoryChoiceList ch15PhantomGoesToHotel = new StoryChoiceList(R.drawable.bekshtii_phantom_in_distance,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15PhantomGoesToHotel, 15056)}));
+    private static StoryChoiceList ch15IsThatBekShtii = new StoryChoiceList(R.drawable.bekshtii_phantom_in_distance,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IsThatBekShtii, 15057)}));
+    private static StoryChoiceList ch15WhatIsBekShtiiDoing = new StoryChoiceList(R.drawable.bekshtii_phantom_in_distance,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15WhatIsBekShtiiDoing, 15058)}));
+    private static StoryChoiceList ch15ModernSelfishness = new StoryChoiceList(R.drawable.bekshtii_phantom_in_city,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15ModernSelfishness, 15059)}));
+    private static StoryChoiceList ch15IHoldBekShtiiBack = new StoryChoiceList(R.drawable.bekshtii_phantom_in_city,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IHoldBekShtiiBack, 15060)}));
+    private static StoryChoiceList ch15BekShtiiThrowsMe = new StoryChoiceList(R.drawable.bekshtii_phantom_grabs_kaden,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15BekShtiiThrowsMe, 15061)}));
+    private static StoryChoiceList ch15IDrift = new StoryChoiceList(R.drawable.kaden_floats_on_river,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IDrift, 15062)}));
+    private static StoryChoiceList ch15IShouldHaveBeenAtReunion = new StoryChoiceList(R.drawable.kaden_floats_on_river,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IShouldHaveBeenAtReunion, 15063)}));
+    private static StoryChoiceList ch15IWillBeRescued = new StoryChoiceList(R.drawable.kaden_floats_on_river,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IWillBeRescued, 16001)}));
 
     private static StoryChoiceList ch15ISlamSpirits() {
         PotWVN vn = PotWVN.getMainVN();
@@ -146,75 +192,6 @@ public class Chapter15 extends Chapter {
         return new StoryChoiceList(R.drawable.worker_axes_fire_spirits,
                 Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15ISlamSpirits, nextState)}));
     }
-
-    private static StoryChoiceList ch15IDeathByOverconfidence = new StoryChoiceList(R.drawable.worker_leans_over_fire_spirit,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IDeathByOverconfidence, 15043)}));
-
-    private static StoryChoiceList ch15KeptYouWaiting = new StoryChoiceList(R.drawable.worker_leans_over_fire_spirit,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15KeptYouWaiting, 15043)}));
-
-    private static StoryChoiceList ch15IStrikeSpirit = new StoryChoiceList(R.drawable.worker_kills_fire_spirit,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IStrikeSpirit, 15044)}));
-
-    private static StoryChoiceList ch15ILeaveSpirits = new StoryChoiceList(R.drawable.construction_worker_climbs_with_pickaxe,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15ILeaveSpirits, 15045)}));
-
-    private static StoryChoiceList ch15SchoolBusNeedsHelp = new StoryChoiceList(R.drawable.flooded_school_bus_below,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15SchoolBusNeedsHelp, 15046)}));
-
-    private static StoryChoiceList ch15IDispossessConstructor = new StoryChoiceList(R.drawable.kaden_dispossesses_construction_worker,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IDispossessConstructor, 15047)}));
-
-    private static StoryChoiceList ch15IAmHero = new StoryChoiceList(R.drawable.school_bus_passengers_see_kaden,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IAmHero, 15048)}));
-
-    private static StoryChoiceList ch15ILiftBus = new StoryChoiceList(R.drawable.kaden_lifts_bus,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15ILiftBus, 15049)}));
-
-    private static StoryChoiceList ch15StudentsThankMe = new StoryChoiceList(R.drawable.students_thank_kaden,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15StudentsThankMe, 15050)}));
-
-    private static StoryChoiceList ch15IKnowElodie = new StoryChoiceList(R.drawable.students_thank_kaden,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IKnowElodie, 15051)}));
-
-    private static StoryChoiceList ch15KeepFriendsClose = new StoryChoiceList(R.drawable.students_thank_kaden,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15KeepFriendsClose, 15052)}));
-
-    private static StoryChoiceList ch15ICanSayEllie = new StoryChoiceList(R.drawable.students_thank_kaden,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15ICanSayEllie, 15053)}));
-
-    private static StoryChoiceList ch15KeepStudentsSafe = new StoryChoiceList(R.drawable.students_thank_kaden,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15KeepStudentsSafe, 15054)}));
-
-    private static StoryChoiceList ch15WowStudentsSay = new StoryChoiceList(R.drawable.kaden_flies_from_bus,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15WowStudentsSay, 15055)}));
-
-    private static StoryChoiceList ch15PhantomGoesToHotel = new StoryChoiceList(R.drawable.bekshtii_phantom_in_distance,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15PhantomGoesToHotel, 15056)}));
-
-    private static StoryChoiceList ch15IsThatBekShtii = new StoryChoiceList(R.drawable.bekshtii_phantom_in_distance,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IsThatBekShtii, 15057)}));
-
-    private static StoryChoiceList ch15WhatIsBekShtiiDoing = new StoryChoiceList(R.drawable.bekshtii_phantom_in_distance,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15WhatIsBekShtiiDoing, 15058)}));
-
-    private static StoryChoiceList ch15ModernSelfishness = new StoryChoiceList(R.drawable.bekshtii_phantom_in_city,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15ModernSelfishness, 15059)}));
-
-    private static StoryChoiceList ch15IHoldBekShtiiBack = new StoryChoiceList(R.drawable.bekshtii_phantom_in_city,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IHoldBekShtiiBack, 15060)}));
-
-    private static StoryChoiceList ch15BekShtiiThrowsMe = new StoryChoiceList(R.drawable.bekshtii_phantom_grabs_kaden,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15BekShtiiThrowsMe, 15061)}));
-
-    private static StoryChoiceList ch15IDrift = new StoryChoiceList(R.drawable.kaden_floats_on_river,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IDrift, 15062)}));
-
-    private static StoryChoiceList ch15IShouldHaveBeenAtReunion = new StoryChoiceList(R.drawable.kaden_floats_on_river,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IShouldHaveBeenAtReunion, 15063)}));
-
-    private static StoryChoiceList ch15IWillBeRescued = new StoryChoiceList(R.drawable.kaden_floats_on_river,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch15IWillBeRescued, 16001)}));
 
     @Override
     public IStoryChoiceList goToState(int id) {

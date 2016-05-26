@@ -385,6 +385,36 @@ public class Chapter11 extends Chapter {
 
     private static StoryChoiceList ch11IRelax = new StoryChoiceList(R.drawable.athletic_sarah_on_bed,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11IRelax, 11124)}));
+    private static StoryChoiceList ch11IShouldCool = new StoryChoiceList(R.drawable.athletic_sarah_on_bed,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11IShouldCool, 11126)}));
+    private static StoryChoiceList ch11ILayNewClothes = new StoryChoiceList(R.drawable.sarah_gets_towel,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11ILayNewClothes, 11127)}));
+    private static StoryChoiceList ch11IGetTowel = new StoryChoiceList(R.drawable.sarah_gets_towel,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11IGetTowel, 11128)}));
+    private static StoryChoiceList ch11IAdjustTemperature = new StoryChoiceList(R.drawable.sarah_starts_shower,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11IAdjustTemperature, 11129)}));
+    private static StoryChoiceList ch11IShower = new StoryChoiceList(R.drawable.sarah_in_shower,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11IShower, 11130)}));
+    private static StoryChoiceList ch11IFeelGood = new StoryChoiceList(R.drawable.sarah_in_shower,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11IFeelGood, 11131)}));
+    private static StoryChoiceList ch11IDry = new StoryChoiceList(R.drawable.sarah_wears_towel,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11IDry, 11139)}));
+    private static StoryChoiceList ch11NewNewsSegment = new StoryChoiceList(R.drawable.tv_seawall_top,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11NewNewsSegment, 11133)}));
+    private static StoryChoiceList ch11SeawallIntroduced = new StoryChoiceList(R.drawable.tv_seawall_top,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11SeawallIntroduced, 11134)}));
+    private static StoryChoiceList ch11CameraShowsSeawall = new StoryChoiceList(R.drawable.tv_seawall_bottom,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11CameraShowsSeawall, 11135)}));
+    private static StoryChoiceList ch11MayorIsCriticized = new StoryChoiceList(R.drawable.tv_seawall_bottom,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11MayorIsCriticized, 11136)}));
+    private static StoryChoiceList ch11Potholes = new StoryChoiceList(R.drawable.tv_cars,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11Potholes, 11137)}));
+    private static StoryChoiceList ch11MayorsDefense = new StoryChoiceList(R.drawable.tv_mayor,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11MayorsDefense, 11138)}));
+    private static StoryChoiceList ch11ITurnOffTV = new StoryChoiceList(R.drawable.tv_mayor,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11ITurnOffTV, 11139)}));
+    private static StoryChoiceList ch11IWearFormalwear = new StoryChoiceList(R.drawable.sarah_formal,
+            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11IWearFormalwear, 12001)}));
 
     private static StoryChoiceList ch11IWillShower() {
         ArrayList<IStoryChoice> nextPages = new ArrayList<>();
@@ -397,51 +427,6 @@ public class Chapter11 extends Chapter {
         StoryChoiceList newList = new StoryChoiceList(R.drawable.athletic_sarah_on_bed, nextPages);
         return newList;
     }
-
-    private static StoryChoiceList ch11IShouldCool = new StoryChoiceList(R.drawable.athletic_sarah_on_bed,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11IShouldCool, 11126)}));
-
-    private static StoryChoiceList ch11ILayNewClothes = new StoryChoiceList(R.drawable.sarah_gets_towel,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11ILayNewClothes, 11127)}));
-
-    private static StoryChoiceList ch11IGetTowel = new StoryChoiceList(R.drawable.sarah_gets_towel,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11IGetTowel, 11128)}));
-
-    private static StoryChoiceList ch11IAdjustTemperature = new StoryChoiceList(R.drawable.sarah_starts_shower,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11IAdjustTemperature, 11129)}));
-
-    private static StoryChoiceList ch11IShower = new StoryChoiceList(R.drawable.sarah_in_shower,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11IShower, 11130)}));
-
-    private static StoryChoiceList ch11IFeelGood = new StoryChoiceList(R.drawable.sarah_in_shower,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11IFeelGood, 11131)}));
-
-    private static StoryChoiceList ch11IDry = new StoryChoiceList(R.drawable.sarah_wears_towel,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11IDry, 11139)}));
-
-    private static StoryChoiceList ch11NewNewsSegment = new StoryChoiceList(R.drawable.tv_seawall_top,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11NewNewsSegment, 11133)}));
-
-    private static StoryChoiceList ch11SeawallIntroduced = new StoryChoiceList(R.drawable.tv_seawall_top,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11SeawallIntroduced, 11134)}));
-
-    private static StoryChoiceList ch11CameraShowsSeawall = new StoryChoiceList(R.drawable.tv_seawall_bottom,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11CameraShowsSeawall, 11135)}));
-
-    private static StoryChoiceList ch11MayorIsCriticized = new StoryChoiceList(R.drawable.tv_seawall_bottom,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11MayorIsCriticized, 11136)}));
-
-    private static StoryChoiceList ch11Potholes = new StoryChoiceList(R.drawable.tv_cars,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11Potholes, 11137)}));
-
-    private static StoryChoiceList ch11MayorsDefense = new StoryChoiceList(R.drawable.tv_mayor,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11MayorsDefense, 11138)}));
-
-    private static StoryChoiceList ch11ITurnOffTV = new StoryChoiceList(R.drawable.tv_mayor,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11ITurnOffTV, 11139)}));
-
-    private static StoryChoiceList ch11IWearFormalwear = new StoryChoiceList(R.drawable.sarah_formal,
-            Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch11IWearFormalwear, 12001)}));
 
     @Override
     public IStoryChoiceList goToState(int id) {
