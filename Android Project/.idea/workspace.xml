@@ -21,19 +21,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96d3b5bc-b268-4142-972d-64f4fa0dde8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_18/Chapter18.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_options_menu.xml" afterPath="$PROJECT_DIR$/app/src/main/res/xml/activity_options_menu.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-23.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-23.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/ChapterSelector.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/ChapterSelector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_15/Chapter15.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_15/Chapter15.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_17/Chapter17.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_17/Chapter17.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/OptionsMenuActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/OptionsMenuActivity.java" />
     </list>
     <ignored path="Android Project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,240 +66,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chapter18.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_18/Chapter18.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="313" column="44" selection-start-line="313" selection-start-column="44" selection-end-line="313" selection-end-column="44" />
+              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OptionsMenuActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/OptionsMenuActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.4431818">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1730#1748#0" expanded="true" />
-                <element signature="e#1923#1946#0" expanded="true" />
-                <element signature="e#2111#2135#0" expanded="true" />
-                <element signature="e#2300#2324#0" expanded="true" />
-                <element signature="e#2489#2512#0" expanded="true" />
-                <element signature="e#2703#2724#0" expanded="true" />
-                <element signature="e#2916#2941#0" expanded="true" />
-                <element signature="e#3139#3170#0" expanded="true" />
-                <element signature="e#3365#3393#0" expanded="true" />
-                <element signature="e#3588#3616#0" expanded="true" />
-                <element signature="e#3808#3833#0" expanded="true" />
-                <element signature="e#4031#4062#0" expanded="true" />
-                <element signature="e#4247#4265#0" expanded="true" />
-                <element signature="e#4468#4492#0" expanded="true" />
-                <element signature="e#4693#4715#0" expanded="true" />
-                <element signature="e#5246#5270#0" expanded="true" />
-                <element signature="e#5470#5502#0" expanded="true" />
-                <element signature="e#5708#5744#0" expanded="true" />
-                <element signature="e#5940#5966#0" expanded="true" />
-                <element signature="e#6163#6190#0" expanded="true" />
-                <element signature="e#6379#6398#0" expanded="true" />
-                <element signature="e#6582#6607#0" expanded="true" />
-                <element signature="e#6792#6814#0" expanded="true" />
-                <element signature="e#7000#7027#0" expanded="true" />
-                <element signature="e#7229#7259#0" expanded="true" />
-                <element signature="e#7456#7481#0" expanded="true" />
-                <element signature="e#7679#7705#0" expanded="true" />
-                <element signature="e#7909#7941#0" expanded="true" />
-                <element signature="e#8134#8159#0" expanded="true" />
-                <element signature="e#8345#8373#0" expanded="true" />
-                <element signature="e#8556#8581#0" expanded="true" />
-                <element signature="e#8768#8797#0" expanded="true" />
-                <element signature="e#8979#9004#0" expanded="true" />
-                <element signature="e#9187#9209#0" expanded="true" />
-                <element signature="e#9402#9434#0" expanded="true" />
-                <element signature="e#9614#9633#0" expanded="true" />
-                <element signature="e#9819#9839#0" expanded="true" />
-                <element signature="e#10025#10052#0" expanded="true" />
-                <element signature="e#10248#10276#0" expanded="true" />
-                <element signature="e#10466#10488#0" expanded="true" />
-                <element signature="e#10682#10708#0" expanded="true" />
-                <element signature="e#10902#10928#0" expanded="true" />
-                <element signature="e#11118#11143#0" expanded="true" />
-                <element signature="e#11340#11368#0" expanded="true" />
-                <element signature="e#11566#11595#0" expanded="true" />
-                <element signature="e#11801#11838#0" expanded="true" />
-                <element signature="e#12044#12081#0" expanded="true" />
-                <element signature="e#12264#12290#0" expanded="true" />
-                <element signature="e#12805#12872#0" expanded="true" />
-                <element signature="e#13070#13098#0" expanded="true" />
-                <element signature="e#13298#13329#0" expanded="true" />
-                <element signature="e#13508#13529#0" expanded="true" />
-                <element signature="e#13690#13705#0" expanded="true" />
+                <element signature="e#1586#1609#0" expanded="true" />
+                <element signature="e#1666#1691#0" expanded="true" />
+                <element signature="e#2577#2578#0" expanded="true" />
+                <element signature="e#2623#2624#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chapter17.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_17/Chapter17.java">
+      <file leaf-file-name="activity_options_menu.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/activity_options_menu.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38284838">
-              <caret line="299" column="0" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.875">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <element signature="e#1076#1094#0" expanded="true" />
-                <element signature="e#1272#1294#0" expanded="true" />
-                <element signature="e#1475#1500#0" expanded="true" />
-                <element signature="e#1678#1700#0" expanded="true" />
-                <element signature="e#2190#2213#0" expanded="true" />
-                <element signature="e#2399#2419#0" expanded="true" />
-                <element signature="e#2607#2635#0" expanded="true" />
-                <element signature="e#2825#2855#0" expanded="true" />
-                <element signature="e#3038#3061#0" expanded="true" />
-                <element signature="e#3249#3277#0" expanded="true" />
-                <element signature="e#3470#3503#0" expanded="true" />
-                <element signature="e#3691#3719#0" expanded="true" />
-                <element signature="e#3908#3937#0" expanded="true" />
-                <element signature="e#4126#4155#0" expanded="true" />
-                <element signature="e#4355#4395#0" expanded="true" />
-                <element signature="e#4589#4617#0" expanded="true" />
-                <element signature="e#4810#4837#0" expanded="true" />
-                <element signature="e#5022#5049#0" expanded="true" />
-                <element signature="e#5232#5261#0" expanded="true" />
-                <element signature="e#5445#5475#0" expanded="true" />
-                <element signature="e#6117#6141#0" expanded="true" />
-                <element signature="e#6341#6367#0" expanded="true" />
-                <element signature="e#6553#6585#0" expanded="true" />
-                <element signature="e#6774#6808#0" expanded="true" />
-                <element signature="e#6994#7027#0" expanded="true" />
-                <element signature="e#7206#7232#0" expanded="true" />
-                <element signature="e#7423#7461#0" expanded="true" />
-                <element signature="e#7640#7666#0" expanded="true" />
-                <element signature="e#7854#7884#0" expanded="true" />
-                <element signature="e#8067#8092#0" expanded="true" />
-                <element signature="e#8275#8300#0" expanded="true" />
-                <element signature="e#8483#8507#0" expanded="true" />
-                <element signature="e#8690#8714#0" expanded="true" />
-                <element signature="e#8894#8915#0" expanded="true" />
-                <element signature="e#9111#9147#0" expanded="true" />
-                <element signature="e#9341#9372#0" expanded="true" />
-                <element signature="e#9568#9601#0" expanded="true" />
-                <element signature="e#9790#9816#0" expanded="true" />
-                <element signature="e#10005#10031#0" expanded="true" />
-                <element signature="e#10230#10266#0" expanded="true" />
-                <element signature="e#10460#10491#0" expanded="true" />
-                <element signature="e#10696#10738#0" expanded="true" />
-                <element signature="e#10935#10969#0" expanded="true" />
-                <element signature="e#11176#11220#0" expanded="true" />
-                <element signature="e#11412#11446#0" expanded="true" />
-                <element signature="e#11625#11651#0" expanded="true" />
-                <element signature="e#11831#11858#0" expanded="true" />
-                <element signature="e#12045#12073#0" expanded="true" />
-                <element signature="e#12257#12276#0" expanded="true" />
-                <element signature="e#12463#12489#0" expanded="true" />
-                <element signature="e#12685#12713#0" expanded="true" />
-                <element signature="e#12907#12933#0" expanded="true" />
-                <element signature="e#13128#13160#0" expanded="true" />
-                <element signature="e#13344#13365#0" expanded="true" />
-                <element signature="e#13550#13572#0" expanded="true" />
-                <element signature="e#13760#13785#0" expanded="true" />
-                <element signature="e#13977#14006#0" expanded="true" />
-                <element signature="e#14195#14221#0" expanded="true" />
-                <element signature="e#14403#14431#0" expanded="true" />
-                <element signature="e#14611#14637#0" expanded="true" />
-                <element signature="e#14826#14855#0" expanded="true" />
-                <element signature="e#15035#15060#0" expanded="true" />
-                <element signature="e#15249#15279#0" expanded="true" />
-                <element signature="e#15462#15486#0" expanded="true" />
-                <element signature="e#15682#15713#0" expanded="true" />
-                <element signature="e#15913#15948#0" expanded="true" />
-                <element signature="e#16149#16185#0" expanded="true" />
-                <element signature="e#16382#16414#0" expanded="true" />
-                <element signature="e#16606#16633#0" expanded="true" />
-                <element signature="e#16829#16860#0" expanded="true" />
-                <element signature="e#17051#17077#0" expanded="true" />
-                <element signature="e#17257#17281#0" expanded="true" />
-                <element signature="e#17462#17487#0" expanded="true" />
-                <element signature="e#17679#17704#0" expanded="true" />
-                <element signature="e#17891#17920#0" expanded="true" />
-                <element signature="e#18102#18125#0" expanded="true" />
-                <element signature="e#18318#18342#0" expanded="true" />
-                <element signature="e#18848#18874#0" expanded="true" />
-                <element signature="e#19069#19095#0" expanded="true" />
-                <element signature="e#19290#19315#0" expanded="true" />
-                <element signature="e#19508#19531#0" expanded="true" />
-                <element signature="e#19745#19779#0" expanded="true" />
-                <element signature="e#19994#20019#0" expanded="true" />
-                <element signature="e#20230#20264#0" expanded="true" />
-                <element signature="e#20472#20503#0" expanded="true" />
-                <element signature="e#20707#20734#0" expanded="true" />
-                <element signature="e#20915#20939#0" expanded="true" />
-                <element signature="e#21130#21153#0" expanded="true" />
-                <element signature="e#21353#21385#0" expanded="true" />
-                <element signature="e#21580#21603#0" expanded="true" />
-                <element signature="e#21797#21826#0" expanded="true" />
-                <element signature="e#22020#22049#0" expanded="true" />
-                <element signature="e#22239#22264#0" expanded="true" />
-                <element signature="e#22452#22475#0" expanded="true" />
-                <element signature="e#22664#22688#0" expanded="true" />
-                <element signature="e#23176#23200#0" expanded="true" />
-                <element signature="e#23405#23432#0" expanded="true" />
-                <element signature="e#23626#23658#0" expanded="true" />
-                <element signature="e#23848#23876#0" expanded="true" />
-                <element signature="e#24073#24108#0" expanded="true" />
-                <element signature="e#24302#24334#0" expanded="true" />
-                <element signature="e#24530#24564#0" expanded="true" />
-                <element signature="e#24757#24788#0" expanded="true" />
-                <element signature="e#24980#25010#0" expanded="true" />
-                <element signature="e#25196#25215#0" expanded="true" />
-                <element signature="e#25398#25421#0" expanded="true" />
-                <element signature="e#25609#25637#0" expanded="true" />
-                <element signature="e#25826#25855#0" expanded="true" />
-                <element signature="e#26041#26067#0" expanded="true" />
-                <element signature="e#26259#26291#0" expanded="true" />
-                <element signature="e#26488#26525#0" expanded="true" />
-                <element signature="e#26712#26739#0" expanded="true" />
-                <element signature="e#26923#26947#0" expanded="true" />
-                <element signature="e#27141#27175#0" expanded="true" />
-                <element signature="e#27360#27385#0" expanded="true" />
-                <element signature="e#27568#27591#0" expanded="true" />
-                <element signature="e#27773#27795#0" expanded="true" />
-                <element signature="e#27985#28015#0" expanded="true" />
-                <element signature="e#28205#28235#0" expanded="true" />
-                <element signature="e#28416#28437#0" expanded="true" />
-                <element signature="e#28619#28638#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="story_text.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/story_text.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.9166665">
-              <caret line="852" column="32" selection-start-line="852" selection-start-column="32" selection-end-line="852" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chapter15.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_15/Chapter15.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="94" selection-start-line="27" selection-start-column="94" selection-end-line="27" selection-end-column="94" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chapter18.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Universal Windows Platform Solution/Phantom of the West/Phantom of the West/Visual Novel/Chapters/Chapter 18/Chapter18.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="374" column="9" selection-start-line="68" selection-start-column="8" selection-end-line="374" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chapter16.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_16/Chapter16.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="91" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="91" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#134#151#0" expanded="true" />
+                <element signature="e#225#239#0" expanded="true" />
+                <element signature="e#315#329#0" expanded="true" />
+                <element signature="e#408#425#0" expanded="true" />
+                <element signature="e#509#531#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1613,7 +1417,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4384454195000" />
+        <entry key="$PROJECT_DIR$" value="4385220698000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1883,11 +1687,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/Bookmark.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/gui_elements.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_options_menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/OptionsMenuActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_5/IKickCheerleader.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_5/IPinCheerleader.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_5/IWouldDisarm.java" />
@@ -1934,6 +1736,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_15/Chapter15.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/story_text.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_17/Chapter17.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/xml/activity_options_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/OptionsMenuActivity.java" />
       </list>
     </option>
   </component>
@@ -1974,7 +1778,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1996,6 +1800,24 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Android Project" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2011,7 +1833,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2078,128 +1900,12 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phantomofthewest" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="visual_novel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chapters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Android Project" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phantomofthewest" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="visual_novel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chapters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chapter_18" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Android Project" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phantomofthewest" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="visual_novel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chapters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chapter_17" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Android Project" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phantomofthewest" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="visual_novel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chapters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chapter_15" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Android Project" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2209,12 +1915,15 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="G0K0H40460520M66" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_23_x86" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Universal Windows Platform Solution/Phantom of the West/Phantom of the West/Visual Novel/Chapters/Chapter 18/Chapter18.cs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/xml" />
     <property name="device.picker.selection" value="G0K0H40460520M66" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
       <recent name="com.christopherraleigh.phantomofthewest" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/xml" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
@@ -2508,10 +2217,10 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31277534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2526,31 +2235,31 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15522175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39941263" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39941263" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15522175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -2565,8 +2274,8 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -2588,13 +2297,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_7/IDoNotKissVaNal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43644717">
-          <caret line="21" column="5" selection-start-line="11" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_7/Chapter7.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="5.8116384">
@@ -2631,20 +2333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.84090906">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/OptionsMenuActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4431818">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5113636">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -2897,15 +2585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="785" column="9" selection-start-line="135" selection-start-column="8" selection-end-line="785" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/ChapterSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2914,7 +2593,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="91" selection-start-line="18" selection-start-column="4" selection-end-line="19" selection-end-column="91" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2932,60 +2611,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="313" column="44" selection-start-line="313" selection-start-column="44" selection-end-line="313" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1730#1748#0" expanded="true" />
-            <element signature="e#1923#1946#0" expanded="true" />
-            <element signature="e#2111#2135#0" expanded="true" />
-            <element signature="e#2300#2324#0" expanded="true" />
-            <element signature="e#2489#2512#0" expanded="true" />
-            <element signature="e#2703#2724#0" expanded="true" />
-            <element signature="e#2916#2941#0" expanded="true" />
-            <element signature="e#3139#3170#0" expanded="true" />
-            <element signature="e#3365#3393#0" expanded="true" />
-            <element signature="e#3588#3616#0" expanded="true" />
-            <element signature="e#3808#3833#0" expanded="true" />
-            <element signature="e#4031#4062#0" expanded="true" />
-            <element signature="e#4247#4265#0" expanded="true" />
-            <element signature="e#4468#4492#0" expanded="true" />
-            <element signature="e#4693#4715#0" expanded="true" />
-            <element signature="e#5246#5270#0" expanded="true" />
-            <element signature="e#5470#5502#0" expanded="true" />
-            <element signature="e#5708#5744#0" expanded="true" />
-            <element signature="e#5940#5966#0" expanded="true" />
-            <element signature="e#6163#6190#0" expanded="true" />
-            <element signature="e#6379#6398#0" expanded="true" />
-            <element signature="e#6582#6607#0" expanded="true" />
-            <element signature="e#6792#6814#0" expanded="true" />
-            <element signature="e#7000#7027#0" expanded="true" />
-            <element signature="e#7229#7259#0" expanded="true" />
-            <element signature="e#7456#7481#0" expanded="true" />
-            <element signature="e#7679#7705#0" expanded="true" />
-            <element signature="e#7909#7941#0" expanded="true" />
-            <element signature="e#8134#8159#0" expanded="true" />
-            <element signature="e#8345#8373#0" expanded="true" />
-            <element signature="e#8556#8581#0" expanded="true" />
-            <element signature="e#8768#8797#0" expanded="true" />
-            <element signature="e#8979#9004#0" expanded="true" />
-            <element signature="e#9187#9209#0" expanded="true" />
-            <element signature="e#9402#9434#0" expanded="true" />
-            <element signature="e#9614#9633#0" expanded="true" />
-            <element signature="e#9819#9839#0" expanded="true" />
-            <element signature="e#10025#10052#0" expanded="true" />
-            <element signature="e#10248#10276#0" expanded="true" />
-            <element signature="e#10466#10488#0" expanded="true" />
-            <element signature="e#10682#10708#0" expanded="true" />
-            <element signature="e#10902#10928#0" expanded="true" />
-            <element signature="e#11118#11143#0" expanded="true" />
-            <element signature="e#11340#11368#0" expanded="true" />
-            <element signature="e#11566#11595#0" expanded="true" />
-            <element signature="e#11801#11838#0" expanded="true" />
-            <element signature="e#12044#12081#0" expanded="true" />
-            <element signature="e#12264#12290#0" expanded="true" />
-            <element signature="e#12805#12872#0" expanded="true" />
-            <element signature="e#13070#13098#0" expanded="true" />
-            <element signature="e#13298#13329#0" expanded="true" />
-            <element signature="e#13508#13529#0" expanded="true" />
-            <element signature="e#13690#13705#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3000,7 +2626,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/story_text.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.9166665">
+        <state vertical-scroll-proportion="0.0">
           <caret line="852" column="32" selection-start-line="852" selection-start-column="32" selection-end-line="852" selection-end-column="32" />
           <folding />
         </state>
@@ -3008,130 +2634,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/chapter_17/Chapter17.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38284838">
+        <state vertical-scroll-proportion="0.0">
           <caret line="299" column="0" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/visual_novel/chapters/ChapterSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/activity_options_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#1076#1094#0" expanded="true" />
-            <element signature="e#1272#1294#0" expanded="true" />
-            <element signature="e#1475#1500#0" expanded="true" />
-            <element signature="e#1678#1700#0" expanded="true" />
-            <element signature="e#2190#2213#0" expanded="true" />
-            <element signature="e#2399#2419#0" expanded="true" />
-            <element signature="e#2607#2635#0" expanded="true" />
-            <element signature="e#2825#2855#0" expanded="true" />
-            <element signature="e#3038#3061#0" expanded="true" />
-            <element signature="e#3249#3277#0" expanded="true" />
-            <element signature="e#3470#3503#0" expanded="true" />
-            <element signature="e#3691#3719#0" expanded="true" />
-            <element signature="e#3908#3937#0" expanded="true" />
-            <element signature="e#4126#4155#0" expanded="true" />
-            <element signature="e#4355#4395#0" expanded="true" />
-            <element signature="e#4589#4617#0" expanded="true" />
-            <element signature="e#4810#4837#0" expanded="true" />
-            <element signature="e#5022#5049#0" expanded="true" />
-            <element signature="e#5232#5261#0" expanded="true" />
-            <element signature="e#5445#5475#0" expanded="true" />
-            <element signature="e#6117#6141#0" expanded="true" />
-            <element signature="e#6341#6367#0" expanded="true" />
-            <element signature="e#6553#6585#0" expanded="true" />
-            <element signature="e#6774#6808#0" expanded="true" />
-            <element signature="e#6994#7027#0" expanded="true" />
-            <element signature="e#7206#7232#0" expanded="true" />
-            <element signature="e#7423#7461#0" expanded="true" />
-            <element signature="e#7640#7666#0" expanded="true" />
-            <element signature="e#7854#7884#0" expanded="true" />
-            <element signature="e#8067#8092#0" expanded="true" />
-            <element signature="e#8275#8300#0" expanded="true" />
-            <element signature="e#8483#8507#0" expanded="true" />
-            <element signature="e#8690#8714#0" expanded="true" />
-            <element signature="e#8894#8915#0" expanded="true" />
-            <element signature="e#9111#9147#0" expanded="true" />
-            <element signature="e#9341#9372#0" expanded="true" />
-            <element signature="e#9568#9601#0" expanded="true" />
-            <element signature="e#9790#9816#0" expanded="true" />
-            <element signature="e#10005#10031#0" expanded="true" />
-            <element signature="e#10230#10266#0" expanded="true" />
-            <element signature="e#10460#10491#0" expanded="true" />
-            <element signature="e#10696#10738#0" expanded="true" />
-            <element signature="e#10935#10969#0" expanded="true" />
-            <element signature="e#11176#11220#0" expanded="true" />
-            <element signature="e#11412#11446#0" expanded="true" />
-            <element signature="e#11625#11651#0" expanded="true" />
-            <element signature="e#11831#11858#0" expanded="true" />
-            <element signature="e#12045#12073#0" expanded="true" />
-            <element signature="e#12257#12276#0" expanded="true" />
-            <element signature="e#12463#12489#0" expanded="true" />
-            <element signature="e#12685#12713#0" expanded="true" />
-            <element signature="e#12907#12933#0" expanded="true" />
-            <element signature="e#13128#13160#0" expanded="true" />
-            <element signature="e#13344#13365#0" expanded="true" />
-            <element signature="e#13550#13572#0" expanded="true" />
-            <element signature="e#13760#13785#0" expanded="true" />
-            <element signature="e#13977#14006#0" expanded="true" />
-            <element signature="e#14195#14221#0" expanded="true" />
-            <element signature="e#14403#14431#0" expanded="true" />
-            <element signature="e#14611#14637#0" expanded="true" />
-            <element signature="e#14826#14855#0" expanded="true" />
-            <element signature="e#15035#15060#0" expanded="true" />
-            <element signature="e#15249#15279#0" expanded="true" />
-            <element signature="e#15462#15486#0" expanded="true" />
-            <element signature="e#15682#15713#0" expanded="true" />
-            <element signature="e#15913#15948#0" expanded="true" />
-            <element signature="e#16149#16185#0" expanded="true" />
-            <element signature="e#16382#16414#0" expanded="true" />
-            <element signature="e#16606#16633#0" expanded="true" />
-            <element signature="e#16829#16860#0" expanded="true" />
-            <element signature="e#17051#17077#0" expanded="true" />
-            <element signature="e#17257#17281#0" expanded="true" />
-            <element signature="e#17462#17487#0" expanded="true" />
-            <element signature="e#17679#17704#0" expanded="true" />
-            <element signature="e#17891#17920#0" expanded="true" />
-            <element signature="e#18102#18125#0" expanded="true" />
-            <element signature="e#18318#18342#0" expanded="true" />
-            <element signature="e#18848#18874#0" expanded="true" />
-            <element signature="e#19069#19095#0" expanded="true" />
-            <element signature="e#19290#19315#0" expanded="true" />
-            <element signature="e#19508#19531#0" expanded="true" />
-            <element signature="e#19745#19779#0" expanded="true" />
-            <element signature="e#19994#20019#0" expanded="true" />
-            <element signature="e#20230#20264#0" expanded="true" />
-            <element signature="e#20472#20503#0" expanded="true" />
-            <element signature="e#20707#20734#0" expanded="true" />
-            <element signature="e#20915#20939#0" expanded="true" />
-            <element signature="e#21130#21153#0" expanded="true" />
-            <element signature="e#21353#21385#0" expanded="true" />
-            <element signature="e#21580#21603#0" expanded="true" />
-            <element signature="e#21797#21826#0" expanded="true" />
-            <element signature="e#22020#22049#0" expanded="true" />
-            <element signature="e#22239#22264#0" expanded="true" />
-            <element signature="e#22452#22475#0" expanded="true" />
-            <element signature="e#22664#22688#0" expanded="true" />
-            <element signature="e#23176#23200#0" expanded="true" />
-            <element signature="e#23405#23432#0" expanded="true" />
-            <element signature="e#23626#23658#0" expanded="true" />
-            <element signature="e#23848#23876#0" expanded="true" />
-            <element signature="e#24073#24108#0" expanded="true" />
-            <element signature="e#24302#24334#0" expanded="true" />
-            <element signature="e#24530#24564#0" expanded="true" />
-            <element signature="e#24757#24788#0" expanded="true" />
-            <element signature="e#24980#25010#0" expanded="true" />
-            <element signature="e#25196#25215#0" expanded="true" />
-            <element signature="e#25398#25421#0" expanded="true" />
-            <element signature="e#25609#25637#0" expanded="true" />
-            <element signature="e#25826#25855#0" expanded="true" />
-            <element signature="e#26041#26067#0" expanded="true" />
-            <element signature="e#26259#26291#0" expanded="true" />
-            <element signature="e#26488#26525#0" expanded="true" />
-            <element signature="e#26712#26739#0" expanded="true" />
-            <element signature="e#26923#26947#0" expanded="true" />
-            <element signature="e#27141#27175#0" expanded="true" />
-            <element signature="e#27360#27385#0" expanded="true" />
-            <element signature="e#27568#27591#0" expanded="true" />
-            <element signature="e#27773#27795#0" expanded="true" />
-            <element signature="e#27985#28015#0" expanded="true" />
-            <element signature="e#28205#28235#0" expanded="true" />
-            <element signature="e#28416#28437#0" expanded="true" />
-            <element signature="e#28619#28638#0" expanded="true" />
+            <element signature="e#134#151#0" expanded="true" />
+            <element signature="e#225#239#0" expanded="true" />
+            <element signature="e#315#329#0" expanded="true" />
+            <element signature="e#408#425#0" expanded="true" />
+            <element signature="e#509#531#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/christopherraleigh/phantomofthewest/OptionsMenuActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.4431818">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="e#1586#1609#0" expanded="true" />
+            <element signature="e#1666#1691#0" expanded="true" />
+            <element signature="e#2577#2578#0" expanded="true" />
+            <element signature="e#2623#2624#0" expanded="true" />
           </folding>
         </state>
       </provider>
