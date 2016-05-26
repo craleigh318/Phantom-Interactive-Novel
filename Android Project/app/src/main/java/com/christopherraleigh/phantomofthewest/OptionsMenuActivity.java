@@ -9,5 +9,6 @@ public class OptionsMenuActivity extends PreferenceActivity {
         super.onCreate(savedInstanceState);
         getFragmentManager().beginTransaction().replace(android.R.id.content,
                 new OptionsMenuFragment()).commit();
+        getActionBar().setDisplayShowTitleEnabled(true);
     }
 }

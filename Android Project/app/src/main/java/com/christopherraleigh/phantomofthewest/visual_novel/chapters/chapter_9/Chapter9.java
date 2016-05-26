@@ -7,6 +7,7 @@ import com.christopherraleigh.phantomofthewest.visual_novel.PotWVN;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.Chapter;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.StoryChoice;
 import com.christopherraleigh.phantomofthewest.visual_novel.chapters.StoryChoiceList;
+import com.christopherraleigh.phantomofthewest.visual_novel.serialization.event_flagging.CheerleaderSpar;
 import com.christopherraleigh.phantomofthewest.visual_novel.serialization.event_flagging.EventFlagsCollection;
 import com.christopherraleigh.phantomofthewest.visual_novel.serialization.event_flagging.PhysicalEducationAnswer;
 import com.christopherraleigh.phantomofthewest.visual_novel.serialization.event_flagging.TalkWithCaitlyn;
@@ -199,8 +200,6 @@ public class Chapter9 extends Chapter {
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9FoxtrotToCheerMeUp, 9092)}));
     private static StoryChoiceList ch9FoxtrotStares = new StoryChoiceList(R.drawable.caitlyn_brings_foxtrot,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9FoxtrotStares, 9093)}));
-    private static StoryChoiceList ch9ILeaveFoxtrot = new StoryChoiceList(R.drawable.caitlyn_brings_foxtrot,
-            Arrays.asList(new IStoryChoice[]{new ILeaveFoxtrot(), new IWillPetFoxtrot()}));
     private static StoryChoiceList ch9CaitlynShouldPutFoxtrotBack = new StoryChoiceList(R.drawable.caitlyn_brings_foxtrot,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9CaitlynShouldPutFoxtrotBack, 9099)}));
     private static StoryChoiceList ch9FoxtrotHisses = new StoryChoiceList(R.drawable.foxtrot_hiss,
@@ -217,6 +216,13 @@ public class Chapter9 extends Chapter {
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9IReturnHome, 9101)}));
     private static StoryChoiceList ch9ISleep = new StoryChoiceList(R.drawable.kaden_sleeps,
             Arrays.asList(new IStoryChoice[]{new StoryChoice(R.string.ch9ISleep, 10001)}));
+
+    private static StoryChoiceList ch9ILeaveFoxtrot() {
+        boolean kickedCheerleader =
+                (PotWVN.getMainVN().getEventFlags().getCh5SparredWithCheerleader() == CheerleaderSpar.Kicked);
+        return new StoryChoiceList(R.drawable.caitlyn_brings_foxtrot,
+                Arrays.asList(new IStoryChoice[]{new ILeaveFoxtrot(), IWillPetFoxtrot.Create(kickedCheerleader)}));
+    }
 
     private static StoryChoiceList ch9DidCarleighTalkAboutMathTest() {
         PotWVN vn = PotWVN.getMainVN();
@@ -473,7 +479,7 @@ public class Chapter9 extends Chapter {
             case 9092:
                 return ch9FoxtrotStares;
             case 9093:
-                return ch9ILeaveFoxtrot;
+                return ch9ILeaveFoxtrot();
             case 9094:
                 return ch9CaitlynShouldPutFoxtrotBack;
             case 9095:
