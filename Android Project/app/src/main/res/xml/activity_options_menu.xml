@@ -17,4 +17,9 @@
     <Preference
         android:key="buttonPlayTutorial"
         android:title="@string/playTutorial" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switchVoiceover"
+        android:title="@string/voiceOver" />
 </PreferenceScreen>

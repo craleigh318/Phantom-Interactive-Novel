@@ -1,2 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/christopherraleigh/GitHub/Phantom-Interactive-Novel/Android Project/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="538974c2b8f61c9ee29b672317d3a792efb21dd4">
+        <dex dex="/Users/christopherraleigh/GitHub/Phantom-Interactive-Novel/Android Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c492ac73b714b49c4a23e1dd0a4159bf70fee879/classes.dex" />
+    </item>
+    <item
+        jar="/Users/christopherraleigh/GitHub/Phantom-Interactive-Novel/Android Project/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/christopherraleigh/GitHub/Phantom-Interactive-Novel/Android Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.1.1_d0c7bc5a171ea3d2d82403a1bc946eaf59bcbb39/classes.dex" />
+    </item>
+    <item
+        jar="/Users/christopherraleigh/GitHub/Phantom-Interactive-Novel/Android Project/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9f0baf7bb90cd1569f720873b4a9e292361379fc">
+        <dex dex="/Users/christopherraleigh/GitHub/Phantom-Interactive-Novel/Android Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_265500e1a9e5dc939b0b0f7854ede1d39d9d66d6/classes.dex" />
+    </item>
+    <item
+        jar="/Users/christopherraleigh/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/christopherraleigh/GitHub/Phantom-Interactive-Novel/Android Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.1.1_01c0b5790e905820b345e77571cad1246b772f63/classes.dex" />
+    </item>
+    <item
+        jar="/Users/christopherraleigh/GitHub/Phantom-Interactive-Novel/Android Project/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/christopherraleigh/GitHub/Phantom-Interactive-Novel/Android Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.1.1_fc2035f693f31ea5922617970a0c38c3e07a3aef/classes.dex" />
+    </item>
+    <item
+        jar="/Users/christopherraleigh/GitHub/Phantom-Interactive-Novel/Android Project/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/christopherraleigh/GitHub/Phantom-Interactive-Novel/Android Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.1.1_8da2b4cee45af774b226e4b335f156336f27885f/classes.dex" />
+    </item>
+
+</items>
