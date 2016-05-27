@@ -8,7 +8,6 @@ import android.support.v4.content.ContextCompat;
 
 import com.christopherraleigh.phantomofthewest.visual_novel.IStoryChoice;
 import com.christopherraleigh.phantomofthewest.visual_novel.IStoryChoiceList;
-import com.christopherraleigh.phantomofthewest.voice_overs.IVoiceover;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -19,22 +18,15 @@ import java.util.ListIterator;
  * Created by christopherraleigh on 2016-04-15.
  */
 public class StoryChoiceList implements IStoryChoiceList {
-    private IVoiceover audioComponent;
 
     private List<IStoryChoice> choices;
 
     private int imageID;
 
-    public StoryChoiceList(int image, List<IStoryChoice> choices)
-    {
-        this(image, choices, null);
-    }
-
-    public StoryChoiceList(int imageID, List<IStoryChoice> choices, IVoiceover audioComponent)
+    public StoryChoiceList(int imageID, List<IStoryChoice> choices)
     {
         this.imageID = imageID;
         this.choices = choices;
-        this.audioComponent = audioComponent;
     }
 
     @Override
@@ -42,14 +34,6 @@ public class StoryChoiceList implements IStoryChoiceList {
         Drawable image = ContextCompat.getDrawable(c, imageID);
         removeAliasing(image);
         return image;
-    }
-
-    @Override
-    public void playAudio() {
-        if (audioComponent != null)
-        {
-            audioComponent.play();
-        }
     }
 
     @Override

@@ -102,21 +102,9 @@ public class PotWVN extends Observable {
         goToState(startingPage);
     }
 
-    private void playAudio() {
-        if (currentChoices != null) {
-            currentChoices.playAudio();
-        }
-    }
-
     private void prepareToNotifyObservers() {
-        stopAudio();
         autoSave();
         setChanged();
         notifyObservers(this);
-        playAudio();
-    }
-
-    private void stopAudio() {
-        /*VoiceoverManager.MainManager.StopSpeech();*/
     }
 }

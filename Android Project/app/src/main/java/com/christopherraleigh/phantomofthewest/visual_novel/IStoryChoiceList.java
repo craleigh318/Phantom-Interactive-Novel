@@ -10,6 +10,4 @@ import java.util.List;
  */
 public interface IStoryChoiceList extends List<IStoryChoice> {
     Drawable getImage(Context c);
-
-    void playAudio();
 }

@@ -1,21 +1,26 @@
 package com.christopherraleigh.phantomofthewest;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.christopherraleigh.phantomofthewest.visual_novel.PotWVN;
+import com.christopherraleigh.phantomofthewest.voice_overs.VoiceoverManager;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final float IMAGE_VIEW_ASPECT_RATIO = 16 / 9;
 
     private Bookmark bookmark = null;
+
+    private VoiceoverManager voiceoverManager = null;
 
     public void onButtonPreviousClick(View view) {
         bookmark.previousChoice();
@@ -39,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bookmark = new Bookmark(this);
+        voiceoverManager = new VoiceoverManager(this);
         PotWVN.startUp(this);
         PotWVN vn = PotWVN.getMainVN();
         vn.addObserver(bookmark);
@@ -59,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
             TextView tv = (TextView) v;
             tv.setText(text);
         }
+        speakTextIfEnabled(text);
     }
 
     void enableChoiceButtons(boolean enabled) {
@@ -75,17 +82,14 @@ public class MainActivity extends AppCompatActivity {
         v.setEnabled(enabled);
     }
 
-    private void setTextViewHeight() {
-        View textView = findViewById(R.id.scrollView);
-        View gridLayout = findViewById(R.id.mainGrid);
-        View imageView = findViewById(R.id.imageView);
-        View button = findViewById(R.id.buttonOK);
-        int gridLayoutHeight = gridLayout.getMeasuredHeight();
-        int imageViewHeight = imageView.getMeasuredHeight();
-        int buttonHeight = button.getMeasuredHeight();
-        int newHeight = gridLayoutHeight - imageViewHeight - buttonHeight;
-        ViewGroup.LayoutParams newParams = textView.getLayoutParams();
-        newParams.height = newHeight;
-        textView.setLayoutParams(newParams);
+    private void speakTextIfEnabled(CharSequence text) {
+        if (voiceoverManager != null) {
+            voiceoverManager.stopSpeech();
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+            boolean voiceoverEnabled = prefs.getBoolean("switchVoiceover", false);
+            if (voiceoverEnabled) {
+                voiceoverManager.speak(text);
+            }
+        }
     }
 }
