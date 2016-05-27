@@ -14,8 +14,7 @@ public class MathQuestion9IncorrectAnswer extends StoryChoice {
     }
 
     @Override
-    public void select()
-    {
+    public void select() {
         PotWVN vn = PotWVN.getMainVN();
         vn.getEventFlags().setCh5AnsweredMathQuestion9(TwoChoiceAnswer.Incorrect);
         super.select();

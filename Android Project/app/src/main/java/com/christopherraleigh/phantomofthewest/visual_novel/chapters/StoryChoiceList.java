@@ -23,8 +23,7 @@ public class StoryChoiceList implements IStoryChoiceList {
 
     private int imageID;
 
-    public StoryChoiceList(int imageID, List<IStoryChoice> choices)
-    {
+    public StoryChoiceList(int imageID, List<IStoryChoice> choices) {
         this.imageID = imageID;
         this.choices = choices;
     }

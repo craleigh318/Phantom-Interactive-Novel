@@ -14,8 +14,7 @@ public class IPinCheerleader extends StoryChoice {
     }
 
     @Override
-    public void select()
-    {
+    public void select() {
         PotWVN vn = PotWVN.getMainVN();
         vn.getEventFlags().setCh5SparredWithCheerleader(CheerleaderSpar.Pinned);
         super.select();

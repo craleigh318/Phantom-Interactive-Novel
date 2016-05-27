@@ -14,8 +14,7 @@ public class PossessionFeltWeird extends StoryChoice {
     }
 
     @Override
-    public void select()
-    {
+    public void select() {
         PotWVN vn = PotWVN.getMainVN();
         vn.getEventFlags().setCh3TalkedWithCaitlyn(TalkWithCaitlyn.WeirdedByPossession);
         super.select();

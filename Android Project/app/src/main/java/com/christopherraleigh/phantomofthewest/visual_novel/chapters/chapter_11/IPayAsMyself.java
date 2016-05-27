@@ -14,8 +14,7 @@ public class IPayAsMyself extends StoryChoice {
     }
 
     @Override
-    public void select()
-    {
+    public void select() {
         PotWVN vn = PotWVN.getMainVN();
         vn.getEventFlags().setCh11PayedForHotelRoom(HotelRoomPayment.KadenMoney);
         super.select();

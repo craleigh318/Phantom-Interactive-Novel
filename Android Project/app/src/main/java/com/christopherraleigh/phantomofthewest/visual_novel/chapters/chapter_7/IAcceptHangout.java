@@ -14,8 +14,7 @@ public class IAcceptHangout extends StoryChoice {
     }
 
     @Override
-    public void select()
-    {
+    public void select() {
         PotWVN vn = PotWVN.getMainVN();
         vn.getEventFlags().setCh7HungOutWithHewitt(HewittHangout.Accepted);
         super.select();

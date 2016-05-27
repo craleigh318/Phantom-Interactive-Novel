@@ -14,8 +14,7 @@ public class ILeaveGuest extends StoryChoice {
     }
 
     @Override
-    public void select()
-    {
+    public void select() {
         PotWVN vn = PotWVN.getMainVN();
         vn.getEventFlags().setCh11HarassedAfterWorkout(WorkoutHarassment.Left);
         super.select();

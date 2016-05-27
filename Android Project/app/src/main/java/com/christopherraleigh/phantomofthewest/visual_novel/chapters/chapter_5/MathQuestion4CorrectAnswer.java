@@ -14,8 +14,7 @@ public class MathQuestion4CorrectAnswer extends StoryChoice {
     }
 
     @Override
-    public void select()
-    {
+    public void select() {
         PotWVN vn = PotWVN.getMainVN();
         vn.getEventFlags().setCh5AnsweredMathQuestion4(TwoChoiceAnswer.Correct);
         super.select();

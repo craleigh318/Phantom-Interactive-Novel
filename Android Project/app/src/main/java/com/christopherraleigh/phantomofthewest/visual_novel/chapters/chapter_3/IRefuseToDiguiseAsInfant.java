@@ -14,8 +14,7 @@ public class IRefuseToDiguiseAsInfant extends StoryChoice {
     }
 
     @Override
-    public void select()
-    {
+    public void select() {
         PotWVN vn = PotWVN.getMainVN();
         vn.getEventFlags().setCh3DroveWithCaitlyn(DriveWithCaitlyn.PossessedCaitlyn);
         super.select();
